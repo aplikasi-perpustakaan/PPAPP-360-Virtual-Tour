@@ -1,0 +1,45 @@
+# ===================================================================
+#  Apache Configuration for 360° Virtual Tour
+#  Ensures correct MIME types and clean URLs.
+# ===================================================================
+
+# Default index
+DirectoryIndex index.html
+
+# MIME types for ES Modules and modern assets
+<IfModule mod_mime.c>
+    AddType application/javascript        .js .mjs
+    AddType application/json              .json
+    AddType text/css                      .css
+    AddType image/jpeg                    .jpg .jpeg
+    AddType image/png                     .png
+    AddType image/webp                    .webp
+    AddType image/svg+xml                 .svg
+    AddType font/woff                     .woff
+    AddType font/woff2                    .woff2
+    AddType model/gltf-binary             .glb
+    AddType model/gltf+json              .gltf
+</IfModule>
+
+# Enable CORS for CDN module loading
+<IfModule mod_headers.c>
+    Header set Access-Control-Allow-Origin "*"
+</IfModule>
+
+# Disable directory listing
+Options -Indexes
+
+# Enable gzip compression for text assets
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/css application/javascript application/json image/svg+xml
+</IfModule>
+
+# Cache static assets (1 hour for dev; increase for production)
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresByType image/jpeg             "access plus 1 hour"
+    ExpiresByType image/png              "access plus 1 hour"
+    ExpiresByType image/webp             "access plus 1 hour"
+    ExpiresByType text/css               "access plus 1 hour"
+    ExpiresByType application/javascript "access plus 1 hour"
+</IfModule>

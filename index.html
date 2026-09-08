@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>360° Virtual Tour</title>
+
+  <!-- PSV Core Stylesheet -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@photo-sphere-viewer/core/index.min.css" />
+  <!-- PSV Plugin Stylesheets -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@photo-sphere-viewer/markers-plugin/index.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@photo-sphere-viewer/gallery-plugin/index.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@photo-sphere-viewer/virtual-tour-plugin/index.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@photo-sphere-viewer/compass-plugin/index.min.css" />
+
+  <!-- Local Stylesheet (relative path) -->
+  <link rel="stylesheet" href="./style.css" />
+
+  <!-- Import Map: maps bare module specifiers to CDN URLs -->
+  <script type="importmap">
+    {
+      "imports": {
+        "three":                                      "https://cdn.jsdelivr.net/npm/three/build/three.module.min.js",
+        "@photo-sphere-viewer/core":                  "https://cdn.jsdelivr.net/npm/@photo-sphere-viewer/core/index.module.js",
+        "@photo-sphere-viewer/virtual-tour-plugin":   "https://cdn.jsdelivr.net/npm/@photo-sphere-viewer/virtual-tour-plugin/index.module.js",
+        "@photo-sphere-viewer/compass-plugin":        "https://cdn.jsdelivr.net/npm/@photo-sphere-viewer/compass-plugin/index.module.js",
+        "@photo-sphere-viewer/gallery-plugin":        "https://cdn.jsdelivr.net/npm/@photo-sphere-viewer/gallery-plugin/index.module.js",
+        "@photo-sphere-viewer/markers-plugin":        "https://cdn.jsdelivr.net/npm/@photo-sphere-viewer/markers-plugin/index.module.js"
+      }
+    }
+  </script>
+</head>
+<body>
+
+  <!-- Full-viewport viewer container -->
+  <div id="viewer"></div>
+
+  <!-- Location Selector UI -->
+  <div class="location-selector-container">
+    <label for="location-select">Select Location</label>
+    <select id="location-select">
+      <option value="pusat">PUSAT - Seberang Jaya</option>
+      <option value="bt">BT - Daerah Seberang Perai Utara</option>
+      <option value="jw">JW - Daerah Seberang Perai Selatan</option>
+      <option value="bm">BM - Daerah Seberang Perai Tengah</option>
+      <option value="ppaj">PPAJ - AEON Jusco Alma</option>
+      <option value="gt">GT - Daerah Timur Laut</option>
+      <option value="ppk">PPK - Lounge@Komtar</option>
+    </select>
+  </div>
+
+  <!-- Main application script (ES Module, relative path) -->
+  <script type="module" src="./main.js"></script>
+
+</body>
+</html>
