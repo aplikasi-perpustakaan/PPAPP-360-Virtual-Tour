@@ -97,7 +97,7 @@ export default [
         },
         {
           nodeId: 'bt-ext-outside-5',
-          position: { yaw: '358.45deg', pitch: '-8.15deg' },
+          position: { yaw: '48.87deg', pitch: '-6.30deg' },
           name: 'Go to Outside 5',
         },
       ],
@@ -120,7 +120,7 @@ export default [
       links: [
         {
           nodeId: 'bt-ext-outside-4',
-          position: { yaw: '178.45deg', pitch: '-8.15deg' },
+          position: { yaw: '228.87deg', pitch: '-6.30deg' },
           name: 'Go to Outside 4',
         },
         {
