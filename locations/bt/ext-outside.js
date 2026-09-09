@@ -41,7 +41,7 @@ export default [
         },
         {
           nodeId: 'bt-ext-outside-3',
-          position: { yaw: '358.45deg', pitch: '-8.15deg' },
+          position: { yaw: '3.87deg', pitch: '-7.14deg' },
           name: 'Go to Outside 3',
         },
       ],
@@ -64,12 +64,12 @@ export default [
       links: [
         {
           nodeId: 'bt-ext-outside-2',
-          position: { yaw: '178.45deg', pitch: '-8.15deg' },
+          position: { yaw: '183.87deg', pitch: '-7.14deg' },
           name: 'Go to Outside 2',
         },
         {
           nodeId: 'bt-ext-outside-4',
-          position: { yaw: '358.45deg', pitch: '-8.15deg' },
+          position: { yaw: '6.59deg', pitch: '-7.32deg' },
           name: 'Go to Outside 4',
         },
       ],
@@ -92,7 +92,7 @@ export default [
       links: [
         {
           nodeId: 'bt-ext-outside-3',
-          position: { yaw: '178.45deg', pitch: '-8.15deg' },
+          position: { yaw: '186.59deg', pitch: '-7.32deg' },
           name: 'Go to Outside 3',
         },
         {
