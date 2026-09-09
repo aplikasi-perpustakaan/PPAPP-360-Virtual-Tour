@@ -1,8 +1,58 @@
 /* ===================================================================
-   360° Virtual Tour – Fullscreen Viewport Styles
+   360° Virtual Tour – Global Styles
+   ===================================================================
+   Design System: Dark Moody Blue/Grey
+   All colors, spacing, and transitions are defined as CSS custom
+   properties for consistency and easy theming.
    =================================================================== */
 
-/* Reset & full-viewport layout */
+
+/* ── Design Tokens ────────────────────────────────────────────────── */
+
+:root {
+  /* Color Palette (Dark Moody) */
+  --color-navy:        #0A1628;
+  --color-charcoal:    #1C2333;
+  --color-steel:       #3A3F4B;
+  --color-silver:      #8892A0;
+  --color-offwhite:    #E8ECF1;
+  --color-accent-blue: #2D6CDF;
+  --color-accent-gold: #C9A84C;
+
+  /* Transparency / Glass */
+  --glass-bg:          rgba(28, 35, 51, 0.85);
+  --glass-border:      rgba(136, 146, 160, 0.3);
+  --glass-blur:        12px;
+
+  /* Spacing Scale */
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 32px;
+
+  /* Border Radius */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+
+  /* Transitions */
+  --transition-fast: 0.15s ease;
+  --transition-base: 0.3s ease;
+
+  /* Z-Index Scale */
+  --z-viewer:  1;
+  --z-overlay: 100;
+  --z-ui:      1000;
+  --z-modal:   9999;
+
+  /* Typography */
+  --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+/* ── Reset & Full-Viewport Layout ─────────────────────────────────── */
+
 *, *::before, *::after {
   margin: 0;
   padding: 0;
@@ -12,34 +62,52 @@
 html, body {
   width: 100%;
   height: 100%;
-  overflow: hidden;          /* hide all scrollbars */
+  overflow: hidden;
   background: #000;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: var(--font-family);
 }
 
-/* Viewer container fills the entire viewport */
+
+/* ── Viewer Container ─────────────────────────────────────────────── */
+
 #viewer {
   width: 100vw;
   height: 100vh;
 }
 
-/* Location Selector UI (Glassmorphism) */
+
+/* ── Reusable Glass Panel ─────────────────────────────────────────── */
+/* Apply this class to any floating UI element for consistent glass effect */
+
+.glass-panel {
+  background: var(--glass-bg);
+  backdrop-filter: blur(var(--glass-blur));
+  -webkit-backdrop-filter: blur(var(--glass-blur));
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-lg);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+  color: var(--color-offwhite);
+}
+
+
+/* ── Location Selector UI ─────────────────────────────────────────── */
+
 .location-selector-container {
   position: absolute;
   top: 20px;
   left: 20px;
-  z-index: 1000;
-  background: rgba(28, 35, 51, 0.85); /* Charcoal with opacity */
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+  z-index: var(--z-ui);
+  background: var(--glass-bg);
+  backdrop-filter: blur(var(--glass-blur));
+  -webkit-backdrop-filter: blur(var(--glass-blur));
   padding: 15px 20px;
-  border-radius: 12px;
-  border: 1px solid rgba(136, 146, 160, 0.3); /* Silver border */
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--glass-border);
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
   display: flex;
   flex-direction: column;
-  gap: 8px;
-  color: #E8ECF1; /* Off White */
+  gap: var(--space-sm);
+  color: var(--color-offwhite);
 }
 
 .location-selector-container label {
@@ -47,22 +115,22 @@ html, body {
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 1px;
-  color: #8892A0; /* Silver */
+  color: var(--color-silver);
 }
 
 .location-selector-container select {
   appearance: none;
-  background: rgba(10, 22, 40, 0.7); /* Dark Navy */
-  border: 1px solid rgba(45, 108, 223, 0.4); /* Accent Blue */
+  background: rgba(10, 22, 40, 0.7);
+  border: 1px solid rgba(45, 108, 223, 0.4);
   color: #fff;
   padding: 10px 36px 10px 16px;
   font-size: 15px;
-  border-radius: 8px;
+  border-radius: var(--radius-md);
   cursor: pointer;
   outline: none;
   font-family: inherit;
   font-weight: 500;
-  transition: all 0.3s ease;
+  transition: all var(--transition-base);
   background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23C9A84C%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E");
   background-repeat: no-repeat;
   background-position: right 12px top 50%;
@@ -71,12 +139,28 @@ html, body {
 
 .location-selector-container select:hover,
 .location-selector-container select:focus {
-  border-color: #2D6CDF; /* Accent Blue */
+  border-color: var(--color-accent-blue);
   box-shadow: 0 0 0 3px rgba(45, 108, 223, 0.2);
 }
 
 .location-selector-container select option {
-  background: #1C2333; /* Charcoal */
+  background: var(--color-charcoal);
   color: #fff;
   padding: 10px;
+}
+
+
+/* ── State Utilities ──────────────────────────────────────────────── */
+
+.is-hidden {
+  display: none !important;
+}
+
+.is-loading {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.is-active {
+  border-color: var(--color-accent-blue);
 }

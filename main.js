@@ -1,18 +1,33 @@
 /* ===================================================================
    360° Virtual Tour – Main Application Script
    ===================================================================
-   Uses Photo Sphere Viewer (PSV) with:
+   Entry point: bootstraps the PSV Viewer with plugins, loads
+   location data, and initializes all UI modules.
+
+   Plugins:
      - Virtual Tour Plugin  (multi-scene navigation)
      - Compass Plugin       (orientation compass)
      - Gallery Plugin       (scene thumbnail strip)
      - Markers Plugin       (info tooltips / hotspots)
    =================================================================== */
 
+
+// ── Third-Party Libraries ────────────────────────────────────────────
+
 import { Viewer } from '@photo-sphere-viewer/core';
 import { VirtualTourPlugin } from '@photo-sphere-viewer/virtual-tour-plugin';
 import { CompassPlugin } from '@photo-sphere-viewer/compass-plugin';
 import { GalleryPlugin } from '@photo-sphere-viewer/gallery-plugin';
 import { MarkersPlugin } from '@photo-sphere-viewer/markers-plugin';
+
+
+// ── Local Modules ────────────────────────────────────────────────────
+
+import { initCoordinateLogger } from './js/coordinate-logger.js';
+import { initLocationSelector } from './js/location-selector.js';
+
+
+// ── Location Data ────────────────────────────────────────────────────
 
 import pusatNodes from './locations/pusat.js';
 import btNodes from './locations/bt.js';
@@ -22,16 +37,18 @@ import ppajNodes from './locations/ppaj.js';
 import gtNodes from './locations/gt.js';
 import ppkNodes from './locations/ppk.js';
 
+
 // ── Location Data Map ────────────────────────────────────────────────
 // Maps the select box values to the scene arrays
+
 const locationsData = {
   pusat: pusatNodes,
-  bt: btNodes,
-  jw: jwNodes,
-  bm: bmNodes,
-  ppaj: ppajNodes,
-  gt: gtNodes,
-  ppk: ppkNodes
+  bt:    btNodes,
+  jw:    jwNodes,
+  bm:    bmNodes,
+  ppaj:  ppajNodes,
+  gt:    gtNodes,
+  ppk:   ppkNodes,
 };
 
 
@@ -56,9 +73,9 @@ const viewer = new Viewer({
   plugins: [
     // Virtual Tour – handles multi-scene navigation
     [VirtualTourPlugin, {
-      renderMode: '3d',        // 3D transition between scenes
-      positionMode: 'manual',  // we supply explicit link positions
-      preload: true,           // preload adjacent panoramas for instant switching
+      renderMode: '3d',
+      positionMode: 'manual',
+      preload: true,
       nodes: locationsData.pusat,
       startNodeId: locationsData.pusat[0].id,
     }],
@@ -77,43 +94,7 @@ const viewer = new Viewer({
 });
 
 
-// ── Coordinate Logger (Double-Click) ─────────────────────────────────
-// Double-click anywhere on the panorama to log the exact yaw and pitch
-// to the browser console. Use these values to precisely place links
-// and markers in your tour configuration above.
+// ── Initialize Modules ──────────────────────────────────────────────
 
-viewer.addEventListener('dblclick', ({ data }) => {
-  if (data) {
-    const yawDeg   = (data.yaw   * 180 / Math.PI).toFixed(2);
-    const pitchDeg = (data.pitch * 180 / Math.PI).toFixed(2);
-
-    console.log(
-      `%c📍 Clicked Position`,
-      'color: #2D6CDF; font-weight: bold; font-size: 14px;'
-    );
-    console.log(`   Yaw:   ${data.yaw.toFixed(4)} rad  →  ${yawDeg}°`);
-    console.log(`   Pitch: ${data.pitch.toFixed(4)} rad  →  ${pitchDeg}°`);
-    console.log(`   Copy-paste for config:`);
-    console.log(`   position: { yaw: '${yawDeg}deg', pitch: '${pitchDeg}deg' }`);
-  }
-});
-
-console.log(
-  '%c🌐 360° Virtual Tour loaded. Double-click anywhere to log yaw/pitch coordinates.',
-  'color: #C9A84C; font-weight: bold;'
-);
-
-// ── Location Selector Logic ──────────────────────────────────────────
-
-const locationSelect = document.getElementById('location-select');
-const virtualTour = viewer.getPlugin(VirtualTourPlugin);
-
-locationSelect.addEventListener('change', (e) => {
-  const selectedLocation = e.target.value;
-  const newNodes = locationsData[selectedLocation];
-  
-  if (newNodes && newNodes.length > 0) {
-    // Switch the nodes and start at the first scene of the new location
-    virtualTour.setNodes(newNodes, newNodes[0].id);
-  }
-});
+initCoordinateLogger(viewer);
+initLocationSelector(viewer, locationsData);

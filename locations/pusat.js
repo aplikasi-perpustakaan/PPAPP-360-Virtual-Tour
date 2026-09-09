@@ -1,49 +1,85 @@
-const scene1 = {
-  id: 'pusat_scene1',
-  panorama: './images/f1_01.jpg',
-  name: 'Scene 1 – Living Room',
-  caption: 'PUSAT - Scene 1 – Living Room',
-  defaultYaw: 0,
-  defaultPitch: 0,
-  thumbnail: './images/f1_01.jpg',
-  links: [
-    {
-      nodeId: 'pusat_scene2',
-      position: { yaw: '80deg', pitch: '0deg' },
-      name: 'Go to Kitchen',
-    },
-  ],
-  markers: [
-    {
-      id: 'info-marker-1',
-      position: { yaw: '-45deg', pitch: '5deg' },
-      tooltip: {
-        content: 'Beautiful painting on the wall',
-        position: 'right',
+// ── locations/pusat.js ──────────────────────────────────────────
+// Scene data for: PUSAT – Seberang Jaya (Headquarters)
+// ────────────────────────────────────────────────────────────────
+
+import { createInfoMarker } from '../js/marker-templates.js';
+
+export default [
+  {
+    // ─── Identity ───
+    id: 'pusat-f1-entrance',
+    name: 'Level 1 – Entrance',
+    caption: 'PUSAT – Level 1 – Entrance',
+
+    // ─── Panorama ───
+    panorama: './images/pusat/pusat-f1-entrance.jpg',
+    thumbnail: './images/pusat/pusat-f1-entrance.jpg',
+
+    // ─── Camera Defaults ───
+    defaultYaw: '0deg',
+    defaultPitch: '0deg',
+
+    // ─── Navigation Links ───
+    links: [
+      {
+        nodeId: 'pusat-f1-reading-area',
+        position: { yaw: '80deg', pitch: '0deg' },
+        name: 'Go to Reading Area',
       },
-      html: '<div style="width:24px;height:24px;background:rgba(45,108,223,0.85);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:bold;font-size:14px;cursor:pointer;box-shadow:0 2px 8px rgba(0,0,0,0.4);">i</div>',
-      anchor: 'center center',
-      data: { type: 'info' },
-    },
-  ],
-};
+    ],
 
-const scene2 = {
-  id: 'pusat_scene2',
-  panorama: './images/tester.jpeg',
-  name: 'Scene 2 – Kitchen',
-  caption: 'PUSAT - Scene 2 – Kitchen',
-  defaultYaw: '180deg',
-  defaultPitch: '0deg',
-  thumbnail: './images/tester.jpeg',
-  links: [
-    {
-      nodeId: 'pusat_scene1',
-      position: { yaw: '-100deg', pitch: '0deg' },
-      name: 'Go to Living Room',
-    },
-  ],
-  markers: [],
-};
+    // ─── Info Markers ───
+    markers: [
+      {
+        id: 'pusat-f1-entrance-info-1',
+        position: { yaw: '-45deg', pitch: '5deg' },
+        tooltip: {
+          content: 'Beautiful painting on the wall',
+          position: 'right',
+        },
+        html: createInfoMarker(),
+        anchor: 'center center',
+        data: { type: 'info' },
+      },
+    ],
 
-export default [scene1, scene2];
+    // ─── Metadata ───
+    data: {
+      floor: 'f1',
+      tags: ['entrance', 'lobby', 'main'],
+    },
+  },
+
+  {
+    // ─── Identity ───
+    id: 'pusat-f1-reading-area',
+    name: 'Level 1 – Reading Area',
+    caption: 'PUSAT – Level 1 – Reading Area',
+
+    // ─── Panorama ───
+    panorama: './images/shared/placeholder.jpg',
+    thumbnail: './images/shared/placeholder.jpg',
+
+    // ─── Camera Defaults ───
+    defaultYaw: '180deg',
+    defaultPitch: '0deg',
+
+    // ─── Navigation Links ───
+    links: [
+      {
+        nodeId: 'pusat-f1-entrance',
+        position: { yaw: '-100deg', pitch: '0deg' },
+        name: 'Go to Entrance',
+      },
+    ],
+
+    // ─── Info Markers ───
+    markers: [],
+
+    // ─── Metadata ───
+    data: {
+      floor: 'f1',
+      tags: ['reading', 'books', 'study'],
+    },
+  },
+];

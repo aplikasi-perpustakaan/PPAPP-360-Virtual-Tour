@@ -1,13 +1,32 @@
+// ── locations/jw.js ─────────────────────────────────────────────
+// Scene data for: Cawangan Daerah Seberang Perai Selatan
+// ────────────────────────────────────────────────────────────────
+
 export default [
   {
-    id: 'jw_scene1',
-    panorama: './images/f1_01.jpg',
-    name: 'JW - Main Area',
-    caption: 'Daerah Seberang Perai Selatan - Main Area',
-    defaultYaw: 0,
-    defaultPitch: 0,
-    thumbnail: './images/f1_01.jpg',
+    // ─── Identity ───
+    id: 'jw-gf-main-area',
+    name: 'Ground Floor – Main Area',
+    caption: 'JW – Ground Floor – Main Area',
+
+    // ─── Panorama ───
+    panorama: './images/shared/placeholder.jpg',
+    thumbnail: './images/shared/placeholder.jpg',
+
+    // ─── Camera Defaults ───
+    defaultYaw: '0deg',
+    defaultPitch: '0deg',
+
+    // ─── Navigation Links ───
     links: [],
+
+    // ─── Info Markers ───
     markers: [],
-  }
+
+    // ─── Metadata ───
+    data: {
+      floor: 'gf',
+      tags: ['main', 'entrance'],
+    },
+  },
 ];
