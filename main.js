@@ -76,8 +76,8 @@ const viewer = new Viewer({
       renderMode: '3d',
       positionMode: 'manual',
       preload: true,
-      nodes: locationsData.pusat,
-      startNodeId: locationsData.pusat[0].id,
+      nodes: locationsData.bt,
+      startNodeId: locationsData.bt[0].id,
     }],
 
     // Compass – orientation indicator
