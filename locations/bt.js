@@ -32,7 +32,13 @@ export default [
     thumbnail: './images/bt/bt-ext-outside-2.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
-    links: [],
+    links: [
+      {
+        nodeId: 'bt-ext-outside-1',
+        position: { yaw: '178.45deg', pitch: '-8.15deg' },
+        name: 'Go to Outside 1',
+      },
+    ],
     markers: [],
     data: {
       floor: 'ext',
