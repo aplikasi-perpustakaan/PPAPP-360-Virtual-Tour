@@ -209,6 +209,11 @@ export default [
           position: { yaw: '358.45deg', pitch: '-8.15deg' },
           name: 'Go to Kids 8',
         },
+                {
+          nodeId: 'bt-f1-tyt-13',
+          position: { yaw: '95.70deg', pitch: '-34.74deg' },
+          name: 'Go to Tyt 13',
+        },
       ],
       markers: [],
       data: {
