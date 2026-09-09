@@ -13,7 +13,7 @@ export default [
       links: [
         {
           nodeId: 'bt-f1-tyt-2',
-          position: { yaw: '358.45deg', pitch: '-8.15deg' },
+          position: { yaw: '127.87deg', pitch: '-22.54deg' },
           name: 'Go to Tyt 2',
         },
         {
@@ -41,12 +41,12 @@ export default [
       links: [
         {
           nodeId: 'bt-f1-tyt-1',
-          position: { yaw: '178.45deg', pitch: '-8.15deg' },
+          position: { yaw: '298.48deg', pitch: '-31.77deg' },
           name: 'Go to Tyt 1',
         },
         {
           nodeId: 'bt-f1-tyt-3',
-          position: { yaw: '358.45deg', pitch: '-8.15deg' },
+          position: { yaw: '109.28deg', pitch: '-22.65deg' },
           name: 'Go to Tyt 3',
         },
       ],
@@ -69,7 +69,7 @@ export default [
       links: [
         {
           nodeId: 'bt-f1-tyt-2',
-          position: { yaw: '178.45deg', pitch: '-8.15deg' },
+          position: { yaw: '243.19deg', pitch: '-32.70deg' },
           name: 'Go to Tyt 2',
         },
         {
@@ -130,7 +130,7 @@ export default [
         },
         {
           nodeId: 'bt-f1-tyt-6',
-          position: { yaw: '358.45deg', pitch: '-8.15deg' },
+          position: { yaw: '286.65deg', pitch: '-28.88deg' },
           name: 'Go to Tyt 6',
         },
       ],
@@ -153,7 +153,7 @@ export default [
       links: [
         {
           nodeId: 'bt-f1-tyt-5',
-          position: { yaw: '178.45deg', pitch: '-8.15deg' },
+          position: { yaw: '94.66deg', pitch: '-24.13deg' },
           name: 'Go to Tyt 5',
         },
         {
@@ -186,8 +186,13 @@ export default [
         },
         {
           nodeId: 'bt-f1-tyt-8',
-          position: { yaw: '358.45deg', pitch: '-8.15deg' },
+          position: { yaw: '88.45deg', pitch: '-25.14deg' },
           name: 'Go to Tyt 8',
+        },
+                {
+          nodeId: 'bt-f1-tyt-9',
+          position: { yaw: '356.98deg', pitch: '-15.58deg' },
+          name: 'Go to Tyt 9',
         },
       ],
       markers: [],
@@ -209,13 +214,8 @@ export default [
       links: [
         {
           nodeId: 'bt-f1-tyt-7',
-          position: { yaw: '178.45deg', pitch: '-8.15deg' },
+          position: { yaw: '273.29deg', pitch: '-26.28deg' },
           name: 'Go to Tyt 7',
-        },
-        {
-          nodeId: 'bt-f1-tyt-9',
-          position: { yaw: '358.45deg', pitch: '-8.15deg' },
-          name: 'Go to Tyt 9',
         },
       ],
       markers: [],
@@ -236,7 +236,7 @@ export default [
       defaultPitch: '0deg',
       links: [
         {
-          nodeId: 'bt-f1-tyt-8',
+          nodeId: 'bt-f1-tyt-7',
           position: { yaw: '178.45deg', pitch: '-8.15deg' },
           name: 'Go to Tyt 8',
         },
@@ -270,8 +270,13 @@ export default [
         },
         {
           nodeId: 'bt-f1-tyt-11',
-          position: { yaw: '358.45deg', pitch: '-8.15deg' },
+          position: { yaw: '46.09deg', pitch: '-17.38deg' },
           name: 'Go to Tyt 11',
+        },
+                {
+          nodeId: 'bt-f1-tyt-12',
+          position: { yaw: '5.48deg', pitch: '-19.56deg' },
+          name: 'Go to Tyt 12',
         },
       ],
       markers: [],
@@ -298,7 +303,7 @@ export default [
         },
         {
           nodeId: 'bt-f1-tyt-12',
-          position: { yaw: '358.45deg', pitch: '-8.15deg' },
+          position: { yaw: '316.06deg', pitch: '-15.52deg' },
           name: 'Go to Tyt 12',
         },
       ],
@@ -321,12 +326,17 @@ export default [
       links: [
         {
           nodeId: 'bt-f1-tyt-11',
-          position: { yaw: '178.45deg', pitch: '-8.15deg' },
+          position: { yaw: '143.13deg', pitch: '-22.15deg' },
           name: 'Go to Tyt 11',
+        },
+                {
+          nodeId: 'bt-f1-tyt-10',
+          position: { yaw: '187.40deg', pitch: '-12.00deg' },
+          name: 'Go to Tyt 10',
         },
         {
           nodeId: 'bt-f1-tyt-13',
-          position: { yaw: '358.45deg', pitch: '-8.15deg' },
+          position: { yaw: '282.49deg', pitch: '-29.27deg' },
           name: 'Go to Tyt 13',
         },
       ],
@@ -349,13 +359,18 @@ export default [
       links: [
         {
           nodeId: 'bt-f1-tyt-12',
-          position: { yaw: '178.45deg', pitch: '-8.15deg' },
+          position: { yaw: '107.13deg', pitch: '-27.96deg' },
           name: 'Go to Tyt 12',
         },
         {
           nodeId: 'bt-f1-tyt-14',
           position: { yaw: '358.45deg', pitch: '-8.15deg' },
           name: 'Go to Tyt 14',
+        },
+                        {
+          nodeId: 'bt-f1-kids-7',
+          position: { yaw: '251.45deg', pitch: '-48.52deg' },
+          name: 'Go to Kids 7',
         },
       ],
       markers: [],
@@ -382,8 +397,13 @@ export default [
         },
         {
           nodeId: 'bt-f1-tyt-15',
-          position: { yaw: '358.45deg', pitch: '-8.15deg' },
+          position: { yaw: '44.10deg', pitch: '-19.45deg' },
           name: 'Go to Tyt 15',
+        },
+                {
+          nodeId: 'bt-f1-tyt-16',
+          position: { yaw: '358.81deg', pitch: '-21.71deg' },
+          name: 'Go to Tyt 16',
         },
       ],
       markers: [],
@@ -405,12 +425,12 @@ export default [
       links: [
         {
           nodeId: 'bt-f1-tyt-14',
-          position: { yaw: '178.45deg', pitch: '-8.15deg' },
+          position: { yaw: '233.36deg', pitch: '-19.25deg' },
           name: 'Go to Tyt 14',
         },
         {
           nodeId: 'bt-f1-tyt-16',
-          position: { yaw: '358.45deg', pitch: '-8.15deg' },
+          position: { yaw: '314.46deg', pitch: '-26.62deg' },
           name: 'Go to Tyt 16',
         },
       ],
@@ -433,8 +453,13 @@ export default [
       links: [
         {
           nodeId: 'bt-f1-tyt-15',
-          position: { yaw: '178.45deg', pitch: '-8.15deg' },
+          position: { yaw: '127.33deg', pitch: '-21.24deg' },
           name: 'Go to Tyt 15',
+        },
+                {
+          nodeId: 'bt-f1-tyt-14',
+          position: { yaw: '179.68deg', pitch: '-16.28deg' },
+          name: 'Go to Tyt 14',
         },
         {
           nodeId: 'bt-f1-backside-1',
