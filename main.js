@@ -29,13 +29,13 @@ import { initLocationSelector } from './js/location-selector.js';
 
 // ── Location Data ────────────────────────────────────────────────────
 
-import pusatNodes from './locations/pusat.js';
-import btNodes from './locations/bt.js';
-import jwNodes from './locations/jw.js';
-import bmNodes from './locations/bm.js';
-import ppajNodes from './locations/ppaj.js';
-import gtNodes from './locations/gt.js';
-import ppkNodes from './locations/ppk.js';
+import pusatNodes from './locations/pusat/index.js';
+import btNodes from './locations/bt/index.js';
+import jwNodes from './locations/jw/index.js';
+import bmNodes from './locations/bm/index.js';
+import ppajNodes from './locations/ppaj/index.js';
+import gtNodes from './locations/gt/index.js';
+import ppkNodes from './locations/ppk/index.js';
 
 
 // ── Location Data Map ────────────────────────────────────────────────
