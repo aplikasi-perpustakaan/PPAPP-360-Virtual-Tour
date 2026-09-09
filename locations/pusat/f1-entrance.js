@@ -1,5 +1,5 @@
 // F1 Entrance Section for PUSAT
-
+import { createInfoMarker } from '../../js/marker-templates.js';
 export default [
   {
 
@@ -78,6 +78,5 @@ export default [
         floor: 'f1',
         tags: ['reading', 'books', 'study'],
       },
-    },
     },
 ];

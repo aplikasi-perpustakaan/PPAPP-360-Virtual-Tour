@@ -28,5 +28,4 @@ export default [
         tags: ['main', 'mall'],
       },
     },
-    },
 ];

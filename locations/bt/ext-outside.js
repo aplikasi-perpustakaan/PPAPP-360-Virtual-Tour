@@ -6,8 +6,8 @@ export default [
       id: 'bt-ext-outside-1',
       name: 'Exterior – Outside 1',
       caption: 'BT – Exterior – Outside 1',
-      panorama: './images/bt/bt-ext-outside-1.jpg',
-      thumbnail: './images/bt/bt-ext-outside-1.jpg',
+      panorama: './images/bt/ext-outside/bt-ext-outside-1.jpg',
+      thumbnail: './images/bt/ext-outside/bt-ext-outside-1.jpg',
       defaultYaw: '0deg',
       defaultPitch: '0deg',
       links: [
@@ -29,8 +29,8 @@ export default [
       id: 'bt-ext-outside-2',
       name: 'Exterior – Outside 2',
       caption: 'BT – Exterior – Outside 2',
-      panorama: './images/bt/bt-ext-outside-2.jpg',
-      thumbnail: './images/bt/bt-ext-outside-2.jpg',
+      panorama: './images/bt/ext-outside/bt-ext-outside-2.jpg',
+      thumbnail: './images/bt/ext-outside/bt-ext-outside-2.jpg',
       defaultYaw: '0deg',
       defaultPitch: '0deg',
       links: [
@@ -57,8 +57,8 @@ export default [
       id: 'bt-ext-outside-3',
       name: 'Exterior – Outside 3',
       caption: 'BT – Exterior – Outside 3',
-      panorama: './images/bt/bt-ext-outside-3.jpg',
-      thumbnail: './images/bt/bt-ext-outside-3.jpg',
+      panorama: './images/bt/ext-outside/bt-ext-outside-3.jpg',
+      thumbnail: './images/bt/ext-outside/bt-ext-outside-3.jpg',
       defaultYaw: '0deg',
       defaultPitch: '0deg',
       links: [
@@ -85,8 +85,8 @@ export default [
       id: 'bt-ext-outside-4',
       name: 'Exterior – Outside 4',
       caption: 'BT – Exterior – Outside 4',
-      panorama: './images/bt/bt-ext-outside-4.jpg',
-      thumbnail: './images/bt/bt-ext-outside-4.jpg',
+      panorama: './images/bt/ext-outside/bt-ext-outside-4.jpg',
+      thumbnail: './images/bt/ext-outside/bt-ext-outside-4.jpg',
       defaultYaw: '0deg',
       defaultPitch: '0deg',
       links: [
@@ -113,8 +113,8 @@ export default [
       id: 'bt-ext-outside-5',
       name: 'Exterior – Outside 5',
       caption: 'BT – Exterior – Outside 5',
-      panorama: './images/bt/bt-ext-outside-5.jpg',
-      thumbnail: './images/bt/bt-ext-outside-5.jpg',
+      panorama: './images/bt/ext-outside/bt-ext-outside-5.jpg',
+      thumbnail: './images/bt/ext-outside/bt-ext-outside-5.jpg',
       defaultYaw: '0deg',
       defaultPitch: '0deg',
       links: [
@@ -123,12 +123,16 @@ export default [
           position: { yaw: '178.45deg', pitch: '-8.15deg' },
           name: 'Go to Outside 4',
         },
+        {
+          nodeId: 'bt-f1-lobby-1',
+          position: { yaw: '358.45deg', pitch: '-8.15deg' },
+          name: 'Enter Lobby 1',
+        },
       ],
       markers: [],
       data: {
         floor: 'ext',
         tags: ['exterior', 'outside'],
       },
-
     },
 ];
