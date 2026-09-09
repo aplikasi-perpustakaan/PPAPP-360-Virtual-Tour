@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@photo-sphere-viewer/gallery-plugin/index.min.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@photo-sphere-viewer/virtual-tour-plugin/index.min.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@photo-sphere-viewer/compass-plugin/index.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@photo-sphere-viewer/map-plugin/index.min.css" />
 
   <!-- Local Stylesheet (relative path) -->
   <link rel="stylesheet" href="./style.css" />
@@ -25,7 +26,8 @@
         "@photo-sphere-viewer/virtual-tour-plugin":   "https://cdn.jsdelivr.net/npm/@photo-sphere-viewer/virtual-tour-plugin/index.module.js",
         "@photo-sphere-viewer/compass-plugin":        "https://cdn.jsdelivr.net/npm/@photo-sphere-viewer/compass-plugin/index.module.js",
         "@photo-sphere-viewer/gallery-plugin":        "https://cdn.jsdelivr.net/npm/@photo-sphere-viewer/gallery-plugin/index.module.js",
-        "@photo-sphere-viewer/markers-plugin":        "https://cdn.jsdelivr.net/npm/@photo-sphere-viewer/markers-plugin/index.module.js"
+        "@photo-sphere-viewer/markers-plugin":        "https://cdn.jsdelivr.net/npm/@photo-sphere-viewer/markers-plugin/index.module.js",
+        "@photo-sphere-viewer/map-plugin":            "https://cdn.jsdelivr.net/npm/@photo-sphere-viewer/map-plugin/index.module.js"
       }
     }
   </script>
@@ -34,6 +36,12 @@
 
   <!-- Full-viewport viewer container -->
   <div id="viewer"></div>
+
+  <!-- Loading Screen Overlay -->
+  <div id="loading-screen" class="glass-panel">
+    <div class="spinner"></div>
+    <div id="loading-text">Loading Virtual Tour...</div>
+  </div>
 
   <!-- Location Selector UI -->
   <div class="location-selector-container">

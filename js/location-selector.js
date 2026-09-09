@@ -1,30 +1,43 @@
 /* ===================================================================
    Location Selector – Branch switching UI logic
    ===================================================================
-   Handles the location dropdown change event, swapping the active
-   scene set in the Virtual Tour plugin.
+   Handles the location dropdown change event, dynamically loading
+   the active scene set and swapping it in the Virtual Tour plugin.
    =================================================================== */
 
 import { VirtualTourPlugin } from '@photo-sphere-viewer/virtual-tour-plugin';
-
+import { showLoading } from './loading-screen.js';
 
 /**
  * Initializes the location selector dropdown, binding it to the
- * Virtual Tour plugin to swap scene sets on change.
+ * Virtual Tour plugin to dynamically swap scene sets on change.
  *
- * @param {Object} viewer         - The PSV Viewer instance.
- * @param {Object} locationsData  - Map of branch codes to scene arrays.
+ * @param {Object} viewer - The PSV Viewer instance.
  */
-export function initLocationSelector(viewer, locationsData) {
+export function initLocationSelector(viewer) {
   const locationSelect = document.getElementById('location-select');
   const virtualTour = viewer.getPlugin(VirtualTourPlugin);
 
-  locationSelect.addEventListener('change', (e) => {
+  locationSelect.addEventListener('change', async (e) => {
     const selectedLocation = e.target.value;
-    const newNodes = locationsData[selectedLocation];
+    
+    // Show loading UI while downloading JS chunks and image
+    showLoading(`Loading ${selectedLocation.toUpperCase()} Branch...`);
+    
+    try {
+      // Dynamically import the location module only when needed
+      const module = await import(`../locations/${selectedLocation}/index.js`);
+      const newNodes = module.default;
 
-    if (newNodes && newNodes.length > 0) {
-      virtualTour.setNodes(newNodes, newNodes[0].id);
+      if (newNodes && newNodes.length > 0) {
+        // The panorama-loaded event in loading-screen.js will hide the overlay
+        await virtualTour.setNodes(newNodes, newNodes[0].id);
+      }
+    } catch (err) {
+      console.error('Failed to load location data:', err);
+      // Fallback: hide loading if there was an error
+      const { hideLoading } = await import('./loading-screen.js');
+      hideLoading();
     }
   });
 }

@@ -1,100 +1,86 @@
 /* ===================================================================
    360° Virtual Tour – Main Application Script
    ===================================================================
-   Entry point: bootstraps the PSV Viewer with plugins, loads
-   location data, and initializes all UI modules.
-
-   Plugins:
-     - Virtual Tour Plugin  (multi-scene navigation)
-     - Compass Plugin       (orientation compass)
-     - Gallery Plugin       (scene thumbnail strip)
-     - Markers Plugin       (info tooltips / hotspots)
+   Entry point: dynamically loads the initial location data,
+   bootstraps the PSV Viewer with plugins, and initializes UI modules.
    =================================================================== */
-
-
-// ── Third-Party Libraries ────────────────────────────────────────────
 
 import { Viewer } from '@photo-sphere-viewer/core';
 import { VirtualTourPlugin } from '@photo-sphere-viewer/virtual-tour-plugin';
 import { CompassPlugin } from '@photo-sphere-viewer/compass-plugin';
 import { GalleryPlugin } from '@photo-sphere-viewer/gallery-plugin';
 import { MarkersPlugin } from '@photo-sphere-viewer/markers-plugin';
-
-
-// ── Local Modules ────────────────────────────────────────────────────
+import { MapPlugin } from '@photo-sphere-viewer/map-plugin';
 
 import { initCoordinateLogger } from './js/coordinate-logger.js';
 import { initLocationSelector } from './js/location-selector.js';
+import { initAudioController } from './js/audio-controller.js';
+import { initLoadingScreen, showLoading, hideLoading } from './js/loading-screen.js';
 
+// Show loading initially
+showLoading('Initializing Viewer...');
 
-// ── Location Data ────────────────────────────────────────────────────
+async function bootstrap() {
+  try {
+    // 1. Determine which branch is selected by default in the HTML dropdown
+    const locationSelect = document.getElementById('location-select');
+    const defaultBranch = locationSelect.value || 'bt';
+    
+    // 2. Load the initial nodes dynamically BEFORE initializing the viewer
+    const module = await import(`./locations/${defaultBranch}/index.js`);
+    const defaultNodes = module.default;
 
-import pusatNodes from './locations/pusat/index.js';
-import btNodes from './locations/bt/index.js';
-import jwNodes from './locations/jw/index.js';
-import bmNodes from './locations/bm/index.js';
-import ppajNodes from './locations/ppaj/index.js';
-import gtNodes from './locations/gt/index.js';
-import ppkNodes from './locations/ppk/index.js';
+    // 3. Instantiate the Viewer now that we have nodes
+    const viewer = new Viewer({
+      container: document.getElementById('viewer'),
+      navbar: [
+        'zoom',
+        'move',
+        'caption',
+        'gallery',
+        'fullscreen',
+      ],
+      plugins: [
+        [VirtualTourPlugin, {
+          renderMode: '3d',
+          positionMode: 'manual',
+          preload: true,
+          nodes: defaultNodes,
+          startNodeId: defaultNodes[0].id,
+          map: {
+            imageUrl: 'assets/floor-plans/dummy-map.jpg',
+          }
+        }],
+        [CompassPlugin, {
+          size: '100px',
+        }],
+        [GalleryPlugin, {}],
+        [MarkersPlugin, {}],
+        [MapPlugin, {
+          size: '200px',
+          position: 'bottom left'
+        }],
+      ],
+    });
 
+    // 4. Initialize local modules
+    initCoordinateLogger(viewer);
+    initLocationSelector(viewer);
+    initAudioController(viewer);
+    initLoadingScreen(viewer);
 
-// ── Location Data Map ────────────────────────────────────────────────
-// Maps the select box values to the scene arrays
+    // Note: The loading screen will hide itself when the 'ready' or 'panorama-loaded' events fire in loading-screen.js
 
-const locationsData = {
-  pusat: pusatNodes,
-  bt:    btNodes,
-  jw:    jwNodes,
-  bm:    bmNodes,
-  ppaj:  ppajNodes,
-  gt:    gtNodes,
-  ppk:   ppkNodes,
-};
+  } catch (error) {
+    console.error('Critical error during bootstrap:', error);
+    // Display error to user via our debug overlay
+    const errDiv = document.getElementById('debug-error');
+    if (errDiv) {
+      errDiv.style.display = 'block';
+      errDiv.innerText += `Critical Bootstrap Error: ${error.message}\n\n`;
+    }
+  }
+}
 
-
-// ── Viewer Instantiation ─────────────────────────────────────────────
-
-const viewer = new Viewer({
-  container: document.getElementById('viewer'),
-
-  // Auto-rotate after 3 seconds of inactivity
-  autorotateDelay: 3000,
-
-  // Navbar with useful controls
-  navbar: [
-    'zoom',
-    'move',
-    'caption',
-    'gallery',
-    'fullscreen',
-  ],
-
-  // Plugins
-  plugins: [
-    // Virtual Tour – handles multi-scene navigation
-    [VirtualTourPlugin, {
-      renderMode: '3d',
-      positionMode: 'manual',
-      preload: true,
-      nodes: locationsData.bt,
-      startNodeId: locationsData.bt[0].id,
-    }],
-
-    // Compass – orientation indicator
-    [CompassPlugin, {
-      size: '100px',
-    }],
-
-    // Gallery – thumbnail strip for quick scene selection
-    [GalleryPlugin, {}],
-
-    // Markers – info tooltips and hotspots
-    [MarkersPlugin, {}],
-  ],
-});
-
-
-// ── Initialize Modules ──────────────────────────────────────────────
-
-initCoordinateLogger(viewer);
-initLocationSelector(viewer, locationsData);
+// Start the application
+bootstrap();

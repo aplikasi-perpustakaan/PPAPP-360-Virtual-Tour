@@ -22,7 +22,15 @@ export default [
           name: 'Go to Lobby 2',
         },
       ],
-      markers: [],
+      markers: [
+        {
+          id: 'bt-f1-lobby-1-audio-1',
+          position: { yaw: '90deg', pitch: '0deg' },
+          html: '<div style="width:24px;height:24px;background:#C9A84C;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;cursor:pointer;">🔊</div>',
+          anchor: 'center center',
+          data: { audioUrl: './audio/narration/sample.wav' },
+        }
+      ],
       data: {
         floor: 'f1',
         tags: ['lobby'],
