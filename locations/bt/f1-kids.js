@@ -140,8 +140,13 @@ export default [
         },
         {
           nodeId: 'bt-f1-kids-6',
-          position: { yaw: '358.45deg', pitch: '-8.15deg' },
+          position: { yaw: '307.47deg', pitch: '-24.73deg' },
           name: 'Go to Kids 6',
+        },
+                {
+          nodeId: 'bt-f1-kids-7',
+          position: { yaw: '7.46deg', pitch: '-15.13deg' },
+          name: 'Go to Kids 7',
         },
       ],
       markers: [],
@@ -191,8 +196,13 @@ export default [
       links: [
         {
           nodeId: 'bt-f1-kids-6',
-          position: { yaw: '178.45deg', pitch: '-8.15deg' },
+          position: { yaw: '218.91deg', pitch: '-14.15deg' },
           name: 'Go to Kids 6',
+        },
+                {
+          nodeId: 'bt-f1-kids-5',
+          position: { yaw: '184.09deg', pitch: '-9.83deg' },
+          name: 'Go to Kids 5',
         },
         {
           nodeId: 'bt-f1-kids-8',
