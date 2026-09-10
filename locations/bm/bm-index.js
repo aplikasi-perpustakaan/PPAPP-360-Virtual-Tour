@@ -2,8 +2,8 @@
 // Combines all sections for BM
 // ────────────────────────────────────────────────────────────────
 
-import gfMainAreaSection from './gf-main-area.js';
+import bmGfMainAreaSection from './bm-gf-main-area.js';
 
 export default [
-  ...gfMainAreaSection,
+  ...bmGfMainAreaSection,
 ];

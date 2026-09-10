@@ -2,8 +2,8 @@
 // Combines all sections for GT
 // ────────────────────────────────────────────────────────────────
 
-import gfMainAreaSection from './gf-main-area.js';
+import gtGfMainAreaSection from './gt-gf-main-area.js';
 
 export default [
-  ...gfMainAreaSection,
+  ...gtGfMainAreaSection,
 ];

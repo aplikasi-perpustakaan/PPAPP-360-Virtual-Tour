@@ -2,8 +2,8 @@
 // Combines all sections for PPK
 // ────────────────────────────────────────────────────────────────
 
-import f1MainAreaSection from './f1-main-area.js';
+import ppkF1MainAreaSection from './ppk-f1-main-area.js';
 
 export default [
-  ...f1MainAreaSection,
+  ...ppkF1MainAreaSection,
 ];

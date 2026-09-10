@@ -2,8 +2,8 @@
 // Combines all sections for PPAJ
 // ────────────────────────────────────────────────────────────────
 
-import f1MainAreaSection from './f1-main-area.js';
+import ppajF1MainAreaSection from './ppaj-f1-main-area.js';
 
 export default [
-  ...f1MainAreaSection,
+  ...ppajF1MainAreaSection,
 ];

@@ -62,7 +62,7 @@ async function bootstrap() {
     const locationSelectHTML = `<select id="location-select" class="navbar-select">${optionsHTML}</select>`;
     
     // 3. Load the initial nodes dynamically BEFORE initializing the viewer
-    const module = await import(`./locations/${defaultBranch}/index.js`);
+    const module = await import(`./locations/${defaultBranch}/${defaultBranch}-index.js`);
     const defaultNodes = module.default;
     
     // 4. Validate if the requested node exists in the loaded branch

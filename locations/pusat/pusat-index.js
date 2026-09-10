@@ -2,8 +2,8 @@
 // Combines all sections for PUSAT
 // ────────────────────────────────────────────────────────────────
 
-import f1EntranceSection from './f1-entrance.js';
+import pusatF1EntranceSection from './pusat-f1-entrance.js';
 
 export default [
-  ...f1EntranceSection,
+  ...pusatF1EntranceSection,
 ];
