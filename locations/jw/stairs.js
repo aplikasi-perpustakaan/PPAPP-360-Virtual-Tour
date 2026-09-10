@@ -15,10 +15,9 @@ export default [
         },
         {
           nodeId: 'jw-f2-reference-1',
-          position: { yaw: '0deg', pitch: '-10deg' },
+          position: { yaw: '264.64deg', pitch: '9.74deg' },
           name: 'Go up to Floor 2',
-        }
-
+        },
     ],
     markers: [],
     data: {
