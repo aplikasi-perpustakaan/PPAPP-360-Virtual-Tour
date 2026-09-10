@@ -95,6 +95,11 @@ export default [
           nodeId: 'jw-f2-esport-3',
           position: { yaw: '180deg', pitch: '0deg' },
           name: 'Go back to e-Sport 3',
+        },
+        {
+          nodeId: 'jw-f2-reference-2',
+          position: { yaw: '95.05deg', pitch: '-18.14deg' },
+          name: 'Go to Reference 2',
         }
     ],
     markers: [],
