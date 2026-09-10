@@ -17,7 +17,18 @@ export default [
       defaultPitch: '0deg',
 
       // ─── Navigation Links ───
-      links: [],
+      links: [
+        {
+          nodeId: 'jw-ext-outside-1',
+          position: { yaw: '180deg', pitch: '0deg' },
+          name: 'Go Outside',
+        },
+        {
+          nodeId: 'jw-f1-lobby-1',
+          position: { yaw: '0deg', pitch: '0deg' },
+          name: 'Enter Floor 1 Lobby',
+        },
+      ],
 
       // ─── Info Markers ───
       markers: [],

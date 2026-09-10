@@ -4,14 +4,31 @@ const { chromium } = require('playwright');
   const browser = await chromium.launch({ headless: true });
   const page = await browser.newPage();
   
-  page.on('console', msg => console.log(`[BROWSER LOG] ${msg.type().toUpperCase()}: ${msg.text()}`));
-  page.on('pageerror', err => console.error(`[BROWSER ERROR] ${err.message}`));
-  
-  console.log('Navigating to http://localhost:8080...');
-  await page.goto('http://localhost:8080');
-  
-  // Wait a few seconds for errors to happen
+  await page.goto('http://localhost:8080/');
   await page.waitForTimeout(3000);
+  
+  const mapState = await page.evaluate(() => {
+    const mapPlugin = window.viewer.getPlugin('map');
+    
+    try {
+      mapPlugin.close();
+    } catch (e) {
+      return 'Error calling close: ' + e.message;
+    }
+    
+    return new Promise(resolve => {
+      setTimeout(() => {
+        const mapEl = document.querySelector('.psv-map');
+        resolve({
+          classes: Array.from(mapEl.classList).join(' '),
+          width: mapEl.clientWidth,
+          height: mapEl.clientHeight,
+        });
+      }, 500); // wait for animation
+    });
+  });
+  
+  console.log('Map State after manual close:', mapState);
   
   await browser.close();
 })();

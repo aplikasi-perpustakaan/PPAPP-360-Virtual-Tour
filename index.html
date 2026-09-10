@@ -27,7 +27,8 @@
         "@photo-sphere-viewer/compass-plugin":        "https://cdn.jsdelivr.net/npm/@photo-sphere-viewer/compass-plugin/index.module.js",
         "@photo-sphere-viewer/gallery-plugin":        "https://cdn.jsdelivr.net/npm/@photo-sphere-viewer/gallery-plugin/index.module.js",
         "@photo-sphere-viewer/markers-plugin":        "https://cdn.jsdelivr.net/npm/@photo-sphere-viewer/markers-plugin/index.module.js",
-        "@photo-sphere-viewer/map-plugin":            "https://cdn.jsdelivr.net/npm/@photo-sphere-viewer/map-plugin/index.module.js"
+        "@photo-sphere-viewer/map-plugin":            "https://cdn.jsdelivr.net/npm/@photo-sphere-viewer/map-plugin/index.module.js",
+        "@photo-sphere-viewer/autorotate-plugin":     "https://cdn.jsdelivr.net/npm/@photo-sphere-viewer/autorotate-plugin/index.module.js"
       }
     }
   </script>
@@ -43,19 +44,7 @@
     <div id="loading-text">Loading Virtual Tour...</div>
   </div>
 
-  <!-- Location Selector UI -->
-  <div class="location-selector-container">
-    <label for="location-select">Select Location</label>
-    <select id="location-select">
-      <option value="pusat">PUSAT - Seberang Jaya</option>
-      <option value="bt" selected>BT - Daerah Seberang Perai Utara</option>
-      <option value="jw">JW - Daerah Seberang Perai Selatan</option>
-      <option value="bm">BM - Daerah Seberang Perai Tengah</option>
-      <option value="ppaj">PPAJ - AEON Jusco Alma</option>
-      <option value="gt">GT - Daerah Timur Laut</option>
-      <option value="ppk">PPK - Lounge@Komtar</option>
-    </select>
-  </div>
+
 
   <!-- Main application script (ES Module, relative path) -->
   <script type="module" src="./main.js"></script>

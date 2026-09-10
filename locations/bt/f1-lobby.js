@@ -13,12 +13,12 @@ export default [
       links: [
         {
           nodeId: 'bt-ext-outside-5',
-          position: { yaw: '178.45deg', pitch: '-8.15deg' },
+          position: { yaw: '186.18deg', pitch: '-7.78deg' },
           name: 'Exit to Outside 5',
         },
         {
           nodeId: 'bt-f1-lobby-2',
-          position: { yaw: '358.45deg', pitch: '-8.15deg' },
+          position: { yaw: '7.08deg', pitch: '-7.24deg' },
           name: 'Go to Lobby 2',
         },
       ],
