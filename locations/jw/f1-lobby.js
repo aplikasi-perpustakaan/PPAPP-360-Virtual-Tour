@@ -44,7 +44,12 @@ export default [
           position: { yaw: '0deg', pitch: '0deg' },
           name: 'Go to Lobby 3',
         },
-                {
+        {
+          nodeId: 'jw-f1-lobby-13',
+          position: { yaw: '302.40deg', pitch: '-19.54deg' },
+          name: 'Go to Lobby 13',
+        },
+        {
           nodeId: 'jw-ext-outside-7',
           position: { yaw: '191.69deg', pitch: '-40.58deg' },
           name: 'Go to Outside 7',
@@ -312,7 +317,13 @@ export default [
           nodeId: 'jw-f1-lobby-10',
           position: { yaw: '12.77deg', pitch: '-24.05deg' },
           name: 'Go back to Lobby 10',
+        },
+        {
+          nodeId: 'jw-f1-kids-1',
+          position: { yaw: '293.64deg', pitch: '-15.72deg' },
+          name: 'Go to Kids Area',
         }
+
     ],
     markers: [],
     data: {
@@ -364,6 +375,11 @@ export default [
           nodeId: 'jw-f1-lobby-3',
           position: { yaw: '74.96deg', pitch: '-25.77deg' },
           name: 'Go to Lobby 3',
+        },
+        {
+          nodeId: 'jw-f1-lobby-2',
+          position: { yaw: '135.12deg', pitch: '-32.28deg' },
+          name: 'Go to Lobby 2',
         },
         {
           nodeId: 'jw-f1-lobby-12',
