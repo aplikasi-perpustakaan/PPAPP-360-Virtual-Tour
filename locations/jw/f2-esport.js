@@ -9,15 +9,15 @@ export default [
     defaultPitch: '0deg',
     links: [
         {
-          nodeId: 'jw-f2-reference-10',
-          position: { yaw: '180deg', pitch: '0deg' },
-          name: 'Go back to Reference Area',
+          nodeId: 'jw-f2-esport-2',
+          position: { yaw: '246.89deg', pitch: '-20.53deg' },
+          name: 'Go to e-Sport 2',
         },
         {
-          nodeId: 'jw-f2-esport-2',
-          position: { yaw: '0deg', pitch: '0deg' },
-          name: 'Go to e-Sport 2',
-        }
+          nodeId: 'jw-f2-reference-4',
+          position: { yaw: '84.90deg', pitch: '-21.95deg' },
+          name: 'Go to Reference 4',
+        },
     ],
     markers: [],
     data: {
@@ -35,20 +35,15 @@ export default [
     defaultPitch: '0deg',
     links: [
         {
-          nodeId: 'jw-f2-reference-10',
-          position: { yaw: '180deg', pitch: '0deg' },
-          name: 'Go back to Reference Area',
-        },
-        {
           nodeId: 'jw-f2-esport-3',
-          position: { yaw: '0deg', pitch: '0deg' },
+          position: { yaw: '331.77deg', pitch: '-21.64deg' },
           name: 'Go to e-Sport 3',
         },
         {
           nodeId: 'jw-f2-esport-1',
-          position: { yaw: '180deg', pitch: '0deg' },
+          position: { yaw: '61.11deg', pitch: '-16.42deg' },
           name: 'Go back to e-Sport 1',
-        }
+        },
     ],
     markers: [],
     data: {
@@ -66,20 +61,10 @@ export default [
     defaultPitch: '0deg',
     links: [
         {
-          nodeId: 'jw-f2-reference-10',
-          position: { yaw: '180deg', pitch: '0deg' },
-          name: 'Go back to Reference Area',
-        },
-        {
-          nodeId: 'jw-f2-esport-4',
-          position: { yaw: '0deg', pitch: '0deg' },
-          name: 'Go to e-Sport 4',
-        },
-        {
           nodeId: 'jw-f2-esport-2',
-          position: { yaw: '180deg', pitch: '0deg' },
+          position: { yaw: '161.97deg', pitch: '-22.08deg' },
           name: 'Go back to e-Sport 2',
-        }
+        },
     ],
     markers: [],
     data: {
