@@ -26,7 +26,7 @@ export function initLocationSelector(viewer) {
     
     try {
       // Dynamically import the location module only when needed
-      const module = await import(`../locations/${selectedLocation}/index.js`);
+      const module = await import(`../locations/${selectedLocation}/${selectedLocation}-index.js`);
       const newNodes = module.default;
 
       if (newNodes && newNodes.length > 0) {

@@ -62,7 +62,7 @@ async function bootstrap() {
     const locationSelectHTML = `<select id="location-select" class="navbar-select">${optionsHTML}</select>`;
     
     // 3. Load the initial nodes dynamically BEFORE initializing the viewer
-    const module = await import(`./locations/${defaultBranch}/index.js`);
+    const module = await import(`./locations/${defaultBranch}/${defaultBranch}-index.js`);
     const defaultNodes = module.default;
     
     // 4. Validate if the requested node exists in the loaded branch
@@ -103,6 +103,15 @@ async function bootstrap() {
         'fullscreen',
       ],
       plugins: [
+        [MarkersPlugin, {}],
+        [GalleryPlugin, {}],
+        [MapPlugin, {
+          size: '200px',
+          position: 'bottom left'
+        }],
+        [CompassPlugin, {
+          size: '100px',
+        }],
         [VirtualTourPlugin, {
           renderMode: '3d',
           positionMode: 'manual',
@@ -112,15 +121,6 @@ async function bootstrap() {
           map: {
             imageUrl: 'assets/floor-plans/dummy-map.jpg',
           }
-        }],
-        [CompassPlugin, {
-          size: '100px',
-        }],
-        [GalleryPlugin, {}],
-        [MarkersPlugin, {}],
-        [MapPlugin, {
-          size: '200px',
-          position: 'bottom left'
         }],
       ],
     };
