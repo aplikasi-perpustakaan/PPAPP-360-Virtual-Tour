@@ -71,11 +71,28 @@ export default [
     thumbnail: './images/bt/f1-kids/thumbs/bt-f1-kids-3.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    links: [
+      {
+        nodeId: 'bt-f1-kids-2',
+        position: { yaw: '216.16deg', pitch: '-10.57deg' },
+        name: 'Go to Kids 2',
+      },
+      {
+        nodeId: 'bt-f1-kids-1',
+        position: { yaw: '185.06deg', pitch: '-8.17deg' },
+        name: 'Go to Kids 1',
+      },
+      {
+        nodeId: 'bt-f1-kids-4',
+        position: { yaw: '8.65deg', pitch: '-12.81deg' },
+        name: 'Go to Kids 4',
+      },
+    ],
+    markers: [],
     data: {
       floor: 'f1',
       tags: ['kids'],
     },
-
   },
   {
 
@@ -150,12 +167,12 @@ export default [
     links: [
       {
         nodeId: 'bt-f1-kids-5',
-        position: { yaw: '178.45deg', pitch: '-8.15deg' },
+        position: { yaw: '144.87deg', pitch: '-24.53deg' },
         name: 'Go to Kids 5',
       },
       {
         nodeId: 'bt-f1-kids-7',
-        position: { yaw: '358.45deg', pitch: '-8.15deg' },
+        position: { yaw: '31.18deg', pitch: '-19.17deg' },
         name: 'Go to Kids 7',
       },
     ],
@@ -219,6 +236,11 @@ export default [
         position: { yaw: '178.45deg', pitch: '-8.15deg' },
         name: 'Go to Kids 7',
       },
+      {
+          nodeId: 'bt-f1-backside-2',
+          position: { yaw: '6.41deg', pitch: '-19.58deg' },
+          name: 'Go to Backside 2',
+      }
     ],
     markers: [],
     data: {

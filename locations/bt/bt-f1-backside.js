@@ -11,8 +11,13 @@ export default [
     links: [
         {
           nodeId: 'bt-f1-backside-2',
-          position: { yaw: '358.45deg', pitch: '-8.15deg' },
+          position: { yaw: '269.19deg', pitch: '-35.50deg' },
           name: 'Go to Backside 2',
+        },
+                {
+          nodeId: 'bt-stairs-back-1',
+          position: { yaw: '9.63deg', pitch: '-6.54deg' },
+          name: 'Go to Stairs Back 1',
         },
         {
           nodeId: 'bt-f1-tyt-16',
@@ -37,8 +42,18 @@ export default [
     links: [
         {
           nodeId: 'bt-f1-backside-1',
-          position: { yaw: '178.45deg', pitch: '-8.15deg' },
+          position: { yaw: '92.53deg', pitch: '-19.65deg' },
           name: 'Go to Backside 1',
+        },
+        {
+          nodeId: 'bt-f1-surau-1',
+          position: { yaw: '5.10deg', pitch: '-22.48deg' },
+          name: 'Go to Surau 1',
+        },
+        {
+          nodeId: 'bt-f1-kids-8',
+          position: { yaw: '198.32deg', pitch: '-6.68deg' },
+          name: 'Go to Kids',
         },
       ],
     markers: [],

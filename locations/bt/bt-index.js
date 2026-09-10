@@ -13,6 +13,7 @@ import btStairsFrontSection from './bt-stairs-front.js';
 import btStairsBackSection from './bt-stairs-back.js';
 import btF2ReadingSection from './bt-f2-reading.js';
 import btF2BacksideSection from './bt-f2-backside.js';
+import btF2SurauSection from './bt-f2-surau.js';
 
 export default [
   ...btExtOutsideSection,
@@ -20,6 +21,7 @@ export default [
   ...btF1KidsSection,
   ...btF1TytSection,
   ...btF1SurauSection,
+  ...btF2SurauSection,
   ...btF1BacksideSection,
   ...btRampSection,
   ...btStairsFrontSection,

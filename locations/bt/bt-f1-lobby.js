@@ -16,6 +16,7 @@ export default [
           position: { yaw: '186.18deg', pitch: '-7.78deg' },
           name: 'Exit to Outside 5',
         },
+        
         {
           nodeId: 'bt-f1-lobby-2',
           position: { yaw: '7.08deg', pitch: '-7.24deg' },

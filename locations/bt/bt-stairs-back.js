@@ -8,7 +8,16 @@ export default [
     thumbnail: './images/bt/stairs-back/thumbs/bt-stairs-back-1.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
-    links: [],
+    links: [        
+      {
+          nodeId: 'bt-f2-backside-1',
+          position: { yaw: '265.41deg', pitch: '-54.05deg' },
+          name: 'Go to Backside 1',
+        },{
+          nodeId: 'bt-f1-backside-1',
+          position: { yaw: '169.08deg', pitch: '-36.26deg' },
+          name: 'Go to Backside 1',
+        },],
     markers: [],
     data: {
       floor: 'stairs',
