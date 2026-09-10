@@ -9,13 +9,13 @@ export default [
     defaultPitch: '0deg',
     links: [
         {
-          nodeId: 'jw-gf-main-area',
-          position: { yaw: '180deg', pitch: '0deg' },
-          name: 'Go to Ground Floor Main Area',
+          nodeId: 'jw-ext-outside-6',
+          position: { yaw: '88.17deg', pitch: '-53.59deg' },
+          name: 'Go to Outside 6',
         },
         {
           nodeId: 'jw-f1-lobby-2',
-          position: { yaw: '0deg', pitch: '0deg' },
+          position: { yaw: '279.08deg', pitch: '-23.92deg' },
           name: 'Go to Lobby 2',
         }
     ],
@@ -39,9 +39,14 @@ export default [
           position: { yaw: '0deg', pitch: '0deg' },
           name: 'Go to Lobby 3',
         },
+                {
+          nodeId: 'jw-ext-outside-7',
+          position: { yaw: '191.69deg', pitch: '-40.58deg' },
+          name: 'Go to Outside 7',
+        },
         {
           nodeId: 'jw-f1-lobby-1',
-          position: { yaw: '180deg', pitch: '0deg' },
+          position: { yaw: '104.78deg', pitch: '-24.36deg' },
           name: 'Go back to Lobby 1',
         }
     ],
