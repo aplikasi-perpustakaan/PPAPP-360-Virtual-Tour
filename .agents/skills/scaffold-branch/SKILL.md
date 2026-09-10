@@ -128,9 +128,10 @@ Image directories: 5 created
 
 Next steps:
   1. Add real panoramic photos to replace placeholders
-  2. Set defaultYaw for each scene based on preferred starting view
-  3. Add cross-section links (lobby ↔ reading, etc.)
-  4. Add markers for points of interest
+  2. Generate 2D thumbnails: python scripts/generate-thumbnails.py --branch {branch} --update-scenes
+  3. Set defaultYaw for each scene based on preferred starting view
+  4. Add cross-section links (lobby <-> reading, etc.)
+  5. Add markers for points of interest
 ```
 
 ## Naming Conventions for Import Variables

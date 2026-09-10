@@ -106,7 +106,7 @@ Use the canonical template from the `scene-data-conventions` rule:
   name: '{Floor Title} – {Section Title} {N}',
   caption: '{BRANCH} – {Floor Title} – {Section Title} {N}',
   panorama: './images/{branch}/{section}/{branch}-{section}-{N}.jpg',
-  thumbnail: './images/{branch}/{section}/{branch}-{section}-{N}.jpg',
+  thumbnail: './images/{branch}/{section}/thumbs/{branch}-{section}-{N}.jpg',
   defaultYaw: '{defaultYaw}',
   defaultPitch: '{defaultPitch}',
   links: [],
@@ -118,25 +118,42 @@ Use the canonical template from the `scene-data-conventions` rule:
 }
 ```
 
-### Step 6: Create Links (Optional)
+### Step 6: Generate 2D Thumbnail
+
+**MANDATORY** — After placing the panorama image and creating the scene data, generate the flat perspective thumbnail. Use the `generate-thumbnail` skill for custom yaw/pitch, or run the batch script:
+
+```powershell
+python scripts/generate-thumbnails.py --branch {branch} --update-scenes
+```
+
+This extracts a rectilinear (flat perspective) crop from the equirectangular panorama at the scene's `defaultYaw`/`defaultPitch` and saves it to:
+`images/{branch}/{section}/thumbs/{branch}-{section}-{N}.jpg`
+
+> **NEVER** skip this step. The `thumbnail:` field must always point to the `thumbs/` path, not the raw panorama.
+
+### Step 7: Create Links (Optional)
 
 If `linkTo` is specified, use the `bidirectional-link` skill to create both forward and reverse links.
 
-### Step 7: Report
+### Step 8: Report
 
 ```
-✅ Scene added:
+Scene added:
    ID: bt-f1-lobby-3
    File: locations/bt/f1-lobby.js
-   Image: images/bt/f1-lobby/bt-f1-lobby-3.jpg (7.2 MB, 8192×4096)
-   Links: bt-f1-lobby-2 ↔ bt-f1-lobby-3
+   Image: images/bt/f1-lobby/bt-f1-lobby-3.jpg (7.2 MB, 8192x4096)
+   Thumb: images/bt/f1-lobby/thumbs/bt-f1-lobby-3.jpg (25 KB, 400x300)
+   Links: bt-f1-lobby-2 <-> bt-f1-lobby-3
 ```
 
 ## Validation Checks
 
 Before completing, verify:
 - [ ] Image file exists at the expected path
+- [ ] **Thumbnail file exists in the `thumbs/` subfolder**
+- [ ] **Scene `thumbnail:` field points to `thumbs/` path, NOT the panorama**
 - [ ] Scene ID is unique (not duplicated in any branch)
 - [ ] Section file exports a valid array
 - [ ] index.js imports the section (if new file)
 - [ ] Links reference valid, existing scene IDs
+

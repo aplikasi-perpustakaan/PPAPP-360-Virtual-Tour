@@ -2,7 +2,6 @@
 // Combines all sections for JW
 // ────────────────────────────────────────────────────────────────
 
-import gfMainAreaSection from './gf-main-area.js';
 import f1KidsSection from './f1-kids.js';
 import f1LobbySection from './f1-lobby.js';
 import f2EsportSection from './f2-esport.js';
@@ -13,7 +12,6 @@ import stairsSection from './stairs.js';
 
 export default [
   ...extOutsideSection,
-  ...gfMainAreaSection,
   ...f1KidsSection,
   ...f1LobbySection,
   ...f2EsportSection,

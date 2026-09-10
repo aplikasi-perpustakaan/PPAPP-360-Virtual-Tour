@@ -73,7 +73,7 @@ export default [
     name: '{Floor} – {Section} 1',
     caption: '{BRANCH} – {Floor} – {Section} 1',
     panorama: './images/{branch}/{section}/{branch}-{section}-1.jpg',
-    thumbnail: './images/{branch}/{section}/{branch}-{section}-1.jpg',
+    thumbnail: './images/{branch}/{section}/thumbs/{branch}-{section}-1.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [
@@ -106,9 +106,10 @@ export default [
 3. **Last scene**: Has only a backward link (no forward neighbor).
 4. **Extra links**: Appended to the links array of the specified scene number.
 5. **Image paths**: Use subdirectory structure by default: `./images/{branch}/{section}/{branch}-{section}-{N}.jpg`
-6. **Scene IDs**: Follow pattern `{branch}-{section}-{N}` (e.g., `bt-f2-reading-1`).
-7. **Captions**: Use format `{BRANCH_UPPER} – {Floor Title} – {Section Title} {N}`.
-8. **Name**: Use format `{Floor Title} – {Section Title} {N}`.
+6. **Thumbnail paths**: Always use `thumbs/` subdirectory: `./images/{branch}/{section}/thumbs/{branch}-{section}-{N}.jpg`
+7. **Scene IDs**: Follow pattern `{branch}-{section}-{N}` (e.g., `bt-f2-reading-1`).
+8. **Captions**: Use format `{BRANCH_UPPER} – {Floor Title} – {Section Title} {N}`.
+9. **Name**: Use format `{Floor Title} – {Section Title} {N}`.
 
 ## Name Formatting
 
@@ -122,7 +123,12 @@ After generating the section file, also:
 
 1. **Check `index.js`**: Verify the new section is imported and spread in `locations/{branch}/index.js`. If not, update it.
 2. **Create image directory**: Ensure `images/{branch}/{section}/` exists (or remind user to create it and add photos).
-3. **Report**: Tell the user how many scenes were created and what image files are expected.
+3. **Generate 2D thumbnails**: Once panorama images are placed, run the thumbnail generator to create flat perspective thumbnails:
+   ```bash
+   python scripts/generate-thumbnails.py --branch {branch} --update-scenes
+   ```
+   Or use the `generate-thumbnail` skill for individual scenes with custom yaw/pitch.
+4. **Report**: Tell the user how many scenes were created and what image files are expected.
 
 ## Example Interaction
 
@@ -131,7 +137,8 @@ After generating the section file, also:
 **Agent executes**:
 1. Infers: `branch=bt`, `section=f2-backside`, `floor=f2`, `count=15`
 2. Uses defaults: `forwardYaw=358.45deg`, `backwardYaw=178.45deg`, `pitch=-8.15deg`
-3. Generates `locations/bt/f2-backside.js` with 15 chained scenes
+3. Generates `locations/bt/f2-backside.js` with 15 chained scenes (thumbnails pointing to `thumbs/` subfolder)
 4. Updates `locations/bt/index.js` to import and spread the new section
 5. Creates `images/bt/f2-backside/` directory
-6. Reports: "Created 15 scenes (bt-f2-backside-1 through bt-f2-backside-15). Place images in `images/bt/f2-backside/`."
+6. Generates 2D thumbnails: `python scripts/generate-thumbnails.py --branch bt --update-scenes`
+7. Reports: "Created 15 scenes (bt-f2-backside-1 through bt-f2-backside-15). Place images in `images/bt/f2-backside/`."

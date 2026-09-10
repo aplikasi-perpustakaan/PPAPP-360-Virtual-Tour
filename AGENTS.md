@@ -62,8 +62,8 @@ export default [
     id: '{branch}-{floor}-{description}',
     name: '{Floor} – {Area Name}',
     caption: '{BRANCH} – {Floor} – {Area Name}',
-    panorama: './images/{branch}/{branch}-{floor}-{description}.jpg',
-    thumbnail: './images/{branch}/{branch}-{floor}-{description}.jpg',
+    panorama: './images/{branch}/{section}/{branch}-{section}-{N}.jpg',
+    thumbnail: './images/{branch}/{section}/thumbs/{branch}-{section}-{N}.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [],
@@ -79,6 +79,7 @@ export default [
 - Use `createInfoMarker()`, `createAudioMarker()`, etc. from `js/marker-templates.js` for marker HTML.
 - Always include the `data` metadata field with `floor` and `tags` properties.
 - Angle values must use degree strings: `'80deg'`, `'-5deg'`.
+- **Thumbnails MUST point to the `thumbs/` subfolder**, never to the raw panorama file.
 
 ## JavaScript Code Style
 
@@ -101,4 +102,17 @@ export default [
 - Format: `.jpg` for panoramas (quality 80-85%, target < 10 MB).
 - Resolution: minimum 4096×2048, recommended 8192×4096.
 - Aspect ratio: always 2:1 (equirectangular projection).
-- Store in per-branch subdirectories: `images/{branch}/`.
+- Store in per-branch subdirectories: `images/{branch}/{section}/`.
+
+## Thumbnail Standards
+
+- **MANDATORY**: Every scene MUST have a flat perspective (rectilinear) thumbnail. Never use the raw equirectangular panorama as a thumbnail.
+- **When adding a new scene**, always generate its 2D thumbnail immediately after placing the panorama image. Use the `generate-thumbnail` skill or run the script directly:
+  ```bash
+  python scripts/generate-thumbnails.py --branch {branch} --update-scenes
+  ```
+- Thumbnails are stored in `images/{branch}/{section}/thumbs/{scene-id}.jpg`.
+- Thumbnail specs: 400×300 px, JPEG 80% quality, 90° horizontal FOV.
+- The thumbnail captures the scene's `defaultYaw`/`defaultPitch` view direction.
+- The `thumbnail:` field in scene data MUST point to the `thumbs/` path, NOT the panorama path.
+
