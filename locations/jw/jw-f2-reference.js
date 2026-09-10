@@ -103,7 +103,7 @@ export default [
     links: [
       {
         nodeId: 'jw-f2-reference-5',
-        position: { yaw: '103.79deg', pitch: '-20.80deg' },
+        position: { yaw: '104.38deg', pitch: '-10.64deg' },
         name: 'Go to Reference 5',
       },
       {

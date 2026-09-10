@@ -82,11 +82,6 @@ export default [
     defaultPitch: '0deg',
     links: [
         {
-          nodeId: 'jw-f2-reference-10',
-          position: { yaw: '180deg', pitch: '0deg' },
-          name: 'Go back to Reference Area',
-        },
-        {
           nodeId: 'jw-f2-esport-5',
           position: { yaw: '276.17deg', pitch: '-8.20deg' },
           name: 'Go to e-Sport 5',
