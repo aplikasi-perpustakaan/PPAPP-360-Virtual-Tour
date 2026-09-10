@@ -22,7 +22,12 @@ export default [
         nodeId: 'jw-stairs-1',
         position: { yaw: '82.47deg', pitch: '-33.61deg' },
         name: 'Go to Stairs',
-      }
+      },
+      {
+        nodeId: 'jw-f2-reference-8',
+        position: { yaw: '262.09deg', pitch: '-29.46deg' },
+        name: 'Go to Reference 8',
+      },
     ],
     markers: [],
     data: {
@@ -201,19 +206,9 @@ export default [
     defaultPitch: '0deg',
     links: [
       {
-        nodeId: 'jw-stairs-1',
-        position: { yaw: '180deg', pitch: '0deg' },
-        name: 'Go to Stairs',
-      },
-      {
         nodeId: 'jw-f2-reference-9',
-        position: { yaw: '0deg', pitch: '0deg' },
+        position: { yaw: '276.46deg', pitch: '-11.51deg' },
         name: 'Go to Reference 9',
-      },
-      {
-        nodeId: 'jw-f2-reference-7',
-        position: { yaw: '180deg', pitch: '0deg' },
-        name: 'Go back to Reference 7',
       }
     ],
     markers: [],
@@ -511,15 +506,15 @@ export default [
     defaultPitch: '0deg',
     links: [
       {
-        nodeId: 'jw-stairs-1',
-        position: { yaw: '180deg', pitch: '0deg' },
-        name: 'Go to Stairs',
+        nodeId: 'jw-f2-facilities-1',
+        position: { yaw: '89.00deg', pitch: '-19.70deg' },
+        name: 'Go to Facilities 1',
       },
       {
-        nodeId: 'jw-f2-reference-17',
-        position: { yaw: '180deg', pitch: '0deg' },
-        name: 'Go back to Reference 17',
-      }
+        nodeId: 'jw-f2-reference-3',
+        position: { yaw: '206.03deg', pitch: '-42.74deg' },
+        name: 'Go to Reference 3',
+      },
     ],
     markers: [],
     data: {
