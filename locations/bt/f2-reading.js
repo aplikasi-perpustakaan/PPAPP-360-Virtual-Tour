@@ -5,7 +5,7 @@ export default [
     name: 'Floor 2 – Reading 1',
     caption: 'BT – Floor 2 – Reading 1',
     panorama: './images/bt/f2-reading/bt-f2-reading-1.jpg',
-    thumbnail: './images/bt/f2-reading/bt-f2-reading-1.jpg',
+    thumbnail: './images/bt/f2-reading/thumbs/bt-f2-reading-1.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [
@@ -26,7 +26,7 @@ export default [
     name: 'Floor 2 – Reading 2',
     caption: 'BT – Floor 2 – Reading 2',
     panorama: './images/bt/f2-reading/bt-f2-reading-2.jpg',
-    thumbnail: './images/bt/f2-reading/bt-f2-reading-2.jpg',
+    thumbnail: './images/bt/f2-reading/thumbs/bt-f2-reading-2.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [
@@ -52,7 +52,7 @@ export default [
     name: 'Floor 2 – Reading 3',
     caption: 'BT – Floor 2 – Reading 3',
     panorama: './images/bt/f2-reading/bt-f2-reading-3.jpg',
-    thumbnail: './images/bt/f2-reading/bt-f2-reading-3.jpg',
+    thumbnail: './images/bt/f2-reading/thumbs/bt-f2-reading-3.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [
@@ -78,7 +78,7 @@ export default [
     name: 'Floor 2 – Reading 4',
     caption: 'BT – Floor 2 – Reading 4',
     panorama: './images/bt/f2-reading/bt-f2-reading-4.jpg',
-    thumbnail: './images/bt/f2-reading/bt-f2-reading-4.jpg',
+    thumbnail: './images/bt/f2-reading/thumbs/bt-f2-reading-4.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [
@@ -104,7 +104,7 @@ export default [
     name: 'Floor 2 – Reading 5',
     caption: 'BT – Floor 2 – Reading 5',
     panorama: './images/bt/f2-reading/bt-f2-reading-5.jpg',
-    thumbnail: './images/bt/f2-reading/bt-f2-reading-5.jpg',
+    thumbnail: './images/bt/f2-reading/thumbs/bt-f2-reading-5.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [
@@ -130,7 +130,7 @@ export default [
     name: 'Floor 2 – Reading 6',
     caption: 'BT – Floor 2 – Reading 6',
     panorama: './images/bt/f2-reading/bt-f2-reading-6.jpg',
-    thumbnail: './images/bt/f2-reading/bt-f2-reading-6.jpg',
+    thumbnail: './images/bt/f2-reading/thumbs/bt-f2-reading-6.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [
@@ -156,7 +156,7 @@ export default [
     name: 'Floor 2 – Reading 7',
     caption: 'BT – Floor 2 – Reading 7',
     panorama: './images/bt/f2-reading/bt-f2-reading-7.jpg',
-    thumbnail: './images/bt/f2-reading/bt-f2-reading-7.jpg',
+    thumbnail: './images/bt/f2-reading/thumbs/bt-f2-reading-7.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [
@@ -182,7 +182,7 @@ export default [
     name: 'Floor 2 – Reading 8',
     caption: 'BT – Floor 2 – Reading 8',
     panorama: './images/bt/f2-reading/bt-f2-reading-8.jpg',
-    thumbnail: './images/bt/f2-reading/bt-f2-reading-8.jpg',
+    thumbnail: './images/bt/f2-reading/thumbs/bt-f2-reading-8.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [
@@ -208,7 +208,7 @@ export default [
     name: 'Floor 2 – Reading 9',
     caption: 'BT – Floor 2 – Reading 9',
     panorama: './images/bt/f2-reading/bt-f2-reading-9.jpg',
-    thumbnail: './images/bt/f2-reading/bt-f2-reading-9.jpg',
+    thumbnail: './images/bt/f2-reading/thumbs/bt-f2-reading-9.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [
@@ -234,7 +234,7 @@ export default [
     name: 'Floor 2 – Reading 10',
     caption: 'BT – Floor 2 – Reading 10',
     panorama: './images/bt/f2-reading/bt-f2-reading-10.jpg',
-    thumbnail: './images/bt/f2-reading/bt-f2-reading-10.jpg',
+    thumbnail: './images/bt/f2-reading/thumbs/bt-f2-reading-10.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [
@@ -260,7 +260,7 @@ export default [
     name: 'Floor 2 – Reading 11',
     caption: 'BT – Floor 2 – Reading 11',
     panorama: './images/bt/f2-reading/bt-f2-reading-11.jpg',
-    thumbnail: './images/bt/f2-reading/bt-f2-reading-11.jpg',
+    thumbnail: './images/bt/f2-reading/thumbs/bt-f2-reading-11.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [
@@ -286,7 +286,7 @@ export default [
     name: 'Floor 2 – Reading 12',
     caption: 'BT – Floor 2 – Reading 12',
     panorama: './images/bt/f2-reading/bt-f2-reading-12.jpg',
-    thumbnail: './images/bt/f2-reading/bt-f2-reading-12.jpg',
+    thumbnail: './images/bt/f2-reading/thumbs/bt-f2-reading-12.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [
@@ -312,7 +312,7 @@ export default [
     name: 'Floor 2 – Reading 13',
     caption: 'BT – Floor 2 – Reading 13',
     panorama: './images/bt/f2-reading/bt-f2-reading-13.jpg',
-    thumbnail: './images/bt/f2-reading/bt-f2-reading-13.jpg',
+    thumbnail: './images/bt/f2-reading/thumbs/bt-f2-reading-13.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [
@@ -338,7 +338,7 @@ export default [
     name: 'Floor 2 – Reading 14',
     caption: 'BT – Floor 2 – Reading 14',
     panorama: './images/bt/f2-reading/bt-f2-reading-14.jpg',
-    thumbnail: './images/bt/f2-reading/bt-f2-reading-14.jpg',
+    thumbnail: './images/bt/f2-reading/thumbs/bt-f2-reading-14.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [
@@ -364,7 +364,7 @@ export default [
     name: 'Floor 2 – Reading 15',
     caption: 'BT – Floor 2 – Reading 15',
     panorama: './images/bt/f2-reading/bt-f2-reading-15.jpg',
-    thumbnail: './images/bt/f2-reading/bt-f2-reading-15.jpg',
+    thumbnail: './images/bt/f2-reading/thumbs/bt-f2-reading-15.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [
@@ -390,7 +390,7 @@ export default [
     name: 'Floor 2 – Reading 16',
     caption: 'BT – Floor 2 – Reading 16',
     panorama: './images/bt/f2-reading/bt-f2-reading-16.jpg',
-    thumbnail: './images/bt/f2-reading/bt-f2-reading-16.jpg',
+    thumbnail: './images/bt/f2-reading/thumbs/bt-f2-reading-16.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [
@@ -416,7 +416,7 @@ export default [
     name: 'Floor 2 – Reading 17',
     caption: 'BT – Floor 2 – Reading 17',
     panorama: './images/bt/f2-reading/bt-f2-reading-17.jpg',
-    thumbnail: './images/bt/f2-reading/bt-f2-reading-17.jpg',
+    thumbnail: './images/bt/f2-reading/thumbs/bt-f2-reading-17.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [
@@ -442,7 +442,7 @@ export default [
     name: 'Floor 2 – Reading 18',
     caption: 'BT – Floor 2 – Reading 18',
     panorama: './images/bt/f2-reading/bt-f2-reading-18.jpg',
-    thumbnail: './images/bt/f2-reading/bt-f2-reading-18.jpg',
+    thumbnail: './images/bt/f2-reading/thumbs/bt-f2-reading-18.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [
@@ -468,7 +468,7 @@ export default [
     name: 'Floor 2 – Reading 19',
     caption: 'BT – Floor 2 – Reading 19',
     panorama: './images/bt/f2-reading/bt-f2-reading-19.jpg',
-    thumbnail: './images/bt/f2-reading/bt-f2-reading-19.jpg',
+    thumbnail: './images/bt/f2-reading/thumbs/bt-f2-reading-19.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [
@@ -494,7 +494,7 @@ export default [
     name: 'Floor 2 – Reading 20',
     caption: 'BT – Floor 2 – Reading 20',
     panorama: './images/bt/f2-reading/bt-f2-reading-20.jpg',
-    thumbnail: './images/bt/f2-reading/bt-f2-reading-20.jpg',
+    thumbnail: './images/bt/f2-reading/thumbs/bt-f2-reading-20.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [
@@ -520,7 +520,7 @@ export default [
     name: 'Floor 2 – Reading 21',
     caption: 'BT – Floor 2 – Reading 21',
     panorama: './images/bt/f2-reading/bt-f2-reading-21.jpg',
-    thumbnail: './images/bt/f2-reading/bt-f2-reading-21.jpg',
+    thumbnail: './images/bt/f2-reading/thumbs/bt-f2-reading-21.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [
@@ -546,7 +546,7 @@ export default [
     name: 'Floor 2 – Reading 22',
     caption: 'BT – Floor 2 – Reading 22',
     panorama: './images/bt/f2-reading/bt-f2-reading-22.jpg',
-    thumbnail: './images/bt/f2-reading/bt-f2-reading-22.jpg',
+    thumbnail: './images/bt/f2-reading/thumbs/bt-f2-reading-22.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [
@@ -572,7 +572,7 @@ export default [
     name: 'Floor 2 – Reading 23',
     caption: 'BT – Floor 2 – Reading 23',
     panorama: './images/bt/f2-reading/bt-f2-reading-23.jpg',
-    thumbnail: './images/bt/f2-reading/bt-f2-reading-23.jpg',
+    thumbnail: './images/bt/f2-reading/thumbs/bt-f2-reading-23.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [
@@ -598,7 +598,7 @@ export default [
     name: 'Floor 2 – Reading 24',
     caption: 'BT – Floor 2 – Reading 24',
     panorama: './images/bt/f2-reading/bt-f2-reading-24.jpg',
-    thumbnail: './images/bt/f2-reading/bt-f2-reading-24.jpg',
+    thumbnail: './images/bt/f2-reading/thumbs/bt-f2-reading-24.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [
@@ -624,7 +624,7 @@ export default [
     name: 'Floor 2 – Reading 25',
     caption: 'BT – Floor 2 – Reading 25',
     panorama: './images/bt/f2-reading/bt-f2-reading-25.jpg',
-    thumbnail: './images/bt/f2-reading/bt-f2-reading-25.jpg',
+    thumbnail: './images/bt/f2-reading/thumbs/bt-f2-reading-25.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [

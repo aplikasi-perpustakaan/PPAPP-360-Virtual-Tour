@@ -7,7 +7,7 @@ export default [
       name: 'Exterior – Outside 1',
       caption: 'BT – Exterior – Outside 1',
       panorama: './images/bt/ext-outside/bt-ext-outside-1.jpg',
-      thumbnail: './images/bt/ext-outside/bt-ext-outside-1.jpg',
+      thumbnail: './images/bt/ext-outside/thumbs/bt-ext-outside-1.jpg',
       defaultYaw: '0deg',
       defaultPitch: '0deg',
       links: [
@@ -30,7 +30,7 @@ export default [
       name: 'Exterior – Outside 2',
       caption: 'BT – Exterior – Outside 2',
       panorama: './images/bt/ext-outside/bt-ext-outside-2.jpg',
-      thumbnail: './images/bt/ext-outside/bt-ext-outside-2.jpg',
+      thumbnail: './images/bt/ext-outside/thumbs/bt-ext-outside-2.jpg',
       defaultYaw: '0deg',
       defaultPitch: '0deg',
       links: [
@@ -58,7 +58,7 @@ export default [
       name: 'Exterior – Outside 3',
       caption: 'BT – Exterior – Outside 3',
       panorama: './images/bt/ext-outside/bt-ext-outside-3.jpg',
-      thumbnail: './images/bt/ext-outside/bt-ext-outside-3.jpg',
+      thumbnail: './images/bt/ext-outside/thumbs/bt-ext-outside-3.jpg',
       defaultYaw: '0deg',
       defaultPitch: '0deg',
       links: [
@@ -86,7 +86,7 @@ export default [
       name: 'Exterior – Outside 4',
       caption: 'BT – Exterior – Outside 4',
       panorama: './images/bt/ext-outside/bt-ext-outside-4.jpg',
-      thumbnail: './images/bt/ext-outside/bt-ext-outside-4.jpg',
+      thumbnail: './images/bt/ext-outside/thumbs/bt-ext-outside-4.jpg',
       defaultYaw: '0deg',
       defaultPitch: '0deg',
       links: [
@@ -114,7 +114,7 @@ export default [
       name: 'Exterior – Outside 5',
       caption: 'BT – Exterior – Outside 5',
       panorama: './images/bt/ext-outside/bt-ext-outside-5.jpg',
-      thumbnail: './images/bt/ext-outside/bt-ext-outside-5.jpg',
+      thumbnail: './images/bt/ext-outside/thumbs/bt-ext-outside-5.jpg',
       defaultYaw: '0deg',
       defaultPitch: '0deg',
       links: [

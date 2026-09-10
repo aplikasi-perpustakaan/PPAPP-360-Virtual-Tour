@@ -4,7 +4,7 @@ export default [
     name: 'Floor 1 – Kids Area 1',
     caption: 'JW – Floor 1 – Kids Area 1',
     panorama: './images/jw/f1-kids/jw-f1-kids-1.jpg',
-    thumbnail: './images/jw/f1-kids/jw-f1-kids-1.jpg',
+    thumbnail: './images/jw/f1-kids/thumbs/jw-f1-kids-1.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [
@@ -30,7 +30,7 @@ export default [
     name: 'Floor 1 – Kids Area 2',
     caption: 'JW – Floor 1 – Kids Area 2',
     panorama: './images/jw/f1-kids/jw-f1-kids-2.jpg',
-    thumbnail: './images/jw/f1-kids/jw-f1-kids-2.jpg',
+    thumbnail: './images/jw/f1-kids/thumbs/jw-f1-kids-2.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [
@@ -61,7 +61,7 @@ export default [
     name: 'Floor 1 – Kids Area 3',
     caption: 'JW – Floor 1 – Kids Area 3',
     panorama: './images/jw/f1-kids/jw-f1-kids-3.jpg',
-    thumbnail: './images/jw/f1-kids/jw-f1-kids-3.jpg',
+    thumbnail: './images/jw/f1-kids/thumbs/jw-f1-kids-3.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [
@@ -92,7 +92,7 @@ export default [
     name: 'Floor 1 – Kids Area 4',
     caption: 'JW – Floor 1 – Kids Area 4',
     panorama: './images/jw/f1-kids/jw-f1-kids-4.jpg',
-    thumbnail: './images/jw/f1-kids/jw-f1-kids-4.jpg',
+    thumbnail: './images/jw/f1-kids/thumbs/jw-f1-kids-4.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [
@@ -123,7 +123,7 @@ export default [
     name: 'Floor 1 – Kids Area 5',
     caption: 'JW – Floor 1 – Kids Area 5',
     panorama: './images/jw/f1-kids/jw-f1-kids-5.jpg',
-    thumbnail: './images/jw/f1-kids/jw-f1-kids-5.jpg',
+    thumbnail: './images/jw/f1-kids/thumbs/jw-f1-kids-5.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [
@@ -154,7 +154,7 @@ export default [
     name: 'Floor 1 – Kids Area 6',
     caption: 'JW – Floor 1 – Kids Area 6',
     panorama: './images/jw/f1-kids/jw-f1-kids-6.jpg',
-    thumbnail: './images/jw/f1-kids/jw-f1-kids-6.jpg',
+    thumbnail: './images/jw/f1-kids/thumbs/jw-f1-kids-6.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [

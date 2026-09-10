@@ -4,7 +4,7 @@ export default [
     name: 'Floor 1 – Lobby 1',
     caption: 'JW – Floor 1 – Lobby 1',
     panorama: './images/jw/f1-lobby/jw-f1-lobby-1.jpg',
-    thumbnail: './images/jw/f1-lobby/jw-f1-lobby-1.jpg',
+    thumbnail: './images/jw/f1-lobby/thumbs/jw-f1-lobby-1.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [
@@ -35,7 +35,7 @@ export default [
     name: 'Floor 1 – Lobby 2',
     caption: 'JW – Floor 1 – Lobby 2',
     panorama: './images/jw/f1-lobby/jw-f1-lobby-2.jpg',
-    thumbnail: './images/jw/f1-lobby/jw-f1-lobby-2.jpg',
+    thumbnail: './images/jw/f1-lobby/thumbs/jw-f1-lobby-2.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [
@@ -66,7 +66,7 @@ export default [
     name: 'Floor 1 – Lobby 3',
     caption: 'JW – Floor 1 – Lobby 3',
     panorama: './images/jw/f1-lobby/jw-f1-lobby-3.jpg',
-    thumbnail: './images/jw/f1-lobby/jw-f1-lobby-3.jpg',
+    thumbnail: './images/jw/f1-lobby/thumbs/jw-f1-lobby-3.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [
@@ -112,7 +112,7 @@ export default [
     name: 'Floor 1 – Lobby 4',
     caption: 'JW – Floor 1 – Lobby 4',
     panorama: './images/jw/f1-lobby/jw-f1-lobby-4.jpg',
-    thumbnail: './images/jw/f1-lobby/jw-f1-lobby-4.jpg',
+    thumbnail: './images/jw/f1-lobby/thumbs/jw-f1-lobby-4.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [
@@ -138,7 +138,7 @@ export default [
     name: 'Floor 1 – Lobby 5',
     caption: 'JW – Floor 1 – Lobby 5',
     panorama: './images/jw/f1-lobby/jw-f1-lobby-5.jpg',
-    thumbnail: './images/jw/f1-lobby/jw-f1-lobby-5.jpg',
+    thumbnail: './images/jw/f1-lobby/thumbs/jw-f1-lobby-5.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [
@@ -169,7 +169,7 @@ export default [
     name: 'Floor 1 – Lobby 6',
     caption: 'JW – Floor 1 – Lobby 6',
     panorama: './images/jw/f1-lobby/jw-f1-lobby-6.jpg',
-    thumbnail: './images/jw/f1-lobby/jw-f1-lobby-6.jpg',
+    thumbnail: './images/jw/f1-lobby/thumbs/jw-f1-lobby-6.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [
@@ -195,7 +195,7 @@ export default [
     name: 'Floor 1 – Lobby 7',
     caption: 'JW – Floor 1 – Lobby 7',
     panorama: './images/jw/f1-lobby/jw-f1-lobby-7.jpg',
-    thumbnail: './images/jw/f1-lobby/jw-f1-lobby-7.jpg',
+    thumbnail: './images/jw/f1-lobby/thumbs/jw-f1-lobby-7.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [
@@ -216,7 +216,7 @@ export default [
     name: 'Floor 1 – Lobby 8',
     caption: 'JW – Floor 1 – Lobby 8',
     panorama: './images/jw/f1-lobby/jw-f1-lobby-8.jpg',
-    thumbnail: './images/jw/f1-lobby/jw-f1-lobby-8.jpg',
+    thumbnail: './images/jw/f1-lobby/thumbs/jw-f1-lobby-8.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [
@@ -252,7 +252,7 @@ export default [
     name: 'Floor 1 – Lobby 9',
     caption: 'JW – Floor 1 – Lobby 9',
     panorama: './images/jw/f1-lobby/jw-f1-lobby-9.jpg',
-    thumbnail: './images/jw/f1-lobby/jw-f1-lobby-9.jpg',
+    thumbnail: './images/jw/f1-lobby/thumbs/jw-f1-lobby-9.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [
@@ -273,7 +273,7 @@ export default [
     name: 'Floor 1 – Lobby 10',
     caption: 'JW – Floor 1 – Lobby 10',
     panorama: './images/jw/f1-lobby/jw-f1-lobby-10.jpg',
-    thumbnail: './images/jw/f1-lobby/jw-f1-lobby-10.jpg',
+    thumbnail: './images/jw/f1-lobby/thumbs/jw-f1-lobby-10.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [
@@ -299,7 +299,7 @@ export default [
     name: 'Floor 1 – Lobby 11',
     caption: 'JW – Floor 1 – Lobby 11',
     panorama: './images/jw/f1-lobby/jw-f1-lobby-11.jpg',
-    thumbnail: './images/jw/f1-lobby/jw-f1-lobby-11.jpg',
+    thumbnail: './images/jw/f1-lobby/thumbs/jw-f1-lobby-11.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [
@@ -325,7 +325,7 @@ export default [
     name: 'Floor 1 – Lobby 12',
     caption: 'JW – Floor 1 – Lobby 12',
     panorama: './images/jw/f1-lobby/jw-f1-lobby-12.jpg',
-    thumbnail: './images/jw/f1-lobby/jw-f1-lobby-12.jpg',
+    thumbnail: './images/jw/f1-lobby/thumbs/jw-f1-lobby-12.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [
@@ -356,7 +356,7 @@ export default [
     name: 'Floor 1 – Lobby 13',
     caption: 'JW – Floor 1 – Lobby 13',
     panorama: './images/jw/f1-lobby/jw-f1-lobby-13.jpg',
-    thumbnail: './images/jw/f1-lobby/jw-f1-lobby-13.jpg',
+    thumbnail: './images/jw/f1-lobby/thumbs/jw-f1-lobby-13.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [
@@ -382,7 +382,7 @@ export default [
     name: 'Floor 1 – Lobby 14',
     caption: 'JW – Floor 1 – Lobby 14',
     panorama: './images/jw/f1-lobby/jw-f1-lobby-14.jpg',
-    thumbnail: './images/jw/f1-lobby/jw-f1-lobby-14.jpg',
+    thumbnail: './images/jw/f1-lobby/thumbs/jw-f1-lobby-14.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [

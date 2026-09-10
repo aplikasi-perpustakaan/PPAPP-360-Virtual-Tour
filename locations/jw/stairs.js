@@ -4,7 +4,7 @@ export default [
     name: 'Floor 1 – Stairs 1',
     caption: 'JW – Floor 1 – Stairs 1',
     panorama: './images/jw/stairs/jw-stairs-1.jpg',
-    thumbnail: './images/jw/stairs/jw-stairs-1.jpg',
+    thumbnail: './images/jw/stairs/thumbs/jw-stairs-1.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [

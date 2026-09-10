@@ -5,7 +5,7 @@ export default [
     name: 'Ramp F1-F2 – 1',
     caption: 'BT – Ramp F1-F2 – 1',
     panorama: './images/bt/ramp/bt-ramp-1.jpg',
-    thumbnail: './images/bt/ramp/bt-ramp-1.jpg',
+    thumbnail: './images/bt/ramp/thumbs/bt-ramp-1.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [
@@ -26,7 +26,7 @@ export default [
     name: 'Ramp F1-F2 – 2',
     caption: 'BT – Ramp F1-F2 – 2',
     panorama: './images/bt/ramp/bt-ramp-2.jpg',
-    thumbnail: './images/bt/ramp/bt-ramp-2.jpg',
+    thumbnail: './images/bt/ramp/thumbs/bt-ramp-2.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [
@@ -52,7 +52,7 @@ export default [
     name: 'Ramp F1-F2 – 3',
     caption: 'BT – Ramp F1-F2 – 3',
     panorama: './images/bt/ramp/bt-ramp-3.jpg',
-    thumbnail: './images/bt/ramp/bt-ramp-3.jpg',
+    thumbnail: './images/bt/ramp/thumbs/bt-ramp-3.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [
@@ -78,7 +78,7 @@ export default [
     name: 'Ramp F1-F2 – 4',
     caption: 'BT – Ramp F1-F2 – 4',
     panorama: './images/bt/ramp/bt-ramp-4.jpg',
-    thumbnail: './images/bt/ramp/bt-ramp-4.jpg',
+    thumbnail: './images/bt/ramp/thumbs/bt-ramp-4.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [

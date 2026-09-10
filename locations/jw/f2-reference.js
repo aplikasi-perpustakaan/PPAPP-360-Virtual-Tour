@@ -4,7 +4,7 @@ export default [
     name: 'Floor 2 – Reference 1',
     caption: 'JW – Floor 2 – Reference 1',
     panorama: './images/jw/f2-reference/jw-f2-reference-1.jpg',
-    thumbnail: './images/jw/f2-reference/jw-f2-reference-1.jpg',
+    thumbnail: './images/jw/f2-reference/thumbs/jw-f2-reference-1.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [
@@ -30,7 +30,7 @@ export default [
     name: 'Floor 2 – Reference 2',
     caption: 'JW – Floor 2 – Reference 2',
     panorama: './images/jw/f2-reference/jw-f2-reference-2.jpg',
-    thumbnail: './images/jw/f2-reference/jw-f2-reference-2.jpg',
+    thumbnail: './images/jw/f2-reference/thumbs/jw-f2-reference-2.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [
@@ -61,7 +61,7 @@ export default [
     name: 'Floor 2 – Reference 3',
     caption: 'JW – Floor 2 – Reference 3',
     panorama: './images/jw/f2-reference/jw-f2-reference-3.jpg',
-    thumbnail: './images/jw/f2-reference/jw-f2-reference-3.jpg',
+    thumbnail: './images/jw/f2-reference/thumbs/jw-f2-reference-3.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [
@@ -92,7 +92,7 @@ export default [
     name: 'Floor 2 – Reference 4',
     caption: 'JW – Floor 2 – Reference 4',
     panorama: './images/jw/f2-reference/jw-f2-reference-4.jpg',
-    thumbnail: './images/jw/f2-reference/jw-f2-reference-4.jpg',
+    thumbnail: './images/jw/f2-reference/thumbs/jw-f2-reference-4.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [
@@ -123,7 +123,7 @@ export default [
     name: 'Floor 2 – Reference 5',
     caption: 'JW – Floor 2 – Reference 5',
     panorama: './images/jw/f2-reference/jw-f2-reference-5.jpg',
-    thumbnail: './images/jw/f2-reference/jw-f2-reference-5.jpg',
+    thumbnail: './images/jw/f2-reference/thumbs/jw-f2-reference-5.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [
@@ -154,7 +154,7 @@ export default [
     name: 'Floor 2 – Reference 6',
     caption: 'JW – Floor 2 – Reference 6',
     panorama: './images/jw/f2-reference/jw-f2-reference-6.jpg',
-    thumbnail: './images/jw/f2-reference/jw-f2-reference-6.jpg',
+    thumbnail: './images/jw/f2-reference/thumbs/jw-f2-reference-6.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [
@@ -185,7 +185,7 @@ export default [
     name: 'Floor 2 – Reference 7',
     caption: 'JW – Floor 2 – Reference 7',
     panorama: './images/jw/f2-reference/jw-f2-reference-7.jpg',
-    thumbnail: './images/jw/f2-reference/jw-f2-reference-7.jpg',
+    thumbnail: './images/jw/f2-reference/thumbs/jw-f2-reference-7.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [
@@ -216,7 +216,7 @@ export default [
     name: 'Floor 2 – Reference 8',
     caption: 'JW – Floor 2 – Reference 8',
     panorama: './images/jw/f2-reference/jw-f2-reference-8.jpg',
-    thumbnail: './images/jw/f2-reference/jw-f2-reference-8.jpg',
+    thumbnail: './images/jw/f2-reference/thumbs/jw-f2-reference-8.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [
@@ -247,7 +247,7 @@ export default [
     name: 'Floor 2 – Reference 9',
     caption: 'JW – Floor 2 – Reference 9',
     panorama: './images/jw/f2-reference/jw-f2-reference-9.jpg',
-    thumbnail: './images/jw/f2-reference/jw-f2-reference-9.jpg',
+    thumbnail: './images/jw/f2-reference/thumbs/jw-f2-reference-9.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [
@@ -278,7 +278,7 @@ export default [
     name: 'Floor 2 – Reference 10',
     caption: 'JW – Floor 2 – Reference 10',
     panorama: './images/jw/f2-reference/jw-f2-reference-10.jpg',
-    thumbnail: './images/jw/f2-reference/jw-f2-reference-10.jpg',
+    thumbnail: './images/jw/f2-reference/thumbs/jw-f2-reference-10.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [
@@ -309,7 +309,7 @@ export default [
     name: 'Floor 2 – Reference 11',
     caption: 'JW – Floor 2 – Reference 11',
     panorama: './images/jw/f2-reference/jw-f2-reference-11.jpg',
-    thumbnail: './images/jw/f2-reference/jw-f2-reference-11.jpg',
+    thumbnail: './images/jw/f2-reference/thumbs/jw-f2-reference-11.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [
@@ -340,7 +340,7 @@ export default [
     name: 'Floor 2 – Reference 12',
     caption: 'JW – Floor 2 – Reference 12',
     panorama: './images/jw/f2-reference/jw-f2-reference-12.jpg',
-    thumbnail: './images/jw/f2-reference/jw-f2-reference-12.jpg',
+    thumbnail: './images/jw/f2-reference/thumbs/jw-f2-reference-12.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [
@@ -371,7 +371,7 @@ export default [
     name: 'Floor 2 – Reference 13',
     caption: 'JW – Floor 2 – Reference 13',
     panorama: './images/jw/f2-reference/jw-f2-reference-13.jpg',
-    thumbnail: './images/jw/f2-reference/jw-f2-reference-13.jpg',
+    thumbnail: './images/jw/f2-reference/thumbs/jw-f2-reference-13.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [
@@ -402,7 +402,7 @@ export default [
     name: 'Floor 2 – Reference 14',
     caption: 'JW – Floor 2 – Reference 14',
     panorama: './images/jw/f2-reference/jw-f2-reference-14.jpg',
-    thumbnail: './images/jw/f2-reference/jw-f2-reference-14.jpg',
+    thumbnail: './images/jw/f2-reference/thumbs/jw-f2-reference-14.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [
@@ -433,7 +433,7 @@ export default [
     name: 'Floor 2 – Reference 15',
     caption: 'JW – Floor 2 – Reference 15',
     panorama: './images/jw/f2-reference/jw-f2-reference-15.jpg',
-    thumbnail: './images/jw/f2-reference/jw-f2-reference-15.jpg',
+    thumbnail: './images/jw/f2-reference/thumbs/jw-f2-reference-15.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [
@@ -464,7 +464,7 @@ export default [
     name: 'Floor 2 – Reference 16',
     caption: 'JW – Floor 2 – Reference 16',
     panorama: './images/jw/f2-reference/jw-f2-reference-16.jpg',
-    thumbnail: './images/jw/f2-reference/jw-f2-reference-16.jpg',
+    thumbnail: './images/jw/f2-reference/thumbs/jw-f2-reference-16.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [
@@ -495,7 +495,7 @@ export default [
     name: 'Floor 2 – Reference 17',
     caption: 'JW – Floor 2 – Reference 17',
     panorama: './images/jw/f2-reference/jw-f2-reference-17.jpg',
-    thumbnail: './images/jw/f2-reference/jw-f2-reference-17.jpg',
+    thumbnail: './images/jw/f2-reference/thumbs/jw-f2-reference-17.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [
@@ -526,7 +526,7 @@ export default [
     name: 'Floor 2 – Reference 18',
     caption: 'JW – Floor 2 – Reference 18',
     panorama: './images/jw/f2-reference/jw-f2-reference-18.jpg',
-    thumbnail: './images/jw/f2-reference/jw-f2-reference-18.jpg',
+    thumbnail: './images/jw/f2-reference/thumbs/jw-f2-reference-18.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [

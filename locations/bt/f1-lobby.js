@@ -7,7 +7,7 @@ export default [
       name: 'Floor 1 – Lobby 1',
       caption: 'BT – Floor 1 – Lobby 1',
       panorama: './images/bt/f1-lobby/bt-f1-lobby-1.jpg',
-      thumbnail: './images/bt/f1-lobby/bt-f1-lobby-1.jpg',
+      thumbnail: './images/bt/f1-lobby/thumbs/bt-f1-lobby-1.jpg',
       defaultYaw: '0deg',
       defaultPitch: '0deg',
       links: [
@@ -43,7 +43,7 @@ export default [
       name: 'Floor 1 – Lobby 2',
       caption: 'BT – Floor 1 – Lobby 2',
       panorama: './images/bt/f1-lobby/bt-f1-lobby-2.jpg',
-      thumbnail: './images/bt/f1-lobby/bt-f1-lobby-2.jpg',
+      thumbnail: './images/bt/f1-lobby/thumbs/bt-f1-lobby-2.jpg',
       defaultYaw: '0deg',
       defaultPitch: '0deg',
       links: [
@@ -81,7 +81,7 @@ export default [
       name: 'Floor 1 – Lobby 3',
       caption: 'BT – Floor 1 – Lobby 3',
       panorama: './images/bt/f1-lobby/bt-f1-lobby-3.jpg',
-      thumbnail: './images/bt/f1-lobby/bt-f1-lobby-3.jpg',
+      thumbnail: './images/bt/f1-lobby/thumbs/bt-f1-lobby-3.jpg',
       defaultYaw: '0deg',
       defaultPitch: '0deg',
       links: [

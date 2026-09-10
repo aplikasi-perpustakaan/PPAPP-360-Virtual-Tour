@@ -4,7 +4,7 @@ export default [
     name: 'Floor 2 – e-Sport 1',
     caption: 'JW – Floor 2 – e-Sport 1',
     panorama: './images/jw/f2-esport/jw-f2-esport-1.jpg',
-    thumbnail: './images/jw/f2-esport/jw-f2-esport-1.jpg',
+    thumbnail: './images/jw/f2-esport/thumbs/jw-f2-esport-1.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [
@@ -30,7 +30,7 @@ export default [
     name: 'Floor 2 – e-Sport 2',
     caption: 'JW – Floor 2 – e-Sport 2',
     panorama: './images/jw/f2-esport/jw-f2-esport-2.jpg',
-    thumbnail: './images/jw/f2-esport/jw-f2-esport-2.jpg',
+    thumbnail: './images/jw/f2-esport/thumbs/jw-f2-esport-2.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [
@@ -61,7 +61,7 @@ export default [
     name: 'Floor 2 – e-Sport 3',
     caption: 'JW – Floor 2 – e-Sport 3',
     panorama: './images/jw/f2-esport/jw-f2-esport-3.jpg',
-    thumbnail: './images/jw/f2-esport/jw-f2-esport-3.jpg',
+    thumbnail: './images/jw/f2-esport/thumbs/jw-f2-esport-3.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [
@@ -92,7 +92,7 @@ export default [
     name: 'Floor 2 – e-Sport 4',
     caption: 'JW – Floor 2 – e-Sport 4',
     panorama: './images/jw/f2-esport/jw-f2-esport-4.jpg',
-    thumbnail: './images/jw/f2-esport/jw-f2-esport-4.jpg',
+    thumbnail: './images/jw/f2-esport/thumbs/jw-f2-esport-4.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [
@@ -123,7 +123,7 @@ export default [
     name: 'Floor 2 – e-Sport 5',
     caption: 'JW – Floor 2 – e-Sport 5',
     panorama: './images/jw/f2-esport/jw-f2-esport-5.jpg',
-    thumbnail: './images/jw/f2-esport/jw-f2-esport-5.jpg',
+    thumbnail: './images/jw/f2-esport/thumbs/jw-f2-esport-5.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [

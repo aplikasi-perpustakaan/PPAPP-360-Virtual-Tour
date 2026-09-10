@@ -10,7 +10,7 @@ export default [
 
       // ─── Panorama ───
       panorama: './images/pusat/pusat-f1-entrance.jpg',
-      thumbnail: './images/pusat/pusat-f1-entrance.jpg',
+      thumbnail: './images/pusat/thumbs/pusat-f1-entrance.jpg',
 
       // ─── Camera Defaults ───
       defaultYaw: '0deg',

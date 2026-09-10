@@ -4,7 +4,7 @@ export default [
     name: 'Floor 2 – Facilities 1',
     caption: 'JW – Floor 2 – Facilities 1',
     panorama: './images/jw/f2-facilities/jw-f2-facilities-1.jpg',
-    thumbnail: './images/jw/f2-facilities/jw-f2-facilities-1.jpg',
+    thumbnail: './images/jw/f2-facilities/thumbs/jw-f2-facilities-1.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [
@@ -30,7 +30,7 @@ export default [
     name: 'Floor 2 – Facilities 2',
     caption: 'JW – Floor 2 – Facilities 2',
     panorama: './images/jw/f2-facilities/jw-f2-facilities-2.jpg',
-    thumbnail: './images/jw/f2-facilities/jw-f2-facilities-2.jpg',
+    thumbnail: './images/jw/f2-facilities/thumbs/jw-f2-facilities-2.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [
@@ -61,7 +61,7 @@ export default [
     name: 'Floor 2 – Facilities 3',
     caption: 'JW – Floor 2 – Facilities 3',
     panorama: './images/jw/f2-facilities/jw-f2-facilities-3.jpg',
-    thumbnail: './images/jw/f2-facilities/jw-f2-facilities-3.jpg',
+    thumbnail: './images/jw/f2-facilities/thumbs/jw-f2-facilities-3.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [

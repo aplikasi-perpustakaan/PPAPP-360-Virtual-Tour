@@ -5,7 +5,7 @@ export default [
     name: 'Floor 1 – Surau 1',
     caption: 'BT – Floor 1 – Surau 1',
     panorama: './images/bt/f1-surau/bt-f1-surau-1.jpg',
-    thumbnail: './images/bt/f1-surau/bt-f1-surau-1.jpg',
+    thumbnail: './images/bt/f1-surau/thumbs/bt-f1-surau-1.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [
@@ -26,7 +26,7 @@ export default [
     name: 'Floor 1 – Surau 2',
     caption: 'BT – Floor 1 – Surau 2',
     panorama: './images/bt/f1-surau/bt-f1-surau-2.jpg',
-    thumbnail: './images/bt/f1-surau/bt-f1-surau-2.jpg',
+    thumbnail: './images/bt/f1-surau/thumbs/bt-f1-surau-2.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [

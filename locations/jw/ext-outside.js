@@ -4,7 +4,7 @@ export default [
     name: 'Exterior – Outside 1',
     caption: 'JW – Exterior – Outside 1',
     panorama: './images/jw/ext-outside/jw-ext-outside-1.jpg',
-    thumbnail: './images/jw/ext-outside/jw-ext-outside-1.jpg',
+    thumbnail: './images/jw/ext-outside/thumbs/jw-ext-outside-1.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [
@@ -30,7 +30,7 @@ export default [
     name: 'Exterior – Outside 2',
     caption: 'JW – Exterior – Outside 2',
     panorama: './images/jw/ext-outside/jw-ext-outside-2.jpg',
-    thumbnail: './images/jw/ext-outside/jw-ext-outside-2.jpg',
+    thumbnail: './images/jw/ext-outside/thumbs/jw-ext-outside-2.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [
@@ -56,7 +56,7 @@ export default [
     name: 'Exterior – Outside 3',
     caption: 'JW – Exterior – Outside 3',
     panorama: './images/jw/ext-outside/jw-ext-outside-3.jpg',
-    thumbnail: './images/jw/ext-outside/jw-ext-outside-3.jpg',
+    thumbnail: './images/jw/ext-outside/thumbs/jw-ext-outside-3.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [
@@ -82,7 +82,7 @@ export default [
     name: 'Exterior – Outside 4',
     caption: 'JW – Exterior – Outside 4',
     panorama: './images/jw/ext-outside/jw-ext-outside-4.jpg',
-    thumbnail: './images/jw/ext-outside/jw-ext-outside-4.jpg',
+    thumbnail: './images/jw/ext-outside/thumbs/jw-ext-outside-4.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [
@@ -108,7 +108,7 @@ export default [
     name: 'Exterior – Outside 5',
     caption: 'JW – Exterior – Outside 5',
     panorama: './images/jw/ext-outside/jw-ext-outside-5.jpg',
-    thumbnail: './images/jw/ext-outside/jw-ext-outside-5.jpg',
+    thumbnail: './images/jw/ext-outside/thumbs/jw-ext-outside-5.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [
@@ -134,7 +134,7 @@ export default [
     name: 'Exterior – Outside 6',
     caption: 'JW – Exterior – Outside 6',
     panorama: './images/jw/ext-outside/jw-ext-outside-6.jpg',
-    thumbnail: './images/jw/ext-outside/jw-ext-outside-6.jpg',
+    thumbnail: './images/jw/ext-outside/thumbs/jw-ext-outside-6.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [
@@ -160,7 +160,7 @@ export default [
     name: 'Exterior – Outside 7',
     caption: 'JW – Exterior – Outside 7',
     panorama: './images/jw/ext-outside/jw-ext-outside-7.jpg',
-    thumbnail: './images/jw/ext-outside/jw-ext-outside-7.jpg',
+    thumbnail: './images/jw/ext-outside/thumbs/jw-ext-outside-7.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [
@@ -186,7 +186,7 @@ export default [
     name: 'Exterior – Outside 8',
     caption: 'JW – Exterior – Outside 8',
     panorama: './images/jw/ext-outside/jw-ext-outside-8.jpg',
-    thumbnail: './images/jw/ext-outside/jw-ext-outside-8.jpg',
+    thumbnail: './images/jw/ext-outside/thumbs/jw-ext-outside-8.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [
@@ -212,7 +212,7 @@ export default [
     name: 'Exterior – Outside 9',
     caption: 'JW – Exterior – Outside 9',
     panorama: './images/jw/ext-outside/jw-ext-outside-9.jpg',
-    thumbnail: './images/jw/ext-outside/jw-ext-outside-9.jpg',
+    thumbnail: './images/jw/ext-outside/thumbs/jw-ext-outside-9.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [
@@ -238,7 +238,7 @@ export default [
     name: 'Exterior – Outside 10',
     caption: 'JW – Exterior – Outside 10',
     panorama: './images/jw/ext-outside/jw-ext-outside-10.jpg',
-    thumbnail: './images/jw/ext-outside/jw-ext-outside-10.jpg',
+    thumbnail: './images/jw/ext-outside/thumbs/jw-ext-outside-10.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [
@@ -264,7 +264,7 @@ export default [
     name: 'Exterior – Outside 11',
     caption: 'JW – Exterior – Outside 11',
     panorama: './images/jw/ext-outside/jw-ext-outside-11.jpg',
-    thumbnail: './images/jw/ext-outside/jw-ext-outside-11.jpg',
+    thumbnail: './images/jw/ext-outside/thumbs/jw-ext-outside-11.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [

@@ -5,7 +5,7 @@ export default [
     name: 'Floor 2 – Backside 1',
     caption: 'BT – Floor 2 – Backside 1',
     panorama: './images/bt/f2-backside/bt-f2-backside-1.jpg',
-    thumbnail: './images/bt/f2-backside/bt-f2-backside-1.jpg',
+    thumbnail: './images/bt/f2-backside/thumbs/bt-f2-backside-1.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [
@@ -26,7 +26,7 @@ export default [
     name: 'Floor 2 – Backside 2',
     caption: 'BT – Floor 2 – Backside 2',
     panorama: './images/bt/f2-backside/bt-f2-backside-2.jpg',
-    thumbnail: './images/bt/f2-backside/bt-f2-backside-2.jpg',
+    thumbnail: './images/bt/f2-backside/thumbs/bt-f2-backside-2.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [
@@ -52,7 +52,7 @@ export default [
     name: 'Floor 2 – Backside 3',
     caption: 'BT – Floor 2 – Backside 3',
     panorama: './images/bt/f2-backside/bt-f2-backside-3.jpg',
-    thumbnail: './images/bt/f2-backside/bt-f2-backside-3.jpg',
+    thumbnail: './images/bt/f2-backside/thumbs/bt-f2-backside-3.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [
