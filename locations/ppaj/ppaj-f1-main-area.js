@@ -31,6 +31,8 @@ export default [
     links: [
       { nodeId: 'ppaj-f1-01', position: { yaw: '180deg', pitch: '0deg' } },
       { nodeId: 'ppaj-f1-03', position: { yaw: '279.45deg', pitch: '-31.82deg' } },
+      { nodeId: 'ppaj-f1-05', position: { yaw: '6.08deg', pitch: '-22.17deg' } },
+      { nodeId: 'ppaj-f1-09', position: { yaw: '65.79deg', pitch: '-31.59deg' } },
     ],
     markers: [],
     data: {
@@ -83,8 +85,9 @@ export default [
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [
-      { nodeId: 'ppaj-f1-04', position: { yaw: '180deg', pitch: '0deg' } },
+      { nodeId: 'ppaj-f1-04', position: { yaw: '267.32deg', pitch: '-25.05deg' } },
       { nodeId: 'ppaj-f1-06', position: { yaw: '0deg', pitch: '0deg' } },
+      { nodeId: 'ppaj-f1-02', position: { yaw: '184.96deg', pitch: '-27.51deg' } },
     ],
     markers: [],
     data: {
@@ -102,7 +105,7 @@ export default [
     defaultPitch: '0deg',
     links: [
       { nodeId: 'ppaj-f1-05', position: { yaw: '180deg', pitch: '0deg' } },
-      { nodeId: 'ppaj-f1-07', position: { yaw: '0deg', pitch: '0deg' } },
+      { nodeId: 'ppaj-f1-07', position: { yaw: '295.73deg', pitch: '-25.68deg' } },
     ],
     markers: [],
     data: {
@@ -119,8 +122,8 @@ export default [
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [
-      { nodeId: 'ppaj-f1-06', position: { yaw: '180deg', pitch: '0deg' } },
-      { nodeId: 'ppaj-f1-08', position: { yaw: '0deg', pitch: '0deg' } },
+      { nodeId: 'ppaj-f1-06', position: { yaw: '107.76deg', pitch: '-41.43deg' } },
+      { nodeId: 'ppaj-f1-08', position: { yaw: '294.51deg', pitch: '-48.55deg' } },
     ],
     markers: [],
     data: {
@@ -137,8 +140,7 @@ export default [
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [
-      { nodeId: 'ppaj-f1-07', position: { yaw: '180deg', pitch: '0deg' } },
-      { nodeId: 'ppaj-f1-09', position: { yaw: '0deg', pitch: '0deg' } },
+      { nodeId: 'ppaj-f1-07', position: { yaw: '105.46deg', pitch: '-49.08deg' } },
     ],
     markers: [],
     data: {
@@ -155,8 +157,8 @@ export default [
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [
-      { nodeId: 'ppaj-f1-08', position: { yaw: '180deg', pitch: '0deg' } },
-      { nodeId: 'ppaj-f1-10', position: { yaw: '0deg', pitch: '0deg' } },
+      { nodeId: 'ppaj-f1-02', position: { yaw: '253.77deg', pitch: '-34.63deg' } },
+      { nodeId: 'ppaj-f1-10', position: { yaw: '23.58deg', pitch: '-30.19deg' } },
     ],
     markers: [],
     data: {
