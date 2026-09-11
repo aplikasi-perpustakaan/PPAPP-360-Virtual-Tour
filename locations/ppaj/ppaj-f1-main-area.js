@@ -1,31 +1,184 @@
-// F1 Main Area Section for PPAJ
+// ── F1 Main Area Section for PPAJ ─────────────────────────────────
 
 export default [
   {
-
-      // ─── Identity ───
-      id: 'ppaj-f1-main-area',
-      name: 'Level 1 – Main Area',
-      caption: 'PPAJ – Level 1 – Main Area',
-
-      // ─── Panorama ───
-      panorama: './images/shared/placeholder.jpg',
-      thumbnail: './images/shared/placeholder.jpg',
-
-      // ─── Camera Defaults ───
-      defaultYaw: '0deg',
-      defaultPitch: '0deg',
-
-      // ─── Navigation Links ───
-      links: [],
-
-      // ─── Info Markers ───
-      markers: [],
-
-      // ─── Metadata ───
-      data: {
-        floor: 'f1',
-        tags: ['main', 'mall'],
-      },
+    id: 'ppaj-f1-01',
+    name: 'Level 1 – Area 01',
+    caption: 'PPAJ – Level 1 – Area 01',
+    panorama: './images/ppaj/f1/ppaj-f1-01.jpg',
+    thumbnail: './images/ppaj/f1/thumbs/ppaj-f1-01.jpg',
+    defaultYaw: '0deg',
+    defaultPitch: '0deg',
+    defaultZoomLvl: 0,
+    sphereCorrection: { pan: '6.23deg', tilt: '2.90deg', roll: '0deg' },
+    links: [
+      { nodeId: 'ppaj-f1-02', position: { yaw: '0deg', pitch: '0deg' } },
+    ],
+    markers: [],
+    data: {
+      floor: 'f1',
+      tags: ['main'],
     },
+  },
+  {
+    id: 'ppaj-f1-02',
+    name: 'Level 1 – Area 02',
+    caption: 'PPAJ – Level 1 – Area 02',
+    panorama: './images/ppaj/f1/ppaj-f1-02.jpg',
+    thumbnail: './images/ppaj/f1/thumbs/ppaj-f1-02.jpg',
+    defaultYaw: '0deg',
+    defaultPitch: '0deg',
+    links: [
+      { nodeId: 'ppaj-f1-01', position: { yaw: '180deg', pitch: '0deg' } },
+      { nodeId: 'ppaj-f1-03', position: { yaw: '0deg', pitch: '0deg' } },
+    ],
+    markers: [],
+    data: {
+      floor: 'f1',
+      tags: ['main'],
+    },
+  },
+  {
+    id: 'ppaj-f1-03',
+    name: 'Level 1 – Area 03',
+    caption: 'PPAJ – Level 1 – Area 03',
+    panorama: './images/ppaj/f1/ppaj-f1-03.jpg',
+    thumbnail: './images/ppaj/f1/thumbs/ppaj-f1-03.jpg',
+    defaultYaw: '0deg',
+    defaultPitch: '0deg',
+    links: [
+      { nodeId: 'ppaj-f1-02', position: { yaw: '180deg', pitch: '0deg' } },
+      { nodeId: 'ppaj-f1-04', position: { yaw: '0deg', pitch: '0deg' } },
+    ],
+    markers: [],
+    data: {
+      floor: 'f1',
+      tags: ['main'],
+    },
+  },
+  {
+    id: 'ppaj-f1-04',
+    name: 'Level 1 – Area 04',
+    caption: 'PPAJ – Level 1 – Area 04',
+    panorama: './images/ppaj/f1/ppaj-f1-04.jpg',
+    thumbnail: './images/ppaj/f1/thumbs/ppaj-f1-04.jpg',
+    defaultYaw: '0deg',
+    defaultPitch: '0deg',
+    links: [
+      { nodeId: 'ppaj-f1-03', position: { yaw: '180deg', pitch: '0deg' } },
+      { nodeId: 'ppaj-f1-05', position: { yaw: '0deg', pitch: '0deg' } },
+    ],
+    markers: [],
+    data: {
+      floor: 'f1',
+      tags: ['main'],
+    },
+  },
+  {
+    id: 'ppaj-f1-05',
+    name: 'Level 1 – Area 05',
+    caption: 'PPAJ – Level 1 – Area 05',
+    panorama: './images/ppaj/f1/ppaj-f1-05.jpg',
+    thumbnail: './images/ppaj/f1/thumbs/ppaj-f1-05.jpg',
+    defaultYaw: '0deg',
+    defaultPitch: '0deg',
+    links: [
+      { nodeId: 'ppaj-f1-04', position: { yaw: '180deg', pitch: '0deg' } },
+      { nodeId: 'ppaj-f1-06', position: { yaw: '0deg', pitch: '0deg' } },
+    ],
+    markers: [],
+    data: {
+      floor: 'f1',
+      tags: ['main'],
+    },
+  },
+  {
+    id: 'ppaj-f1-06',
+    name: 'Level 1 – Area 06',
+    caption: 'PPAJ – Level 1 – Area 06',
+    panorama: './images/ppaj/f1/ppaj-f1-06.jpg',
+    thumbnail: './images/ppaj/f1/thumbs/ppaj-f1-06.jpg',
+    defaultYaw: '0deg',
+    defaultPitch: '0deg',
+    links: [
+      { nodeId: 'ppaj-f1-05', position: { yaw: '180deg', pitch: '0deg' } },
+      { nodeId: 'ppaj-f1-07', position: { yaw: '0deg', pitch: '0deg' } },
+    ],
+    markers: [],
+    data: {
+      floor: 'f1',
+      tags: ['main'],
+    },
+  },
+  {
+    id: 'ppaj-f1-07',
+    name: 'Level 1 – Area 07',
+    caption: 'PPAJ – Level 1 – Area 07',
+    panorama: './images/ppaj/f1/ppaj-f1-07.jpg',
+    thumbnail: './images/ppaj/f1/thumbs/ppaj-f1-07.jpg',
+    defaultYaw: '0deg',
+    defaultPitch: '0deg',
+    links: [
+      { nodeId: 'ppaj-f1-06', position: { yaw: '180deg', pitch: '0deg' } },
+      { nodeId: 'ppaj-f1-08', position: { yaw: '0deg', pitch: '0deg' } },
+    ],
+    markers: [],
+    data: {
+      floor: 'f1',
+      tags: ['main'],
+    },
+  },
+  {
+    id: 'ppaj-f1-08',
+    name: 'Level 1 – Area 08',
+    caption: 'PPAJ – Level 1 – Area 08',
+    panorama: './images/ppaj/f1/ppaj-f1-08.jpg',
+    thumbnail: './images/ppaj/f1/thumbs/ppaj-f1-08.jpg',
+    defaultYaw: '0deg',
+    defaultPitch: '0deg',
+    links: [
+      { nodeId: 'ppaj-f1-07', position: { yaw: '180deg', pitch: '0deg' } },
+      { nodeId: 'ppaj-f1-09', position: { yaw: '0deg', pitch: '0deg' } },
+    ],
+    markers: [],
+    data: {
+      floor: 'f1',
+      tags: ['main'],
+    },
+  },
+  {
+    id: 'ppaj-f1-09',
+    name: 'Level 1 – Area 09',
+    caption: 'PPAJ – Level 1 – Area 09',
+    panorama: './images/ppaj/f1/ppaj-f1-09.jpg',
+    thumbnail: './images/ppaj/f1/thumbs/ppaj-f1-09.jpg',
+    defaultYaw: '0deg',
+    defaultPitch: '0deg',
+    links: [
+      { nodeId: 'ppaj-f1-08', position: { yaw: '180deg', pitch: '0deg' } },
+      { nodeId: 'ppaj-f1-10', position: { yaw: '0deg', pitch: '0deg' } },
+    ],
+    markers: [],
+    data: {
+      floor: 'f1',
+      tags: ['main'],
+    },
+  },
+  {
+    id: 'ppaj-f1-10',
+    name: 'Level 1 – Area 10',
+    caption: 'PPAJ – Level 1 – Area 10',
+    panorama: './images/ppaj/f1/ppaj-f1-10.jpg',
+    thumbnail: './images/ppaj/f1/thumbs/ppaj-f1-10.jpg',
+    defaultYaw: '0deg',
+    defaultPitch: '0deg',
+    links: [
+      { nodeId: 'ppaj-f1-09', position: { yaw: '180deg', pitch: '0deg' } },
+    ],
+    markers: [],
+    data: {
+      floor: 'f1',
+      tags: ['main'],
+    },
+  },
 ];

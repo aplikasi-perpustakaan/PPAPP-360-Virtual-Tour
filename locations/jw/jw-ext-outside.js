@@ -7,6 +7,8 @@ export default [
     thumbnail: './images/jw/ext-outside/thumbs/jw-ext-outside-1.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
+    sphereCorrection: { pan: '0.0deg', tilt: '0.0deg', roll: '1.5deg' },
     links: [
         {
           nodeId: 'jw-ext-outside-11',
@@ -33,6 +35,8 @@ export default [
     thumbnail: './images/jw/ext-outside/thumbs/jw-ext-outside-2.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 69,
+    sphereCorrection: { pan: '0.0deg', tilt: '3.5deg', roll: '0.0deg' },
     links: [
         {
           nodeId: 'jw-ext-outside-3',

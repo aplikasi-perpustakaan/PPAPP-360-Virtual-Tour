@@ -62,7 +62,7 @@ export default [
       },
       {
         nodeId: 'bt-f1-tyt-1',
-        position: { yaw: '89.17deg', pitch: '-13.74deg' },
+        position: { yaw: '88.42deg', pitch: '5.14deg' },
         name: 'Enter TYT Section',
       },
     ],
