@@ -13,8 +13,8 @@ export class CustomMarkerElement extends HTMLElement {
 :host {
     display: block;
     position: relative;
-    width: 50px;
-    height: 50px;
+    width: 25px;
+    height: 25px;
 }
 
 button {
