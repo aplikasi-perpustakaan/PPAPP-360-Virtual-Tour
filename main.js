@@ -29,11 +29,22 @@ async function bootstrap() {
     const requestedYaw = urlParams.get('yaw');
     const requestedPitch = urlParams.get('pitch');
     const requestedZoom = urlParams.get('zoom');
+    
+    // Sphere correction parameters for adjusting askew panoramas
+    const requestedPan = urlParams.get('pan');
+    const requestedTilt = urlParams.get('tilt');
+    const requestedRoll = urlParams.get('roll');
+
     const isKiosk = urlParams.get('kiosk') === 'true';
     const isAutorotate = urlParams.get('autorotate') === 'true';
+    const isDebug = urlParams.get('debug') === 'true';
 
     if (isKiosk) {
       document.body.classList.add('is-kiosk');
+    }
+    
+    if (isDebug) {
+      document.body.classList.add('is-debug');
     }
     
     // 2. Determine the branch. Use the prefix of the requested scene, or default to 'jw'
@@ -78,11 +89,18 @@ async function bootstrap() {
     }
 
     // Apply any requested URL coordinates to the starting node before initialization
-    if (requestedYaw || requestedPitch) {
+    if (requestedYaw || requestedPitch || requestedPan || requestedTilt || requestedRoll) {
       const targetNode = defaultNodes.find(n => n.id === startNodeId);
       if (targetNode) {
         if (requestedYaw) targetNode.defaultYaw = requestedYaw;
         if (requestedPitch) targetNode.defaultPitch = requestedPitch;
+        
+        if (requestedPan || requestedTilt || requestedRoll) {
+          targetNode.sphereCorrection = targetNode.sphereCorrection || {};
+          if (requestedPan) targetNode.sphereCorrection.pan = requestedPan;
+          if (requestedTilt) targetNode.sphereCorrection.tilt = requestedTilt;
+          if (requestedRoll) targetNode.sphereCorrection.roll = requestedRoll;
+        }
       }
     }
 
@@ -161,21 +179,35 @@ async function bootstrap() {
     // 7. Update URL query string when navigating or looking around
     const virtualTour = viewer.getPlugin(VirtualTourPlugin);
     
+    // Variables for Debug Keyboard Adjusters
+    let currentPan = requestedPan ? parseFloat(requestedPan) || 0 : 0;
+    let currentTilt = requestedTilt ? parseFloat(requestedTilt) || 0 : 0;
+    let currentRoll = requestedRoll ? parseFloat(requestedRoll) || 0 : 0;
+
     // Update scene ID when changing rooms
     let isInitialLoad = true;
     virtualTour.addEventListener('node-changed', ({ node }) => {
       const url = new URL(window.location);
       url.searchParams.set('scene', node.id);
       
-      // Remove yaw/pitch when entering a new room so it uses that room's default
+      // Remove yaw/pitch/correction when entering a new room so it uses that room's default
       // But don't strip it on the initial page load!
       if (!isInitialLoad) {
         url.searchParams.delete('yaw');
         url.searchParams.delete('pitch');
         url.searchParams.delete('zoom');
+        url.searchParams.delete('pan');
+        url.searchParams.delete('tilt');
+        url.searchParams.delete('roll');
       }
       isInitialLoad = false;
       
+      // Reset local keyboard adjusters to the current node's existing configuration
+      const correction = node.sphereCorrection || {};
+      currentPan = parseFloat(correction.pan) || 0;
+      currentTilt = parseFloat(correction.tilt) || 0;
+      currentRoll = parseFloat(correction.roll) || 0;
+
       window.history.replaceState({}, '', url);
     });
 
@@ -202,12 +234,36 @@ async function bootstrap() {
     viewer.addEventListener('position-updated', updateUrlParams);
     viewer.addEventListener('zoom-updated', updateUrlParams);
     
-    // 8. WASD Spatial Navigation
+    // 8. WASD Spatial Navigation & Global Arrow Key camera control
     window.addEventListener('keydown', (e) => {
-      // Ignore if user is typing in a search box or input
       if (document.activeElement.tagName === 'INPUT' || document.activeElement.tagName === 'TEXTAREA') return;
       
-      if (e.key === 'w' || e.key === 'W' || e.key === 'ArrowUp') {
+      // Look around with arrow keys (Shift+Arrow jumps by 90 degrees)
+      const step = e.shiftKey ? Math.PI / 2 : 0.05; // radians
+      if (e.key === 'ArrowLeft') {
+        const pos = viewer.getPosition();
+        viewer.rotate({ yaw: pos.yaw - step, pitch: pos.pitch });
+        e.preventDefault();
+      } else if (e.key === 'ArrowRight') {
+        const pos = viewer.getPosition();
+        viewer.rotate({ yaw: pos.yaw + step, pitch: pos.pitch });
+        e.preventDefault();
+      } else if (e.key === 'ArrowUp') {
+        const pos = viewer.getPosition();
+        viewer.rotate({ yaw: pos.yaw, pitch: pos.pitch + step });
+        e.preventDefault();
+      } else if (e.key === 'ArrowDown') {
+        const pos = viewer.getPosition();
+        viewer.rotate({ yaw: pos.yaw, pitch: pos.pitch - step });
+        e.preventDefault();
+      } else if (e.key === '0') {
+        // Snap back to exactly 0 yaw and 0 pitch
+        viewer.rotate({ yaw: 0, pitch: 0 });
+        e.preventDefault();
+      }
+
+      // Walk forward
+      if (e.key === 'w' || e.key === 'W') {
         const currentNodeId = virtualTour.getCurrentNode()?.id;
         if (!currentNodeId) return;
         
@@ -241,6 +297,45 @@ async function bootstrap() {
         if (bestLink) {
           virtualTour.setCurrentNode(bestLink.nodeId);
         }
+      }
+    });
+
+    // 9. Debug Keyboard Adjusters for Sphere Correction (A, S, D)
+    window.addEventListener('keydown', (e) => {
+      if (document.activeElement.tagName === 'INPUT' || document.activeElement.tagName === 'TEXTAREA') return;
+
+      const step = 0.5; // degrees per keypress
+      let changed = false;
+
+      if (e.key === 'a' || e.key === 'A') {
+        currentRoll += e.shiftKey ? step : -step;
+        changed = true;
+      } else if (e.key === 's' || e.key === 'S') {
+        currentTilt += e.shiftKey ? step : -step;
+        changed = true;
+      } else if (e.key === 'd' || e.key === 'D') {
+        currentPan += e.shiftKey ? step : -step;
+        changed = true;
+      }
+
+      if (changed) {
+        const correction = {
+          pan: currentPan.toFixed(1) + 'deg',
+          tilt: currentTilt.toFixed(1) + 'deg',
+          roll: currentRoll.toFixed(1) + 'deg'
+        };
+        
+        // Dynamically apply to the viewer
+        viewer.setOption('sphereCorrection', correction);
+
+        // Update URL so you can easily copy the values
+        const url = new URL(window.location);
+        url.searchParams.set('pan', correction.pan);
+        url.searchParams.set('tilt', correction.tilt);
+        url.searchParams.set('roll', correction.roll);
+        window.history.replaceState({}, '', url);
+
+        console.log(`[SphereCorrection] pan: '${correction.pan}', tilt: '${correction.tilt}', roll: '${correction.roll}'`);
       }
     });
 

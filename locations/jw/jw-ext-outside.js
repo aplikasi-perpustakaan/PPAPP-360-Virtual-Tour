@@ -215,6 +215,7 @@ export default [
     thumbnail: './images/jw/ext-outside/thumbs/jw-ext-outside-9.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    sphereCorrection: { roll: '2.5deg' },
     links: [
         {
           nodeId: 'jw-ext-outside-10',
