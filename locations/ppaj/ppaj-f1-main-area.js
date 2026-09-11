@@ -9,6 +9,8 @@ export default [
     thumbnail: './images/ppaj/f1/thumbs/ppaj-f1-01.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
+    sphereCorrection: { pan: '6.23deg', tilt: '2.90deg', roll: '0deg' },
     links: [
       { nodeId: 'ppaj-f1-02', position: { yaw: '0deg', pitch: '0deg' } },
     ],
