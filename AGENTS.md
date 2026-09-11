@@ -13,29 +13,36 @@ PPAPP-360-Virtual-Tour/
 ├── index.html              # Entry point
 ├── main.js                 # App bootstrap & viewer init only
 ├── style.css               # Global styles with CSS custom properties
+├── favicon.png             # Official PPAPP browser favicon
 ├── js/                     # JavaScript modules (kebab-case filenames)
-│   ├── marker-templates.js
-│   ├── coordinate-logger.js
-│   ├── location-selector.js
-│   └── (future modules: loading-screen.js, floor-selector.js, minimap.js, search.js, info-panel.js, audio-controller.js)
-├── locations/              # Scene data (1 file per branch, short codes)
-│   ├── pusat.js, bt.js, jw.js, bm.js, ppaj.js, gt.js, ppk.js
-├── images/{branch}/        # Per-branch subdirectories (images/pusat/, images/bt/, etc.)
-├── images/shared/          # Shared assets (placeholder.jpg, logos, icons)
+│   ├── custom-marker.js    # Custom Web Component marker with ripple & floating card
+│   ├── loading-screen.js   # Glassmorphism loading screen management
+│   ├── location-selector.js# Branch selection dropdown handler & transitions
+│   ├── marker-templates.js # HTML templates for info/audio markers
+│   ├── coordinate-logger.js# Utility for logging click yaw/pitch coordinates
+│   └── audio-controller.js # Background and narration audio handlers
+├── locations/{branch}/     # Modular scene data per branch
+│   ├── {branch}-index.js   # Section aggregator for the branch (e.g. bm-index.js, bt-index.js)
+│   └── {branch}-{section}.js # Individual section scenes (e.g. bm-gf-lobby.js, ppaj-f1-main-area.js)
+├── images/{branch}/{section}/ # Per-branch, per-section panorama images
+│   └── thumbs/             # Flat perspective thumbnails (400x300 px)
+├── images/shared/          # Shared assets (placeholder.jpg, logos, icons, favicon)
 ├── audio/narration/        # Per-scene narration clips
 ├── audio/ambient/          # Background ambient sounds
 ├── assets/floor-plans/     # Minimap/floor plan images
+└── scripts/                # Utility scripts (e.g. generate-thumbnails.py)
 ```
 
 ## Naming Conventions
 
 | Type | Convention | Example |
 |---|---|---|
-| Location JS files | Short code | `pusat.js`, `bt.js`, `ppaj.js` |
-| JS modules | `kebab-case` | `marker-templates.js` |
-| Panorama images | `{branch}-{floor}-{description}.jpg` | `pusat-f1-entrance.jpg` |
-| Scene IDs | `{branch}-{floor}-{description}` | `pusat-f1-entrance` |
-| Marker IDs | `{sceneId}-{type}-{N}` | `pusat-f1-entrance-info-1` |
+| Location index | `{branch}-index.js` | `bm-index.js`, `bt-index.js`, `ppaj-index.js` |
+| Location section files | `{branch}-{section}.js` | `bm-gf-lobby.js`, `bt-f1-kids.js` |
+| JS modules | `kebab-case` | `custom-marker.js`, `marker-templates.js` |
+| Panorama images | `{branch}-{floor}-{description}.jpg` | `bm-gf-lobby-1.jpg`, `bt-f1-lobby-1.jpg` |
+| Scene IDs | `{branch}-{floor}-{description}` | `bm-gf-lobby-1`, `ppaj-f1-01` |
+| Marker IDs | `{sceneId}-{type}-{N}` | `bm-gf-kids-8-custom-img` |
 | CSS classes | `kebab-case` | `location-selector-container` |
 | CSS state classes | `is-{state}` | `is-active`, `is-hidden` |
 | DOM IDs | `kebab-case` | `location-select` |

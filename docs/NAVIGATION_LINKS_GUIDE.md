@@ -45,15 +45,15 @@ When you link Scene A to Scene B, you almost always need to create a reverse lin
 
 **Example:**
 
-In `locations/bt/f1-lobby.js`:
+In `locations/bt/bt-f1-lobby.js`:
 ```javascript
 {
-  id: 'bt-lobby-1',
-  name: 'Main Lobby',
+  id: 'bt-f1-lobby-1',
+  name: 'Main Lobby 1',
   // ...
   links: [
     {
-      nodeId: 'bt-kids-1',
+      nodeId: 'bt-f1-kids-1',
       position: { yaw: '45deg', pitch: '-10deg' },
       name: 'Go to Kids Section'
     }
@@ -61,15 +61,15 @@ In `locations/bt/f1-lobby.js`:
 }
 ```
 
-In `locations/bt/f1-kids.js`:
+In `locations/bt/bt-f1-kids.js`:
 ```javascript
 {
-  id: 'bt-kids-1',
-  name: 'Kids Section',
+  id: 'bt-f1-kids-1',
+  name: 'Kids Section 1',
   // ...
   links: [
     {
-      nodeId: 'bt-lobby-1',
+      nodeId: 'bt-f1-lobby-1',
       position: { yaw: '225deg', pitch: '-10deg' }, // Usually roughly 180 degrees opposite
       name: 'Back to Lobby'
     }
@@ -81,11 +81,11 @@ In `locations/bt/f1-kids.js`:
 
 ## 4. Cross-Module Linking
 
-Because the location data is split into multiple files (e.g., `ramp.js`, `stairs-front.js`, `f2-reading.js`), you can link to a scene that exists in a completely different file. 
+Because the location data is split into multiple files (e.g., `bt-ramp.js`, `bt-stairs-front.js`, `bt-f2-reading.js`), you can link to a scene that exists in a completely different file. 
 
-The Virtual Tour plugin combines all these files together in the `index.js` file, so the viewer knows about all of them globally.
+The Virtual Tour plugin combines all these files together in the `{branch}-index.js` file, so the viewer knows about all of them globally.
 
-**Rule:** As long as the `nodeId` exactly matches the `id` of a scene defined *anywhere* within the same branch's modules, the link will work. You do not need to import `f2-reading.js` into `f1-lobby.js` just to link to it.
+**Rule:** As long as the `nodeId` exactly matches the `id` of a scene defined *anywhere* within the same branch's modules, the link will work. You do not need to import `bt-f2-reading.js` into `bt-f1-lobby.js` just to link to it.
 
 ---
 
@@ -112,3 +112,31 @@ Keep your prompts as short and simple as possible. The AI can find the right fil
 
 **Add a placeholder link (unknown coordinates):**
 > "Link stairs 1 to lobby 2 (placeholder)"
+
+---
+
+## 7. Sphere Corrections (Horizon & Bearing Leveling)
+
+If a 360 photo was captured on an uneven surface, camera tripod tilt, or misaligned yaw heading, use `sphereCorrection`:
+
+```javascript
+sphereCorrection: { pan: '6.23deg', tilt: '2.90deg', roll: '0deg' }
+```
+
+- `pan`: Horizontal rotation of the spherical panorama.
+- `tilt`: Vertical pitch correction to level the horizon.
+- `roll`: Roll rotation to fix camera banking.
+
+> **Note:** Testing sphere corrections live in the browser can be done via URL parameters:
+> `?pan=6deg&tilt=3deg&roll=0deg`
+
+---
+
+## 8. Tour Graph Validation
+
+Always validate the navigation graph before publishing:
+- Checks for broken links (nodeId pointing to nonexistent scenes)
+- Identifies dead ends and unreachable orphan scenes
+- Ensures bi-directional navigation across all connected areas
+- Verifies that all referenced panoramas and thumbnails exist on disk
+

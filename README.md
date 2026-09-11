@@ -2,8 +2,9 @@
 
 ![PPAPP Virtual Tour](https://img.shields.io/badge/Status-Active-success)
 ![Vanilla JS](https://img.shields.io/badge/Tech-Vanilla_JS-f7df1e)
+![PSV](https://img.shields.io/badge/Viewer-Photo--Sphere--Viewer_v5-blue)
 
-A 360° Virtual Tour web application built for the **Perbadanan Perpustakaan Awam Pulau Pinang (PPAPP)**. This interactive experience allows users to explore various PPAPP library branches virtually through high-resolution panoramic images, interactive markers, and audio narration.
+A 360° Virtual Tour web application built for the **Perbadanan Perpustakaan Awam Pulau Pinang (PPAPP)**. This interactive experience allows users to explore various PPAPP library branches virtually through high-resolution panoramic images, interactive hotspots, rich media markers, and audio narration.
 
 🌐 **[Live Demo / GitHub Pages](https://aplikasi-perpustakaan.github.io/PPAPP-360-Virtual-Tour/)**
 
@@ -16,7 +17,10 @@ A 360° Virtual Tour web application built for the **Perbadanan Perpustakaan Awa
 - [Library Branches](#-library-branches)
 - [Project Structure](#-project-structure)
 - [Development Setup](#-development-setup)
+- [URL Parameters & Debugging](#-url-parameters--debugging)
 - [Adding New Locations](#-adding-new-locations)
+- [Thumbnail Generation](#-thumbnail-generation)
+- [Custom Markers](#-custom-markers)
 - [Deployment](#-deployment)
 - [Contributing](#-contributing)
 
@@ -24,39 +28,46 @@ A 360° Virtual Tour web application built for the **Perbadanan Perpustakaan Awa
 
 ## ✨ Features
 
-- **Immersive 360° Panoramas**: High-quality 2:1 equirectangular projections (minimum 4096×2048).
-- **Interactive Navigation**: Hotspots/links allowing users to "walk" between different areas and floors.
-- **Rich Media Markers**: Info panels, audio narration, and ambient sounds embedded directly into scenes.
-- **Multiple Branches**: Switch seamlessly between different library locations.
-- **No Build Step**: Native ES Modules (`importmap`) allow for rapid development without Node.js, Webpack, or Vite.
-- **Glassmorphism UI**: A modern, responsive "Dark Moody Blue/Grey" interface.
+- **Immersive 360° Panoramas**: High-quality 2:1 equirectangular projections (minimum 4096×2048, recommended 8192×4096).
+- **Smooth Intro Sweep Animation**: Automatic 360° rotation sweep (3 RPM) on initial app load and upon switching branches.
+- **Interactive Navigation**: Directional arrows and hotspots allowing users to walk seamlessly between scenes and floors.
+- **Rich Media & Custom Markers**:
+  - Standard information panels and audio markers.
+  - Interactive `<custom-marker>` Web Components featuring ripple animations and 3D bounce tooltips with slotted images and text.
+- **Multi-Branch Switching**: Dynamic loading of branch chunks on demand with a glassmorphism loading overlay.
+- **Sphere Correction**: Support for fine-tuned `pan`, `tilt`, and `roll` rotation adjustments per scene to guarantee level horizons and accurate bearings.
+- **No Build Step**: Native ES Modules loaded via browser `<script type="importmap">` (no Node.js, Webpack, or Vite bundling required).
+- **Responsive Theme**: Dark Moody Blue/Grey glassmorphic UI styled with CSS custom properties.
+- **Kiosk & Debug Modes**: Dedicated flags for public exhibition kiosks and coordinate calibration overlays.
 
 ---
 
 ## 🛠 Architecture & Tech Stack
 
-This project is built using a lightweight, dependency-free approach to maximize performance and simplify maintenance:
-
-- **Frontend**: Vanilla HTML5, CSS3 (using custom properties), and JavaScript (ES6+).
-- **Module System**: Native ES Modules loaded via `<script type="importmap">`. No build tools required.
-- **Viewer**: [Photo Sphere Viewer (PSV)](https://photo-sphere-viewer.js.org/) for rendering the 360° environment.
-- **Hosting**: Compatible with any static file server, IIS (`web.config` included), or Apache (`.htaccess` included).
+- **Frontend**: Native HTML5, CSS3 (using CSS custom properties), and JavaScript (ES2022+ modules).
+- **Module System**: Browser-native ES Modules resolved via `<script type="importmap">` from CDNs.
+- **Viewer Core**: [Photo Sphere Viewer (PSV v5)](https://photo-sphere-viewer.js.org/) and Three.js.
+  - `@photo-sphere-viewer/virtual-tour-plugin`
+  - `@photo-sphere-viewer/markers-plugin`
+  - `@photo-sphere-viewer/gallery-plugin`
+  - `@photo-sphere-viewer/compass-plugin`
+  - `@photo-sphere-viewer/map-plugin`
+  - `@photo-sphere-viewer/autorotate-plugin`
+- **Hosting**: Completely static. Compatible with GitHub Pages, Apache (`.htaccess` included), and IIS (`web.config` included).
 
 ---
 
 ## 🏛 Library Branches
 
-The tour currently covers the following PPAPP branches:
-
-| Code | Full Name |
-| :--- | :--- |
-| `pusat` | PUSAT – Seberang Jaya (HQ) |
-| `bt` | Cawangan Daerah Seberang Perai Utara |
-| `jw` | Cawangan Daerah Seberang Perai Selatan |
-| `bm` | Cawangan Daerah Seberang Perai Tengah |
-| `ppaj` | PP AEON Jusco Alma |
-| `gt` | Cawangan Daerah Timur Laut |
-| `ppk` | PP Lounge@Komtar |
+| Code | Full Name | Status | Coverage Highlights |
+| :--- | :--- | :--- | :--- |
+| `pusat` | PUSAT – Seberang Jaya (HQ) | In Progress | Headquarters central facility |
+| `bt` | Cawangan Daerah Seberang Perai Utara | Active | Multi-floor tour (Exterior, Lobby, Kids, Surau, Ramp, Front/Back Stairs, TYT Gallery, Reading Hall) |
+| `jw` | Cawangan Daerah Seberang Perai Selatan | Active | Multi-floor tour (Exterior, Lobby, Kids, Stairs, E-Sport, Facilities, Reference Hall) |
+| `bm` | Cawangan Daerah Seberang Perai Tengah | Active | 19 scenes (Entrance Steps, Verandah & Signboard, Porch, Service Counter, Reading Stacks, Kids Activity Area, Bahagian Kanak-Kanak) |
+| `ppaj` | PP AEON Jusco Alma | Active | 10 scenes (Level 1 Main Area, Collections, Reading Spaces) |
+| `gt` | Cawangan Daerah Timur Laut | Planned | Branch expansion |
+| `ppk` | PP Lounge@Komtar | Planned | Branch expansion |
 
 ---
 
@@ -64,31 +75,44 @@ The tour currently covers the following PPAPP branches:
 
 ```text
 PPAPP-360-Virtual-Tour/
-├── index.html              # Main application entry point
-├── main.js                 # App bootstrap & viewer initialization
-├── style.css               # Global CSS with custom properties/themes
-├── js/                     # Core JavaScript modules
-│   ├── marker-templates.js # HTML templates for info/audio markers
-│   ├── coordinate-logger.js# Utility for finding yaw/pitch coordinates
-│   └── location-selector.js# UI logic for branch switching
-├── locations/              # Scene data divided by branch
-│   ├── pusat/
-│   ├── bt/
-│   └── ... (one folder per branch, containing modular section files)
-├── images/                 # Panoramic images
-│   ├── shared/             # UI assets, logos, placeholder images
-│   └── {branch}/           # Per-branch panoramas (e.g., images/bt/)
-├── audio/                  # Audio assets
-│   ├── narration/          # Voiceovers for specific scenes
-│   └── ambient/            # Background ambiance
-└── assets/floor-plans/     # Minimaps and floor plan graphics
+├── index.html                  # Main application entry point & import map
+├── main.js                     # Bootstrap, viewer init, branch startup & intro sweep
+├── style.css                   # Global styles & CSS custom properties (Dark theme)
+├── favicon.png                 # PPAPP official browser favicon
+├── js/                         # Core ES modules (kebab-case)
+│   ├── custom-marker.js        # Web Component for interactive ripple markers & cards
+│   ├── loading-screen.js       # Glassmorphism loading screen management
+│   ├── location-selector.js    # Branch selection dropdown handler & transitions
+│   ├── marker-templates.js     # Helper functions for standard info/audio markers
+│   ├── coordinate-logger.js    # Utility for logging click yaw/pitch coordinates
+│   └── audio-controller.js     # Background and narration audio handlers
+├── locations/                  # Modular scene definitions per branch
+│   ├── bm/                     # Bukit Mertajam (bm-index.js, bm-ext-outside.js, etc.)
+│   ├── bt/                     # Seberang Perai Utara (bt-index.js, bt-f1-*.js, etc.)
+│   ├── jw/                     # Seberang Perai Selatan (jw-index.js, jw-*.js, etc.)
+│   ├── ppaj/                   # AEON Jusco Alma (ppaj-index.js, ppaj-f1-main-area.js)
+│   └── pusat/, gt/, ppk/       # Additional branch modules
+├── images/                     # Panoramas and thumbnails
+│   ├── shared/                 # Common assets (logos, placeholder.jpg, favicon)
+│   ├── bm/                     # BM panoramas & thumbs/ (ext-outside, gf-lobby, etc.)
+│   ├── bt/                     # BT panoramas & thumbs/
+│   ├── jw/                     # JW panoramas & thumbs/
+│   └── ppaj/                   # PPAJ panoramas & thumbs/
+├── scripts/                    # Maintenance & automation tools
+│   └── generate-thumbnails.py  # Script for generating flat rectilinear 2D thumbnails
+├── docs/                       # Developer documentation & reference guides
+│   ├── NAVIGATION_LINKS_GUIDE.md
+│   ├── PSV_REFERENCE.md
+│   └── PSV_DEMOS_REFERENCE.md
+├── web.config                  # IIS static MIME types & caching rules
+└── .htaccess                   # Apache static configuration
 ```
 
 ---
 
 ## 🚀 Development Setup
 
-Because this project uses native ES Modules, you cannot simply open `index.html` from the file system (due to CORS restrictions). You must serve it over HTTP.
+Because this project uses native ES Modules, files must be served over HTTP rather than opened directly via `file://`.
 
 1. **Clone the repository**:
    ```bash
@@ -97,72 +121,138 @@ Because this project uses native ES Modules, you cannot simply open `index.html`
    ```
 
 2. **Start a local static server**:
-   You can use any lightweight static server. Some common options:
-   
    - **Python 3**:
      ```bash
-     python -m http.server 8000
+     python3 -m http.server 8000
      ```
-   - **Node.js (http-server)**:
+   - **Node.js**:
      ```bash
      npx http-server -p 8000
      ```
-   - **VS Code**: Use the "Live Server" extension.
+   - **VS Code**: Install and run the **Live Server** extension.
 
 3. **Open in Browser**:
-   Navigate to `http://localhost:8000`
+   Navigate to `http://localhost:8000`.
+
+---
+
+## 🕹 URL Parameters & Debugging
+
+The application supports various URL query parameters for development, direct linking, and exhibition setups:
+
+| Parameter | Example | Purpose |
+|---|---|---|
+| `node` | `?node=bm-ext-outside-1` | Jump directly to a specific scene ID on startup. |
+| `yaw`, `pitch` | `?yaw=90deg&pitch=-5deg` | Override initial camera heading and pitch. |
+| `pan`, `tilt`, `roll` | `?pan=5deg&tilt=2deg&roll=0deg` | Override scene sphere correction angles. |
+| `debug` | `?debug=true` | Shows visual center crosshair, gridlines, and enables coordinate logging. |
+| `kiosk` | `?kiosk=true` | Kiosk display mode (hides navigation controls and dropdowns for public terminals). |
 
 ---
 
 ## 🗺 Adding New Locations
 
-Location data is structured modularly. To add a new panorama or scene:
+1. **Place Panorama Images**:
+   Store 2:1 equirectangular `.jpg` files in `images/{branch}/{section}/{branch}-{section}-{N}.jpg`.
 
-1. **Add the image**: Place the equirectangular `.jpg` in the appropriate `images/{branch}/` folder.
-2. **Define the scene**: In `locations/{branch}/`, create or update a javascript module (e.g., `f1-reading.js`). Use the standard template:
+2. **Generate Flat Perspective Thumbnails**:
+   Every scene **must** have a rectilinear thumbnail in `thumbs/`:
+   ```bash
+   python scripts/generate-thumbnails.py --branch {branch} --update-scenes
+   ```
 
+3. **Define Section Module**:
+   Create or edit `locations/{branch}/{branch}-{section}.js`:
    ```javascript
    export default [
      {
-       id: 'branch-floor-description',
-       name: 'Floor – Area Name',
-       caption: 'BRANCH – Floor – Area Name',
-       panorama: './images/branch/branch-floor-description.jpg',
-       thumbnail: './images/branch/branch-floor-description.jpg',
-       defaultYaw: '0deg',
+       id: 'bm-gf-lobby-1',
+       name: 'Ground Floor – Entrance & Service Counter',
+       caption: 'BM – Ground Floor – Entrance & Service Counter',
+       panorama: './images/bm/gf-lobby/bm-gf-lobby-1.jpg',
+       thumbnail: './images/bm/gf-lobby/thumbs/bm-gf-lobby-1.jpg',
+       defaultYaw: '15deg',
        defaultPitch: '0deg',
+       sphereCorrection: { pan: '0deg', tilt: '0deg', roll: '0deg' },
        links: [
          {
-           nodeId: 'target-scene-id',
-           position: { yaw: '90deg', pitch: '0deg' },
-           name: 'Go to Target Scene'
-         }
+           nodeId: 'bm-gf-lobby-2',
+           position: { yaw: '15deg', pitch: '-5deg' },
+           name: 'Go to Main Lobby & Aisle',
+         },
        ],
        markers: [],
        data: {
-         floor: 'f1',
-         tags: ['keyword']
-       }
-     }
+         floor: 'gf',
+         tags: ['lobby', 'counter', 'entrance'],
+       },
+     },
    ];
    ```
-3. **Link it**: Ensure the new file is imported and exported in the branch's `index.js` file.
+
+4. **Register in Branch Index**:
+   Export the section in `locations/{branch}/{branch}-index.js`:
+   ```javascript
+   import bmGfLobbySection from './bm-gf-lobby.js';
+
+   export default [
+     ...bmGfLobbySection,
+   ];
+   ```
+
+---
+
+## 🖼 Thumbnail Generation
+
+The project strictly requires flat perspective (rectilinear) thumbnails extracted from the equirectangular panoramas:
+- **Dimensions**: 400 × 300 px
+- **Quality**: 80% JPEG
+- **Path**: `images/{branch}/{section}/thumbs/{filename}.jpg`
+
+To regenerate or create thumbnails automatically:
+```bash
+python scripts/generate-thumbnails.py --branch bm --update-scenes
+```
+
+---
+
+## 📍 Custom Markers
+
+The project features a custom Web Component `<custom-marker>` ([js/custom-marker.js](js/custom-marker.js)) that provides an animated pulsing button and an interactive floating card:
+
+```javascript
+import '../../js/custom-marker.js';
+
+markers: [
+  {
+    id: 'bm-gf-kids-8-custom-img',
+    position: { yaw: '91.17deg', pitch: '-23.31deg' },
+    element: (() => {
+      const el = document.createElement('custom-marker');
+      el.innerHTML = `
+        <img src="./images/bm/gf-kids/markers/custom-marker-8-v2.jpg" alt="Children's Corner" />
+        <h2>Children's Corner</h2>
+        <p>Bahasa Cina Kanak-Kanak Collection</p>
+      `;
+      return el;
+    })(),
+    anchor: 'center center',
+  }
+]
+```
 
 ---
 
 ## ☁️ Deployment
 
-This is a completely static application. It can be deployed to any static web host (GitHub Pages, Netlify, Vercel, AWS S3) or traditional web servers.
-
-- **IIS**: A `web.config` file is provided at the root to handle MIME types and caching.
-- **Apache**: An `.htaccess` file is provided for the same purpose.
-- **GitHub Pages**: Pushing to the `main` or `gh-pages` branch will automatically deploy the site depending on the repository settings.
+- **GitHub Pages**: Pushes to `main` trigger deployment if configured in repository settings.
+- **IIS**: `web.config` ensures `.json`, `.js`, and `.jpg` MIME types are served correctly with proper caching headers.
+- **Apache**: `.htaccess` enables MIME types, CORS headers, and browser caching.
 
 ---
 
-## 🤝 Contributing
+## 🤝 Contributing & Guidelines
 
-When contributing to this repository, please adhere to the following standards:
-- **Module Format**: Use ES Modules (`import`/`export`) exclusively.
-- **Styling**: Utilize the existing CSS custom properties (`var(--color-accent-blue)`, etc.) located in `style.css`.
-- **Images**: Ensure all panoramas are `.jpg`, optimized to 80-85% quality, and kept under 10 MB where possible.
+- **Native ES Modules Only**: Do not use CommonJS (`require`). Use standard `import` / `export`.
+- **Thumbnails**: Never link raw panoramas in `thumbnail:` fields; always point to the generated `thumbs/` image.
+- **Bi-directional Navigation**: When linking scene A to B, always provide a return link from B to A to prevent user traps.
