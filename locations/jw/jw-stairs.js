@@ -8,16 +8,17 @@ export default [
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [
-        {
-          nodeId: 'jw-f1-lobby-5',
-          position: { yaw: '180deg', pitch: '10deg' },
-          name: 'Go down to Lobby',
-        },
-        {
-          nodeId: 'jw-f2-reference-1',
-          position: { yaw: '264.64deg', pitch: '9.74deg' },
-          name: 'Go up to Floor 2',
-        },
+      {
+        nodeId: 'jw-f1-lobby-5',
+        position: { yaw: '322.41deg', pitch: '-11.09deg' },
+        name: 'Go down to Lobby',
+      },
+      {
+        nodeId: 'jw-f2-reference-1',
+        position: { yaw: '258.86deg', pitch: '7.49deg' },
+        name: 'Go up to Floor 2',
+      }
+
     ],
     markers: [],
     data: {

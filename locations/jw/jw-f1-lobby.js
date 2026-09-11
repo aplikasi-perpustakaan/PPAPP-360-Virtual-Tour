@@ -8,21 +8,21 @@ export default [
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [
-        {
-          nodeId: 'jw-ext-outside-6',
-          position: { yaw: '88.17deg', pitch: '-53.59deg' },
-          name: 'Go to Outside 6',
-        },
-        {
-          nodeId: 'jw-f1-lobby-3',
-          position: { yaw: '327.15deg', pitch: '-18.41deg' },
-          name: 'Go to Lobby 3',
-        },
-        {
-          nodeId: 'jw-f1-lobby-2',
-          position: { yaw: '277.02deg', pitch: '-20.10deg' },
-          name: 'Go to Lobby 2',
-        }
+      {
+        nodeId: 'jw-ext-outside-6',
+        position: { yaw: '88.17deg', pitch: '-53.59deg' },
+        name: 'Go to Outside 6',
+      },
+      {
+        nodeId: 'jw-f1-lobby-3',
+        position: { yaw: '327.15deg', pitch: '-18.41deg' },
+        name: 'Go to Lobby 3',
+      },
+      {
+        nodeId: 'jw-f1-lobby-2',
+        position: { yaw: '277.02deg', pitch: '-20.10deg' },
+        name: 'Go to Lobby 2',
+      }
     ],
     markers: [],
     data: {
@@ -40,26 +40,26 @@ export default [
     defaultPitch: '0deg',
     sphereCorrection: { pan: '0.0deg', tilt: '4.5deg', roll: '1.5deg' },
     links: [
-        {
-          nodeId: 'jw-f1-lobby-3',
-          position: { yaw: '0deg', pitch: '0deg' },
-          name: 'Go to Lobby 3',
-        },
-        {
-          nodeId: 'jw-f1-lobby-13',
-          position: { yaw: '302.40deg', pitch: '-19.54deg' },
-          name: 'Go to Lobby 13',
-        },
-        {
-          nodeId: 'jw-ext-outside-7',
-          position: { yaw: '191.69deg', pitch: '-40.58deg' },
-          name: 'Go to Outside 7',
-        },
-        {
-          nodeId: 'jw-f1-lobby-1',
-          position: { yaw: '104.78deg', pitch: '-24.36deg' },
-          name: 'Go back to Lobby 1',
-        }
+      {
+        nodeId: 'jw-f1-lobby-3',
+        position: { yaw: '0deg', pitch: '0deg' },
+        name: 'Go to Lobby 3',
+      },
+      {
+        nodeId: 'jw-f1-lobby-13',
+        position: { yaw: '302.40deg', pitch: '-19.54deg' },
+        name: 'Go to Lobby 13',
+      },
+      {
+        nodeId: 'jw-ext-outside-7',
+        position: { yaw: '191.69deg', pitch: '-40.58deg' },
+        name: 'Go to Outside 7',
+      },
+      {
+        nodeId: 'jw-f1-lobby-1',
+        position: { yaw: '104.78deg', pitch: '-24.36deg' },
+        name: 'Go back to Lobby 1',
+      }
     ],
     markers: [],
     data: {
@@ -76,36 +76,36 @@ export default [
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [
-        {
-          nodeId: 'jw-f1-lobby-4',
-          position: { yaw: '31.20deg', pitch: '-24.15deg' },
-          name: 'Go to Lobby 4',
-        },
-        {
-          nodeId: 'jw-f1-lobby-5',
-          position: { yaw: '76.13deg', pitch: '-18.09deg' },
-          name: 'Go to Lobby 5',
-        },
-        {
-          nodeId: 'jw-f1-lobby-13',
-          position: { yaw: '265.19deg', pitch: '-21.97deg' },
-          name: 'Go to Lobby 13',
-        },
-        {
-          nodeId: 'jw-f1-lobby-8',
-          position: { yaw: '337.97deg', pitch: '-11.62deg' },
-          name: 'Go back to Lobby 8',
-        },
-        {
-          nodeId: 'jw-f1-lobby-2',
-          position: { yaw: '214.85deg', pitch: '-24.34deg' },
-          name: 'Go back to Lobby 2',
-        },
-        {
-          nodeId: 'jw-f1-lobby-1',
-          position: { yaw: '145.42deg', pitch: '-24.50deg' },
-          name: 'Go back to Lobby 1',
-        }
+      {
+        nodeId: 'jw-f1-lobby-4',
+        position: { yaw: '31.20deg', pitch: '-24.15deg' },
+        name: 'Go to Lobby 4',
+      },
+      {
+        nodeId: 'jw-f1-lobby-5',
+        position: { yaw: '76.13deg', pitch: '-18.09deg' },
+        name: 'Go to Lobby 5',
+      },
+      {
+        nodeId: 'jw-f1-lobby-13',
+        position: { yaw: '265.19deg', pitch: '-21.97deg' },
+        name: 'Go to Lobby 13',
+      },
+      {
+        nodeId: 'jw-f1-lobby-8',
+        position: { yaw: '337.97deg', pitch: '-11.62deg' },
+        name: 'Go back to Lobby 8',
+      },
+      {
+        nodeId: 'jw-f1-lobby-2',
+        position: { yaw: '214.85deg', pitch: '-24.34deg' },
+        name: 'Go back to Lobby 2',
+      },
+      {
+        nodeId: 'jw-f1-lobby-1',
+        position: { yaw: '145.42deg', pitch: '-24.50deg' },
+        name: 'Go back to Lobby 1',
+      }
     ],
     markers: [],
     data: {
@@ -122,16 +122,16 @@ export default [
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [
-        {
-          nodeId: 'jw-f1-lobby-5',
-          position: { yaw: '121.90deg', pitch: '-31.22deg' },
-          name: 'Go to Lobby 5',
-        },
-        {
-          nodeId: 'jw-f1-lobby-3',
-          position: { yaw: '232.47deg', pitch: '-36.18deg' },
-          name: 'Go back to Lobby 3',
-        }
+      {
+        nodeId: 'jw-f1-lobby-5',
+        position: { yaw: '121.90deg', pitch: '-31.22deg' },
+        name: 'Go to Lobby 5',
+      },
+      {
+        nodeId: 'jw-f1-lobby-3',
+        position: { yaw: '232.47deg', pitch: '-36.18deg' },
+        name: 'Go back to Lobby 3',
+      }
     ],
     markers: [],
     data: {
@@ -148,21 +148,26 @@ export default [
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [
-        {
-          nodeId: 'jw-f1-lobby-6',
-          position: { yaw: '116.71deg', pitch: '-30.17deg' },
-          name: 'Go to Lobby 6',
-        },
-        {
-          nodeId: 'jw-f1-lobby-3',
-          position: { yaw: '257.04deg', pitch: '-25.26deg' },
-          name: 'Go to Lobby 3',
-        },
-        {
-          nodeId: 'jw-f1-lobby-4',
-          position: { yaw: '305.21deg', pitch: '-27.01deg' },
-          name: 'Go back to Lobby 4',
-        }
+      {
+        nodeId: 'jw-f1-lobby-6',
+        position: { yaw: '116.71deg', pitch: '-30.17deg' },
+        name: 'Go to Lobby 6',
+      },
+      {
+        nodeId: 'jw-stairs-1',
+        position: { yaw: '67.88deg', pitch: '-5.40deg' },
+        name: 'Go to Stairs',
+      },
+      {
+        nodeId: 'jw-f1-lobby-3',
+        position: { yaw: '257.04deg', pitch: '-25.26deg' },
+        name: 'Go to Lobby 3',
+      },
+      {
+        nodeId: 'jw-f1-lobby-4',
+        position: { yaw: '305.21deg', pitch: '-27.01deg' },
+        name: 'Go back to Lobby 4',
+      }
     ],
     markers: [],
     data: {
@@ -179,16 +184,16 @@ export default [
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [
-        {
-          nodeId: 'jw-f1-lobby-7',
-          position: { yaw: '95.55deg', pitch: '-12.72deg' },
-          name: 'Go to Lobby 7',
-        },
-        {
-          nodeId: 'jw-f1-lobby-5',
-          position: { yaw: '295.14deg', pitch: '-16.80deg' },
-          name: 'Go back to Lobby 5',
-        }
+      {
+        nodeId: 'jw-f1-lobby-7',
+        position: { yaw: '95.55deg', pitch: '-12.72deg' },
+        name: 'Go to Lobby 7',
+      },
+      {
+        nodeId: 'jw-f1-lobby-5',
+        position: { yaw: '295.14deg', pitch: '-16.80deg' },
+        name: 'Go back to Lobby 5',
+      }
     ],
     markers: [],
     data: {
@@ -205,11 +210,11 @@ export default [
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [
-        {
-          nodeId: 'jw-f1-lobby-6',
-          position: { yaw: '279.07deg', pitch: '-12.25deg' },
-          name: 'Go back to Lobby 6',
-        }
+      {
+        nodeId: 'jw-f1-lobby-6',
+        position: { yaw: '279.07deg', pitch: '-12.25deg' },
+        name: 'Go back to Lobby 6',
+      }
     ],
     markers: [],
     data: {
@@ -226,26 +231,26 @@ export default [
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [
-        {
-          nodeId: 'jw-f1-lobby-3',
-          position: { yaw: '142.10deg', pitch: '-35.01deg' },
-          name: 'Go to Lobby 3',
-        },
-        {
-          nodeId: 'jw-f1-lobby-4',
-          position: { yaw: '94.64deg', pitch: '-21.04deg' },
-          name: 'Go to Lobby 4',
-        },
-        {
-          nodeId: 'jw-f1-lobby-10',
-          position: { yaw: '280.84deg', pitch: '-29.15deg' },
-          name: 'Go to Lobby 10',
-        },
-        {
-          nodeId: 'jw-f1-lobby-9',
-          position: { yaw: '9.92deg', pitch: '-29.02deg' },
-          name: 'Go back to Lobby 9',
-        }
+      {
+        nodeId: 'jw-f1-lobby-3',
+        position: { yaw: '142.10deg', pitch: '-35.01deg' },
+        name: 'Go to Lobby 3',
+      },
+      {
+        nodeId: 'jw-f1-lobby-4',
+        position: { yaw: '94.64deg', pitch: '-21.04deg' },
+        name: 'Go to Lobby 4',
+      },
+      {
+        nodeId: 'jw-f1-lobby-10',
+        position: { yaw: '280.84deg', pitch: '-29.15deg' },
+        name: 'Go to Lobby 10',
+      },
+      {
+        nodeId: 'jw-f1-lobby-9',
+        position: { yaw: '9.92deg', pitch: '-29.02deg' },
+        name: 'Go back to Lobby 9',
+      }
     ],
     markers: [],
     data: {
@@ -262,11 +267,11 @@ export default [
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [
-        {
-          nodeId: 'jw-f1-lobby-8',
-          position: { yaw: '180deg', pitch: '0deg' },
-          name: 'Go back to Lobby 8',
-        }
+      {
+        nodeId: 'jw-f1-lobby-8',
+        position: { yaw: '180deg', pitch: '0deg' },
+        name: 'Go back to Lobby 8',
+      }
     ],
     markers: [],
     data: {
@@ -283,16 +288,16 @@ export default [
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [
-        {
-          nodeId: 'jw-f1-lobby-11',
-          position: { yaw: '194.40deg', pitch: '-45.39deg' },
-          name: 'Go to Lobby 11',
-        },
-        {
-          nodeId: 'jw-f1-lobby-9',
-          position: { yaw: '96.67deg', pitch: '-23.83deg' },
-          name: 'Go back to Lobby 9',
-        }
+      {
+        nodeId: 'jw-f1-lobby-11',
+        position: { yaw: '194.40deg', pitch: '-45.39deg' },
+        name: 'Go to Lobby 11',
+      },
+      {
+        nodeId: 'jw-f1-lobby-9',
+        position: { yaw: '96.67deg', pitch: '-23.83deg' },
+        name: 'Go back to Lobby 9',
+      }
     ],
     markers: [],
     data: {
@@ -309,21 +314,21 @@ export default [
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [
-        {
-          nodeId: 'jw-f1-lobby-12',
-          position: { yaw: '180.94deg', pitch: '-44.55deg' },
-          name: 'Go to Lobby 12',
-        },
-        {
-          nodeId: 'jw-f1-lobby-10',
-          position: { yaw: '12.77deg', pitch: '-24.05deg' },
-          name: 'Go back to Lobby 10',
-        },
-        {
-          nodeId: 'jw-f1-kids-1',
-          position: { yaw: '293.64deg', pitch: '-15.72deg' },
-          name: 'Go to Kids Area',
-        }
+      {
+        nodeId: 'jw-f1-lobby-12',
+        position: { yaw: '180.94deg', pitch: '-44.55deg' },
+        name: 'Go to Lobby 12',
+      },
+      {
+        nodeId: 'jw-f1-lobby-10',
+        position: { yaw: '12.77deg', pitch: '-24.05deg' },
+        name: 'Go back to Lobby 10',
+      },
+      {
+        nodeId: 'jw-f1-kids-1',
+        position: { yaw: '293.64deg', pitch: '-15.72deg' },
+        name: 'Go to Kids Area',
+      }
 
     ],
     markers: [],
@@ -341,21 +346,21 @@ export default [
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [
-        {
-          nodeId: 'jw-f1-lobby-14',
-          position: { yaw: '265.45deg', pitch: '-26.86deg' },
-          name: 'Go to Lobby 14',
-        },
-        {
-          nodeId: 'jw-f1-lobby-13',
-          position: { yaw: '88.71deg', pitch: '-27.50deg' },
-          name: 'Go to Lobby 13',
-        },
-        {
-          nodeId: 'jw-f1-lobby-11',
-          position: { yaw: '5.34deg', pitch: '-28.15deg' },
-          name: 'Go back to Lobby 11',
-        }
+      {
+        nodeId: 'jw-f1-lobby-14',
+        position: { yaw: '265.45deg', pitch: '-26.86deg' },
+        name: 'Go to Lobby 14',
+      },
+      {
+        nodeId: 'jw-f1-lobby-13',
+        position: { yaw: '88.71deg', pitch: '-27.50deg' },
+        name: 'Go to Lobby 13',
+      },
+      {
+        nodeId: 'jw-f1-lobby-11',
+        position: { yaw: '5.34deg', pitch: '-28.15deg' },
+        name: 'Go back to Lobby 11',
+      }
     ],
     markers: [],
     data: {
@@ -372,21 +377,21 @@ export default [
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [
-        {
-          nodeId: 'jw-f1-lobby-3',
-          position: { yaw: '74.96deg', pitch: '-25.77deg' },
-          name: 'Go to Lobby 3',
-        },
-        {
-          nodeId: 'jw-f1-lobby-2',
-          position: { yaw: '135.12deg', pitch: '-32.28deg' },
-          name: 'Go to Lobby 2',
-        },
-        {
-          nodeId: 'jw-f1-lobby-12',
-          position: { yaw: '281.90deg', pitch: '-29.80deg' },
-          name: 'Go back to Lobby 12',
-        }
+      {
+        nodeId: 'jw-f1-lobby-3',
+        position: { yaw: '74.96deg', pitch: '-25.77deg' },
+        name: 'Go to Lobby 3',
+      },
+      {
+        nodeId: 'jw-f1-lobby-2',
+        position: { yaw: '135.12deg', pitch: '-32.28deg' },
+        name: 'Go to Lobby 2',
+      },
+      {
+        nodeId: 'jw-f1-lobby-12',
+        position: { yaw: '281.90deg', pitch: '-29.80deg' },
+        name: 'Go back to Lobby 12',
+      }
     ],
     markers: [],
     data: {
@@ -403,11 +408,11 @@ export default [
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [
-        {
-          nodeId: 'jw-f1-lobby-12',
-          position: { yaw: '94.02deg', pitch: '-19.68deg' },
-          name: 'Go back to Lobby 12',
-        }
+      {
+        nodeId: 'jw-f1-lobby-12',
+        position: { yaw: '94.02deg', pitch: '-19.68deg' },
+        name: 'Go back to Lobby 12',
+      }
     ],
     markers: [],
     data: {
