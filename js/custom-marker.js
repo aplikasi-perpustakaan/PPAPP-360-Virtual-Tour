@@ -63,7 +63,8 @@ button {
 ::slotted(h2),
 ::slotted(p) {
     margin: 1rem;
-    text-align: justify;
+    padding: 0 10px;
+    text-align: center;
 }
 .tooltip pre {
     font-size: 0.8em;
