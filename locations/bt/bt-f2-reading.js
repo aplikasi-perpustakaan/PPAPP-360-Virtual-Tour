@@ -9,12 +9,17 @@ export default [
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [
-        {
-          nodeId: 'bt-f2-reading-2',
-          position: { yaw: '358.45deg', pitch: '-8.15deg' },
-          name: 'Go to Reading 2',
-        },
-      ],
+      {
+        nodeId: 'bt-f2-reading-2',
+        position: { yaw: '193.92deg', pitch: '4.63deg' },
+        name: 'Go to Reading 2',
+      },
+      {
+        nodeId: 'bt-ramp-4',
+        position: { yaw: '3.92deg', pitch: '-3.00deg' },
+        name: 'Go to Ramp 4',
+      },
+    ],
     markers: [],
     data: {
       floor: 'f2',
@@ -30,17 +35,17 @@ export default [
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [
-        {
-          nodeId: 'bt-f2-reading-1',
-          position: { yaw: '178.45deg', pitch: '-8.15deg' },
-          name: 'Go to Reading 1',
-        },
-        {
-          nodeId: 'bt-f2-reading-3',
-          position: { yaw: '358.45deg', pitch: '-8.15deg' },
-          name: 'Go to Reading 3',
-        },
-      ],
+      {
+        nodeId: 'bt-f2-reading-1',
+        position: { yaw: '178.45deg', pitch: '-8.15deg' },
+        name: 'Go to Reading 1',
+      },
+      {
+        nodeId: 'bt-f2-reading-3',
+        position: { yaw: '358.45deg', pitch: '-8.15deg' },
+        name: 'Go to Reading 3',
+      },
+    ],
     markers: [],
     data: {
       floor: 'f2',
@@ -56,22 +61,22 @@ export default [
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [
-        {
-          nodeId: 'bt-f2-reading-2',
-          position: { yaw: '270.98deg', pitch: '-11.19deg' },
-          name: 'Go to Reading 2',
-        },
-        {
-          nodeId: 'bt-f2-reading-19',
-          position: { yaw: '170.58deg', pitch: '4.93deg' },
-          name: 'Go to Reading 19',
-        },
-        {
-          nodeId: 'bt-f2-reading-4',
-          position: { yaw: '358.45deg', pitch: '-8.15deg' },
-          name: 'Go to Reading 4',
-        },
-      ],
+      {
+        nodeId: 'bt-f2-reading-2',
+        position: { yaw: '270.98deg', pitch: '-11.19deg' },
+        name: 'Go to Reading 2',
+      },
+      {
+        nodeId: 'bt-f2-reading-19',
+        position: { yaw: '170.58deg', pitch: '4.93deg' },
+        name: 'Go to Reading 19',
+      },
+      {
+        nodeId: 'bt-f2-reading-4',
+        position: { yaw: '358.45deg', pitch: '-8.15deg' },
+        name: 'Go to Reading 4',
+      },
+    ],
     markers: [],
     data: {
       floor: 'f2',
@@ -87,17 +92,17 @@ export default [
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [
-        {
-          nodeId: 'bt-f2-reading-3',
-          position: { yaw: '274.71deg', pitch: '-7.46deg' },
-          name: 'Go to Reading 3',
-        },
-        {
-          nodeId: 'bt-f2-reading-5',
-          position: { yaw: '358.45deg', pitch: '-8.15deg' },
-          name: 'Go to Reading 5',
-        },
-      ],
+      {
+        nodeId: 'bt-f2-reading-3',
+        position: { yaw: '274.71deg', pitch: '-7.46deg' },
+        name: 'Go to Reading 3',
+      },
+      {
+        nodeId: 'bt-f2-reading-5',
+        position: { yaw: '358.45deg', pitch: '-8.15deg' },
+        name: 'Go to Reading 5',
+      },
+    ],
     markers: [],
     data: {
       floor: 'f2',
@@ -113,17 +118,17 @@ export default [
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [
-        {
-          nodeId: 'bt-f2-reading-4',
-          position: { yaw: '178.45deg', pitch: '-8.15deg' },
-          name: 'Go to Reading 4',
-        },
-        {
-          nodeId: 'bt-f2-reading-6',
-          position: { yaw: '358.45deg', pitch: '-8.15deg' },
-          name: 'Go to Reading 6',
-        },
-      ],
+      {
+        nodeId: 'bt-f2-reading-4',
+        position: { yaw: '178.45deg', pitch: '-8.15deg' },
+        name: 'Go to Reading 4',
+      },
+      {
+        nodeId: 'bt-f2-reading-6',
+        position: { yaw: '358.45deg', pitch: '-8.15deg' },
+        name: 'Go to Reading 6',
+      },
+    ],
     markers: [],
     data: {
       floor: 'f2',
@@ -139,22 +144,22 @@ export default [
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [
-        {
-          nodeId: 'bt-f2-reading-3',
-          position: { yaw: '178.45deg', pitch: '-8.15deg' },
-          name: 'Go to Reading 3',
-        },
-        {
-          nodeId: 'bt-f2-reading-5',
-          position: { yaw: '55.80deg', pitch: '-0.15deg' },
-          name: 'Go to Reading 5',
-        },
-        {
-          nodeId: 'bt-f2-reading-7',
-          position: { yaw: '358.45deg', pitch: '-8.15deg' },
-          name: 'Go to Reading 7',
-        },
-      ],
+      {
+        nodeId: 'bt-f2-reading-3',
+        position: { yaw: '178.45deg', pitch: '-8.15deg' },
+        name: 'Go to Reading 3',
+      },
+      {
+        nodeId: 'bt-f2-reading-5',
+        position: { yaw: '55.80deg', pitch: '-0.15deg' },
+        name: 'Go to Reading 5',
+      },
+      {
+        nodeId: 'bt-f2-reading-7',
+        position: { yaw: '358.45deg', pitch: '-8.15deg' },
+        name: 'Go to Reading 7',
+      },
+    ],
     markers: [],
     data: {
       floor: 'f2',
@@ -170,17 +175,17 @@ export default [
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [
-        {
-          nodeId: 'bt-f2-reading-6',
-          position: { yaw: '178.45deg', pitch: '-8.15deg' },
-          name: 'Go to Reading 6',
-        },
-        {
-          nodeId: 'bt-f2-reading-8',
-          position: { yaw: '358.45deg', pitch: '-8.15deg' },
-          name: 'Go to Reading 8',
-        },
-      ],
+      {
+        nodeId: 'bt-f2-reading-6',
+        position: { yaw: '178.45deg', pitch: '-8.15deg' },
+        name: 'Go to Reading 6',
+      },
+      {
+        nodeId: 'bt-f2-reading-8',
+        position: { yaw: '358.45deg', pitch: '-8.15deg' },
+        name: 'Go to Reading 8',
+      },
+    ],
     markers: [],
     data: {
       floor: 'f2',
@@ -196,17 +201,17 @@ export default [
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [
-        {
-          nodeId: 'bt-f2-reading-7',
-          position: { yaw: '178.45deg', pitch: '-8.15deg' },
-          name: 'Go to Reading 7',
-        },
-        {
-          nodeId: 'bt-f2-reading-9',
-          position: { yaw: '358.45deg', pitch: '-8.15deg' },
-          name: 'Go to Reading 9',
-        },
-      ],
+      {
+        nodeId: 'bt-f2-reading-7',
+        position: { yaw: '178.45deg', pitch: '-8.15deg' },
+        name: 'Go to Reading 7',
+      },
+      {
+        nodeId: 'bt-f2-reading-9',
+        position: { yaw: '358.45deg', pitch: '-8.15deg' },
+        name: 'Go to Reading 9',
+      },
+    ],
     markers: [],
     data: {
       floor: 'f2',
@@ -222,17 +227,17 @@ export default [
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [
-        {
-          nodeId: 'bt-f2-reading-8',
-          position: { yaw: '178.45deg', pitch: '-8.15deg' },
-          name: 'Go to Reading 8',
-        },
-        {
-          nodeId: 'bt-f2-reading-10',
-          position: { yaw: '273.62deg', pitch: '-31.45deg' },
-          name: 'Go to Reading 10',
-        },
-      ],
+      {
+        nodeId: 'bt-f2-reading-8',
+        position: { yaw: '178.45deg', pitch: '-8.15deg' },
+        name: 'Go to Reading 8',
+      },
+      {
+        nodeId: 'bt-f2-reading-10',
+        position: { yaw: '273.62deg', pitch: '-31.45deg' },
+        name: 'Go to Reading 10',
+      },
+    ],
     markers: [],
     data: {
       floor: 'f2',
@@ -248,22 +253,22 @@ export default [
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [
-        {
-          nodeId: 'bt-f2-reading-9',
-          position: { yaw: '98.44deg', pitch: '-21.42deg' },
-          name: 'Go to Reading 9',
-        },
-        {
-          nodeId: 'bt-f2-backside-1',
-          position: { yaw: '9.80deg', pitch: '-9.39deg' },
-          name: 'Go to Backside 1',
-        },
-                {
-          nodeId: 'bt-f2-reading-11',
-          position: { yaw: '278.65deg', pitch: '-16.73deg' },
-          name: 'Go to Reading 11',
-        },
-      ],
+      {
+        nodeId: 'bt-f2-reading-9',
+        position: { yaw: '98.44deg', pitch: '-21.42deg' },
+        name: 'Go to Reading 9',
+      },
+      {
+        nodeId: 'bt-f2-backside-1',
+        position: { yaw: '9.80deg', pitch: '-9.39deg' },
+        name: 'Go to Backside 1',
+      },
+      {
+        nodeId: 'bt-f2-reading-11',
+        position: { yaw: '278.65deg', pitch: '-16.73deg' },
+        name: 'Go to Reading 11',
+      },
+    ],
     markers: [],
     data: {
       floor: 'f2',
@@ -279,17 +284,17 @@ export default [
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [
-        {
-          nodeId: 'bt-f2-reading-10',
-          position: { yaw: '178.45deg', pitch: '-8.15deg' },
-          name: 'Go to Reading 10',
-        },
-        {
-          nodeId: 'bt-f2-reading-12',
-          position: { yaw: '358.45deg', pitch: '-8.15deg' },
-          name: 'Go to Reading 12',
-        },
-      ],
+      {
+        nodeId: 'bt-f2-reading-10',
+        position: { yaw: '178.45deg', pitch: '-8.15deg' },
+        name: 'Go to Reading 10',
+      },
+      {
+        nodeId: 'bt-f2-reading-12',
+        position: { yaw: '358.45deg', pitch: '-8.15deg' },
+        name: 'Go to Reading 12',
+      },
+    ],
     markers: [],
     data: {
       floor: 'f2',
@@ -305,17 +310,17 @@ export default [
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [
-        {
-          nodeId: 'bt-f2-reading-11',
-          position: { yaw: '178.45deg', pitch: '-8.15deg' },
-          name: 'Go to Reading 11',
-        },
-        {
-          nodeId: 'bt-f2-reading-13',
-          position: { yaw: '358.45deg', pitch: '-8.15deg' },
-          name: 'Go to Reading 13',
-        },
-      ],
+      {
+        nodeId: 'bt-f2-reading-11',
+        position: { yaw: '178.45deg', pitch: '-8.15deg' },
+        name: 'Go to Reading 11',
+      },
+      {
+        nodeId: 'bt-f2-reading-13',
+        position: { yaw: '358.45deg', pitch: '-8.15deg' },
+        name: 'Go to Reading 13',
+      },
+    ],
     markers: [],
     data: {
       floor: 'f2',
@@ -331,17 +336,17 @@ export default [
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [
-        {
-          nodeId: 'bt-f2-reading-12',
-          position: { yaw: '178.45deg', pitch: '-8.15deg' },
-          name: 'Go to Reading 12',
-        },
-        {
-          nodeId: 'bt-f2-reading-14',
-          position: { yaw: '358.45deg', pitch: '-8.15deg' },
-          name: 'Go to Reading 14',
-        },
-      ],
+      {
+        nodeId: 'bt-f2-reading-12',
+        position: { yaw: '178.45deg', pitch: '-8.15deg' },
+        name: 'Go to Reading 12',
+      },
+      {
+        nodeId: 'bt-f2-reading-14',
+        position: { yaw: '358.45deg', pitch: '-8.15deg' },
+        name: 'Go to Reading 14',
+      },
+    ],
     markers: [],
     data: {
       floor: 'f2',
@@ -357,17 +362,17 @@ export default [
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [
-        {
-          nodeId: 'bt-f2-reading-13',
-          position: { yaw: '178.45deg', pitch: '-8.15deg' },
-          name: 'Go to Reading 13',
-        },
-        {
-          nodeId: 'bt-f2-reading-15',
-          position: { yaw: '358.45deg', pitch: '-8.15deg' },
-          name: 'Go to Reading 15',
-        },
-      ],
+      {
+        nodeId: 'bt-f2-reading-13',
+        position: { yaw: '178.45deg', pitch: '-8.15deg' },
+        name: 'Go to Reading 13',
+      },
+      {
+        nodeId: 'bt-f2-reading-15',
+        position: { yaw: '358.45deg', pitch: '-8.15deg' },
+        name: 'Go to Reading 15',
+      },
+    ],
     markers: [],
     data: {
       floor: 'f2',
@@ -383,17 +388,17 @@ export default [
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [
-        {
-          nodeId: 'bt-f2-reading-14',
-          position: { yaw: '178.45deg', pitch: '-8.15deg' },
-          name: 'Go to Reading 14',
-        },
-        {
-          nodeId: 'bt-f2-reading-16',
-          position: { yaw: '358.45deg', pitch: '-8.15deg' },
-          name: 'Go to Reading 16',
-        },
-      ],
+      {
+        nodeId: 'bt-f2-reading-14',
+        position: { yaw: '178.45deg', pitch: '-8.15deg' },
+        name: 'Go to Reading 14',
+      },
+      {
+        nodeId: 'bt-f2-reading-16',
+        position: { yaw: '358.45deg', pitch: '-8.15deg' },
+        name: 'Go to Reading 16',
+      },
+    ],
     markers: [],
     data: {
       floor: 'f2',
@@ -409,17 +414,17 @@ export default [
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [
-        {
-          nodeId: 'bt-f2-reading-15',
-          position: { yaw: '178.45deg', pitch: '-8.15deg' },
-          name: 'Go to Reading 15',
-        },
-        {
-          nodeId: 'bt-f2-reading-17',
-          position: { yaw: '358.45deg', pitch: '-8.15deg' },
-          name: 'Go to Reading 17',
-        },
-      ],
+      {
+        nodeId: 'bt-f2-reading-15',
+        position: { yaw: '178.45deg', pitch: '-8.15deg' },
+        name: 'Go to Reading 15',
+      },
+      {
+        nodeId: 'bt-f2-reading-17',
+        position: { yaw: '358.45deg', pitch: '-8.15deg' },
+        name: 'Go to Reading 17',
+      },
+    ],
     markers: [],
     data: {
       floor: 'f2',
@@ -435,17 +440,17 @@ export default [
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [
-        {
-          nodeId: 'bt-f2-reading-16',
-          position: { yaw: '178.45deg', pitch: '-8.15deg' },
-          name: 'Go to Reading 16',
-        },
-        {
-          nodeId: 'bt-f2-reading-18',
-          position: { yaw: '358.45deg', pitch: '-8.15deg' },
-          name: 'Go to Reading 18',
-        },
-      ],
+      {
+        nodeId: 'bt-f2-reading-16',
+        position: { yaw: '178.45deg', pitch: '-8.15deg' },
+        name: 'Go to Reading 16',
+      },
+      {
+        nodeId: 'bt-f2-reading-18',
+        position: { yaw: '358.45deg', pitch: '-8.15deg' },
+        name: 'Go to Reading 18',
+      },
+    ],
     markers: [],
     data: {
       floor: 'f2',
@@ -461,17 +466,17 @@ export default [
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [
-        {
-          nodeId: 'bt-f2-reading-17',
-          position: { yaw: '178.45deg', pitch: '-8.15deg' },
-          name: 'Go to Reading 17',
-        },
-        {
-          nodeId: 'bt-f2-reading-19',
-          position: { yaw: '358.45deg', pitch: '-8.15deg' },
-          name: 'Go to Reading 19',
-        },
-      ],
+      {
+        nodeId: 'bt-f2-reading-17',
+        position: { yaw: '178.45deg', pitch: '-8.15deg' },
+        name: 'Go to Reading 17',
+      },
+      {
+        nodeId: 'bt-f2-reading-19',
+        position: { yaw: '358.45deg', pitch: '-8.15deg' },
+        name: 'Go to Reading 19',
+      },
+    ],
     markers: [],
     data: {
       floor: 'f2',
@@ -487,17 +492,17 @@ export default [
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [
-        {
-          nodeId: 'bt-f2-reading-3',
-          position: { yaw: '353.57deg', pitch: '-3.01deg' },
-          name: 'Go to Reading 3',
-        },
-        {
-          nodeId: 'bt-f2-reading-20',
-          position: { yaw: '167.48deg', pitch: '-5.46deg' },
-          name: 'Go to Reading 20',
-        },
-      ],
+      {
+        nodeId: 'bt-f2-reading-3',
+        position: { yaw: '353.57deg', pitch: '-3.01deg' },
+        name: 'Go to Reading 3',
+      },
+      {
+        nodeId: 'bt-f2-reading-20',
+        position: { yaw: '167.48deg', pitch: '-5.46deg' },
+        name: 'Go to Reading 20',
+      },
+    ],
     markers: [],
     data: {
       floor: 'f2',
@@ -513,17 +518,17 @@ export default [
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [
-        {
-          nodeId: 'bt-f2-reading-19',
-          position: { yaw: '357.66deg', pitch: '-7.98deg' },
-          name: 'Go to Reading 19',
-        },
-        {
-          nodeId: 'bt-f2-reading-21',
-          position: { yaw: '97.27deg', pitch: '0.05deg' },
-          name: 'Go to Reading 21',
-        },
-      ],
+      {
+        nodeId: 'bt-f2-reading-19',
+        position: { yaw: '357.66deg', pitch: '-7.98deg' },
+        name: 'Go to Reading 19',
+      },
+      {
+        nodeId: 'bt-f2-reading-21',
+        position: { yaw: '97.27deg', pitch: '0.05deg' },
+        name: 'Go to Reading 21',
+      },
+    ],
     markers: [],
     data: {
       floor: 'f2',
@@ -539,17 +544,17 @@ export default [
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [
-        {
-          nodeId: 'bt-f2-reading-20',
-          position: { yaw: '337.04deg', pitch: '-10.00deg' },
-          name: 'Go to Reading 20',
-        },
-        {
-          nodeId: 'bt-stairs-front-1',
-          position: { yaw: '200.32deg', pitch: '-4.69deg' },
-          name: 'Go to Stairs Front 1',
-        },
-      ],
+      {
+        nodeId: 'bt-f2-reading-20',
+        position: { yaw: '337.04deg', pitch: '-10.00deg' },
+        name: 'Go to Reading 20',
+      },
+      {
+        nodeId: 'bt-stairs-front-1',
+        position: { yaw: '200.32deg', pitch: '-4.69deg' },
+        name: 'Go to Stairs Front 1',
+      },
+    ],
     markers: [],
     data: {
       floor: 'f2',
@@ -565,17 +570,17 @@ export default [
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [
-        {
-          nodeId: 'bt-stairs-front-1',
-          position: { yaw: '178.45deg', pitch: '-8.15deg' },
-          name: 'Go to Stairs Front 1',
-        },
-        {
-          nodeId: 'bt-f1-lobby-1',
-          position: { yaw: '278.00deg', pitch: '-5.68deg' },
-          name: 'Go to Lobby 1',
-        },
-      ],
+      {
+        nodeId: 'bt-f1-lobby-1',
+        position: { yaw: '278.00deg', pitch: '-5.68deg' },
+        name: 'Go to Lobby 1',
+      },
+      {
+        nodeId: 'bt-f2-reading-23',
+        position: { yaw: '111.36deg', pitch: '-10.15deg' },
+        name: 'Go to Reading 23',
+      },
+    ],
     markers: [],
     data: {
       floor: 'f2',
@@ -591,17 +596,17 @@ export default [
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [
-        {
-          nodeId: 'bt-f2-reading-22',
-          position: { yaw: '178.45deg', pitch: '-8.15deg' },
-          name: 'Go to Reading 22',
-        },
-        {
-          nodeId: 'bt-f2-reading-24',
-          position: { yaw: '358.45deg', pitch: '-8.15deg' },
-          name: 'Go to Reading 24',
-        },
-      ],
+      {
+        nodeId: 'bt-f2-reading-22',
+        position: { yaw: '178.45deg', pitch: '-8.15deg' },
+        name: 'Go to Reading 22',
+      },
+      {
+        nodeId: 'bt-f2-reading-24',
+        position: { yaw: '358.45deg', pitch: '-8.15deg' },
+        name: 'Go to Reading 24',
+      },
+    ],
     markers: [],
     data: {
       floor: 'f2',
@@ -617,17 +622,17 @@ export default [
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [
-        {
-          nodeId: 'bt-f2-reading-23',
-          position: { yaw: '178.45deg', pitch: '-8.15deg' },
-          name: 'Go to Reading 23',
-        },
-        {
-          nodeId: 'bt-f2-reading-25',
-          position: { yaw: '358.45deg', pitch: '-8.15deg' },
-          name: 'Go to Reading 25',
-        },
-      ],
+      {
+        nodeId: 'bt-f2-reading-23',
+        position: { yaw: '178.45deg', pitch: '-8.15deg' },
+        name: 'Go to Reading 23',
+      },
+      {
+        nodeId: 'bt-f2-reading-25',
+        position: { yaw: '358.45deg', pitch: '-8.15deg' },
+        name: 'Go to Reading 25',
+      },
+    ],
     markers: [],
     data: {
       floor: 'f2',
@@ -643,17 +648,17 @@ export default [
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [
-        {
-          nodeId: 'bt-f2-reading-24',
-          position: { yaw: '178.45deg', pitch: '-8.15deg' },
-          name: 'Go to Reading 24',
-        },
-      ],
+      {
+        nodeId: 'bt-f2-reading-24',
+        position: { yaw: '178.45deg', pitch: '-8.15deg' },
+        name: 'Go to Reading 24',
+      },
+    ],
     markers: [],
     data: {
       floor: 'f2',
       tags: ['reading'],
-      },
     },
+  },
 ];
 

@@ -9,12 +9,17 @@ export default [
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [
-        {
-          nodeId: 'bt-ramp-2',
-          position: { yaw: '358.45deg', pitch: '-8.15deg' },
-          name: 'Go to 2',
-        },
-      ],
+      {
+        nodeId: 'bt-ramp-2',
+        position: { yaw: '7.36deg', pitch: '0.49deg' },
+        name: 'Go to 2',
+      },
+      {
+        nodeId: 'bt-f1-lobby-2',
+        position: { yaw: '188.76deg', pitch: '0.10deg' },
+        name: 'Go to Lobby 2',
+      },
+    ],
     markers: [],
     data: {
       floor: 'ramp',
@@ -30,17 +35,17 @@ export default [
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [
-        {
-          nodeId: 'bt-ramp-1',
-          position: { yaw: '178.45deg', pitch: '-8.15deg' },
-          name: 'Go to 1',
-        },
-        {
-          nodeId: 'bt-ramp-3',
-          position: { yaw: '358.45deg', pitch: '-8.15deg' },
-          name: 'Go to 3',
-        },
-      ],
+      {
+        nodeId: 'bt-ramp-1',
+        position: { yaw: '178.45deg', pitch: '-8.15deg' },
+        name: 'Go to 1',
+      },
+      {
+        nodeId: 'bt-ramp-3',
+        position: { yaw: '358.45deg', pitch: '-8.15deg' },
+        name: 'Go to 3',
+      },
+    ],
     markers: [],
     data: {
       floor: 'ramp',
@@ -56,17 +61,17 @@ export default [
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [
-        {
-          nodeId: 'bt-ramp-2',
-          position: { yaw: '178.45deg', pitch: '-8.15deg' },
-          name: 'Go to 2',
-        },
-        {
-          nodeId: 'bt-ramp-4',
-          position: { yaw: '358.45deg', pitch: '-8.15deg' },
-          name: 'Go to 4',
-        },
-      ],
+      {
+        nodeId: 'bt-ramp-2',
+        position: { yaw: '178.45deg', pitch: '-8.15deg' },
+        name: 'Go to 2',
+      },
+      {
+        nodeId: 'bt-ramp-4',
+        position: { yaw: '89.29deg', pitch: '-4.26deg' },
+        name: 'Go to 4',
+      },
+    ],
     markers: [],
     data: {
       floor: 'ramp',
@@ -82,16 +87,21 @@ export default [
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [
-        {
-          nodeId: 'bt-ramp-3',
-          position: { yaw: '178.45deg', pitch: '-8.15deg' },
-          name: 'Go to 3',
-        },
-      ],
+      {
+        nodeId: 'bt-ramp-3',
+        position: { yaw: '6.93deg', pitch: '0.53deg' },
+        name: 'Go to 3',
+      },
+      {
+        nodeId: 'bt-f2-reading-1',
+        position: { yaw: '186.18deg', pitch: '0.95deg' },
+        name: 'Go to Reading 1',
+      },
+    ],
     markers: [],
     data: {
       floor: 'ramp',
       tags: ['ramp'],
-      },
     },
+  },
 ];
