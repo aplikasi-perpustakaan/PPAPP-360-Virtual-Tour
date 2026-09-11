@@ -66,6 +66,8 @@ export default [
     thumbnail: './images/{branch}/{section}/thumbs/{branch}-{section}-{N}.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
+    sphereCorrection: { pan: '0deg', tilt: '0deg', roll: '0deg' }, // Note: Ignore standard yaw/pitch when applying sphereCorrection; use explicit pan/tilt/roll values.
     links: [],
     markers: [],
     data: {
