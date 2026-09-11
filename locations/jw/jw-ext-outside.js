@@ -161,8 +161,9 @@ export default [
     caption: 'JW – Exterior – Outside 7',
     panorama: './images/jw/ext-outside/jw-ext-outside-7.jpg',
     thumbnail: './images/jw/ext-outside/thumbs/jw-ext-outside-7.jpg',
-    defaultYaw: '0deg',
-    defaultPitch: '0deg',
+    defaultYaw: '281.46deg',
+    defaultPitch: '0.00deg',
+    sphereCorrection: { pan: '0.0deg', tilt: '5.0deg', roll: '0.0deg' },
     links: [
         {
           nodeId: 'jw-f1-lobby-2',
@@ -187,8 +188,9 @@ export default [
     caption: 'JW – Exterior – Outside 8',
     panorama: './images/jw/ext-outside/jw-ext-outside-8.jpg',
     thumbnail: './images/jw/ext-outside/thumbs/jw-ext-outside-8.jpg',
-    defaultYaw: '0deg',
-    defaultPitch: '0deg',
+    defaultYaw: '142.28deg',
+    defaultPitch: '0.00deg',
+    sphereCorrection: { pan: '0.0deg', tilt: '3.0deg', roll: '0.0deg' },
     links: [
         {
           nodeId: 'jw-ext-outside-7',
@@ -215,7 +217,7 @@ export default [
     thumbnail: './images/jw/ext-outside/thumbs/jw-ext-outside-9.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
-    sphereCorrection: { roll: '2.5deg' },
+    sphereCorrection: { pan: '0.0deg', tilt: '6.5deg', roll: '1.0deg' },
     links: [
         {
           nodeId: 'jw-ext-outside-10',

@@ -158,6 +158,12 @@ async function bootstrap() {
     // Force the Viewer constructor to respect the requested URL coordinates for the initial load
     if (requestedYaw) viewerOptions.defaultYaw = requestedYaw;
     if (requestedPitch) viewerOptions.defaultPitch = requestedPitch;
+    
+    // Ensure the initial node's sphereCorrection is applied immediately
+    const initialNode = defaultNodes.find(n => n.id === startNodeId);
+    if (initialNode && initialNode.sphereCorrection) {
+      viewerOptions.sphereCorrection = initialNode.sphereCorrection;
+    }
 
     const viewer = new Viewer(viewerOptions);
     window.viewer = viewer;
@@ -203,10 +209,15 @@ async function bootstrap() {
       isInitialLoad = false;
       
       // Reset local keyboard adjusters to the current node's existing configuration
-      const correction = node.sphereCorrection || {};
+      // Note: PSV plugin strips custom properties from the node object, so we look it up from defaultNodes
+      const originalNode = defaultNodes.find(n => n.id === node.id) || {};
+      const correction = originalNode.sphereCorrection || { pan: '0deg', tilt: '0deg', roll: '0deg' };
       currentPan = parseFloat(correction.pan) || 0;
       currentTilt = parseFloat(correction.tilt) || 0;
       currentRoll = parseFloat(correction.roll) || 0;
+
+      // Ensure the viewer applies the new room's correction (or resets it to 0)
+      viewer.setOption('sphereCorrection', correction);
 
       window.history.replaceState({}, '', url);
     });
