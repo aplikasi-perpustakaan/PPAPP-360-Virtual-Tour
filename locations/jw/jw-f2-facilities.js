@@ -8,21 +8,21 @@ export default [
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [
-        {
-          nodeId: 'jw-f2-reference-18',
-          position: { yaw: '291.38deg', pitch: '-17.57deg' },
-          name: 'Go back to Reference Area',
-        },
-        {
-          nodeId: 'jw-f2-facilities-2',
-          position: { yaw: '0deg', pitch: '0deg' },
-          name: 'Go to Facilities 2',
-        },
-        {
-          nodeId: 'jw-f2-facilities-3',
-          position: { yaw: '56.25deg', pitch: '-22.82deg' },
-          name: 'Go to Facilities 3',
-        }
+      {
+        nodeId: 'jw-f2-reference-18',
+        position: { yaw: '291.38deg', pitch: '0deg' },
+        name: 'Go back to Reference Area',
+      },
+      {
+        nodeId: 'jw-f2-facilities-2',
+        position: { yaw: '0deg', pitch: '0deg' },
+        name: 'Go to Facilities 2',
+      },
+      {
+        nodeId: 'jw-f2-facilities-3',
+        position: { yaw: '56.25deg', pitch: '0deg' },
+        name: 'Go to Facilities 3',
+      }
     ],
     markers: [],
     data: {
@@ -39,16 +39,16 @@ export default [
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [
-        {
-          nodeId: 'jw-f2-reference-18',
-          position: { yaw: '180deg', pitch: '0deg' },
-          name: 'Go back to Reference Area',
-        },
-        {
-          nodeId: 'jw-f2-facilities-1',
-          position: { yaw: '180deg', pitch: '0deg' },
-          name: 'Go back to Facilities 1',
-        }
+      {
+        nodeId: 'jw-f2-reference-18',
+        position: { yaw: '180deg', pitch: '0deg' },
+        name: 'Go back to Reference Area',
+      },
+      {
+        nodeId: 'jw-f2-facilities-1',
+        position: { yaw: '180deg', pitch: '0deg' },
+        name: 'Go back to Facilities 1',
+      }
     ],
     markers: [],
     data: {
@@ -65,11 +65,11 @@ export default [
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [
-        {
-          nodeId: 'jw-f2-facilities-1',
-          position: { yaw: '222.07deg', pitch: '-21.80deg' },
-          name: 'Go to Facilities 1',
-        },
+      {
+        nodeId: 'jw-f2-facilities-1',
+        position: { yaw: '222.07deg', pitch: '0deg' },
+        name: 'Go to Facilities 1',
+      },
     ],
     markers: [],
     data: {

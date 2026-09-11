@@ -13,17 +13,17 @@ export default [
     links: [
       {
         nodeId: 'bt-f1-kids-2',
-        position: { yaw: '294.59deg', pitch: '-21.01deg' },
+        position: { yaw: '294.59deg', pitch: '0deg' },
         name: 'Go to Kids 2',
       },
       {
         nodeId: 'bt-f1-lobby-2',
-        position: { yaw: '89.76deg', pitch: '-5deg' },
+        position: { yaw: '89.76deg', pitch: '0deg' },
         name: 'Exit to Lobby 2',
       },
       {
         nodeId: 'bt-f1-kids-3',
-        position: { yaw: '357.87deg', pitch: '-11.89deg' },
+        position: { yaw: '357.87deg', pitch: '0deg' },
         name: 'Go to Kids 3',
       },
     ],
@@ -46,12 +46,12 @@ export default [
     links: [
       {
         nodeId: 'bt-f1-kids-1',
-        position: { yaw: '114.59deg', pitch: '-5deg' },
+        position: { yaw: '114.59deg', pitch: '0deg' },
         name: 'Go to Kids 1',
       },
       {
         nodeId: 'bt-f1-kids-3',
-        position: { yaw: '358.45deg', pitch: '-8.15deg' },
+        position: { yaw: '358.45deg', pitch: '0deg' },
         name: 'Go to Kids 3',
       },
     ],
@@ -74,17 +74,17 @@ export default [
     links: [
       {
         nodeId: 'bt-f1-kids-2',
-        position: { yaw: '216.16deg', pitch: '-10.57deg' },
+        position: { yaw: '216.16deg', pitch: '0deg' },
         name: 'Go to Kids 2',
       },
       {
         nodeId: 'bt-f1-kids-1',
-        position: { yaw: '185.06deg', pitch: '-8.17deg' },
+        position: { yaw: '185.06deg', pitch: '0deg' },
         name: 'Go to Kids 1',
       },
       {
         nodeId: 'bt-f1-kids-4',
-        position: { yaw: '8.65deg', pitch: '-12.81deg' },
+        position: { yaw: '8.65deg', pitch: '0deg' },
         name: 'Go to Kids 4',
       },
     ],
@@ -106,12 +106,12 @@ export default [
     links: [
       {
         nodeId: 'bt-f1-kids-3',
-        position: { yaw: '178.45deg', pitch: '-8.15deg' },
+        position: { yaw: '178.45deg', pitch: '0deg' },
         name: 'Go to Kids 3',
       },
       {
         nodeId: 'bt-f1-kids-5',
-        position: { yaw: '358.45deg', pitch: '-8.15deg' },
+        position: { yaw: '358.45deg', pitch: '0deg' },
         name: 'Go to Kids 5',
       },
     ],
@@ -134,17 +134,17 @@ export default [
     links: [
       {
         nodeId: 'bt-f1-kids-4',
-        position: { yaw: '178.45deg', pitch: '-8.15deg' },
+        position: { yaw: '178.45deg', pitch: '0deg' },
         name: 'Go to Kids 4',
       },
       {
         nodeId: 'bt-f1-kids-6',
-        position: { yaw: '307.47deg', pitch: '-24.73deg' },
+        position: { yaw: '307.47deg', pitch: '0deg' },
         name: 'Go to Kids 6',
       },
       {
         nodeId: 'bt-f1-kids-7',
-        position: { yaw: '7.46deg', pitch: '-15.13deg' },
+        position: { yaw: '7.46deg', pitch: '0deg' },
         name: 'Go to Kids 7',
       },
     ],
@@ -167,12 +167,12 @@ export default [
     links: [
       {
         nodeId: 'bt-f1-kids-5',
-        position: { yaw: '144.87deg', pitch: '-24.53deg' },
+        position: { yaw: '144.87deg', pitch: '0deg' },
         name: 'Go to Kids 5',
       },
       {
         nodeId: 'bt-f1-kids-7',
-        position: { yaw: '31.18deg', pitch: '-19.17deg' },
+        position: { yaw: '31.18deg', pitch: '0deg' },
         name: 'Go to Kids 7',
       },
     ],
@@ -195,22 +195,22 @@ export default [
     links: [
       {
         nodeId: 'bt-f1-kids-6',
-        position: { yaw: '218.91deg', pitch: '-14.15deg' },
+        position: { yaw: '218.91deg', pitch: '0deg' },
         name: 'Go to Kids 6',
       },
       {
         nodeId: 'bt-f1-kids-5',
-        position: { yaw: '184.09deg', pitch: '-9.83deg' },
+        position: { yaw: '184.09deg', pitch: '0deg' },
         name: 'Go to Kids 5',
       },
       {
         nodeId: 'bt-f1-kids-8',
-        position: { yaw: '358.45deg', pitch: '-8.15deg' },
+        position: { yaw: '358.45deg', pitch: '0deg' },
         name: 'Go to Kids 8',
       },
       {
         nodeId: 'bt-f1-tyt-13',
-        position: { yaw: '95.70deg', pitch: '-34.74deg' },
+        position: { yaw: '95.70deg', pitch: '0deg' },
         name: 'Go to Tyt 13',
       },
     ],
@@ -233,13 +233,13 @@ export default [
     links: [
       {
         nodeId: 'bt-f1-kids-7',
-        position: { yaw: '178.45deg', pitch: '-8.15deg' },
+        position: { yaw: '178.45deg', pitch: '0deg' },
         name: 'Go to Kids 7',
       },
       {
-          nodeId: 'bt-f1-backside-2',
-          position: { yaw: '6.41deg', pitch: '-19.58deg' },
-          name: 'Go to Backside 2',
+        nodeId: 'bt-f1-backside-2',
+        position: { yaw: '6.41deg', pitch: '0deg' },
+        name: 'Go to Backside 2',
       }
     ],
     markers: [],

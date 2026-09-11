@@ -9,17 +9,17 @@ export default [
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [
-        {
-          nodeId: 'bt-f1-surau-2',
-          position: { yaw: '358.45deg', pitch: '-8.15deg' },
-          name: 'Go to Surau 2',
-        },
-        {
-          nodeId: 'bt-f1-backside-2',
-          position: { yaw: '179.24deg', pitch: '-16.47deg' },
-          name: 'Go to Backside 2',
-        },
-      ],
+      {
+        nodeId: 'bt-f1-surau-2',
+        position: { yaw: '358.45deg', pitch: '0deg' },
+        name: 'Go to Surau 2',
+      },
+      {
+        nodeId: 'bt-f1-backside-2',
+        position: { yaw: '179.24deg', pitch: '0deg' },
+        name: 'Go to Backside 2',
+      },
+    ],
     markers: [],
     data: {
       floor: 'f1',
@@ -35,16 +35,16 @@ export default [
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [
-        {
-          nodeId: 'bt-f1-surau-1',
-          position: { yaw: '178.45deg', pitch: '-8.15deg' },
-          name: 'Go to Surau 1',
-        },
-      ],
+      {
+        nodeId: 'bt-f1-surau-1',
+        position: { yaw: '178.45deg', pitch: '0deg' },
+        name: 'Go to Surau 1',
+      },
+    ],
     markers: [],
     data: {
       floor: 'f1',
       tags: ['surau'],
-      },
     },
+  },
 ];

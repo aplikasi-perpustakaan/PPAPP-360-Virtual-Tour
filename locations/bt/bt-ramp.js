@@ -89,12 +89,12 @@ export default [
     links: [
       {
         nodeId: 'bt-ramp-3',
-        position: { yaw: '6.93deg', pitch: '0.53deg' },
+        position: { yaw: '6.93deg', pitch: '0deg' },
         name: 'Go to 3',
       },
       {
         nodeId: 'bt-f2-reading-1',
-        position: { yaw: '186.18deg', pitch: '0.95deg' },
+        position: { yaw: '186.18deg', pitch: '0deg' },
         name: 'Go to Reading 1',
       },
     ],

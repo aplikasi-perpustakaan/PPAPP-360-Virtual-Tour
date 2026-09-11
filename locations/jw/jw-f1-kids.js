@@ -8,16 +8,16 @@ export default [
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [
-        {
-          nodeId: 'jw-f1-lobby-11',
-          position: { yaw: '92.11deg', pitch: '-15.52deg' },
-          name: 'Go back to Lobby',
-        },
-        {
-          nodeId: 'jw-f1-kids-2',
-          position: { yaw: '274.23deg', pitch: '-18.64deg' },
-          name: 'Go to Kids Area 2',
-        }
+      {
+        nodeId: 'jw-f1-lobby-11',
+        position: { yaw: '92.11deg', pitch: '0deg' },
+        name: 'Go back to Lobby',
+      },
+      {
+        nodeId: 'jw-f1-kids-2',
+        position: { yaw: '274.23deg', pitch: '0deg' },
+        name: 'Go to Kids Area 2',
+      }
     ],
     markers: [],
     data: {
@@ -34,16 +34,16 @@ export default [
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [
-        {
-          nodeId: 'jw-f1-kids-3',
-          position: { yaw: '278.10deg', pitch: '-29.39deg' },
-          name: 'Go to Kids Area 3',
-        },
-        {
-          nodeId: 'jw-f1-kids-1',
-          position: { yaw: '93.86deg', pitch: '-24.99deg' },
-          name: 'Go back to Kids Area 1',
-        }
+      {
+        nodeId: 'jw-f1-kids-3',
+        position: { yaw: '278.10deg', pitch: '0deg' },
+        name: 'Go to Kids Area 3',
+      },
+      {
+        nodeId: 'jw-f1-kids-1',
+        position: { yaw: '93.86deg', pitch: '0deg' },
+        name: 'Go back to Kids Area 1',
+      }
     ],
     markers: [],
     data: {
@@ -60,16 +60,16 @@ export default [
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [
-        {
-          nodeId: 'jw-f1-kids-4',
-          position: { yaw: '0deg', pitch: '0deg' },
-          name: 'Go to Kids Area 4',
-        },
-        {
-          nodeId: 'jw-f1-kids-2',
-          position: { yaw: '91.62deg', pitch: '-21.73deg' },
-          name: 'Go back to Kids Area 2',
-        }
+      {
+        nodeId: 'jw-f1-kids-4',
+        position: { yaw: '0deg', pitch: '0deg' },
+        name: 'Go to Kids Area 4',
+      },
+      {
+        nodeId: 'jw-f1-kids-2',
+        position: { yaw: '91.62deg', pitch: '0deg' },
+        name: 'Go back to Kids Area 2',
+      }
     ],
     markers: [],
     data: {
@@ -86,16 +86,16 @@ export default [
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [
-        {
-          nodeId: 'jw-f1-kids-5',
-          position: { yaw: '282.15deg', pitch: '-19.94deg' },
-          name: 'Go to Kids Area 5',
-        },
-        {
-          nodeId: 'jw-f1-kids-3',
-          position: { yaw: '180deg', pitch: '0deg' },
-          name: 'Go back to Kids Area 3',
-        }
+      {
+        nodeId: 'jw-f1-kids-5',
+        position: { yaw: '282.15deg', pitch: '0deg' },
+        name: 'Go to Kids Area 5',
+      },
+      {
+        nodeId: 'jw-f1-kids-3',
+        position: { yaw: '180deg', pitch: '0deg' },
+        name: 'Go back to Kids Area 3',
+      }
     ],
     markers: [],
     data: {
@@ -112,16 +112,16 @@ export default [
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [
-        {
-          nodeId: 'jw-f1-kids-6',
-          position: { yaw: '257.50deg', pitch: '-27.38deg' },
-          name: 'Go to Kids Area 6',
-        },
-        {
-          nodeId: 'jw-f1-kids-4',
-          position: { yaw: '92.54deg', pitch: '-46.64deg' },
-          name: 'Go back to Kids Area 4',
-        }
+      {
+        nodeId: 'jw-f1-kids-6',
+        position: { yaw: '257.50deg', pitch: '0deg' },
+        name: 'Go to Kids Area 6',
+      },
+      {
+        nodeId: 'jw-f1-kids-4',
+        position: { yaw: '92.54deg', pitch: '0deg' },
+        name: 'Go back to Kids Area 4',
+      }
     ],
     markers: [],
     data: {
@@ -138,11 +138,11 @@ export default [
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [
-        {
-          nodeId: 'jw-f1-kids-5',
-          position: { yaw: '65.03deg', pitch: '-29.27deg' },
-          name: 'Go back to Kids Area 5',
-        }
+      {
+        nodeId: 'jw-f1-kids-5',
+        position: { yaw: '65.03deg', pitch: '0deg' },
+        name: 'Go back to Kids Area 5',
+      }
     ],
     markers: [],
     data: {

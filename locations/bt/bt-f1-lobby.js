@@ -13,17 +13,17 @@ export default [
     links: [
       {
         nodeId: 'bt-ext-outside-5',
-        position: { yaw: '186.18deg', pitch: '-7.78deg' },
+        position: { yaw: '186.18deg', pitch: '0deg' },
         name: 'Exit to Outside 5',
       },
       {
         nodeId: 'bt-f1-lobby-3',
-        position: { yaw: '95.59deg', pitch: '-3.24deg' },
+        position: { yaw: '95.59deg', pitch: '0deg' },
         name: 'Go to Lobby 3',
       },
       {
         nodeId: 'bt-f1-lobby-2',
-        position: { yaw: '7.08deg', pitch: '-7.24deg' },
+        position: { yaw: '7.08deg', pitch: '0deg' },
         name: 'Go to Lobby 2',
       },
     ],
@@ -47,22 +47,22 @@ export default [
     links: [
       {
         nodeId: 'bt-f1-lobby-1',
-        position: { yaw: '178.45deg', pitch: '-8.15deg' },
+        position: { yaw: '178.45deg', pitch: '0deg' },
         name: 'Go to Lobby 1',
       },
       {
         nodeId: 'bt-ramp-1',
-        position: { yaw: '358.45deg', pitch: '-8.15deg' },
+        position: { yaw: '358.45deg', pitch: '0deg' },
         name: 'Go to Ramp 1',
       },
       {
         nodeId: 'bt-f1-kids-1',
-        position: { yaw: '269.76deg', pitch: '-21.08deg' },
+        position: { yaw: '269.76deg', pitch: '0deg' },
         name: 'Enter Kids Section',
       },
       {
         nodeId: 'bt-f1-tyt-1',
-        position: { yaw: '88.42deg', pitch: '5.14deg' },
+        position: { yaw: '88.42deg', pitch: '0deg' },
         name: 'Enter TYT Section',
       },
     ],
@@ -85,12 +85,12 @@ export default [
     links: [
       {
         nodeId: 'bt-f1-lobby-1',
-        position: { yaw: '277.64deg', pitch: '-3.96deg' },
+        position: { yaw: '277.64deg', pitch: '0deg' },
         name: 'Go to Lobby 1',
       },
       {
         nodeId: 'bt-stairs-front-1',
-        position: { yaw: '178.45deg', pitch: '-8.15deg' },
+        position: { yaw: '178.45deg', pitch: '0deg' },
         name: 'Go to Stairs Front 1',
       },
     ],

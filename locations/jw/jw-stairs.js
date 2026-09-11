@@ -10,12 +10,12 @@ export default [
     links: [
       {
         nodeId: 'jw-f1-lobby-5',
-        position: { yaw: '322.41deg', pitch: '-11.09deg' },
+        position: { yaw: '322.41deg', pitch: '0deg' },
         name: 'Go down to Lobby',
       },
       {
         nodeId: 'jw-f2-reference-1',
-        position: { yaw: '258.86deg', pitch: '7.49deg' },
+        position: { yaw: '258.86deg', pitch: '0deg' },
         name: 'Go up to Floor 2',
       }
 
