@@ -79,6 +79,7 @@ async function bootstrap() {
     // 4. Validate if the requested node exists in the loaded branch
     const branchStartNodeIds = {
       jw: 'jw-ext-outside-10',
+      bm: 'bm-ext-outside-1',
     };
     const configuredStartNodeId = branchStartNodeIds[defaultBranch];
     let startNodeId = defaultNodes.some(node => node.id === configuredStartNodeId)
