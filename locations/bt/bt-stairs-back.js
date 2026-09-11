@@ -11,11 +11,11 @@ export default [
     links: [
       {
         nodeId: 'bt-f2-backside-1',
-        position: { yaw: '265.41deg', pitch: '0deg' },
+        position: { yaw: '205.21deg', pitch: '0deg' },
         name: 'Go to Backside 1',
       }, {
         nodeId: 'bt-f1-backside-1',
-        position: { yaw: '169.08deg', pitch: '0deg' },
+        position: { yaw: '168.63deg', pitch: '0deg' },
         name: 'Go to Backside 1',
       },],
     markers: [],
