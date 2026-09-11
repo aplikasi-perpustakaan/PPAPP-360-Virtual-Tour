@@ -38,6 +38,7 @@ export default [
     thumbnail: './images/jw/f1-lobby/thumbs/jw-f1-lobby-2.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    sphereCorrection: { pan: '0.0deg', tilt: '4.5deg', roll: '1.5deg' },
     links: [
         {
           nodeId: 'jw-f1-lobby-3',

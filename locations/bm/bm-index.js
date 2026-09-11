@@ -1,9 +1,15 @@
-// ── locations/bm/index.js ─────────────────────────────────────────────
-// Combines all sections for BM
+// ── locations/bm/bm-index.js ──────────────────────────────────────────
+// Combines all sections for BM (Cawangan Daerah Seberang Perai Tengah)
 // ────────────────────────────────────────────────────────────────
 
-import bmGfMainAreaSection from './bm-gf-main-area.js';
+import bmExtOutsideSection from './bm-ext-outside.js';
+import bmGfLobbySection from './bm-gf-lobby.js';
+import bmGfReadingSection from './bm-gf-reading.js';
+import bmGfKidsSection from './bm-gf-kids.js';
 
 export default [
-  ...bmGfMainAreaSection,
+  ...bmExtOutsideSection,
+  ...bmGfLobbySection,
+  ...bmGfReadingSection,
+  ...bmGfKidsSection,
 ];
