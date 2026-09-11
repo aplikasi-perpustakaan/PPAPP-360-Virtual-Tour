@@ -175,7 +175,15 @@ async function bootstrap() {
       if (mapPlugin) {
         setTimeout(() => mapPlugin.close(), 100);
       }
-    });
+
+      // Intro Animation: Full 360 Sweep on startup
+      const currentPosition = viewer.getPosition();
+      viewer.animate({
+        yaw: currentPosition.yaw + (2 * Math.PI),
+        pitch: currentPosition.pitch,
+        speed: '3rpm', // 3 rotations per minute (20 seconds for a full sweep)
+      });
+    }, { once: true });
 
     // 6. Initialize local modules
     initCoordinateLogger(viewer);

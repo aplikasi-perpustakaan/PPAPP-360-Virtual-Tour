@@ -2,6 +2,8 @@
 // Ground Floor Children / Kids Section for BM (Bahagian Kanak-Kanak)
 // ────────────────────────────────────────────────────────────────
 
+import '../../js/custom-marker.js';
+
 export default [
   {
     id: 'bm-gf-kids-1',
@@ -195,7 +197,22 @@ export default [
         name: 'Return to Passage',
       },
     ],
-    markers: [],
+    markers: [
+      {
+        id: 'bm-gf-kids-8-custom-img',
+        position: { yaw: '91.17deg', pitch: '-23.31deg' },
+        element: (() => {
+          const el = document.createElement('custom-marker');
+          el.innerHTML = `
+            <img src="./images/bm/gf-kids/markers/custom-marker-8-v2.jpg" alt="Bahasa Cina Kanak-Kanak 2" />
+            <h2>Children's Corner</h2>
+            <p>Bahasa Cina Kanak-Kanak 2</p>
+          `;
+          return el;
+        })(),
+        anchor: 'center center',
+      }
+    ],
     data: {
       floor: 'gf',
       tags: ['kids', 'corner', 'books'],

@@ -30,6 +30,16 @@ export function initLocationSelector(viewer) {
       const newNodes = module.default;
 
       if (newNodes && newNodes.length > 0) {
+        // Queue the intro animation to play once as soon as the new branch's initial scene loads
+        viewer.addEventListener('panorama-loaded', () => {
+          const currentPosition = viewer.getPosition();
+          viewer.animate({
+            yaw: currentPosition.yaw + (2 * Math.PI),
+            pitch: currentPosition.pitch,
+            speed: '3rpm', // 3 rotations per minute
+          });
+        }, { once: true });
+
         // The panorama-loaded event in loading-screen.js will hide the overlay
         await virtualTour.setNodes(newNodes, newNodes[0].id);
       }
