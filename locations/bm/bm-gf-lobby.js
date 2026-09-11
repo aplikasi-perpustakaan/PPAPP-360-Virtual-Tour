@@ -19,7 +19,7 @@ export default [
       },
       {
         nodeId: 'bm-gf-lobby-2',
-        position: { yaw: '15deg', pitch: '-5deg' },
+        position: { yaw: '38.18deg', pitch: '-27.50deg' },
         name: 'Go to Main Lobby & Aisle',
       },
     ],
@@ -40,12 +40,12 @@ export default [
     links: [
       {
         nodeId: 'bm-gf-lobby-1',
-        position: { yaw: '180deg', pitch: '-5deg' },
+        position: { yaw: '215.96deg', pitch: '-33.69deg' },
         name: 'Go to Service Counter',
       },
       {
         nodeId: 'bm-gf-lobby-3',
-        position: { yaw: '0deg', pitch: '-5deg' },
+        position: { yaw: '17.53deg', pitch: '-24.20deg' },
         name: 'Go to Reading Lounge',
       },
       {
@@ -71,7 +71,7 @@ export default [
     links: [
       {
         nodeId: 'bm-gf-lobby-2',
-        position: { yaw: '180deg', pitch: '-5deg' },
+        position: { yaw: '231.82deg', pitch: '-36.66deg' },
         name: 'Go to Main Lobby',
       },
       {

@@ -14,7 +14,7 @@ export default [
     links: [
       {
         nodeId: 'bm-ext-outside-2',
-        position: { yaw: '45deg', pitch: '-5deg' },
+        position: { yaw: '100.02deg', pitch: '-11.85deg' },
         name: 'Go to Verandah & Signboard',
       },
       {
@@ -40,13 +40,8 @@ export default [
     links: [
       {
         nodeId: 'bm-ext-outside-1',
-        position: { yaw: '225deg', pitch: '-5deg' },
+        position: { yaw: '286.87deg', pitch: '-12.68deg' },
         name: 'Go to Entrance Steps',
-      },
-      {
-        nodeId: 'bm-ext-outside-3',
-        position: { yaw: '275deg', pitch: '-5deg' },
-        name: 'Go to Entrance Porch',
       },
     ],
     markers: [],
@@ -66,17 +61,12 @@ export default [
     links: [
       {
         nodeId: 'bm-ext-outside-1',
-        position: { yaw: '245deg', pitch: '-10deg' },
+        position: { yaw: '186.93deg', pitch: '-33.47deg' },
         name: 'Go to Entrance Steps',
       },
       {
-        nodeId: 'bm-ext-outside-2',
-        position: { yaw: '95deg', pitch: '-5deg' },
-        name: 'Go to Verandah & Signboard',
-      },
-      {
         nodeId: 'bm-gf-lobby-1',
-        position: { yaw: '65deg', pitch: '-5deg' },
+        position: { yaw: '94.01deg', pitch: '-16.18deg' },
         name: 'Enter Library',
       },
     ],

@@ -45,7 +45,7 @@ export default [
       },
       {
         nodeId: 'bm-gf-reading-3',
-        position: { yaw: '0deg', pitch: '-5deg' },
+        position: { yaw: '276.84deg', pitch: '-32.85deg' },
         name: 'Go to Reference Collection',
       },
       {
@@ -71,12 +71,12 @@ export default [
     links: [
       {
         nodeId: 'bm-gf-reading-2',
-        position: { yaw: '180deg', pitch: '-5deg' },
+        position: { yaw: '98.22deg', pitch: '-25.01deg' },
         name: 'Go to Book Stacks & Study Table 2',
       },
       {
         nodeId: 'bm-gf-reading-4',
-        position: { yaw: '0deg', pitch: '-5deg' },
+        position: { yaw: '188.61deg', pitch: '-17.44deg' },
         name: 'Go to Book Stacks Junction',
       },
     ],
@@ -97,12 +97,12 @@ export default [
     links: [
       {
         nodeId: 'bm-gf-reading-3',
-        position: { yaw: '180deg', pitch: '-5deg' },
+        position: { yaw: '8.88deg', pitch: '-14.49deg' },
         name: 'Go to Reference Collection',
       },
       {
         nodeId: 'bm-gf-reading-5',
-        position: { yaw: '0deg', pitch: '-5deg' },
+        position: { yaw: '189.36deg', pitch: '-29.89deg' },
         name: 'Go to Book Return Area',
       },
       {
@@ -128,12 +128,12 @@ export default [
     links: [
       {
         nodeId: 'bm-gf-reading-4',
-        position: { yaw: '180deg', pitch: '-5deg' },
+        position: { yaw: '3.59deg', pitch: '-20.86deg' },
         name: 'Go to Book Stacks Junction',
       },
       {
         nodeId: 'bm-gf-lobby-2',
-        position: { yaw: '0deg', pitch: '-5deg' },
+        position: { yaw: '150.63deg', pitch: '-32.40deg' },
         name: 'Return to Main Lobby',
       },
     ],

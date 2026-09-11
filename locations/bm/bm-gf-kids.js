@@ -14,7 +14,7 @@ export default [
     links: [
       {
         nodeId: 'bm-gf-reading-2',
-        position: { yaw: '180deg', pitch: '-5deg' },
+        position: { yaw: '262.66deg', pitch: '-4.67deg' },
         name: 'Exit to Main Stacks',
       },
       {
@@ -61,7 +61,7 @@ export default [
     links: [
       {
         nodeId: 'bm-gf-reading-4',
-        position: { yaw: '180deg', pitch: '-5deg' },
+        position: { yaw: '110.82deg', pitch: '-27.09deg' },
         name: 'Exit to Main Stacks',
       },
       {
@@ -71,7 +71,7 @@ export default [
       },
       {
         nodeId: 'bm-gf-kids-7',
-        position: { yaw: '45deg', pitch: '-5deg' },
+        position: { yaw: '195.02deg', pitch: '-20.39deg' },
         name: 'Go to Children’s Room Passage',
       },
     ],
@@ -92,12 +92,12 @@ export default [
     links: [
       {
         nodeId: 'bm-gf-kids-3',
-        position: { yaw: '160deg', pitch: '-5deg' },
+        position: { yaw: '112.07deg', pitch: '-26.14deg' },
         name: 'Go to Room Entrance',
       },
       {
         nodeId: 'bm-gf-kids-5',
-        position: { yaw: '350deg', pitch: '-5deg' },
+        position: { yaw: '24.19deg', pitch: '-28.48deg' },
         name: 'Go to Window Bay Area',
       },
     ],
@@ -147,11 +147,6 @@ export default [
         position: { yaw: '270deg', pitch: '-5deg' },
         name: 'Go to Window Bay',
       },
-      {
-        nodeId: 'bm-gf-kids-7',
-        position: { yaw: '90deg', pitch: '-5deg' },
-        name: 'Go to Room Passage',
-      },
     ],
     markers: [],
     data: {
@@ -170,17 +165,12 @@ export default [
     links: [
       {
         nodeId: 'bm-gf-kids-3',
-        position: { yaw: '180deg', pitch: '-5deg' },
+        position: { yaw: '12.44deg', pitch: '-28.56deg' },
         name: 'Go to Room Entrance',
       },
       {
-        nodeId: 'bm-gf-kids-6',
-        position: { yaw: '270deg', pitch: '-5deg' },
-        name: 'Go to Learning Area',
-      },
-      {
         nodeId: 'bm-gf-kids-8',
-        position: { yaw: '10deg', pitch: '-5deg' },
+        position: { yaw: '189.10deg', pitch: '-23.66deg' },
         name: 'Go to Room Corner',
       },
     ],
@@ -201,7 +191,7 @@ export default [
     links: [
       {
         nodeId: 'bm-gf-kids-7',
-        position: { yaw: '180deg', pitch: '-5deg' },
+        position: { yaw: '12.21deg', pitch: '-24.09deg' },
         name: 'Return to Passage',
       },
     ],
