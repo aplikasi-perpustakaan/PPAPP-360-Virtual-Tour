@@ -11,9 +11,9 @@ export default [
     links: [
       {
         nodeId: 'gt-f2-main-area-2',
-        position: { yaw: '358.45deg', pitch: '-8.15deg' },
-        name: 'Go to Floor 2 – Main Area 2',
-      }
+        position: { yaw: '4.88deg', pitch: '0.00deg' },
+        name: 'Go to Main Area 2'
+      },
     ],
     markers: [],
     data: {
@@ -32,9 +32,10 @@ export default [
     links: [
       {
         nodeId: 'gt-f2-main-area-1',
-        position: { yaw: '178.45deg', pitch: '-8.15deg' },
-        name: 'Go to Floor 2 – Main Area 1',
+        position: { yaw: '184.88deg', pitch: '-10deg' },
+        name: 'Go to Main Area 1'
       },
+      
       {
         nodeId: 'gt-f2-main-area-3',
         position: { yaw: '358.45deg', pitch: '-8.15deg' },
@@ -63,9 +64,9 @@ export default [
       },
       {
         nodeId: 'gt-f2-main-area-4',
-        position: { yaw: '358.45deg', pitch: '-8.15deg' },
-        name: 'Go to Floor 2 – Main Area 4',
-      }
+        position: { yaw: '260.36deg', pitch: '-10deg' },
+        name: 'Go to Main Area 4'
+      },
     ],
     markers: [],
     data: {
@@ -84,14 +85,16 @@ export default [
     links: [
       {
         nodeId: 'gt-f2-main-area-3',
-        position: { yaw: '178.45deg', pitch: '-8.15deg' },
-        name: 'Go to Floor 2 – Main Area 3',
+        position: { yaw: '80.36deg', pitch: '-0.04deg' },
+        name: 'Go to Main Area 3'
       },
+      
+      
       {
         nodeId: 'gt-f2-main-area-5',
-        position: { yaw: '358.45deg', pitch: '-8.15deg' },
-        name: 'Go to Floor 2 – Main Area 5',
-      }
+        position: { yaw: '327.13deg', pitch: '-0.70deg' },
+        name: 'Go to Main Area 5'
+      },
     ],
     markers: [],
     data: {
@@ -110,9 +113,10 @@ export default [
     links: [
       {
         nodeId: 'gt-f2-main-area-4',
-        position: { yaw: '178.45deg', pitch: '-8.15deg' },
-        name: 'Go to Floor 2 – Main Area 4',
+        position: { yaw: '147.13deg', pitch: '-10deg' },
+        name: 'Go to Main Area 4'
       },
+      
       {
         nodeId: 'gt-f2-main-area-6',
         position: { yaw: '358.45deg', pitch: '-8.15deg' },

@@ -281,9 +281,15 @@ async function bootstrap() {
         const pos = viewer.getPosition();
         viewer.rotate({ yaw: pos.yaw, pitch: pos.pitch - step });
         e.preventDefault();
-      } else if (e.key === '0') {
-        // Snap back to exactly 0 yaw and 0 pitch
-        viewer.rotate({ yaw: 0, pitch: 0 });
+      } else if (e.key === '0' || e.code === 'Digit0') {
+        const pos = viewer.getPosition();
+        if (e.shiftKey) {
+          // Snap yaw back to exactly 0
+          viewer.rotate({ yaw: 0, pitch: pos.pitch });
+        } else {
+          // Snap pitch back to exactly 0
+          viewer.rotate({ yaw: pos.yaw, pitch: 0 });
+        }
         e.preventDefault();
       }
 
