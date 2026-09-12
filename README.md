@@ -120,16 +120,20 @@ Because this project uses native ES Modules, files must be served over HTTP rath
    cd PPAPP-360-Virtual-Tour
    ```
 
-2. **Start a local static server**:
-   - **Python 3**:
+2. **Start the local dev server** (with auto-saving enabled):
+   - **Using npm / Node.js** (Recommended):
      ```bash
-     python3 -m http.server 8000
+     npm start
+     # or: node dev_server.js
      ```
-   - **Node.js**:
+   - **On Windows (Double-click launcher)**:
+     Double-click `open_tour.bat`.
+   - **VS Code**:
+     Press `F5` (or click "Run and Debug"). It automatically starts the dev server and opens the browser.
+   - **Python fallback** (read-only mode, no auto-save):
      ```bash
-     npx http-server -p 8000
+     python -m http.server 8080
      ```
-   - **VS Code**: Install and run the **Live Server** extension.
 
 3. **Open in Browser**:
    Navigate to `http://localhost:8000`.
