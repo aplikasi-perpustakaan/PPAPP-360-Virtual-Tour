@@ -81,6 +81,7 @@ async function bootstrap() {
     const branchStartNodeIds = {
       jw: 'jw-ext-outside-10',
       bm: 'bm-ext-outside-1',
+      gt: 'gt-ext-outside-1',
     };
     const configuredStartNodeId = branchStartNodeIds[defaultBranch];
     let startNodeId = defaultNodes.some(node => node.id === configuredStartNodeId)

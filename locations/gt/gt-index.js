@@ -11,11 +11,11 @@ import gtF2BilikKoleksiKhasSection from './gt-f2-bilik-koleksi-khas.js';
 import gtExtOutsideSection from './gt-ext-outside.js';
 import gtStairsSection from './gt-stairs.js';
 export default [
-  ...gtGfMainAreaSection,
+  ...gtExtOutsideSection,
   ...gtF1MainAreaSection,
   ...gtF1IPlayToySection,
   ...gtF2MainAreaSection,
   ...gtF2BilikKoleksiKhasSection,
-  ...gtExtOutsideSection,
   ...gtStairsSection,
+  ...gtGfMainAreaSection,
 ];
