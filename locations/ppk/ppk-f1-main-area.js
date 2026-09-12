@@ -24,11 +24,6 @@ export default [
         position: { yaw: '101.07deg', pitch: '-6.70deg' },
         name: 'Go to Main Area 3'
       },
-      {
-        nodeId: 'ppk-f1-main-area-8',
-        position: { yaw: '184.24deg', pitch: '-12.67deg' },
-        name: 'Go to Main Area 8'
-      },
     ],
     markers: [],
     data: {
@@ -237,11 +232,7 @@ export default [
         position: { yaw: '258.54deg', pitch: '-10deg' },
         name: 'Go to Main Area 7'
       },
-      {
-        nodeId: 'ppk-f1-main-area-1',
-        position: { yaw: '4.24deg', pitch: '-10deg' },
-        name: 'Go to Main Area 1'
-      },
+      
       {
         nodeId: 'ppk-f1-main-area-12',
         position: { yaw: '21.38deg', pitch: '-7.97deg' },
