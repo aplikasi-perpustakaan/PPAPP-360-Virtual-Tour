@@ -198,6 +198,10 @@ export function initLinkPlacer(viewer, virtualTour, allNodes, isDebug) {
     const verb = isUpdate ? 'Updated' : 'Added';
     showToast(`✅ ${verb} link: ${currentNodeId} ↔ ${destNode.id}`);
 
+    // -- Save to Disk (if dev server is running) ------------------------
+    saveToDisk(isUpdate ? 'update' : 'add', currentNodeId, destNode.id, forwardYaw, forwardPitch, destNode.name);
+    saveToDisk(isUpdate ? 'update' : 'add', destNode.id, currentNodeId, reverseYaw, reversePitch, currentNode.name);
+
     closeModal();
   }
 
@@ -221,9 +225,36 @@ export function initLinkPlacer(viewer, virtualTour, allNodes, isDebug) {
     printDeleteSnippet(destNode.id, currentNodeId);
 
     showToast(`🗑️ Deleted link: ${currentNodeId} ↔ ${destNode.id}`);
+    
+    // -- Save to Disk (if dev server is running) ------------------------
+    saveToDisk('delete', currentNodeId, destNode.id);
+    saveToDisk('delete', destNode.id, currentNodeId);
 
     // Refresh the modal list so the badge/button disappear
     populateSceneList(searchInput.value);
+  }
+
+  // ── API: Send modifications to local dev server ────────────────────
+  async function saveToDisk(action, sourceId, targetId, yaw, pitch, targetName) {
+    try {
+      const response = await fetch('/api/save-link', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          action,
+          sourceId,
+          targetId,
+          yaw,
+          pitch,
+          targetName: buildLinkName(targetName)
+        })
+      });
+      if (response.ok) {
+        console.log(`%c💾 Auto-saved to disk: ${sourceId} -> ${targetId}`, 'color: #2D6CDF');
+      }
+    } catch (err) {
+      // Dev server might not be running, which is fine (fallback to console copy-paste)
+    }
   }
 
   // ── Remove a link from a node's links array ────────────────────────

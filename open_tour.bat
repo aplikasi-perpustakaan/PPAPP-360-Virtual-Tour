@@ -16,7 +16,14 @@ echo.
 REM Open the browser after a short delay (to let the server start)
 start "" http://localhost:8080
 
-REM Try Python 3 first (most common on modern Windows)
+REM Try Node.js first (enables auto-save API)
+node dev_server.js 2>nul
+if %ERRORLEVEL% EQU 0 (
+    exit /b
+)
+
+REM Fallback to Python 3 (read-only mode, no auto-save)
+echo  Node.js not found, falling back to Python (Auto-save disabled)
 python -m http.server 8080 2>nul
 if %ERRORLEVEL% NEQ 0 (
     echo  Python not found, trying py launcher...
@@ -24,8 +31,8 @@ if %ERRORLEVEL% NEQ 0 (
 )
 if %ERRORLEVEL% NEQ 0 (
     echo.
-    echo  ERROR: Python is not installed or not on PATH.
-    echo  Install Python from https://www.python.org/downloads/
+    echo  ERROR: Neither Node.js nor Python is installed.
+    echo  Install Node.js from https://nodejs.org/ to enable auto-saving,
     echo  or serve this folder with any static HTTP server.
     echo.
     pause
