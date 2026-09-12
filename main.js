@@ -17,6 +17,7 @@ import { initCoordinateLogger } from './js/coordinate-logger.js';
 import { initLocationSelector } from './js/location-selector.js';
 import { initAudioController } from './js/audio-controller.js';
 import { initLoadingScreen, showLoading, hideLoading } from './js/loading-screen.js';
+import { initLinkPlacer } from './js/link-placer.js';
 
 // Show loading initially
 showLoading('Initializing Viewer...');
@@ -193,6 +194,9 @@ async function bootstrap() {
 
     // 7. Update URL query string when navigating or looking around
     const virtualTour = viewer.getPlugin(VirtualTourPlugin);
+
+    // 7a. Initialize debug link placer (only activates when isDebug is true)
+    initLinkPlacer(viewer, virtualTour, defaultNodes, isDebug);
     
     // Variables for Debug Keyboard Adjusters
     let currentPan = requestedPan ? parseFloat(requestedPan) || 0 : 0;

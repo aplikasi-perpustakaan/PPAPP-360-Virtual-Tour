@@ -52,6 +52,20 @@
   <div id="gridlines"></div>
   <div id="crosshair"></div>
 
+  <!-- Debug Link Placer (hidden by default, shown in debug mode) -->
+  <button id="debug-add-link-btn" class="debug-add-link-btn" title="Add navigation link at crosshair">➕ Add Link</button>
+
+  <div id="debug-link-modal" class="debug-link-modal">
+    <div class="debug-link-panel glass-panel">
+      <h3>Select Destination Scene</h3>
+      <input id="debug-link-search" type="text" placeholder="Filter scenes…" autocomplete="off" />
+      <ul id="debug-link-scene-list"></ul>
+      <button id="debug-link-cancel" class="debug-link-cancel-btn">Cancel</button>
+    </div>
+  </div>
+
+  <div id="debug-toast" class="debug-toast"></div>
+
   <!-- Main application script (ES Module, relative path) -->
   <script type="module" src="./main.js"></script>
 
