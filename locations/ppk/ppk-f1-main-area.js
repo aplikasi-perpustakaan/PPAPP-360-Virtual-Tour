@@ -16,7 +16,12 @@ export default [
           pitch: '-8.15deg'
         },
         name: 'Go to Main Area 2'
-      }
+      },
+      {
+        nodeId: 'ppk-f1-main-area-9',
+        position: { yaw: '284.65deg', pitch: '-3.69deg' },
+        name: 'Go to Main Area 9'
+      },
     ],
     markers: [],
     data: {
@@ -288,7 +293,12 @@ export default [
           pitch: '-8.15deg'
         },
         name: 'Go to Main Area 8'
-      }
+      },
+      {
+        nodeId: 'ppk-f1-main-area-1',
+        position: { yaw: '104.65deg', pitch: '-10deg' },
+        name: 'Go to Main Area 1'
+      },
     ],
     markers: [],
     data: {
