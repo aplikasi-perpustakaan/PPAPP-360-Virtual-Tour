@@ -110,6 +110,16 @@ export default [
         position: { yaw: '78.14deg', pitch: '-10.42deg' },
         name: 'Go to Main Area 6'
       },
+      {
+        nodeId: 'ppk-f1-main-area-9',
+        position: { yaw: '10.02deg', pitch: '-10deg' },
+        name: 'Go to Main Area 9'
+      },
+      {
+        nodeId: 'ppk-f1-main-area-8',
+        position: { yaw: '41.00deg', pitch: '-10deg' },
+        name: 'Go to Main Area 8'
+      },
     ],
     markers: [],
     data: {
@@ -243,6 +253,16 @@ export default [
         position: { yaw: '199.51deg', pitch: '-16.80deg' },
         name: 'Go to Main Area 6'
       },
+      {
+        nodeId: 'ppk-f1-main-area-9',
+        position: { yaw: '291.74deg', pitch: '-10deg' },
+        name: 'Go to Main Area 9'
+      },
+      {
+        nodeId: 'ppk-f1-main-area-4',
+        position: { yaw: '221.00deg', pitch: '-6.82deg' },
+        name: 'Go to Main Area 4'
+      },
     ],
     markers: [],
     data: {
@@ -270,6 +290,16 @@ export default [
         nodeId: 'ppk-f1-main-area-7',
         position: { yaw: '127.03deg', pitch: '-9.22deg' },
         name: 'Go to Main Area 7'
+      },
+      {
+        nodeId: 'ppk-f1-main-area-8',
+        position: { yaw: '111.74deg', pitch: '-7.80deg' },
+        name: 'Go to Main Area 8'
+      },
+      {
+        nodeId: 'ppk-f1-main-area-4',
+        position: { yaw: '190.02deg', pitch: '-6.41deg' },
+        name: 'Go to Main Area 4'
       },
     ],
     markers: [],
