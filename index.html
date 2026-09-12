@@ -52,15 +52,75 @@
   <div id="gridlines"></div>
   <div id="crosshair"></div>
 
-  <!-- Debug Link Placer (hidden by default, shown in debug mode) -->
-  <button id="debug-add-link-btn" class="debug-add-link-btn" title="Add navigation link at crosshair">➕ Add Link</button>
+  <!-- Debug Tools (hidden by default, shown in debug mode) -->
+  <div id="debug-controls-container" class="debug-controls-container">
+    <button id="debug-copy-url-btn" class="debug-btn" title="Copy current view URL (C)">🔗 Copy URL</button>
+    <button id="debug-add-link-btn" class="debug-btn debug-add-link-btn" title="Add navigation link at crosshair">➕ Add Link</button>
+    <button id="debug-add-marker-btn" class="debug-btn debug-add-marker-btn" title="Add marker at crosshair">➕ Add Marker</button>
+  </div>
 
-  <div id="debug-link-modal" class="debug-link-modal">
-    <div class="debug-link-panel glass-panel">
+  <div id="debug-link-modal" class="debug-modal">
+    <div class="debug-modal-panel glass-panel">
       <h3>Select Destination Scene</h3>
       <input id="debug-link-search" type="text" placeholder="Filter scenes…" autocomplete="off" />
-      <ul id="debug-link-scene-list"></ul>
-      <button id="debug-link-cancel" class="debug-link-cancel-btn">Cancel</button>
+      <ul id="debug-link-scene-list" class="debug-list"></ul>
+      <button id="debug-link-cancel" class="debug-cancel-btn">Cancel</button>
+    </div>
+  </div>
+
+  <div id="debug-marker-modal" class="debug-modal">
+    <div class="debug-modal-panel glass-panel">
+      <h3>Add New Marker</h3>
+      <div class="debug-form-group">
+        <label>Marker ID:</label>
+        <input type="text" id="debug-marker-id" placeholder="e.g. info-bookshelf-1" />
+      </div>
+      <div class="debug-form-group">
+        <label>Type:</label>
+        <select id="debug-marker-type">
+          <option value="info">Info (Text Content)</option>
+          <option value="audio">Audio (Sound Clip)</option>
+          <option value="image">Image (Custom Icon)</option>
+        </select>
+      </div>
+      <div class="debug-form-group">
+        <label>Tooltip / Title:</label>
+        <input type="text" id="debug-marker-title" placeholder="Hover text" />
+      </div>
+      <div class="debug-form-group" id="debug-marker-content-group">
+        <label>Content (HTML):</label>
+        <textarea id="debug-marker-content" rows="3" placeholder="<p>Information goes here</p>"></textarea>
+      </div>
+      <div class="debug-form-group" id="debug-marker-audio-group" style="display:none;">
+        <label>Audio File path:</label>
+        <input type="text" id="debug-marker-audio" placeholder="./audio/narration/file.mp3" />
+      </div>
+      <div class="debug-modal-actions">
+        <button id="debug-marker-save" class="debug-save-btn">Save Marker</button>
+        <button id="debug-marker-cancel" class="debug-cancel-btn">Cancel</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scene Inspector Panel -->
+  <div id="debug-scene-inspector" class="debug-panel glass-panel" style="display: none;">
+    <div class="debug-panel-header">
+      <h3>Scene Inspector</h3>
+      <button id="debug-inspector-close" class="debug-close-btn">×</button>
+    </div>
+    <div class="debug-panel-content" id="debug-inspector-content">
+      <!-- Populated by JS -->
+    </div>
+  </div>
+
+  <!-- Graph Minimap Panel -->
+  <div id="debug-graph-minimap" class="debug-panel glass-panel" style="display: none;">
+    <div class="debug-panel-header">
+      <h3>Tour Graph</h3>
+      <button id="debug-graph-close" class="debug-close-btn">×</button>
+    </div>
+    <div class="debug-panel-content">
+      <canvas id="debug-graph-canvas" width="400" height="300"></canvas>
     </div>
   </div>
 

@@ -89,6 +89,69 @@ function handleSaveLink({ action, sourceId, targetId, yaw, pitch, targetName }) 
   console.log(`[${action.toUpperCase()}] ${sourceId} -> ${targetId} saved to ${filePath}`);
 }
 
+function handleSaveMarker({ sourceId, markerConfig }) {
+  const branch = sourceId.split('-')[0];
+  const branchDir = path.join(__dirname, 'locations', branch);
+  
+  if (!fs.existsSync(branchDir)) {
+    throw new Error(`Branch directory not found: ${branchDir}`);
+  }
+
+  const files = fs.readdirSync(branchDir).filter(f => f.endsWith('.js') && !f.endsWith('-index.js'));
+  let filePath = null;
+  let content = null;
+  
+  const idSearchRegex = new RegExp(`id:\\s*['"]${sourceId}['"]`);
+
+  for (const file of files) {
+    const fullPath = path.join(branchDir, file);
+    const fileContent = fs.readFileSync(fullPath, 'utf8');
+    if (idSearchRegex.test(fileContent)) {
+      filePath = fullPath;
+      content = fileContent;
+      break;
+    }
+  }
+
+  if (!filePath || !content) {
+    throw new Error(`Could not find scene ID '${sourceId}'`);
+  }
+
+  // Regex to find the markers array for the specific scene
+  const blockRegex = new RegExp(`(id:\\s*['"]${sourceId}['"][\\s\\S]*?markers:\\s*\\[)([\\s\\S]*?)(\\]\\s*,\\s*(?:data|links):|\\}\\s*,?\\s*\\n\\s*\\{)`, 'g');
+  
+  let modified = false;
+  content = content.replace(blockRegex, (match, prefix, markersStr, suffix) => {
+    modified = true;
+    
+    // Stringify and clean up the marker object
+    let newMarkerSnippet = JSON.stringify(markerConfig, null, 2).replace(/"([^"]+)":/g, '$1:').replace(/"/g, "'");
+    // Indent
+    newMarkerSnippet = newMarkerSnippet.split('\n').map((line, i) => i === 0 ? line : `      ${line}`).join('\n');
+
+    markersStr = markersStr.trim();
+    if (markersStr && !markersStr.endsWith(',')) {
+      markersStr += ',';
+    }
+    markersStr += (markersStr ? '\n      ' : '') + newMarkerSnippet + ',';
+    
+    // Cleanup spacing
+    markersStr = markersStr.replace(/,\s*,/g, ',');
+    markersStr = markersStr.trim();
+    
+    const formattedMarkers = markersStr ? `\n      ${markersStr}\n    ` : '';
+    
+    return `${prefix}${formattedMarkers}${suffix}`;
+  });
+
+  if (!modified) {
+    throw new Error(`Could not find markers array for scene ${sourceId} in ${filePath}.`);
+  }
+
+  fs.writeFileSync(filePath, content, 'utf8');
+  console.log(`[ADD MARKER] ${markerConfig.id} saved to ${filePath}`);
+}
+
 const server = http.createServer((req, res) => {
   if (req.method === 'POST' && req.url === '/api/save-link') {
     let body = '';
@@ -101,6 +164,24 @@ const server = http.createServer((req, res) => {
         res.end(JSON.stringify({ success: true }));
       } catch (err) {
         console.error('Error saving link:', err.message);
+        res.writeHead(500, { 'Content-Type': 'application/json' });
+        res.end(JSON.stringify({ error: err.message }));
+      }
+    });
+    return;
+  }
+
+  if (req.method === 'POST' && req.url === '/api/save-marker') {
+    let body = '';
+    req.on('data', chunk => { body += chunk.toString(); });
+    req.on('end', () => {
+      try {
+        const payload = JSON.parse(body);
+        handleSaveMarker(payload);
+        res.writeHead(200, { 'Content-Type': 'application/json' });
+        res.end(JSON.stringify({ success: true }));
+      } catch (err) {
+        console.error('Error saving marker:', err.message);
         res.writeHead(500, { 'Content-Type': 'application/json' });
         res.end(JSON.stringify({ error: err.message }));
       }
@@ -141,6 +222,7 @@ server.listen(PORT, () => {
   console.log(` 360 Virtual Tour – Node Dev Server`);
   console.log(`========================================`);
   console.log(`\n Server running at http://localhost:${PORT}/`);
-  console.log(` Auto-saving for debug links is ENABLED.\n`);
+  console.log(` Auto-saving for debug links and markers is ENABLED.\n`);
   console.log(` Press Ctrl+C to stop.`);
 });
+

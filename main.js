@@ -18,6 +18,10 @@ import { initLocationSelector } from './js/location-selector.js';
 import { initAudioController } from './js/audio-controller.js';
 import { initLoadingScreen, showLoading, hideLoading } from './js/loading-screen.js';
 import { initLinkPlacer } from './js/link-placer.js';
+import { initMarkerPlacer } from './js/marker-placer.js';
+import { initSceneInspector } from './js/scene-inspector.js';
+import { initDebugVisualizer } from './js/debug-visualizer.js';
+import { initDebugGraph } from './js/debug-graph.js';
 
 // Show loading initially
 showLoading('Initializing Viewer...');
@@ -196,8 +200,12 @@ async function bootstrap() {
     // 7. Update URL query string when navigating or looking around
     const virtualTour = viewer.getPlugin(VirtualTourPlugin);
 
-    // 7a. Initialize debug link placer (only activates when isDebug is true)
+    // 7a. Initialize debug modules (only activates when isDebug is true)
     initLinkPlacer(viewer, virtualTour, defaultNodes, isDebug);
+    initMarkerPlacer(viewer, virtualTour, defaultNodes, isDebug);
+    initSceneInspector(viewer, virtualTour, defaultNodes, isDebug);
+    initDebugVisualizer(viewer, virtualTour, defaultNodes, isDebug);
+    initDebugGraph(viewer, virtualTour, defaultNodes, isDebug);
     
     // Variables for Debug Keyboard Adjusters
     let currentPan = requestedPan ? parseFloat(requestedPan) || 0 : 0;

@@ -266,16 +266,22 @@ body.is-debug #crosshair {
   transform: translateX(-50%);
 }
 
-/* ── Debug Link Placer ─────────────────────────────────────────────── */
-
-/* Floating "Add Link" button – hidden by default */
-.debug-add-link-btn {
+/* ── Debug Tools UI ──────────────────────────────────────────────── */
+.debug-controls-container {
   display: none;
   position: absolute;
   bottom: 80px;
   left: 50%;
   transform: translateX(-50%);
   z-index: var(--z-ui);
+  gap: var(--space-md);
+}
+
+body.is-debug .debug-controls-container {
+  display: flex;
+}
+
+.debug-btn {
   padding: var(--space-sm) var(--space-lg);
   border: 1px solid var(--glass-border);
   border-radius: var(--radius-md);
@@ -289,17 +295,13 @@ body.is-debug #crosshair {
   transition: background var(--transition-fast), border-color var(--transition-fast);
 }
 
-.debug-add-link-btn:hover {
+.debug-btn:hover {
   background: rgba(45, 108, 223, 0.35);
   border-color: var(--color-accent-blue);
 }
 
-body.is-debug .debug-add-link-btn {
-  display: block;
-}
-
-/* Modal backdrop */
-.debug-link-modal {
+/* Modals */
+.debug-modal {
   display: none;
   position: fixed;
   inset: 0;
@@ -310,12 +312,11 @@ body.is-debug .debug-add-link-btn {
   align-items: center;
 }
 
-.debug-link-modal.is-visible {
+.debug-modal.is-visible {
   display: flex;
 }
 
-/* Modal panel */
-.debug-link-panel {
+.debug-modal-panel {
   width: 420px;
   max-width: 90vw;
   max-height: 70vh;
@@ -326,15 +327,16 @@ body.is-debug .debug-add-link-btn {
   overflow: hidden;
 }
 
-.debug-link-panel h3 {
+.debug-modal-panel h3 {
   margin: 0 0 var(--space-md);
   color: var(--color-offwhite);
   font-size: 16px;
   font-weight: 600;
 }
 
-/* Search input */
-.debug-link-panel input[type="text"] {
+.debug-modal-panel input[type="text"],
+.debug-modal-panel textarea,
+.debug-modal-panel select {
   width: 100%;
   padding: var(--space-sm) var(--space-md);
   border: 1px solid var(--glass-border);
@@ -346,14 +348,26 @@ body.is-debug .debug-add-link-btn {
   outline: none;
   margin-bottom: var(--space-md);
   transition: border-color var(--transition-fast);
+  box-sizing: border-box;
 }
 
-.debug-link-panel input[type="text"]:focus {
+.debug-modal-panel input[type="text"]:focus,
+.debug-modal-panel textarea:focus,
+.debug-modal-panel select:focus {
   border-color: var(--color-accent-blue);
 }
 
-/* Scene list */
-#debug-link-scene-list {
+.debug-form-group {
+  display: flex;
+  flex-direction: column;
+}
+.debug-form-group label {
+  font-size: 12px;
+  color: var(--color-silver);
+  margin-bottom: 4px;
+}
+
+.debug-list {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -363,7 +377,7 @@ body.is-debug .debug-add-link-btn {
   max-height: 50vh;
 }
 
-#debug-link-scene-list li {
+.debug-list li {
   display: flex;
   align-items: center;
   gap: var(--space-sm);
@@ -373,11 +387,11 @@ body.is-debug .debug-add-link-btn {
   transition: background var(--transition-fast);
 }
 
-#debug-link-scene-list li:hover {
+.debug-list li:hover {
   background: rgba(45, 108, 223, 0.25);
 }
 
-#debug-link-scene-list li.debug-scene-empty {
+.debug-scene-empty {
   color: var(--color-silver);
   cursor: default;
   justify-content: center;
@@ -419,7 +433,7 @@ body.is-debug .debug-add-link-btn {
   margin-top: 0;
 }
 
-#debug-link-scene-list li.debug-section-header:hover {
+.debug-list li.debug-section-header:hover {
   background: var(--glass-bg);
 }
 
@@ -454,9 +468,13 @@ body.is-debug .debug-add-link-btn {
   color: #E05252;
 }
 
-/* Cancel button */
-.debug-link-cancel-btn {
+.debug-modal-actions {
+  display: flex;
+  gap: var(--space-md);
   margin-top: var(--space-md);
+}
+
+.debug-cancel-btn {
   padding: var(--space-sm) var(--space-lg);
   border: 1px solid var(--glass-border);
   border-radius: var(--radius-sm);
@@ -466,12 +484,94 @@ body.is-debug .debug-add-link-btn {
   font-size: 13px;
   cursor: pointer;
   transition: background var(--transition-fast), color var(--transition-fast);
+  flex: 1;
 }
 
-.debug-link-cancel-btn:hover {
+.debug-cancel-btn:hover {
   background: rgba(136, 146, 160, 0.15);
   color: var(--color-offwhite);
 }
+
+.debug-save-btn {
+  padding: var(--space-sm) var(--space-lg);
+  border: 1px solid var(--color-accent-blue);
+  border-radius: var(--radius-sm);
+  background: rgba(45, 108, 223, 0.2);
+  color: var(--color-offwhite);
+  font-family: var(--font-family);
+  font-size: 13px;
+  cursor: pointer;
+  transition: background var(--transition-fast);
+  flex: 1;
+}
+.debug-save-btn:hover {
+  background: rgba(45, 108, 223, 0.4);
+}
+
+/* Side Panels (Inspector, Graph) */
+.debug-panel {
+  position: absolute;
+  top: 20px;
+  bottom: 20px;
+  width: 300px;
+  z-index: var(--z-ui);
+  display: flex;
+  flex-direction: column;
+  padding: var(--space-md);
+  border-radius: var(--radius-md);
+  box-sizing: border-box;
+}
+
+#debug-scene-inspector {
+  left: 20px;
+}
+#debug-graph-minimap {
+  right: 20px;
+  width: 440px;
+}
+
+.debug-panel-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--space-md);
+  padding-bottom: var(--space-sm);
+  border-bottom: 1px solid var(--glass-border);
+}
+
+.debug-panel-header h3 {
+  margin: 0;
+  font-size: 14px;
+  color: var(--color-accent-gold);
+  text-transform: uppercase;
+}
+
+.debug-close-btn {
+  background: transparent;
+  border: none;
+  color: var(--color-silver);
+  font-size: 20px;
+  cursor: pointer;
+  line-height: 1;
+}
+
+.debug-close-btn:hover {
+  color: var(--color-offwhite);
+}
+
+.debug-panel-content {
+  flex: 1;
+  overflow-y: auto;
+  color: var(--color-silver);
+  font-size: 13px;
+  font-family: 'Consolas', monospace;
+}
+.debug-panel-content pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  margin: 0;
+}
+
 
 /* Toast notification */
 .debug-toast {
