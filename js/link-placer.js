@@ -101,10 +101,22 @@ export function initLinkPlacer(viewer, virtualTour, allNodes, isDebug) {
         li.innerHTML = `
           <span class="debug-scene-id">${node.id}</span>
           <span class="debug-scene-name">${node.name || ''}</span>
-          ${alreadyLinked ? '<span class="debug-scene-badge">⟳ update</span>' : ''}
+          ${alreadyLinked
+            ? '<span class="debug-scene-badge">⟳ update</span><button class="debug-link-delete-btn" title="Delete this link">🗑️</button>'
+            : ''}
         `;
 
         li.addEventListener('click', () => onSelectDestination(node, alreadyLinked));
+
+        // Wire up the delete button (if present) with stopPropagation
+        if (alreadyLinked) {
+          const delBtn = li.querySelector('.debug-link-delete-btn');
+          delBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            onDeleteLink(node);
+          });
+        }
+
         sceneList.appendChild(li);
       });
     });
@@ -174,8 +186,9 @@ export function initLinkPlacer(viewer, virtualTour, allNodes, isDebug) {
     upsertLink(destNode, currentNodeId, reverseYaw, reversePitch, currentNode.name);
 
     // -- Force the viewer to re-render links for the current scene ------
-    // Re-setting the current node triggers a re-render of the 3D arrows
-    virtualTour.setCurrentNode(currentNodeId, { transition: false });
+    // The VirtualTourPlugin keeps its own internal copy of the nodes,
+    // so we must reload ALL nodes via setNodes() after mutating allNodes.
+    virtualTour.setNodes(allNodes, currentNodeId);
 
     // -- Console output -------------------------------------------------
     printSnippet(currentNodeId, destNode.id, forwardYaw, forwardPitch, destNode.name, isUpdate);
@@ -186,6 +199,46 @@ export function initLinkPlacer(viewer, virtualTour, allNodes, isDebug) {
     showToast(`✅ ${verb} link: ${currentNodeId} ↔ ${destNode.id}`);
 
     closeModal();
+  }
+
+  // ── Core: handle link deletion ──────────────────────────────────────
+  function onDeleteLink(destNode) {
+    const currentNodeId = virtualTour.getCurrentNode()?.id;
+    const currentNode   = allNodes.find(n => n.id === currentNodeId);
+    if (!currentNode || !destNode) return;
+
+    // Remove forward link (A → B)
+    removeLink(currentNode, destNode.id);
+
+    // Remove reverse link (B → A)
+    removeLink(destNode, currentNodeId);
+
+    // Reload nodes into the plugin
+    virtualTour.setNodes(allNodes, currentNodeId);
+
+    // Console output
+    printDeleteSnippet(currentNodeId, destNode.id);
+    printDeleteSnippet(destNode.id, currentNodeId);
+
+    showToast(`🗑️ Deleted link: ${currentNodeId} ↔ ${destNode.id}`);
+
+    // Refresh the modal list so the badge/button disappear
+    populateSceneList(searchInput.value);
+  }
+
+  // ── Remove a link from a node's links array ────────────────────────
+  function removeLink(sourceNode, targetId) {
+    if (!sourceNode.links) return;
+    sourceNode.links = sourceNode.links.filter(l => l.nodeId !== targetId);
+  }
+
+  // ── Print deletion info to the console ─────────────────────────────
+  function printDeleteSnippet(sourceId, targetId) {
+    console.log(
+      `%c🗑️ REMOVE from scene: ${sourceId}`,
+      'color: #E05252; font-weight: bold; font-size: 13px;'
+    );
+    console.log(`      Delete link to: '${targetId}'`);
   }
 
   // ── Upsert: create or update a link in a node's links array ────────

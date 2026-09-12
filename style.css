@@ -434,6 +434,26 @@ body.is-debug .debug-add-link-btn {
   font-weight: 600;
 }
 
+.debug-link-delete-btn {
+  flex-shrink: 0;
+  padding: 2px 6px;
+  margin-left: var(--space-xs);
+  border: 1px solid transparent;
+  border-radius: var(--radius-sm);
+  background: transparent;
+  color: var(--color-silver);
+  font-size: 13px;
+  cursor: pointer;
+  line-height: 1;
+  transition: background var(--transition-fast), border-color var(--transition-fast), color var(--transition-fast);
+}
+
+.debug-link-delete-btn:hover {
+  background: rgba(224, 82, 82, 0.25);
+  border-color: rgba(224, 82, 82, 0.5);
+  color: #E05252;
+}
+
 /* Cancel button */
 .debug-link-cancel-btn {
   margin-top: var(--space-md);
