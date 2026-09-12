@@ -251,9 +251,11 @@ export function initLinkPlacer(viewer, virtualTour, allNodes, isDebug) {
       });
       if (response.ok) {
         console.log(`%c💾 Auto-saved to disk: ${sourceId} -> ${targetId}`, 'color: #2D6CDF');
+      } else {
+        console.error(`❌ Failed to auto-save to disk: Server returned ${response.status} ${response.statusText}`);
       }
     } catch (err) {
-      // Dev server might not be running, which is fine (fallback to console copy-paste)
+      console.warn(`⚠️ Auto-save unavailable: ${err.message}. Ensure you are running 'node dev_server.js'. (Fallback to console copy-paste)`);
     }
   }
 
