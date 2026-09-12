@@ -136,7 +136,7 @@ Because this project uses native ES Modules, files must be served over HTTP rath
      ```
 
 3. **Open in Browser**:
-   Navigate to `http://localhost:8000`.
+   Navigate to `http://localhost:8080`.
 
 ---
 
