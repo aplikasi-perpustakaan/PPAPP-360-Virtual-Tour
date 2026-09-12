@@ -15,23 +15,34 @@ const MIME_TYPES = {
   '.svg': 'image/svg+xml'
 };
 
-function extractSection(sceneId) {
-  if (!sceneId) return 'unknown';
-  const parts = sceneId.split('-');
-  if (parts.length <= 2) return 'other';
-  return parts.slice(1, -1).join('-');
-}
-
 function handleSaveLink({ action, sourceId, targetId, yaw, pitch, targetName }) {
   const branch = sourceId.split('-')[0];
-  const section = extractSection(sourceId);
-  const filePath = path.join(__dirname, 'locations', branch, `${branch}-${section}.js`);
+  const branchDir = path.join(__dirname, 'locations', branch);
   
-  if (!fs.existsSync(filePath)) {
-    throw new Error(`File not found: ${filePath}`);
+  if (!fs.existsSync(branchDir)) {
+    throw new Error(`Branch directory not found: ${branchDir}`);
   }
 
-  let content = fs.readFileSync(filePath, 'utf8');
+  // Dynamically find which file contains this scene ID
+  const files = fs.readdirSync(branchDir).filter(f => f.endsWith('.js') && !f.endsWith('-index.js'));
+  let filePath = null;
+  let content = null;
+  
+  const idSearchRegex = new RegExp(`id:\\s*['"]${sourceId}['"]`);
+
+  for (const file of files) {
+    const fullPath = path.join(branchDir, file);
+    const fileContent = fs.readFileSync(fullPath, 'utf8');
+    if (idSearchRegex.test(fileContent)) {
+      filePath = fullPath;
+      content = fileContent;
+      break;
+    }
+  }
+
+  if (!filePath || !content) {
+    throw new Error(`Could not find scene ID '${sourceId}' in any file under locations/${branch}/`);
+  }
 
   const blockRegex = new RegExp(`(id:\\s*['"]${sourceId}['"][\\s\\S]*?links:\\s*\\[)([\\s\\S]*?)(\\]\\s*,\\s*(?:markers|data):)`, 'g');
   
