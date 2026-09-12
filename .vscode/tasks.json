@@ -4,11 +4,9 @@
     {
       "label": "Start HTTP Server",
       "type": "shell",
-      "command": "python",
+      "command": "node",
       "args": [
-        "-m",
-        "http.server",
-        "8080"
+        "dev_server.js"
       ],
       "isBackground": true,
       "problemMatcher": {
@@ -22,8 +20,8 @@
         ],
         "background": {
           "activeOnStart": true,
-          "beginsPattern": "Serving HTTP",
-          "endsPattern": "Serving HTTP"
+          "beginsPattern": "360 Virtual Tour",
+          "endsPattern": "Server running"
         }
       }
     }
