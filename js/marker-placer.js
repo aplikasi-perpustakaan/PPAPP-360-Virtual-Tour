@@ -188,17 +188,17 @@ export function initMarkerPlacer(viewer, virtualTour, allNodes, isDebug) {
     if (anim) customMarkerProps += ' animated';
 
     if (type === 'info') {
-      markerConfig.html = `<custom-marker ${customMarkerProps}></custom-marker>`;
+      markerConfig.html = `<custom-marker ${customMarkerProps}>\n        <h2>${title}</h2>\n        <p>${contentInput.value.trim()}</p>\n      </custom-marker>`;
       markerConfig.data.content = contentInput.value.trim();
     } else if (type === 'audio') {
-      markerConfig.html = `<custom-marker ${customMarkerProps}></custom-marker>`;
+      markerConfig.html = `<custom-marker ${customMarkerProps}>\n        <h2>${title}</h2>\n        <p>🔊 Audio Narration</p>\n      </custom-marker>`;
       markerConfig.data.audioSrc = audioInput.value.trim();
     } else if (type === 'image') {
-      markerConfig.html = `<custom-marker ${customMarkerProps}></custom-marker>`;
+      markerConfig.html = `<custom-marker ${customMarkerProps}>\n        <img src="${contentInput.value.trim()}" alt="${title}" />\n        <h2>${title}</h2>\n      </custom-marker>`;
       markerConfig.data.imageSrc = contentInput.value.trim();
       markerConfig.data.caption = title;
     } else if (type === 'link') {
-      markerConfig.html = `<custom-marker ${customMarkerProps} data-url="${linkInput.value.trim()}"></custom-marker>`;
+      markerConfig.html = `<custom-marker ${customMarkerProps} data-url="${linkInput.value.trim()}">\n        <h2>${title}</h2>\n        <p>🔗 Click to open link</p>\n      </custom-marker>`;
       markerConfig.data.url = linkInput.value.trim();
     }
 

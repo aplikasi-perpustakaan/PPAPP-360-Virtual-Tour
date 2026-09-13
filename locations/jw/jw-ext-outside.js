@@ -265,7 +265,52 @@ export default [
         name: 'Go back to Outside 9',
       }
     ],
-    markers: [],
+    markers: [
+      {
+        id: 'jw-ext-outside-10-marker-1789278519964',
+        position: {
+          yaw: '347.16deg',
+          pitch: '-0.31deg'
+        },
+        size: {
+          width: 32,
+          height: 32
+        },
+        anchor: 'center center',
+        tooltip: 'test',
+        data: {
+          type: 'info',
+          title: 'test',
+          icon: 'star',
+          color: 'blue',
+          animated: false,
+          content: 'testing <b>testing</b> testing<br/>ssa'
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'star\' data-color=\'blue\'></custom-marker>'
+      },
+      {
+        id: 'jw-ext-outside-10-marker-1789278563066',
+        position: {
+          yaw: '343.24deg',
+          pitch: '-0.85deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        tooltip: 'test',
+        data: {
+          type: 'info',
+          title: 'test',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'info\' data-color=\'blue\'></custom-marker>'
+      }
+    ],
     data: {
       floor: 'ext',
       tags: ['outside'],
