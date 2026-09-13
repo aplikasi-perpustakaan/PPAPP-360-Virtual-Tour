@@ -35,6 +35,38 @@ export function initDebugGraph(viewer, virtualTour, allNodes, isDebug) {
     currentNodeId = virtualTour.getCurrentNode()?.id;
   });
 
+  let hoveredNodeId = null;
+
+  canvas.addEventListener('mousemove', (e) => {
+    if (!isRunning) return;
+    const rect = canvas.getBoundingClientRect();
+    const mx = e.clientX - rect.left;
+    const my = e.clientY - rect.top;
+
+    let found = null;
+    for (const n of nodes) {
+      const dx = mx - n.x;
+      const dy = my - n.y;
+      if (Math.sqrt(dx * dx + dy * dy) < 10) {
+        found = n.id;
+        break;
+      }
+    }
+    
+    if (found !== hoveredNodeId) {
+      hoveredNodeId = found;
+      canvas.style.cursor = hoveredNodeId ? 'pointer' : 'default';
+    }
+  });
+
+  canvas.addEventListener('click', () => {
+    if (hoveredNodeId && hoveredNodeId !== currentNodeId) {
+      virtualTour.setCurrentNode(hoveredNodeId).catch(err => {
+        console.warn('Teleport failed:', err);
+      });
+    }
+  });
+
   function openMinimap() {
     panel.style.display = 'flex';
     currentNodeId = virtualTour.getCurrentNode()?.id;
@@ -158,15 +190,16 @@ export function initDebugGraph(viewer, virtualTour, allNodes, isDebug) {
     // Draw nodes
     nodes.forEach(n => {
       const isCurrent = n.id === currentNodeId;
-      ctx.fillStyle = isCurrent ? '#2D6CDF' : '#8892A0';
+      const isHovered = n.id === hoveredNodeId;
+      ctx.fillStyle = isCurrent ? '#2D6CDF' : (isHovered ? '#C9A84C' : '#8892A0');
       
       ctx.beginPath();
-      ctx.arc(n.x, n.y, isCurrent ? 6 : 4, 0, Math.PI * 2);
+      ctx.arc(n.x, n.y, (isCurrent || isHovered) ? 6 : 4, 0, Math.PI * 2);
       ctx.fill();
 
-      // Label current node or hover (we just label current for simplicity)
-      if (isCurrent) {
-        ctx.fillStyle = '#E8ECF1';
+      // Label current node or hover
+      if (isCurrent || isHovered) {
+        ctx.fillStyle = isCurrent ? '#E8ECF1' : '#C9A84C';
         ctx.font = '10px Consolas';
         ctx.fillText(n.id, n.x + 8, n.y + 4);
       }

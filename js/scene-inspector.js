@@ -46,6 +46,71 @@ export function initSceneInspector(viewer, virtualTour, allNodes, isDebug) {
     copyBtn.addEventListener('click', copyUrl);
   }
 
+  const saveDefaultsBtn = document.getElementById('debug-save-defaults-btn');
+  if (saveDefaultsBtn) {
+    saveDefaultsBtn.addEventListener('click', async () => {
+      const currentNodeId = virtualTour.getCurrentNode()?.id;
+      if (!currentNodeId) return;
+
+      const pos = viewer.getPosition();
+      const zoom = viewer.getZoomLevel();
+
+      const defaultYaw = `${((pos.yaw * 180 / Math.PI) % 360).toFixed(2)}deg`;
+      const defaultPitch = `${(pos.pitch * 180 / Math.PI).toFixed(2)}deg`;
+      const defaultZoomLvl = Math.round(zoom);
+
+      try {
+        const response = await fetch('/api/save-defaults', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ sourceId: currentNodeId, defaultYaw, defaultPitch, defaultZoomLvl })
+        });
+        if (response.ok) {
+          showToast(`💾 Saved Defaults: Yaw ${defaultYaw}, Pitch ${defaultPitch}`);
+        } else {
+          showToast(`❌ Failed to save defaults`);
+        }
+      } catch (err) {
+        showToast(`❌ Error saving defaults: ${err.message}`);
+      }
+    });
+  }
+
+  const saveThumbBtn = document.getElementById('debug-save-thumb-btn');
+  if (saveThumbBtn) {
+    saveThumbBtn.addEventListener('click', async () => {
+      const currentNodeId = virtualTour.getCurrentNode()?.id;
+      if (!currentNodeId) return;
+
+      const pos = viewer.getPosition();
+      const defaultYaw = `${((pos.yaw * 180 / Math.PI) % 360).toFixed(2)}deg`;
+      const defaultPitch = `${(pos.pitch * 180 / Math.PI).toFixed(2)}deg`;
+
+      showToast(`⏳ Generating thumbnail...`);
+      saveThumbBtn.disabled = true;
+
+      try {
+        const response = await fetch('/api/generate-thumbnail', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ sourceId: currentNodeId, yaw: defaultYaw, pitch: defaultPitch })
+        });
+        
+        if (response.ok) {
+          const data = await response.json();
+          console.log('Thumbnail output:', data.stdout);
+          showToast(`📸 Thumbnail updated!`);
+        } else {
+          showToast(`❌ Failed to update thumbnail`);
+        }
+      } catch (err) {
+        showToast(`❌ Error: ${err.message}`);
+      } finally {
+        saveThumbBtn.disabled = false;
+      }
+    });
+  }
+
   // Copy with 'C'
   window.addEventListener('keydown', (e) => {
     if (document.activeElement.tagName === 'INPUT' || document.activeElement.tagName === 'TEXTAREA') return;

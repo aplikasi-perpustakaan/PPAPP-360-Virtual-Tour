@@ -1,6 +1,7 @@
 const http = require('http');
 const fs = require('fs');
 const path = require('path');
+const { exec } = require('child_process');
 
 const PORT = 8080;
 
@@ -89,7 +90,9 @@ function handleSaveLink({ action, sourceId, targetId, yaw, pitch, targetName }) 
   console.log(`[${action.toUpperCase()}] ${sourceId} -> ${targetId} saved to ${filePath}`);
 }
 
-function handleSaveMarker({ sourceId, markerConfig }) {
+function handleSaveMarker(payload) {
+  const { sourceId, markerConfig, markerId, action } = payload;
+  const targetMarkerId = markerId || (markerConfig && markerConfig.id);
   const branch = sourceId.split('-')[0];
   const branchDir = path.join(__dirname, 'locations', branch);
   
@@ -118,26 +121,35 @@ function handleSaveMarker({ sourceId, markerConfig }) {
   }
 
   // Regex to find the markers array for the specific scene
-  const blockRegex = new RegExp(`(id:\\s*['"]${sourceId}['"][\\s\\S]*?markers:\\s*\\[)([\\s\\S]*?)(\\]\\s*,\\s*(?:data|links):|\\}\\s*,?\\s*\\n\\s*\\{)`, 'g');
+  // Matches from `id: "sourceId"` down to `markers: [` then captures the contents until the first `]`
+  const blockRegex = new RegExp(`(id:\\s*['"]${sourceId}['"][\\s\\S]*?markers:\\s*\\[)([\\s\\S]*?)(\\])`, 'g');
   
   let modified = false;
   content = content.replace(blockRegex, (match, prefix, markersStr, suffix) => {
     modified = true;
     
-    // Stringify and clean up the marker object
-    let newMarkerSnippet = JSON.stringify(markerConfig, null, 2).replace(/"([^"]+)":/g, '$1:').replace(/"/g, "'");
-    // Indent
-    newMarkerSnippet = newMarkerSnippet.split('\n').map((line, i) => i === 0 ? line : `      ${line}`).join('\n');
+    // Remove the existing marker with this ID if it exists (for edit or delete)
+    // Matches { ... id: '...', ... } with up to one level of nested braces
+    const existingMarkerRegex = new RegExp(`\\{(?:[^{}]|\\{[^{}]*\\})*?id:\\s*['"]${targetMarkerId}['"](?:[^{}]|\\{[^{}]*\\})*\\}(?:\\s*,)?`, 'g');
+    markersStr = markersStr.replace(existingMarkerRegex, '');
 
-    markersStr = markersStr.trim();
-    if (markersStr && !markersStr.endsWith(',')) {
-      markersStr += ',';
+    if (payload.action !== 'delete') {
+      // Stringify and clean up the new marker object
+      let newMarkerSnippet = JSON.stringify(markerConfig, null, 2).replace(/"([^"]+)":/g, '$1:').replace(/"/g, "'");
+      // Indent
+      newMarkerSnippet = newMarkerSnippet.split('\n').map((line, i) => i === 0 ? line : `      ${line}`).join('\n');
+
+      markersStr = markersStr.trim();
+      if (markersStr && !markersStr.endsWith(',')) {
+        markersStr += ',';
+      }
+      markersStr += (markersStr ? '\n      ' : '') + newMarkerSnippet + ',';
     }
-    markersStr += (markersStr ? '\n      ' : '') + newMarkerSnippet + ',';
     
     // Cleanup spacing
     markersStr = markersStr.replace(/,\s*,/g, ',');
     markersStr = markersStr.trim();
+    if (markersStr.endsWith(',')) markersStr = markersStr.slice(0, -1);
     
     const formattedMarkers = markersStr ? `\n      ${markersStr}\n    ` : '';
     
@@ -149,7 +161,61 @@ function handleSaveMarker({ sourceId, markerConfig }) {
   }
 
   fs.writeFileSync(filePath, content, 'utf8');
-  console.log(`[ADD MARKER] ${markerConfig.id} saved to ${filePath}`);
+  console.log(`[MARKER] ${targetMarkerId} (action: ${action || 'add/edit'}) saved to ${filePath}`);
+}
+
+function handleSaveDefaults({ sourceId, defaultYaw, defaultPitch, defaultZoomLvl }) {
+  const branch = sourceId.split('-')[0];
+  const branchDir = path.join(__dirname, 'locations', branch);
+  
+  if (!fs.existsSync(branchDir)) {
+    throw new Error(`Branch directory not found: ${branchDir}`);
+  }
+
+  const files = fs.readdirSync(branchDir).filter(f => f.endsWith('.js') && !f.endsWith('-index.js'));
+  let filePath = null;
+  let content = null;
+  
+  const idSearchRegex = new RegExp(`id:\\s*['"]${sourceId}['"]`);
+
+  for (const file of files) {
+    const fullPath = path.join(branchDir, file);
+    const fileContent = fs.readFileSync(fullPath, 'utf8');
+    if (idSearchRegex.test(fileContent)) {
+      filePath = fullPath;
+      content = fileContent;
+      break;
+    }
+  }
+
+  if (!filePath || !content) {
+    throw new Error(`Could not find scene ID '${sourceId}'`);
+  }
+
+  const blockStartIndex = content.search(idSearchRegex);
+  if (blockStartIndex === -1) throw new Error("Not found");
+  
+  const endMatch = content.substring(blockStartIndex).match(/(links:|markers:|data:)/);
+  if (!endMatch) throw new Error("Could not find end of scene object");
+  
+  const blockEndIndex = blockStartIndex + endMatch.index;
+  let block = content.substring(blockStartIndex, blockEndIndex);
+  
+  // Strip out old defaults
+  block = block
+    .replace(/\s*defaultYaw:\s*['"][^'"]+['"],?/g, '')
+    .replace(/\s*defaultPitch:\s*['"][^'"]+['"],?/g, '')
+    .replace(/\s*defaultZoomLvl:\s*\d+,?/g, '');
+    
+  // Insert new defaults immediately after the thumbnail property
+  block = block.replace(/(thumbnail:\s*['"][^'"]+['"],?)/, 
+    `$1\n    defaultYaw: '${defaultYaw}',\n    defaultPitch: '${defaultPitch}',\n    defaultZoomLvl: ${defaultZoomLvl},`
+  );
+  
+  content = content.substring(0, blockStartIndex) + block + content.substring(blockEndIndex);
+
+  fs.writeFileSync(filePath, content, 'utf8');
+  console.log(`[SAVE DEFAULTS] ${sourceId} saved to ${filePath}`);
 }
 
 const server = http.createServer((req, res) => {
@@ -182,6 +248,98 @@ const server = http.createServer((req, res) => {
         res.end(JSON.stringify({ success: true }));
       } catch (err) {
         console.error('Error saving marker:', err.message);
+        res.writeHead(500, { 'Content-Type': 'application/json' });
+        res.end(JSON.stringify({ error: err.message }));
+      }
+    });
+    return;
+  }
+
+  if (req.method === 'POST' && req.url === '/api/save-defaults') {
+    let body = '';
+    req.on('data', chunk => { body += chunk.toString(); });
+    req.on('end', () => {
+      try {
+        const payload = JSON.parse(body);
+        handleSaveDefaults(payload);
+        res.writeHead(200, { 'Content-Type': 'application/json' });
+        res.end(JSON.stringify({ success: true }));
+      } catch (err) {
+        console.error('Error saving defaults:', err.message);
+        res.writeHead(500, { 'Content-Type': 'application/json' });
+        res.end(JSON.stringify({ error: err.message }));
+      }
+    });
+    return;
+  }
+
+  if (req.method === 'POST' && req.url === '/api/generate-thumbnail') {
+    let body = '';
+    req.on('data', chunk => { body += chunk.toString(); });
+    req.on('end', () => {
+      try {
+        const payload = JSON.parse(body);
+        const { sourceId, yaw, pitch } = payload;
+        
+        // Strip 'deg' from yaw/pitch to pass as floats
+        const numYaw = parseFloat(yaw);
+        const numPitch = parseFloat(pitch);
+
+        const cmd = `python scripts/generate-thumbnails.py --scene "${sourceId}" --yaw ${numYaw} --pitch ${numPitch}`;
+        
+        exec(cmd, { cwd: __dirname }, (error, stdout, stderr) => {
+          if (error) {
+            console.error('Error generating thumbnail:', stderr || error.message);
+            res.writeHead(500, { 'Content-Type': 'application/json' });
+            res.end(JSON.stringify({ error: stderr || error.message }));
+            return;
+          }
+          console.log(`[GENERATE THUMBNAIL] ${sourceId} thumbnail generated. Output: ${stdout.trim()}`);
+          res.writeHead(200, { 'Content-Type': 'application/json' });
+          res.end(JSON.stringify({ success: true, stdout }));
+        });
+      } catch (err) {
+        console.error('Error generating thumbnail:', err.message);
+        res.writeHead(500, { 'Content-Type': 'application/json' });
+        res.end(JSON.stringify({ error: err.message }));
+      }
+    });
+    return;
+  }
+
+  if (req.method === 'POST' && req.url === '/api/upload-image') {
+    let body = '';
+    // Increase max payload size for images (default might be small, but we chunk it)
+    req.on('data', chunk => { body += chunk.toString(); });
+    req.on('end', () => {
+      try {
+        const payload = JSON.parse(body);
+        const { filename, image } = payload;
+        
+        // image should be a base64 string like "data:image/jpeg;base64,/9j/4AAQ..."
+        const matches = image.match(/^data:([A-Za-z-+\/]+);base64,(.+)$/);
+        if (!matches || matches.length !== 3) {
+          throw new Error('Invalid base64 image data');
+        }
+
+        const ext = filename.split('.').pop().toLowerCase() || 'jpg';
+        const uniqueFilename = `${Date.now()}-${Math.random().toString(36).substring(2, 8)}.${ext}`;
+        const uploadDir = path.join(__dirname, 'images', 'shared', 'uploads');
+        
+        if (!fs.existsSync(uploadDir)) {
+          fs.mkdirSync(uploadDir, { recursive: true });
+        }
+
+        const filePath = path.join(uploadDir, uniqueFilename);
+        const buffer = Buffer.from(matches[2], 'base64');
+        fs.writeFileSync(filePath, buffer);
+
+        const relativePath = `./images/shared/uploads/${uniqueFilename}`;
+        
+        res.writeHead(200, { 'Content-Type': 'application/json' });
+        res.end(JSON.stringify({ success: true, url: relativePath }));
+      } catch (err) {
+        console.error('Error uploading image:', err.message);
         res.writeHead(500, { 'Content-Type': 'application/json' });
         res.end(JSON.stringify({ error: err.message }));
       }

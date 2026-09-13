@@ -575,4 +575,4 @@ export {
   GalleryPlugin,
   events_exports as events
 };
-//# sourceMappingURL=index.module.js.map
+

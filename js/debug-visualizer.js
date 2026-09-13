@@ -32,7 +32,8 @@ export function initDebugVisualizer(viewer, virtualTour, allNodes, isDebug) {
           font-family: Consolas, monospace;
           font-size: 11px;
           border: 1px solid white;
-          pointer-events: none;
+          pointer-events: auto;
+          cursor: pointer;
           white-space: nowrap;
           transform: translateY(-40px); /* Push it above the 3D arrow */
         ">
@@ -50,5 +51,43 @@ export function initDebugVisualizer(viewer, virtualTour, allNodes, isDebug) {
         tooltip: 'Debug Link Info'
       });
     });
+  });
+
+  markersPlugin.addEventListener('select-marker', ({ marker }) => {
+    if (marker.id.startsWith('debug-link-visualizer-')) {
+      const idx = parseInt(marker.id.replace('debug-link-visualizer-', ''), 10);
+      const rawNode = allNodes.find(n => n.id === virtualTour.getCurrentNode()?.id);
+      if (rawNode && rawNode.links && rawNode.links[idx]) {
+        const link = rawNode.links[idx];
+        const newYaw = prompt(`Edit yaw for link to ${link.nodeId}`, link.position.yaw);
+        if (newYaw === null) return;
+        const newPitch = prompt(`Edit pitch for link to ${link.nodeId}`, link.position.pitch);
+        if (newPitch === null) return;
+        
+        link.position.yaw = newYaw;
+        link.position.pitch = newPitch;
+        
+        fetch('/api/save-link', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            sourceId: rawNode.id,
+            targetId: link.nodeId,
+            yaw: newYaw,
+            pitch: newPitch
+          })
+        }).then(res => {
+          if (res.ok) {
+            // Very hacky visual update, normally requires a full refresh
+            const toast = document.getElementById('debug-toast');
+            if (toast) {
+              toast.textContent = '✅ Link updated. Refresh to apply changes.';
+              toast.classList.add('is-visible');
+              setTimeout(() => toast.classList.remove('is-visible'), 3000);
+            }
+          }
+        });
+      }
+    }
   });
 }

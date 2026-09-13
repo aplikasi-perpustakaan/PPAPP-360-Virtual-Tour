@@ -127,10 +127,6 @@ button:hover + .tooltip {
         this.button.setAttribute('aria-label', 'Toggle details');
         this.button.setAttribute('aria-expanded', 'false');
         this.button.setAttribute('aria-describedby', tooltipId);
-        this.button.innerHTML = `<svg viewBox="0 0 100 100">
-<circle cx=50 cy=50 r=25 fill="currentColor"/>
-<circle cx=50 cy=50 r=40 stroke-width=10 fill="none" stroke="currentColor"/>
-</svg>`;
         dom.appendChild(this.button);
 
         this.tooltip = document.createElement('div');
@@ -139,6 +135,38 @@ button:hover + .tooltip {
         dom.appendChild(this.tooltip);
         this.tooltip.innerHTML = '<slot></slot>';
 
+        this.renderIcon();
+    }
+
+    static get observedAttributes() {
+        return ['data-icon', 'data-color', 'animated'];
+    }
+
+    attributeChangedCallback(name, oldValue, newValue) {
+        if (oldValue !== newValue) {
+            this.renderIcon();
+        }
+    }
+
+    renderIcon() {
+        const iconType = this.getAttribute('data-icon') || 'info';
+        
+        let svgContent = '';
+        if (iconType === 'star') {
+            svgContent = `<path d="M50 10 L61 35 L88 35 L66 51 L74 76 L50 60 L26 76 L34 51 L12 35 L39 35 Z" fill="var(--marker-color)"/>`;
+        } else if (iconType === 'warning') {
+            svgContent = `<path d="M50 10 L90 85 L10 85 Z" fill="var(--marker-color)"/><path d="M47 40 L53 40 L52 65 L48 65 Z" fill="#fff"/><circle cx="50" cy="75" r="4" fill="#fff"/>`;
+        } else if (iconType === 'pin') {
+            svgContent = `<path d="M50 10 C30 10 15 25 15 45 C15 70 50 90 50 90 C50 90 85 70 85 45 C85 25 70 10 50 10 Z" fill="var(--marker-color)"/><circle cx="50" cy="40" r="15" fill="#fff"/>`;
+        } else {
+            // Default Info
+            svgContent = `<circle cx="50" cy="50" r="40" fill="var(--marker-color)"/><path d="M46 30 h8 v12 h-8 z M46 48 h8 v22 h-8 z" fill="#fff"/>`;
+        }
+
+        this.button.innerHTML = `<svg viewBox="0 0 100 100">${svgContent}</svg>`;
+    }
+
+    connectedCallback() {
         this.isTooltipVisible = false;
 
         this.handleMouseLeave = () => {
@@ -178,6 +206,14 @@ button:hover + .tooltip {
             this.tooltip.classList.remove('hiding');
         };
 
+        this.handleClick = (e) => {
+            const url = this.getAttribute('data-url');
+            if (url) {
+                window.open(url, '_blank');
+            }
+        };
+
+        this.button.addEventListener('click', this.handleClick);
         this.button.addEventListener('mouseleave', this.handleMouseLeave);
         this.button.addEventListener('mouseenter', this.handleMouseEnter);
         this.button.addEventListener('touchstart', this.handleTouchStart);
@@ -185,6 +221,7 @@ button:hover + .tooltip {
     }
 
     disconnectedCallback() {
+        this.button.removeEventListener('click', this.handleClick);
         this.button.removeEventListener('mouseleave', this.handleMouseLeave);
         this.button.removeEventListener('mouseenter', this.handleMouseEnter);
         this.button.removeEventListener('touchstart', this.handleTouchStart);

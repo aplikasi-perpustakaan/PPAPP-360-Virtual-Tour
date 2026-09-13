@@ -189,6 +189,10 @@ def equirect_to_rectilinear(
     y /= norm
     z /= norm
 
+    # In Photo Sphere Viewer, positive pitch is looking UP.
+    # To rotate the rays UP (+Y direction), we need to negate the pitch angle for this rotation matrix.
+    pitch = -pitch
+
     # Rotation matrices for yaw (around Y axis) and pitch (around X axis)
     # Yaw: rotate around Y (vertical axis)
     cos_yaw = math.cos(yaw)
@@ -383,6 +387,24 @@ def main():
         help='Process only a specific branch (e.g., "bt", "jw").',
     )
     parser.add_argument(
+        '--scene',
+        type=str,
+        default=None,
+        help='Process only a specific scene ID.',
+    )
+    parser.add_argument(
+        '--yaw',
+        type=float,
+        default=None,
+        help='Override yaw in degrees.',
+    )
+    parser.add_argument(
+        '--pitch',
+        type=float,
+        default=None,
+        help='Override pitch in degrees.',
+    )
+    parser.add_argument(
         '--dry-run',
         action='store_true',
         help='Show what would be done without generating files.',
@@ -412,6 +434,10 @@ def main():
             s['_source_file'] = sf
         all_scenes.extend(scenes)
 
+    if args.scene:
+        all_scenes = [s for s in all_scenes if s['id'] == args.scene]
+        print(f'Filtering to scene: {args.scene}')
+
     print(f'Found {len(all_scenes)} scenes across {len(scene_files)} files.')
     print()
 
@@ -424,8 +450,9 @@ def main():
     for scene in all_scenes:
         scene_id = scene['id']
         panorama_rel = scene['panorama']
-        yaw_rad = parse_angle(scene['defaultYaw'])
-        pitch_rad = parse_angle(scene['defaultPitch'])
+        
+        yaw_rad = math.radians(args.yaw) if args.yaw is not None else parse_angle(scene['defaultYaw'])
+        pitch_rad = math.radians(args.pitch) if args.pitch is not None else parse_angle(scene['defaultPitch'])
 
         # Resolve absolute panorama path
         panorama_abs = (PROJECT_ROOT / panorama_rel.lstrip('./')).resolve()

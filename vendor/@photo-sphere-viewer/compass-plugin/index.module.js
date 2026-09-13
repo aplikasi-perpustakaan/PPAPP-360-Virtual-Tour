@@ -342,4 +342,4 @@ var CompassPlugin = _CompassPlugin;
 export {
   CompassPlugin
 };
-//# sourceMappingURL=index.module.js.map
+

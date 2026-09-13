@@ -27,7 +27,7 @@ export default [
 
       // ─── Info Markers ───
       markers: [
-        {
+      {
           id: "pusat-f1-entrance-info-1",
           position: { yaw: '-45deg', pitch: '5deg' },
           tooltip: {
@@ -38,7 +38,29 @@ export default [
           anchor: 'center center',
           data: { type: 'info' },
         },
-      ],
+      {
+        size: {
+          width: 56,
+          height: 56
+        },
+        html: '<custom-marker type=\'link\' data-icon=\'star\' data-color=\'gold\' animated data-url=\'https://google.com\'></custom-marker>',
+        anchor: 'center center',
+        tooltip: 'Test Advanced',
+        id: 'advanced-marker',
+        data: {
+          type: 'link',
+          color: 'gold',
+          animated: true,
+          url: 'https://google.com',
+          title: 'Test Advanced',
+          icon: 'star'
+        },
+        position: {
+          yaw: '30deg',
+          pitch: '0deg'
+        }
+      }
+    ],
 
       // ─── Metadata ───
       data: {

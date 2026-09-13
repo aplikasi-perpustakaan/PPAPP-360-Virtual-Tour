@@ -252,6 +252,14 @@ body.is-debug #crosshair {
   display: block;
 }
 
+body.hide-gridlines #gridlines {
+  display: none !important;
+}
+
+body.hide-crosshair #crosshair {
+  display: none !important;
+}
+
 #crosshair {
   display: none;
   position: absolute;
@@ -292,34 +300,53 @@ body.is-debug #crosshair {
 .debug-controls-container {
   display: none;
   position: absolute;
-  bottom: 80px;
+  top: 20px;
   left: 50%;
   transform: translateX(-50%);
   z-index: var(--z-ui);
-  gap: var(--space-md);
+  gap: 4px;
+  padding: 6px;
+  background: var(--glass-bg);
+  backdrop-filter: blur(var(--glass-blur));
+  border: 1px solid var(--glass-border);
+  border-radius: 40px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
 }
 
 body.is-debug .debug-controls-container {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .debug-btn {
-  padding: var(--space-sm) var(--space-lg);
-  border: 1px solid var(--glass-border);
-  border-radius: var(--radius-md);
-  background: var(--glass-bg);
-  backdrop-filter: blur(var(--glass-blur));
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 30px;
+  background: transparent;
   color: var(--color-offwhite);
   font-family: var(--font-family);
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 600;
   cursor: pointer;
-  transition: background var(--transition-fast), border-color var(--transition-fast);
+  transition: background var(--transition-fast), transform var(--transition-fast);
 }
 
 .debug-btn:hover {
   background: rgba(45, 108, 223, 0.35);
-  border-color: var(--color-accent-blue);
+}
+
+.debug-btn:active {
+  transform: scale(0.96);
+}
+
+.debug-divider {
+  width: 1px;
+  background: var(--glass-border);
+  margin: 4px;
 }
 
 /* Modals */
@@ -389,6 +416,13 @@ body.is-debug .debug-controls-container {
   font-size: 12px;
   color: var(--color-silver);
   margin-bottom: 4px;
+}
+
+.debug-form-actions {
+  display: flex;
+  gap: var(--space-sm);
+  margin-top: var(--space-md);
+  flex-wrap: wrap;
 }
 
 .debug-list {
@@ -597,6 +631,23 @@ body.is-debug .debug-controls-container {
 }
 
 
+/* Help Modal Grid */
+.debug-help-grid {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: var(--space-sm) var(--space-md);
+  color: var(--color-silver);
+  font-size: 13px;
+}
+
+.debug-help-grid strong {
+  color: var(--color-accent-gold);
+  background: rgba(201, 168, 76, 0.15);
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-family: 'Consolas', monospace;
+}
+
 /* Toast notification */
 .debug-toast {
   position: fixed;
@@ -641,9 +692,14 @@ body.is-debug .debug-controls-container {
   }
 
   .debug-controls-container {
-    bottom: 60px;
-    flex-wrap: wrap;
-    justify-content: center;
+    top: 15px;
+    bottom: auto;
+    width: 90%;
+    border-radius: var(--radius-lg);
+  }
+  
+  .debug-divider {
+    display: none;
   }
 }
 
@@ -654,7 +710,48 @@ body.is-debug .debug-controls-container {
   }
   
   .debug-btn {
-    padding: var(--space-sm);
-    font-size: 12px;
+    padding: 6px 12px;
+    gap: 4px;
+    font-size: 11px;
   }
+}
+/* Marker Modal Enhancements */
+.debug-rt-toolbar {
+  display: flex;
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  border-bottom: none;
+  border-radius: var(--radius-sm) var(--radius-sm) 0 0;
+  padding: 4px;
+  gap: 4px;
+}
+.rt-btn {
+  background: rgba(255,255,255,0.1);
+  border: 1px solid transparent;
+  color: white;
+  border-radius: 4px;
+  padding: 4px 10px;
+  cursor: pointer;
+  font-size: 14px;
+}
+.rt-btn:hover {
+  background: rgba(255,255,255,0.2);
+  border-color: var(--glass-border);
+}
+
+/* Custom Marker Colors */
+custom-marker { --marker-color: var(--color-accent-blue); }
+custom-marker[data-color="gold"] { --marker-color: var(--color-accent-gold); }
+custom-marker[data-color="red"] { --marker-color: #dc3545; }
+custom-marker[data-color="green"] { --marker-color: #28a745; }
+custom-marker[data-color="blue"] { --marker-color: var(--color-accent-blue); }
+
+/* Custom Marker Animations */
+@keyframes marker-pulse {
+  0% { transform: scale(1); filter: drop-shadow(0 0 5px var(--marker-color)); }
+  50% { transform: scale(1.1); filter: drop-shadow(0 0 20px var(--marker-color)); }
+  100% { transform: scale(1); filter: drop-shadow(0 0 5px var(--marker-color)); }
+}
+custom-marker[animated] {
+  animation: marker-pulse 2s infinite ease-in-out;
 }

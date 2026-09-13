@@ -22,6 +22,7 @@ import { initMarkerPlacer } from './js/marker-placer.js';
 import { initSceneInspector } from './js/scene-inspector.js';
 import { initDebugVisualizer } from './js/debug-visualizer.js';
 import { initDebugGraph } from './js/debug-graph.js';
+import { initTeleportMenu } from './js/teleport-menu.js';
 import { branches } from './js/tour-config.js';
 
 // Show loading initially
@@ -194,6 +195,7 @@ async function bootstrap() {
     initSceneInspector(viewer, virtualTour, defaultNodes, isDebug);
     initDebugVisualizer(viewer, virtualTour, defaultNodes, isDebug);
     initDebugGraph(viewer, virtualTour, defaultNodes, isDebug);
+    initTeleportMenu(viewer, virtualTour, defaultNodes, isDebug);
     
     // Variables for Debug Keyboard Adjusters
     let currentPan = requestedPan ? parseFloat(requestedPan) || 0 : 0;
@@ -327,7 +329,7 @@ async function bootstrap() {
       }
     });
 
-    // 9. Debug Keyboard Adjusters for Sphere Correction (A, S, D)
+    // 9. Debug Keyboard Adjusters for Sphere Correction (A, S, D) and Toggles
     window.addEventListener('keydown', (e) => {
       if (document.activeElement.tagName === 'INPUT' || document.activeElement.tagName === 'TEXTAREA') return;
 
@@ -343,6 +345,15 @@ async function bootstrap() {
       } else if (e.key === 'd' || e.key === 'D') {
         currentPan += e.shiftKey ? step : -step;
         changed = true;
+      } else if (e.key === 'g' || e.key === 'G') {
+        document.body.classList.toggle('hide-gridlines');
+      } else if (e.key === 'x' || e.key === 'X') {
+        document.body.classList.toggle('hide-crosshair');
+      } else if (e.key === 'h' || e.key === 'H' || e.key === '?') {
+        const helpModal = document.getElementById('debug-help-modal');
+        if (helpModal) {
+          helpModal.classList.toggle('is-visible');
+        }
       }
 
       if (changed) {
@@ -365,6 +376,17 @@ async function bootstrap() {
         console.log(`[SphereCorrection] pan: '${correction.pan}', tilt: '${correction.tilt}', roll: '${correction.roll}'`);
       }
     });
+
+    const helpCloseBtn = document.getElementById('debug-help-close');
+    const helpModal = document.getElementById('debug-help-modal');
+    if (helpCloseBtn && helpModal) {
+      helpCloseBtn.addEventListener('click', () => {
+        helpModal.classList.remove('is-visible');
+      });
+      helpModal.addEventListener('click', (e) => {
+        if (e.target === helpModal) helpModal.classList.remove('is-visible');
+      });
+    }
 
     // Note: The loading screen will hide itself when the 'ready' or 'panorama-loaded' events fire in loading-screen.js
 
