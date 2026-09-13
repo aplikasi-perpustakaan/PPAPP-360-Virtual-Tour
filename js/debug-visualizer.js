@@ -9,7 +9,11 @@ export function initDebugVisualizer(viewer, virtualTour, allNodes, isDebug) {
   virtualTour.addEventListener('node-changed', ({ node }) => {
     // Clean up previous debug markers
     currentDebugMarkers.forEach(id => {
-      markersPlugin.removeMarker(id);
+      try {
+        markersPlugin.removeMarker(id);
+      } catch (e) {
+        // Ignore if marker doesn't exist
+      }
     });
     currentDebugMarkers = [];
 
