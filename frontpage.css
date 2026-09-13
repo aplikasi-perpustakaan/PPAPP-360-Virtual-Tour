@@ -1,0 +1,217 @@
+/* ===================================================================
+   360° Virtual Tour – Frontpage Styles
+   =================================================================== */
+
+.frontpage-body {
+  overflow-y: auto;
+  background: var(--color-navy);
+  background-image: radial-gradient(circle at top right, var(--color-charcoal), var(--color-navy));
+  color: var(--color-offwhite);
+  padding-bottom: var(--space-xl);
+}
+
+.frontpage-header {
+  text-align: center;
+  padding: 60px 20px 40px;
+  background: rgba(10, 22, 40, 0.6);
+  border-bottom: 1px solid var(--glass-border);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-md);
+  margin-bottom: var(--space-md);
+}
+
+.frontpage-logo {
+  width: 60px;
+  height: auto;
+  filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.1));
+}
+
+.frontpage-header h1 {
+  font-size: 2.5rem;
+  color: var(--color-white);
+  letter-spacing: 1px;
+}
+
+.frontpage-header p {
+  font-size: 1.1rem;
+  color: var(--color-silver);
+  max-width: 600px;
+  margin: 0 auto 30px;
+}
+
+.search-container {
+  position: relative;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+#scene-search {
+  width: 100%;
+  padding: 16px 24px;
+  font-size: 1.1rem;
+  border-radius: 30px;
+  border: 1px solid var(--color-accent-blue);
+  background: rgba(28, 35, 51, 0.9);
+  color: var(--color-white);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: box-shadow var(--transition-base), border-color var(--transition-base);
+  outline: none;
+}
+
+#scene-search:focus {
+  border-color: var(--color-accent-gold);
+  box-shadow: 0 4px 20px rgba(201, 168, 76, 0.3);
+}
+
+.search-results {
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 0;
+  right: 0;
+  max-height: 400px;
+  overflow-y: auto;
+  z-index: var(--z-ui);
+  text-align: left;
+  border-radius: var(--radius-md);
+  padding: var(--space-sm) 0;
+}
+
+.search-result-item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  padding: 12px 20px;
+  text-decoration: none;
+  color: var(--color-white);
+  transition: background var(--transition-fast);
+}
+
+.search-result-item:hover,
+.search-result-item:focus {
+  background: rgba(45, 108, 223, 0.3);
+}
+
+.search-result-item img {
+  width: 60px;
+  height: 45px;
+  object-fit: cover;
+  border-radius: var(--radius-sm);
+  background: var(--color-black);
+}
+
+.search-result-item h4 {
+  margin: 0 0 4px;
+  font-size: 1rem;
+  color: var(--color-accent-gold);
+}
+
+.search-result-item small {
+  color: var(--color-silver);
+  font-size: 0.85rem;
+}
+
+.search-no-results {
+  padding: 20px;
+  text-align: center;
+  color: var(--color-silver);
+}
+
+.frontpage-main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.branches-container h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 1.8rem;
+  color: var(--color-offwhite);
+  border-bottom: 2px solid rgba(45, 108, 223, 0.5);
+  display: inline-block;
+  padding-bottom: 8px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.branches-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: var(--space-lg);
+}
+
+.branch-card {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  overflow: hidden;
+  transition: transform var(--transition-base), box-shadow var(--transition-base);
+  border: 1px solid var(--glass-border);
+}
+
+.branch-card:hover,
+.branch-card:focus {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.5);
+  border-color: var(--color-accent-blue);
+}
+
+.card-image-container {
+  height: 180px;
+  overflow: hidden;
+  position: relative;
+  background: var(--color-black);
+}
+
+.card-image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.branch-card:hover .card-image-container img {
+  transform: scale(1.05);
+}
+
+.card-content {
+  padding: var(--space-md);
+  background: rgba(10, 22, 40, 0.6);
+  flex-grow: 1;
+}
+
+.card-content h3 {
+  margin: 0 0 8px;
+  color: var(--color-white);
+  font-size: 1.2rem;
+}
+
+.card-content p {
+  margin: 0;
+  color: var(--color-silver);
+  font-size: 0.95rem;
+}
+
+.frontpage-footer {
+  text-align: center;
+  padding: 20px;
+  color: var(--color-silver);
+  font-size: 0.9rem;
+  margin-top: 40px;
+}
+
+@media (max-width: 768px) {
+  .frontpage-header h1 {
+    font-size: 2rem;
+  }
+  .search-container {
+    padding: 0 10px;
+  }
+}

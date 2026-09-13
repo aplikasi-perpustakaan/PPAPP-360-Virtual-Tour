@@ -94,7 +94,8 @@ html, body {
 
 /* ── Navbar Embedded Location Selector ────────────────────────────── */
 
-.navbar-location-container {
+.navbar-location-container,
+.navbar-home-container {
   display: flex !important;
   align-items: center;
   padding: 0 10px;

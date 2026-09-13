@@ -109,6 +109,12 @@ async function bootstrap() {
         'zoom',
         'move',
         {
+          id: 'home',
+          content: '<a href="./index.html" style="text-decoration:none; color:white; font-size:16px;">🏠</a>',
+          className: 'navbar-home-container',
+          title: 'Home'
+        },
+        {
           id: 'location',
           content: locationSelectHTML,
           className: 'navbar-location-container',
