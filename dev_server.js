@@ -91,10 +91,25 @@ function handleSaveLink({ action, sourceId, targetId, yaw, pitch, targetName }) 
 }
 
 function handleSaveMarker(payload) {
-  const { sourceId, markerConfig, markerId, action } = payload;
+  const { sourceId, markerConfig, markerId, action, imageSrc, originalUrl } = payload;
   const targetMarkerId = markerId || (markerConfig && markerConfig.id);
   const branch = sourceId.split('-')[0];
   const branchDir = path.join(__dirname, 'locations', branch);
+  
+  if (action === 'delete') {
+      try {
+          if (imageSrc && imageSrc.includes('/markers/')) {
+              const p = path.join(__dirname, imageSrc.replace(/^\.\//, ''));
+              if (fs.existsSync(p)) fs.unlinkSync(p);
+          }
+          if (originalUrl && originalUrl.includes('/markers/')) {
+              const p = path.join(__dirname, originalUrl.replace(/^\.\//, ''));
+              if (fs.existsSync(p)) fs.unlinkSync(p);
+          }
+      } catch(e) {
+          console.error("Error deleting image files:", e);
+      }
+  }
   
   if (!fs.existsSync(branchDir)) {
     throw new Error(`Branch directory not found: ${branchDir}`);
@@ -312,33 +327,51 @@ const server = http.createServer((req, res) => {
     // Increase max payload size for images (default might be small, but we chunk it)
     req.on('data', chunk => { body += chunk.toString(); });
     req.on('end', () => {
-      try {
-        const payload = JSON.parse(body);
-        const { filename, image } = payload;
-        
-        // image should be a base64 string like "data:image/jpeg;base64,/9j/4AAQ..."
-        const matches = image.match(/^data:([A-Za-z-+\/]+);base64,(.+)$/);
-        if (!matches || matches.length !== 3) {
-          throw new Error('Invalid base64 image data');
-        }
+        try {
+          const payload = JSON.parse(body);
+          const { sourceId, filename, image, thumb } = payload;
+          
+          if (!sourceId) {
+             throw new Error('Missing sourceId in upload-image payload');
+          }
+          
+          // image should be a base64 string like "data:image/jpeg;base64,/9j/4AAQ..."
+          const matches = image.match(/^data:([A-Za-z-+\/]+);base64,(.+)$/);
+          const thumbMatches = thumb ? thumb.match(/^data:([A-Za-z-+\/]+);base64,(.+)$/) : null;
+          
+          if (!matches || matches.length !== 3) {
+            throw new Error('Invalid base64 image data');
+          }
+  
+          const ext = filename.split('.').pop().toLowerCase() || 'jpg';
+          const uniqueFilename = `${Date.now()}-${Math.random().toString(36).substring(2, 8)}.${ext}`;
+          
+          const parts = sourceId.split('-');
+          const branch = parts[0];
+          const section = parts.slice(1).join('-');
+          
+          const uploadDir = path.join(__dirname, 'images', branch, section, 'markers');
+          const thumbDir = path.join(uploadDir, 'thumbs');
+          
+          if (!fs.existsSync(thumbDir)) {
+            fs.mkdirSync(thumbDir, { recursive: true });
+          }
+  
+          const filePath = path.join(uploadDir, uniqueFilename);
+          fs.writeFileSync(filePath, Buffer.from(matches[2], 'base64'));
+          
+          const originalUrl = `./images/${branch}/${section}/markers/${uniqueFilename}`;
+          let thumbUrl = originalUrl;
 
-        const ext = filename.split('.').pop().toLowerCase() || 'jpg';
-        const uniqueFilename = `${Date.now()}-${Math.random().toString(36).substring(2, 8)}.${ext}`;
-        const uploadDir = path.join(__dirname, 'images', 'shared', 'uploads');
-        
-        if (!fs.existsSync(uploadDir)) {
-          fs.mkdirSync(uploadDir, { recursive: true });
-        }
-
-        const filePath = path.join(uploadDir, uniqueFilename);
-        const buffer = Buffer.from(matches[2], 'base64');
-        fs.writeFileSync(filePath, buffer);
-
-        const relativePath = `./images/shared/uploads/${uniqueFilename}`;
-        
-        res.writeHead(200, { 'Content-Type': 'application/json' });
-        res.end(JSON.stringify({ success: true, url: relativePath }));
-      } catch (err) {
+          if (thumbMatches && thumbMatches.length === 3) {
+             const thumbPath = path.join(thumbDir, uniqueFilename);
+             fs.writeFileSync(thumbPath, Buffer.from(thumbMatches[2], 'base64'));
+             thumbUrl = `./images/${branch}/${section}/markers/thumbs/${uniqueFilename}`;
+          }
+          
+          res.writeHead(200, { 'Content-Type': 'application/json' });
+          res.end(JSON.stringify({ success: true, originalUrl, thumbUrl }));
+        } catch (err) {
         console.error('Error uploading image:', err.message);
         res.writeHead(500, { 'Content-Type': 'application/json' });
         res.end(JSON.stringify({ error: err.message }));

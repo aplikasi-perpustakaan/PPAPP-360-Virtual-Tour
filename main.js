@@ -23,6 +23,7 @@ import { initSceneInspector } from './js/scene-inspector.js';
 import { initDebugVisualizer } from './js/debug-visualizer.js';
 import { initDebugGraph } from './js/debug-graph.js';
 import { initTeleportMenu } from './js/teleport-menu.js';
+import { initMarkerList } from './js/marker-list.js';
 import { branches } from './js/tour-config.js';
 
 // Show loading initially
@@ -196,6 +197,7 @@ async function bootstrap() {
     initDebugVisualizer(viewer, virtualTour, defaultNodes, isDebug);
     initDebugGraph(viewer, virtualTour, defaultNodes, isDebug);
     initTeleportMenu(viewer, virtualTour, defaultNodes, isDebug);
+    initMarkerList(viewer, virtualTour, defaultNodes, isDebug);
     
     // Variables for Debug Keyboard Adjusters
     let currentPan = requestedPan ? parseFloat(requestedPan) || 0 : 0;

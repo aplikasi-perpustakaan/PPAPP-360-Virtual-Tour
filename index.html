@@ -62,8 +62,10 @@
     <button id="debug-save-thumb-btn" class="debug-btn" title="Save scene thumbnail">📸 Save Thumbnail</button>
     <button id="debug-copy-url-btn" class="debug-btn" title="Copy current view URL (C)">🔗 Copy URL</button>
     <div class="debug-divider"></div>
-    <button id="debug-add-link-btn" class="debug-btn debug-add-link-btn" title="Add navigation link at crosshair">➕ Add Link</button>
-    <button id="debug-add-marker-btn" class="debug-btn debug-add-marker-btn" title="Add marker at crosshair">➕ Add Marker</button>
+    <button id="debug-add-link-btn" class="debug-btn debug-add-link-btn" title="Add navigation link at crosshair">🔗 Add Link</button>
+    <button id="debug-add-marker-btn" class="debug-btn debug-add-marker-btn" title="Add marker at crosshair">📍 Add Marker</button>
+    <div class="debug-divider"></div>
+    <button id="debug-marker-list-btn" class="debug-btn" title="Toggle Marker List">📄 Markers</button>
   </div>
 
   <div id="debug-link-modal" class="debug-modal">
@@ -158,13 +160,26 @@
           <button type="button" id="debug-marker-upload-btn" class="debug-save-btn">Upload</button>
         </div>
       </div>
-      <div class="debug-form-actions">
+      <div class="debug-form-actions" style="flex-wrap: wrap; gap: 8px;">
         <button id="debug-marker-delete" class="debug-cancel-btn" style="background: rgba(220,53,69,0.3); border-color: #dc3545; display: none;">🗑️ Delete</button>
-        <button id="debug-marker-move" class="debug-save-btn" style="background: rgba(255,193,7,0.3); border-color: #ffc107; display: none;">🎯 Move Here</button>
+        <button id="debug-marker-move" class="debug-save-btn" style="background: rgba(255,193,7,0.3); border-color: #ffc107; display: none;">📍 Reposition (Drop)</button>
+        <button id="debug-marker-duplicate" class="debug-save-btn" style="background: rgba(23,162,184,0.3); border-color: #17a2b8; display: none;">📄 Duplicate</button>
+        <button id="debug-marker-copy-style" class="debug-btn" style="display: none;">🎨 Copy Style</button>
         <div style="flex-grow: 1;"></div>
         <button id="debug-marker-cancel" class="debug-cancel-btn">Cancel</button>
         <button id="debug-marker-save" class="debug-save-btn">Save</button>
       </div>
+    </div>
+  </div>
+
+  <!-- Marker List Panel -->
+  <div id="debug-marker-list-panel" class="debug-panel glass-panel" style="display: none; right: 20px; top: 70px;">
+    <div class="debug-panel-header">
+      <h3>Markers in Scene</h3>
+      <button id="debug-marker-list-close" class="debug-close-btn">x</button>
+    </div>
+    <div class="debug-panel-content" id="debug-marker-list-content" style="max-height: 400px; overflow-y: auto;">
+      <!-- Populated by JS -->
     </div>
   </div>
 

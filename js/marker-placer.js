@@ -30,11 +30,14 @@ export function initMarkerPlacer(viewer, virtualTour, allNodes, isDebug) {
 
   const deleteBtn = document.getElementById('debug-marker-delete');
   const moveBtn = document.getElementById('debug-marker-move');
+  const duplicateBtn = document.getElementById('debug-marker-duplicate');
+  const copyStyleBtn = document.getElementById('debug-marker-copy-style');
 
   let capturedYawDeg = 0;
   let capturedPitchDeg = 0;
   let isEditing = false;
   let editingMarkerId = null;
+  let isRepositioning = false;
 
   btn.addEventListener('click', () => {
     isEditing = false;
@@ -47,10 +50,22 @@ export function initMarkerPlacer(viewer, virtualTour, allNodes, isDebug) {
 
     // Reset modal
     typeSelect.value = 'info';
-    sizeSelect.value = '44';
-    iconSelect.value = 'info';
-    colorSelect.value = 'blue';
-    animCheck.checked = false;
+    const savedStyle = localStorage.getItem('debugMarkerStyle');
+    if (savedStyle) {
+      try {
+        const parsed = JSON.parse(savedStyle);
+        sizeSelect.value = parsed.size || '44';
+        iconSelect.value = parsed.icon || 'info';
+        colorSelect.value = parsed.color || 'blue';
+        animCheck.checked = !!parsed.anim;
+      } catch (e) {}
+    } else {
+      sizeSelect.value = '44';
+      iconSelect.value = 'info';
+      colorSelect.value = 'blue';
+      animCheck.checked = false;
+    }
+
     titleInput.value = '';
     contentInput.value = '';
     audioInput.value = '';
@@ -60,9 +75,11 @@ export function initMarkerPlacer(viewer, virtualTour, allNodes, isDebug) {
     audioGroup.style.display = 'none';
     linkGroup.style.display = 'none';
     uploadGroup.style.display = 'none';
-    
     if (deleteBtn) deleteBtn.style.display = 'none';
     if (moveBtn) moveBtn.style.display = 'none';
+    if (duplicateBtn) duplicateBtn.style.display = 'none';
+    if (copyStyleBtn) copyStyleBtn.style.display = 'none';
+
 
     modal.classList.add('is-visible');
     });
@@ -79,8 +96,6 @@ export function initMarkerPlacer(viewer, virtualTour, allNodes, isDebug) {
       if (rawMarker) {
         isEditing = true;
         editingMarkerId = rawMarker.id;
-        
-        idInput.value = rawMarker.id;
         typeSelect.value = rawMarker.data?.type || 'info';
         
         let sizeMatch = rawMarker.html ? rawMarker.html.match(/width="(\d+)"/) || rawMarker.html.match(/size="\d+"/) : null;
@@ -114,14 +129,62 @@ export function initMarkerPlacer(viewer, virtualTour, allNodes, isDebug) {
 
         capturedYawDeg = parseFloat(rawMarker.position.yaw) || 0;
         capturedPitchDeg = parseFloat(rawMarker.position.pitch) || 0;
-
         if (deleteBtn) deleteBtn.style.display = 'inline-block';
-        if (moveBtn) moveBtn.style.display = 'inline-block';
-
-        modal.classList.add('is-visible');
-        }
+        
+  if (moveBtn) {
+    moveBtn.addEventListener('click', () => {
+      closeModal();
+      showToast('📍 Click anywhere in the panorama to drop the marker.');
+      isRepositioning = true;
+      viewer.container.style.cursor = 'crosshair';
     });
   }
+  
+  // Intercept click on viewer when repositioning
+  viewer.addEventListener('click', ({ data }) => {
+    if (isRepositioning) {
+      isRepositioning = false;
+      viewer.container.style.cursor = '';
+      
+      // Calculate coordinates from the click
+      const coords = viewer.dataHelper.viewerCoordsToSphericalCoords({ x: data.clientX, y: data.clientY });
+      if (coords) {
+         capturedYawDeg = (coords.yaw * 180 / Math.PI) % 360;
+         capturedPitchDeg = coords.pitch * 180 / Math.PI;
+         showToast('📍 Position updated! Click Save.');
+      }
+      modal.classList.add('is-visible');
+    }
+  });
+
+  if (duplicateBtn) {
+    duplicateBtn.addEventListener('click', () => {
+      // Offset by ~5 degrees so they don't overlap exactly
+      capturedYawDeg = (capturedYawDeg + 5) % 360;
+      capturedPitchDeg = capturedPitchDeg; 
+      isEditing = false; // Turn into an "Add" operation
+      editingMarkerId = null;
+      showToast('📄 Marker duplicated and offset slightly. Click Save to confirm.');
+      
+      const originalBg = duplicateBtn.style.background;
+      duplicateBtn.style.background = 'rgba(40,167,69,0.5)';
+      setTimeout(() => duplicateBtn.style.background = originalBg, 500);
+    });
+  }
+
+  if (copyStyleBtn) {
+    copyStyleBtn.addEventListener('click', () => {
+      const style = {
+        size: sizeSelect.value,
+        icon: iconSelect.value,
+        color: colorSelect.value,
+        anim: animCheck.checked
+      };
+      localStorage.setItem('debugMarkerStyle', JSON.stringify(style));
+      showToast('🎨 Style copied! New markers will use this design.');
+    });
+  }
+
 
   typeSelect.addEventListener('change', () => {
     contentGroup.style.display = 'none';
@@ -194,8 +257,10 @@ export function initMarkerPlacer(viewer, virtualTour, allNodes, isDebug) {
       markerConfig.html = `<custom-marker ${customMarkerProps}>\n        <h2>${title}</h2>\n        <p>🔊 Audio Narration</p>\n      </custom-marker>`;
       markerConfig.data.audioSrc = audioInput.value.trim();
     } else if (type === 'image') {
-      markerConfig.html = `<custom-marker ${customMarkerProps}>\n        <img src="${contentInput.value.trim()}" alt="${title}" />\n        <h2>${title}</h2>\n      </custom-marker>`;
+      const originalUrl = contentInput.getAttribute('data-original') || contentInput.value.trim().replace('/thumbs/', '/');
+      markerConfig.html = `<custom-marker ${customMarkerProps} data-url="${originalUrl}">\n        <img src="${contentInput.value.trim()}" alt="${title}" style="cursor:pointer;" />\n        <h2>${title}</h2>\n        <p style="font-size: 11px; opacity:0.7;">🔍 Click to enlarge</p>\n      </custom-marker>`;
       markerConfig.data.imageSrc = contentInput.value.trim();
+      markerConfig.data.originalUrl = originalUrl;
       markerConfig.data.caption = title;
     } else if (type === 'link') {
       markerConfig.html = `<custom-marker ${customMarkerProps} data-url="${linkInput.value.trim()}">\n        <h2>${title}</h2>\n        <p>🔗 Click to open link</p>\n      </custom-marker>`;
@@ -221,8 +286,9 @@ export function initMarkerPlacer(viewer, virtualTour, allNodes, isDebug) {
       else node.markers.push(markerConfig);
     }
 
-    showToast(isEditing ? `✅ Marker updated: ${id}` : `✅ Marker added: ${id}`);
+    showToast(isEditing ? `📍 Marker updated: ${id}` : `📍 Marker added: ${id}`);
     closeModal();
+    if (window.debugMarkerListRefresh) window.debugMarkerListRefresh();
 
     // 3. Save to disk via dev server
     try {
@@ -268,6 +334,7 @@ export function initMarkerPlacer(viewer, virtualTour, allNodes, isDebug) {
 
       showToast(`🗑️ Marker deleted: ${editingMarkerId}`);
       closeModal();
+      if (window.debugMarkerListRefresh) window.debugMarkerListRefresh();
 
       // 3. Delete from disk
       try {
@@ -277,7 +344,9 @@ export function initMarkerPlacer(viewer, virtualTour, allNodes, isDebug) {
           body: JSON.stringify({ 
             sourceId: currentNodeId, 
             markerId: editingMarkerId,
-            action: 'delete'
+            action: 'delete',
+            imageSrc: (node.markers.find(m => m.id === editingMarkerId) || {}).data?.imageSrc,
+            originalUrl: (node.markers.find(m => m.id === editingMarkerId) || {}).data?.originalUrl
           })
         });
         if (!response.ok) throw new Error('Failed to delete');
@@ -287,19 +356,61 @@ export function initMarkerPlacer(viewer, virtualTour, allNodes, isDebug) {
     });
   }
 
+  
   if (moveBtn) {
     moveBtn.addEventListener('click', () => {
-      const pos = viewer.getPosition();
-      capturedYawDeg = (pos.yaw * 180 / Math.PI) % 360;
-      capturedPitchDeg = pos.pitch * 180 / Math.PI;
-      showToast(`🎯 Position updated to crosshair! Click Save to apply.`);
-      
-      // Briefly flash the button green to show success
-      const originalBg = moveBtn.style.background;
-      moveBtn.style.background = 'rgba(40,167,69,0.5)';
-      setTimeout(() => moveBtn.style.background = originalBg, 500);
+      closeModal();
+      showToast('📍 Click anywhere in the panorama to drop the marker.');
+      isRepositioning = true;
+      viewer.container.style.cursor = 'crosshair';
     });
   }
+  
+  // Intercept click on viewer when repositioning
+  viewer.addEventListener('click', ({ data }) => {
+    if (isRepositioning) {
+      isRepositioning = false;
+      viewer.container.style.cursor = '';
+      
+      // Calculate coordinates from the click
+      const coords = viewer.dataHelper.viewerCoordsToSphericalCoords({ x: data.clientX, y: data.clientY });
+      if (coords) {
+         capturedYawDeg = (coords.yaw * 180 / Math.PI) % 360;
+         capturedPitchDeg = coords.pitch * 180 / Math.PI;
+         showToast('📍 Position updated! Click Save.');
+      }
+      modal.classList.add('is-visible');
+    }
+  });
+
+  if (duplicateBtn) {
+    duplicateBtn.addEventListener('click', () => {
+      // Offset by ~5 degrees so they don't overlap exactly
+      capturedYawDeg = (capturedYawDeg + 5) % 360;
+      capturedPitchDeg = capturedPitchDeg; 
+      isEditing = false; // Turn into an "Add" operation
+      editingMarkerId = null;
+      showToast('📄 Marker duplicated and offset slightly. Click Save to confirm.');
+      
+      const originalBg = duplicateBtn.style.background;
+      duplicateBtn.style.background = 'rgba(40,167,69,0.5)';
+      setTimeout(() => duplicateBtn.style.background = originalBg, 500);
+    });
+  }
+
+  if (copyStyleBtn) {
+    copyStyleBtn.addEventListener('click', () => {
+      const style = {
+        size: sizeSelect.value,
+        icon: iconSelect.value,
+        color: colorSelect.value,
+        anim: animCheck.checked
+      };
+      localStorage.setItem('debugMarkerStyle', JSON.stringify(style));
+      showToast('🎨 Style copied! New markers will use this design.');
+    });
+  }
+
 
   
   document.querySelectorAll('.rt-btn').forEach(btn => {
@@ -325,28 +436,58 @@ export function initMarkerPlacer(viewer, virtualTour, allNodes, isDebug) {
       const file = uploadInput.files[0];
       if (!file) return showToast('Please select a file first.');
       
+      const currentNodeId = virtualTour.getCurrentNode()?.id;
+      if (!currentNodeId) return showToast('❌ Error: No current scene selected.');
+      
       const reader = new FileReader();
-      reader.onload = async (e) => {
-        try {
-          uploadBtn.textContent = 'Uploading...';
-          const base64 = e.target.result;
-          const response = await fetch('/api/upload-image', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ filename: file.name, image: base64 })
-          });
-          const result = await response.json();
-          if (response.ok) {
-            contentInput.value = result.url;
-            showToast('✅ Image uploaded');
-          } else {
-            throw new Error(result.error);
-          }
-        } catch (err) {
-          showToast('❌ Upload failed: ' + err.message);
-        } finally {
-          uploadBtn.textContent = 'Upload';
-        }
+      reader.onload = (e) => {
+        const originalBase64 = e.target.result;
+        
+        // Generate Thumbnail using Canvas
+        const img = new Image();
+        img.onload = async () => {
+            try {
+                uploadBtn.textContent = 'Uploading...';
+                
+                const canvas = document.createElement('canvas');
+                const ctx = canvas.getContext('2d');
+                const targetWidth = 400;
+                const scale = targetWidth / img.width;
+                const targetHeight = Math.round(img.height * scale);
+                
+                canvas.width = targetWidth;
+                canvas.height = targetHeight;
+                ctx.drawImage(img, 0, 0, targetWidth, targetHeight);
+                const thumbBase64 = canvas.toDataURL('image/jpeg', 0.85);
+
+                const response = await fetch('/api/upload-image', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ 
+                        sourceId: currentNodeId,
+                        filename: file.name, 
+                        image: originalBase64,
+                        thumb: thumbBase64
+                    })
+                });
+                const result = await response.json();
+                if (response.ok) {
+                    contentInput.value = result.thumbUrl; // Input receives the thumbnail URL
+                    showToast('✅ Image and thumbnail uploaded');
+                    
+                    // We must store the originalUrl somewhere, so we can use it on click.
+                    // We'll append a data attribute to the marker config logic.
+                    contentInput.setAttribute('data-original', result.originalUrl);
+                } else {
+                    throw new Error(result.error);
+                }
+            } catch (err) {
+                showToast('❌ Upload failed: ' + err.message);
+            } finally {
+                uploadBtn.textContent = 'Upload';
+            }
+        };
+        img.src = originalBase64;
       };
       reader.readAsDataURL(file);
     });

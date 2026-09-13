@@ -755,3 +755,36 @@ custom-marker[data-color="blue"] { --marker-color: var(--color-accent-blue); }
 custom-marker[animated] {
   animation: marker-pulse 2s infinite ease-in-out;
 }
+
+/* Marker List Panel */
+#debug-marker-list-panel {
+  width: 320px;
+  right: 20px;
+  top: 70px;
+}
+.marker-list-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 10px;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  cursor: pointer;
+  transition: background 0.2s;
+  border-radius: 4px;
+  margin-bottom: 4px;
+}
+.marker-list-item:hover {
+  background: rgba(255,255,255,0.1);
+}
+.marker-list-item strong {
+  font-size: 13px;
+  color: var(--color-offwhite);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.marker-list-item small {
+  font-size: 11px;
+  color: var(--color-silver);
+  text-transform: uppercase;
+}

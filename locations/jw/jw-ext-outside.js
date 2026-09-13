@@ -19,7 +19,7 @@ export default [
         nodeId: 'jw-ext-outside-2',
         position: { yaw: '0deg', pitch: '0deg' },
         name: 'Go to Outside 2',
-      }
+      },
     ],
     markers: [],
     data: {
@@ -263,7 +263,7 @@ export default [
         nodeId: 'jw-ext-outside-9',
         position: { yaw: '0deg', pitch: '0deg' },
         name: 'Go back to Outside 9',
-      }
+      },
     ],
     markers: [
       {
@@ -309,6 +309,29 @@ export default [
           content: ''
         },
         html: '<custom-marker type=\'info\' data-icon=\'info\' data-color=\'blue\'></custom-marker>'
+      },
+      {
+        id: 'jw-ext-outside-10-marker-1789290401292',
+        position: {
+          yaw: '319.99deg',
+          pitch: '-2.56deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        tooltip: '',
+        data: {
+          type: 'image',
+          title: '',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/shared/uploads/1789290394491-cto9mo.jpg',
+          caption: ''
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\'>\n        <img src=\'./images/shared/uploads/1789290394491-cto9mo.jpg\' alt=\'\' />\n        <h2></h2>\n      </custom-marker>'
       }
     ],
     data: {
