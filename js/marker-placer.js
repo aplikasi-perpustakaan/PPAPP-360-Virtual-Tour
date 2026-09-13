@@ -200,17 +200,6 @@ export function initMarkerPlacer(viewer, virtualTour, allNodes, isDebug) {
     } else if (type === 'link') {
       markerConfig.html = `<custom-marker ${customMarkerProps} data-url="${linkInput.value.trim()}"></custom-marker>`;
       markerConfig.data.url = linkInput.value.trim();
-    },
-        html: '<custom-marker type="image"></custom-marker>',
-        size: { width: 44, height: 44 },
-        anchor: 'center center',
-        tooltip: title,
-        data: {
-          type: 'image',
-          imageSrc: contentInput.value.trim(),
-          caption: title
-        }
-      };
     }
 
     // 1. Inject into PSV immediately
