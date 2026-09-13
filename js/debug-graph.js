@@ -61,7 +61,7 @@ export function initDebugGraph(viewer, virtualTour, allNodes, isDebug) {
 
   canvas.addEventListener('click', () => {
     if (hoveredNodeId && hoveredNodeId !== currentNodeId) {
-      virtualTour.setCurrentNode(hoveredNodeId).catch(err => {
+      virtualTour.setCurrentNode(hoveredNodeId, { __forceNavigation: true }).catch(err => {
         console.warn('Teleport failed:', err);
       });
     }

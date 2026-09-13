@@ -80,9 +80,8 @@ export function initMarkerPlacer(viewer, virtualTour, allNodes, isDebug) {
     if (duplicateBtn) duplicateBtn.style.display = 'none';
     if (copyStyleBtn) copyStyleBtn.style.display = 'none';
 
-
     modal.classList.add('is-visible');
-    });
+  });
 
   const markersPlugin = viewer.getPlugin('markers');
   if (markersPlugin) {
@@ -98,9 +97,7 @@ export function initMarkerPlacer(viewer, virtualTour, allNodes, isDebug) {
         editingMarkerId = rawMarker.id;
         typeSelect.value = rawMarker.data?.type || 'info';
         
-        let sizeMatch = rawMarker.html ? rawMarker.html.match(/width="(\d+)"/) || rawMarker.html.match(/size="\d+"/) : null;
         sizeSelect.value = rawMarker.size?.width || '44';
-        
         iconSelect.value = rawMarker.data?.icon || 'info';
         colorSelect.value = rawMarker.data?.color || 'blue';
         animCheck.checked = !!rawMarker.data?.animated;
@@ -120,6 +117,7 @@ export function initMarkerPlacer(viewer, virtualTour, allNodes, isDebug) {
           linkGroup.style.display = 'flex';
         } else if (typeSelect.value === 'image') {
           contentInput.value = rawMarker.data?.imageSrc || '';
+          contentInput.setAttribute('data-original', rawMarker.data?.originalUrl || '');
           contentGroup.style.display = 'flex';
           uploadGroup.style.display = 'flex';
         } else {
@@ -129,8 +127,19 @@ export function initMarkerPlacer(viewer, virtualTour, allNodes, isDebug) {
 
         capturedYawDeg = parseFloat(rawMarker.position.yaw) || 0;
         capturedPitchDeg = parseFloat(rawMarker.position.pitch) || 0;
-        if (deleteBtn) deleteBtn.style.display = 'inline-block';
         
+        if (deleteBtn) deleteBtn.style.display = 'inline-block';
+        if (moveBtn) moveBtn.style.display = 'inline-block';
+        if (duplicateBtn) duplicateBtn.style.display = 'inline-block';
+        if (copyStyleBtn) copyStyleBtn.style.display = 'inline-block';
+
+        modal.classList.add('is-visible');
+      }
+    });
+  }
+
+  // --- Static Event Listeners (Added only once) ---
+
   if (moveBtn) {
     moveBtn.addEventListener('click', () => {
       closeModal();
@@ -140,13 +149,11 @@ export function initMarkerPlacer(viewer, virtualTour, allNodes, isDebug) {
     });
   }
   
-  // Intercept click on viewer when repositioning
   viewer.addEventListener('click', ({ data }) => {
     if (isRepositioning) {
       isRepositioning = false;
       viewer.container.style.cursor = '';
       
-      // Calculate coordinates from the click
       const coords = viewer.dataHelper.viewerCoordsToSphericalCoords({ x: data.clientX, y: data.clientY });
       if (coords) {
          capturedYawDeg = (coords.yaw * 180 / Math.PI) % 360;
@@ -159,12 +166,15 @@ export function initMarkerPlacer(viewer, virtualTour, allNodes, isDebug) {
 
   if (duplicateBtn) {
     duplicateBtn.addEventListener('click', () => {
-      // Offset by ~5 degrees so they don't overlap exactly
+      // Offset by 5 degrees yaw to prevent exact overlap
       capturedYawDeg = (capturedYawDeg + 5) % 360;
-      capturedPitchDeg = capturedPitchDeg; 
-      isEditing = false; // Turn into an "Add" operation
+      isEditing = false;
       editingMarkerId = null;
-      showToast('📄 Marker duplicated and offset slightly. Click Save to confirm.');
+      if (deleteBtn) deleteBtn.style.display = 'none';
+      if (duplicateBtn) duplicateBtn.style.display = 'none';
+      if (moveBtn) moveBtn.style.display = 'none';
+      if (copyStyleBtn) copyStyleBtn.style.display = 'none';
+      showToast('📄 Marker duplicated. Click Save to confirm.');
       
       const originalBg = duplicateBtn.style.background;
       duplicateBtn.style.background = 'rgba(40,167,69,0.5)';
@@ -184,7 +194,6 @@ export function initMarkerPlacer(viewer, virtualTour, allNodes, isDebug) {
       showToast('🎨 Style copied! New markers will use this design.');
     });
   }
-
 
   typeSelect.addEventListener('change', () => {
     contentGroup.style.display = 'none';
@@ -268,7 +277,6 @@ export function initMarkerPlacer(viewer, virtualTour, allNodes, isDebug) {
     }
 
     // 1. Inject into PSV immediately
-    const markersPlugin = viewer.getPlugin('markers');
     if (markersPlugin) {
       if (isEditing) {
         markersPlugin.updateMarker(markerConfig);
@@ -288,7 +296,7 @@ export function initMarkerPlacer(viewer, virtualTour, allNodes, isDebug) {
 
     showToast(isEditing ? `📍 Marker updated: ${id}` : `📍 Marker added: ${id}`);
     closeModal();
-    if (window.debugMarkerListRefresh) window.debugMarkerListRefresh();
+    window.dispatchEvent(new CustomEvent('debug-markers-updated'));
 
     // 3. Save to disk via dev server
     try {
@@ -298,7 +306,7 @@ export function initMarkerPlacer(viewer, virtualTour, allNodes, isDebug) {
         body: JSON.stringify({ 
           sourceId: currentNodeId, 
           markerConfig,
-          markerId: editingMarkerId || id, // Pass original ID so backend can replace it
+          markerId: editingMarkerId || id,
           action: isEditing ? 'edit' : 'add'
         })
       });
@@ -320,21 +328,22 @@ export function initMarkerPlacer(viewer, virtualTour, allNodes, isDebug) {
       const confirmDelete = confirm('Are you sure you want to delete this marker?');
       if (!confirmDelete) return;
 
+      const node = allNodes.find(n => n.id === currentNodeId);
+      const markerToDelete = node?.markers?.find(m => m.id === editingMarkerId);
+
       // 1. Remove from PSV
-      const markersPlugin = viewer.getPlugin('markers');
       if (markersPlugin) {
         markersPlugin.removeMarker(editingMarkerId);
       }
 
       // 2. Remove from allNodes memory
-      const node = allNodes.find(n => n.id === currentNodeId);
       if (node && node.markers) {
         node.markers = node.markers.filter(m => m.id !== editingMarkerId);
       }
 
       showToast(`🗑️ Marker deleted: ${editingMarkerId}`);
       closeModal();
-      if (window.debugMarkerListRefresh) window.debugMarkerListRefresh();
+      window.dispatchEvent(new CustomEvent('debug-markers-updated'));
 
       // 3. Delete from disk
       try {
@@ -345,8 +354,8 @@ export function initMarkerPlacer(viewer, virtualTour, allNodes, isDebug) {
             sourceId: currentNodeId, 
             markerId: editingMarkerId,
             action: 'delete',
-            imageSrc: (node.markers.find(m => m.id === editingMarkerId) || {}).data?.imageSrc,
-            originalUrl: (node.markers.find(m => m.id === editingMarkerId) || {}).data?.originalUrl
+            imageSrc: markerToDelete?.data?.imageSrc,
+            originalUrl: markerToDelete?.data?.originalUrl
           })
         });
         if (!response.ok) throw new Error('Failed to delete');
@@ -356,63 +365,6 @@ export function initMarkerPlacer(viewer, virtualTour, allNodes, isDebug) {
     });
   }
 
-  
-  if (moveBtn) {
-    moveBtn.addEventListener('click', () => {
-      closeModal();
-      showToast('📍 Click anywhere in the panorama to drop the marker.');
-      isRepositioning = true;
-      viewer.container.style.cursor = 'crosshair';
-    });
-  }
-  
-  // Intercept click on viewer when repositioning
-  viewer.addEventListener('click', ({ data }) => {
-    if (isRepositioning) {
-      isRepositioning = false;
-      viewer.container.style.cursor = '';
-      
-      // Calculate coordinates from the click
-      const coords = viewer.dataHelper.viewerCoordsToSphericalCoords({ x: data.clientX, y: data.clientY });
-      if (coords) {
-         capturedYawDeg = (coords.yaw * 180 / Math.PI) % 360;
-         capturedPitchDeg = coords.pitch * 180 / Math.PI;
-         showToast('📍 Position updated! Click Save.');
-      }
-      modal.classList.add('is-visible');
-    }
-  });
-
-  if (duplicateBtn) {
-    duplicateBtn.addEventListener('click', () => {
-      // Offset by ~5 degrees so they don't overlap exactly
-      capturedYawDeg = (capturedYawDeg + 5) % 360;
-      capturedPitchDeg = capturedPitchDeg; 
-      isEditing = false; // Turn into an "Add" operation
-      editingMarkerId = null;
-      showToast('📄 Marker duplicated and offset slightly. Click Save to confirm.');
-      
-      const originalBg = duplicateBtn.style.background;
-      duplicateBtn.style.background = 'rgba(40,167,69,0.5)';
-      setTimeout(() => duplicateBtn.style.background = originalBg, 500);
-    });
-  }
-
-  if (copyStyleBtn) {
-    copyStyleBtn.addEventListener('click', () => {
-      const style = {
-        size: sizeSelect.value,
-        icon: iconSelect.value,
-        color: colorSelect.value,
-        anim: animCheck.checked
-      };
-      localStorage.setItem('debugMarkerStyle', JSON.stringify(style));
-      showToast('🎨 Style copied! New markers will use this design.');
-    });
-  }
-
-
-  
   document.querySelectorAll('.rt-btn').forEach(btn => {
     btn.addEventListener('click', () => {
       const tag = btn.getAttribute('data-tag');
@@ -451,12 +403,15 @@ export function initMarkerPlacer(viewer, virtualTour, allNodes, isDebug) {
                 
                 const canvas = document.createElement('canvas');
                 const ctx = canvas.getContext('2d');
+                
                 const targetWidth = 400;
                 const scale = targetWidth / img.width;
                 const targetHeight = Math.round(img.height * scale);
                 
                 canvas.width = targetWidth;
                 canvas.height = targetHeight;
+                ctx.imageSmoothingEnabled = true;
+                ctx.imageSmoothingQuality = 'high';
                 ctx.drawImage(img, 0, 0, targetWidth, targetHeight);
                 const thumbBase64 = canvas.toDataURL('image/jpeg', 0.85);
 
@@ -472,11 +427,8 @@ export function initMarkerPlacer(viewer, virtualTour, allNodes, isDebug) {
                 });
                 const result = await response.json();
                 if (response.ok) {
-                    contentInput.value = result.thumbUrl; // Input receives the thumbnail URL
+                    contentInput.value = result.thumbUrl; 
                     showToast('✅ Image and thumbnail uploaded');
-                    
-                    // We must store the originalUrl somewhere, so we can use it on click.
-                    // We'll append a data attribute to the marker config logic.
                     contentInput.setAttribute('data-original', result.originalUrl);
                 } else {
                     throw new Error(result.error);

@@ -1,3 +1,5 @@
+import { branches } from './tour-config.js';
+
 export function initSceneInspector(viewer, virtualTour, allNodes, isDebug) {
   if (!isDebug) return;
 
@@ -6,8 +8,29 @@ export function initSceneInspector(viewer, virtualTour, allNodes, isDebug) {
   const closeBtn = document.getElementById('debug-inspector-close');
   const copyBtn = document.getElementById('debug-copy-url-btn');
   const toast = document.getElementById('debug-toast');
+  const startupSceneBtn = document.getElementById('debug-startup-scene-btn');
+  const saveDefaultsBtn = document.getElementById('debug-save-defaults-btn');
 
   if (!panel || !contentDiv) return;
+
+  function updateStartupSceneButton() {
+    if (!startupSceneBtn) return;
+    const currentNodeId = virtualTour.getCurrentNode()?.id;
+    if (!currentNodeId) return;
+
+    const currentBranchId = currentNodeId.split('-')[0];
+    const branchConfig = branches.find(b => b.id === currentBranchId);
+    
+    if (branchConfig && branchConfig.startNode === currentNodeId) {
+      startupSceneBtn.innerHTML = '⭐ Is Startup Scene';
+      startupSceneBtn.style.opacity = '0.5';
+      startupSceneBtn.style.pointerEvents = 'none';
+    } else {
+      startupSceneBtn.innerHTML = '⭐ Set Startup Scene';
+      startupSceneBtn.style.opacity = '1';
+      startupSceneBtn.style.pointerEvents = 'auto';
+    }
+  }
 
   // Toggle Inspector Panel with 'I'
   window.addEventListener('keydown', (e) => {
@@ -26,10 +49,15 @@ export function initSceneInspector(viewer, virtualTour, allNodes, isDebug) {
 
   // Update on node change
   virtualTour.addEventListener('node-changed', () => {
+    updateStartupSceneButton();
     if (panel.style.display === 'flex') {
       updateInspector();
     }
   });
+
+  viewer.addEventListener('ready', () => {
+    updateStartupSceneButton();
+  }, { once: true });
 
   // Quick Copy URL
   const copyUrl = () => {
@@ -46,7 +74,6 @@ export function initSceneInspector(viewer, virtualTour, allNodes, isDebug) {
     copyBtn.addEventListener('click', copyUrl);
   }
 
-  const saveDefaultsBtn = document.getElementById('debug-save-defaults-btn');
   if (saveDefaultsBtn) {
     saveDefaultsBtn.addEventListener('click', async () => {
       const currentNodeId = virtualTour.getCurrentNode()?.id;
@@ -72,6 +99,36 @@ export function initSceneInspector(viewer, virtualTour, allNodes, isDebug) {
         }
       } catch (err) {
         showToast(`❌ Error saving defaults: ${err.message}`);
+      }
+    });
+  }
+
+  if (startupSceneBtn) {
+    startupSceneBtn.addEventListener('click', async () => {
+      const currentNodeId = virtualTour.getCurrentNode()?.id;
+      if (!currentNodeId) return;
+
+      const currentBranchId = currentNodeId.split('-')[0];
+
+      try {
+        const response = await fetch('/api/set-startup-scene', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ branchId: currentBranchId, sceneId: currentNodeId })
+        });
+        if (response.ok) {
+          showToast(`⭐ Set as Startup Scene!`);
+          
+          // Update the local in-memory config so the UI updates immediately
+          const branchConfig = branches.find(b => b.id === currentBranchId);
+          if (branchConfig) branchConfig.startNode = currentNodeId;
+          
+          updateStartupSceneButton();
+        } else {
+          showToast(`❌ Failed to set startup scene`);
+        }
+      } catch (err) {
+        showToast(`❌ Error: ${err.message}`);
       }
     });
   }

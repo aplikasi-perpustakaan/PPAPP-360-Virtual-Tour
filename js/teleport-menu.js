@@ -71,7 +71,7 @@ export function initTeleportMenu(viewer, virtualTour, allNodes, isDebug) {
       li.appendChild(nameSpan);
 
       li.addEventListener('click', () => {
-        virtualTour.setCurrentNode(n.id).catch(err => console.warn('Teleport error:', err));
+        virtualTour.setCurrentNode(n.id, { __forceNavigation: true }).catch(err => console.warn('Teleport error:', err));
         closeModal();
       });
 

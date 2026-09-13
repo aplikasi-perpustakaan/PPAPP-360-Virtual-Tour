@@ -6,7 +6,7 @@ export class CustomMarkerElement extends HTMLElement {
 
         this.fmt = new Intl.NumberFormat({ maximumSignificantDigits: 4 });
 
-        const dom = this.attachShadow({ mode: 'closed' });
+        this._dom = this.attachShadow({ mode: 'closed' });
 
         const style = document.createElement('style');
         style.innerText = `
@@ -119,7 +119,7 @@ button:hover + .tooltip {
     100% { transform: rotate(30deg); opacity: 0; }
 }
 `;
-        dom.appendChild(style);
+        this._dom.appendChild(style);
 
         const tooltipId = 'tooltip-' + Math.random().toString(36).substring(2, 9);
 
@@ -127,12 +127,12 @@ button:hover + .tooltip {
         this.button.setAttribute('aria-label', 'Toggle details');
         this.button.setAttribute('aria-expanded', 'false');
         this.button.setAttribute('aria-describedby', tooltipId);
-        dom.appendChild(this.button);
+        this._dom.appendChild(this.button);
 
         this.tooltip = document.createElement('div');
         this.tooltip.id = tooltipId;
         this.tooltip.classList.add('tooltip');
-        dom.appendChild(this.tooltip);
+        this._dom.appendChild(this.tooltip);
         this.tooltip.innerHTML = '<slot></slot>';
 
         this.renderIcon();
@@ -217,7 +217,7 @@ button:hover + .tooltip {
         this.button.addEventListener('mouseleave', this.handleMouseLeave);
         this.button.addEventListener('mouseenter', this.handleMouseEnter);
         this.button.addEventListener('touchstart', this.handleTouchStart);
-        dom.addEventListener('animationend', this.handleAnimationEnd);
+        this._dom.addEventListener('animationend', this.handleAnimationEnd);
     }
 
     disconnectedCallback() {
@@ -225,7 +225,7 @@ button:hover + .tooltip {
         this.button.removeEventListener('mouseleave', this.handleMouseLeave);
         this.button.removeEventListener('mouseenter', this.handleMouseEnter);
         this.button.removeEventListener('touchstart', this.handleTouchStart);
-        this.shadowRoot.removeEventListener('animationend', this.handleAnimationEnd);
+        this._dom.removeEventListener('animationend', this.handleAnimationEnd);
     }
 
     updateMarker({ marker, position, viewerPosition, zoomLevel, viewerSize }) {

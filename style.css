@@ -315,8 +315,27 @@ body.hide-crosshair #crosshair {
 
 body.is-debug .debug-controls-container {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: center;
+  align-items: center;
+  max-width: 95vw;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+/* Hide scrollbar for cleaner pill look but keep scroll functionality */
+.debug-controls-container::-webkit-scrollbar {
+  display: none;
+}
+.debug-controls-container {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.debug-btn-group {
+  display: flex;
+  align-items: center;
+  gap: 2px;
 }
 
 .debug-btn {
@@ -347,6 +366,7 @@ body.is-debug .debug-controls-container {
   width: 1px;
   background: var(--glass-border);
   margin: 4px;
+  align-self: stretch;
 }
 
 /* Modals */
@@ -368,12 +388,12 @@ body.is-debug .debug-controls-container {
 .debug-modal-panel {
   width: 420px;
   max-width: 90vw;
-  max-height: 70vh;
+  max-height: 90vh;
   display: flex;
   flex-direction: column;
   padding: var(--space-lg);
   border-radius: var(--radius-lg);
-  overflow: hidden;
+  overflow-y: auto;
 }
 
 .debug-modal-panel h3 {

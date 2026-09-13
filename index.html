@@ -58,14 +58,18 @@
 
   <!-- Debug Tools (hidden by default, shown in debug mode) -->
   <div id="debug-controls-container" class="debug-controls-container">
-    <button id="debug-save-defaults-btn" class="debug-btn" title="Save current yaw, pitch, zoom as scene defaults">💾 Save Defaults</button>
-    <button id="debug-save-thumb-btn" class="debug-btn" title="Save scene thumbnail">📸 Save Thumbnail</button>
-    <button id="debug-copy-url-btn" class="debug-btn" title="Copy current view URL (C)">🔗 Copy URL</button>
+    <div class="debug-btn-group">
+      <button id="debug-save-defaults-btn" class="debug-btn" title="Save current yaw, pitch, zoom as scene defaults">💾 Save Defaults</button>
+      <button id="debug-startup-scene-btn" class="debug-btn" title="Set current scene as the startup scene for this branch">⭐ Set Startup Scene</button>
+      <button id="debug-save-thumb-btn" class="debug-btn" title="Save scene thumbnail">📸 Save Thumbnail</button>
+      <button id="debug-copy-url-btn" class="debug-btn" title="Copy current view URL (C)">🔗 Copy URL</button>
+    </div>
     <div class="debug-divider"></div>
-    <button id="debug-add-link-btn" class="debug-btn debug-add-link-btn" title="Add navigation link at crosshair">🔗 Add Link</button>
-    <button id="debug-add-marker-btn" class="debug-btn debug-add-marker-btn" title="Add marker at crosshair">📍 Add Marker</button>
-    <div class="debug-divider"></div>
-    <button id="debug-marker-list-btn" class="debug-btn" title="Toggle Marker List">📄 Markers</button>
+    <div class="debug-btn-group">
+      <button id="debug-add-link-btn" class="debug-btn debug-add-link-btn" title="Add navigation link at crosshair">🔗 Add Link</button>
+      <button id="debug-add-marker-btn" class="debug-btn debug-add-marker-btn" title="Add marker at crosshair">📍 Add Marker</button>
+      <button id="debug-marker-list-btn" class="debug-btn" title="Toggle Marker List">📄 Markers</button>
+    </div>
   </div>
 
   <div id="debug-link-modal" class="debug-modal">
@@ -231,6 +235,38 @@
         <div><strong>X</strong></div><div>Toggle Crosshair</div>
         <div><strong>Ctrl+K</strong></div><div>Teleport Menu</div>
         <div><strong>H</strong> / <strong>?</strong></div><div>Show this help</div>
+      </div>
+    </div>
+  </div>
+
+  <div id="debug-edit-link-modal" class="debug-modal">
+    <div class="debug-modal-panel glass-panel" style="width: 800px; max-width: 95vw; height: 600px; max-height: 90vh; display: flex; flex-direction: column;">
+      <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom: 10px;">
+        <h3>Edit Navigation Link</h3>
+        <button id="debug-edit-link-goto" class="debug-btn" style="padding: 4px 10px; font-size: 12px; margin-left: auto;">🏃 Go to Scene</button>
+      </div>
+      
+      <div style="display:flex; gap: 10px; margin-bottom: 10px;">
+        <div style="flex: 1;">
+          <label>Destination Scene</label>
+          <select id="debug-edit-link-target" class="debug-input" style="width: 100%;" disabled></select>
+        </div>
+        <div style="flex: 1;">
+          <label>Display Text (Optional)</label>
+          <input id="debug-edit-link-name" type="text" class="debug-input" placeholder="e.g. Go to Lobby" style="width: 100%;" disabled>
+        </div>
+      </div>
+      
+      <p style="font-size: 12px; margin: 0 0 5px 0;">Drag the view below to set exactly where the camera should face upon arrival:</p>
+      
+      <div id="debug-edit-link-preview-viewer" style="width: 100%; flex: 1; min-height: 250px; background: #000; border-radius: 8px; margin-bottom: 15px; position: relative;"></div>
+      
+      <div class="debug-modal-actions" style="margin-top: auto;">
+        <button id="debug-edit-link-delete" class="debug-cancel-btn" style="background: rgba(220,53,69,0.3); border-color: #dc3545; color: #fff;">🗑️ Delete Link</button>
+        <button id="debug-edit-link-move" class="debug-btn" style="margin-left: 10px; background: rgba(255, 193, 7, 0.3); border-color: #ffc107; color: #fff; padding: 4px 10px;">📍 Move Arrow to Crosshair</button>
+        <div style="flex: 1;"></div>
+        <button id="debug-edit-link-cancel" class="debug-cancel-btn">Cancel</button>
+        <button id="debug-edit-link-save" class="debug-save-btn">💾 Save Arrival View</button>
       </div>
     </div>
   </div>

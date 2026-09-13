@@ -18,6 +18,7 @@ import { initLocationSelector } from './js/location-selector.js';
 import { initAudioController } from './js/audio-controller.js';
 import { initLoadingScreen, showLoading, hideLoading } from './js/loading-screen.js';
 import { initLinkPlacer } from './js/link-placer.js';
+import { initLinkEditor } from './js/link-editor.js';
 import { initMarkerPlacer } from './js/marker-placer.js';
 import { initSceneInspector } from './js/scene-inspector.js';
 import { initDebugVisualizer } from './js/debug-visualizer.js';
@@ -25,6 +26,8 @@ import { initDebugGraph } from './js/debug-graph.js';
 import { initTeleportMenu } from './js/teleport-menu.js';
 import { initMarkerList } from './js/marker-list.js';
 import { branches } from './js/tour-config.js';
+
+import './js/custom-marker.js';
 
 // Show loading initially
 showLoading('Initializing Viewer...');
@@ -133,6 +136,27 @@ async function bootstrap() {
           startNodeId: startNodeId,
           map: {
             imageUrl: 'assets/floor-plans/dummy-map.jpg',
+          },
+          transitionOptions: (node, fromNode, fromLink) => {
+            // By default, let PSV handle it based on positionMode
+            let rotateTo = null; // null means use node.defaultYaw / defaultPitch
+            
+            // Check if this link has custom target angles defined in our raw data
+            if (fromNode) {
+              const originalNode = defaultNodes.find(n => n.id === fromNode.id);
+              if (originalNode && originalNode.links) {
+                const originalLink = originalNode.links.find(l => l.nodeId === node.id);
+                if (originalLink && originalLink.targetYaw !== undefined && originalLink.targetPitch !== undefined) {
+                  // Override arrival view
+                  rotateTo = { yaw: originalLink.targetYaw, pitch: originalLink.targetPitch };
+                }
+              }
+            }
+            
+            if (rotateTo) {
+              return { rotateTo };
+            }
+            return {};
           }
         }],
       ],
@@ -192,6 +216,7 @@ async function bootstrap() {
 
     // 7a. Initialize debug modules (only activates when isDebug is true)
     initLinkPlacer(viewer, virtualTour, defaultNodes, isDebug);
+    initLinkEditor(viewer, virtualTour, defaultNodes, isDebug);
     initMarkerPlacer(viewer, virtualTour, defaultNodes, isDebug);
     initSceneInspector(viewer, virtualTour, defaultNodes, isDebug);
     initDebugVisualizer(viewer, virtualTour, defaultNodes, isDebug);
@@ -326,7 +351,7 @@ async function bootstrap() {
         });
         
         if (bestLink) {
-          virtualTour.setCurrentNode(bestLink.nodeId);
+          virtualTour.setCurrentNode(bestLink.nodeId, { __forceNavigation: true });
         }
       }
     });

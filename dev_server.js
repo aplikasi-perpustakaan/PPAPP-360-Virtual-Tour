@@ -16,7 +16,7 @@ const MIME_TYPES = {
   '.svg': 'image/svg+xml'
 };
 
-function handleSaveLink({ action, sourceId, targetId, yaw, pitch, targetName }) {
+function handleSaveLink({ action, sourceId, targetId, yaw, pitch, targetName, targetYaw, targetPitch }) {
   const branch = sourceId.split('-')[0];
   const branchDir = path.join(__dirname, 'locations', branch);
   
@@ -60,7 +60,11 @@ function handleSaveLink({ action, sourceId, targetId, yaw, pitch, targetName }) 
     if (action === 'delete') {
       linksStr = linksStr.replace(linkObjRegex, '').trim();
     } else {
-      const newLinkSnippet = `{\n        nodeId: '${targetId}',\n        position: { yaw: '${yaw}', pitch: '${pitch}' },\n        name: '${targetName}'\n      }`;
+      let newLinkSnippet = `{\n        nodeId: '${targetId}',\n        position: { yaw: '${yaw}', pitch: '${pitch}' },\n        name: '${targetName}'`;
+      if (targetYaw !== undefined && targetPitch !== undefined) {
+        newLinkSnippet += `,\n        targetYaw: '${targetYaw}',\n        targetPitch: '${targetPitch}'`;
+      }
+      newLinkSnippet += `\n      }`;
       
       if (exists) {
         linksStr = linksStr.replace(linkObjRegex, newLinkSnippet + ',\n      ');
@@ -99,12 +103,12 @@ function handleSaveMarker(payload) {
   if (action === 'delete') {
       try {
           if (imageSrc && imageSrc.includes('/markers/')) {
-              const p = path.join(__dirname, imageSrc.replace(/^\.\//, ''));
-              if (fs.existsSync(p)) fs.unlinkSync(p);
+              const p = path.resolve(__dirname, imageSrc.replace(/^\.\//, ''));
+              if (p.startsWith(path.resolve(__dirname, 'images')) && fs.existsSync(p)) fs.unlinkSync(p);
           }
           if (originalUrl && originalUrl.includes('/markers/')) {
-              const p = path.join(__dirname, originalUrl.replace(/^\.\//, ''));
-              if (fs.existsSync(p)) fs.unlinkSync(p);
+              const p = path.resolve(__dirname, originalUrl.replace(/^\.\//, ''));
+              if (p.startsWith(path.resolve(__dirname, 'images')) && fs.existsSync(p)) fs.unlinkSync(p);
           }
       } catch(e) {
           console.error("Error deleting image files:", e);
@@ -233,6 +237,28 @@ function handleSaveDefaults({ sourceId, defaultYaw, defaultPitch, defaultZoomLvl
   console.log(`[SAVE DEFAULTS] ${sourceId} saved to ${filePath}`);
 }
 
+function handleSetStartupScene({ branchId, sceneId }) {
+  if (!branchId || !sceneId) throw new Error('Missing branchId or sceneId');
+  const configPath = path.join(__dirname, 'js', 'tour-config.js');
+  
+  if (!fs.existsSync(configPath)) {
+    throw new Error('tour-config.js not found');
+  }
+
+  let content = fs.readFileSync(configPath, 'utf8');
+
+  // Regex to match the startNode for a specific branch
+  const regex = new RegExp(`({\\s*id:\\s*['"]${branchId}['"][^}]+startNode:\\s*['"])[^'"]+(['"])`);
+  
+  if (regex.test(content)) {
+    content = content.replace(regex, `$1${sceneId}$2`);
+    fs.writeFileSync(configPath, content, 'utf8');
+    console.log(`[STARTUP SCENE] Updated startup scene for branch '${branchId}' to '${sceneId}'`);
+  } else {
+    throw new Error(`Could not find configuration for branch '${branchId}' in tour-config.js`);
+  }
+}
+
 const server = http.createServer((req, res) => {
   if (req.method === 'POST' && req.url === '/api/save-link') {
     let body = '';
@@ -281,6 +307,24 @@ const server = http.createServer((req, res) => {
         res.end(JSON.stringify({ success: true }));
       } catch (err) {
         console.error('Error saving defaults:', err.message);
+        res.writeHead(500, { 'Content-Type': 'application/json' });
+        res.end(JSON.stringify({ error: err.message }));
+      }
+    });
+    return;
+  }
+
+  if (req.method === 'POST' && req.url === '/api/set-startup-scene') {
+    let body = '';
+    req.on('data', chunk => { body += chunk.toString(); });
+    req.on('end', () => {
+      try {
+        const payload = JSON.parse(body);
+        handleSetStartupScene(payload);
+        res.writeHead(200, { 'Content-Type': 'application/json' });
+        res.end(JSON.stringify({ success: true }));
+      } catch (err) {
+        console.error('Error setting startup scene:', err.message);
         res.writeHead(500, { 'Content-Type': 'application/json' });
         res.end(JSON.stringify({ error: err.message }));
       }
@@ -347,6 +391,9 @@ const server = http.createServer((req, res) => {
           const uniqueFilename = `${Date.now()}-${Math.random().toString(36).substring(2, 8)}.${ext}`;
           
           const parts = sourceId.split('-');
+          if (parts.some(p => p.includes('.') || p.includes('/') || p.includes('\\'))) {
+             throw new Error('Invalid sourceId');
+          }
           const branch = parts[0];
           const section = parts.slice(1).join('-');
           

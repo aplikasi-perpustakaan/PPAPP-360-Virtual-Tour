@@ -230,9 +230,17 @@ export default [
       },
       {
         nodeId: 'jw-ext-outside-10',
-        position: { yaw: '180deg', pitch: '0deg' },
+        position: { yaw: '180.90deg', pitch: '1.91deg' },
         name: 'Go to Outside 10',
+        targetYaw: '167.08deg',
+        targetPitch: '-5.86deg'
       },
+      
+      
+      
+      
+      
+      
       {
         nodeId: 'jw-ext-outside-8',
         position: { yaw: '0deg', pitch: '0deg' },
@@ -267,58 +275,14 @@ export default [
     ],
     markers: [
       {
-        id: 'jw-ext-outside-10-marker-1789278519964',
+        id: 'jw-ext-outside-10-marker-1789296561111',
         position: {
-          yaw: '347.16deg',
-          pitch: '-0.31deg'
+          yaw: '320.12deg',
+          pitch: '-8.12deg'
         },
         size: {
           width: 32,
           height: 32
-        },
-        anchor: 'center center',
-        tooltip: 'test',
-        data: {
-          type: 'info',
-          title: 'test',
-          icon: 'star',
-          color: 'blue',
-          animated: false,
-          content: 'testing <b>testing</b> testing<br/>ssa'
-        },
-        html: '<custom-marker type=\'info\' data-icon=\'star\' data-color=\'blue\'></custom-marker>'
-      },
-      {
-        id: 'jw-ext-outside-10-marker-1789278563066',
-        position: {
-          yaw: '343.24deg',
-          pitch: '-0.85deg'
-        },
-        size: {
-          width: 44,
-          height: 44
-        },
-        anchor: 'center center',
-        tooltip: 'test',
-        data: {
-          type: 'info',
-          title: 'test',
-          icon: 'info',
-          color: 'blue',
-          animated: false,
-          content: ''
-        },
-        html: '<custom-marker type=\'info\' data-icon=\'info\' data-color=\'blue\'></custom-marker>'
-      },
-      {
-        id: 'jw-ext-outside-10-marker-1789290401292',
-        position: {
-          yaw: '319.99deg',
-          pitch: '-2.56deg'
-        },
-        size: {
-          width: 44,
-          height: 44
         },
         anchor: 'center center',
         tooltip: '',
@@ -328,10 +292,11 @@ export default [
           icon: 'info',
           color: 'blue',
           animated: false,
-          imageSrc: './images/shared/uploads/1789290394491-cto9mo.jpg',
+          imageSrc: './images/jw/ext-outside-10/markers/thumbs/1789296556648-8ne740.jpg',
+          originalUrl: './images/jw/ext-outside-10/markers/1789296556648-8ne740.jpg',
           caption: ''
         },
-        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\'>\n        <img src=\'./images/shared/uploads/1789290394491-cto9mo.jpg\' alt=\'\' />\n        <h2></h2>\n      </custom-marker>'
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/jw/ext-outside-10/markers/1789296556648-8ne740.jpg\'>\n        <img src=\'./images/jw/ext-outside-10/markers/thumbs/1789296556648-8ne740.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
       }
     ],
     data: {
