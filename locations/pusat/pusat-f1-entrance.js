@@ -9,8 +9,8 @@ export default [
       caption: 'PUSAT – Level 1 – Entrance',
 
       // ─── Panorama ───
-      panorama: './images/pusat/pusat-f1-entrance.jpg',
-      thumbnail: './images/pusat/thumbs/pusat-f1-entrance.jpg',
+      panorama: './images/pusat/f1-entrance/pusat-f1-entrance.jpg',
+      thumbnail: './images/pusat/f1-entrance/thumbs/pusat-f1-entrance.jpg',
 
       // ─── Camera Defaults ───
       defaultYaw: '0deg',
@@ -28,7 +28,7 @@ export default [
       // ─── Info Markers ───
       markers: [
         {
-          id: 'pusat-f1-entrance-info-1',
+          id: "pusat-f1-entrance-info-1",
           position: { yaw: '-45deg', pitch: '5deg' },
           tooltip: {
             content: 'Beautiful painting on the wall',

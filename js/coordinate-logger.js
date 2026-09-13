@@ -14,6 +14,9 @@
  * @param {Object} viewer - The PSV Viewer instance.
  */
 export function initCoordinateLogger(viewer) {
+  const isDebug = window.location.search.includes('debug=true') || document.body.classList.contains('is-debug');
+  if (!isDebug) return;
+
   viewer.addEventListener('dblclick', ({ data }) => {
     if (data) {
       const yawDeg   = (data.yaw   * 180 / Math.PI).toFixed(2);

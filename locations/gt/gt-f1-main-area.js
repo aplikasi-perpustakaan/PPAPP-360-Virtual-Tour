@@ -223,6 +223,16 @@ export default [
     defaultPitch: '0deg',
     links: [
       {
+        nodeId: 'gt-f1-main-area-10',
+        position: { yaw: '273.72deg', pitch: '0deg' },
+        name: 'Go to Area 10',
+      },
+      {
+        nodeId: 'gt-f1-main-area-13',
+        position: { yaw: '3.76deg', pitch: '0deg' },
+        name: 'Go to Area 13',
+      },
+      {
         nodeId: 'gt-f1-main-area-8',
         position: { yaw: '233.33deg', pitch: '-9.34deg' },
         name: 'Go to Area 8',
@@ -524,6 +534,11 @@ export default [
     defaultPitch: '0deg',
     links: [
       {
+        nodeId: 'gt-f1-main-area-18',
+        position: { yaw: '178.45deg', pitch: '-8.15deg' },
+        name: 'Go to Area 18',
+      },
+      {
         nodeId: 'gt-f1-main-area-20',
         position: { yaw: '27.36deg', pitch: '-2.19deg' },
         name: 'Go to Area 20',
@@ -549,6 +564,11 @@ export default [
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [
+      {
+        nodeId: 'gt-f1-main-area-21',
+        position: { yaw: '358.45deg', pitch: '-8.15deg' },
+        name: 'Go to Area 21',
+      },
       {
         nodeId: 'gt-f1-main-area-19',
         position: { yaw: '178.45deg', pitch: '-8.15deg' },

@@ -199,7 +199,7 @@ export default [
     ],
     markers: [
       {
-        id: 'bm-gf-kids-8-custom-img',
+        id: "bm-gf-kids-8-custom-img",
         position: { yaw: '91.17deg', pitch: '-23.31deg' },
         element: (() => {
           const el = document.createElement('custom-marker');

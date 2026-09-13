@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="360° Virtual Tour for Perbadanan Perpustakaan Awam Pulau Pinang (PPAPP)" />
   <title>360° Virtual Tour</title>
 
   <!-- Favicon -->
@@ -38,12 +39,15 @@
   </script>
 </head>
 <body>
+  <main>
+    <!-- Full-viewport viewer container -->
+    <div id="viewer"></div>
+  </main>
 
-  <!-- Full-viewport viewer container -->
-  <div id="viewer"></div>
+  <div id="debug-error" class="is-hidden"></div>
 
   <!-- Loading Screen Overlay -->
-  <div id="loading-screen" class="glass-panel">
+  <div id="loading-screen" class="glass-panel" role="status" aria-live="polite">
     <div class="spinner"></div>
     <div id="loading-text">Loading Virtual Tour...</div>
   </div>
@@ -62,6 +66,7 @@
   <div id="debug-link-modal" class="debug-modal">
     <div class="debug-modal-panel glass-panel">
       <h3>Select Destination Scene</h3>
+      <label for="debug-link-search" class="sr-only">Filter scenes</label>
       <input id="debug-link-search" type="text" placeholder="Filter scenes…" autocomplete="off" />
       <ul id="debug-link-scene-list" class="debug-list"></ul>
       <button id="debug-link-cancel" class="debug-cancel-btn">Cancel</button>
@@ -72,11 +77,11 @@
     <div class="debug-modal-panel glass-panel">
       <h3>Add New Marker</h3>
       <div class="debug-form-group">
-        <label>Marker ID:</label>
+        <label for="debug-marker-id">Marker ID:</label>
         <input type="text" id="debug-marker-id" placeholder="e.g. info-bookshelf-1" />
       </div>
       <div class="debug-form-group">
-        <label>Type:</label>
+        <label for="debug-marker-type">Type:</label>
         <select id="debug-marker-type">
           <option value="info">Info (Text Content)</option>
           <option value="audio">Audio (Sound Clip)</option>
@@ -84,15 +89,15 @@
         </select>
       </div>
       <div class="debug-form-group">
-        <label>Tooltip / Title:</label>
+        <label for="debug-marker-title">Tooltip / Title:</label>
         <input type="text" id="debug-marker-title" placeholder="Hover text" />
       </div>
       <div class="debug-form-group" id="debug-marker-content-group">
-        <label>Content (HTML):</label>
+        <label for="debug-marker-content">Content (HTML):</label>
         <textarea id="debug-marker-content" rows="3" placeholder="<p>Information goes here</p>"></textarea>
       </div>
       <div class="debug-form-group" id="debug-marker-audio-group" style="display:none;">
-        <label>Audio File path:</label>
+        <label for="debug-marker-audio">Audio File path:</label>
         <input type="text" id="debug-marker-audio" placeholder="./audio/narration/file.mp3" />
       </div>
       <div class="debug-modal-actions">

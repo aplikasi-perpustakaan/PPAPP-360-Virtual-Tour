@@ -224,6 +224,11 @@ export default [
     sphereCorrection: { pan: '0.0deg', tilt: '6.5deg', roll: '1.0deg' },
     links: [
       {
+        nodeId: 'jw-ext-outside-11',
+        position: { yaw: '117.38deg', pitch: '0deg' },
+        name: 'Go to Outside 11',
+      },
+      {
         nodeId: 'jw-ext-outside-10',
         position: { yaw: '180deg', pitch: '0deg' },
         name: 'Go to Outside 10',

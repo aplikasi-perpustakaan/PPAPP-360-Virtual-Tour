@@ -12,6 +12,11 @@ export default [
     defaultPitch: '0deg',
     links: [
       {
+        nodeId: 'bt-f2-reading-22',
+        position: { yaw: '98.00deg', pitch: '0deg' },
+        name: 'Go to Reading 22',
+      },
+      {
         nodeId: 'bt-ext-outside-5',
         position: { yaw: '186.18deg', pitch: '0deg' },
         name: 'Exit to Outside 5',

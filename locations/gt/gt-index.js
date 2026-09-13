@@ -2,7 +2,6 @@
 // Combines all sections for GT
 // ────────────────────────────────────────────────────────────────
 
-import gtGfMainAreaSection from './gt-gf-main-area.js';
 import gtF1MainAreaSection from './gt-f1-main-area.js';
 
 import gtF1IPlayToySection from './gt-f1-i-play-toy.js';
@@ -17,5 +16,4 @@ export default [
   ...gtF2MainAreaSection,
   ...gtF2BilikKoleksiKhasSection,
   ...gtStairsSection,
-  ...gtGfMainAreaSection,
 ];

@@ -67,6 +67,11 @@ export default [
     defaultPitch: '0deg',
     links: [
       {
+        nodeId: 'bt-f2-reading-6',
+        position: { yaw: '358.45deg', pitch: '0deg' },
+        name: 'Go to Reading 6',
+      },
+      {
         nodeId: 'bt-f2-reading-2',
         position: { yaw: '270.98deg', pitch: '0deg' },
         name: 'Go to Reading 2',
@@ -373,6 +378,11 @@ export default [
     defaultPitch: '0deg',
     links: [
       {
+        nodeId: 'bt-f2-reading-12',
+        position: { yaw: '314.57deg', pitch: '0deg' },
+        name: 'Go to Reading 12',
+      },
+      {
         nodeId: 'bt-f2-reading-13',
         position: { yaw: '9.27deg', pitch: '0deg' },
         name: 'Go to Reading 13',
@@ -663,6 +673,11 @@ export default [
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [
+      {
+        nodeId: 'bt-f2-reading-24',
+        position: { yaw: '178.45deg', pitch: '0deg' },
+        name: 'Go to Reading 24',
+      },
       {
         nodeId: 'bt-f2-reading-18',
         position: { yaw: '9.95deg', pitch: '0deg' },

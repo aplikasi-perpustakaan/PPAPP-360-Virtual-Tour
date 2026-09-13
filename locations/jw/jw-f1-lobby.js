@@ -123,6 +123,11 @@ export default [
     defaultPitch: '0deg',
     links: [
       {
+        nodeId: 'jw-f1-lobby-8',
+        position: { yaw: '274.64deg', pitch: '0deg' },
+        name: 'Go to Lobby 8',
+      },
+      {
         nodeId: 'jw-f1-lobby-5',
         position: { yaw: '121.90deg', pitch: '0deg' },
         name: 'Go to Lobby 5',
@@ -268,6 +273,11 @@ export default [
     defaultPitch: '0deg',
     links: [
       {
+        nodeId: 'jw-f1-lobby-10',
+        position: { yaw: '276.67deg', pitch: '0deg' },
+        name: 'Go to Lobby 10',
+      },
+      {
         nodeId: 'jw-f1-lobby-8',
         position: { yaw: '180deg', pitch: '0deg' },
         name: 'Go back to Lobby 8',
@@ -288,6 +298,11 @@ export default [
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [
+      {
+        nodeId: 'jw-f1-lobby-8',
+        position: { yaw: '100.84deg', pitch: '0deg' },
+        name: 'Go to Lobby 8',
+      },
       {
         nodeId: 'jw-f1-lobby-11',
         position: { yaw: '194.40deg', pitch: '0deg' },

@@ -18,6 +18,8 @@
   --color-offwhite:    #E8ECF1;
   --color-accent-blue: #2D6CDF;
   --color-accent-gold: #C9A84C;
+  --color-black:       #000000;
+  --color-white:       #FFFFFF;
 
   /* Transparency / Glass */
   --glass-bg:          rgba(28, 35, 51, 0.85);
@@ -63,7 +65,7 @@ html, body {
   width: 100%;
   height: 100%;
   overflow: hidden;
-  background: #000;
+  background: var(--color-black);
   font-family: var(--font-family);
 }
 
@@ -103,7 +105,7 @@ html, body {
   appearance: none;
   background: rgba(10, 22, 40, 0.7);
   border: 1px solid rgba(45, 108, 223, 0.4);
-  color: #fff;
+  color: var(--color-white);
   padding: 4px 30px 4px 12px;
   font-size: 14px;
   border-radius: var(--radius-sm);
@@ -119,14 +121,18 @@ html, body {
   transition: all var(--transition-fast);
 }
 
-.navbar-select:hover,
-.navbar-select:focus {
+.navbar-select:hover {
   border-color: var(--color-accent-blue);
+}
+
+.navbar-select:focus-visible {
+  outline: 2px solid var(--color-accent-blue);
+  outline-offset: 2px;
 }
 
 .navbar-select option {
   background: var(--color-charcoal);
-  color: #fff;
+  color: var(--color-white);
   padding: 8px;
 }
 
@@ -149,7 +155,7 @@ html, body {
 /* ── Loading Screen ────────────────────────────────────────────────── */
 
 #loading-screen {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
@@ -197,6 +203,22 @@ html, body {
   border: 1px solid var(--glass-border) !important;
   border-radius: var(--radius-md) !important;
 }
+
+/* ── Custom Markers Hover States ──────────────────────────────────── */
+
+.marker-info:hover, .marker-audio:hover {
+  transform: scale(1.2) !important;
+}
+
+.marker-nav:hover {
+  transform: scale(1.15) !important;
+  background: rgba(45, 108, 223, 0.9) !important;
+}
+
+.marker-label:hover {
+  transform: scale(1.05) !important;
+}
+
 
 /* ── Kiosk Mode ────────────────────────────────────────────────────── */
 
@@ -351,10 +373,12 @@ body.is-debug .debug-controls-container {
   box-sizing: border-box;
 }
 
-.debug-modal-panel input[type="text"]:focus,
-.debug-modal-panel textarea:focus,
-.debug-modal-panel select:focus {
+.debug-modal-panel input[type="text"]:focus-visible,
+.debug-modal-panel textarea:focus-visible,
+.debug-modal-panel select:focus-visible {
   border-color: var(--color-accent-blue);
+  outline: 2px solid var(--color-accent-blue);
+  outline-offset: 2px;
 }
 
 .debug-form-group {
@@ -597,4 +621,40 @@ body.is-debug .debug-controls-container {
 .debug-toast.is-visible {
   opacity: 1;
   transform: translateX(-50%) translateY(0);
+}
+
+/* ── Responsive Media Queries ──────────────────────────────────────── */
+
+@media (max-width: 768px) {
+  .debug-panel {
+    width: 100%;
+    top: auto;
+    bottom: 0;
+    left: 0 !important;
+    right: 0 !important;
+    height: 50vh;
+    border-radius: var(--radius-md) var(--radius-md) 0 0;
+  }
+  
+  #debug-graph-minimap {
+    width: 100%;
+  }
+
+  .debug-controls-container {
+    bottom: 60px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar-select {
+    max-width: 150px;
+    text-overflow: ellipsis;
+  }
+  
+  .debug-btn {
+    padding: var(--space-sm);
+    font-size: 12px;
+  }
 }

@@ -5,6 +5,7 @@
    all location files. Avoids duplicating inline HTML strings.
    =================================================================== */
 
+const escapeHtml = (s) => s.replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":"&#39;"}[c]));
 
 /**
  * Info marker — blue circle with "i" icon.
@@ -17,17 +18,16 @@
  */
 export function createInfoMarker({ size = 24, color = 'var(--color-accent-blue, #2D6CDF)' } = {}) {
   const fontSize = Math.round(size * 0.58);
-  return `<div style="
+  return `<div class="marker-base marker-info" style="
     width:${size}px; height:${size}px;
-    background:${color};
+    background:${escapeHtml(color)};
     border-radius:50%;
     display:flex; align-items:center; justify-content:center;
     color:#fff; font-weight:bold; font-size:${fontSize}px;
     cursor:pointer;
     box-shadow:0 2px 8px rgba(0,0,0,0.4);
     transition: transform 0.2s ease;
-  " onmouseover="this.style.transform='scale(1.2)'"
-     onmouseout="this.style.transform='scale(1)'">i</div>`;
+  ">i</div>`;
 }
 
 
@@ -41,7 +41,7 @@ export function createInfoMarker({ size = 24, color = 'var(--color-accent-blue, 
  */
 export function createAudioMarker({ size = 24 } = {}) {
   const fontSize = Math.round(size * 0.58);
-  return `<div style="
+  return `<div class="marker-base marker-audio" style="
     width:${size}px; height:${size}px;
     background:var(--color-accent-gold, #C9A84C);
     border-radius:50%;
@@ -50,8 +50,7 @@ export function createAudioMarker({ size = 24 } = {}) {
     cursor:pointer;
     box-shadow:0 2px 8px rgba(0,0,0,0.4);
     transition: transform 0.2s ease;
-  " onmouseover="this.style.transform='scale(1.2)'"
-     onmouseout="this.style.transform='scale(1)'">🔊</div>`;
+  ">🔊</div>`;
 }
 
 
@@ -69,7 +68,7 @@ export function createNavArrow({ direction = 'right', size = 32 } = {}) {
   const arrow = arrows[direction] || arrows.right;
   const fontSize = Math.round(size * 0.55);
 
-  return `<div style="
+  return `<div class="marker-base marker-nav" style="
     width:${size}px; height:${size}px;
     background:rgba(45,108,223,0.7);
     border-radius:50%;
@@ -79,8 +78,7 @@ export function createNavArrow({ direction = 'right', size = 32 } = {}) {
     box-shadow:0 2px 12px rgba(0,0,0,0.5);
     border:2px solid rgba(255,255,255,0.3);
     transition: transform 0.2s ease, background 0.2s ease;
-  " onmouseover="this.style.transform='scale(1.15)'; this.style.background='rgba(45,108,223,0.9)'"
-     onmouseout="this.style.transform='scale(1)'; this.style.background='rgba(45,108,223,0.7)'">${arrow}</div>`;
+  ">${arrow}</div>`;
 }
 
 
@@ -94,8 +92,8 @@ export function createNavArrow({ direction = 'right', size = 32 } = {}) {
  * @returns {string} HTML string for the marker element.
  */
 export function createLabelMarker({ text = 'Label', bgColor = 'var(--glass-bg, rgba(28,35,51,0.85))' } = {}) {
-  return `<div style="
-    background:${bgColor};
+  return `<div class="marker-base marker-label" style="
+    background:${escapeHtml(bgColor)};
     backdrop-filter:blur(8px);
     -webkit-backdrop-filter:blur(8px);
     padding:6px 14px;
@@ -106,6 +104,5 @@ export function createLabelMarker({ text = 'Label', bgColor = 'var(--glass-bg, r
     box-shadow:0 2px 8px rgba(0,0,0,0.4);
     border:1px solid rgba(136,146,160,0.3);
     transition: transform 0.2s ease;
-  " onmouseover="this.style.transform='scale(1.05)'"
-     onmouseout="this.style.transform='scale(1)'">${text}</div>`;
+  ">${escapeHtml(text)}</div>`;
 }

@@ -91,6 +91,11 @@ export default [
         nodeId: 'gt-ext-outside-3',
         position: { yaw: '178.45deg', pitch: '-8.15deg' },
         name: 'Go to Exterior – Outside 3',
+      },
+      {
+        nodeId: 'gt-ext-outside-5',
+        position: { yaw: '358.45deg', pitch: '-8.15deg' },
+        name: 'Go to Exterior – Outside 5',
       }
     ],
     markers: [],

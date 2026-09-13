@@ -1,4 +1,8 @@
+let hideTimeout;
+
 export function showLoading(message = 'Loading virtual tour...') {
+  if (hideTimeout) clearTimeout(hideTimeout);
+  
   const overlay = document.getElementById('loading-screen');
   const text = document.getElementById('loading-text');
   if (overlay && text) {
@@ -15,7 +19,9 @@ export function hideLoading() {
   if (overlay) {
     overlay.style.opacity = '0';
     overlay.style.pointerEvents = 'none';
-    setTimeout(() => {
+    
+    if (hideTimeout) clearTimeout(hideTimeout);
+    hideTimeout = setTimeout(() => {
       overlay.classList.add('is-hidden');
     }, 400); // Wait for transition
   }

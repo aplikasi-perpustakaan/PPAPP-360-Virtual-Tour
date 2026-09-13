@@ -22,6 +22,7 @@ import { initMarkerPlacer } from './js/marker-placer.js';
 import { initSceneInspector } from './js/scene-inspector.js';
 import { initDebugVisualizer } from './js/debug-visualizer.js';
 import { initDebugGraph } from './js/debug-graph.js';
+import { branches } from './js/tour-config.js';
 
 // Show loading initially
 showLoading('Initializing Viewer...');
@@ -60,17 +61,6 @@ async function bootstrap() {
       defaultBranch = requestedNodeId.split('-')[0];
     }
     
-    // Generate the HTML for the embedded location selector
-    const branches = [
-      { id: 'pusat', name: 'PUSAT - Seberang Jaya' },
-      { id: 'bt', name: 'BT - Daerah Seberang Perai Utara' },
-      { id: 'jw', name: 'JW - Daerah Seberang Perai Selatan' },
-      { id: 'bm', name: 'BM - Daerah Seberang Perai Tengah' },
-      { id: 'ppaj', name: 'PPAJ - AEON Jusco Alma' },
-      { id: 'gt', name: 'GT - Daerah Timur Laut' },
-      { id: 'ppk', name: 'PPK - Lounge@Komtar' },
-    ];
-    
     const optionsHTML = branches.map(b => 
       `<option value="${b.id}" ${b.id === defaultBranch ? 'selected' : ''}>${b.name}</option>`
     ).join('');
@@ -82,12 +72,8 @@ async function bootstrap() {
     const defaultNodes = module.default;
     
     // 4. Validate if the requested node exists in the loaded branch
-    const branchStartNodeIds = {
-      jw: 'jw-ext-outside-10',
-      bm: 'bm-ext-outside-1',
-      gt: 'gt-ext-outside-1',
-    };
-    const configuredStartNodeId = branchStartNodeIds[defaultBranch];
+    const branchConfig = branches.find(b => b.id === defaultBranch);
+    const configuredStartNodeId = branchConfig ? branchConfig.startNode : defaultNodes[0].id;
     let startNodeId = defaultNodes.some(node => node.id === configuredStartNodeId)
       ? configuredStartNodeId
       : defaultNodes[0].id;
@@ -183,12 +169,14 @@ async function bootstrap() {
       }
 
       // Intro Animation: Full 360 Sweep on startup
-      const currentPosition = viewer.getPosition();
-      viewer.animate({
-        yaw: currentPosition.yaw + (2 * Math.PI),
-        pitch: currentPosition.pitch,
-        speed: '3rpm', // 3 rotations per minute (20 seconds for a full sweep)
-      });
+      if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        const currentPosition = viewer.getPosition();
+        viewer.animate({
+          yaw: currentPosition.yaw + (2 * Math.PI),
+          pitch: currentPosition.pitch,
+          speed: '3rpm', // 3 rotations per minute (20 seconds for a full sweep)
+        });
+      }
     }, { once: true });
 
     // 6. Initialize local modules

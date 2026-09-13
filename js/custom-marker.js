@@ -121,25 +121,74 @@ button:hover + .tooltip {
 `;
         dom.appendChild(style);
 
-        const button = document.createElement('button');
-        button.innerHTML = `<svg viewBox="0 0 100 100">
+        const tooltipId = 'tooltip-' + Math.random().toString(36).substring(2, 9);
+
+        this.button = document.createElement('button');
+        this.button.setAttribute('aria-label', 'Toggle details');
+        this.button.setAttribute('aria-expanded', 'false');
+        this.button.setAttribute('aria-describedby', tooltipId);
+        this.button.innerHTML = `<svg viewBox="0 0 100 100">
 <circle cx=50 cy=50 r=25 fill="currentColor"/>
 <circle cx=50 cy=50 r=40 stroke-width=10 fill="none" stroke="currentColor"/>
 </svg>`;
-        dom.appendChild(button);
+        dom.appendChild(this.button);
 
         this.tooltip = document.createElement('div');
+        this.tooltip.id = tooltipId;
         this.tooltip.classList.add('tooltip');
         dom.appendChild(this.tooltip);
         this.tooltip.innerHTML = '<slot></slot>';
 
-        button.addEventListener('mouseleave', () => {
-            this.tooltip.classList.add('hiding');
-        });
+        this.isTooltipVisible = false;
 
-        dom.addEventListener('animationend', () => {
+        this.handleMouseLeave = () => {
+            if (!this.isTouchInteracting) {
+                this.tooltip.classList.add('hiding');
+                this.button.setAttribute('aria-expanded', 'false');
+                this.isTooltipVisible = false;
+            }
+        };
+
+        this.handleMouseEnter = () => {
+            if (!this.isTouchInteracting) {
+                this.button.setAttribute('aria-expanded', 'true');
+                this.isTooltipVisible = true;
+            }
+        };
+
+        this.handleTouchStart = (e) => {
+            this.isTouchInteracting = true;
+            // Prevent event from bubbling up to PSV and causing immediate deselection
+            e.stopPropagation();
+            
+            if (this.isTooltipVisible) {
+                this.tooltip.classList.add('hiding');
+                this.button.setAttribute('aria-expanded', 'false');
+                this.isTooltipVisible = false;
+                this.button.blur(); // Remove pseudo-hover state
+            } else {
+                this.tooltip.classList.remove('hiding');
+                this.button.setAttribute('aria-expanded', 'true');
+                this.isTooltipVisible = true;
+                this.button.focus(); // Force hover state for animation
+            }
+        };
+
+        this.handleAnimationEnd = () => {
             this.tooltip.classList.remove('hiding');
-        });
+        };
+
+        this.button.addEventListener('mouseleave', this.handleMouseLeave);
+        this.button.addEventListener('mouseenter', this.handleMouseEnter);
+        this.button.addEventListener('touchstart', this.handleTouchStart);
+        dom.addEventListener('animationend', this.handleAnimationEnd);
+    }
+
+    disconnectedCallback() {
+        this.button.removeEventListener('mouseleave', this.handleMouseLeave);
+        this.button.removeEventListener('mouseenter', this.handleMouseEnter);
+        this.button.removeEventListener('touchstart', this.handleTouchStart);
+        this.shadowRoot.removeEventListener('animationend', this.handleAnimationEnd);
     }
 
     updateMarker({ marker, position, viewerPosition, zoomLevel, viewerSize }) {

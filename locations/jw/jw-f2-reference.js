@@ -474,6 +474,16 @@ export default [
         nodeId: 'jw-f2-reference-3',
         position: { yaw: '180deg', pitch: '0deg' },
         name: 'Go back to Reference 3',
+      },
+      {
+        nodeId: 'jw-f2-facilities-1',
+        position: { yaw: '111.38deg', pitch: '0deg' },
+        name: 'Go to Facilities 1',
+      },
+      {
+        nodeId: 'jw-f2-facilities-2',
+        position: { yaw: '0deg', pitch: '0deg' },
+        name: 'Go to Facilities 2',
       }
     ],
     markers: [],
