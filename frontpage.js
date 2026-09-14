@@ -13,10 +13,11 @@ async function initFrontpage() {
       
       // Find start node
       const startNode = scenes.find(s => s.id === branch.startNode) || scenes[0];
+      branch._thumbnail = startNode.thumbnail || './images/shared/placeholder.jpg';
       
       // Build card
       const card = document.createElement('a');
-      card.href = `./tour.html?scene=${startNode.id}`;
+      card.href = `./branch.html?id=${branch.id}`;
       card.className = 'branch-card glass-panel';
       card.innerHTML = `
         <div class="card-image-container">
@@ -45,26 +46,25 @@ async function initFrontpage() {
         return;
       }
 
-      const matches = allScenes.filter(scene => {
-        const nameMatch = scene.name?.toLowerCase().includes(query);
-        const tagMatch = scene.data?.tags?.some(tag => tag.toLowerCase().includes(query));
-        const branchMatch = scene.caption?.toLowerCase().includes(query);
-        return nameMatch || tagMatch || branchMatch;
-      }).slice(0, 10); // Top 10 results
+      const matches = branches.filter(branch => {
+        const nameMatch = branch.name?.toLowerCase().includes(query);
+        const addressMatch = branch.address?.toLowerCase().includes(query);
+        return nameMatch || addressMatch;
+      });
 
       if (matches.length > 0) {
-        searchResults.innerHTML = matches.map(scene => `
-          <a href="./tour.html?scene=${scene.id}" class="search-result-item">
-            <img src="${scene.thumbnail || './images/shared/placeholder.jpg'}" alt="" onerror="this.src='./images/shared/placeholder.jpg'">
+        searchResults.innerHTML = matches.map(branch => `
+          <a href="./branch.html?id=${branch.id}" class="search-result-item">
+            <img src="${branch._thumbnail || './images/shared/placeholder.jpg'}" alt="" onerror="this.src='./images/shared/placeholder.jpg'">
             <div>
-              <h4>${scene.name}</h4>
-              <small>${scene.caption}</small>
+              <h4>${branch.name}</h4>
+              <small>${branch.address || ''}</small>
             </div>
           </a>
         `).join('');
         searchResults.classList.remove('is-hidden');
       } else {
-        searchResults.innerHTML = `<div class="search-no-results">No locations found matching "${query}".</div>`;
+        searchResults.innerHTML = `<div class="search-no-results">No branches found matching "${query}".</div>`;
         searchResults.classList.remove('is-hidden');
       }
     });
