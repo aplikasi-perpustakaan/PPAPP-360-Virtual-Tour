@@ -164,6 +164,7 @@ export function initMarkerPlacer(viewer, virtualTour, allNodes, isDebug) {
           contentInput.setAttribute('data-original', d.originalUrl || parsed.url || '');
           contentGroup.style.display = 'flex';
           uploadGroup.style.display = 'flex';
+          loadGallery();
         } else {
           contentInput.value = d.content || parsed.content || '';
           contentGroup.style.display = 'flex';
@@ -239,6 +240,74 @@ export function initMarkerPlacer(viewer, virtualTour, allNodes, isDebug) {
     });
   }
 
+  async function loadGallery() {
+    const gallery = document.getElementById('debug-marker-gallery');
+    if (!gallery) return;
+    
+    const currentNodeId = virtualTour.getCurrentNode()?.id;
+    if (!currentNodeId) return;
+    
+    const branch = currentNodeId.split('-')[0];
+    
+    // Only load if empty or if branch changed
+    if (gallery.children.length > 0 && gallery.dataset.branch === branch) {
+       // Just update highlighting based on current input value
+       Array.from(gallery.children).forEach(img => {
+          if (img.src.endsWith(contentInput.value.replace('./', '/'))) {
+             img.style.border = '1px solid var(--color-accent-blue)';
+          } else {
+             img.style.border = '1px solid transparent';
+          }
+       });
+       return;
+    }
+    
+    gallery.dataset.branch = branch;
+    gallery.innerHTML = '<div style="font-size: 11px; color: #aaa;">Loading...</div>';
+    
+    try {
+      const response = await fetch(`/api/marker-images?branch=${branch}`);
+      const data = await response.json();
+      
+      if (!data.images || data.images.length === 0) {
+        gallery.innerHTML = '<div style="font-size: 11px; color: #aaa;">No images found for this branch.</div>';
+        return;
+      }
+      
+      gallery.innerHTML = '';
+      data.images.forEach(imgData => {
+        const img = document.createElement('img');
+        img.src = imgData.thumbUrl;
+        img.style.width = '100%';
+        img.style.height = '40px';
+        img.style.objectFit = 'cover';
+        img.style.cursor = 'pointer';
+        img.style.borderRadius = '3px';
+        img.style.border = '1px solid transparent';
+        img.title = imgData.originalUrl.split('/').pop();
+        
+        if (imgData.thumbUrl === contentInput.value || imgData.originalUrl === contentInput.value) {
+            img.style.border = '1px solid var(--color-accent-blue)';
+        }
+        
+        img.addEventListener('click', () => {
+          contentInput.value = imgData.thumbUrl;
+          contentInput.setAttribute('data-original', imgData.originalUrl);
+          showToast('✅ Image selected from gallery');
+          
+          // Highlight selection
+          Array.from(gallery.children).forEach(c => c.style.border = '1px solid transparent');
+          img.style.border = '1px solid var(--color-accent-blue)';
+        });
+        
+        gallery.appendChild(img);
+      });
+    } catch (err) {
+      gallery.innerHTML = '<div style="font-size: 11px; color: #ff6b6b;">Error loading gallery</div>';
+      console.error(err);
+    }
+  }
+
   typeSelect.addEventListener('change', () => {
     contentGroup.style.display = 'none';
     audioGroup.style.display = 'none';
@@ -252,6 +321,7 @@ export function initMarkerPlacer(viewer, virtualTour, allNodes, isDebug) {
     } else if (typeSelect.value === 'image') {
       contentGroup.style.display = 'flex';
       uploadGroup.style.display = 'flex';
+      loadGallery();
     } else {
       contentGroup.style.display = 'flex';
     }

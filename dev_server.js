@@ -427,6 +427,71 @@ const server = http.createServer((req, res) => {
     return;
   }
 
+  if (req.method === 'GET' && req.url.startsWith('/api/marker-images')) {
+    const url = new URL(req.url, `http://${req.headers.host}`);
+    const branch = url.searchParams.get('branch');
+    
+    if (!branch) {
+      res.writeHead(400, { 'Content-Type': 'application/json' });
+      res.end(JSON.stringify({ error: 'Missing branch parameter' }));
+      return;
+    }
+    
+    try {
+      const branchDir = path.join(__dirname, 'images', branch);
+      const results = [];
+      
+      if (fs.existsSync(branchDir)) {
+        // Recursive function to find marker images
+        function findImages(dir) {
+          const files = fs.readdirSync(dir);
+          for (const file of files) {
+            const fullPath = path.join(dir, file);
+            const stat = fs.statSync(fullPath);
+            
+            if (stat.isDirectory()) {
+              findImages(fullPath);
+            } else if (file.match(/\.(jpg|jpeg|png)$/i)) {
+              // Check if path contains '/markers/'
+              const relPath = fullPath.substring(__dirname.length).replace(/\\/g, '/');
+              if (relPath.includes('/markers/')) {
+                // If it's a thumbnail, skip (we'll pair it below)
+                if (!relPath.includes('/thumbs/')) {
+                  // It's an original image. Construct expected thumb path
+                  const dirName = relPath.substring(0, relPath.lastIndexOf('/'));
+                  const fileName = relPath.substring(relPath.lastIndexOf('/') + 1);
+                  let thumbUrl = `${dirName}/thumbs/${fileName}`;
+                  
+                  // Check if thumb actually exists on disk
+                  const thumbFullPath = path.join(__dirname, thumbUrl);
+                  if (!fs.existsSync(thumbFullPath)) {
+                    thumbUrl = relPath; // Fallback to original
+                  }
+                  
+                  // Make relative to web root
+                  results.push({
+                    originalUrl: '.' + relPath,
+                    thumbUrl: '.' + thumbUrl
+                  });
+                }
+              }
+            }
+          }
+        }
+        
+        findImages(branchDir);
+      }
+      
+      res.writeHead(200, { 'Content-Type': 'application/json' });
+      res.end(JSON.stringify({ images: results }));
+    } catch (err) {
+      console.error('Error fetching marker images:', err.message);
+      res.writeHead(500, { 'Content-Type': 'application/json' });
+      res.end(JSON.stringify({ error: err.message }));
+    }
+    return;
+  }
+
   // Static file serving
   let urlPath = req.url.split('?')[0];
   let filePath = path.join(__dirname, urlPath === '/' ? 'index.html' : urlPath);

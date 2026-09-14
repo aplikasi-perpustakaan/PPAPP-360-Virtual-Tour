@@ -158,10 +158,16 @@
       </div>
 
       <div class="debug-form-group" id="debug-marker-image-upload-group" style="display:none;">
-        <label>Upload Image:</label>
+        <label>Image Source:</label>
         <div style="display:flex; gap:8px;">
           <input type="file" id="debug-marker-image-file" accept="image/*" style="flex:1; background:rgba(10,22,40,0.6); color:white; padding:4px; border-radius:var(--radius-sm); border:1px solid var(--glass-border);" />
           <button type="button" id="debug-marker-upload-btn" class="debug-save-btn">Upload</button>
+        </div>
+        <div style="margin-top: 10px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 10px;" id="debug-marker-gallery-container">
+          <label style="font-size: 12px; margin-bottom: 5px; display: block;">Or select from gallery:</label>
+          <div id="debug-marker-gallery" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(60px, 1fr)); gap: 8px; max-height: 120px; overflow-y: auto; background: rgba(0,0,0,0.2); padding: 8px; border-radius: 4px;">
+            <!-- Thumbnails injected here -->
+          </div>
         </div>
       </div>
       <div class="debug-form-actions" style="flex-wrap: wrap; gap: 8px;">
