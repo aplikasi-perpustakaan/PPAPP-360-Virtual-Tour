@@ -83,6 +83,45 @@ export function initMarkerPlacer(viewer, virtualTour, allNodes, isDebug) {
     modal.classList.add('is-visible');
   });
 
+  // ── Parse marker HTML for metadata fallback ──────
+  // Legacy/hand-coded markers may lack a structured `data` object.
+  // This helper extracts type, icon, color, title, content, and URLs
+  // from the HTML string so the edit modal reflects the actual marker.
+  function parseMarkerHtml(html) {
+    if (!html) return {};
+    const result = {};
+    try {
+      const div = document.createElement('div');
+      div.innerHTML = html;
+      const cm = div.querySelector('custom-marker');
+      if (cm) {
+        if (cm.getAttribute('type')) result.type = cm.getAttribute('type');
+        if (cm.getAttribute('data-icon')) result.icon = cm.getAttribute('data-icon');
+        if (cm.getAttribute('data-color')) result.color = cm.getAttribute('data-color');
+        if (cm.hasAttribute('animated')) result.animated = true;
+        if (cm.getAttribute('data-url')) result.url = cm.getAttribute('data-url');
+
+        const h2 = cm.querySelector('h2');
+        if (h2) result.title = h2.textContent.trim();
+
+        const img = cm.querySelector('img');
+        if (img) {
+          result.imageSrc = img.getAttribute('src') || '';
+          // If there's an image, it's likely an image-type marker
+          if (!result.type) result.type = 'image';
+        }
+
+        const p = cm.querySelector('p');
+        if (p && !p.textContent.includes('Click to enlarge') && !p.textContent.includes('Audio')) {
+          result.content = p.textContent.trim();
+        }
+      }
+    } catch (e) {
+      // Parsing failed; fall back gracefully
+    }
+    return result;
+  }
+
   const markersPlugin = viewer.getPlugin('markers');
   if (markersPlugin) {
     markersPlugin.addEventListener('select-marker', ({ marker }) => {
@@ -95,14 +134,19 @@ export function initMarkerPlacer(viewer, virtualTour, allNodes, isDebug) {
       if (rawMarker) {
         isEditing = true;
         editingMarkerId = rawMarker.id;
-        typeSelect.value = rawMarker.data?.type || 'info';
+
+        // Merge: explicit data wins, then parsed HTML, then defaults
+        const parsed = parseMarkerHtml(rawMarker.html);
+        const d = rawMarker.data || {};
+
+        typeSelect.value = d.type || parsed.type || 'info';
         
         sizeSelect.value = rawMarker.size?.width || '44';
-        iconSelect.value = rawMarker.data?.icon || 'info';
-        colorSelect.value = rawMarker.data?.color || 'blue';
-        animCheck.checked = !!rawMarker.data?.animated;
+        iconSelect.value = d.icon || parsed.icon || 'info';
+        colorSelect.value = d.color || parsed.color || 'blue';
+        animCheck.checked = !!(d.animated || parsed.animated);
         
-        titleInput.value = rawMarker.data?.title || rawMarker.tooltip?.content || rawMarker.tooltip || '';
+        titleInput.value = d.title || parsed.title || rawMarker.tooltip?.content || rawMarker.tooltip || '';
         
         contentGroup.style.display = 'none';
         audioGroup.style.display = 'none';
@@ -110,18 +154,18 @@ export function initMarkerPlacer(viewer, virtualTour, allNodes, isDebug) {
         uploadGroup.style.display = 'none';
 
         if (typeSelect.value === 'audio') {
-          audioInput.value = rawMarker.data?.audioSrc || '';
+          audioInput.value = d.audioSrc || '';
           audioGroup.style.display = 'flex';
         } else if (typeSelect.value === 'link') {
-          linkInput.value = rawMarker.data?.url || '';
+          linkInput.value = d.url || parsed.url || '';
           linkGroup.style.display = 'flex';
         } else if (typeSelect.value === 'image') {
-          contentInput.value = rawMarker.data?.imageSrc || '';
-          contentInput.setAttribute('data-original', rawMarker.data?.originalUrl || '');
+          contentInput.value = d.imageSrc || parsed.imageSrc || '';
+          contentInput.setAttribute('data-original', d.originalUrl || parsed.url || '');
           contentGroup.style.display = 'flex';
           uploadGroup.style.display = 'flex';
         } else {
-          contentInput.value = rawMarker.data?.content || '';
+          contentInput.value = d.content || parsed.content || '';
           contentGroup.style.display = 'flex';
         }
 
