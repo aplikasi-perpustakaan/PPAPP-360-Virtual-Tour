@@ -211,6 +211,11 @@ button:hover + .tooltip {
         };
 
         this.handleClick = (e) => {
+            const isDebug = new URLSearchParams(window.location.search).get('debug') === 'true';
+            if (isDebug) {
+                return; // Do not open links in debug mode so the marker can be edited
+            }
+
             const url = this.getAttribute('data-url');
             if (url) {
                 window.open(url, '_blank');
