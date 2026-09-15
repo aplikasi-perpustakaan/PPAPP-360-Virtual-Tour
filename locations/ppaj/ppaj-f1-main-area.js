@@ -50,6 +50,28 @@ export default [
         size: { width: 44, height: 44 },
         anchor: 'center center'
       },
+      {
+        id: 'ppaj-f1-01-marker-1789428336164',
+        position: {
+          yaw: '32.68deg',
+          pitch: '-5.79deg'
+        },
+        size: {
+          width: 32,
+          height: 32
+        },
+        anchor: 'center center',
+        tooltip: 'fFa',
+        data: {
+          type: 'info',
+          title: 'fFa',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          content: 'dsa'
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'info\' data-color=\'blue\'>\n        <h2>fFa</h2>\n        <p>dsa</p>\n      </custom-marker>'
+      }
     ],
     data: {
       floor: 'f1',
