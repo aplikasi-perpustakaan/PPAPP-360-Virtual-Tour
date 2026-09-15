@@ -394,7 +394,6 @@ export function initMarkerPlacer(viewer, virtualTour, allNodes, isDebug) {
       position: { yaw, pitch },
       size: { width: size, height: size },
       anchor: 'center center',
-      tooltip: title,
       data: {
         type,
         title,
