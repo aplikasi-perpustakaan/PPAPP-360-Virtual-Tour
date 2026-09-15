@@ -158,6 +158,8 @@ button:hover + .tooltip {
             svgContent = `<path d="M50 10 L90 85 L10 85 Z" fill="var(--marker-color)"/><path d="M47 40 L53 40 L52 65 L48 65 Z" fill="#fff"/><circle cx="50" cy="75" r="4" fill="#fff"/>`;
         } else if (iconType === 'pin') {
             svgContent = `<path d="M50 10 C30 10 15 25 15 45 C15 70 50 90 50 90 C50 90 85 70 85 45 C85 25 70 10 50 10 Z" fill="var(--marker-color)"/><circle cx="50" cy="40" r="15" fill="#fff"/>`;
+        } else if (iconType === 'no-entry') {
+            svgContent = `<circle cx="50" cy="50" r="40" fill="var(--marker-color)"/><rect x="25" y="40" width="50" height="20" fill="#fff"/>`;
         } else {
             // Default Info
             svgContent = `<circle cx="50" cy="50" r="40" fill="var(--marker-color)"/><path d="M46 30 h8 v12 h-8 z M46 48 h8 v22 h-8 z" fill="#fff"/>`;
