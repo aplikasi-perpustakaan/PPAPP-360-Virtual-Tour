@@ -120,9 +120,12 @@ export default [
       },
       {
         nodeId: 'gt-ext-outside-6',
-        position: { yaw: '358.45deg', pitch: '-8.15deg' },
-        name: 'Go to Exterior – Outside 6',
+        position: { yaw: '22.11deg', pitch: '-2.99deg' },
+        name: 'Go to Exterior – Outside 6'
       },
+      
+      
+      
       {
         nodeId: 'gt-ext-outside-3',
         position: { yaw: '275.85deg', pitch: '-10deg' },
@@ -197,9 +200,9 @@ export default [
       },
       {
         nodeId: 'gt-ext-outside-8',
-        position: { yaw: '358.45deg', pitch: '0.15deg' },
-        name: 'Go to Exterior – Outside 8',
-      }
+        position: { yaw: '95.02deg', pitch: '-4.50deg' },
+        name: 'Go to Exterior – Outside 8'
+      },
     ],
     markers: [],
     data: {

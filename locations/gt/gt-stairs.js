@@ -11,9 +11,9 @@ export default [
     links: [
       {
         nodeId: 'gt-stairs-2',
-        position: { yaw: '358.45deg', pitch: '-8.15deg' },
-        name: 'Go to Stairs 2',
-      }
+        position: { yaw: '77.91deg', pitch: '4.60deg' },
+        name: 'Go to Stairs 2'
+      },
     ],
     markers: [],
     data: {
@@ -32,9 +32,10 @@ export default [
     links: [
       {
         nodeId: 'gt-stairs-1',
-        position: { yaw: '178.45deg', pitch: '-8.15deg' },
-        name: 'Go to Stairs 1',
+        position: { yaw: '257.91deg', pitch: '-10deg' },
+        name: 'Go to Stairs 1'
       },
+      
       {
         nodeId: 'gt-stairs-3',
         position: { yaw: '358.45deg', pitch: '-8.15deg' },
@@ -60,7 +61,12 @@ export default [
         nodeId: 'gt-stairs-2',
         position: { yaw: '178.45deg', pitch: '-8.15deg' },
         name: 'Go to Stairs 2',
-      }
+      },
+      {
+        nodeId: 'gt-f2-main-area-1',
+        position: { yaw: '4.70deg', pitch: '7.94deg' },
+        name: 'Go to Main Area 1'
+      },
     ],
     markers: [],
     data: {

@@ -11,9 +11,15 @@ export default [
     links: [
       {
         nodeId: 'gt-f2-bilik-koleksi-khas-2',
-        position: { yaw: '358.45deg', pitch: '-8.15deg' },
-        name: 'Go to Floor 2 – Bilik Koleksi Khas 2',
-      }
+        position: { yaw: '270.19deg', pitch: '-5.99deg' },
+        name: 'Go to Bilik Koleksi Khas 2'
+      },
+      
+      {
+        nodeId: 'gt-f2-bilik-koleksi-khas-3',
+        position: { yaw: '2.41deg', pitch: '-7.27deg' },
+        name: 'Go to Bilik Koleksi Khas 3'
+      },
     ],
     markers: [],
     data: {
@@ -32,14 +38,9 @@ export default [
     links: [
       {
         nodeId: 'gt-f2-bilik-koleksi-khas-1',
-        position: { yaw: '178.45deg', pitch: '-8.15deg' },
-        name: 'Go to Floor 2 – Bilik Koleksi Khas 1',
+        position: { yaw: '90.19deg', pitch: '-10deg' },
+        name: 'Go to Bilik Koleksi Khas 1'
       },
-      {
-        nodeId: 'gt-f2-bilik-koleksi-khas-3',
-        position: { yaw: '358.45deg', pitch: '-8.15deg' },
-        name: 'Go to Floor 2 – Bilik Koleksi Khas 3',
-      }
     ],
     markers: [],
     data: {
@@ -57,10 +58,10 @@ export default [
     defaultPitch: '0deg',
     links: [
       {
-        nodeId: 'gt-f2-bilik-koleksi-khas-2',
-        position: { yaw: '178.45deg', pitch: '-8.15deg' },
-        name: 'Go to Floor 2 – Bilik Koleksi Khas 2',
-      }
+        nodeId: 'gt-f2-bilik-koleksi-khas-1',
+        position: { yaw: '182.41deg', pitch: '-10deg' },
+        name: 'Go to Bilik Koleksi Khas 1'
+      },
     ],
     markers: [],
     data: {

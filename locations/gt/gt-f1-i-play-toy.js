@@ -13,7 +13,12 @@ export default [
         nodeId: 'gt-f1-i-play-toy-2',
         position: { yaw: '358.45deg', pitch: '-8.15deg' },
         name: 'Go to Floor 1 – i-Play Toy 2',
-      }
+      },
+      {
+        nodeId: 'gt-f2-main-area-12',
+        position: { yaw: '359.85deg', pitch: '-10deg' },
+        name: 'Go to Main Area 12'
+      },
     ],
     markers: [],
     data: {
