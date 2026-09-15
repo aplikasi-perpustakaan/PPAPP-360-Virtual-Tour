@@ -295,7 +295,223 @@ export default [
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [
-      { nodeId: 'pusat-f1-lobby-16', position: { yaw: '180deg', pitch: '0deg' }, name: 'Go back' }
+      { nodeId: 'pusat-f1-lobby-16', position: { yaw: '180deg', pitch: '0deg' }, name: 'Go back' },
+      { nodeId: 'pusat-f1-lobby-18', position: { yaw: '0deg', pitch: '0deg' }, name: 'Go to Lobby 18' }
+    ],
+    markers: [],
+    data: {
+      floor: 'f1',
+      tags: ['lobby'],
+    },
+  },,
+  {
+    id: 'pusat-f1-lobby-18',
+    name: 'Floor 1 - Lobby 18',
+    caption: 'PUSAT - Floor 1 - Lobby 18',
+    panorama: './images/pusat/f1-lobby/pusat-f1-lobby-18.jpg',
+    thumbnail: './images/pusat/f1-lobby/thumbs/pusat-f1-lobby-18.jpg',
+    defaultYaw: '0deg',
+    defaultPitch: '0deg',
+    links: [
+      { nodeId: 'pusat-f1-lobby-17', position: { yaw: '180deg', pitch: '0deg' }, name: 'Go back' },
+      { nodeId: 'pusat-f1-lobby-19', position: { yaw: '0deg', pitch: '0deg' }, name: 'Go to Lobby 19' }
+    ],
+    markers: [],
+    data: {
+      floor: 'f1',
+      tags: ['lobby'],
+    },
+  },
+  {
+    id: 'pusat-f1-lobby-19',
+    name: 'Floor 1 - Lobby 19',
+    caption: 'PUSAT - Floor 1 - Lobby 19',
+    panorama: './images/pusat/f1-lobby/pusat-f1-lobby-19.jpg',
+    thumbnail: './images/pusat/f1-lobby/thumbs/pusat-f1-lobby-19.jpg',
+    defaultYaw: '0deg',
+    defaultPitch: '0deg',
+    links: [
+      { nodeId: 'pusat-f1-lobby-18', position: { yaw: '180deg', pitch: '0deg' }, name: 'Go back' },
+      { nodeId: 'pusat-f1-lobby-20', position: { yaw: '0deg', pitch: '0deg' }, name: 'Go to Lobby 20' }
+    ],
+    markers: [],
+    data: {
+      floor: 'f1',
+      tags: ['lobby'],
+    },
+  },
+  {
+    id: 'pusat-f1-lobby-20',
+    name: 'Floor 1 - Lobby 20',
+    caption: 'PUSAT - Floor 1 - Lobby 20',
+    panorama: './images/pusat/f1-lobby/pusat-f1-lobby-20.jpg',
+    thumbnail: './images/pusat/f1-lobby/thumbs/pusat-f1-lobby-20.jpg',
+    defaultYaw: '0deg',
+    defaultPitch: '0deg',
+    links: [
+      { nodeId: 'pusat-f1-lobby-19', position: { yaw: '180deg', pitch: '0deg' }, name: 'Go back' },
+      { nodeId: 'pusat-f1-lobby-21', position: { yaw: '0deg', pitch: '0deg' }, name: 'Go to Lobby 21' }
+    ],
+    markers: [],
+    data: {
+      floor: 'f1',
+      tags: ['lobby'],
+    },
+  },
+  {
+    id: 'pusat-f1-lobby-21',
+    name: 'Floor 1 - Lobby 21',
+    caption: 'PUSAT - Floor 1 - Lobby 21',
+    panorama: './images/pusat/f1-lobby/pusat-f1-lobby-21.jpg',
+    thumbnail: './images/pusat/f1-lobby/thumbs/pusat-f1-lobby-21.jpg',
+    defaultYaw: '0deg',
+    defaultPitch: '0deg',
+    links: [
+      { nodeId: 'pusat-f1-lobby-20', position: { yaw: '180deg', pitch: '0deg' }, name: 'Go back' },
+      { nodeId: 'pusat-f1-lobby-22', position: { yaw: '0deg', pitch: '0deg' }, name: 'Go to Lobby 22' }
+    ],
+    markers: [],
+    data: {
+      floor: 'f1',
+      tags: ['lobby'],
+    },
+  },
+  {
+    id: 'pusat-f1-lobby-22',
+    name: 'Floor 1 - Lobby 22',
+    caption: 'PUSAT - Floor 1 - Lobby 22',
+    panorama: './images/pusat/f1-lobby/pusat-f1-lobby-22.jpg',
+    thumbnail: './images/pusat/f1-lobby/thumbs/pusat-f1-lobby-22.jpg',
+    defaultYaw: '0deg',
+    defaultPitch: '0deg',
+    links: [
+      { nodeId: 'pusat-f1-lobby-21', position: { yaw: '180deg', pitch: '0deg' }, name: 'Go back' },
+      { nodeId: 'pusat-f1-lobby-23', position: { yaw: '0deg', pitch: '0deg' }, name: 'Go to Lobby 23' }
+    ],
+    markers: [],
+    data: {
+      floor: 'f1',
+      tags: ['lobby'],
+    },
+  },
+  {
+    id: 'pusat-f1-lobby-23',
+    name: 'Floor 1 - Lobby 23',
+    caption: 'PUSAT - Floor 1 - Lobby 23',
+    panorama: './images/pusat/f1-lobby/pusat-f1-lobby-23.jpg',
+    thumbnail: './images/pusat/f1-lobby/thumbs/pusat-f1-lobby-23.jpg',
+    defaultYaw: '0deg',
+    defaultPitch: '0deg',
+    links: [
+      { nodeId: 'pusat-f1-lobby-22', position: { yaw: '180deg', pitch: '0deg' }, name: 'Go back' },
+      { nodeId: 'pusat-f1-lobby-24', position: { yaw: '0deg', pitch: '0deg' }, name: 'Go to Lobby 24' }
+    ],
+    markers: [],
+    data: {
+      floor: 'f1',
+      tags: ['lobby'],
+    },
+  },
+  {
+    id: 'pusat-f1-lobby-24',
+    name: 'Floor 1 - Lobby 24',
+    caption: 'PUSAT - Floor 1 - Lobby 24',
+    panorama: './images/pusat/f1-lobby/pusat-f1-lobby-24.jpg',
+    thumbnail: './images/pusat/f1-lobby/thumbs/pusat-f1-lobby-24.jpg',
+    defaultYaw: '0deg',
+    defaultPitch: '0deg',
+    links: [
+      { nodeId: 'pusat-f1-lobby-23', position: { yaw: '180deg', pitch: '0deg' }, name: 'Go back' },
+      { nodeId: 'pusat-f1-lobby-25', position: { yaw: '0deg', pitch: '0deg' }, name: 'Go to Lobby 25' }
+    ],
+    markers: [],
+    data: {
+      floor: 'f1',
+      tags: ['lobby'],
+    },
+  },
+  {
+    id: 'pusat-f1-lobby-25',
+    name: 'Floor 1 - Lobby 25',
+    caption: 'PUSAT - Floor 1 - Lobby 25',
+    panorama: './images/pusat/f1-lobby/pusat-f1-lobby-25.jpg',
+    thumbnail: './images/pusat/f1-lobby/thumbs/pusat-f1-lobby-25.jpg',
+    defaultYaw: '0deg',
+    defaultPitch: '0deg',
+    links: [
+      { nodeId: 'pusat-f1-lobby-24', position: { yaw: '180deg', pitch: '0deg' }, name: 'Go back' },
+      { nodeId: 'pusat-f1-lobby-26', position: { yaw: '0deg', pitch: '0deg' }, name: 'Go to Lobby 26' }
+    ],
+    markers: [],
+    data: {
+      floor: 'f1',
+      tags: ['lobby'],
+    },
+  },
+  {
+    id: 'pusat-f1-lobby-26',
+    name: 'Floor 1 - Lobby 26',
+    caption: 'PUSAT - Floor 1 - Lobby 26',
+    panorama: './images/pusat/f1-lobby/pusat-f1-lobby-26.jpg',
+    thumbnail: './images/pusat/f1-lobby/thumbs/pusat-f1-lobby-26.jpg',
+    defaultYaw: '0deg',
+    defaultPitch: '0deg',
+    links: [
+      { nodeId: 'pusat-f1-lobby-25', position: { yaw: '180deg', pitch: '0deg' }, name: 'Go back' },
+      { nodeId: 'pusat-f1-lobby-27', position: { yaw: '0deg', pitch: '0deg' }, name: 'Go to Lobby 27' }
+    ],
+    markers: [],
+    data: {
+      floor: 'f1',
+      tags: ['lobby'],
+    },
+  },
+  {
+    id: 'pusat-f1-lobby-27',
+    name: 'Floor 1 - Lobby 27',
+    caption: 'PUSAT - Floor 1 - Lobby 27',
+    panorama: './images/pusat/f1-lobby/pusat-f1-lobby-27.jpg',
+    thumbnail: './images/pusat/f1-lobby/thumbs/pusat-f1-lobby-27.jpg',
+    defaultYaw: '0deg',
+    defaultPitch: '0deg',
+    links: [
+      { nodeId: 'pusat-f1-lobby-26', position: { yaw: '180deg', pitch: '0deg' }, name: 'Go back' },
+      { nodeId: 'pusat-f1-lobby-28', position: { yaw: '0deg', pitch: '0deg' }, name: 'Go to Lobby 28' }
+    ],
+    markers: [],
+    data: {
+      floor: 'f1',
+      tags: ['lobby'],
+    },
+  },
+  {
+    id: 'pusat-f1-lobby-28',
+    name: 'Floor 1 - Lobby 28',
+    caption: 'PUSAT - Floor 1 - Lobby 28',
+    panorama: './images/pusat/f1-lobby/pusat-f1-lobby-28.jpg',
+    thumbnail: './images/pusat/f1-lobby/thumbs/pusat-f1-lobby-28.jpg',
+    defaultYaw: '0deg',
+    defaultPitch: '0deg',
+    links: [
+      { nodeId: 'pusat-f1-lobby-27', position: { yaw: '180deg', pitch: '0deg' }, name: 'Go back' },
+      { nodeId: 'pusat-f1-lobby-29', position: { yaw: '0deg', pitch: '0deg' }, name: 'Go to Lobby 29' }
+    ],
+    markers: [],
+    data: {
+      floor: 'f1',
+      tags: ['lobby'],
+    },
+  },
+  {
+    id: 'pusat-f1-lobby-29',
+    name: 'Floor 1 - Lobby 29',
+    caption: 'PUSAT - Floor 1 - Lobby 29',
+    panorama: './images/pusat/f1-lobby/pusat-f1-lobby-29.jpg',
+    thumbnail: './images/pusat/f1-lobby/thumbs/pusat-f1-lobby-29.jpg',
+    defaultYaw: '0deg',
+    defaultPitch: '0deg',
+    links: [
+      { nodeId: 'pusat-f1-lobby-28', position: { yaw: '180deg', pitch: '0deg' }, name: 'Go back' }
     ],
     markers: [],
     data: {
