@@ -16,61 +16,96 @@ export default [
     ],
     markers: [
       {
-        id: 'ppaj-f1-01-img-1',
-        position: { yaw: '358.06deg', pitch: '4.94deg' },
-        html: `<custom-marker data-icon="pin" style="--marker-color: var(--color-accent-blue, #2D6CDF);"><img src="./images/ppaj/markers/LOBBY/AEON_lobby_5.jpg" alt="AEON lobby 5" /><h2>AEON lobby 5</h2></custom-marker>`,
-        size: { width: 44, height: 44 },
-        anchor: 'center center'
-      },
-      {
-        id: 'ppaj-f1-01-img-2',
-        position: { yaw: '19.40deg', pitch: '3.21deg' },
-        html: `<custom-marker data-icon="pin" style="--marker-color: var(--color-accent-blue, #2D6CDF);"><img src="./images/ppaj/markers/LOBBY/AEON_lobby_6.jpg" alt="AEON lobby 6" /><h2>AEON lobby 6</h2></custom-marker>`,
-        size: { width: 44, height: 44 },
-        anchor: 'center center'
-      },
-      {
-        id: 'ppaj-f1-01-img-3',
-        position: { yaw: '14.10deg', pitch: '9.33deg' },
-        html: `<custom-marker data-icon="pin" style="--marker-color: var(--color-accent-blue, #2D6CDF);"><img src="./images/ppaj/markers/OUTSIDE/AEON_outside_1.jpg" alt="AEON outside 1" /><h2>AEON outside 1</h2></custom-marker>`,
-        size: { width: 44, height: 44 },
-        anchor: 'center center'
-      },
-      {
-        id: 'ppaj-f1-01-img-4',
-        position: { yaw: '6.74deg', pitch: '-3.15deg' },
-        html: `<custom-marker data-icon="pin" style="--marker-color: var(--color-accent-blue, #2D6CDF);"><img src="./images/ppaj/markers/OUTSIDE/AEON_outside_3.jpg" alt="AEON outside 3" /><h2>AEON outside 3</h2></custom-marker>`,
-        size: { width: 44, height: 44 },
-        anchor: 'center center'
-      },
-      {
-        id: 'ppaj-f1-01-img-5',
-        position: { yaw: '19.81deg', pitch: '-6.17deg' },
-        html: `<custom-marker data-icon="pin" style="--marker-color: var(--color-accent-blue, #2D6CDF);"><img src="./images/ppaj/markers/OUTSIDE/AEON_outside_4.jpg" alt="AEON outside 4" /><h2>AEON outside 4</h2></custom-marker>`,
-        size: { width: 44, height: 44 },
-        anchor: 'center center'
-      },
-      {
-        id: 'ppaj-f1-01-marker-1789428336164',
+        id: 'ppaj-f1-01-marker-1789453260228',
         position: {
-          yaw: '32.68deg',
-          pitch: '-5.79deg'
+          yaw: '20.14deg',
+          pitch: '-9.17deg'
         },
         size: {
-          width: 32,
-          height: 32
+          width: 44,
+          height: 44
         },
         anchor: 'center center',
-        tooltip: 'fFa',
         data: {
-          type: 'info',
-          title: 'fFa',
+          type: 'image',
+          title: '',
           icon: 'info',
           color: 'blue',
           animated: false,
-          content: 'dsa'
+          imageSrc: './images/ppaj/markers/OUTSIDE/AEON_outside_2.jpg',
+          originalUrl: './images/ppaj/markers/OUTSIDE/AEON_outside_2.jpg',
+          caption: ''
         },
-        html: '<custom-marker type=\'info\' data-icon=\'info\' data-color=\'blue\'>\n        <h2>fFa</h2>\n        <p>dsa</p>\n      </custom-marker>'
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/ppaj/markers/OUTSIDE/AEON_outside_2.jpg\'>\n        <img src=\'./images/ppaj/markers/OUTSIDE/AEON_outside_2.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      {
+        id: 'ppaj-f1-01-img-5',
+        position: {
+          yaw: '7.47deg',
+          pitch: '-11.77deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: 'AEON outside 4',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/ppaj/markers/OUTSIDE/AEON_outside_4.jpg',
+          originalUrl: './images/ppaj/markers/OUTSIDE/AEON_outside_4.jpg',
+          caption: 'AEON outside 4'
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/ppaj/markers/OUTSIDE/AEON_outside_4.jpg\'>\n        <img src=\'./images/ppaj/markers/OUTSIDE/AEON_outside_4.jpg\' alt=\'AEON outside 4\' style=\'cursor:pointer;\' />\n        <h2>AEON outside 4</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      {
+        id: 'ppaj-f1-01-img-4',
+        position: {
+          yaw: '348.33deg',
+          pitch: '-8.00deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: 'AEON outside 3',
+          icon: 'info',
+          color: 'gold',
+          animated: false,
+          imageSrc: './images/ppaj/markers/OUTSIDE/AEON_outside_3.jpg',
+          originalUrl: './images/ppaj/markers/OUTSIDE/AEON_outside_3.jpg',
+          caption: 'AEON outside 3'
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'gold\' data-url=\'./images/ppaj/markers/OUTSIDE/AEON_outside_3.jpg\'>\n        <img src=\'./images/ppaj/markers/OUTSIDE/AEON_outside_3.jpg\' alt=\'AEON outside 3\' style=\'cursor:pointer;\' />\n        <h2>AEON outside 3</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      {
+        id: 'ppaj-f1-01-img-3',
+        position: {
+          yaw: '0.02deg',
+          pitch: '22.65deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: 'AEON outside 1',
+          icon: 'pin',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/ppaj/markers/OUTSIDE/AEON_outside_1.jpg',
+          originalUrl: './images/ppaj/markers/OUTSIDE/AEON_outside_1.jpg',
+          caption: 'AEON outside 1'
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'pin\' data-color=\'blue\' data-url=\'./images/ppaj/markers/OUTSIDE/AEON_outside_1.jpg\'>\n        <img src=\'./images/ppaj/markers/OUTSIDE/AEON_outside_1.jpg\' alt=\'AEON outside 1\' style=\'cursor:pointer;\' />\n        <h2>AEON outside 1</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
       }
     ],
     data: {
@@ -94,40 +129,97 @@ export default [
     ],
     markers: [
       {
-        id: 'ppaj-f1-02-img-1',
-        position: { yaw: '30.42deg', pitch: '-13.89deg' },
-        html: `<custom-marker data-icon="pin" style="--marker-color: var(--color-accent-blue, #2D6CDF);"><img src="./images/ppaj/markers/LOBBY/AEON_lobby_1.jpg" alt="AEON lobby 1" /><h2>AEON lobby 1</h2></custom-marker>`,
-        size: { width: 44, height: 44 },
-        anchor: 'center center'
+        id: 'ppaj-f1-02-marker-1789453448083',
+        position: {
+          yaw: '282.52deg',
+          pitch: '0.47deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: '',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/ppaj/markers/LOBBY/AEON_lobby_2.jpg',
+          originalUrl: './images/ppaj/markers/LOBBY/AEON_lobby_2.jpg',
+          caption: ''
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/ppaj/markers/LOBBY/AEON_lobby_2.jpg\'>\n        <img src=\'./images/ppaj/markers/LOBBY/AEON_lobby_2.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
       },
       {
-        id: 'ppaj-f1-02-img-2',
-        position: { yaw: '75.12deg', pitch: '-11.53deg' },
-        html: `<custom-marker data-icon="pin" style="--marker-color: var(--color-accent-blue, #2D6CDF);"><img src="./images/ppaj/markers/LOBBY/AEON_lobby_19.jpg" alt="AEON lobby 19" /><h2>AEON lobby 19</h2></custom-marker>`,
-        size: { width: 44, height: 44 },
-        anchor: 'center center'
+        id: 'ppaj-f1-02-marker-1789453482345',
+        position: {
+          yaw: '291.26deg',
+          pitch: '2.45deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: '',
+          icon: 'info',
+          color: 'gold',
+          animated: false,
+          imageSrc: './images/ppaj/markers/LOBBY/AEON_lobby_3.jpg',
+          originalUrl: './images/ppaj/markers/LOBBY/AEON_lobby_3.jpg',
+          caption: ''
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'gold\' data-url=\'./images/ppaj/markers/LOBBY/AEON_lobby_3.jpg\'>\n        <img src=\'./images/ppaj/markers/LOBBY/AEON_lobby_3.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
       },
       {
-        id: 'ppaj-f1-02-img-3',
-        position: { yaw: '328.41deg', pitch: '-7.76deg' },
-        html: `<custom-marker data-icon="pin" style="--marker-color: var(--color-accent-blue, #2D6CDF);"><img src="./images/ppaj/markers/LOBBY/AEON_lobby_2.jpg" alt="AEON lobby 2" /><h2>AEON lobby 2</h2></custom-marker>`,
-        size: { width: 44, height: 44 },
-        anchor: 'center center'
+        id: 'ppaj-f1-02-marker-1789453518145',
+        position: {
+          yaw: '27.52deg',
+          pitch: '-7.81deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: '',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/ppaj/markers/LOBBY/AEON_lobby_6.jpg',
+          originalUrl: './images/ppaj/markers/LOBBY/AEON_lobby_6.jpg',
+          caption: ''
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/ppaj/markers/LOBBY/AEON_lobby_6.jpg\'>\n        <img src=\'./images/ppaj/markers/LOBBY/AEON_lobby_6.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
       },
       {
-        id: 'ppaj-f1-02-img-4',
-        position: { yaw: '48.51deg', pitch: '-19.22deg' },
-        html: `<custom-marker data-icon="pin" style="--marker-color: var(--color-accent-blue, #2D6CDF);"><img src="./images/ppaj/markers/LOBBY/AEON_lobby_20.jpg" alt="AEON lobby 20" /><h2>AEON lobby 20</h2></custom-marker>`,
-        size: { width: 44, height: 44 },
-        anchor: 'center center'
-      },
-      {
-        id: 'ppaj-f1-02-img-5',
-        position: { yaw: '262.71deg', pitch: '34.43deg' },
-        html: `<custom-marker data-icon="pin" style="--marker-color: var(--color-accent-blue, #2D6CDF);"><img src="./images/ppaj/markers/LOBBY/AEON_lobby_4.jpg" alt="AEON lobby 4" /><h2>AEON lobby 4</h2></custom-marker>`,
-        size: { width: 44, height: 44 },
-        anchor: 'center center'
-      },
+        id: 'ppaj-f1-02-marker-1789454935711',
+        position: {
+          yaw: '132.59deg',
+          pitch: '-18.51deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: '',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/ppaj/markers/LOBBY/AEON_lobby_1.jpg',
+          originalUrl: './images/ppaj/markers/LOBBY/AEON_lobby_1.jpg',
+          caption: ''
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/ppaj/markers/LOBBY/AEON_lobby_1.jpg\'>\n        <img src=\'./images/ppaj/markers/LOBBY/AEON_lobby_1.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      }
     ],
     data: {
       floor: 'f1',
@@ -148,26 +240,51 @@ export default [
     ],
     markers: [
       {
-        id: 'ppaj-f1-03-img-1',
-        position: { yaw: '17.65deg', pitch: '-14.10deg' },
-        html: `<custom-marker data-icon="pin" style="--marker-color: var(--color-accent-blue, #2D6CDF);"><img src="./images/ppaj/markers/LOBBY/AEON_lobby_15.jpg" alt="AEON lobby 15" /><h2>AEON lobby 15</h2></custom-marker>`,
-        size: { width: 44, height: 44 },
-        anchor: 'center center'
+        id: 'ppaj-f1-03-marker-1789454077849',
+        position: {
+          yaw: '283.94deg',
+          pitch: '-0.92deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: '',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/ppaj/markers/LOBBY/AEON_lobby_2.jpg',
+          originalUrl: './images/ppaj/markers/LOBBY/AEON_lobby_2.jpg',
+          caption: ''
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/ppaj/markers/LOBBY/AEON_lobby_2.jpg\'>\n        <img src=\'./images/ppaj/markers/LOBBY/AEON_lobby_2.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
       },
       {
-        id: 'ppaj-f1-03-img-2',
-        position: { yaw: '358.83deg', pitch: '-22.97deg' },
-        html: `<custom-marker data-icon="pin" style="--marker-color: var(--color-accent-blue, #2D6CDF);"><img src="./images/ppaj/markers/LOBBY/AEON_lobby_17.jpg" alt="AEON lobby 17" /><h2>AEON lobby 17</h2></custom-marker>`,
-        size: { width: 44, height: 44 },
-        anchor: 'center center'
-      },
-      {
-        id: 'ppaj-f1-03-img-3',
-        position: { yaw: '34.91deg', pitch: '-21.41deg' },
-        html: `<custom-marker data-icon="pin" style="--marker-color: var(--color-accent-blue, #2D6CDF);"><img src="./images/ppaj/markers/OUTSIDE/AEON_outside_2.jpg" alt="AEON outside 2" /><h2>AEON outside 2</h2></custom-marker>`,
-        size: { width: 44, height: 44 },
-        anchor: 'center center'
-      },
+        id: 'ppaj-f1-03-marker-1789454095108',
+        position: {
+          yaw: '304.20deg',
+          pitch: '5.10deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: '',
+          icon: 'info',
+          color: 'gold',
+          animated: false,
+          imageSrc: './images/ppaj/markers/LOBBY/AEON_lobby_3.jpg',
+          originalUrl: './images/ppaj/markers/LOBBY/AEON_lobby_3.jpg',
+          caption: ''
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'gold\' data-url=\'./images/ppaj/markers/LOBBY/AEON_lobby_3.jpg\'>\n        <img src=\'./images/ppaj/markers/LOBBY/AEON_lobby_3.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      }
     ],
     data: {
       floor: 'f1',
@@ -188,19 +305,74 @@ export default [
     ],
     markers: [
       {
-        id: 'ppaj-f1-04-img-1',
-        position: { yaw: '22.92deg', pitch: '-14.06deg' },
-        html: `<custom-marker data-icon="pin" style="--marker-color: var(--color-accent-blue, #2D6CDF);"><img src="./images/ppaj/markers/LOBBY/AEON_lobby_21.jpg" alt="AEON lobby 21" /><h2>AEON lobby 21</h2></custom-marker>`,
-        size: { width: 44, height: 44 },
-        anchor: 'center center'
+        id: 'ppaj-f1-04-marker-1789454231324',
+        position: {
+          yaw: '347.71deg',
+          pitch: '15.60deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: '',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/ppaj/markers/LOBBY/AEON_lobby_4.jpg',
+          originalUrl: './images/ppaj/markers/LOBBY/AEON_lobby_4.jpg',
+          caption: ''
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/ppaj/markers/LOBBY/AEON_lobby_4.jpg\'>\n        <img src=\'./images/ppaj/markers/LOBBY/AEON_lobby_4.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
       },
       {
-        id: 'ppaj-f1-04-img-2',
-        position: { yaw: '301.02deg', pitch: '-4.44deg' },
-        html: `<custom-marker data-icon="pin" style="--marker-color: var(--color-accent-blue, #2D6CDF);"><img src="./images/ppaj/markers/LOBBY/AEON_lobby_7.jpg" alt="AEON lobby 7" /><h2>AEON lobby 7</h2></custom-marker>`,
-        size: { width: 44, height: 44 },
-        anchor: 'center center'
+        id: 'ppaj-f1-04-marker-1789454243160',
+        position: {
+          yaw: '32.04deg',
+          pitch: '13.92deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: '',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/ppaj/markers/LOBBY/AEON_lobby_4.jpg',
+          originalUrl: './images/ppaj/markers/LOBBY/AEON_lobby_4.jpg',
+          caption: ''
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/ppaj/markers/LOBBY/AEON_lobby_4.jpg\'>\n        <img src=\'./images/ppaj/markers/LOBBY/AEON_lobby_4.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
       },
+      {
+        id: 'ppaj-f1-04-marker-1789454260421',
+        position: {
+          yaw: '57.87deg',
+          pitch: '10.24deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: '',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/ppaj/markers/LOBBY/AEON_lobby_4.jpg',
+          originalUrl: './images/ppaj/markers/LOBBY/AEON_lobby_4.jpg',
+          caption: ''
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/ppaj/markers/LOBBY/AEON_lobby_4.jpg\'>\n        <img src=\'./images/ppaj/markers/LOBBY/AEON_lobby_4.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      }
     ],
     data: {
       floor: 'f1',
@@ -222,19 +394,51 @@ export default [
     ],
     markers: [
       {
-        id: 'ppaj-f1-05-img-1',
-        position: { yaw: '331.44deg', pitch: '-25.30deg' },
-        html: `<custom-marker data-icon="pin" style="--marker-color: var(--color-accent-blue, #2D6CDF);"><img src="./images/ppaj/markers/LOBBY/AEON_lobby_10.jpg" alt="AEON lobby 10" /><h2>AEON lobby 10</h2></custom-marker>`,
-        size: { width: 44, height: 44 },
-        anchor: 'center center'
+        id: 'ppaj-f1-05-marker-1789454879605',
+        position: {
+          yaw: '237.00deg',
+          pitch: '-11.23deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: '',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/ppaj/markers/LOBBY/AEON_lobby_5.jpg',
+          originalUrl: './images/ppaj/markers/LOBBY/AEON_lobby_5.jpg',
+          caption: ''
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/ppaj/markers/LOBBY/AEON_lobby_5.jpg\'>\n        <img src=\'./images/ppaj/markers/LOBBY/AEON_lobby_5.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
       },
       {
-        id: 'ppaj-f1-05-img-2',
-        position: { yaw: '19.26deg', pitch: '-1.71deg' },
-        html: `<custom-marker data-icon="pin" style="--marker-color: var(--color-accent-blue, #2D6CDF);"><img src="./images/ppaj/markers/LOBBY/AEON_lobby_12.jpg" alt="AEON lobby 12" /><h2>AEON lobby 12</h2></custom-marker>`,
-        size: { width: 44, height: 44 },
-        anchor: 'center center'
-      },
+        id: 'ppaj-f1-05-marker-1789454913050',
+        position: {
+          yaw: '131.21deg',
+          pitch: '-19.79deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: '',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/ppaj/markers/LOBBY/AEON_lobby_6.jpg',
+          originalUrl: './images/ppaj/markers/LOBBY/AEON_lobby_6.jpg',
+          caption: ''
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/ppaj/markers/LOBBY/AEON_lobby_6.jpg\'>\n        <img src=\'./images/ppaj/markers/LOBBY/AEON_lobby_6.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      }
     ],
     data: {
       floor: 'f1',
@@ -255,33 +459,49 @@ export default [
     ],
     markers: [
       {
-        id: 'ppaj-f1-06-img-1',
-        position: { yaw: '3.16deg', pitch: '-15.63deg' },
-        html: `<custom-marker data-icon="pin" style="--marker-color: var(--color-accent-blue, #2D6CDF);"><img src="./images/ppaj/markers/LOBBY/AEON_lobby_11.jpg" alt="AEON lobby 11" /><h2>AEON lobby 11</h2></custom-marker>`,
-        size: { width: 44, height: 44 },
-        anchor: 'center center'
+        id: 'ppaj-f1-06-marker-1789454991978',
+        position: {
+          yaw: '338.21deg',
+          pitch: '-16.08deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: '',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/ppaj/markers/LOBBY/AEON_lobby_13.jpg',
+          originalUrl: './images/ppaj/markers/LOBBY/AEON_lobby_13.jpg',
+          caption: ''
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/ppaj/markers/LOBBY/AEON_lobby_13.jpg\'>\n        <img src=\'./images/ppaj/markers/LOBBY/AEON_lobby_13.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
       },
       {
-        id: 'ppaj-f1-06-img-2',
-        position: { yaw: '1.71deg', pitch: '-45.29deg' },
-        html: `<custom-marker data-icon="pin" style="--marker-color: var(--color-accent-blue, #2D6CDF);"><img src="./images/ppaj/markers/LOBBY/AEON_lobby_13.jpg" alt="AEON lobby 13" /><h2>AEON lobby 13</h2></custom-marker>`,
-        size: { width: 44, height: 44 },
-        anchor: 'center center'
-      },
-      {
-        id: 'ppaj-f1-06-img-3',
-        position: { yaw: '2.80deg', pitch: '-63.79deg' },
-        html: `<custom-marker data-icon="pin" style="--marker-color: var(--color-accent-blue, #2D6CDF);"><img src="./images/ppaj/markers/LOBBY/AEON_lobby_16.jpg" alt="AEON lobby 16" /><h2>AEON lobby 16</h2></custom-marker>`,
-        size: { width: 44, height: 44 },
-        anchor: 'center center'
-      },
-      {
-        id: 'ppaj-f1-06-img-4',
-        position: { yaw: '53.71deg', pitch: '-14.67deg' },
-        html: `<custom-marker data-icon="pin" style="--marker-color: var(--color-accent-blue, #2D6CDF);"><img src="./images/ppaj/markers/LOBBY/AEON_lobby_9.jpg" alt="AEON lobby 9" /><h2>AEON lobby 9</h2></custom-marker>`,
-        size: { width: 44, height: 44 },
-        anchor: 'center center'
-      },
+        id: 'ppaj-f1-06-marker-1789455608187',
+        position: {
+          yaw: '48.17deg',
+          pitch: '-5.26deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Staff Only',
+          icon: 'no-entry',
+          color: 'red',
+          animated: true,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'no-entry\' data-color=\'red\' animated>\n        <h2>Staff Only</h2>\n        <p></p>\n      </custom-marker>'
+      }
     ],
     data: {
       floor: 'f1',
@@ -302,12 +522,212 @@ export default [
     ],
     markers: [
       {
-        id: 'ppaj-f1-07-img-1',
-        position: { yaw: '0.79deg', pitch: '-32.98deg' },
-        html: `<custom-marker data-icon="pin" style="--marker-color: var(--color-accent-blue, #2D6CDF);"><img src="./images/ppaj/markers/LOBBY/AEON_lobby_8.jpg" alt="AEON lobby 8" /><h2>AEON lobby 8</h2></custom-marker>`,
-        size: { width: 44, height: 44 },
-        anchor: 'center center'
+        id: 'ppaj-f1-07-marker-1789455087027',
+        position: {
+          yaw: '329.06deg',
+          pitch: '-46.56deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: '',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/ppaj/markers/LOBBY/AEON_lobby_1.jpg',
+          originalUrl: './images/ppaj/markers/LOBBY/AEON_lobby_1.jpg',
+          caption: ''
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/ppaj/markers/LOBBY/AEON_lobby_1.jpg\'>\n        <img src=\'./images/ppaj/markers/LOBBY/AEON_lobby_1.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
       },
+      {
+        id: 'ppaj-f1-07-marker-1789455100981',
+        position: {
+          yaw: '350.32deg',
+          pitch: '-44.11deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: '',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/ppaj/markers/LOBBY/AEON_lobby_9.jpg',
+          originalUrl: './images/ppaj/markers/LOBBY/AEON_lobby_9.jpg',
+          caption: ''
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/ppaj/markers/LOBBY/AEON_lobby_9.jpg\'>\n        <img src=\'./images/ppaj/markers/LOBBY/AEON_lobby_9.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      {
+        id: 'ppaj-f1-07-marker-1789455206221',
+        position: {
+          yaw: '238.55deg',
+          pitch: '5.80deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: '',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/ppaj/markers/LOBBY/AEON_lobby_8.jpg',
+          originalUrl: './images/ppaj/markers/LOBBY/AEON_lobby_8.jpg',
+          caption: ''
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/ppaj/markers/LOBBY/AEON_lobby_8.jpg\'>\n        <img src=\'./images/ppaj/markers/LOBBY/AEON_lobby_8.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      {
+        id: 'ppaj-f1-07-marker-1789455216041',
+        position: {
+          yaw: '255.47deg',
+          pitch: '6.94deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: '',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/ppaj/markers/LOBBY/AEON_lobby_7.jpg',
+          originalUrl: './images/ppaj/markers/LOBBY/AEON_lobby_7.jpg',
+          caption: ''
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/ppaj/markers/LOBBY/AEON_lobby_7.jpg\'>\n        <img src=\'./images/ppaj/markers/LOBBY/AEON_lobby_7.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      {
+        id: 'ppaj-f1-07-marker-1789455285067',
+        position: {
+          yaw: '278.00deg',
+          pitch: '6.90deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: '',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/ppaj/markers/LOBBY/AEON_lobby_7.jpg',
+          originalUrl: './images/ppaj/markers/LOBBY/AEON_lobby_7.jpg',
+          caption: ''
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/ppaj/markers/LOBBY/AEON_lobby_7.jpg\'>\n        <img src=\'./images/ppaj/markers/LOBBY/AEON_lobby_7.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      {
+        id: 'ppaj-f1-07-marker-1789455292340',
+        position: {
+          yaw: '299.86deg',
+          pitch: '6.87deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: '',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/ppaj/markers/LOBBY/AEON_lobby_7.jpg',
+          originalUrl: './images/ppaj/markers/LOBBY/AEON_lobby_7.jpg',
+          caption: ''
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/ppaj/markers/LOBBY/AEON_lobby_7.jpg\'>\n        <img src=\'./images/ppaj/markers/LOBBY/AEON_lobby_7.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      {
+        id: 'ppaj-f1-07-marker-1789455341150',
+        position: {
+          yaw: '313.06deg',
+          pitch: '5.29deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: '',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/ppaj/markers/LOBBY/AEON_lobby_10.jpg',
+          originalUrl: './images/ppaj/markers/LOBBY/AEON_lobby_10.jpg',
+          caption: ''
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/ppaj/markers/LOBBY/AEON_lobby_10.jpg\'>\n        <img src=\'./images/ppaj/markers/LOBBY/AEON_lobby_10.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      {
+        id: 'ppaj-f1-07-marker-1789455352120',
+        position: {
+          yaw: '318.59deg',
+          pitch: '4.84deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: '',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/ppaj/markers/LOBBY/AEON_lobby_11.jpg',
+          originalUrl: './images/ppaj/markers/LOBBY/AEON_lobby_11.jpg',
+          caption: ''
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/ppaj/markers/LOBBY/AEON_lobby_11.jpg\'>\n        <img src=\'./images/ppaj/markers/LOBBY/AEON_lobby_11.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      {
+        id: 'ppaj-f1-07-marker-1789455527191',
+        position: {
+          yaw: '65.32deg',
+          pitch: '-19.01deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: '',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/ppaj/markers/LOBBY/AEON_lobby_13.jpg',
+          originalUrl: './images/ppaj/markers/LOBBY/AEON_lobby_13.jpg',
+          caption: ''
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/ppaj/markers/LOBBY/AEON_lobby_13.jpg\'>\n        <img src=\'./images/ppaj/markers/LOBBY/AEON_lobby_13.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      }
     ],
     data: {
       floor: 'f1',
@@ -325,7 +745,147 @@ export default [
     links: [
       { nodeId: 'ppaj-f1-07', position: { yaw: '105.46deg', pitch: '-49.08deg' } },
     ],
-    markers: [],
+    markers: [
+      {
+        id: 'ppaj-f1-08-marker-1789455165739',
+        position: {
+          yaw: '311.18deg',
+          pitch: '17.58deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: '',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/ppaj/markers/LOBBY/AEON_lobby_7.jpg',
+          originalUrl: './images/ppaj/markers/LOBBY/AEON_lobby_7.jpg',
+          caption: ''
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/ppaj/markers/LOBBY/AEON_lobby_7.jpg\'>\n        <img src=\'./images/ppaj/markers/LOBBY/AEON_lobby_7.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      {
+        id: 'ppaj-f1-08-marker-1789455181137',
+        position: {
+          yaw: '334.48deg',
+          pitch: '10.17deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: '',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/ppaj/markers/LOBBY/AEON_lobby_10.jpg',
+          originalUrl: './images/ppaj/markers/LOBBY/AEON_lobby_10.jpg',
+          caption: ''
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/ppaj/markers/LOBBY/AEON_lobby_10.jpg\'>\n        <img src=\'./images/ppaj/markers/LOBBY/AEON_lobby_10.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      {
+        id: 'ppaj-f1-08-marker-1789455329458',
+        position: {
+          yaw: '339.48deg',
+          pitch: '9.74deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: '',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/ppaj/markers/LOBBY/AEON_lobby_11.jpg',
+          originalUrl: './images/ppaj/markers/LOBBY/AEON_lobby_11.jpg',
+          caption: ''
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/ppaj/markers/LOBBY/AEON_lobby_11.jpg\'>\n        <img src=\'./images/ppaj/markers/LOBBY/AEON_lobby_11.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      
+      {
+        id: 'ppaj-f1-08-marker-1789455379881',
+        position: {
+          yaw: '221.56deg',
+          pitch: '9.50deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: '',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/ppaj/markers/LOBBY/AEON_lobby_7.jpg',
+          originalUrl: './images/ppaj/markers/LOBBY/AEON_lobby_7.jpg',
+          caption: ''
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/ppaj/markers/LOBBY/AEON_lobby_7.jpg\'>\n        <img src=\'./images/ppaj/markers/LOBBY/AEON_lobby_7.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      {
+        id: 'ppaj-f1-08-marker-1789455373269',
+        position: {
+          yaw: '254.36deg',
+          pitch: '15.68deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: '',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/ppaj/markers/LOBBY/AEON_lobby_7.jpg',
+          originalUrl: './images/ppaj/markers/LOBBY/AEON_lobby_7.jpg',
+          caption: ''
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/ppaj/markers/LOBBY/AEON_lobby_7.jpg\'>\n        <img src=\'./images/ppaj/markers/LOBBY/AEON_lobby_7.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      {
+        id: 'ppaj-f1-08-marker-1789455391206',
+        position: {
+          yaw: '208.81deg',
+          pitch: '5.91deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: '',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/ppaj/markers/LOBBY/AEON_lobby_8.jpg',
+          originalUrl: './images/ppaj/markers/LOBBY/AEON_lobby_8.jpg',
+          caption: ''
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/ppaj/markers/LOBBY/AEON_lobby_8.jpg\'>\n        <img src=\'./images/ppaj/markers/LOBBY/AEON_lobby_8.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      }
+    ],
     data: {
       floor: 'f1',
       tags: ['main'],
@@ -346,11 +906,74 @@ export default [
     markers: [
       {
         id: 'ppaj-f1-09-img-1',
-        position: { yaw: '82.94deg', pitch: '-13.75deg' },
-        html: `<custom-marker data-icon="pin" style="--marker-color: var(--color-accent-blue, #2D6CDF);"><img src="./images/ppaj/markers/LOBBY/AEON_lobby_14.jpg" alt="AEON lobby 14" /><h2>AEON lobby 14</h2></custom-marker>`,
-        size: { width: 44, height: 44 },
-        anchor: 'center center'
+        position: {
+          yaw: '112.19deg',
+          pitch: '-12.81deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: 'AEON lobby 14',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/ppaj/markers/LOBBY/AEON_lobby_14.jpg',
+          originalUrl: './images/ppaj/markers/LOBBY/AEON_lobby_14.jpg',
+          caption: 'AEON lobby 14'
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/ppaj/markers/LOBBY/AEON_lobby_14.jpg\'>\n        <img src=\'./images/ppaj/markers/LOBBY/AEON_lobby_14.jpg\' alt=\'AEON lobby 14\' style=\'cursor:pointer;\' />\n        <h2>AEON lobby 14</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
       },
+      
+      {
+        id: 'ppaj-f1-09-marker-1789453654588',
+        position: {
+          yaw: '336.11deg',
+          pitch: '-12.00deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: '',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/ppaj/markers/LOBBY/AEON_lobby_6.jpg',
+          originalUrl: './images/ppaj/markers/LOBBY/AEON_lobby_6.jpg',
+          caption: ''
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/ppaj/markers/LOBBY/AEON_lobby_6.jpg\'>\n        <img src=\'./images/ppaj/markers/LOBBY/AEON_lobby_6.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      {
+        id: 'ppaj-f1-09-marker-1789453634605',
+        position: {
+          yaw: '88.86deg',
+          pitch: '-15.69deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: '',
+          icon: 'info',
+          color: 'gold',
+          animated: false,
+          imageSrc: './images/ppaj/markers/LOBBY/AEON_lobby_12.jpg',
+          originalUrl: './images/ppaj/markers/LOBBY/AEON_lobby_12.jpg',
+          caption: ''
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'gold\' data-url=\'./images/ppaj/markers/LOBBY/AEON_lobby_12.jpg\'>\n        <img src=\'./images/ppaj/markers/LOBBY/AEON_lobby_12.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      }
     ],
     data: {
       floor: 'f1',
@@ -370,19 +993,189 @@ export default [
     ],
     markers: [
       {
-        id: 'ppaj-f1-10-img-1',
-        position: { yaw: '330.82deg', pitch: '-31.57deg' },
-        html: `<custom-marker data-icon="pin" style="--marker-color: var(--color-accent-blue, #2D6CDF);"><img src="./images/ppaj/markers/LOBBY/AEON_lobby_18.jpg" alt="AEON lobby 18" /><h2>AEON lobby 18</h2></custom-marker>`,
-        size: { width: 44, height: 44 },
-        anchor: 'center center'
+        id: 'ppaj-f1-10-marker-1789453764024',
+        position: {
+          yaw: '285.14deg',
+          pitch: '-22.95deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: '',
+          icon: 'info',
+          color: 'gold',
+          animated: false,
+          imageSrc: './images/ppaj/markers/LOBBY/AEON_lobby_19.jpg',
+          originalUrl: './images/ppaj/markers/LOBBY/AEON_lobby_19.jpg',
+          caption: ''
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'gold\' data-url=\'./images/ppaj/markers/LOBBY/AEON_lobby_19.jpg\'>\n        <img src=\'./images/ppaj/markers/LOBBY/AEON_lobby_19.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
       },
       {
-        id: 'ppaj-f1-10-img-2',
-        position: { yaw: '352.30deg', pitch: '-40.06deg' },
-        html: `<custom-marker data-icon="pin" style="--marker-color: var(--color-accent-blue, #2D6CDF);"><img src="./images/ppaj/markers/LOBBY/AEON_lobby_3.jpg" alt="AEON lobby 3" /><h2>AEON lobby 3</h2></custom-marker>`,
-        size: { width: 44, height: 44 },
-        anchor: 'center center'
+        id: 'ppaj-f1-10-marker-1789453787507',
+        position: {
+          yaw: '251.60deg',
+          pitch: '-14.01deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: '',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/ppaj/markers/LOBBY/AEON_lobby_6.jpg',
+          originalUrl: './images/ppaj/markers/LOBBY/AEON_lobby_6.jpg',
+          caption: ''
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/ppaj/markers/LOBBY/AEON_lobby_6.jpg\'>\n        <img src=\'./images/ppaj/markers/LOBBY/AEON_lobby_6.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
       },
+      {
+        id: 'ppaj-f1-10-marker-1789453859200',
+        position: {
+          yaw: '277.37deg',
+          pitch: '-27.56deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: '',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/ppaj/markers/LOBBY/AEON_lobby_21.jpg',
+          originalUrl: './images/ppaj/markers/LOBBY/AEON_lobby_21.jpg',
+          caption: ''
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/ppaj/markers/LOBBY/AEON_lobby_21.jpg\'>\n        <img src=\'./images/ppaj/markers/LOBBY/AEON_lobby_21.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      {
+        id: 'ppaj-f1-10-marker-1789453873493',
+        position: {
+          yaw: '294.55deg',
+          pitch: '-26.18deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: '',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/ppaj/markers/LOBBY/AEON_lobby_18.jpg',
+          originalUrl: './images/ppaj/markers/LOBBY/AEON_lobby_18.jpg',
+          caption: ''
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/ppaj/markers/LOBBY/AEON_lobby_18.jpg\'>\n        <img src=\'./images/ppaj/markers/LOBBY/AEON_lobby_18.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      {
+        id: 'ppaj-f1-10-marker-1789453953166',
+        position: {
+          yaw: '310.23deg',
+          pitch: '-23.74deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: '',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/ppaj/markers/LOBBY/AEON_lobby_20.jpg',
+          originalUrl: './images/ppaj/markers/LOBBY/AEON_lobby_20.jpg',
+          caption: ''
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/ppaj/markers/LOBBY/AEON_lobby_20.jpg\'>\n        <img src=\'./images/ppaj/markers/LOBBY/AEON_lobby_20.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      {
+        id: 'ppaj-f1-10-marker-1789453976968',
+        position: {
+          yaw: '94.98deg',
+          pitch: '-11.06deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: '',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/ppaj/markers/LOBBY/AEON_lobby_17.jpg',
+          originalUrl: './images/ppaj/markers/LOBBY/AEON_lobby_17.jpg',
+          caption: ''
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/ppaj/markers/LOBBY/AEON_lobby_17.jpg\'>\n        <img src=\'./images/ppaj/markers/LOBBY/AEON_lobby_17.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      {
+        id: 'ppaj-f1-10-marker-1789454007050',
+        position: {
+          yaw: '57.75deg',
+          pitch: '-12.51deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: '',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/ppaj/markers/LOBBY/AEON_lobby_15.jpg',
+          originalUrl: './images/ppaj/markers/LOBBY/AEON_lobby_15.jpg',
+          caption: ''
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/ppaj/markers/LOBBY/AEON_lobby_15.jpg\'>\n        <img src=\'./images/ppaj/markers/LOBBY/AEON_lobby_15.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      {
+        id: 'ppaj-f1-10-marker-1789454037658',
+        position: {
+          yaw: '62.96deg',
+          pitch: '-13.62deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: '',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/ppaj/markers/LOBBY/AEON_lobby_16.jpg',
+          originalUrl: './images/ppaj/markers/LOBBY/AEON_lobby_16.jpg',
+          caption: ''
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/ppaj/markers/LOBBY/AEON_lobby_16.jpg\'>\n        <img src=\'./images/ppaj/markers/LOBBY/AEON_lobby_16.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      }
     ],
     data: {
       floor: 'f1',
