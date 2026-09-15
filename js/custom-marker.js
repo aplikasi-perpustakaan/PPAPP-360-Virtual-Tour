@@ -25,8 +25,13 @@ button {
     background: none;
     color: white;
     border-radius: 50%;
-    filter: drop-shadow(0 10px 5px rgba(0, 0, 0, 0.2));
+    filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.5));
+    transition: filter 0.2s ease;
     cursor: pointer;
+}
+
+button:hover {
+    filter: drop-shadow(0 6px 12px rgba(0, 0, 0, 0.7));
 }
 
 .tooltip {
