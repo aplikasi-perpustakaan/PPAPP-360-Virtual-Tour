@@ -254,12 +254,14 @@ export function initMarkerPlacer(viewer, virtualTour, allNodes, isDebug) {
     
     // Only load if empty or if branch changed
     if (gallery.children.length > 0 && gallery.dataset.branch === branch) {
-       // Just update highlighting based on current input value
-       Array.from(gallery.children).forEach(img => {
-          if (img.src.endsWith(contentInput.value.replace('./', '/'))) {
-             img.style.border = '2px solid var(--color-accent-blue)';
+       Array.from(gallery.children).forEach(container => {
+          const img = container.querySelector('img');
+          if (img && img.src.endsWith(contentInput.value.replace('./', '/'))) {
+             container.style.border = '2px solid var(--color-accent-blue)';
+             container.style.background = 'rgba(45, 108, 223, 0.2)';
           } else {
-             img.style.border = '2px solid transparent';
+             container.style.border = '2px solid transparent';
+             container.style.background = 'rgba(0,0,0,0.1)';
           }
        });
        return;
@@ -279,31 +281,57 @@ export function initMarkerPlacer(viewer, virtualTour, allNodes, isDebug) {
       
       gallery.innerHTML = '';
       data.images.forEach(imgData => {
+        const fileName = imgData.originalUrl.split('/').pop();
+        
+        const container = document.createElement('div');
+        container.style.display = 'flex';
+        container.style.flexDirection = 'column';
+        container.style.gap = '4px';
+        container.style.cursor = 'pointer';
+        container.style.border = '2px solid transparent';
+        container.style.borderRadius = '6px';
+        container.style.padding = '4px';
+        container.style.background = 'rgba(0,0,0,0.1)';
+        container.title = fileName;
+
         const img = document.createElement('img');
         img.src = imgData.thumbUrl;
         img.style.width = '100%';
-        img.style.height = '80px';
+        img.style.height = '120px';
         img.style.objectFit = 'cover';
-        img.style.cursor = 'pointer';
         img.style.borderRadius = '4px';
-        img.style.border = '2px solid transparent';
-        img.title = imgData.originalUrl.split('/').pop();
+        
+        const label = document.createElement('div');
+        label.textContent = fileName;
+        label.style.fontSize = '11px';
+        label.style.color = '#ccc';
+        label.style.textAlign = 'center';
+        label.style.wordBreak = 'break-word';
+        label.style.lineHeight = '1.2';
+        
+        container.appendChild(img);
+        container.appendChild(label);
         
         if (imgData.thumbUrl === contentInput.value || imgData.originalUrl === contentInput.value) {
-            img.style.border = '2px solid var(--color-accent-blue)';
+            container.style.border = '2px solid var(--color-accent-blue)';
+            container.style.background = 'rgba(45, 108, 223, 0.2)';
         }
         
-        img.addEventListener('click', () => {
+        container.addEventListener('click', () => {
           contentInput.value = imgData.thumbUrl;
           contentInput.setAttribute('data-original', imgData.originalUrl);
           showToast('✅ Image selected from gallery');
           
           // Highlight selection
-          Array.from(gallery.children).forEach(c => c.style.border = '2px solid transparent');
-          img.style.border = '2px solid var(--color-accent-blue)';
+          Array.from(gallery.children).forEach(c => {
+             c.style.border = '2px solid transparent';
+             c.style.background = 'rgba(0,0,0,0.1)';
+          });
+          container.style.border = '2px solid var(--color-accent-blue)';
+          container.style.background = 'rgba(45, 108, 223, 0.2)';
         });
         
-        gallery.appendChild(img);
+        gallery.appendChild(container);
       });
     } catch (err) {
       gallery.innerHTML = '<div style="font-size: 11px; color: #ff6b6b;">Error loading gallery</div>';
