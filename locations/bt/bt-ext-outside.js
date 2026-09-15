@@ -17,7 +17,77 @@ export default [
         name: 'Go to Outside 2',
       },
     ],
-    markers: [],
+    markers: [
+      {
+        id: 'bt-ext-outside-1-marker-1789460532190',
+        position: {
+          yaw: '31.71deg',
+          pitch: '-6.42deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: '',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/bt/markers/OUTSIDE/BT_outside_2.jpg',
+          originalUrl: './images/bt/markers/OUTSIDE/BT_outside_2.jpg',
+          caption: ''
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bt/markers/OUTSIDE/BT_outside_2.jpg\'>\n        <img src=\'./images/bt/markers/OUTSIDE/BT_outside_2.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      {
+        id: 'bt-ext-outside-1-marker-1789460560624',
+        position: {
+          yaw: '37.50deg',
+          pitch: '-5.83deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: '',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/bt/markers/OUTSIDE/BT_outside_1.jpg',
+          originalUrl: './images/bt/markers/OUTSIDE/BT_outside_1.jpg',
+          caption: ''
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bt/markers/OUTSIDE/BT_outside_1.jpg\'>\n        <img src=\'./images/bt/markers/OUTSIDE/BT_outside_1.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      {
+        id: 'bt-ext-outside-1-marker-1789460575764',
+        position: {
+          yaw: '321.54deg',
+          pitch: '-4.78deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: '',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/bt/markers/OUTSIDE/BT_outside_3.jpg',
+          originalUrl: './images/bt/markers/OUTSIDE/BT_outside_3.jpg',
+          caption: ''
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bt/markers/OUTSIDE/BT_outside_3.jpg\'>\n        <img src=\'./images/bt/markers/OUTSIDE/BT_outside_3.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      }
+    ],
     data: {
       floor: 'ext',
       tags: ['exterior', 'outside'],
@@ -129,7 +199,31 @@ export default [
         name: 'Enter Lobby 1',
       },
     ],
-    markers: [],
+    markers: [
+      {
+        id: 'bt-ext-outside-5-marker-1789460498161',
+        position: {
+          yaw: '13.57deg',
+          pitch: '0.23deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: '',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/bt/markers/OUTSIDE/BT_outside_4.jpg',
+          originalUrl: './images/bt/markers/OUTSIDE/BT_outside_4.jpg',
+          caption: ''
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bt/markers/OUTSIDE/BT_outside_4.jpg\'>\n        <img src=\'./images/bt/markers/OUTSIDE/BT_outside_4.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      }
+    ],
     data: {
       floor: 'ext',
       tags: ['exterior', 'outside'],

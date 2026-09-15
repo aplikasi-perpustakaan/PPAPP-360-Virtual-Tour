@@ -27,7 +27,77 @@ export default [
         name: 'Go to Kids 3',
       },
     ],
-    markers: [],
+    markers: [
+      {
+        id: 'bt-f1-kids-1-marker-1789460864817',
+        position: {
+          yaw: '222.83deg',
+          pitch: '-3.34deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: '',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/bt/markers/E-SPORT/BT_esport_1.jpg',
+          originalUrl: './images/bt/markers/E-SPORT/BT_esport_1.jpg',
+          caption: ''
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bt/markers/E-SPORT/BT_esport_1.jpg\'>\n        <img src=\'./images/bt/markers/E-SPORT/BT_esport_1.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      {
+        id: 'bt-f1-kids-1-marker-1789460871368',
+        position: {
+          yaw: '242.44deg',
+          pitch: '-3.75deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: '',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/bt/markers/E-SPORT/BT_esport_2.jpg',
+          originalUrl: './images/bt/markers/E-SPORT/BT_esport_2.jpg',
+          caption: ''
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bt/markers/E-SPORT/BT_esport_2.jpg\'>\n        <img src=\'./images/bt/markers/E-SPORT/BT_esport_2.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      {
+        id: 'bt-f1-kids-1-marker-1789460883528',
+        position: {
+          yaw: '173.16deg',
+          pitch: '-38.11deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: '',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/bt/markers/E-SPORT/BT_esport_3.jpg',
+          originalUrl: './images/bt/markers/E-SPORT/BT_esport_3.jpg',
+          caption: ''
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bt/markers/E-SPORT/BT_esport_3.jpg\'>\n        <img src=\'./images/bt/markers/E-SPORT/BT_esport_3.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      }
+    ],
     data: {
       floor: 'f1',
       tags: ['kids'],
@@ -55,7 +125,100 @@ export default [
         name: 'Go to Kids 3',
       },
     ],
-    markers: [],
+    markers: [
+      {
+        id: 'bt-f1-kids-2-marker-1789460837487',
+        position: {
+          yaw: '180.78deg',
+          pitch: '-3.73deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: '',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/bt/markers/E-SPORT/BT_esport_2.jpg',
+          originalUrl: './images/bt/markers/E-SPORT/BT_esport_2.jpg',
+          caption: ''
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bt/markers/E-SPORT/BT_esport_2.jpg\'>\n        <img src=\'./images/bt/markers/E-SPORT/BT_esport_2.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      {
+        id: 'bt-f1-kids-2-marker-1789460852743',
+        position: {
+          yaw: '156.35deg',
+          pitch: '-0.48deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: '',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/bt/markers/E-SPORT/BT_esport_1.jpg',
+          originalUrl: './images/bt/markers/E-SPORT/BT_esport_1.jpg',
+          caption: ''
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bt/markers/E-SPORT/BT_esport_1.jpg\'>\n        <img src=\'./images/bt/markers/E-SPORT/BT_esport_1.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      {
+        id: 'bt-f1-kids-2-marker-1789460907305',
+        position: {
+          yaw: '208.02deg',
+          pitch: '-9.32deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: '',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/bt/markers/E-SPORT/BT_esport_5.jpg',
+          originalUrl: './images/bt/markers/E-SPORT/BT_esport_5.jpg',
+          caption: ''
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bt/markers/E-SPORT/BT_esport_5.jpg\'>\n        <img src=\'./images/bt/markers/E-SPORT/BT_esport_5.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      {
+        id: 'bt-f1-kids-2-marker-1789460953446',
+        position: {
+          yaw: '234.35deg',
+          pitch: '-17.59deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: '',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/bt/markers/E-SPORT/BT_esport_4.jpg',
+          originalUrl: './images/bt/markers/E-SPORT/BT_esport_4.jpg',
+          caption: ''
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bt/markers/E-SPORT/BT_esport_4.jpg\'>\n        <img src=\'./images/bt/markers/E-SPORT/BT_esport_4.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      }
+    ],
     data: {
       floor: 'f1',
       tags: ['kids'],
@@ -88,7 +251,31 @@ export default [
         name: 'Go to Kids 4',
       },
     ],
-    markers: [],
+    markers: [
+      {
+        id: 'bt-f1-kids-3-marker-1789460922142',
+        position: {
+          yaw: '252.69deg',
+          pitch: '-3.19deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: '',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/bt/markers/E-SPORT/BT_esport_6.jpg',
+          originalUrl: './images/bt/markers/E-SPORT/BT_esport_6.jpg',
+          caption: ''
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bt/markers/E-SPORT/BT_esport_6.jpg\'>\n        <img src=\'./images/bt/markers/E-SPORT/BT_esport_6.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      }
+    ],
     data: {
       floor: 'f1',
       tags: ['kids'],
@@ -176,7 +363,54 @@ export default [
         name: 'Go to Kids 7',
       },
     ],
-    markers: [],
+    markers: [
+      {
+        id: 'bt-f1-kids-6-marker-1789462194087',
+        position: {
+          yaw: '256.04deg',
+          pitch: '-14.50deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: '',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/bt/markers/KANAK-KANAK/BT_KNK_2.jpg',
+          originalUrl: './images/bt/markers/KANAK-KANAK/BT_KNK_2.jpg',
+          caption: ''
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bt/markers/KANAK-KANAK/BT_KNK_2.jpg\'>\n        <img src=\'./images/bt/markers/KANAK-KANAK/BT_KNK_2.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      {
+        id: 'bt-f1-kids-6-marker-1789462212574',
+        position: {
+          yaw: '98.32deg',
+          pitch: '-7.35deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: '',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/bt/markers/KANAK-KANAK/BT_KNK_3.jpg',
+          originalUrl: './images/bt/markers/KANAK-KANAK/BT_KNK_3.jpg',
+          caption: ''
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bt/markers/KANAK-KANAK/BT_KNK_3.jpg\'>\n        <img src=\'./images/bt/markers/KANAK-KANAK/BT_KNK_3.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      }
+    ],
     data: {
       floor: 'f1',
       tags: ['kids'],
@@ -214,7 +448,54 @@ export default [
         name: 'Go to Tyt 13',
       },
     ],
-    markers: [],
+    markers: [
+      {
+        id: 'bt-f1-kids-7-marker-1789462139861',
+        position: {
+          yaw: '26.58deg',
+          pitch: '-43.73deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: '',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/bt/markers/KANAK-KANAK/BT_KNK_1.jpg',
+          originalUrl: './images/bt/markers/KANAK-KANAK/BT_KNK_1.jpg',
+          caption: ''
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bt/markers/KANAK-KANAK/BT_KNK_1.jpg\'>\n        <img src=\'./images/bt/markers/KANAK-KANAK/BT_KNK_1.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      {
+        id: 'bt-f1-kids-7-marker-1789462157949',
+        position: {
+          yaw: '227.61deg',
+          pitch: '-7.02deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: '',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/bt/markers/KANAK-KANAK/BT_KNK_2.jpg',
+          originalUrl: './images/bt/markers/KANAK-KANAK/BT_KNK_2.jpg',
+          caption: ''
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bt/markers/KANAK-KANAK/BT_KNK_2.jpg\'>\n        <img src=\'./images/bt/markers/KANAK-KANAK/BT_KNK_2.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      }
+    ],
     data: {
       floor: 'f1',
       tags: ['kids'],

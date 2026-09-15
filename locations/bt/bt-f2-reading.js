@@ -87,7 +87,54 @@ export default [
         name: 'Go to Reading 4',
       },
     ],
-    markers: [],
+    markers: [
+      {
+        id: 'bt-f2-reading-3-marker-1789462321860',
+        position: {
+          yaw: '68.28deg',
+          pitch: '-27.87deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: '',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/bt/markers/FLOOR-2/BT_f2_2.jpg',
+          originalUrl: './images/bt/markers/FLOOR-2/BT_f2_2.jpg',
+          caption: ''
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bt/markers/FLOOR-2/BT_f2_2.jpg\'>\n        <img src=\'./images/bt/markers/FLOOR-2/BT_f2_2.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      {
+        id: 'bt-f2-reading-3-marker-1789462280649',
+        position: {
+          yaw: '42.75deg',
+          pitch: '-40.85deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: '',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/bt/markers/FLOOR-2/BT_f2_1.jpg',
+          originalUrl: './images/bt/markers/FLOOR-2/BT_f2_1.jpg',
+          caption: ''
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bt/markers/FLOOR-2/BT_f2_1.jpg\'>\n        <img src=\'./images/bt/markers/FLOOR-2/BT_f2_1.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      }
+    ],
     data: {
       floor: 'f2',
       tags: ['reading'],
@@ -113,7 +160,54 @@ export default [
         name: 'Go to Reading 5',
       },
     ],
-    markers: [],
+    markers: [
+      {
+        id: 'bt-f2-reading-4-marker-1789462339796',
+        position: {
+          yaw: '119.29deg',
+          pitch: '-43.77deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: '',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/bt/markers/FLOOR-2/BT_f2_3.jpg',
+          originalUrl: './images/bt/markers/FLOOR-2/BT_f2_3.jpg',
+          caption: ''
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bt/markers/FLOOR-2/BT_f2_3.jpg\'>\n        <img src=\'./images/bt/markers/FLOOR-2/BT_f2_3.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      {
+        id: 'bt-f2-reading-4-marker-1789463115057',
+        position: {
+          yaw: '313.26deg',
+          pitch: '-62.13deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: '',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/bt/markers/FLOOR-2/BT_f2_16.jpg',
+          originalUrl: './images/bt/markers/FLOOR-2/BT_f2_16.jpg',
+          caption: ''
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bt/markers/FLOOR-2/BT_f2_16.jpg\'>\n        <img src=\'./images/bt/markers/FLOOR-2/BT_f2_16.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      }
+    ],
     data: {
       floor: 'f2',
       tags: ['reading'],
@@ -222,7 +316,159 @@ export default [
         name: 'Go to Reading 9',
       },
     ],
-    markers: [],
+    markers: [
+      {
+        id: 'bt-f2-reading-8-marker-1789462772381',
+        position: {
+          yaw: '112.71deg',
+          pitch: '-26.64deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: '',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/bt/markers/FLOOR-2/BT_f2_10.jpg',
+          originalUrl: './images/bt/markers/FLOOR-2/BT_f2_10.jpg',
+          caption: ''
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bt/markers/FLOOR-2/BT_f2_10.jpg\'>\n        <img src=\'./images/bt/markers/FLOOR-2/BT_f2_10.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      {
+        id: 'bt-f2-reading-8-marker-1789462740003',
+        position: {
+          yaw: '52.72deg',
+          pitch: '-26.02deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: '',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/bt/markers/FLOOR-2/BT_f2_11.jpg',
+          originalUrl: './images/bt/markers/FLOOR-2/BT_f2_11.jpg',
+          caption: ''
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bt/markers/FLOOR-2/BT_f2_11.jpg\'>\n        <img src=\'./images/bt/markers/FLOOR-2/BT_f2_11.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      {
+        id: 'bt-f2-reading-8-marker-1789462981066',
+        position: {
+          yaw: '153.56deg',
+          pitch: '-3.39deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Fiksyen Bahasa Melayu',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'info\' data-color=\'blue\'>\n        <h2>Fiksyen Bahasa Melayu</h2>\n        <p></p>\n      </custom-marker>'
+      },
+      {
+        id: 'bt-f2-reading-8-marker-1789462994947',
+        position: {
+          yaw: '125.86deg',
+          pitch: '-0.33deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Fiksyen Bahasa Melayu',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'info\' data-color=\'blue\'>\n        <h2>Fiksyen Bahasa Melayu</h2>\n        <p></p>\n      </custom-marker>'
+      },
+      {
+        id: 'bt-f2-reading-8-marker-1789463005857',
+        position: {
+          yaw: '112.33deg',
+          pitch: '2.70deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Fiksyen Bahasa Melayu',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'info\' data-color=\'blue\'>\n        <h2>Fiksyen Bahasa Melayu</h2>\n        <p></p>\n      </custom-marker>'
+      },
+      {
+        id: 'bt-f2-reading-8-marker-1789463024537',
+        position: {
+          yaw: '82.00deg',
+          pitch: '-0.14deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Fiksyen Bahasa Tamil',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'info\' data-color=\'blue\'>\n        <h2>Fiksyen Bahasa Tamil</h2>\n        <p></p>\n      </custom-marker>'
+      },
+      {
+        id: 'bt-f2-reading-8-marker-1789463048218',
+        position: {
+          yaw: '77.45deg',
+          pitch: '-0.58deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Bahasa Inggeris 800-900',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'info\' data-color=\'blue\'>\n        <h2>Bahasa Inggeris 800-900</h2>\n        <p></p>\n      </custom-marker>'
+      }
+    ],
     data: {
       floor: 'f2',
       tags: ['reading'],
@@ -248,7 +494,77 @@ export default [
         name: 'Go to Reading 10',
       },
     ],
-    markers: [],
+    markers: [
+      {
+        id: 'bt-f2-reading-9-marker-1789462637912',
+        position: {
+          yaw: '71.19deg',
+          pitch: '-26.12deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: '',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/bt/markers/FLOOR-2/BT_f2_20.jpg',
+          originalUrl: './images/bt/markers/FLOOR-2/BT_f2_20.jpg',
+          caption: ''
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bt/markers/FLOOR-2/BT_f2_20.jpg\'>\n        <img src=\'./images/bt/markers/FLOOR-2/BT_f2_20.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      {
+        id: 'bt-f2-reading-9-marker-1789462599524',
+        position: {
+          yaw: '99.59deg',
+          pitch: '-26.82deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: '',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/bt/markers/FLOOR-2/BT_f2_15.jpg',
+          originalUrl: './images/bt/markers/FLOOR-2/BT_f2_15.jpg',
+          caption: ''
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bt/markers/FLOOR-2/BT_f2_15.jpg\'>\n        <img src=\'./images/bt/markers/FLOOR-2/BT_f2_15.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      {
+        id: 'bt-f2-reading-9-marker-1789462716003',
+        position: {
+          yaw: '130.14deg',
+          pitch: '-22.16deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: '',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/bt/markers/FLOOR-2/BT_f2_13.jpg',
+          originalUrl: './images/bt/markers/FLOOR-2/BT_f2_13.jpg',
+          caption: ''
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bt/markers/FLOOR-2/BT_f2_13.jpg\'>\n        <img src=\'./images/bt/markers/FLOOR-2/BT_f2_13.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      }
+    ],
     data: {
       floor: 'f2',
       tags: ['reading'],
@@ -362,7 +678,77 @@ export default [
         name: 'Go to Reading 14',
       },
     ],
-    markers: [],
+    markers: [
+      {
+        id: 'bt-f2-reading-13-marker-1789462463348',
+        position: {
+          yaw: '207.41deg',
+          pitch: '-25.03deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: '',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/bt/markers/FLOOR-2/BT_f2_21.jpg',
+          originalUrl: './images/bt/markers/FLOOR-2/BT_f2_21.jpg',
+          caption: ''
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bt/markers/FLOOR-2/BT_f2_21.jpg\'>\n        <img src=\'./images/bt/markers/FLOOR-2/BT_f2_21.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      {
+        id: 'bt-f2-reading-13-marker-1789462485652',
+        position: {
+          yaw: '180.41deg',
+          pitch: '-26.21deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: '',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/bt/markers/FLOOR-2/BT_f2_8.jpg',
+          originalUrl: './images/bt/markers/FLOOR-2/BT_f2_8.jpg',
+          caption: ''
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bt/markers/FLOOR-2/BT_f2_8.jpg\'>\n        <img src=\'./images/bt/markers/FLOOR-2/BT_f2_8.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      {
+        id: 'bt-f2-reading-13-marker-1789462497802',
+        position: {
+          yaw: '154.15deg',
+          pitch: '-24.47deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: '',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/bt/markers/FLOOR-2/BT_f2_7.jpg',
+          originalUrl: './images/bt/markers/FLOOR-2/BT_f2_7.jpg',
+          caption: ''
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bt/markers/FLOOR-2/BT_f2_7.jpg\'>\n        <img src=\'./images/bt/markers/FLOOR-2/BT_f2_7.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      }
+    ],
     data: {
       floor: 'f2',
       tags: ['reading'],
@@ -476,7 +862,31 @@ export default [
         name: 'Go to Reading 16',
       },
     ],
-    markers: [],
+    markers: [
+      {
+        id: 'bt-f2-reading-17-marker-1789462364083',
+        position: {
+          yaw: '312.84deg',
+          pitch: '-63.38deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: '',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/bt/markers/FLOOR-2/BT_f2_5.jpg',
+          originalUrl: './images/bt/markers/FLOOR-2/BT_f2_5.jpg',
+          caption: ''
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bt/markers/FLOOR-2/BT_f2_5.jpg\'>\n        <img src=\'./images/bt/markers/FLOOR-2/BT_f2_5.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      }
+    ],
     data: {
       floor: 'f2',
       tags: ['reading'],
