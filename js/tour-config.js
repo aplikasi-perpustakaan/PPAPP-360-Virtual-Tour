@@ -2,7 +2,7 @@ export const branches = [
   {
     id: 'pusat',
     name: 'PUSAT - Seberang Jaya',
-    startNode: 'pusat-f1-entrance',
+    startNode: 'pusat-f1-lobby-1',
     description: 'The main headquarters of the Penang Public Library Corporation, offering extensive collections, specialized references, and modern facilities.',
     address: 'JKR 2362, Jalan Perpustakaan, Seberang Jaya, 13700 Perai, Pulau Pinang',
     phone: '+604-397 1153',
