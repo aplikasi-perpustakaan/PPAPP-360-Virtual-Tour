@@ -25,7 +25,73 @@ export default [
         name: 'Go to Kids Play Corner',
       },
     ],
-    markers: [],
+    markers: [
+      {
+        id: 'bm-gf-kids-1-marker-1789465322175',
+        position: {
+          yaw: '145.98deg',
+          pitch: '-12.61deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Tandas',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'info\' data-color=\'blue\'>\n        <h2>Tandas</h2>\n        <p></p>\n      </custom-marker>'
+      },
+      {
+        id: 'bm-gf-kids-1-marker-1789465338903',
+        position: {
+          yaw: '308.11deg',
+          pitch: '-13.12deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: '',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/bm/markers/MULTIMEDIA/BTM_multimedia_3.jpg',
+          originalUrl: './images/bm/markers/MULTIMEDIA/BTM_multimedia_3.jpg',
+          caption: ''
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bm/markers/MULTIMEDIA/BTM_multimedia_3.jpg\'>\n        <img src=\'./images/bm/markers/MULTIMEDIA/BTM_multimedia_3.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      {
+        id: 'bm-gf-kids-1-marker-1789465534883',
+        position: {
+          yaw: '310.99deg',
+          pitch: '-12.54deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Sebelum Mengambil Permainan, Sila Maklumkan Kepada Staf Yang Bertugas',
+          icon: 'warning',
+          color: 'red',
+          animated: true,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'warning\' data-color=\'red\' animated>\n        <h2>Sebelum Mengambil Permainan, Sila Maklumkan Kepada Staf Yang Bertugas</h2>\n        <p></p>\n      </custom-marker>'
+      }
+    ],
     data: {
       floor: 'gf',
       tags: ['kids', 'children', 'activity', 'computers'],
@@ -46,7 +112,75 @@ export default [
         name: 'Return to Kids Activity Area',
       },
     ],
-    markers: [],
+    markers: [
+      {
+        id: 'bm-gf-kids-2-marker-1789465376003',
+        position: {
+          yaw: '91.89deg',
+          pitch: '7.53deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: '',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/bm/markers/MULTIMEDIA/BTM_multimedia_2.jpg',
+          originalUrl: './images/bm/markers/MULTIMEDIA/BTM_multimedia_2.jpg',
+          caption: ''
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bm/markers/MULTIMEDIA/BTM_multimedia_2.jpg\'>\n        <img src=\'./images/bm/markers/MULTIMEDIA/BTM_multimedia_2.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      {
+        id: 'bm-gf-kids-2-marker-1789465398234',
+        position: {
+          yaw: '266.29deg',
+          pitch: '-7.92deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: '',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/bm/markers/LOBBY/BTM_lobby_28.jpg',
+          originalUrl: './images/bm/markers/LOBBY/BTM_lobby_28.jpg',
+          caption: ''
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bm/markers/LOBBY/BTM_lobby_28.jpg\'>\n        <img src=\'./images/bm/markers/LOBBY/BTM_lobby_28.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      {
+        id: 'bm-gf-kids-2-marker-1789465461917',
+        position: {
+          yaw: '286.35deg',
+          pitch: '-5.34deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Sebelum Mengambil Permainan, Sila Maklumkan Kepada Staf Yang Bertugas',
+          icon: 'warning',
+          color: 'red',
+          animated: true,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'warning\' data-color=\'red\' animated>\n        <h2>Sebelum Mengambil Permainan, Sila Maklumkan Kepada Staf Yang Bertugas</h2>\n        <p></p>\n      </custom-marker>'
+      }
+    ],
     data: {
       floor: 'gf',
       tags: ['kids', 'play', 'toys'],
@@ -77,7 +211,29 @@ export default [
         name: 'Go to Children’s Room Passage',
       },
     ],
-    markers: [],
+    markers: [
+      {
+        id: 'bm-gf-kids-3-marker-1789465846717',
+        position: {
+          yaw: '339.33deg',
+          pitch: '-13.55deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Bahasa Melayu Kanak-Kanak',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'info\' data-color=\'blue\'>\n        <h2>Bahasa Melayu Kanak-Kanak</h2>\n        <p></p>\n      </custom-marker>'
+      }
+    ],
     data: {
       floor: 'gf',
       tags: ['kids', 'entrance', 'reading'],
@@ -176,7 +332,29 @@ export default [
         name: 'Go to Room Corner',
       },
     ],
-    markers: [],
+    markers: [
+      {
+        id: 'bm-gf-kids-7-marker-1789465803427',
+        position: {
+          yaw: '165.20deg',
+          pitch: '-22.46deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Bahasa Tamil Kanak-Kanak',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'info\' data-color=\'blue\'>\n        <h2>Bahasa Tamil Kanak-Kanak</h2>\n        <p></p>\n      </custom-marker>'
+      }
+    ],
     data: {
       floor: 'gf',
       tags: ['kids', 'passage', 'table'],
@@ -211,6 +389,27 @@ export default [
           return el;
         })(),
         anchor: 'center center',
+      },
+      {
+        id: 'bm-gf-kids-8-marker-1789465819817',
+        position: {
+          yaw: '91.09deg',
+          pitch: '-21.25deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Bahasa Cina Kanak-Kanak',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'info\' data-color=\'blue\'>\n        <h2>Bahasa Cina Kanak-Kanak</h2>\n        <p></p>\n      </custom-marker>'
       }
     ],
     data: {

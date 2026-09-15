@@ -273,32 +273,7 @@ export default [
         name: 'Go back to Outside 9',
       },
     ],
-    markers: [
-      {
-        id: 'jw-ext-outside-10-marker-1789296561111',
-        position: {
-          yaw: '320.12deg',
-          pitch: '-8.12deg'
-        },
-        size: {
-          width: 32,
-          height: 32
-        },
-        anchor: 'center center',
-        tooltip: '',
-        data: {
-          type: 'image',
-          title: '',
-          icon: 'info',
-          color: 'blue',
-          animated: false,
-          imageSrc: './images/jw/ext-outside-10/markers/thumbs/1789296556648-8ne740.jpg',
-          originalUrl: './images/jw/ext-outside-10/markers/1789296556648-8ne740.jpg',
-          caption: ''
-        },
-        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/jw/ext-outside-10/markers/1789296556648-8ne740.jpg\'>\n        <img src=\'./images/jw/ext-outside-10/markers/thumbs/1789296556648-8ne740.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
-      }
-    ],
+    markers: [],
     data: {
       floor: 'ext',
       tags: ['outside'],

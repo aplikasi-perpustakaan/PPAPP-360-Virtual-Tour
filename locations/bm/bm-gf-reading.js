@@ -23,7 +23,73 @@ export default [
         name: 'Go to Study Table 2',
       },
     ],
-    markers: [],
+    markers: [
+      {
+        id: 'bm-gf-reading-1-marker-1789464924315',
+        position: {
+          yaw: '68.32deg',
+          pitch: '-4.48deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: '',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/bm/markers/FACILITIES/BTM_facilities_1.jpg',
+          originalUrl: './images/bm/markers/FACILITIES/BTM_facilities_1.jpg',
+          caption: ''
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bm/markers/FACILITIES/BTM_facilities_1.jpg\'>\n        <img src=\'./images/bm/markers/FACILITIES/BTM_facilities_1.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      {
+        id: 'bm-gf-reading-1-marker-1789464956705',
+        position: {
+          yaw: '143.40deg',
+          pitch: '9.85deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Bahan Rujukan BM',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'info\' data-color=\'blue\'>\n        <h2>Bahan Rujukan BM</h2>\n        <p></p>\n      </custom-marker>'
+      },
+      {
+        id: 'bm-gf-reading-1-marker-1789464977129',
+        position: {
+          yaw: '332.14deg',
+          pitch: '11.43deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Novel BI',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'info\' data-color=\'blue\'>\n        <h2>Novel BI</h2>\n        <p></p>\n      </custom-marker>'
+      }
+    ],
     data: {
       floor: 'gf',
       tags: ['reading', 'books', 'stacks', 'study'],
@@ -54,7 +120,184 @@ export default [
         name: 'Enter Kids Activity Area',
       },
     ],
-    markers: [],
+    markers: [
+      {
+        id: 'bm-gf-reading-2-marker-1789465094058',
+        position: {
+          yaw: '101.36deg',
+          pitch: '-3.96deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: '',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/bm/markers/MULTIMEDIA/BTM_multimedia_1.jpg',
+          originalUrl: './images/bm/markers/MULTIMEDIA/BTM_multimedia_1.jpg',
+          caption: ''
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bm/markers/MULTIMEDIA/BTM_multimedia_1.jpg\'>\n        <img src=\'./images/bm/markers/MULTIMEDIA/BTM_multimedia_1.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      {
+        id: 'bm-gf-reading-2-marker-1789465116670',
+        position: {
+          yaw: '21.02deg',
+          pitch: '10.31deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Bukan Fiksyen',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'info\' data-color=\'blue\'>\n        <h2>Bukan Fiksyen</h2>\n        <p></p>\n      </custom-marker>'
+      },
+      
+      
+      {
+        id: 'bm-gf-reading-2-marker-1789465156250',
+        position: {
+          yaw: '25.15deg',
+          pitch: '4.17deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Bahasa Tamil',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'info\' data-color=\'blue\'>\n        <h2>Bahasa Tamil</h2>\n        <p></p>\n      </custom-marker>'
+      },
+      {
+        id: 'bm-gf-reading-2-marker-1789465167070',
+        position: {
+          yaw: '16.37deg',
+          pitch: '4.08deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Bahasa Cina',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'info\' data-color=\'blue\'>\n        <h2>Bahasa Cina</h2>\n        <p></p>\n      </custom-marker>'
+      },
+      {
+        id: 'bm-gf-reading-2-marker-1789465198290',
+        position: {
+          yaw: '346.44deg',
+          pitch: '8.90deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Bukan Fiksyen',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'info\' data-color=\'blue\'>\n        <h2>Bukan Fiksyen</h2>\n        <p></p>\n      </custom-marker>'
+      },
+      {
+        id: 'bm-gf-reading-2-marker-1789465220833',
+        position: {
+          yaw: '346.55deg',
+          pitch: '3.78deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: '',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/bm/markers/LOBBY/BTM_lobby_16.jpg',
+          originalUrl: './images/bm/markers/LOBBY/BTM_lobby_16.jpg',
+          caption: ''
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bm/markers/LOBBY/BTM_lobby_16.jpg\'>\n        <img src=\'./images/bm/markers/LOBBY/BTM_lobby_16.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      {
+        id: 'bm-gf-reading-2-marker-1789465255534',
+        position: {
+          yaw: '321.56deg',
+          pitch: '3.75deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: '',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/bm/markers/LOBBY/BTM_lobby_14.jpg',
+          originalUrl: './images/bm/markers/LOBBY/BTM_lobby_14.jpg',
+          caption: ''
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bm/markers/LOBBY/BTM_lobby_14.jpg\'>\n        <img src=\'./images/bm/markers/LOBBY/BTM_lobby_14.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      {
+        id: 'bm-gf-reading-2-marker-1789465270857',
+        position: {
+          yaw: '310.95deg',
+          pitch: '0.13deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Staff Only',
+          icon: 'no-entry',
+          color: 'red',
+          animated: true,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'no-entry\' data-color=\'red\' animated>\n        <h2>Staff Only</h2>\n        <p></p>\n      </custom-marker>'
+      }
+    ],
     data: {
       floor: 'gf',
       tags: ['reading', 'books', 'stacks', 'study'],
@@ -80,7 +323,52 @@ export default [
         name: 'Go to Book Stacks Junction',
       },
     ],
-    markers: [],
+    markers: [
+      {
+        id: 'bm-gf-reading-3-marker-1789465560604',
+        position: {
+          yaw: '241.20deg',
+          pitch: '17.82deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Buku Rujukan',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'info\' data-color=\'blue\'>\n        <h2>Buku Rujukan</h2>\n        <p></p>\n      </custom-marker>'
+      },
+      {
+        id: 'bm-gf-reading-3-marker-1789465591374',
+        position: {
+          yaw: '165.87deg',
+          pitch: '5.72deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: '',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/bm/markers/LOBBY/BTM_lobby_13.jpg',
+          originalUrl: './images/bm/markers/LOBBY/BTM_lobby_13.jpg',
+          caption: ''
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bm/markers/LOBBY/BTM_lobby_13.jpg\'>\n        <img src=\'./images/bm/markers/LOBBY/BTM_lobby_13.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      }
+    ],
     data: {
       floor: 'gf',
       tags: ['reading', 'reference', 'books', 'stacks'],
@@ -111,7 +399,52 @@ export default [
         name: 'Enter Children’s Reading Room',
       },
     ],
-    markers: [],
+    markers: [
+      {
+        id: 'bm-gf-reading-4-marker-1789465622155',
+        position: {
+          yaw: '335.77deg',
+          pitch: '13.63deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Bahan Rujukan',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'info\' data-color=\'blue\'>\n        <h2>Bahan Rujukan</h2>\n        <p></p>\n      </custom-marker>'
+      },
+      {
+        id: 'bm-gf-reading-4-marker-1789465768850',
+        position: {
+          yaw: '282.39deg',
+          pitch: '20.75deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: '',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/bm/markers/LOBBY/BTM_lobby_31.jpg',
+          originalUrl: './images/bm/markers/LOBBY/BTM_lobby_31.jpg',
+          caption: ''
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bm/markers/LOBBY/BTM_lobby_31.jpg\'>\n        <img src=\'./images/bm/markers/LOBBY/BTM_lobby_31.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      }
+    ],
     data: {
       floor: 'gf',
       tags: ['reading', 'books', 'stacks', 'junction'],
@@ -137,7 +470,29 @@ export default [
         name: 'Return to Main Lobby',
       },
     ],
-    markers: [],
+    markers: [
+      {
+        id: 'bm-gf-reading-5-marker-1789465874602',
+        position: {
+          yaw: '103.87deg',
+          pitch: '-1.95deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Staff Only',
+          icon: 'no-entry',
+          color: 'red',
+          animated: true,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'no-entry\' data-color=\'red\' animated>\n        <h2>Staff Only</h2>\n        <p></p>\n      </custom-marker>'
+      }
+    ],
     data: {
       floor: 'gf',
       tags: ['reading', 'books', 'stacks', 'return'],
