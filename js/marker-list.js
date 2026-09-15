@@ -52,11 +52,9 @@ export function initMarkerList(viewer, virtualTour, allNodes, isDebug) {
       const infoDiv = div.querySelector('.marker-list-info');
       infoDiv.addEventListener('click', () => {
         // Animate camera to marker
-        const pitch = parseFloat(markerConfig.position.pitch);
-        const yaw = parseFloat(markerConfig.position.yaw);
         viewer.animate({
-          yaw: yaw,
-          pitch: pitch,
+          yaw: markerConfig.position.yaw,
+          pitch: markerConfig.position.pitch,
           speed: '2rpm'
         }).then(() => {
           // Open edit modal by triggering PSV marker selection
