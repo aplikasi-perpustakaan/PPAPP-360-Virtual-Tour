@@ -152,6 +152,8 @@ export function initMarkerPlacer(viewer, virtualTour, allNodes, isDebug) {
         audioGroup.style.display = 'none';
         linkGroup.style.display = 'none';
         uploadGroup.style.display = 'none';
+        const galleryContainer = document.getElementById('debug-marker-gallery-container');
+        if (galleryContainer) galleryContainer.style.display = 'none';
 
         if (typeSelect.value === 'audio') {
           audioInput.value = d.audioSrc || '';
@@ -164,6 +166,7 @@ export function initMarkerPlacer(viewer, virtualTour, allNodes, isDebug) {
           contentInput.setAttribute('data-original', d.originalUrl || parsed.url || '');
           contentGroup.style.display = 'flex';
           uploadGroup.style.display = 'flex';
+          if (galleryContainer) galleryContainer.style.display = 'flex';
           loadGallery();
         } else {
           contentInput.value = d.content || parsed.content || '';
@@ -254,9 +257,9 @@ export function initMarkerPlacer(viewer, virtualTour, allNodes, isDebug) {
        // Just update highlighting based on current input value
        Array.from(gallery.children).forEach(img => {
           if (img.src.endsWith(contentInput.value.replace('./', '/'))) {
-             img.style.border = '1px solid var(--color-accent-blue)';
+             img.style.border = '2px solid var(--color-accent-blue)';
           } else {
-             img.style.border = '1px solid transparent';
+             img.style.border = '2px solid transparent';
           }
        });
        return;
@@ -279,15 +282,15 @@ export function initMarkerPlacer(viewer, virtualTour, allNodes, isDebug) {
         const img = document.createElement('img');
         img.src = imgData.thumbUrl;
         img.style.width = '100%';
-        img.style.height = '40px';
+        img.style.height = '80px';
         img.style.objectFit = 'cover';
         img.style.cursor = 'pointer';
-        img.style.borderRadius = '3px';
-        img.style.border = '1px solid transparent';
+        img.style.borderRadius = '4px';
+        img.style.border = '2px solid transparent';
         img.title = imgData.originalUrl.split('/').pop();
         
         if (imgData.thumbUrl === contentInput.value || imgData.originalUrl === contentInput.value) {
-            img.style.border = '1px solid var(--color-accent-blue)';
+            img.style.border = '2px solid var(--color-accent-blue)';
         }
         
         img.addEventListener('click', () => {
@@ -296,8 +299,8 @@ export function initMarkerPlacer(viewer, virtualTour, allNodes, isDebug) {
           showToast('✅ Image selected from gallery');
           
           // Highlight selection
-          Array.from(gallery.children).forEach(c => c.style.border = '1px solid transparent');
-          img.style.border = '1px solid var(--color-accent-blue)';
+          Array.from(gallery.children).forEach(c => c.style.border = '2px solid transparent');
+          img.style.border = '2px solid var(--color-accent-blue)';
         });
         
         gallery.appendChild(img);
@@ -313,6 +316,8 @@ export function initMarkerPlacer(viewer, virtualTour, allNodes, isDebug) {
     audioGroup.style.display = 'none';
     linkGroup.style.display = 'none';
     uploadGroup.style.display = 'none';
+    const galleryContainer = document.getElementById('debug-marker-gallery-container');
+    if (galleryContainer) galleryContainer.style.display = 'none';
 
     if (typeSelect.value === 'audio') {
       audioGroup.style.display = 'flex';
@@ -321,6 +326,7 @@ export function initMarkerPlacer(viewer, virtualTour, allNodes, isDebug) {
     } else if (typeSelect.value === 'image') {
       contentGroup.style.display = 'flex';
       uploadGroup.style.display = 'flex';
+      if (galleryContainer) galleryContainer.style.display = 'flex';
       loadGallery();
     } else {
       contentGroup.style.display = 'flex';

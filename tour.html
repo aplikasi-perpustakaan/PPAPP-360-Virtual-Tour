@@ -83,102 +83,111 @@
   </div>
 
   <div id="debug-marker-modal" class="debug-modal">
-    <div class="debug-modal-panel glass-panel">
-      <h3>Add New Marker</h3>
-      <input type="hidden" id="debug-marker-id" />
-      <div style="display:flex; gap:10px;">
-        <div class="debug-form-group" style="flex:1;">
-          <label for="debug-marker-type">Marker Type:</label>
-          <select id="debug-marker-type">
-            <option value="info">Info (Text / HTML)</option>
-            <option value="audio">Audio</option>
-            <option value="image">Image</option>
-            <option value="link">External Link</option>
-          </select>
-        </div>
-        <div class="debug-form-group" style="flex:1;">
-          <label for="debug-marker-size">Size:</label>
-          <select id="debug-marker-size">
-            <option value="32">Small</option>
-            <option value="44" selected>Medium</option>
-            <option value="56">Large</option>
-          </select>
-        </div>
-      </div>
+    <div style="display: flex; flex-direction: row; gap: 16px; max-width: 95vw; max-height: 90vh; align-items: stretch;">
       
-      <div style="display:flex; gap:10px;">
-        <div class="debug-form-group" style="flex:1;">
-          <label for="debug-marker-icon">Icon:</label>
-          <select id="debug-marker-icon">
-            <option value="info">Info (i)</option>
-            <option value="star">Star (⭐)</option>
-            <option value="warning">Warning (⚠️)</option>
-            <option value="pin">Map Pin (📍)</option>
-          </select>
-        </div>
-        <div class="debug-form-group" style="flex:1;">
-          <label for="debug-marker-color">Color Theme:</label>
-          <select id="debug-marker-color">
-            <option value="blue">Accent Blue</option>
-            <option value="gold">Accent Gold</option>
-            <option value="red">Warning Red</option>
-            <option value="green">Safe Green</option>
-          </select>
-        </div>
-      </div>
-
-      <div class="debug-form-group" style="flex-direction:row; align-items:center; gap:8px;">
-        <input type="checkbox" id="debug-marker-anim" style="width:auto; margin:0; cursor:pointer;" />
-        <label for="debug-marker-anim" style="margin:0; font-size:14px; cursor:pointer; color:var(--color-offwhite);">Animate (Attention Pulse)</label>
-      </div>
-
-      <div class="debug-form-group">
-        <label for="debug-marker-title">Tooltip / Title:</label>
-        <input type="text" id="debug-marker-title" placeholder="Hover text" />
-      </div>
-      
-      <div class="debug-form-group" id="debug-marker-content-group">
-        <label>Content (HTML):</label>
-        <div class="debug-rt-toolbar">
-          <button type="button" class="rt-btn" data-tag="b" title="Bold"><b>B</b></button>
-          <button type="button" class="rt-btn" data-tag="i" title="Italic"><i>I</i></button>
-          <button type="button" class="rt-btn" data-tag="br" title="Line Break">↵</button>
-        </div>
-        <textarea id="debug-marker-content" rows="3" placeholder="Information goes here" style="border-top-left-radius:0; border-top-right-radius:0;"></textarea>
-      </div>
-      
-      <div class="debug-form-group" id="debug-marker-audio-group" style="display:none;">
-        <label for="debug-marker-audio">Audio File path:</label>
-        <input type="text" id="debug-marker-audio" placeholder="./audio/narration/file.mp3" />
-      </div>
-      
-      <div class="debug-form-group" id="debug-marker-link-group" style="display:none;">
-        <label for="debug-marker-link">External URL:</label>
-        <input type="text" id="debug-marker-link" placeholder="https://example.com" />
-      </div>
-
-      <div class="debug-form-group" id="debug-marker-image-upload-group" style="display:none;">
-        <label>Image Source:</label>
-        <div style="display:flex; gap:8px;">
-          <input type="file" id="debug-marker-image-file" accept="image/*" style="flex:1; background:rgba(10,22,40,0.6); color:white; padding:4px; border-radius:var(--radius-sm); border:1px solid var(--glass-border);" />
-          <button type="button" id="debug-marker-upload-btn" class="debug-save-btn">Upload</button>
-        </div>
-        <div style="margin-top: 10px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 10px;" id="debug-marker-gallery-container">
-          <label style="font-size: 12px; margin-bottom: 5px; display: block;">Or select from gallery:</label>
-          <div id="debug-marker-gallery" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(60px, 1fr)); gap: 8px; max-height: 120px; overflow-y: auto; background: rgba(0,0,0,0.2); padding: 8px; border-radius: 4px;">
-            <!-- Thumbnails injected here -->
+      <!-- Main Form Panel -->
+      <div class="debug-modal-panel glass-panel" style="max-height: 100%; width: 420px; flex-shrink: 0;">
+        <h3>Add New Marker</h3>
+        <input type="hidden" id="debug-marker-id" />
+        <div style="display:flex; gap:10px;">
+          <div class="debug-form-group" style="flex:1;">
+            <label for="debug-marker-type">Marker Type:</label>
+            <select id="debug-marker-type">
+              <option value="info">Info (Text / HTML)</option>
+              <option value="audio">Audio</option>
+              <option value="image">Image</option>
+              <option value="link">External Link</option>
+            </select>
+          </div>
+          <div class="debug-form-group" style="flex:1;">
+            <label for="debug-marker-size">Size:</label>
+            <select id="debug-marker-size">
+              <option value="32">Small</option>
+              <option value="44" selected>Medium</option>
+              <option value="56">Large</option>
+            </select>
           </div>
         </div>
+        
+        <div style="display:flex; gap:10px;">
+          <div class="debug-form-group" style="flex:1;">
+            <label for="debug-marker-icon">Icon:</label>
+            <select id="debug-marker-icon">
+              <option value="info">Info (i)</option>
+              <option value="star">Star (⭐)</option>
+              <option value="warning">Warning (⚠️)</option>
+              <option value="pin">Map Pin (📍)</option>
+            </select>
+          </div>
+          <div class="debug-form-group" style="flex:1;">
+            <label for="debug-marker-color">Color Theme:</label>
+            <select id="debug-marker-color">
+              <option value="blue">Accent Blue</option>
+              <option value="gold">Accent Gold</option>
+              <option value="red">Warning Red</option>
+              <option value="green">Safe Green</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="debug-form-group" style="flex-direction:row; align-items:center; gap:8px;">
+          <input type="checkbox" id="debug-marker-anim" style="width:auto; margin:0; cursor:pointer;" />
+          <label for="debug-marker-anim" style="margin:0; font-size:14px; cursor:pointer; color:var(--color-offwhite);">Animate (Attention Pulse)</label>
+        </div>
+
+        <div class="debug-form-group">
+          <label for="debug-marker-title">Tooltip / Title:</label>
+          <input type="text" id="debug-marker-title" placeholder="Hover text" />
+        </div>
+        
+        <div class="debug-form-group" id="debug-marker-content-group">
+          <label>Content (HTML):</label>
+          <div class="debug-rt-toolbar">
+            <button type="button" class="rt-btn" data-tag="b" title="Bold"><b>B</b></button>
+            <button type="button" class="rt-btn" data-tag="i" title="Italic"><i>I</i></button>
+            <button type="button" class="rt-btn" data-tag="br" title="Line Break">↵</button>
+          </div>
+          <textarea id="debug-marker-content" rows="3" placeholder="Information goes here" style="border-top-left-radius:0; border-top-right-radius:0;"></textarea>
+        </div>
+        
+        <div class="debug-form-group" id="debug-marker-audio-group" style="display:none;">
+          <label for="debug-marker-audio">Audio File path:</label>
+          <input type="text" id="debug-marker-audio" placeholder="./audio/narration/file.mp3" />
+        </div>
+        
+        <div class="debug-form-group" id="debug-marker-link-group" style="display:none;">
+          <label for="debug-marker-link">External URL:</label>
+          <input type="text" id="debug-marker-link" placeholder="https://example.com" />
+        </div>
+
+        <div class="debug-form-group" id="debug-marker-image-upload-group" style="display:none;">
+          <label>Image Source:</label>
+          <div style="display:flex; gap:8px;">
+            <input type="file" id="debug-marker-image-file" accept="image/*" style="flex:1; background:rgba(10,22,40,0.6); color:white; padding:4px; border-radius:var(--radius-sm); border:1px solid var(--glass-border);" />
+            <button type="button" id="debug-marker-upload-btn" class="debug-save-btn">Upload</button>
+          </div>
+        </div>
+
+        <div class="debug-form-actions" style="flex-wrap: wrap; gap: 8px;">
+          <button id="debug-marker-delete" class="debug-cancel-btn" style="background: rgba(220,53,69,0.3); border-color: #dc3545; display: none;">🗑️ Delete</button>
+          <button id="debug-marker-move" class="debug-save-btn" style="background: rgba(255,193,7,0.3); border-color: #ffc107; display: none;">📍 Reposition (Drop)</button>
+          <button id="debug-marker-duplicate" class="debug-save-btn" style="background: rgba(23,162,184,0.3); border-color: #17a2b8; display: none;">📄 Duplicate</button>
+          <button id="debug-marker-copy-style" class="debug-btn" style="display: none;">🎨 Copy Style</button>
+          <div style="flex-grow: 1;"></div>
+          <button id="debug-marker-cancel" class="debug-cancel-btn">Cancel</button>
+          <button id="debug-marker-save" class="debug-save-btn">Save</button>
+        </div>
       </div>
-      <div class="debug-form-actions" style="flex-wrap: wrap; gap: 8px;">
-        <button id="debug-marker-delete" class="debug-cancel-btn" style="background: rgba(220,53,69,0.3); border-color: #dc3545; display: none;">🗑️ Delete</button>
-        <button id="debug-marker-move" class="debug-save-btn" style="background: rgba(255,193,7,0.3); border-color: #ffc107; display: none;">📍 Reposition (Drop)</button>
-        <button id="debug-marker-duplicate" class="debug-save-btn" style="background: rgba(23,162,184,0.3); border-color: #17a2b8; display: none;">📄 Duplicate</button>
-        <button id="debug-marker-copy-style" class="debug-btn" style="display: none;">🎨 Copy Style</button>
-        <div style="flex-grow: 1;"></div>
-        <button id="debug-marker-cancel" class="debug-cancel-btn">Cancel</button>
-        <button id="debug-marker-save" class="debug-save-btn">Save</button>
+      
+      <!-- Side panel for gallery -->
+      <div class="debug-modal-panel glass-panel" id="debug-marker-gallery-container" style="display:none; width: 500px; max-height: 100%; flex-direction: column;">
+        <h3 style="margin-bottom: 5px;">Image Gallery</h3>
+        <p style="font-size: 13px; color: var(--color-offwhite); opacity: 0.8; margin: 0 0 15px 0;">Select an existing image from this branch's directory.</p>
+        <div id="debug-marker-gallery" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(110px, 1fr)); gap: 10px; overflow-y: auto; padding-right: 5px; flex: 1; align-content: flex-start;">
+          <!-- Thumbnails injected here -->
+        </div>
       </div>
+      
     </div>
   </div>
 
