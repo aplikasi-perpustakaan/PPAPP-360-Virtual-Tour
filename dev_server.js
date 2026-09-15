@@ -493,7 +493,7 @@ const server = http.createServer((req, res) => {
   }
 
   // Static file serving
-  let urlPath = req.url.split('?')[0];
+  let urlPath = decodeURIComponent(req.url.split('?')[0]);
   let filePath = path.join(__dirname, urlPath === '/' ? 'index.html' : urlPath);
   
   const extname = String(path.extname(filePath)).toLowerCase();
