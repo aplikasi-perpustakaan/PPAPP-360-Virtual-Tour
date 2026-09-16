@@ -20,7 +20,29 @@ export default [
         name: 'Go to Outside 8'
       },
     ],
-    markers: [],
+    markers: [
+      {
+        id: 'gt-f1-main-area-1-marker-1789540403193',
+        position: {
+          yaw: '282.10deg',
+          pitch: '-2.50deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Free books for users and anyone to take.',
+          icon: 'info',
+          color: 'blue',
+          animated: true,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'info\' data-color=\'blue\' animated>\n        <h2>Free books for users and anyone to take.</h2>\n        <p></p>\n      </custom-marker>'
+      }
+    ],
     data: {
       floor: 'f1',
       tags: ['main'],
@@ -212,6 +234,27 @@ export default [
           caption: ''
         },
         html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/gt/markers/GT_lobby_1.jpg\'>\n        <img src=\'./images/gt/markers/GT_lobby_1.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      {
+        id: 'gt-f1-main-area-6-marker-1789540429010',
+        position: {
+          yaw: '189.74deg',
+          pitch: '-8.50deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Staff Only',
+          icon: 'info',
+          color: 'red',
+          animated: true,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'info\' data-color=\'red\' animated>\n        <h2>Staff Only</h2>\n        <p></p>\n      </custom-marker>'
       }
     ],
     data: {
@@ -1248,10 +1291,10 @@ export default [
         html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/gt/markers/GT_reading_1.jpg\'>\n        <img src=\'./images/gt/markers/GT_reading_1.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
       },
       {
-        id: 'gt-f1-main-area-22-marker-1789536157515',
+        id: 'gt-f1-main-area-22-marker-1789540555230',
         position: {
-          yaw: '52.60deg',
-          pitch: '-1.02deg'
+          yaw: '50.77deg',
+          pitch: '-7.79deg'
         },
         size: {
           width: 44,
@@ -1260,13 +1303,13 @@ export default [
         anchor: 'center center',
         data: {
           type: 'info',
-          title: 'Kakitangan sahaja',
+          title: 'Staff Only',
           icon: 'no-entry',
           color: 'red',
-          animated: false,
+          animated: true,
           content: ''
         },
-        html: '<custom-marker type=\'info\' data-icon=\'no-entry\' data-color=\'red\'>\n        <h2>Kakitangan sahaja</h2>\n        <p></p>\n      </custom-marker>'
+        html: '<custom-marker type=\'info\' data-icon=\'no-entry\' data-color=\'red\' animated>\n        <h2>Staff Only</h2>\n        <p></p>\n      </custom-marker>'
       }
     ],
     data: {
@@ -1493,7 +1536,50 @@ export default [
         name: 'Go to Main Area 63'
       },
     ],
-    markers: [],
+    markers: [
+      {
+        id: 'gt-f1-main-area-30-marker-1789540516739',
+        position: {
+          yaw: '13.08deg',
+          pitch: '-3.49deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Staff Only',
+          icon: 'no-entry',
+          color: 'red',
+          animated: true,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'no-entry\' data-color=\'red\' animated>\n        <h2>Staff Only</h2>\n        <p></p>\n      </custom-marker>'
+      },
+      {
+        id: 'gt-f1-main-area-30-marker-1789540528963',
+        position: {
+          yaw: '355.83deg',
+          pitch: '-3.63deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: '',
+          icon: 'no-entry',
+          color: 'red',
+          animated: true,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'no-entry\' data-color=\'red\' animated>\n        <h2></h2>\n        <p></p>\n      </custom-marker>'
+      }
+    ],
     data: {
       floor: 'f1',
       tags: ['main'],
@@ -1696,7 +1782,29 @@ export default [
         name: 'Go to Main Area 68'
       },
     ],
-    markers: [],
+    markers: [
+      {
+        id: 'gt-f1-main-area-67-marker-1789540496633',
+        position: {
+          yaw: '355.24deg',
+          pitch: '-8.05deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Staff Only',
+          icon: 'no-entry',
+          color: 'red',
+          animated: true,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'no-entry\' data-color=\'red\' animated>\n        <h2>Staff Only</h2>\n        <p></p>\n      </custom-marker>'
+      }
+    ],
     data: {
       floor: 'f1',
       tags: ['main'],

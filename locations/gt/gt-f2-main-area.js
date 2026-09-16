@@ -700,7 +700,29 @@ export default [
         name: 'Go to Main Area 17'
       },
     ],
-    markers: [],
+    markers: [
+      {
+        id: 'gt-f2-main-area-18-marker-1789540605773',
+        position: {
+          yaw: '306.26deg',
+          pitch: '-5.23deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Staff Only',
+          icon: 'no-entry',
+          color: 'red',
+          animated: true,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'no-entry\' data-color=\'red\' animated>\n        <h2>Staff Only</h2>\n        <p></p>\n      </custom-marker>'
+      }
+    ],
     data: {
       floor: 'f2',
       tags: ['main'],
@@ -760,7 +782,29 @@ export default [
         name: 'Go to Main Area 26'
       },
     ],
-    markers: [],
+    markers: [
+      {
+        id: 'gt-f2-main-area-20-marker-1789540620982',
+        position: {
+          yaw: '15.19deg',
+          pitch: '-1.58deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Staff Only',
+          icon: 'no-entry',
+          color: 'red',
+          animated: true,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'no-entry\' data-color=\'red\' animated>\n        <h2>Staff Only</h2>\n        <p></p>\n      </custom-marker>'
+      }
+    ],
     data: {
       floor: 'f2',
       tags: ['main'],
@@ -911,6 +955,48 @@ export default [
           caption: ''
         },
         html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/gt/markers/GT_facilities_4.jpg\'>\n        <img src=\'./images/gt/markers/GT_facilities_4.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      {
+        id: 'gt-f2-main-area-22-marker-1789540635716',
+        position: {
+          yaw: '278.08deg',
+          pitch: '-8.86deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Staff Only',
+          icon: 'no-entry',
+          color: 'red',
+          animated: true,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'no-entry\' data-color=\'red\' animated>\n        <h2>Staff Only</h2>\n        <p></p>\n      </custom-marker>'
+      },
+      {
+        id: 'gt-f2-main-area-22-marker-1789540670820',
+        position: {
+          yaw: '324.39deg',
+          pitch: '-7.52deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Staff Only',
+          icon: 'no-entry',
+          color: 'red',
+          animated: true,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'no-entry\' data-color=\'red\' animated>\n        <h2>Staff Only</h2>\n        <p></p>\n      </custom-marker>'
       }
     ],
     data: {
@@ -966,7 +1052,29 @@ export default [
         name: 'Go to Main Area 25'
       },
     ],
-    markers: [],
+    markers: [
+      {
+        id: 'gt-f2-main-area-24-marker-1789540650700',
+        position: {
+          yaw: '45.11deg',
+          pitch: '-5.34deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Staff Only',
+          icon: 'no-entry',
+          color: 'red',
+          animated: true,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'no-entry\' data-color=\'red\' animated>\n        <h2>Staff Only</h2>\n        <p></p>\n      </custom-marker>'
+      }
+    ],
     data: {
       floor: 'f2',
       tags: ['main'],

@@ -459,7 +459,29 @@ export default [
         name: 'Go to Exterior – Outside 12',
       }
     ],
-    markers: [],
+    markers: [
+      {
+        id: 'gt-ext-outside-11-marker-1789540336348',
+        position: {
+          yaw: '46.32deg',
+          pitch: '-2.06deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Closed',
+          icon: 'no-entry',
+          color: 'red',
+          animated: true,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'no-entry\' data-color=\'red\' animated>\n        <h2>Closed</h2>\n        <p></p>\n      </custom-marker>'
+      }
+    ],
     data: {
       floor: 'ext',
       tags: ['outside'],
