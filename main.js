@@ -81,7 +81,6 @@ async function bootstrap() {
     let defaultNodes = module.default;
     
     // 4. Validate if the requested node exists in the loaded branch
-    const branchConfig = branches.find(b => b.id === defaultBranch);
     const configuredStartNodeId = branchConfig ? branchConfig.startNode : defaultNodes[0].id;
     let startNodeId = defaultNodes.some(node => node.id === configuredStartNodeId)
       ? configuredStartNodeId
