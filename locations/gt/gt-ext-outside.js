@@ -74,27 +74,6 @@ export default [
     ],
     markers: [
       {
-        id: 'gt-ext-outside-3-marker-1789530795545',
-        position: {
-          yaw: '23.06deg',
-          pitch: '3.84deg'
-        },
-        size: {
-          width: 44,
-          height: 44
-        },
-        anchor: 'center center',
-        data: {
-          type: 'info',
-          title: '',
-          icon: 'info',
-          color: 'blue',
-          animated: false,
-          content: './images/gt/markers/GT_outside_7.jpg'
-        },
-        html: '<custom-marker type=\'info\' data-icon=\'info\' data-color=\'blue\'>\n        <h2></h2>\n        <p>./images/gt/markers/GT_outside_7.jpg</p>\n      </custom-marker>'
-      },
-      {
         id: 'gt-ext-outside-3-marker-1789530821157',
         position: {
           yaw: '34.42deg',
@@ -116,6 +95,29 @@ export default [
           caption: ''
         },
         html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/gt/markers/GT_outside_6.jpg\'>\n        <img src=\'./images/gt/markers/GT_outside_6.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      {
+        id: 'gt-ext-outside-3-marker-1789530795545',
+        position: {
+          yaw: '23.86deg',
+          pitch: '-15.36deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: '',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/gt/markers/GT_outside_7.jpg',
+          originalUrl: './images/gt/markers/GT_reference_1.jpg',
+          caption: ''
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/gt/markers/GT_reference_1.jpg\'>\n        <img src=\'./images/gt/markers/GT_outside_7.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
       }
     ],
     data: {
@@ -559,7 +561,31 @@ export default [
         name: 'Go to Exterior – Outside 14',
       }
     ],
-    markers: [],
+    markers: [
+      {
+        id: 'gt-ext-outside-15-marker-1789536495797',
+        position: {
+          yaw: '357.17deg',
+          pitch: '5.03deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: '',
+          icon: 'star',
+          color: 'gold',
+          animated: false,
+          imageSrc: './images/gt/markers/GT_landscape_1.jpg',
+          originalUrl: './images/gt/markers/GT_landscape_1.jpg',
+          caption: ''
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'star\' data-color=\'gold\' data-url=\'./images/gt/markers/GT_landscape_1.jpg\'>\n        <img src=\'./images/gt/markers/GT_landscape_1.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      }
+    ],
     data: {
       floor: 'ext',
       tags: ['outside'],
