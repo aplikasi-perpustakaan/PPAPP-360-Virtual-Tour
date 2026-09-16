@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="PPAPP 360° Virtual Tour - Branch Detail">
+  <title>PPK - Lounge@Komtar - PPAPP 360° Virtual Tour</title>
+  <link rel="icon" type="image/png" href="./favicon.png" />
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./branch.css">
+  <link rel="stylesheet" href="./vendor/@photo-sphere-viewer/core/index.min.css" />
+  
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "./vendor/three/build/three.module.min.js",
+        "@photo-sphere-viewer/core": "./vendor/@photo-sphere-viewer/core/index.module.js",
+        "@photo-sphere-viewer/autorotate-plugin": "./vendor/@photo-sphere-viewer/autorotate-plugin/index.module.js"
+      }
+    }
+  </script>
+</head>
+<body class="branch-body">
+  <header class="branch-header">
+    <a href="./index.html" class="back-button glass-panel">&larr; Back to Branches</a>
+    <div class="logo-container">
+      <img src="./favicon.png" alt="PPAPP Logo" class="branch-logo">
+      <h1>PPAPP 360° Virtual Tour</h1>
+    </div>
+  </header>
+
+  <main class="branch-main">
+    
+    
+    <div id="branch-content">
+      <section class="hero-section glass-panel">
+        <div id="hero-viewer-container" class="hero-viewer-container"></div>
+        <div class="hero-overlay">
+          <h2 id="branch-name">PPK - Lounge@Komtar</h2>
+          <a id="start-tour-btn" href="./tour.html?scene=ppk-lounge-1" class="primary-btn">Start 360° Tour</a>
+        </div>
+      </section>
+
+      <div class="branch-grid">
+        <section class="info-section glass-panel">
+          <h3>About</h3>
+          <p id="branch-description">A premium, modern reading lounge located in the iconic Komtar tower.</p>
+          
+          <div class="info-item">
+            <strong>Address:</strong>
+            <p id="branch-address">Level 3, Komtar, 10000 George Town, Pulau Pinang</p>
+          </div>
+          
+          <div class="info-item">
+            <strong>Phone:</strong>
+            <p id="branch-phone">+604-261 1153</p>
+          </div>
+          
+          <div class="info-item">
+            <strong>Email:</strong>
+            <p id="branch-email">ppk@penanglib.gov.my</p>
+          </div>
+          
+          <div class="info-item">
+            <strong>Operating Hours:</strong>
+            <p id="branch-hours">Mon - Fri: 9:00 AM - 5:00 PM (Closed Weekends & Public Holidays)</p>
+          </div>
+        </section>
+
+        <section class="facilities-section glass-panel">
+          <h3>Facilities</h3>
+          <ul id="branch-facilities" class="facilities-list">
+            <li>Free Wi-Fi</li><li>Premium Lounge</li><li>Digital Library Kiosks</li>
+          </ul>
+        </section>
+      </div>
+
+      <section class="quick-links-section glass-panel">
+        <h3>Quick Jump</h3>
+        <p>Start the tour directly from these popular areas:</p>
+        <div id="quick-links-grid" class="quick-links-grid">
+          <!-- Injected via JS -->
+        </div>
+      </section>
+
+      <section id="map-section" class="map-section glass-panel is-hidden">
+        <h3>Floor Plan</h3>
+        <img id="branch-map" src="" alt="Floor Plan" class="floor-plan-img">
+      </section>
+    </div>
+  </main>
+
+  <footer class="branch-footer">
+    <p>&copy; 2026 Perbadanan Perpustakaan Awam Pulau Pinang</p>
+  </footer>
+
+  <script>window.BRANCH_ID = 'ppk';</script>
+  <script type="module" src="./branch.js"></script>
+</body>
+</html>

@@ -2,6 +2,7 @@ import { branches } from './js/tour-config.js';
 
 async function initFrontpage() {
   const branchesGrid = document.getElementById('branches-grid');
+  const featuredBranch = document.getElementById('featured-branch');
   let allScenes = [];
 
   // Load all branch data
@@ -17,18 +18,20 @@ async function initFrontpage() {
       
       // Build card
       const card = document.createElement('a');
-      card.href = `./branch.html?id=${branch.id}`;
-      card.className = 'branch-card glass-panel';
-      card.innerHTML = `
-        <div class="card-image-container">
-          <img src="${startNode.thumbnail || './images/shared/placeholder.jpg'}" alt="${branch.name}" loading="lazy" onerror="this.src='./images/shared/placeholder.jpg'">
-        </div>
-        <div class="card-content">
-          <h3>${branch.name}</h3>
-          <p>${scenes.length} Scenes</p>
-        </div>
-      `;
-      branchesGrid.appendChild(card);
+      card.href = `./${branch.id}.html`;
+      
+      // No special featured branch layout, everything goes in the grid
+        card.className = 'branch-card';
+        card.innerHTML = `
+          <div class="card-image-container">
+            <img src="${startNode.thumbnail || './images/shared/placeholder.jpg'}" alt="${branch.name}" loading="lazy" onerror="this.src='./images/shared/placeholder.jpg'">
+            <div class="card-overlay">
+              <span class="take-tour-text">TAKE A TOUR</span>
+              <span class="branch-name">${branch.name}</span>
+            </div>
+          </div>
+        `;
+        branchesGrid.appendChild(card);
     } catch (e) {
       console.error(`Failed to load branch ${branch.id}:`, e);
     }
@@ -54,7 +57,7 @@ async function initFrontpage() {
 
       if (matches.length > 0) {
         searchResults.innerHTML = matches.map(branch => `
-          <a href="./branch.html?id=${branch.id}" class="search-result-item">
+          <a href="./${branch.id}.html" class="search-result-item">
             <img src="${branch._thumbnail || './images/shared/placeholder.jpg'}" alt="" onerror="this.src='./images/shared/placeholder.jpg'">
             <div>
               <h4>${branch.name}</h4>

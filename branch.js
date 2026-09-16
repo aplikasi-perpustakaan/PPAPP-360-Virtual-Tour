@@ -2,8 +2,7 @@ import { branches } from './js/tour-config.js';
 import { Viewer } from '@photo-sphere-viewer/core';
 import { AutorotatePlugin } from '@photo-sphere-viewer/autorotate-plugin';
 async function initBranchPage() {
-  const params = new URLSearchParams(window.location.search);
-  const branchId = params.get('id');
+  const branchId = window.BRANCH_ID || new URLSearchParams(window.location.search).get('id');
 
   if (!branchId) {
     window.location.href = './index.html';

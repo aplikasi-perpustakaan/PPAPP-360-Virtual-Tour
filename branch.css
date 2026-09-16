@@ -11,28 +11,35 @@
 }
 
 .branch-header {
-  position: relative;
-  text-align: center;
-  padding: 40px 20px 30px;
-  background: rgba(10, 22, 40, 0.6);
-  border-bottom: 1px solid var(--glass-border);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+  background: var(--color-navy);
+  color: var(--color-white);
+  padding: 22px 24px 18px;
+  border-bottom: none;
+  box-shadow: none;
 }
 
 .back-button {
-  position: absolute;
-  top: 20px;
-  left: 20px;
+  background: transparent;
+  border: 2px solid var(--color-white);
+  color: var(--color-white);
   padding: 8px 16px;
   text-decoration: none;
-  color: var(--color-white);
-  font-size: 0.9rem;
-  border-radius: var(--radius-md);
-  transition: background var(--transition-fast);
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-weight: 600;
+  transition: background .1s ease, color .1s ease;
+  margin-bottom: 10px;
 }
 
 .back-button:hover {
-  background: rgba(45, 108, 223, 0.4);
+  background: var(--color-white);
+  color: var(--color-navy);
 }
 
 .logo-container {
@@ -45,7 +52,6 @@
 .branch-logo {
   width: 50px;
   height: auto;
-  filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.1));
 }
 
 .branch-header h1 {
@@ -73,7 +79,6 @@
   position: relative;
   height: 300px;
   overflow: hidden;
-  border-radius: var(--radius-lg);
   margin-bottom: var(--space-xl);
   padding: 0;
 }
@@ -122,15 +127,20 @@
   padding: 12px 30px;
   font-size: 1.1rem;
   text-decoration: none;
-  border-radius: 30px;
   font-weight: bold;
-  box-shadow: 0 4px 15px rgba(45, 108, 223, 0.4);
-  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+  border: none;
+  border-radius: 30px; /* Modern pill shape */
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.4);
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast), background var(--transition-fast);
 }
 
 .primary-btn:hover {
+  background: var(--color-black);
+  color: var(--color-white);
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(45, 108, 223, 0.6);
+  box-shadow: 0 6px 16px rgba(37, 99, 235, 0.6);
 }
 
 /* Grid Layout */
@@ -143,21 +153,23 @@
 
 .info-section, .facilities-section, .quick-links-section, .map-section {
   padding: var(--space-lg);
-  border-radius: var(--radius-md);
+  background: var(--color-white);
+  color: var(--color-steel);
 }
 
 .info-section h3, .facilities-section h3, .quick-links-section h3, .map-section h3 {
-  color: var(--color-accent-gold);
+  color: var(--color-navy);
   margin-top: 0;
   margin-bottom: var(--space-md);
   font-size: 1.3rem;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 2px solid var(--color-accent-gold);
   padding-bottom: 8px;
+  text-transform: uppercase;
 }
 
 .info-section p {
   line-height: 1.6;
-  color: var(--color-offwhite);
+  color: var(--color-steel);
   margin-bottom: var(--space-md);
 }
 
@@ -174,7 +186,8 @@
 
 .info-item p {
   margin: 0;
-  color: var(--color-white);
+  color: var(--color-navy);
+  font-weight: 600;
 }
 
 /* Facilities */
@@ -186,7 +199,7 @@
 
 .facilities-list li {
   padding: 8px 0;
-  color: var(--color-offwhite);
+  color: var(--color-steel);
   display: flex;
   align-items: center;
   gap: 10px;
@@ -194,7 +207,7 @@
 
 .facilities-list li::before {
   content: '✓';
-  color: var(--color-accent-blue);
+  color: var(--color-accent-gold);
   font-weight: bold;
 }
 
@@ -214,16 +227,18 @@
   display: flex;
   flex-direction: column;
   text-decoration: none;
-  border-radius: var(--radius-sm);
   overflow: hidden;
-  background: rgba(28, 35, 51, 0.8);
-  border: 1px solid var(--glass-border);
-  transition: transform var(--transition-fast), border-color var(--transition-fast);
+  background: var(--color-accent-blue);
+  border-radius: var(--radius-sm);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transition: transform var(--transition-base), box-shadow var(--transition-base), background var(--transition-fast);
 }
 
 .quick-link-card:hover {
+  background: var(--color-black);
   transform: translateY(-3px);
-  border-color: var(--color-accent-blue);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
 }
 
 .quick-link-img {
@@ -248,8 +263,7 @@
 .floor-plan-img {
   max-width: 100%;
   height: auto;
-  border-radius: var(--radius-sm);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid var(--color-silver);
 }
 
 .branch-footer {

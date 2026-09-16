@@ -6,26 +6,38 @@
   <meta name="description" content="PPAPP 360° Virtual Tour Frontpage">
   <title>PPAPP 360° Virtual Tour - Home</title>
   <link rel="icon" type="image/png" href="./favicon.png" />
+  
+  <!-- Modern Geometric Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  
   <link rel="stylesheet" href="./style.css">
   <link rel="stylesheet" href="./frontpage.css">
 </head>
 <body class="frontpage-body">
-  <header class="frontpage-header">
-    <div class="logo-container">
-      <img src="./favicon.png" alt="PPAPP Logo" class="frontpage-logo">
-      <h1>PPAPP 360° Virtual Tour</h1>
+  <nav class="top-nav">
+    <div class="nav-logo">
+      <img src="./favicon.png" alt="Logo">
+      <span>360 Virtual Tour</span>
     </div>
-    <p>Explore our library branches in immersive 360° view.</p>
-    
-    <div class="search-container">
-      <input type="text" id="scene-search" placeholder="Search for locations, rooms, or tags..." autocomplete="off">
-      <div id="search-results" class="search-results glass-panel is-hidden"></div>
-    </div>
+    <ul class="nav-links">
+      <li><a href="#" class="active">HOME</a></li>
+      <li><a href="#">ABOUT</a></li>
+      <li><a href="#">PORTFOLIO</a></li>
+      <li><a href="#">SERVICES</a></li>
+      <li><a href="#">CONTACT</a></li>
+      <li><a href="#">BLOG</a></li>
+    </ul>
+  </nav>
+
+  <header class="hero">
+    <h1>Experience it for yourself</h1>
+    <p>Why not dive right in and explore a 360 virtual tour of some of our favourite locations. But there's plenty more projects a little further down too.</p>
   </header>
 
   <main class="frontpage-main">
     <section class="branches-container">
-      <h2>Select a Branch</h2>
       <div class="branches-grid" id="branches-grid">
         <!-- Branches will be injected here via JS -->
       </div>

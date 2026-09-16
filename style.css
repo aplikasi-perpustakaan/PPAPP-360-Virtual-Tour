@@ -10,21 +10,21 @@
 /* ── Design Tokens ────────────────────────────────────────────────── */
 
 :root {
-  /* Color Palette (Dark Moody) */
-  --color-navy:        #0A1628;
-  --color-charcoal:    #1C2333;
-  --color-steel:       #3A3F4B;
-  --color-silver:      #8892A0;
-  --color-offwhite:    #E8ECF1;
-  --color-accent-blue: #2D6CDF;
-  --color-accent-gold: #C9A84C;
-  --color-black:       #000000;
-  --color-white:       #FFFFFF;
+  /* Light Theme Minimalist Palette */
+  --color-navy:        #F5F6F8; /* Light grey background */
+  --color-charcoal:    #E9ECEF; /* Slightly darker grey for gradients/borders */
+  --color-steel:       #333333; /* Dark charcoal text */
+  --color-silver:      #666666; /* Medium grey text */
+  --color-offwhite:    #FFFFFF; /* Pure white panels */
+  --color-accent-blue: #27ae60; /* Vibrant Green accent */
+  --color-accent-gold: #2ecc71; /* Lighter Green accent */
+  --color-black:       #219a52; /* Darker Green for hover states */
+  --color-white:       #FFFFFF; /* Pure white */
 
-  /* Transparency / Glass */
-  --glass-bg:          rgba(28, 35, 51, 0.85);
-  --glass-border:      rgba(136, 146, 160, 0.3);
-  --glass-blur:        12px;
+  /* Removed transparency for modern flat look */
+  --glass-bg:          var(--color-white);
+  --glass-border:      transparent;
+  --glass-blur:        0px;
 
   /* Spacing Scale */
   --space-xs: 4px;
@@ -33,10 +33,10 @@
   --space-lg: 24px;
   --space-xl: 32px;
 
-  /* Border Radius */
-  --radius-sm: 4px;
-  --radius-md: 8px;
-  --radius-lg: 12px;
+  /* Border Radius - Sharp or very subtle rounding for minimalist look */
+  --radius-sm: 0px !important;
+  --radius-md: 0px !important;
+  --radius-lg: 0px !important;
 
   /* Transitions */
   --transition-fast: 0.15s ease;
@@ -48,8 +48,20 @@
   --z-ui:      1000;
   --z-modal:   9999;
 
-  /* Typography */
-  --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  /* Typography - Clean Geometric Sans */
+  --font-family: 'Montserrat', 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+:root[data-theme="dark"], :root:not([data-theme="light"]) {
+  @media (prefers-color-scheme: dark) {
+    --color-navy:        #121212; /* Dark background */
+    --color-charcoal:    #1E1E1E;
+    --color-steel:       #F5F5F5; /* Light text for dark mode */
+    --color-silver:      #AAAAAA;
+    --color-offwhite:    #252525;
+    --color-white:       #1E1E1E; /* Dark panels */
+    --glass-bg:          #1E1E1E;
+  }
 }
 
 
@@ -64,9 +76,11 @@
 html, body {
   width: 100%;
   height: 100%;
-  overflow: hidden;
-  background: var(--color-black);
   font-family: var(--font-family);
+  background-color: var(--color-navy);
+  color: var(--color-steel);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
 }
 
 
@@ -83,12 +97,16 @@ html, body {
 
 .glass-panel {
   background: var(--glass-bg);
-  backdrop-filter: blur(var(--glass-blur));
-  -webkit-backdrop-filter: blur(var(--glass-blur));
   border: 1px solid var(--glass-border);
   border-radius: var(--radius-lg);
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
-  color: var(--color-offwhite);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  color: var(--color-steel);
+}
+
+:root:not([data-theme="light"]) .glass-panel {
+  @media (prefers-color-scheme: dark) {
+    color: var(--color-silver);
+  }
 }
 
 
@@ -162,25 +180,22 @@ html, body {
   width: 100vw;
   height: 100vh;
   z-index: var(--z-modal);
-  background: var(--glass-bg);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
+  background: var(--color-navy);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: var(--space-lg);
-  color: var(--color-offwhite);
+  color: var(--color-white);
   transition: opacity 0.4s ease;
   pointer-events: all;
-  border-radius: 0; /* Override glass-panel */
-  border: none;
 }
 
 #loading-text {
   font-size: 18px;
-  font-weight: 600;
-  letter-spacing: 1px;
+  font-weight: 200;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
 }
 
 .spinner {
@@ -345,9 +360,8 @@ body.is-debug .debug-controls-container {
   gap: 6px;
   padding: 10px 18px;
   border: none;
-  border-radius: 30px;
   background: transparent;
-  color: var(--color-offwhite);
+  color: var(--color-navy);
   font-family: var(--font-family);
   font-size: 13px;
   font-weight: 600;
@@ -409,10 +423,9 @@ body.is-debug .debug-controls-container {
 .debug-modal-panel select {
   width: 100%;
   padding: var(--space-sm) var(--space-md);
-  border: 1px solid var(--glass-border);
-  border-radius: var(--radius-sm);
-  background: rgba(10, 22, 40, 0.6);
-  color: var(--color-offwhite);
+  border: 1px solid var(--color-silver);
+  background: var(--color-white);
+  color: var(--color-navy);
   font-family: var(--font-family);
   font-size: 14px;
   outline: none;
@@ -435,7 +448,7 @@ body.is-debug .debug-controls-container {
 }
 .debug-form-group label {
   font-size: 12px;
-  color: var(--color-silver);
+  color: var(--color-steel);
   margin-bottom: 4px;
 }
 
@@ -471,7 +484,7 @@ body.is-debug .debug-controls-container {
 }
 
 .debug-scene-empty {
-  color: var(--color-silver);
+  color: var(--color-steel);
   cursor: default;
   justify-content: center;
   padding: var(--space-lg);
@@ -486,7 +499,7 @@ body.is-debug .debug-controls-container {
 
 .debug-scene-name {
   font-size: 13px;
-  color: var(--color-silver);
+  color: var(--color-steel);
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -555,10 +568,9 @@ body.is-debug .debug-controls-container {
 
 .debug-cancel-btn {
   padding: var(--space-sm) var(--space-lg);
-  border: 1px solid var(--glass-border);
-  border-radius: var(--radius-sm);
+  border: 1px solid var(--color-silver);
   background: transparent;
-  color: var(--color-silver);
+  color: var(--color-navy);
   font-family: var(--font-family);
   font-size: 13px;
   cursor: pointer;
@@ -574,9 +586,8 @@ body.is-debug .debug-controls-container {
 .debug-save-btn {
   padding: var(--space-sm) var(--space-lg);
   border: 1px solid var(--color-accent-blue);
-  border-radius: var(--radius-sm);
-  background: rgba(45, 108, 223, 0.2);
-  color: var(--color-offwhite);
+  background: var(--color-accent-blue);
+  color: var(--color-white);
   font-family: var(--font-family);
   font-size: 13px;
   cursor: pointer;
@@ -628,7 +639,7 @@ body.is-debug .debug-controls-container {
 .debug-close-btn {
   background: transparent;
   border: none;
-  color: var(--color-silver);
+  color: var(--color-navy);
   font-size: 20px;
   cursor: pointer;
   line-height: 1;
@@ -641,7 +652,7 @@ body.is-debug .debug-controls-container {
 .debug-panel-content {
   flex: 1;
   overflow-y: auto;
-  color: var(--color-silver);
+  color: var(--color-steel);
   font-size: 13px;
   font-family: 'Consolas', monospace;
 }
@@ -657,7 +668,7 @@ body.is-debug .debug-controls-container {
   display: grid;
   grid-template-columns: auto 1fr;
   gap: var(--space-sm) var(--space-md);
-  color: var(--color-silver);
+  color: var(--color-steel);
   font-size: 13px;
 }
 
@@ -677,11 +688,9 @@ body.is-debug .debug-controls-container {
   transform: translateX(-50%) translateY(20px);
   z-index: var(--z-modal);
   padding: var(--space-sm) var(--space-lg);
-  border-radius: var(--radius-md);
-  background: var(--glass-bg);
-  backdrop-filter: blur(var(--glass-blur));
-  border: 1px solid rgba(45, 108, 223, 0.4);
-  color: var(--color-offwhite);
+  background: var(--color-navy);
+  border: 1px solid var(--color-accent-blue);
+  color: var(--color-white);
   font-family: var(--font-family);
   font-size: 14px;
   font-weight: 500;
