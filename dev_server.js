@@ -453,7 +453,7 @@ const server = http.createServer((req, res) => {
               findImages(fullPath);
             } else if (file.match(/\.(jpg|jpeg|png|webp)$/i)) {
               // Check if path contains '/markers/'
-              const relPath = fullPath.substring(__dirname.length).replace(/\\/g, '/');
+              const relPath = '/' + path.relative(__dirname, fullPath).replace(/\\/g, '/');
               if (relPath.includes('/markers/')) {
                 // If it's a thumbnail, skip (we'll pair it below)
                 if (!relPath.includes('/thumbs/')) {

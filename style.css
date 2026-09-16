@@ -10,19 +10,19 @@
 /* ── Design Tokens ────────────────────────────────────────────────── */
 
 :root {
-  /* Light Theme Minimalist Palette */
-  --color-navy:        #F5F6F8; /* Light grey background */
-  --color-charcoal:    #E9ECEF; /* Slightly darker grey for gradients/borders */
-  --color-steel:       #333333; /* Dark charcoal text */
-  --color-silver:      #666666; /* Medium grey text */
-  --color-offwhite:    #FFFFFF; /* Pure white panels */
-  --color-accent-blue: #27ae60; /* Vibrant Green accent */
-  --color-accent-gold: #2ecc71; /* Lighter Green accent */
-  --color-black:       #219a52; /* Darker Green for hover states */
-  --color-white:       #FFFFFF; /* Pure white */
+  /* Color Palette (Dark Moody) */
+  --color-navy:        #0A1628;
+  --color-charcoal:    #1C2333;
+  --color-steel:       #3A3F4B;
+  --color-silver:      #8892A0;
+  --color-offwhite:    #E8ECF1;
+  --color-accent-blue: #2D6CDF;
+  --color-accent-gold: #C9A84C;
+  --color-black:       #000000;
+  --color-white:       #FFFFFF;
 
-  /* Removed transparency for modern flat look */
-  --glass-bg:          var(--color-white);
+  /* Transparency / Glass */
+  --glass-bg:          rgba(28, 35, 51, 0.85);
   --glass-border:      transparent;
   --glass-blur:        0px;
 
@@ -409,11 +409,13 @@ body.is-debug .debug-controls-container {
   padding: var(--space-lg);
   border-radius: var(--radius-lg);
   overflow-y: auto;
+  background: #252830;
+  color: #eeeeee;
 }
 
 .debug-modal-panel h3 {
   margin: 0 0 var(--space-md);
-  color: var(--color-offwhite);
+  color: #ffffff;
   font-size: 16px;
   font-weight: 600;
 }
@@ -423,9 +425,9 @@ body.is-debug .debug-controls-container {
 .debug-modal-panel select {
   width: 100%;
   padding: var(--space-sm) var(--space-md);
-  border: 1px solid var(--color-silver);
-  background: var(--color-white);
-  color: var(--color-navy);
+  border: 1px solid #444444;
+  background: #1e1e1e;
+  color: #eeeeee;
   font-family: var(--font-family);
   font-size: 14px;
   outline: none;
@@ -448,7 +450,7 @@ body.is-debug .debug-controls-container {
 }
 .debug-form-group label {
   font-size: 12px;
-  color: var(--color-steel);
+  color: #cccccc;
   margin-bottom: 4px;
 }
 

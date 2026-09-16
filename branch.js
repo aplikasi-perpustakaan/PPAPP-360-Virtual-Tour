@@ -103,8 +103,14 @@ async function initBranchPage() {
   }
 
   // Show content
-  document.getElementById('loading-spinner').classList.add('is-hidden');
-  document.getElementById('branch-content').classList.remove('is-hidden');
+  const spinner = document.getElementById('loading-spinner');
+  if (spinner) {
+    spinner.classList.add('is-hidden');
+  }
+  const branchContent = document.getElementById('branch-content');
+  if (branchContent) {
+    branchContent.classList.remove('is-hidden');
+  }
 }
 
 if (document.readyState === 'loading') {

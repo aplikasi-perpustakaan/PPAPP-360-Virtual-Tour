@@ -2,6 +2,23 @@
    360° Virtual Tour – Frontpage Styles (Light Minimalist)
    =================================================================== */
 
+:root {
+  /* Light Theme Minimalist Palette */
+  --color-navy:        #F5F6F8; /* Light grey background */
+  --color-charcoal:    #E9ECEF; /* Slightly darker grey for gradients/borders */
+  --color-steel:       #333333; /* Dark charcoal text */
+  --color-silver:      #666666; /* Medium grey text */
+  --color-offwhite:    #FFFFFF; /* Pure white panels */
+  --color-accent-blue: #2D6CDF; /* Restored original blue */
+  --color-accent-gold: #C9A84C; /* Restored original gold */
+  --color-black:       #111111; /* Restored neutral black */
+  --color-white:       #FFFFFF; /* Pure white */
+
+  --glass-bg:          var(--color-white);
+  --glass-border:      transparent;
+  --glass-blur:        0px;
+}
+
 .frontpage-body {
   background: var(--color-navy); /* #F5F6F8 */
   color: var(--color-steel);
