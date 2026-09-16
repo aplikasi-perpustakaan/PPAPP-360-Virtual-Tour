@@ -66,20 +66,32 @@ export default [
     links: [
       {
         nodeId: 'pusat-f1-castle-2',
-        position: { yaw: '315.76deg', pitch: '-8.67deg' },
-        name: 'Go to Floor 1 - Castle 2'
+        position: { yaw: '316.79deg', pitch: '-6.07deg' },
+        name: 'Go to Floor 1 - Castle 2',
+        targetYaw: '323.93deg',
+        targetPitch: '3.79deg'
       },
+      
+      
       
       {
         nodeId: 'pusat-f1-castle-4',
-        position: { yaw: '242.03deg', pitch: '-8.80deg' },
-        name: 'Go to Floor 1 - Castle 4'
+        position: { yaw: '244.82deg', pitch: '-7.06deg' },
+        name: 'Go to Floor 1 - Castle 4',
+        targetYaw: '237.50deg',
+        targetPitch: '-4.03deg'
       },
+      
+      
       {
         nodeId: 'pusat-f1-castle-1',
-        position: { yaw: '33.02deg', pitch: '-10deg' },
-        name: 'Go to Floor 1 - Castle 1'
+        position: { yaw: '22.35deg', pitch: '-1.79deg' },
+        name: 'Go to Floor 1 - Castle 1',
+        targetYaw: '46.10deg',
+        targetPitch: '-5.84deg'
       },
+      
+      
       {
         nodeId: 'pusat-f1-kids-15',
         position: { yaw: '133.70deg', pitch: '-8.22deg' },
