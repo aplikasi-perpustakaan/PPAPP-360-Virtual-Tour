@@ -28,29 +28,6 @@ export default [
     ],
     markers: [
       {
-        id: 'ppk-f1-main-area-1-marker-1789530441841',
-        position: {
-          yaw: '40.10deg',
-          pitch: '-0.95deg'
-        },
-        size: {
-          width: 44,
-          height: 44
-        },
-        anchor: 'center center',
-        data: {
-          type: 'image',
-          title: '',
-          icon: 'info',
-          color: 'blue',
-          animated: false,
-          imageSrc: './images/ppk/markers/LOBBY/KOMTAR_lobby_10.jpg',
-          originalUrl: './images/ppk/markers/LOBBY/KOMTAR_lobby_10.jpg',
-          caption: ''
-        },
-        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/ppk/markers/LOBBY/KOMTAR_lobby_10.jpg\'>\n        <img src=\'./images/ppk/markers/LOBBY/KOMTAR_lobby_10.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
-      },
-      {
         id: 'ppk-f1-main-area-1-marker-1789530469519',
         position: {
           yaw: '13.30deg',
@@ -63,15 +40,38 @@ export default [
         anchor: 'center center',
         data: {
           type: 'image',
-          title: '',
+          title: 'Waktu Operasi',
           icon: 'info',
           color: 'blue',
           animated: false,
           imageSrc: './images/ppk/markers/OUTSIDE/KOMTAR_outside_2.jpg',
           originalUrl: './images/ppk/markers/OUTSIDE/KOMTAR_outside_2.jpg',
-          caption: ''
+          caption: 'Waktu Operasi'
         },
-        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/ppk/markers/OUTSIDE/KOMTAR_outside_2.jpg\'>\n        <img src=\'./images/ppk/markers/OUTSIDE/KOMTAR_outside_2.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/ppk/markers/OUTSIDE/KOMTAR_outside_2.jpg\'>\n        <img src=\'./images/ppk/markers/OUTSIDE/KOMTAR_outside_2.jpg\' alt=\'Waktu Operasi\' style=\'cursor:pointer;\' />\n        <h2>Waktu Operasi</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      {
+        id: 'ppk-f1-main-area-1-marker-1789530441841',
+        position: {
+          yaw: '40.10deg',
+          pitch: '-0.95deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: 'PPAPP Lounge @ KOMTAR',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/ppk/markers/LOBBY/KOMTAR_lobby_10.jpg',
+          originalUrl: './images/ppk/markers/LOBBY/KOMTAR_lobby_10.jpg',
+          caption: 'PPAPP Lounge @ KOMTAR'
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/ppk/markers/LOBBY/KOMTAR_lobby_10.jpg\'>\n        <img src=\'./images/ppk/markers/LOBBY/KOMTAR_lobby_10.jpg\' alt=\'PPAPP Lounge @ KOMTAR\' style=\'cursor:pointer;\' />\n        <h2>PPAPP Lounge @ KOMTAR</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
       }
     ],
     data: {
@@ -215,15 +215,15 @@ export default [
         anchor: 'center center',
         data: {
           type: 'image',
-          title: '',
+          title: 'Painting',
           icon: 'info',
           color: 'blue',
           animated: false,
           imageSrc: './images/ppk/markers/LOBBY/KOMTAR_lobby_6.jpg',
           originalUrl: './images/ppk/markers/LOBBY/KOMTAR_lobby_6.jpg',
-          caption: ''
+          caption: 'Painting'
         },
-        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/ppk/markers/LOBBY/KOMTAR_lobby_6.jpg\'>\n        <img src=\'./images/ppk/markers/LOBBY/KOMTAR_lobby_6.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/ppk/markers/LOBBY/KOMTAR_lobby_6.jpg\'>\n        <img src=\'./images/ppk/markers/LOBBY/KOMTAR_lobby_6.jpg\' alt=\'Painting\' style=\'cursor:pointer;\' />\n        <h2>Painting</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
       }
     ],
     data: {
@@ -312,15 +312,15 @@ export default [
         anchor: 'center center',
         data: {
           type: 'image',
-          title: '',
+          title: 'Painting',
           icon: 'info',
           color: 'blue',
           animated: false,
           imageSrc: './images/ppk/markers/LOBBY/KOMTAR_lobby_11.jpg',
           originalUrl: './images/ppk/markers/LOBBY/KOMTAR_lobby_11.jpg',
-          caption: ''
+          caption: 'Painting'
         },
-        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/ppk/markers/LOBBY/KOMTAR_lobby_11.jpg\'>\n        <img src=\'./images/ppk/markers/LOBBY/KOMTAR_lobby_11.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/ppk/markers/LOBBY/KOMTAR_lobby_11.jpg\'>\n        <img src=\'./images/ppk/markers/LOBBY/KOMTAR_lobby_11.jpg\' alt=\'Painting\' style=\'cursor:pointer;\' />\n        <h2>Painting</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
       }
     ],
     data: {
@@ -368,121 +368,6 @@ export default [
       },
     ],
     markers: [
-      {
-        id: 'ppk-f1-main-area-8-marker-1789530587069',
-        position: {
-          yaw: '166.17deg',
-          pitch: '-21.79deg'
-        },
-        size: {
-          width: 44,
-          height: 44
-        },
-        anchor: 'center center',
-        data: {
-          type: 'image',
-          title: '',
-          icon: 'info',
-          color: 'blue',
-          animated: false,
-          imageSrc: './images/ppk/markers/LOBBY/KOMTAR_lobby_18.jpg',
-          originalUrl: './images/ppk/markers/LOBBY/KOMTAR_lobby_18.jpg',
-          caption: ''
-        },
-        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/ppk/markers/LOBBY/KOMTAR_lobby_18.jpg\'>\n        <img src=\'./images/ppk/markers/LOBBY/KOMTAR_lobby_18.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
-      },
-      {
-        id: 'ppk-f1-main-area-8-marker-1789530596679',
-        position: {
-          yaw: '41.02deg',
-          pitch: '-11.41deg'
-        },
-        size: {
-          width: 44,
-          height: 44
-        },
-        anchor: 'center center',
-        data: {
-          type: 'image',
-          title: '',
-          icon: 'info',
-          color: 'blue',
-          animated: false,
-          imageSrc: './images/ppk/markers/LOBBY/KOMTAR_lobby_17.jpg',
-          originalUrl: './images/ppk/markers/LOBBY/KOMTAR_lobby_17.jpg',
-          caption: ''
-        },
-        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/ppk/markers/LOBBY/KOMTAR_lobby_17.jpg\'>\n        <img src=\'./images/ppk/markers/LOBBY/KOMTAR_lobby_17.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
-      },
-      {
-        id: 'ppk-f1-main-area-8-marker-1789530603885',
-        position: {
-          yaw: '131.72deg',
-          pitch: '22.99deg'
-        },
-        size: {
-          width: 44,
-          height: 44
-        },
-        anchor: 'center center',
-        data: {
-          type: 'image',
-          title: '',
-          icon: 'info',
-          color: 'blue',
-          animated: false,
-          imageSrc: './images/ppk/markers/LOBBY/KOMTAR_lobby_14.jpg',
-          originalUrl: './images/ppk/markers/LOBBY/KOMTAR_lobby_14.jpg',
-          caption: ''
-        },
-        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/ppk/markers/LOBBY/KOMTAR_lobby_14.jpg\'>\n        <img src=\'./images/ppk/markers/LOBBY/KOMTAR_lobby_14.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
-      },
-      {
-        id: 'ppk-f1-main-area-8-marker-1789530610542',
-        position: {
-          yaw: '56.98deg',
-          pitch: '18.63deg'
-        },
-        size: {
-          width: 44,
-          height: 44
-        },
-        anchor: 'center center',
-        data: {
-          type: 'image',
-          title: '',
-          icon: 'info',
-          color: 'blue',
-          animated: false,
-          imageSrc: './images/ppk/markers/LOBBY/KOMTAR_lobby_13.jpg',
-          originalUrl: './images/ppk/markers/LOBBY/KOMTAR_lobby_13.jpg',
-          caption: ''
-        },
-        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/ppk/markers/LOBBY/KOMTAR_lobby_13.jpg\'>\n        <img src=\'./images/ppk/markers/LOBBY/KOMTAR_lobby_13.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
-      },
-      {
-        id: 'ppk-f1-main-area-8-marker-1789530634384',
-        position: {
-          yaw: '31.95deg',
-          pitch: '-16.88deg'
-        },
-        size: {
-          width: 44,
-          height: 44
-        },
-        anchor: 'center center',
-        data: {
-          type: 'image',
-          title: '',
-          icon: 'info',
-          color: 'blue',
-          animated: false,
-          imageSrc: './images/ppk/markers/LOBBY/KOMTAR_lobby_5.jpg',
-          originalUrl: './images/ppk/markers/LOBBY/KOMTAR_lobby_5.jpg',
-          caption: ''
-        },
-        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/ppk/markers/LOBBY/KOMTAR_lobby_5.jpg\'>\n        <img src=\'./images/ppk/markers/LOBBY/KOMTAR_lobby_5.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
-      },
       {
         id: 'ppk-f1-main-area-8-marker-1789530806311',
         position: {
@@ -651,6 +536,121 @@ export default [
           content: ''
         },
         html: '<custom-marker type=\'info\' data-icon=\'info\' data-color=\'blue\'>\n        <h2>Bukan Fiksyen</h2>\n        <p></p>\n      </custom-marker>'
+      },
+      {
+        id: 'ppk-f1-main-area-8-marker-1789530610542',
+        position: {
+          yaw: '56.98deg',
+          pitch: '18.63deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: 'Koleksi',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/ppk/markers/LOBBY/KOMTAR_lobby_13.jpg',
+          originalUrl: './images/ppk/markers/LOBBY/KOMTAR_lobby_13.jpg',
+          caption: 'Koleksi'
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/ppk/markers/LOBBY/KOMTAR_lobby_13.jpg\'>\n        <img src=\'./images/ppk/markers/LOBBY/KOMTAR_lobby_13.jpg\' alt=\'Koleksi\' style=\'cursor:pointer;\' />\n        <h2>Koleksi</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      {
+        id: 'ppk-f1-main-area-8-marker-1789530603885',
+        position: {
+          yaw: '131.72deg',
+          pitch: '22.99deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: 'Koleksi',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/ppk/markers/LOBBY/KOMTAR_lobby_14.jpg',
+          originalUrl: './images/ppk/markers/LOBBY/KOMTAR_lobby_14.jpg',
+          caption: 'Koleksi'
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/ppk/markers/LOBBY/KOMTAR_lobby_14.jpg\'>\n        <img src=\'./images/ppk/markers/LOBBY/KOMTAR_lobby_14.jpg\' alt=\'Koleksi\' style=\'cursor:pointer;\' />\n        <h2>Koleksi</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      {
+        id: 'ppk-f1-main-area-8-marker-1789530587069',
+        position: {
+          yaw: '166.17deg',
+          pitch: '-21.79deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: 'Buku Fiksyen',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/ppk/markers/LOBBY/KOMTAR_lobby_18.jpg',
+          originalUrl: './images/ppk/markers/LOBBY/KOMTAR_lobby_18.jpg',
+          caption: 'Buku Fiksyen'
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/ppk/markers/LOBBY/KOMTAR_lobby_18.jpg\'>\n        <img src=\'./images/ppk/markers/LOBBY/KOMTAR_lobby_18.jpg\' alt=\'Buku Fiksyen\' style=\'cursor:pointer;\' />\n        <h2>Buku Fiksyen</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      {
+        id: 'ppk-f1-main-area-8-marker-1789530596679',
+        position: {
+          yaw: '41.02deg',
+          pitch: '-11.41deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: 'Buku Bukan Fiksyen',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/ppk/markers/LOBBY/KOMTAR_lobby_17.jpg',
+          originalUrl: './images/ppk/markers/LOBBY/KOMTAR_lobby_17.jpg',
+          caption: 'Buku Bukan Fiksyen'
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/ppk/markers/LOBBY/KOMTAR_lobby_17.jpg\'>\n        <img src=\'./images/ppk/markers/LOBBY/KOMTAR_lobby_17.jpg\' alt=\'Buku Bukan Fiksyen\' style=\'cursor:pointer;\' />\n        <h2>Buku Bukan Fiksyen</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      {
+        id: 'ppk-f1-main-area-8-marker-1789530634384',
+        position: {
+          yaw: '31.95deg',
+          pitch: '-16.88deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: 'Koleksi Eksklusif',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/ppk/markers/LOBBY/KOMTAR_lobby_5.jpg',
+          originalUrl: './images/ppk/markers/LOBBY/KOMTAR_lobby_5.jpg',
+          caption: 'Koleksi Eksklusif'
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/ppk/markers/LOBBY/KOMTAR_lobby_5.jpg\'>\n        <img src=\'./images/ppk/markers/LOBBY/KOMTAR_lobby_5.jpg\' alt=\'Koleksi Eksklusif\' style=\'cursor:pointer;\' />\n        <h2>Koleksi Eksklusif</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
       }
     ],
     data: {
@@ -730,29 +730,6 @@ export default [
     ],
     markers: [
       {
-        id: 'ppk-f1-main-area-10-marker-1789530758386',
-        position: {
-          yaw: '43.63deg',
-          pitch: '5.77deg'
-        },
-        size: {
-          width: 44,
-          height: 44
-        },
-        anchor: 'center center',
-        data: {
-          type: 'image',
-          title: '',
-          icon: 'info',
-          color: 'blue',
-          animated: false,
-          imageSrc: './images/ppk/markers/LOBBY/KOMTAR_lobby_12.jpg',
-          originalUrl: './images/ppk/markers/LOBBY/KOMTAR_lobby_12.jpg',
-          caption: ''
-        },
-        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/ppk/markers/LOBBY/KOMTAR_lobby_12.jpg\'>\n        <img src=\'./images/ppk/markers/LOBBY/KOMTAR_lobby_12.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
-      },
-      {
         id: 'ppk-f1-main-area-10-marker-1789530771002',
         position: {
           yaw: '352.20deg',
@@ -765,15 +742,59 @@ export default [
         anchor: 'center center',
         data: {
           type: 'image',
-          title: '',
+          title: 'Jom Jadi Ahli Perpustakaan',
           icon: 'info',
           color: 'blue',
           animated: false,
           imageSrc: './images/ppk/markers/LOBBY/KOMTAR_lobby_7.jpg',
           originalUrl: './images/ppk/markers/LOBBY/KOMTAR_lobby_7.jpg',
-          caption: ''
+          caption: 'Jom Jadi Ahli Perpustakaan'
         },
-        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/ppk/markers/LOBBY/KOMTAR_lobby_7.jpg\'>\n        <img src=\'./images/ppk/markers/LOBBY/KOMTAR_lobby_7.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/ppk/markers/LOBBY/KOMTAR_lobby_7.jpg\'>\n        <img src=\'./images/ppk/markers/LOBBY/KOMTAR_lobby_7.jpg\' alt=\'Jom Jadi Ahli Perpustakaan\' style=\'cursor:pointer;\' />\n        <h2>Jom Jadi Ahli Perpustakaan</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      {
+        id: 'ppk-f1-main-area-10-marker-1789555898424',
+        position: {
+          yaw: '25.21deg',
+          pitch: '-39.32deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Sila Patuhi Etika Pemakaian Ketika Di Perpustakaan',
+          icon: 'warning',
+          color: 'gold',
+          animated: true,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'warning\' data-color=\'gold\' animated>\n        <h2>Sila Patuhi Etika Pemakaian Ketika Di Perpustakaan</h2>\n        <p></p>\n      </custom-marker>'
+      },
+      {
+        id: 'ppk-f1-main-area-10-marker-1789530758386',
+        position: {
+          yaw: '43.63deg',
+          pitch: '5.77deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: 'Perbadanan Perpustakaan Awam Pulau Pinang',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/ppk/markers/LOBBY/KOMTAR_lobby_12.jpg',
+          originalUrl: './images/ppk/markers/LOBBY/KOMTAR_lobby_12.jpg',
+          caption: 'Perbadanan Perpustakaan Awam Pulau Pinang'
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/ppk/markers/LOBBY/KOMTAR_lobby_12.jpg\'>\n        <img src=\'./images/ppk/markers/LOBBY/KOMTAR_lobby_12.jpg\' alt=\'Perbadanan Perpustakaan Awam Pulau Pinang\' style=\'cursor:pointer;\' />\n        <h2>Perbadanan Perpustakaan Awam Pulau Pinang</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
       }
     ],
     data: {
@@ -813,15 +834,15 @@ export default [
         anchor: 'center center',
         data: {
           type: 'image',
-          title: '',
+          title: 'Laman Pickatale',
           icon: 'info',
           color: 'blue',
           animated: false,
           imageSrc: './images/ppk/markers/LOBBY/KOMTAR_lobby_15.jpg',
           originalUrl: './images/ppk/markers/LOBBY/KOMTAR_lobby_15.jpg',
-          caption: ''
+          caption: 'Laman Pickatale'
         },
-        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/ppk/markers/LOBBY/KOMTAR_lobby_15.jpg\'>\n        <img src=\'./images/ppk/markers/LOBBY/KOMTAR_lobby_15.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/ppk/markers/LOBBY/KOMTAR_lobby_15.jpg\'>\n        <img src=\'./images/ppk/markers/LOBBY/KOMTAR_lobby_15.jpg\' alt=\'Laman Pickatale\' style=\'cursor:pointer;\' />\n        <h2>Laman Pickatale</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
       }
     ],
     data: {
@@ -876,29 +897,7 @@ export default [
         },
         html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/ppk/markers/LOBBY/KOMTAR_lobby_5.jpg\'>\n        <img src=\'./images/ppk/markers/LOBBY/KOMTAR_lobby_5.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
       },
-      {
-        id: 'ppk-f1-main-area-12-marker-1789530652892',
-        position: {
-          yaw: '64.33deg',
-          pitch: '-16.06deg'
-        },
-        size: {
-          width: 44,
-          height: 44
-        },
-        anchor: 'center center',
-        data: {
-          type: 'image',
-          title: '',
-          icon: 'info',
-          color: 'blue',
-          animated: false,
-          imageSrc: './images/ppk/markers/LOBBY/KOMTAR_lobby_16.jpg',
-          originalUrl: './images/ppk/markers/LOBBY/KOMTAR_lobby_16.jpg',
-          caption: ''
-        },
-        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/ppk/markers/LOBBY/KOMTAR_lobby_16.jpg\'>\n        <img src=\'./images/ppk/markers/LOBBY/KOMTAR_lobby_16.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
-      },
+      
       {
         id: 'ppk-f1-main-area-12-marker-1789530695401',
         position: {
@@ -940,6 +939,29 @@ export default [
           content: ''
         },
         html: '<custom-marker type=\'info\' data-icon=\'no-entry\' data-color=\'red\' animated>\n        <h2>Staff Only</h2>\n        <p></p>\n      </custom-marker>'
+      },
+      {
+        id: 'ppk-f1-main-area-12-marker-1789530652892',
+        position: {
+          yaw: '64.33deg',
+          pitch: '-16.06deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: 'OPAC',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/ppk/markers/LOBBY/KOMTAR_lobby_16.jpg',
+          originalUrl: './images/ppk/markers/LOBBY/KOMTAR_lobby_16.jpg',
+          caption: 'OPAC'
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/ppk/markers/LOBBY/KOMTAR_lobby_16.jpg\'>\n        <img src=\'./images/ppk/markers/LOBBY/KOMTAR_lobby_16.jpg\' alt=\'OPAC\' style=\'cursor:pointer;\' />\n        <h2>OPAC</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
       }
     ],
     data: {
