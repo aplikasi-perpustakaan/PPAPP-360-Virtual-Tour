@@ -61,6 +61,13 @@ export default [
         targetYaw: '50.55deg',
         targetPitch: '-0.06deg'
       },
+      {
+        nodeId: 'pusat-f1-kids-13',
+        position: { yaw: '329.55deg', pitch: '-8.43deg' },
+        name: 'Go to Floor 1 - Kids 13',
+        targetYaw: '144.71deg',
+        targetPitch: '7.32deg'
+      },
     ],
     markers: [],
     data: {
@@ -430,6 +437,13 @@ export default [
         nodeId: 'pusat-f1-kids-15',
         position: { yaw: '109.95deg', pitch: '-10deg' },
         name: 'Go to Floor 1 - Kids 15'
+      },
+      {
+        nodeId: 'pusat-f1-kids-2',
+        position: { yaw: '325.49deg', pitch: '-2.02deg' },
+        name: 'Go to Floor 1 - Kids 2',
+        targetYaw: '154.44deg',
+        targetPitch: '-2.73deg'
       },
     ],
     markers: [],
