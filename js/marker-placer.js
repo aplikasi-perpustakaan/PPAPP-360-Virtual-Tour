@@ -71,6 +71,9 @@ export function initMarkerPlacer(viewer, virtualTour, allNodes, isDebug) {
     audioInput.value = '';
     linkInput.value = '';
     if (uploadInput) uploadInput.value = '';
+    contentGroup.querySelector('label').textContent = 'Content (HTML):';
+    const rtToolbar = contentGroup.querySelector('.debug-rt-toolbar');
+    if (rtToolbar) rtToolbar.style.display = 'flex';
     contentGroup.style.display = 'flex';
     audioGroup.style.display = 'none';
     linkGroup.style.display = 'none';
@@ -164,12 +167,18 @@ export function initMarkerPlacer(viewer, virtualTour, allNodes, isDebug) {
         } else if (typeSelect.value === 'image') {
           contentInput.value = d.imageSrc || parsed.imageSrc || '';
           contentInput.setAttribute('data-original', d.originalUrl || parsed.url || '');
+          contentGroup.querySelector('label').textContent = 'Image URL (or select from gallery):';
+          const rtToolbar = contentGroup.querySelector('.debug-rt-toolbar');
+          if (rtToolbar) rtToolbar.style.display = 'none';
           contentGroup.style.display = 'flex';
           uploadGroup.style.display = 'flex';
           if (galleryContainer) galleryContainer.style.display = 'flex';
           loadGallery();
         } else {
           contentInput.value = d.content || parsed.content || '';
+          contentGroup.querySelector('label').textContent = 'Content (HTML):';
+          const rtToolbar = contentGroup.querySelector('.debug-rt-toolbar');
+          if (rtToolbar) rtToolbar.style.display = 'flex';
           contentGroup.style.display = 'flex';
         }
 
@@ -352,11 +361,17 @@ export function initMarkerPlacer(viewer, virtualTour, allNodes, isDebug) {
     } else if (typeSelect.value === 'link') {
       linkGroup.style.display = 'flex';
     } else if (typeSelect.value === 'image') {
+      contentGroup.querySelector('label').textContent = 'Image URL (or select from gallery):';
+      const rtToolbar = contentGroup.querySelector('.debug-rt-toolbar');
+      if (rtToolbar) rtToolbar.style.display = 'none';
       contentGroup.style.display = 'flex';
       uploadGroup.style.display = 'flex';
       if (galleryContainer) galleryContainer.style.display = 'flex';
       loadGallery();
     } else {
+      contentGroup.querySelector('label').textContent = 'Content (HTML):';
+      const rtToolbar = contentGroup.querySelector('.debug-rt-toolbar');
+      if (rtToolbar) rtToolbar.style.display = 'flex';
       contentGroup.style.display = 'flex';
     }
   });
