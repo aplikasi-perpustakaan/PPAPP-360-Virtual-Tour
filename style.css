@@ -124,7 +124,7 @@ html, body {
   appearance: none;
   background: rgba(10, 22, 40, 0.7);
   border: 1px solid rgba(45, 108, 223, 0.4);
-  color: var(--color-white);
+  color: #ffffff;
   padding: 4px 30px 4px 12px;
   font-size: 14px;
   border-radius: var(--radius-sm);
@@ -151,7 +151,7 @@ html, body {
 
 .navbar-select option {
   background: var(--color-charcoal);
-  color: var(--color-white);
+  color: #ffffff;
   padding: 8px;
 }
 
