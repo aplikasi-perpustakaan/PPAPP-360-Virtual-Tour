@@ -482,7 +482,10 @@ const server = http.createServer((req, res) => {
         findImages(branchDir);
       }
       
-      res.writeHead(200, { 'Content-Type': 'application/json' });
+      res.writeHead(200, { 
+        'Content-Type': 'application/json',
+        'Cache-Control': 'no-store, no-cache, must-revalidate, proxy-revalidate'
+      });
       res.end(JSON.stringify({ images: results }));
     } catch (err) {
       console.error('Error fetching marker images:', err.message);
