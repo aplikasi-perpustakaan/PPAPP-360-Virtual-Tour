@@ -451,7 +451,7 @@ const server = http.createServer((req, res) => {
             
             if (stat.isDirectory()) {
               findImages(fullPath);
-            } else if (file.match(/\.(jpg|jpeg|png)$/i)) {
+            } else if (file.match(/\.(jpg|jpeg|png|webp)$/i)) {
               // Check if path contains '/markers/'
               const relPath = fullPath.substring(__dirname.length).replace(/\\/g, '/');
               if (relPath.includes('/markers/')) {
