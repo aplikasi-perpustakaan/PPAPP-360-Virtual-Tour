@@ -14,6 +14,11 @@ export default [
         position: { yaw: '77.91deg', pitch: '4.60deg' },
         name: 'Go to Stairs 2'
       },
+      {
+        nodeId: 'gt-f1-main-area-4',
+        position: { yaw: '211.22deg', pitch: '-10deg' },
+        name: 'Go to Main Area 4'
+      },
     ],
     markers: [],
     data: {
