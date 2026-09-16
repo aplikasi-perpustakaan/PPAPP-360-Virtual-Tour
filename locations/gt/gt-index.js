@@ -9,9 +9,11 @@ import gtF2MainAreaSection from './gt-f2-main-area.js';
 import gtF2BilikKoleksiKhasSection from './gt-f2-bilik-koleksi-khas.js';
 import gtExtOutsideSection from './gt-ext-outside.js';
 import gtStairsSection from './gt-stairs.js';
+import gtF1MeetingRoomSection from './gt-f1-meeting-room.js';
 export default [
   ...gtExtOutsideSection,
   ...gtF1MainAreaSection,
+  ...gtF1MeetingRoomSection,
   ...gtF1IPlayToySection,
   ...gtF2MainAreaSection,
   ...gtF2BilikKoleksiKhasSection,
