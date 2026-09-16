@@ -363,48 +363,8 @@ export default [
         },
         html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bt/markers/FLOOR-2/BT_f2_11.jpg\'>\n        <img src=\'./images/bt/markers/FLOOR-2/BT_f2_11.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
       },
-      {
-        id: 'bt-f2-reading-8-marker-1789462981066',
-        position: {
-          yaw: '153.56deg',
-          pitch: '-3.39deg'
-        },
-        size: {
-          width: 44,
-          height: 44
-        },
-        anchor: 'center center',
-        data: {
-          type: 'info',
-          title: 'Fiksyen Bahasa Melayu',
-          icon: 'info',
-          color: 'blue',
-          animated: false,
-          content: ''
-        },
-        html: '<custom-marker type=\'info\' data-icon=\'info\' data-color=\'blue\'>\n        <h2>Fiksyen Bahasa Melayu</h2>\n        <p></p>\n      </custom-marker>'
-      },
-      {
-        id: 'bt-f2-reading-8-marker-1789462994947',
-        position: {
-          yaw: '125.86deg',
-          pitch: '-0.33deg'
-        },
-        size: {
-          width: 44,
-          height: 44
-        },
-        anchor: 'center center',
-        data: {
-          type: 'info',
-          title: 'Fiksyen Bahasa Melayu',
-          icon: 'info',
-          color: 'blue',
-          animated: false,
-          content: ''
-        },
-        html: '<custom-marker type=\'info\' data-icon=\'info\' data-color=\'blue\'>\n        <h2>Fiksyen Bahasa Melayu</h2>\n        <p></p>\n      </custom-marker>'
-      },
+      
+      
       {
         id: 'bt-f2-reading-8-marker-1789463005857',
         position: {
@@ -467,6 +427,69 @@ export default [
           content: ''
         },
         html: '<custom-marker type=\'info\' data-icon=\'info\' data-color=\'blue\'>\n        <h2>Bahasa Inggeris 800-900</h2>\n        <p></p>\n      </custom-marker>'
+      },
+      {
+        id: 'bt-f2-reading-8-marker-1789550438623',
+        position: {
+          yaw: '51.88deg',
+          pitch: '-1.27deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Rujukan Bahasa Malaysia',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'info\' data-color=\'blue\'>\n        <h2>Rujukan Bahasa Malaysia</h2>\n        <p></p>\n      </custom-marker>'
+      },
+      {
+        id: 'bt-f2-reading-8-marker-1789462981066',
+        position: {
+          yaw: '152.52deg',
+          pitch: '-3.69deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Fiksyen Bahasa Malaysia',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'info\' data-color=\'blue\'>\n        <h2>Fiksyen Bahasa Malaysia</h2>\n        <p></p>\n      </custom-marker>'
+      },
+      {
+        id: 'bt-f2-reading-8-marker-1789462994947',
+        position: {
+          yaw: '125.86deg',
+          pitch: '-0.33deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Fiksyen Bahasa Malaysia',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'info\' data-color=\'blue\'>\n        <h2>Fiksyen Bahasa Malaysia</h2>\n        <p></p>\n      </custom-marker>'
       }
     ],
     data: {
@@ -496,10 +519,10 @@ export default [
     ],
     markers: [
       {
-        id: 'bt-f2-reading-9-marker-1789462637912',
+        id: 'bt-f2-reading-9-marker-1789550224033',
         position: {
-          yaw: '71.19deg',
-          pitch: '-26.12deg'
+          yaw: '66.00deg',
+          pitch: '-1.53deg'
         },
         size: {
           width: 44,
@@ -507,22 +530,20 @@ export default [
         },
         anchor: 'center center',
         data: {
-          type: 'image',
-          title: '',
+          type: 'info',
+          title: 'Rujukan - Sumbangan Kolej AUCMS',
           icon: 'info',
           color: 'blue',
           animated: false,
-          imageSrc: './images/bt/markers/FLOOR-2/BT_f2_20.jpg',
-          originalUrl: './images/bt/markers/FLOOR-2/BT_f2_20.jpg',
-          caption: ''
+          content: ''
         },
-        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bt/markers/FLOOR-2/BT_f2_20.jpg\'>\n        <img src=\'./images/bt/markers/FLOOR-2/BT_f2_20.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+        html: '<custom-marker type=\'info\' data-icon=\'info\' data-color=\'blue\'>\n        <h2>Rujukan - Sumbangan Kolej AUCMS</h2>\n        <p></p>\n      </custom-marker>'
       },
       {
-        id: 'bt-f2-reading-9-marker-1789462599524',
+        id: 'bt-f2-reading-9-marker-1789550318428',
         position: {
-          yaw: '99.59deg',
-          pitch: '-26.82deg'
+          yaw: '69.94deg',
+          pitch: '-1.50deg'
         },
         size: {
           width: 44,
@@ -530,22 +551,42 @@ export default [
         },
         anchor: 'center center',
         data: {
-          type: 'image',
-          title: '',
+          type: 'info',
+          title: 'Rujukan - Majalah Berjilid',
           icon: 'info',
           color: 'blue',
           animated: false,
-          imageSrc: './images/bt/markers/FLOOR-2/BT_f2_15.jpg',
-          originalUrl: './images/bt/markers/FLOOR-2/BT_f2_15.jpg',
-          caption: ''
+          content: ''
         },
-        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bt/markers/FLOOR-2/BT_f2_15.jpg\'>\n        <img src=\'./images/bt/markers/FLOOR-2/BT_f2_15.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+        html: '<custom-marker type=\'info\' data-icon=\'info\' data-color=\'blue\'>\n        <h2>Rujukan - Majalah Berjilid</h2>\n        <p></p>\n      </custom-marker>'
+      },
+      
+      {
+        id: 'bt-f2-reading-9-marker-1789550359758',
+        position: {
+          yaw: '101.72deg',
+          pitch: '0.26deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Rujukan Bahasa Inggeris',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'info\' data-color=\'blue\'>\n        <h2>Rujukan Bahasa Inggeris</h2>\n        <p></p>\n      </custom-marker>'
       },
       {
-        id: 'bt-f2-reading-9-marker-1789462716003',
+        id: 'bt-f2-reading-9-marker-1789550404664',
         position: {
-          yaw: '130.14deg',
-          pitch: '-22.16deg'
+          yaw: '130.02deg',
+          pitch: '1.14deg'
         },
         size: {
           width: 44,
@@ -553,16 +594,35 @@ export default [
         },
         anchor: 'center center',
         data: {
-          type: 'image',
-          title: '',
+          type: 'info',
+          title: 'Rujukan Bahasa Inggeris',
           icon: 'info',
           color: 'blue',
           animated: false,
-          imageSrc: './images/bt/markers/FLOOR-2/BT_f2_13.jpg',
-          originalUrl: './images/bt/markers/FLOOR-2/BT_f2_13.jpg',
-          caption: ''
+          content: ''
         },
-        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bt/markers/FLOOR-2/BT_f2_13.jpg\'>\n        <img src=\'./images/bt/markers/FLOOR-2/BT_f2_13.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+        html: '<custom-marker type=\'info\' data-icon=\'info\' data-color=\'blue\'>\n        <h2>Rujukan Bahasa Inggeris</h2>\n        <p></p>\n      </custom-marker>'
+      },
+      {
+        id: 'bt-f2-reading-9-marker-1789550340721',
+        position: {
+          yaw: '96.34deg',
+          pitch: '-0.04deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Rujukan Bahasa Cina dan Bahasa Tamil',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'info\' data-color=\'blue\'>\n        <h2>Rujukan Bahasa Cina dan Bahasa Tamil</h2>\n        <p></p>\n      </custom-marker>'
       }
     ],
     data: {
