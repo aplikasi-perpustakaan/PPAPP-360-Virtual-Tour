@@ -31,6 +31,11 @@ export default [
     defaultPitch: '0deg',
     links: [
       { nodeId: 'pusat-f1-kids-1', position: { yaw: '180deg', pitch: '0deg' }, name: 'Go back' },
+      {
+        nodeId: 'pusat-f1-kids-3',
+        position: { yaw: '289.81deg', pitch: '-10deg' },
+        name: 'Go to Floor 1 - Kids 3'
+      },
     ],
     markers: [],
     data: {
@@ -49,9 +54,12 @@ export default [
     links: [
       {
         nodeId: 'pusat-f1-kids-4',
-        position: { yaw: '324.56deg', pitch: '-6.13deg' },
+        position: { yaw: '328.69deg', pitch: '-10deg' },
         name: 'Go to Floor 1 - Kids 4'
       },
+      
+      
+      
       
       {
         nodeId: 'pusat-f1-i-play-toys-1',
@@ -60,8 +68,17 @@ export default [
       },
       {
         nodeId: 'pusat-f1-kids-13',
-        position: { yaw: '114.92deg', pitch: '-10deg' },
-        name: 'Go to Floor 1 - Kids 13'
+        position: { yaw: '187.25deg', pitch: '-8.49deg' },
+        name: 'Go to Floor 1 - Kids 13',
+        targetYaw: '117.98deg',
+        targetPitch: '14.97deg'
+      },
+      {
+        nodeId: 'pusat-f1-kids-2',
+        position: { yaw: '109.81deg', pitch: '-6.35deg' },
+        name: 'Go to Floor 1 - Kids 2',
+        targetYaw: '167.37deg',
+        targetPitch: '-0.95deg'
       },
     ],
     markers: [],
@@ -81,8 +98,10 @@ export default [
     links: [
       {
         nodeId: 'pusat-f1-kids-3',
-        position: { yaw: '144.56deg', pitch: '-10deg' },
-        name: 'Go to Floor 1 - Kids 3'
+        position: { yaw: '148.69deg', pitch: '-3.98deg' },
+        name: 'Go to Floor 1 - Kids 3',
+        targetYaw: '148.57deg',
+        targetPitch: '-3.02deg'
       },
     ],
     markers: [],
@@ -325,8 +344,10 @@ export default [
       
       {
         nodeId: 'pusat-f1-kids-3',
-        position: { yaw: '294.92deg', pitch: '-3.75deg' },
-        name: 'Go to Floor 1 - Kids 3'
+        position: { yaw: '278.75deg', pitch: '-7.37deg' },
+        name: 'Go to Floor 1 - Kids 3',
+        targetYaw: '45.67deg',
+        targetPitch: '2.97deg'
       },
     ],
     markers: [],

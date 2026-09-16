@@ -494,8 +494,23 @@ export default [
       },
       {
         nodeId: 'pusat-f1-kids-1',
-        position: { yaw: '325.05deg', pitch: '-14.04deg' },
-        name: 'Go to Floor 1 - Kids 1'
+        position: { yaw: '323.88deg', pitch: '-8.31deg' },
+        name: 'Go to Floor 1 - Kids 1',
+        targetYaw: '335.25deg',
+        targetPitch: '-2.95deg'
+      },
+      
+      {
+        nodeId: 'pusat-f1-lobby-20',
+        position: { yaw: '149.81deg', pitch: '-10deg' },
+        name: 'Go to Floor 1 - Lobby 20'
+      },
+      {
+        nodeId: 'pusat-f1-lobby-23',
+        position: { yaw: '100.15deg', pitch: '-0.86deg' },
+        name: 'Go to Floor 1 - Lobby 23',
+        targetYaw: '0.00deg',
+        targetPitch: '0.00deg'
       },
     ],
     markers: [],
@@ -551,6 +566,16 @@ export default [
         position: { yaw: '148.44deg', pitch: '-16.67deg' },
         name: 'Go to Floor 1 - Lobby 21'
       },
+      {
+        nodeId: 'pusat-f1-lobby-23',
+        position: { yaw: '32.24deg', pitch: '-3.31deg' },
+        name: 'Go to Floor 1 - Lobby 23'
+      },
+      {
+        nodeId: 'pusat-f1-lobby-18',
+        position: { yaw: '329.81deg', pitch: '-6.30deg' },
+        name: 'Go to Floor 1 - Lobby 18'
+      },
     ],
     markers: [],
     data: {
@@ -573,7 +598,11 @@ export default [
         name: 'Go to Floor 1 - Lobby 20'
       },
       
-      { nodeId: 'pusat-f1-lobby-22', position: { yaw: '0deg', pitch: '0deg' }, name: 'Go to Lobby 22' }
+      {
+        nodeId: 'pusat-f1-lobby-22',
+        position: { yaw: '168.45deg', pitch: '-10deg' },
+        name: 'Go to Floor 1 - Lobby 22'
+      },
     ],
     markers: [],
     data: {
@@ -590,8 +619,11 @@ export default [
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [
-      { nodeId: 'pusat-f1-lobby-21', position: { yaw: '180deg', pitch: '0deg' }, name: 'Go back' },
-      { nodeId: 'pusat-f1-lobby-23', position: { yaw: '0deg', pitch: '0deg' }, name: 'Go to Lobby 23' }
+      {
+        nodeId: 'pusat-f1-lobby-21',
+        position: { yaw: '348.45deg', pitch: '-6.74deg' },
+        name: 'Go to Floor 1 - Lobby 21'
+      },
     ],
     markers: [],
     data: {
@@ -608,8 +640,28 @@ export default [
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [
-      { nodeId: 'pusat-f1-lobby-22', position: { yaw: '180deg', pitch: '0deg' }, name: 'Go back' },
-      { nodeId: 'pusat-f1-lobby-24', position: { yaw: '0deg', pitch: '0deg' }, name: 'Go to Lobby 24' }
+      {
+        nodeId: 'pusat-f1-lobby-24',
+        position: { yaw: '55.88deg', pitch: '2.21deg' },
+        name: 'Go to Floor 1 - Lobby 24',
+        targetYaw: '61.93deg',
+        targetPitch: '-0.73deg'
+      },
+      
+      
+      
+      {
+        nodeId: 'pusat-f1-lobby-20',
+        position: { yaw: '212.24deg', pitch: '-10deg' },
+        name: 'Go to Floor 1 - Lobby 20'
+      },
+      {
+        nodeId: 'pusat-f1-lobby-18',
+        position: { yaw: '291.24deg', pitch: '-16.65deg' },
+        name: 'Go to Floor 1 - Lobby 18',
+        targetYaw: '323.88deg',
+        targetPitch: '-8.31deg'
+      },
     ],
     markers: [],
     data: {
@@ -626,8 +678,22 @@ export default [
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [
-      { nodeId: 'pusat-f1-lobby-23', position: { yaw: '180deg', pitch: '0deg' }, name: 'Go back' },
-      { nodeId: 'pusat-f1-lobby-25', position: { yaw: '0deg', pitch: '0deg' }, name: 'Go to Lobby 25' }
+      {
+        nodeId: 'pusat-f1-lobby-23',
+        position: { yaw: '238.67deg', pitch: '-8.50deg' },
+        name: 'Go to Floor 1 - Lobby 23',
+        targetYaw: '239.83deg',
+        targetPitch: '-7.40deg'
+      },
+      
+      
+      {
+        nodeId: 'pusat-f1-lobby-25',
+        position: { yaw: '61.99deg', pitch: '0.40deg' },
+        name: 'Go to Floor 1 - Lobby 25',
+        targetYaw: '57.22deg',
+        targetPitch: '-5.87deg'
+      },
     ],
     markers: [],
     data: {
@@ -644,8 +710,13 @@ export default [
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [
-      { nodeId: 'pusat-f1-lobby-24', position: { yaw: '180deg', pitch: '0deg' }, name: 'Go back' },
-      { nodeId: 'pusat-f1-lobby-26', position: { yaw: '0deg', pitch: '0deg' }, name: 'Go to Lobby 26' }
+      {
+        nodeId: 'pusat-f1-lobby-24',
+        position: { yaw: '290.59deg', pitch: '-5.33deg' },
+        name: 'Go to Floor 1 - Lobby 24',
+        targetYaw: '238.67deg',
+        targetPitch: '-8.50deg'
+      },
     ],
     markers: [],
     data: {
@@ -662,7 +733,6 @@ export default [
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [
-      { nodeId: 'pusat-f1-lobby-25', position: { yaw: '180deg', pitch: '0deg' }, name: 'Go back' },
       { nodeId: 'pusat-f1-lobby-27', position: { yaw: '0deg', pitch: '0deg' }, name: 'Go to Lobby 27' },
       {
         nodeId: 'pusat-f1-lobby-17',
