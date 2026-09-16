@@ -10,6 +10,7 @@ export default [
     thumbnail: './images/bt/f1-lobby/thumbs/bt-f1-lobby-1.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'bt-f2-reading-22',
@@ -231,6 +232,7 @@ export default [
     thumbnail: './images/bt/f1-lobby/thumbs/bt-f1-lobby-2.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'bt-f1-lobby-1',
@@ -269,6 +271,7 @@ export default [
     thumbnail: './images/bt/f1-lobby/thumbs/bt-f1-lobby-3.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'bt-f1-lobby-1',

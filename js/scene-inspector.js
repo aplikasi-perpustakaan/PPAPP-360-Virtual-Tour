@@ -13,6 +13,11 @@ export function initSceneInspector(viewer, virtualTour, allNodes, isDebug) {
 
   if (!panel || !contentDiv) return;
 
+  // Cleanup previous listeners if re-initialized
+  if (window._sceneInspectorAbort) window._sceneInspectorAbort.abort();
+  const ac = new AbortController();
+  window._sceneInspectorAbort = ac;
+
   function updateStartupSceneButton() {
     if (!startupSceneBtn) return;
     const currentNodeId = virtualTour.getCurrentNode()?.id;
@@ -41,7 +46,7 @@ export function initSceneInspector(viewer, virtualTour, allNodes, isDebug) {
         updateInspector();
       }
     }
-  });
+  }, { signal: ac.signal });
 
   closeBtn.addEventListener('click', () => {
     panel.style.display = 'none';
@@ -170,7 +175,7 @@ export function initSceneInspector(viewer, virtualTour, allNodes, isDebug) {
     if (e.key === 'o' || e.key === 'O') {
       openInNewTab();
     }
-  });
+  }, { signal: ac.signal });
 
   function updateInspector() {
     const currentNodeId = virtualTour.getCurrentNode()?.id;

@@ -8,6 +8,7 @@ export default [
     thumbnail: './images/bt/ramp/thumbs/bt-ramp-1.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'bt-ramp-2',
@@ -34,6 +35,7 @@ export default [
     thumbnail: './images/bt/ramp/thumbs/bt-ramp-2.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'bt-ramp-1',
@@ -60,6 +62,7 @@ export default [
     thumbnail: './images/bt/ramp/thumbs/bt-ramp-3.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'bt-ramp-2',
@@ -86,6 +89,7 @@ export default [
     thumbnail: './images/bt/ramp/thumbs/bt-ramp-4.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'bt-ramp-3',

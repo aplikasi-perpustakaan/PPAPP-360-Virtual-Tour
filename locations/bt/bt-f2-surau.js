@@ -8,6 +8,7 @@ export default [
     thumbnail: './images/bt/f1-surau/thumbs/bt-f1-surau-1.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'bt-f2-surau-2',
@@ -34,6 +35,7 @@ export default [
     thumbnail: './images/bt/f1-surau/thumbs/bt-f1-surau-2.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'bt-f2-surau-1',

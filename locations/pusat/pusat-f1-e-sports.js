@@ -7,6 +7,7 @@ export default [
     thumbnail: './images/pusat/f1-e-sports/thumbs/pusat-f1-e-sports-1.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       { nodeId: 'pusat-f1-e-sports-2', position: { yaw: '0deg', pitch: '0deg' }, name: 'Go to E-Sports 2' }
     ],
@@ -24,6 +25,7 @@ export default [
     thumbnail: './images/pusat/f1-e-sports/thumbs/pusat-f1-e-sports-2.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       { nodeId: 'pusat-f1-e-sports-1', position: { yaw: '180deg', pitch: '0deg' }, name: 'Go back' },
       { nodeId: 'pusat-f1-e-sports-3', position: { yaw: '0deg', pitch: '0deg' }, name: 'Go to E-Sports 3' }
@@ -42,6 +44,7 @@ export default [
     thumbnail: './images/pusat/f1-e-sports/thumbs/pusat-f1-e-sports-3.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       { nodeId: 'pusat-f1-e-sports-2', position: { yaw: '180deg', pitch: '0deg' }, name: 'Go back' }
     ],

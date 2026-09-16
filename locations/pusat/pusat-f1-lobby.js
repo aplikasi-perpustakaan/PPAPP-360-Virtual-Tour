@@ -7,6 +7,7 @@ export default [
     thumbnail: './images/pusat/f1-lobby/thumbs/pusat-f1-lobby-1.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'pusat-f1-lobby-2',
@@ -34,6 +35,7 @@ export default [
     thumbnail: './images/pusat/f1-lobby/thumbs/pusat-f1-lobby-2.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       { nodeId: 'pusat-f1-lobby-3', position: { yaw: '0deg', pitch: '0deg' }, name: 'Go to Lobby 3' },
       {
@@ -56,6 +58,7 @@ export default [
     thumbnail: './images/pusat/f1-lobby/thumbs/pusat-f1-lobby-3.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       { nodeId: 'pusat-f1-lobby-2', position: { yaw: '180deg', pitch: '0deg' }, name: 'Go back' },
       {
@@ -83,6 +86,7 @@ export default [
     thumbnail: './images/pusat/f1-lobby/thumbs/pusat-f1-lobby-4.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'pusat-f1-lobby-3',
@@ -121,6 +125,7 @@ export default [
     thumbnail: './images/pusat/f1-lobby/thumbs/pusat-f1-lobby-5.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'pusat-f1-lobby-4',
@@ -147,6 +152,7 @@ export default [
     thumbnail: './images/pusat/f1-lobby/thumbs/pusat-f1-lobby-6.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'pusat-f1-lobby-7',
@@ -173,6 +179,7 @@ export default [
     thumbnail: './images/pusat/f1-lobby/thumbs/pusat-f1-lobby-7.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'pusat-f1-lobby-6',
@@ -201,6 +208,7 @@ export default [
     thumbnail: './images/pusat/f1-lobby/thumbs/pusat-f1-lobby-8.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'pusat-f1-lobby-9',
@@ -233,6 +241,7 @@ export default [
     thumbnail: './images/pusat/f1-lobby/thumbs/pusat-f1-lobby-9.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'pusat-f1-lobby-8',
@@ -260,6 +269,7 @@ export default [
     thumbnail: './images/pusat/f1-lobby/thumbs/pusat-f1-lobby-10.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'pusat-f1-lobby-9',
@@ -286,6 +296,7 @@ export default [
     thumbnail: './images/pusat/f1-lobby/thumbs/pusat-f1-lobby-11.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'pusat-f1-lobby-12',
@@ -307,6 +318,7 @@ export default [
     thumbnail: './images/pusat/f1-lobby/thumbs/pusat-f1-lobby-12.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'pusat-f1-lobby-11',
@@ -344,6 +356,7 @@ export default [
     thumbnail: './images/pusat/f1-lobby/thumbs/pusat-f1-lobby-13.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'pusat-f1-lobby-12',
@@ -367,6 +380,7 @@ export default [
     thumbnail: './images/pusat/f1-lobby/thumbs/pusat-f1-lobby-14.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       { nodeId: 'pusat-f1-lobby-13', position: { yaw: '180deg', pitch: '0deg' }, name: 'Go back' },
       {
@@ -400,6 +414,7 @@ export default [
     thumbnail: './images/pusat/f1-lobby/thumbs/pusat-f1-lobby-15.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'pusat-f1-lobby-14',
@@ -427,6 +442,7 @@ export default [
     thumbnail: './images/pusat/f1-lobby/thumbs/pusat-f1-lobby-16.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'pusat-f1-lobby-15',
@@ -454,6 +470,7 @@ export default [
     thumbnail: './images/pusat/f1-lobby/thumbs/pusat-f1-lobby-17.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'pusat-f1-lobby-16',
@@ -486,6 +503,7 @@ export default [
     thumbnail: './images/pusat/f1-lobby/thumbs/pusat-f1-lobby-18.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'pusat-f1-lobby-17',
@@ -527,6 +545,7 @@ export default [
     thumbnail: './images/pusat/f1-lobby/thumbs/pusat-f1-lobby-19.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'pusat-f1-lobby-20',
@@ -554,6 +573,7 @@ export default [
     thumbnail: './images/pusat/f1-lobby/thumbs/pusat-f1-lobby-20.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'pusat-f1-lobby-19',
@@ -591,6 +611,7 @@ export default [
     thumbnail: './images/pusat/f1-lobby/thumbs/pusat-f1-lobby-21.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'pusat-f1-lobby-20',
@@ -618,6 +639,7 @@ export default [
     thumbnail: './images/pusat/f1-lobby/thumbs/pusat-f1-lobby-22.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'pusat-f1-lobby-21',
@@ -639,6 +661,7 @@ export default [
     thumbnail: './images/pusat/f1-lobby/thumbs/pusat-f1-lobby-23.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'pusat-f1-lobby-24',
@@ -677,6 +700,7 @@ export default [
     thumbnail: './images/pusat/f1-lobby/thumbs/pusat-f1-lobby-24.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'pusat-f1-lobby-23',
@@ -709,6 +733,7 @@ export default [
     thumbnail: './images/pusat/f1-lobby/thumbs/pusat-f1-lobby-25.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'pusat-f1-lobby-24',
@@ -732,6 +757,7 @@ export default [
     thumbnail: './images/pusat/f1-lobby/thumbs/pusat-f1-lobby-26.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       { nodeId: 'pusat-f1-lobby-27', position: { yaw: '0deg', pitch: '0deg' }, name: 'Go to Lobby 27' },
       {
@@ -754,6 +780,7 @@ export default [
     thumbnail: './images/pusat/f1-lobby/thumbs/pusat-f1-lobby-27.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       { nodeId: 'pusat-f1-lobby-26', position: { yaw: '180deg', pitch: '0deg' }, name: 'Go back' },
       { nodeId: 'pusat-f1-lobby-28', position: { yaw: '0deg', pitch: '0deg' }, name: 'Go to Lobby 28' }
@@ -772,6 +799,7 @@ export default [
     thumbnail: './images/pusat/f1-lobby/thumbs/pusat-f1-lobby-28.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       { nodeId: 'pusat-f1-lobby-27', position: { yaw: '180deg', pitch: '0deg' }, name: 'Go back' },
       { nodeId: 'pusat-f1-lobby-29', position: { yaw: '0deg', pitch: '0deg' }, name: 'Go to Lobby 29' }
@@ -790,6 +818,7 @@ export default [
     thumbnail: './images/pusat/f1-lobby/thumbs/pusat-f1-lobby-29.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       { nodeId: 'pusat-f1-lobby-28', position: { yaw: '180deg', pitch: '0deg' }, name: 'Go back' },
       {

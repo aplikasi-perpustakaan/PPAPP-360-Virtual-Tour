@@ -10,6 +10,7 @@ export default [
     thumbnail: './images/bt/f1-kids/thumbs/bt-f1-kids-1.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'bt-f1-kids-2',
@@ -113,6 +114,7 @@ export default [
     thumbnail: './images/bt/f1-kids/thumbs/bt-f1-kids-2.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'bt-f1-kids-1',
@@ -234,6 +236,7 @@ export default [
     thumbnail: './images/bt/f1-kids/thumbs/bt-f1-kids-3.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'bt-f1-kids-2',
@@ -290,6 +293,7 @@ export default [
     thumbnail: './images/bt/f1-kids/thumbs/bt-f1-kids-4.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'bt-f1-kids-3',
@@ -318,6 +322,7 @@ export default [
     thumbnail: './images/bt/f1-kids/thumbs/bt-f1-kids-5.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'bt-f1-kids-4',
@@ -351,6 +356,7 @@ export default [
     thumbnail: './images/bt/f1-kids/thumbs/bt-f1-kids-6.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'bt-f1-kids-5',
@@ -426,6 +432,7 @@ export default [
     thumbnail: './images/bt/f1-kids/thumbs/bt-f1-kids-7.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'bt-f1-kids-6',
@@ -511,6 +518,7 @@ export default [
     thumbnail: './images/bt/f1-kids/thumbs/bt-f1-kids-8.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'bt-f1-kids-7',

@@ -8,6 +8,7 @@ export default [
     thumbnail: './images/bt/f1-backside/thumbs/bt-f1-backside-1.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'bt-f1-backside-2',
@@ -39,6 +40,7 @@ export default [
     thumbnail: './images/bt/f1-backside/thumbs/bt-f1-backside-2.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'bt-f1-backside-1',

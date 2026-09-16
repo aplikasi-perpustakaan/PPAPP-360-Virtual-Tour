@@ -11,6 +11,7 @@ export default [
     thumbnail: './images/bm/ext-outside/thumbs/bm-ext-outside-1.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'bm-ext-outside-2',
@@ -61,6 +62,7 @@ export default [
     thumbnail: './images/bm/ext-outside/thumbs/bm-ext-outside-2.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'bm-ext-outside-1',
@@ -106,6 +108,7 @@ export default [
     thumbnail: './images/bm/ext-outside/thumbs/bm-ext-outside-3.jpg',
     defaultYaw: '65deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'bm-ext-outside-1',

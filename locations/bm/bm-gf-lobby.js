@@ -11,6 +11,7 @@ export default [
     thumbnail: './images/bm/gf-lobby/thumbs/bm-gf-lobby-1.jpg',
     defaultYaw: '15deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'bm-ext-outside-3',
@@ -176,6 +177,7 @@ export default [
     thumbnail: './images/bm/gf-lobby/thumbs/bm-gf-lobby-2.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'bm-gf-lobby-1',
@@ -321,6 +323,7 @@ export default [
     thumbnail: './images/bm/gf-lobby/thumbs/bm-gf-lobby-3.jpg',
     defaultYaw: '340deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'bm-gf-lobby-2',

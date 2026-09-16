@@ -54,7 +54,7 @@ export function initAudioController(viewer) {
   });
 
   // Stop narration when scene changes
-  viewer.addEventListener('panorama-load', () => {
+  viewer.addEventListener('panorama-loaded', () => {
     if (currentNarration) {
         currentNarration.pause();
         currentNarration.currentTime = 0;

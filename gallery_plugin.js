@@ -122,6 +122,7 @@ var blank_default = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 20
 // src/utils.ts
 function clickRepeater(element, cb) {
   let interval;
+  const stop = () => { clearInterval(interval); };
   element.addEventListener("mousedown", () => {
     cb();
     clearInterval(interval);
@@ -132,10 +133,11 @@ function clickRepeater(element, cb) {
         cb();
       }
     }, 500);
+    // Listen on window to catch mouseup even when cursor leaves the button
+    window.addEventListener("mouseup", stop, { once: true });
   });
-  element.addEventListener("mouseup", () => {
-    clearInterval(interval);
-  });
+  element.addEventListener("mouseup", stop);
+  element.addEventListener("mouseleave", stop);
 }
 
 // src/GalleryComponent.ts

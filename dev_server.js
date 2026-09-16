@@ -1,9 +1,41 @@
 const http = require('http');
 const fs = require('fs');
 const path = require('path');
-const { exec } = require('child_process');
+const { exec, spawn } = require('child_process');
 
-const PORT = 8080;
+const PORT = process.env.PORT || 8080;
+
+const VALID_BRANCHES = ['bm', 'bt', 'gt', 'jw', 'ppaj', 'ppk', 'pusat'];
+
+function sanitizeBranch(sourceId) {
+  const branch = sourceId.split('-')[0];
+  if (!VALID_BRANCHES.includes(branch)) {
+    throw new Error(`Invalid branch '${branch}'. Must be one of: ${VALID_BRANCHES.join(', ')}`);
+  }
+  return branch;
+}
+
+function findSceneFile(sourceId) {
+  const branch = sanitizeBranch(sourceId);
+  const branchDir = path.join(__dirname, 'locations', branch);
+
+  if (!fs.existsSync(branchDir)) {
+    throw new Error(`Branch directory not found: ${branchDir}`);
+  }
+
+  const files = fs.readdirSync(branchDir).filter(f => f.endsWith('.js') && !f.endsWith('-index.js'));
+  const idSearchRegex = new RegExp(`id:\\s*['"]${sourceId}['"]`);
+
+  for (const file of files) {
+    const fullPath = path.join(branchDir, file);
+    const fileContent = fs.readFileSync(fullPath, 'utf8');
+    if (idSearchRegex.test(fileContent)) {
+      return { filePath: fullPath, content: fileContent, branch };
+    }
+  }
+
+  throw new Error(`Could not find scene ID '${sourceId}' in any file under locations/${branch}/`);
+}
 
 const MIME_TYPES = {
   '.html': 'text/html',
@@ -13,38 +45,17 @@ const MIME_TYPES = {
   '.png': 'image/png',
   '.jpg': 'image/jpeg',
   '.jpeg': 'image/jpeg',
-  '.svg': 'image/svg+xml'
+  '.svg': 'image/svg+xml',
+  '.mp3': 'audio/mpeg',
+  '.wav': 'audio/wav',
+  '.m4a': 'audio/x-m4a',
+  '.ogg': 'audio/ogg',
 };
 
 function handleSaveLink(payload) {
   const { action, sourceId, targetId, oldTargetId, yaw, pitch, targetName, targetYaw, targetPitch } = payload;
-  const branch = sourceId.split('-')[0];
-  const branchDir = path.join(__dirname, 'locations', branch);
-  
-  if (!fs.existsSync(branchDir)) {
-    throw new Error(`Branch directory not found: ${branchDir}`);
-  }
-
-  // Dynamically find which file contains this scene ID
-  const files = fs.readdirSync(branchDir).filter(f => f.endsWith('.js') && !f.endsWith('-index.js'));
-  let filePath = null;
-  let content = null;
-  
-  const idSearchRegex = new RegExp(`id:\\s*['"]${sourceId}['"]`);
-
-  for (const file of files) {
-    const fullPath = path.join(branchDir, file);
-    const fileContent = fs.readFileSync(fullPath, 'utf8');
-    if (idSearchRegex.test(fileContent)) {
-      filePath = fullPath;
-      content = fileContent;
-      break;
-    }
-  }
-
-  if (!filePath || !content) {
-    throw new Error(`Could not find scene ID '${sourceId}' in any file under locations/${branch}/`);
-  }
+  const { filePath, content: fileContent } = findSceneFile(sourceId);
+  let content = fileContent;
 
   const blockRegex = new RegExp(`(id:\\s*['"]${sourceId}['"][\\s\\S]*?links:\\s*\\[)([\\s\\S]*?)(\\]\\s*,\\s*(?:markers|data):)`, 'g');
   
@@ -100,8 +111,6 @@ function handleSaveLink(payload) {
 function handleSaveMarker(payload) {
   const { sourceId, markerConfig, markerId, action, imageSrc, originalUrl } = payload;
   const targetMarkerId = markerId || (markerConfig && markerConfig.id);
-  const branch = sourceId.split('-')[0];
-  const branchDir = path.join(__dirname, 'locations', branch);
   
   if (action === 'delete') {
       try {
@@ -118,29 +127,8 @@ function handleSaveMarker(payload) {
       }
   }
   
-  if (!fs.existsSync(branchDir)) {
-    throw new Error(`Branch directory not found: ${branchDir}`);
-  }
-
-  const files = fs.readdirSync(branchDir).filter(f => f.endsWith('.js') && !f.endsWith('-index.js'));
-  let filePath = null;
-  let content = null;
-  
-  const idSearchRegex = new RegExp(`id:\\s*['"]${sourceId}['"]`);
-
-  for (const file of files) {
-    const fullPath = path.join(branchDir, file);
-    const fileContent = fs.readFileSync(fullPath, 'utf8');
-    if (idSearchRegex.test(fileContent)) {
-      filePath = fullPath;
-      content = fileContent;
-      break;
-    }
-  }
-
-  if (!filePath || !content) {
-    throw new Error(`Could not find scene ID '${sourceId}'`);
-  }
+  const { filePath, content: fileContent } = findSceneFile(sourceId);
+  let content = fileContent;
 
   // Regex to find the markers array for the specific scene
   // Matches from `id: "sourceId"` down to `markers: [` then captures the contents until the first `]`
@@ -187,33 +175,10 @@ function handleSaveMarker(payload) {
 }
 
 function handleSaveDefaults({ sourceId, defaultYaw, defaultPitch, defaultZoomLvl }) {
-  const branch = sourceId.split('-')[0];
-  const branchDir = path.join(__dirname, 'locations', branch);
-  
-  if (!fs.existsSync(branchDir)) {
-    throw new Error(`Branch directory not found: ${branchDir}`);
-  }
-
-  const files = fs.readdirSync(branchDir).filter(f => f.endsWith('.js') && !f.endsWith('-index.js'));
-  let filePath = null;
-  let content = null;
+  const { filePath, content: fileContent } = findSceneFile(sourceId);
+  let content = fileContent;
   
   const idSearchRegex = new RegExp(`id:\\s*['"]${sourceId}['"]`);
-
-  for (const file of files) {
-    const fullPath = path.join(branchDir, file);
-    const fileContent = fs.readFileSync(fullPath, 'utf8');
-    if (idSearchRegex.test(fileContent)) {
-      filePath = fullPath;
-      content = fileContent;
-      break;
-    }
-  }
-
-  if (!filePath || !content) {
-    throw new Error(`Could not find scene ID '${sourceId}'`);
-  }
-
   const blockStartIndex = content.search(idSearchRegex);
   if (blockStartIndex === -1) throw new Error("Not found");
   
@@ -347,13 +312,18 @@ const server = http.createServer((req, res) => {
         const numYaw = parseFloat(yaw);
         const numPitch = parseFloat(pitch);
 
-        const cmd = `python scripts/generate-thumbnails.py --scene "${sourceId}" --yaw ${numYaw} --pitch ${numPitch}`;
-        
-        exec(cmd, { cwd: __dirname }, (error, stdout, stderr) => {
+        const args = ['scripts/generate-thumbnails.py', '--scene', sourceId, '--yaw', String(numYaw), '--pitch', String(numPitch)];
+        const proc = spawn('python', args, { cwd: __dirname });
+        let stdout = '';
+        let stderr = '';
+        proc.stdout.on('data', (data) => { stdout += data.toString(); });
+        proc.stderr.on('data', (data) => { stderr += data.toString(); });
+        proc.on('close', (code) => {
+          const error = code !== 0;
           if (error) {
-            console.error('Error generating thumbnail:', stderr || error.message);
+            console.error('Error generating thumbnail:', stderr || `Exit code ${code}`);
             res.writeHead(500, { 'Content-Type': 'application/json' });
-            res.end(JSON.stringify({ error: stderr || error.message }));
+            res.end(JSON.stringify({ error: stderr || `Exit code ${code}` }));
             return;
           }
           console.log(`[GENERATE THUMBNAIL] ${sourceId} thumbnail generated. Output: ${stdout.trim()}`);
@@ -481,6 +451,12 @@ const server = http.createServer((req, res) => {
     if (!branch) {
       res.writeHead(400, { 'Content-Type': 'application/json' });
       res.end(JSON.stringify({ error: 'Missing branch parameter' }));
+      return;
+    }
+
+    if (!VALID_BRANCHES.includes(branch)) {
+      res.writeHead(400, { 'Content-Type': 'application/json' });
+      res.end(JSON.stringify({ error: 'Invalid branch' }));
       return;
     }
     

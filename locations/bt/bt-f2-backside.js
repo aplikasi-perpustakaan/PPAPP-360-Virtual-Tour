@@ -8,6 +8,7 @@ export default [
     thumbnail: './images/bt/f2-backside/thumbs/bt-f2-backside-1.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'bt-f2-backside-2',
@@ -44,6 +45,7 @@ export default [
     thumbnail: './images/bt/f2-backside/thumbs/bt-f2-backside-2.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'bt-f2-backside-1',
@@ -65,6 +67,7 @@ export default [
     thumbnail: './images/bt/f2-backside/thumbs/bt-f2-backside-3.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'bt-f2-backside-1',

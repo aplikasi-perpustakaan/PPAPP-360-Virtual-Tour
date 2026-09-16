@@ -74,7 +74,7 @@ async function bootstrap() {
     
     // 3. Load the initial nodes dynamically BEFORE initializing the viewer
     const module = await import(`./locations/${defaultBranch}/${defaultBranch}-index.js`);
-    const defaultNodes = module.default;
+    let defaultNodes = module.default;
     
     // 4. Validate if the requested node exists in the loaded branch
     const branchConfig = branches.find(b => b.id === defaultBranch);
@@ -329,7 +329,7 @@ async function bootstrap() {
         const currentNodeId = virtualTour.getCurrentNode()?.id;
         if (!currentNodeId) return;
         
-        const currentNode = defaultNodes.find(n => n.id === currentNodeId);
+        const currentNode = defaultNodes.find(n => n.id === currentNodeId) || virtualTour.getCurrentNode();
         if (!currentNode || !currentNode.links || currentNode.links.length === 0) return;
         
         const currentPosition = viewer.getPosition();
@@ -425,11 +425,17 @@ async function bootstrap() {
 
   } catch (error) {
     console.error('Critical error during bootstrap:', error);
-    // Display error to user via our debug overlay
+    // Display error to user via debug overlay
     const errDiv = document.getElementById('debug-error');
     if (errDiv) {
       errDiv.style.display = 'block';
       errDiv.innerText += `Critical Bootstrap Error: ${error.message}\n\n`;
+    }
+    // Always hide loading screen and show a user-visible fallback
+    hideLoading();
+    const container = document.getElementById('viewer');
+    if (container && !errDiv) {
+      container.innerHTML = `<div style="display:flex;align-items:center;justify-content:center;height:100%;color:#ccc;font-family:sans-serif;text-align:center;padding:2rem;"><div><h2>⚠️ Failed to Load Virtual Tour</h2><p>${error.message}</p><p><a href="javascript:location.reload()" style="color:#2D6CDF;">Try Again</a></p></div></div>`;
     }
   }
 }

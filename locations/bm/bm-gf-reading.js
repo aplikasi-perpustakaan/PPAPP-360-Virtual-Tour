@@ -11,6 +11,7 @@ export default [
     thumbnail: './images/bm/gf-reading/thumbs/bm-gf-reading-1.jpg',
     defaultYaw: '20deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'bm-gf-lobby-3',
@@ -103,6 +104,7 @@ export default [
     thumbnail: './images/bm/gf-reading/thumbs/bm-gf-reading-2.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'bm-gf-reading-1',
@@ -311,6 +313,7 @@ export default [
     thumbnail: './images/bm/gf-reading/thumbs/bm-gf-reading-3.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'bm-gf-reading-2',
@@ -382,6 +385,7 @@ export default [
     thumbnail: './images/bm/gf-reading/thumbs/bm-gf-reading-4.jpg',
     defaultYaw: '280deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'bm-gf-reading-3',
@@ -458,6 +462,7 @@ export default [
     thumbnail: './images/bm/gf-reading/thumbs/bm-gf-reading-5.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'bm-gf-reading-4',

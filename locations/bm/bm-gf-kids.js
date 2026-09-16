@@ -13,6 +13,7 @@ export default [
     thumbnail: './images/bm/gf-kids/thumbs/bm-gf-kids-1.jpg',
     defaultYaw: '10deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'bm-gf-reading-2',
@@ -105,6 +106,7 @@ export default [
     thumbnail: './images/bm/gf-kids/thumbs/bm-gf-kids-2.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'bm-gf-kids-1',
@@ -194,6 +196,7 @@ export default [
     thumbnail: './images/bm/gf-kids/thumbs/bm-gf-kids-3.jpg',
     defaultYaw: '320deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'bm-gf-reading-4',
@@ -247,6 +250,7 @@ export default [
     thumbnail: './images/bm/gf-kids/thumbs/bm-gf-kids-4.jpg',
     defaultYaw: '350deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'bm-gf-kids-3',
@@ -273,6 +277,7 @@ export default [
     thumbnail: './images/bm/gf-kids/thumbs/bm-gf-kids-5.jpg',
     defaultYaw: '85deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'bm-gf-kids-4',
@@ -299,6 +304,7 @@ export default [
     thumbnail: './images/bm/gf-kids/thumbs/bm-gf-kids-6.jpg',
     defaultYaw: '90deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'bm-gf-kids-5',
@@ -320,6 +326,7 @@ export default [
     thumbnail: './images/bm/gf-kids/thumbs/bm-gf-kids-7.jpg',
     defaultYaw: '10deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'bm-gf-kids-3',
@@ -368,6 +375,7 @@ export default [
     thumbnail: './images/bm/gf-kids/thumbs/bm-gf-kids-8.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'bm-gf-kids-7',

@@ -3,6 +3,10 @@ import { Viewer } from '@photo-sphere-viewer/core';
 export function initLinkEditor(viewer, virtualTour, allNodes, isDebug) {
   if (!isDebug) return;
 
+  // Prevent infinite recursion if initLinkEditor is called multiple times
+  if (virtualTour._linkEditorPatched) return;
+  virtualTour._linkEditorPatched = true;
+
   const markersPlugin = viewer.getPlugin('markers');
   
   const modal = document.getElementById('debug-edit-link-modal');
@@ -149,13 +153,14 @@ export function initLinkEditor(viewer, virtualTour, allNodes, isDebug) {
 
   saveBtn.addEventListener('click', async () => {
     if (!previewViewer || !currentSourceId || !currentTargetId) return;
-
-    const pos = previewViewer.getPosition();
-    const yawDeg = ((pos.yaw * 180 / Math.PI) % 360 + 360) % 360;
-    const newTargetYaw = `${yawDeg.toFixed(2)}deg`;
-    const newTargetPitch = `${(pos.pitch * 180 / Math.PI).toFixed(2)}deg`;
+    saveBtn.disabled = true;
 
     try {
+      const pos = previewViewer.getPosition();
+      const yawDeg = ((pos.yaw * 180 / Math.PI) % 360 + 360) % 360;
+      const newTargetYaw = `${yawDeg.toFixed(2)}deg`;
+      const newTargetPitch = `${(pos.pitch * 180 / Math.PI).toFixed(2)}deg`;
+
       const response = await fetch('/api/save-link', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -199,25 +204,28 @@ export function initLinkEditor(viewer, virtualTour, allNodes, isDebug) {
       }
     } catch (err) {
       showToast(`❌ Error: ${err.message}`);
+    } finally {
+      saveBtn.disabled = false;
     }
   });
 
   moveBtn.addEventListener('click', async () => {
     if (!currentSourceId || !currentTargetId || !previewViewer) return;
-
-    // Grab the MAIN viewer's current crosshair position (where they are looking)
-    const pos = viewer.getPosition();
-    const yawDeg = ((pos.yaw * 180 / Math.PI) % 360 + 360) % 360;
-    const newYaw = `${yawDeg.toFixed(2)}deg`;
-    const newPitch = `${(pos.pitch * 180 / Math.PI).toFixed(2)}deg`;
-
-    // Keep the targetYaw and targetPitch what they currently are in the editor
-    const previewPos = previewViewer.getPosition();
-    const targetYawDeg = ((previewPos.yaw * 180 / Math.PI) % 360 + 360) % 360;
-    const newTargetYaw = `${targetYawDeg.toFixed(2)}deg`;
-    const newTargetPitch = `${(previewPos.pitch * 180 / Math.PI).toFixed(2)}deg`;
+    moveBtn.disabled = true;
 
     try {
+      // Grab the MAIN viewer's current crosshair position (where they are looking)
+      const pos = viewer.getPosition();
+      const yawDeg = ((pos.yaw * 180 / Math.PI) % 360 + 360) % 360;
+      const newYaw = `${yawDeg.toFixed(2)}deg`;
+      const newPitch = `${(pos.pitch * 180 / Math.PI).toFixed(2)}deg`;
+
+      // Keep the targetYaw and targetPitch what they currently are in the editor
+      const previewPos = previewViewer.getPosition();
+      const targetYawDeg = ((previewPos.yaw * 180 / Math.PI) % 360 + 360) % 360;
+      const newTargetYaw = `${targetYawDeg.toFixed(2)}deg`;
+      const newTargetPitch = `${(previewPos.pitch * 180 / Math.PI).toFixed(2)}deg`;
+
       const response = await fetch('/api/save-link', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -263,11 +271,14 @@ export function initLinkEditor(viewer, virtualTour, allNodes, isDebug) {
       }
     } catch (err) {
       showToast(`❌ Error: ${err.message}`);
+    } finally {
+      moveBtn.disabled = false;
     }
   });
 
   deleteBtn.addEventListener('click', async () => {
     if (!currentSourceId || !currentOriginalTargetId) return;
+    deleteBtn.disabled = true;
     
     try {
       const response = await fetch('/api/save-link', {
@@ -306,6 +317,8 @@ export function initLinkEditor(viewer, virtualTour, allNodes, isDebug) {
       }
     } catch (err) {
       showToast(`❌ Error: ${err.message}`);
+    } finally {
+      deleteBtn.disabled = false;
     }
   });
 }

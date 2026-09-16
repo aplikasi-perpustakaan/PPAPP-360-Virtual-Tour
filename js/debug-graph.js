@@ -7,6 +7,11 @@ export function initDebugGraph(viewer, virtualTour, allNodes, isDebug) {
 
   if (!panel || !canvas) return;
 
+  // Cleanup previous listeners if re-initialized
+  if (window._debugGraphAbort) window._debugGraphAbort.abort();
+  const ac = new AbortController();
+  window._debugGraphAbort = ac;
+
   const ctx = canvas.getContext('2d');
   let animationId = null;
   let isRunning = false;
@@ -27,7 +32,7 @@ export function initDebugGraph(viewer, virtualTour, allNodes, isDebug) {
         openMinimap();
       }
     }
-  });
+  }, { signal: ac.signal });
 
   closeBtn.addEventListener('click', closeMinimap);
 
@@ -57,7 +62,7 @@ export function initDebugGraph(viewer, virtualTour, allNodes, isDebug) {
       hoveredNodeId = found;
       canvas.style.cursor = hoveredNodeId ? 'pointer' : 'default';
     }
-  });
+  }, { signal: ac.signal });
 
   canvas.addEventListener('click', () => {
     if (hoveredNodeId && hoveredNodeId !== currentNodeId) {
@@ -65,7 +70,7 @@ export function initDebugGraph(viewer, virtualTour, allNodes, isDebug) {
         console.warn('Teleport failed:', err);
       });
     }
-  });
+  }, { signal: ac.signal });
 
   function openMinimap() {
     panel.style.display = 'flex';

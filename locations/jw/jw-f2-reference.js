@@ -7,6 +7,7 @@ export default [
     thumbnail: './images/jw/f2-reference/thumbs/jw-f2-reference-1.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'jw-f2-reference-8',
@@ -43,6 +44,7 @@ export default [
     thumbnail: './images/jw/f2-reference/thumbs/jw-f2-reference-2.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'jw-f2-reference-3',
@@ -74,6 +76,7 @@ export default [
     thumbnail: './images/jw/f2-reference/thumbs/jw-f2-reference-3.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'jw-f2-reference-18',
@@ -100,6 +103,7 @@ export default [
     thumbnail: './images/jw/f2-reference/thumbs/jw-f2-reference-4.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'jw-f2-reference-5',
@@ -131,6 +135,7 @@ export default [
     thumbnail: './images/jw/f2-reference/thumbs/jw-f2-reference-5.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'jw-f2-reference-6',
@@ -157,6 +162,7 @@ export default [
     thumbnail: './images/jw/f2-reference/thumbs/jw-f2-reference-6.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'jw-f2-reference-7',
@@ -183,6 +189,7 @@ export default [
     thumbnail: './images/jw/f2-reference/thumbs/jw-f2-reference-7.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'jw-f2-reference-6',
@@ -226,6 +233,7 @@ export default [
     thumbnail: './images/jw/f2-reference/thumbs/jw-f2-reference-8.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'jw-f2-reference-1',
@@ -252,6 +260,7 @@ export default [
     thumbnail: './images/jw/f2-reference/thumbs/jw-f2-reference-9.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'jw-f2-reference-10',
@@ -278,6 +287,7 @@ export default [
     thumbnail: './images/jw/f2-reference/thumbs/jw-f2-reference-10.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'jw-f2-reference-11',
@@ -309,6 +319,7 @@ export default [
     thumbnail: './images/jw/f2-reference/thumbs/jw-f2-reference-11.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'jw-f2-reference-12',
@@ -335,6 +346,7 @@ export default [
     thumbnail: './images/jw/f2-reference/thumbs/jw-f2-reference-12.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'jw-f2-reference-13',
@@ -361,6 +373,7 @@ export default [
     thumbnail: './images/jw/f2-reference/thumbs/jw-f2-reference-13.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'jw-f2-reference-14',
@@ -392,6 +405,7 @@ export default [
     thumbnail: './images/jw/f2-reference/thumbs/jw-f2-reference-14.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'jw-f2-reference-15',
@@ -423,6 +437,7 @@ export default [
     thumbnail: './images/jw/f2-reference/thumbs/jw-f2-reference-15.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'jw-f2-reference-14',
@@ -444,6 +459,7 @@ export default [
     thumbnail: './images/jw/f2-reference/thumbs/jw-f2-reference-16.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'jw-f2-reference-17',
@@ -470,6 +486,7 @@ export default [
     thumbnail: './images/jw/f2-reference/thumbs/jw-f2-reference-17.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'jw-f2-reference-16',
@@ -491,6 +508,7 @@ export default [
     thumbnail: './images/jw/f2-reference/thumbs/jw-f2-reference-18.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'jw-f2-reference-3',

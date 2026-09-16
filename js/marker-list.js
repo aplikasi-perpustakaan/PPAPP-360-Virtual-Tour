@@ -72,19 +72,8 @@ export function initMarkerList(viewer, virtualTour, allNodes, isDebug) {
         
         if (!confirm('Are you sure you want to delete this marker?')) return;
         
-        const markersPlugin = viewer.getPlugin('markers');
-        if (markersPlugin) {
-          try {
-            markersPlugin.removeMarker(markerConfig.id);
-          } catch(err) { console.warn('Marker not found in PSV', err); }
-        }
-        
-        if (node && node.markers) {
-          node.markers = node.markers.filter(m => m.id !== markerConfig.id);
-        }
-        
-        refreshList();
-        window.dispatchEvent(new CustomEvent('debug-markers-updated'));
+        // Save backup for rollback
+        const backupMarkers = [...(node.markers || [])];
         
         try {
           const response = await fetch('/api/save-marker', {
@@ -99,6 +88,21 @@ export function initMarkerList(viewer, virtualTour, allNodes, isDebug) {
             })
           });
           if (!response.ok) throw new Error('Failed to delete via API');
+          
+          // Only apply UI changes after successful API call
+          const markersPlugin = viewer.getPlugin('markers');
+          if (markersPlugin) {
+            try {
+              markersPlugin.removeMarker(markerConfig.id);
+            } catch(err) { console.warn('Marker not found in PSV', err); }
+          }
+          
+          if (node && node.markers) {
+            node.markers = node.markers.filter(m => m.id !== markerConfig.id);
+          }
+          
+          refreshList();
+          window.dispatchEvent(new CustomEvent('debug-markers-updated'));
         } catch (err) {
           console.error('Error deleting marker:', err);
           alert('Error deleting marker: ' + err.message);

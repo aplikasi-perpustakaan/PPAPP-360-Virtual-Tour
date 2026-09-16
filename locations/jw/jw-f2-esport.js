@@ -7,6 +7,7 @@ export default [
     thumbnail: './images/jw/f2-esport/thumbs/jw-f2-esport-1.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'jw-f2-reference-4',
@@ -33,6 +34,7 @@ export default [
     thumbnail: './images/jw/f2-esport/thumbs/jw-f2-esport-2.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'jw-f2-esport-3',
@@ -106,6 +108,7 @@ export default [
     thumbnail: './images/jw/f2-esport/thumbs/jw-f2-esport-3.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'jw-f2-esport-2',
@@ -243,6 +246,7 @@ export default [
     thumbnail: './images/jw/f2-esport/thumbs/jw-f2-esport-4.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'jw-f2-reference-2',
@@ -269,6 +273,7 @@ export default [
     thumbnail: './images/jw/f2-esport/thumbs/jw-f2-esport-5.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'jw-f2-esport-4',

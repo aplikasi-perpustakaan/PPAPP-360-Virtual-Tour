@@ -8,6 +8,7 @@ export default [
     thumbnail: './images/ppk/f1-main-area/thumbs/ppk-f1-main-area-1.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'ppk-f1-main-area-4',
@@ -88,6 +89,7 @@ export default [
     thumbnail: './images/ppk/f1-main-area/thumbs/ppk-f1-main-area-2.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'ppk-f1-main-area-1',
@@ -111,6 +113,7 @@ export default [
     thumbnail: './images/ppk/f1-main-area/thumbs/ppk-f1-main-area-3.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'ppk-f1-main-area-1',
@@ -134,6 +137,7 @@ export default [
     thumbnail: './images/ppk/f1-main-area/thumbs/ppk-f1-main-area-4.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'ppk-f1-main-area-5',
@@ -184,6 +188,7 @@ export default [
     thumbnail: './images/ppk/f1-main-area/thumbs/ppk-f1-main-area-5.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'ppk-f1-main-area-4',
@@ -236,6 +241,7 @@ export default [
     thumbnail: './images/ppk/f1-main-area/thumbs/ppk-f1-main-area-6.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'ppk-f1-main-area-4',
@@ -264,6 +270,7 @@ export default [
     thumbnail: './images/ppk/f1-main-area/thumbs/ppk-f1-main-area-7.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'ppk-f1-main-area-8',
@@ -331,6 +338,7 @@ export default [
     thumbnail: './images/ppk/f1-main-area/thumbs/ppk-f1-main-area-8.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'ppk-f1-main-area-7',
@@ -576,6 +584,7 @@ export default [
     thumbnail: './images/ppk/f1-main-area/thumbs/ppk-f1-main-area-9.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'ppk-f1-main-area-10',
@@ -614,6 +623,7 @@ export default [
     thumbnail: './images/ppk/f1-main-area/thumbs/ppk-f1-main-area-10.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'ppk-f1-main-area-11',
@@ -697,6 +707,7 @@ export default [
     thumbnail: './images/ppk/f1-main-area/thumbs/ppk-f1-main-area-11.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'ppk-f1-main-area-10',
@@ -744,6 +755,7 @@ export default [
     thumbnail: './images/ppk/f1-main-area/thumbs/ppk-f1-main-area-12.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'ppk-f1-main-area-8',

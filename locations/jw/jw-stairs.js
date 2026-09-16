@@ -7,6 +7,7 @@ export default [
     thumbnail: './images/jw/stairs/thumbs/jw-stairs-1.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'jw-f1-lobby-5',

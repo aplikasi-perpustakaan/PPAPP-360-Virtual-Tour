@@ -7,6 +7,7 @@ export default [
     thumbnail: './images/jw/f2-facilities/thumbs/jw-f2-facilities-1.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'jw-f2-reference-18',
@@ -38,6 +39,7 @@ export default [
     thumbnail: './images/jw/f2-facilities/thumbs/jw-f2-facilities-2.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'jw-f2-reference-18',
@@ -64,6 +66,7 @@ export default [
     thumbnail: './images/jw/f2-facilities/thumbs/jw-f2-facilities-3.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'jw-f2-facilities-1',

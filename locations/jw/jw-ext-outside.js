@@ -63,6 +63,7 @@ export default [
     thumbnail: './images/jw/ext-outside/thumbs/jw-ext-outside-3.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'jw-ext-outside-4',
@@ -89,6 +90,7 @@ export default [
     thumbnail: './images/jw/ext-outside/thumbs/jw-ext-outside-4.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'jw-ext-outside-5',
@@ -115,6 +117,7 @@ export default [
     thumbnail: './images/jw/ext-outside/thumbs/jw-ext-outside-5.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'jw-ext-outside-6',
@@ -141,6 +144,7 @@ export default [
     thumbnail: './images/jw/ext-outside/thumbs/jw-ext-outside-6.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'jw-f1-lobby-1',
@@ -167,6 +171,7 @@ export default [
     thumbnail: './images/jw/ext-outside/thumbs/jw-ext-outside-7.jpg',
     defaultYaw: '281.46deg',
     defaultPitch: '0.00deg',
+    defaultZoomLvl: 0,
     sphereCorrection: { pan: '0.0deg', tilt: '5.0deg', roll: '0.0deg' },
     links: [
       {
@@ -285,6 +290,7 @@ export default [
     thumbnail: './images/jw/ext-outside/thumbs/jw-ext-outside-8.jpg',
     defaultYaw: '142.28deg',
     defaultPitch: '0.00deg',
+    defaultZoomLvl: 0,
     sphereCorrection: { pan: '0.0deg', tilt: '3.0deg', roll: '0.0deg' },
     links: [
       {
@@ -312,6 +318,7 @@ export default [
     thumbnail: './images/jw/ext-outside/thumbs/jw-ext-outside-9.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     sphereCorrection: { pan: '0.0deg', tilt: '6.5deg', roll: '1.0deg' },
     links: [
       {
@@ -422,6 +429,7 @@ export default [
     thumbnail: './images/jw/ext-outside/thumbs/jw-ext-outside-10.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'jw-ext-outside-11',
@@ -472,6 +480,7 @@ export default [
     thumbnail: './images/jw/ext-outside/thumbs/jw-ext-outside-11.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'jw-ext-outside-10',

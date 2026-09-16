@@ -19,12 +19,16 @@ DirectoryIndex index.html
     AddType font/woff2                    .woff2
     AddType model/gltf-binary             .glb
     AddType model/gltf+json              .gltf
+    AddType audio/mpeg                    .mp3
+    AddType audio/wav                     .wav
+    AddType audio/x-m4a                   .m4a
+    AddType audio/ogg                     .ogg
 </IfModule>
 
 # Security Headers & CORS
 <IfModule mod_headers.c>
     Header set Access-Control-Allow-Origin "*"
-    Header set Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:;"
+    Header set Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: blob:; media-src 'self';"
     Header set X-Frame-Options "SAMEORIGIN"
     Header set X-Content-Type-Options "nosniff"
     Header set Referrer-Policy "strict-origin-when-cross-origin"

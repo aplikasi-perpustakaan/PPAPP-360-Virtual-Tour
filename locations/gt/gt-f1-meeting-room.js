@@ -7,6 +7,7 @@ export default [
     thumbnail: './images/gt/f1-meeting-room/thumbs/gt-f1-meeting-room-1.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'gt-f1-meeting-room-2',
@@ -28,6 +29,7 @@ export default [
     thumbnail: './images/gt/f1-meeting-room/thumbs/gt-f1-meeting-room-2.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'gt-f1-meeting-room-3',
@@ -54,6 +56,7 @@ export default [
     thumbnail: './images/gt/f1-meeting-room/thumbs/gt-f1-meeting-room-3.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'gt-f1-meeting-room-4',
@@ -80,6 +83,7 @@ export default [
     thumbnail: './images/gt/f1-meeting-room/thumbs/gt-f1-meeting-room-4.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'gt-f1-meeting-room-3',

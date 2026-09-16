@@ -8,6 +8,7 @@ export default [
     thumbnail: './images/gt/f1-main-area/thumbs/gt-f1-main-area-1.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'gt-f1-main-area-2',
@@ -56,6 +57,7 @@ export default [
     thumbnail: './images/gt/f1-main-area/thumbs/gt-f1-main-area-2.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'gt-f1-main-area-1',
@@ -106,6 +108,7 @@ export default [
     thumbnail: './images/gt/f1-main-area/thumbs/gt-f1-main-area-3.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'gt-f1-main-area-2',
@@ -132,6 +135,7 @@ export default [
     thumbnail: './images/gt/f1-main-area/thumbs/gt-f1-main-area-4.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'gt-f1-main-area-3',
@@ -178,6 +182,7 @@ export default [
     thumbnail: './images/gt/f1-main-area/thumbs/gt-f1-main-area-5.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'gt-f1-main-area-4',
@@ -199,6 +204,7 @@ export default [
     thumbnail: './images/gt/f1-main-area/thumbs/gt-f1-main-area-6.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'gt-f1-main-area-7',
@@ -270,6 +276,7 @@ export default [
     thumbnail: './images/gt/f1-main-area/thumbs/gt-f1-main-area-7.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'gt-f1-main-area-6',
@@ -291,6 +298,7 @@ export default [
     thumbnail: './images/gt/f1-main-area/thumbs/gt-f1-main-area-8.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'gt-f1-main-area-9',
@@ -387,6 +395,7 @@ export default [
     thumbnail: './images/gt/f1-main-area/thumbs/gt-f1-main-area-9.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'gt-f1-main-area-10',
@@ -436,6 +445,7 @@ export default [
     thumbnail: './images/gt/f1-main-area/thumbs/gt-f1-main-area-10.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'gt-f1-main-area-9',
@@ -532,6 +542,7 @@ export default [
     thumbnail: './images/gt/f1-main-area/thumbs/gt-f1-main-area-11.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'gt-f1-main-area-10',
@@ -593,6 +604,7 @@ export default [
     thumbnail: './images/gt/f1-main-area/thumbs/gt-f1-main-area-12.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'gt-f1-main-area-11',
@@ -672,6 +684,7 @@ export default [
     thumbnail: './images/gt/f1-main-area/thumbs/gt-f1-main-area-13.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'gt-f1-main-area-12',
@@ -713,6 +726,7 @@ export default [
     thumbnail: './images/gt/f1-main-area/thumbs/gt-f1-main-area-14.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'gt-f1-main-area-13',
@@ -745,6 +759,7 @@ export default [
     thumbnail: './images/gt/f1-main-area/thumbs/gt-f1-main-area-15.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'gt-f1-main-area-14',
@@ -805,6 +820,7 @@ export default [
     thumbnail: './images/gt/f1-main-area/thumbs/gt-f1-main-area-16.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'gt-f1-main-area-15',
@@ -860,6 +876,7 @@ export default [
     thumbnail: './images/gt/f1-main-area/thumbs/gt-f1-main-area-17.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'gt-f1-main-area-16',
@@ -962,6 +979,7 @@ export default [
     thumbnail: './images/gt/f1-main-area/thumbs/gt-f1-main-area-18.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'gt-f1-main-area-17',
@@ -1053,6 +1071,7 @@ export default [
     thumbnail: './images/gt/f1-main-area/thumbs/gt-f1-main-area-19.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'gt-f1-main-area-20',
@@ -1089,6 +1108,7 @@ export default [
     thumbnail: './images/gt/f1-main-area/thumbs/gt-f1-main-area-20.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'gt-f1-main-area-19',
@@ -1115,6 +1135,7 @@ export default [
     thumbnail: './images/gt/f1-main-area/thumbs/gt-f1-main-area-21.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'gt-f1-main-area-22',
@@ -1180,6 +1201,7 @@ export default [
     thumbnail: './images/gt/f1-main-area/thumbs/gt-f1-main-area-22.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'gt-f1-main-area-21',
@@ -1325,6 +1347,7 @@ export default [
     thumbnail: './images/gt/f1-main-area/thumbs/gt-f1-main-area-23.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'gt-f1-main-area-22',
@@ -1346,6 +1369,7 @@ export default [
     thumbnail: './images/gt/f1-main-area/thumbs/gt-f1-main-area-24.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'gt-f1-main-area-25',
@@ -1378,6 +1402,7 @@ export default [
     thumbnail: './images/gt/f1-main-area/thumbs/gt-f1-main-area-25.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'gt-f1-main-area-24',
@@ -1404,6 +1429,7 @@ export default [
     thumbnail: './images/gt/f1-main-area/thumbs/gt-f1-main-area-26.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'gt-f1-main-area-25',
@@ -1430,6 +1456,7 @@ export default [
     thumbnail: './images/gt/f1-main-area/thumbs/gt-f1-main-area-27.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'gt-f1-main-area-26',
@@ -1456,6 +1483,7 @@ export default [
     thumbnail: './images/gt/f1-main-area/thumbs/gt-f1-main-area-28.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'gt-f1-main-area-27',
@@ -1487,6 +1515,7 @@ export default [
     thumbnail: './images/gt/f1-main-area/thumbs/gt-f1-main-area-29.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'gt-f1-main-area-28',
@@ -1519,6 +1548,7 @@ export default [
     thumbnail: './images/gt/f1-main-area/thumbs/gt-f1-main-area-30.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'gt-f1-main-area-29',
@@ -1593,6 +1623,7 @@ export default [
     thumbnail: './images/gt/f1-main-area/thumbs/gt-f1-main-area-61.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'gt-f1-main-area-30',
@@ -1614,6 +1645,7 @@ export default [
     thumbnail: './images/gt/f1-main-area/thumbs/gt-f1-main-area-62.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [],
     markers: [],
     data: {
@@ -1629,6 +1661,7 @@ export default [
     thumbnail: './images/gt/f1-main-area/thumbs/gt-f1-main-area-63.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'gt-f1-main-area-66',
@@ -1656,6 +1689,7 @@ export default [
     thumbnail: './images/gt/f1-main-area/thumbs/gt-f1-main-area-64.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'gt-f1-main-area-65',
@@ -1677,6 +1711,7 @@ export default [
     thumbnail: './images/gt/f1-main-area/thumbs/gt-f1-main-area-65.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'gt-f1-main-area-64',
@@ -1739,6 +1774,7 @@ export default [
     thumbnail: './images/gt/f1-main-area/thumbs/gt-f1-main-area-66.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'gt-f1-main-area-65',
@@ -1770,6 +1806,7 @@ export default [
     thumbnail: './images/gt/f1-main-area/thumbs/gt-f1-main-area-67.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'gt-f1-main-area-66',
@@ -1818,6 +1855,7 @@ export default [
     thumbnail: './images/gt/f1-main-area/thumbs/gt-f1-main-area-68.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'gt-f1-main-area-67',
@@ -1869,6 +1907,7 @@ export default [
     thumbnail: './images/gt/f1-main-area/thumbs/gt-f1-main-area-69.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'gt-f1-main-area-68',
@@ -1896,6 +1935,7 @@ export default [
     thumbnail: './images/gt/f1-main-area/thumbs/gt-f1-main-area-70.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'gt-f1-main-area-69',
@@ -1924,6 +1964,7 @@ export default [
     thumbnail: './images/gt/f1-main-area/thumbs/gt-f1-main-area-71.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'gt-f1-main-area-70',
@@ -1957,6 +1998,7 @@ export default [
     thumbnail: './images/gt/f1-main-area/thumbs/gt-f1-main-area-72.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'gt-f1-main-area-71',
@@ -2105,6 +2147,7 @@ export default [
     thumbnail: './images/gt/f1-main-area/thumbs/gt-f1-main-area-73.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'gt-f1-main-area-72',
@@ -2126,6 +2169,7 @@ export default [
     thumbnail: './images/gt/f1-main-area/thumbs/gt-f1-main-area-74.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [],
     markers: [],
     data: {

@@ -10,6 +10,7 @@ export default [
     thumbnail: './images/bt/ext-outside/thumbs/bt-ext-outside-1.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'bt-ext-outside-2',
@@ -103,6 +104,7 @@ export default [
     thumbnail: './images/bt/ext-outside/thumbs/bt-ext-outside-2.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'bt-ext-outside-1',
@@ -131,6 +133,7 @@ export default [
     thumbnail: './images/bt/ext-outside/thumbs/bt-ext-outside-3.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'bt-ext-outside-2',
@@ -159,6 +162,7 @@ export default [
     thumbnail: './images/bt/ext-outside/thumbs/bt-ext-outside-4.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'bt-ext-outside-3',
@@ -187,6 +191,7 @@ export default [
     thumbnail: './images/bt/ext-outside/thumbs/bt-ext-outside-5.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'bt-ext-outside-4',

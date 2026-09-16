@@ -64,6 +64,11 @@ export function initLocationSelector(viewer) {
       }
     } catch (err) {
       console.error('Failed to load location data:', err);
+      // Clean up the intro animation listener that will never fire
+      if (introAnimationListener) {
+        viewer.removeEventListener('panorama-loaded', introAnimationListener);
+        introAnimationListener = null;
+      }
       // Fallback: hide loading if there was an error
       const { hideLoading } = await import('./loading-screen.js');
       hideLoading();

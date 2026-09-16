@@ -8,6 +8,7 @@ export default [
     thumbnail: './images/gt/stairs/thumbs/gt-stairs-1.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'gt-stairs-2',
@@ -34,6 +35,7 @@ export default [
     thumbnail: './images/gt/stairs/thumbs/gt-stairs-2.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'gt-stairs-1',
@@ -61,6 +63,7 @@ export default [
     thumbnail: './images/gt/stairs/thumbs/gt-stairs-3.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'gt-stairs-2',

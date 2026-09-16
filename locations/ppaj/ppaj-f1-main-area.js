@@ -121,6 +121,7 @@ export default [
     thumbnail: './images/ppaj/f1/thumbs/ppaj-f1-02.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       { nodeId: 'ppaj-f1-01', position: { yaw: '180deg', pitch: '0deg' } },
       { nodeId: 'ppaj-f1-03', position: { yaw: '279.45deg', pitch: '-31.82deg' } },
@@ -234,6 +235,7 @@ export default [
     thumbnail: './images/ppaj/f1/thumbs/ppaj-f1-03.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       { nodeId: 'ppaj-f1-02', position: { yaw: '86.76deg', pitch: '-32.23deg' } },
       { nodeId: 'ppaj-f1-04', position: { yaw: '340.59deg', pitch: '-26.27deg' } },
@@ -299,6 +301,7 @@ export default [
     thumbnail: './images/ppaj/f1/thumbs/ppaj-f1-04.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       { nodeId: 'ppaj-f1-03', position: { yaw: '180deg', pitch: '0deg' } },
       { nodeId: 'ppaj-f1-05', position: { yaw: '83.31deg', pitch: '-24.16deg' } },
@@ -387,6 +390,7 @@ export default [
     thumbnail: './images/ppaj/f1/thumbs/ppaj-f1-05.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       { nodeId: 'ppaj-f1-04', position: { yaw: '267.32deg', pitch: '-25.05deg' } },
       { nodeId: 'ppaj-f1-06', position: { yaw: '0deg', pitch: '0deg' } },
@@ -453,6 +457,7 @@ export default [
     thumbnail: './images/ppaj/f1/thumbs/ppaj-f1-06.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       { nodeId: 'ppaj-f1-05', position: { yaw: '180deg', pitch: '0deg' } },
       { nodeId: 'ppaj-f1-07', position: { yaw: '295.73deg', pitch: '-25.68deg' } },
@@ -516,6 +521,7 @@ export default [
     thumbnail: './images/ppaj/f1/thumbs/ppaj-f1-07.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       { nodeId: 'ppaj-f1-06', position: { yaw: '107.76deg', pitch: '-41.43deg' } },
       { nodeId: 'ppaj-f1-08', position: { yaw: '294.51deg', pitch: '-48.55deg' } },
@@ -742,6 +748,7 @@ export default [
     thumbnail: './images/ppaj/f1/thumbs/ppaj-f1-08.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       { nodeId: 'ppaj-f1-07', position: { yaw: '105.46deg', pitch: '-49.08deg' } },
     ],
@@ -899,6 +906,7 @@ export default [
     thumbnail: './images/ppaj/f1/thumbs/ppaj-f1-09.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       { nodeId: 'ppaj-f1-02', position: { yaw: '253.77deg', pitch: '-34.63deg' } },
       { nodeId: 'ppaj-f1-10', position: { yaw: '23.58deg', pitch: '-30.19deg' } },
@@ -988,6 +996,7 @@ export default [
     thumbnail: './images/ppaj/f1/thumbs/ppaj-f1-10.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       { nodeId: 'ppaj-f1-09', position: { yaw: '180deg', pitch: '0deg' } },
     ],

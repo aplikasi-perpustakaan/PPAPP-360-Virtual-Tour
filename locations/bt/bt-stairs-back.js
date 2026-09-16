@@ -8,6 +8,7 @@ export default [
     thumbnail: './images/bt/stairs-back/thumbs/bt-stairs-back-1.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'bt-f2-backside-1',

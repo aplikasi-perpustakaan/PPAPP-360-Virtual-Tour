@@ -7,6 +7,7 @@ export default [
     thumbnail: './images/pusat/f1-sensory/thumbs/pusat-f1-sensory-1.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'pusat-f1-sensory-2',
@@ -39,6 +40,7 @@ export default [
     thumbnail: './images/pusat/f1-sensory/thumbs/pusat-f1-sensory-2.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'pusat-f1-sensory-1',
@@ -66,6 +68,7 @@ export default [
     thumbnail: './images/pusat/f1-sensory/thumbs/pusat-f1-sensory-3.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'pusat-f1-sensory-2',

@@ -158,6 +158,19 @@ html, body {
 
 /* ── State Utilities ──────────────────────────────────────────────── */
 
+/* Screen-reader only utility */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
 .is-hidden {
   display: none !important;
 }
@@ -215,6 +228,7 @@ html, body {
 /* Ensure map plugin styling fits our theme */
 .psv-map {
   background: var(--glass-bg) !important;
+  -webkit-backdrop-filter: blur(var(--glass-blur)) !important;
   backdrop-filter: blur(var(--glass-blur)) !important;
   border: 1px solid var(--glass-border) !important;
   border-radius: var(--radius-md) !important;
@@ -323,6 +337,7 @@ body.hide-crosshair #crosshair {
   gap: 4px;
   padding: 6px;
   background: var(--glass-bg);
+  -webkit-backdrop-filter: blur(var(--glass-blur));
   backdrop-filter: blur(var(--glass-blur));
   border: 1px solid var(--glass-border);
   border-radius: 40px;
@@ -391,6 +406,7 @@ body.is-debug .debug-controls-container {
   inset: 0;
   z-index: var(--z-modal);
   background: rgba(10, 22, 40, 0.7);
+  -webkit-backdrop-filter: blur(4px);
   backdrop-filter: blur(4px);
   justify-content: center;
   align-items: center;

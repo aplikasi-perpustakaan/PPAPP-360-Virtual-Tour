@@ -19,6 +19,10 @@ const { chromium } = require('playwright');
     return new Promise(resolve => {
       setTimeout(() => {
         const mapEl = document.querySelector('.psv-map');
+        if (!mapEl) {
+          resolve({ error: 'Map element not found' });
+          return;
+        }
         resolve({
           classes: Array.from(mapEl.classList).join(' '),
           width: mapEl.clientWidth,

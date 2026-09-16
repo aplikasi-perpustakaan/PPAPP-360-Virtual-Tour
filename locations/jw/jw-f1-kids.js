@@ -7,6 +7,7 @@ export default [
     thumbnail: './images/jw/f1-kids/thumbs/jw-f1-kids-1.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'jw-f1-lobby-11',
@@ -33,6 +34,7 @@ export default [
     thumbnail: './images/jw/f1-kids/thumbs/jw-f1-kids-2.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'jw-f1-kids-3',
@@ -59,6 +61,7 @@ export default [
     thumbnail: './images/jw/f1-kids/thumbs/jw-f1-kids-3.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'jw-f1-kids-4',
@@ -85,6 +88,7 @@ export default [
     thumbnail: './images/jw/f1-kids/thumbs/jw-f1-kids-4.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'jw-f1-kids-5',
@@ -111,6 +115,7 @@ export default [
     thumbnail: './images/jw/f1-kids/thumbs/jw-f1-kids-5.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'jw-f1-kids-6',
@@ -137,6 +142,7 @@ export default [
     thumbnail: './images/jw/f1-kids/thumbs/jw-f1-kids-6.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'jw-f1-kids-5',

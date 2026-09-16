@@ -8,6 +8,7 @@ export default [
     thumbnail: './images/gt/f1-i-play-toy/thumbs/gt-f1-i-play-toy-1.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'gt-f1-i-play-toy-2',
@@ -40,6 +41,7 @@ export default [
     thumbnail: './images/gt/f1-i-play-toy/thumbs/gt-f1-i-play-toy-2.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'gt-f1-i-play-toy-1',
@@ -136,6 +138,7 @@ export default [
     thumbnail: './images/gt/f1-i-play-toy/thumbs/gt-f1-i-play-toy-3.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'gt-f1-i-play-toy-4',
@@ -186,6 +189,7 @@ export default [
     thumbnail: './images/gt/f1-i-play-toy/thumbs/gt-f1-i-play-toy-4.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'gt-f1-i-play-toy-3',

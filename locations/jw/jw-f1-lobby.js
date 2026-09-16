@@ -7,6 +7,7 @@ export default [
     thumbnail: './images/jw/f1-lobby/thumbs/jw-f1-lobby-1.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'jw-ext-outside-6',
@@ -38,6 +39,7 @@ export default [
     thumbnail: './images/jw/f1-lobby/thumbs/jw-f1-lobby-2.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     sphereCorrection: { pan: '0.0deg', tilt: '4.5deg', roll: '1.5deg' },
     links: [
       {
@@ -99,6 +101,7 @@ export default [
     thumbnail: './images/jw/f1-lobby/thumbs/jw-f1-lobby-3.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'jw-f1-lobby-4',
@@ -192,6 +195,7 @@ export default [
     thumbnail: './images/jw/f1-lobby/thumbs/jw-f1-lobby-4.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'jw-f1-lobby-8',
@@ -223,6 +227,7 @@ export default [
     thumbnail: './images/jw/f1-lobby/thumbs/jw-f1-lobby-5.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'jw-f1-lobby-6',
@@ -467,6 +472,7 @@ export default [
     thumbnail: './images/jw/f1-lobby/thumbs/jw-f1-lobby-6.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'jw-f1-lobby-7',
@@ -517,6 +523,7 @@ export default [
     thumbnail: './images/jw/f1-lobby/thumbs/jw-f1-lobby-7.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'jw-f1-lobby-6',
@@ -562,6 +569,7 @@ export default [
     thumbnail: './images/jw/f1-lobby/thumbs/jw-f1-lobby-8.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'jw-f1-lobby-3',
@@ -622,6 +630,7 @@ export default [
     thumbnail: './images/jw/f1-lobby/thumbs/jw-f1-lobby-9.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'jw-f1-lobby-10',
@@ -808,6 +817,7 @@ export default [
     thumbnail: './images/jw/f1-lobby/thumbs/jw-f1-lobby-10.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'jw-f1-lobby-8',
@@ -863,6 +873,7 @@ export default [
     thumbnail: './images/jw/f1-lobby/thumbs/jw-f1-lobby-11.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'jw-f1-lobby-12',
@@ -988,6 +999,7 @@ export default [
     thumbnail: './images/jw/f1-lobby/thumbs/jw-f1-lobby-12.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'jw-f1-lobby-14',
@@ -1019,6 +1031,7 @@ export default [
     thumbnail: './images/jw/f1-lobby/thumbs/jw-f1-lobby-13.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'jw-f1-lobby-3',
@@ -1050,6 +1063,7 @@ export default [
     thumbnail: './images/jw/f1-lobby/thumbs/jw-f1-lobby-14.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'jw-f1-lobby-12',

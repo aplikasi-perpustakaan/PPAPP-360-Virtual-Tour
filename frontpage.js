@@ -27,7 +27,7 @@ async function initFrontpage() {
       const thumbArray = Array.from(uniqueThumbs);
       if (thumbArray.length === 0) thumbArray.push('./images/shared/placeholder.jpg');
       
-      branch._thumbnail = thumbArray[0];
+      const branchThumb = thumbArray[0];
       const thumbsJson = JSON.stringify(thumbArray).replace(/"/g, '&quot;');
       
       // Build card
@@ -37,7 +37,7 @@ async function initFrontpage() {
       card.className = 'branch-card';
       card.innerHTML = `
         <div class="card-image-container" style="background-color: #111;">
-          <img class="slideshow-img slideshow-img-1" style="position: absolute; inset: 0; opacity: 1; transition: opacity 1.2s ease-in-out, transform 0.6s ease;" data-thumbs="${thumbsJson}" data-index="0" src="${branch._thumbnail}" alt="${branch.name}" loading="lazy" onerror="this.src='./images/shared/placeholder.jpg'">
+          <img class="slideshow-img slideshow-img-1" style="position: absolute; inset: 0; opacity: 1; transition: opacity 1.2s ease-in-out, transform 0.6s ease;" data-thumbs="${thumbsJson}" data-index="0" src="${branchThumb}" alt="${branch.name}" loading="lazy" onerror="this.src='./images/shared/placeholder.jpg'">
           <img class="slideshow-img slideshow-img-2" style="position: absolute; inset: 0; opacity: 0; transition: opacity 1.2s ease-in-out, transform 0.6s ease;" src="" alt="" loading="lazy">
           <div class="card-overlay" style="z-index: 10;">
             <div class="text-bar">
@@ -52,6 +52,9 @@ async function initFrontpage() {
       console.error(`Failed to load branch ${branch.id}:`, e);
     }
   }
+
+  // Track slideshow intervals for potential cleanup
+  const slideshowIntervals = [];
 
   // Initialize Slideshows
   const branchCards = document.querySelectorAll('.branch-card');
@@ -74,7 +77,7 @@ async function initFrontpage() {
         const startDelay = cardIndex * 1800;
         
         setTimeout(() => {
-          setInterval(() => {
+          const intervalId = setInterval(() => {
             currentIndex = (currentIndex + 1) % thumbs.length;
             
             inactiveImg.src = thumbs[currentIndex];
@@ -90,6 +93,7 @@ async function initFrontpage() {
             }, 50);
             
           }, 5000); // Change image every 5 seconds
+          slideshowIntervals.push(intervalId);
         }, startDelay);
       }
     } catch (e) {

@@ -8,6 +8,7 @@ export default [
     thumbnail: './images/gt/ext-outside/thumbs/gt-ext-outside-1.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'gt-ext-outside-2',
@@ -29,6 +30,7 @@ export default [
     thumbnail: './images/gt/ext-outside/thumbs/gt-ext-outside-2.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'gt-ext-outside-1',
@@ -55,6 +57,7 @@ export default [
     thumbnail: './images/gt/ext-outside/thumbs/gt-ext-outside-3.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'gt-ext-outside-2',
@@ -133,6 +136,7 @@ export default [
     thumbnail: './images/gt/ext-outside/thumbs/gt-ext-outside-4.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'gt-ext-outside-3',
@@ -201,6 +205,7 @@ export default [
     thumbnail: './images/gt/ext-outside/thumbs/gt-ext-outside-5.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'gt-ext-outside-6',
@@ -235,6 +240,7 @@ export default [
     thumbnail: './images/gt/ext-outside/thumbs/gt-ext-outside-6.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'gt-ext-outside-5',
@@ -276,6 +282,7 @@ export default [
     thumbnail: './images/gt/ext-outside/thumbs/gt-ext-outside-7.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'gt-ext-outside-6',
@@ -302,6 +309,7 @@ export default [
     thumbnail: './images/gt/ext-outside/thumbs/gt-ext-outside-8.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'gt-ext-outside-7',
@@ -385,6 +393,7 @@ export default [
     thumbnail: './images/gt/ext-outside/thumbs/gt-ext-outside-9.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'gt-ext-outside-8',
@@ -421,6 +430,7 @@ export default [
     thumbnail: './images/gt/ext-outside/thumbs/gt-ext-outside-10.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'gt-ext-outside-9',
@@ -447,6 +457,7 @@ export default [
     thumbnail: './images/gt/ext-outside/thumbs/gt-ext-outside-11.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'gt-ext-outside-10',
@@ -495,6 +506,7 @@ export default [
     thumbnail: './images/gt/ext-outside/thumbs/gt-ext-outside-12.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'gt-ext-outside-11',
@@ -521,6 +533,7 @@ export default [
     thumbnail: './images/gt/ext-outside/thumbs/gt-ext-outside-13.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'gt-ext-outside-12',
@@ -542,6 +555,7 @@ export default [
     thumbnail: './images/gt/ext-outside/thumbs/gt-ext-outside-14.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'gt-ext-outside-15',
@@ -578,6 +592,7 @@ export default [
     thumbnail: './images/gt/ext-outside/thumbs/gt-ext-outside-15.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'gt-ext-outside-14',

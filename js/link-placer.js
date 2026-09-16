@@ -98,9 +98,11 @@ export function initLinkPlacer(viewer, virtualTour, allNodes, isDebug) {
 
         const alreadyLinked = existingLinks.includes(node.id);
 
+        const escapedId = node.id.replace(/</g, '&lt;').replace(/>/g, '&gt;');
+        const escapedName = (node.name || '').replace(/</g, '&lt;').replace(/>/g, '&gt;');
         li.innerHTML = `
-          <span class="debug-scene-id">${node.id}</span>
-          <span class="debug-scene-name">${node.name || ''}</span>
+          <span class="debug-scene-id">${escapedId}</span>
+          <span class="debug-scene-name">${escapedName}</span>
           ${alreadyLinked
             ? '<span class="debug-scene-badge">⟳ update</span><button class="debug-link-delete-btn" title="Delete this link">🗑️</button>'
             : ''}

@@ -8,6 +8,7 @@ export default [
     thumbnail: './images/gt/f2-bilik-koleksi-khas/thumbs/gt-f2-bilik-koleksi-khas-1.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'gt-f2-bilik-koleksi-khas-2',
@@ -40,6 +41,7 @@ export default [
     thumbnail: './images/gt/f2-bilik-koleksi-khas/thumbs/gt-f2-bilik-koleksi-khas-2.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'gt-f2-bilik-koleksi-khas-1',
@@ -61,6 +63,7 @@ export default [
     thumbnail: './images/gt/f2-bilik-koleksi-khas/thumbs/gt-f2-bilik-koleksi-khas-3.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'gt-f2-bilik-koleksi-khas-1',

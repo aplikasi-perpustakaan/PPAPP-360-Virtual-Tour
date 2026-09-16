@@ -7,6 +7,7 @@ export default [
     thumbnail: './images/pusat/f1-i-play-toys/thumbs/pusat-f1-i-play-toys-1.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       { nodeId: 'pusat-f1-i-play-toys-2', position: { yaw: '0deg', pitch: '0deg' }, name: 'Go to I Play Toys 2' },
       {
@@ -29,6 +30,7 @@ export default [
     thumbnail: './images/pusat/f1-i-play-toys/thumbs/pusat-f1-i-play-toys-2.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       { nodeId: 'pusat-f1-i-play-toys-1', position: { yaw: '180deg', pitch: '0deg' }, name: 'Go back' },
       { nodeId: 'pusat-f1-i-play-toys-3', position: { yaw: '0deg', pitch: '0deg' }, name: 'Go to I Play Toys 3' }
@@ -47,6 +49,7 @@ export default [
     thumbnail: './images/pusat/f1-i-play-toys/thumbs/pusat-f1-i-play-toys-3.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       { nodeId: 'pusat-f1-i-play-toys-2', position: { yaw: '180deg', pitch: '0deg' }, name: 'Go back' },
       { nodeId: 'pusat-f1-i-play-toys-4', position: { yaw: '0deg', pitch: '0deg' }, name: 'Go to I Play Toys 4' }
@@ -65,6 +68,7 @@ export default [
     thumbnail: './images/pusat/f1-i-play-toys/thumbs/pusat-f1-i-play-toys-4.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       { nodeId: 'pusat-f1-i-play-toys-3', position: { yaw: '180deg', pitch: '0deg' }, name: 'Go back' },
       { nodeId: 'pusat-f1-i-play-toys-5', position: { yaw: '0deg', pitch: '0deg' }, name: 'Go to I Play Toys 5' }
@@ -83,6 +87,7 @@ export default [
     thumbnail: './images/pusat/f1-i-play-toys/thumbs/pusat-f1-i-play-toys-5.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       { nodeId: 'pusat-f1-i-play-toys-4', position: { yaw: '180deg', pitch: '0deg' }, name: 'Go back' }
     ],

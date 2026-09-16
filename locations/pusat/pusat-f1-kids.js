@@ -7,6 +7,7 @@ export default [
     thumbnail: './images/pusat/f1-kids/thumbs/pusat-f1-kids-1.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       { nodeId: 'pusat-f1-kids-2', position: { yaw: '0deg', pitch: '0deg' }, name: 'Go to Kids 2' },
       {
@@ -29,6 +30,7 @@ export default [
     thumbnail: './images/pusat/f1-kids/thumbs/pusat-f1-kids-2.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       { nodeId: 'pusat-f1-kids-1', position: { yaw: '180deg', pitch: '0deg' }, name: 'Go back' },
       {
@@ -51,6 +53,7 @@ export default [
     thumbnail: './images/pusat/f1-kids/thumbs/pusat-f1-kids-3.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'pusat-f1-kids-4',
@@ -95,6 +98,7 @@ export default [
     thumbnail: './images/pusat/f1-kids/thumbs/pusat-f1-kids-4.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'pusat-f1-kids-3',
@@ -118,6 +122,7 @@ export default [
     thumbnail: './images/pusat/f1-kids/thumbs/pusat-f1-kids-5.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'pusat-f1-kids-6',
@@ -146,6 +151,7 @@ export default [
     thumbnail: './images/pusat/f1-kids/thumbs/pusat-f1-kids-6.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'pusat-f1-kids-5',
@@ -179,6 +185,7 @@ export default [
     thumbnail: './images/pusat/f1-kids/thumbs/pusat-f1-kids-7.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'pusat-f1-kids-6',
@@ -211,6 +218,7 @@ export default [
     thumbnail: './images/pusat/f1-kids/thumbs/pusat-f1-kids-8.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'pusat-f1-kids-7',
@@ -232,6 +240,7 @@ export default [
     thumbnail: './images/pusat/f1-kids/thumbs/pusat-f1-kids-9.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'pusat-f1-kids-7',
@@ -253,6 +262,7 @@ export default [
     thumbnail: './images/pusat/f1-kids/thumbs/pusat-f1-kids-10.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'pusat-f1-kids-5',
@@ -280,6 +290,7 @@ export default [
     thumbnail: './images/pusat/f1-kids/thumbs/pusat-f1-kids-11.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'pusat-f1-kids-12',
@@ -301,6 +312,7 @@ export default [
     thumbnail: './images/pusat/f1-kids/thumbs/pusat-f1-kids-12.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'pusat-f1-kids-11',
@@ -328,6 +340,7 @@ export default [
     thumbnail: './images/pusat/f1-kids/thumbs/pusat-f1-kids-13.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'pusat-f1-kids-12',
@@ -364,6 +377,7 @@ export default [
     thumbnail: './images/pusat/f1-kids/thumbs/pusat-f1-kids-14.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'pusat-f1-kids-13',
@@ -392,6 +406,7 @@ export default [
     thumbnail: './images/pusat/f1-kids/thumbs/pusat-f1-kids-15.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [
       {
         nodeId: 'pusat-f1-kids-14',

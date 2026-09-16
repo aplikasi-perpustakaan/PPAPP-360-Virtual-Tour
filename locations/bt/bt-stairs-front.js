@@ -8,6 +8,7 @@ export default [
     thumbnail: './images/bt/stairs-front/thumbs/bt-stairs-front-1.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
+    defaultZoomLvl: 0,
     links: [{
       nodeId: 'bt-f1-lobby-3',
       position: { yaw: '5.24deg', pitch: '0deg' },

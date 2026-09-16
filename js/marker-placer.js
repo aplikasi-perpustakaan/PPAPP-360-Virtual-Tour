@@ -457,8 +457,10 @@ export function initMarkerPlacer(viewer, virtualTour, allNodes, isDebug) {
   saveBtn.addEventListener('click', async () => {
     const currentNodeId = virtualTour.getCurrentNode()?.id;
     if (!currentNodeId) return;
-
-    const id = (isEditing && editingMarkerId) ? editingMarkerId : `${currentNodeId}-marker-${Date.now()}`;
+    
+    saveBtn.disabled = true;
+    try {
+      const id = (isEditing && editingMarkerId) ? editingMarkerId : `${currentNodeId}-marker-${Date.now()}`;
     const type = typeSelect.value;
     const title = titleInput.value.trim();
     const yaw = `${capturedYawDeg.toFixed(2)}deg`;
@@ -542,6 +544,8 @@ export function initMarkerPlacer(viewer, virtualTour, allNodes, isDebug) {
       }
     } catch (err) {
       showToast(`❌ Error saving marker: ${err.message}`);
+    } finally {
+      saveBtn.disabled = false;
     }
   });
 
@@ -617,6 +621,8 @@ export function initMarkerPlacer(viewer, virtualTour, allNodes, isDebug) {
       const currentNodeId = virtualTour.getCurrentNode()?.id;
       if (!currentNodeId) return showToast('❌ Error: No current scene selected.');
       
+      uploadBtn.disabled = true;
+      
       const reader = new FileReader();
       reader.onload = (e) => {
         const originalBase64 = e.target.result;
@@ -663,6 +669,7 @@ export function initMarkerPlacer(viewer, virtualTour, allNodes, isDebug) {
                 showToast('❌ Upload failed: ' + err.message);
             } finally {
                 uploadBtn.textContent = 'Upload';
+                uploadBtn.disabled = false;
             }
         };
         img.src = originalBase64;
