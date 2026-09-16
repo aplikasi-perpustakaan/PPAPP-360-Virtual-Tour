@@ -306,6 +306,29 @@ export default [
           caption: ''
         },
         html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/gt/markers/GT_lobby_5.jpg\'>\n        <img src=\'./images/gt/markers/GT_lobby_5.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      {
+        id: 'gt-f1-main-area-8-marker-1789538237445',
+        position: {
+          yaw: '298.55deg',
+          pitch: '4.13deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: '',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/gt/markers/GT_lobby_10.jpg',
+          originalUrl: './images/gt/markers/GT_lobby_10.jpg',
+          caption: ''
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/gt/markers/GT_lobby_10.jpg\'>\n        <img src=\'./images/gt/markers/GT_lobby_10.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
       }
     ],
     data: {
@@ -381,7 +404,77 @@ export default [
         name: 'Go to Area 11',
       }
     ],
-    markers: [],
+    markers: [
+      {
+        id: 'gt-f1-main-area-10-marker-1789538194527',
+        position: {
+          yaw: '231.06deg',
+          pitch: '4.97deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: '',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/gt/markers/GT_lobby_5.jpg',
+          originalUrl: './images/gt/markers/GT_lobby_5.jpg',
+          caption: ''
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/gt/markers/GT_lobby_5.jpg\'>\n        <img src=\'./images/gt/markers/GT_lobby_5.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      {
+        id: 'gt-f1-main-area-10-marker-1789538207754',
+        position: {
+          yaw: '237.14deg',
+          pitch: '1.84deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: '',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/gt/markers/GT_lobby_4.jpg',
+          originalUrl: './images/gt/markers/GT_lobby_4.jpg',
+          caption: ''
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/gt/markers/GT_lobby_4.jpg\'>\n        <img src=\'./images/gt/markers/GT_lobby_4.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      {
+        id: 'gt-f1-main-area-10-marker-1789538216474',
+        position: {
+          yaw: '244.44deg',
+          pitch: '4.30deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: '',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/gt/markers/GT_lobby_10.jpg',
+          originalUrl: './images/gt/markers/GT_lobby_10.jpg',
+          caption: ''
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/gt/markers/GT_lobby_10.jpg\'>\n        <img src=\'./images/gt/markers/GT_lobby_10.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      }
+    ],
     data: {
       floor: 'f1',
       tags: ['main'],
@@ -467,7 +560,54 @@ export default [
         name: 'Go to Main Area 9'
       },
     ],
-    markers: [],
+    markers: [
+      {
+        id: 'gt-f1-main-area-12-marker-1789538261374',
+        position: {
+          yaw: '62.23deg',
+          pitch: '-10.62deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: '',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/gt/markers/GT_lobby_8.jpg',
+          originalUrl: './images/gt/markers/GT_lobby_8.jpg',
+          caption: ''
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/gt/markers/GT_lobby_8.jpg\'>\n        <img src=\'./images/gt/markers/GT_lobby_8.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      {
+        id: 'gt-f1-main-area-12-marker-1789538281717',
+        position: {
+          yaw: '120.78deg',
+          pitch: '-24.64deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: '',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/gt/markers/GT_lobby_6.jpg',
+          originalUrl: './images/gt/markers/GT_lobby_6.jpg',
+          caption: ''
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/gt/markers/GT_lobby_6.jpg\'>\n        <img src=\'./images/gt/markers/GT_lobby_6.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      }
+    ],
     data: {
       floor: 'f1',
       tags: ['main'],
