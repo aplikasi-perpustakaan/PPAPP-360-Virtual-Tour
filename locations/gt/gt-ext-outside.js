@@ -575,15 +575,15 @@ export default [
         anchor: 'center center',
         data: {
           type: 'image',
-          title: '',
+          title: 'Landscape View',
           icon: 'star',
           color: 'gold',
           animated: false,
           imageSrc: './images/gt/markers/GT_landscape_1.jpg',
           originalUrl: './images/gt/markers/GT_landscape_1.jpg',
-          caption: ''
+          caption: 'Landscape View'
         },
-        html: '<custom-marker type=\'image\' data-icon=\'star\' data-color=\'gold\' data-url=\'./images/gt/markers/GT_landscape_1.jpg\'>\n        <img src=\'./images/gt/markers/GT_landscape_1.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+        html: '<custom-marker type=\'image\' data-icon=\'star\' data-color=\'gold\' data-url=\'./images/gt/markers/GT_landscape_1.jpg\'>\n        <img src=\'./images/gt/markers/GT_landscape_1.jpg\' alt=\'Landscape View\' style=\'cursor:pointer;\' />\n        <h2>Landscape View</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
       }
     ],
     data: {
