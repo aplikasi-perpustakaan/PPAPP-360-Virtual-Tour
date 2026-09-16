@@ -14,5 +14,9 @@
     "ppapp"
   ],
   "author": "Perbadanan Perpustakaan Awam Pulau Pinang",
-  "license": "UNLICENSED"
+  "license": "UNLICENSED",
+  "dependencies": {
+    "jimp": "^0.16.1",
+    "sharp": "^0.35.4"
+  }
 }

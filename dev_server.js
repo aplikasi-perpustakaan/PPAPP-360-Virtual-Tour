@@ -427,6 +427,50 @@ const server = http.createServer((req, res) => {
     return;
   }
 
+  if (req.method === 'POST' && req.url === '/api/rotate-image') {
+    let body = '';
+    req.on('data', chunk => { body += chunk.toString(); });
+    req.on('end', async () => {
+        try {
+          const payload = JSON.parse(body);
+          const { originalUrl, thumbUrl, direction } = payload;
+          
+          if (!originalUrl) {
+             throw new Error('Missing originalUrl');
+          }
+          
+          const sharp = require('sharp');
+          
+          const cleanOriginalUrl = originalUrl.split('?')[0];
+          const cleanThumbUrl = thumbUrl ? thumbUrl.split('?')[0] : null;
+          
+          const origPath = path.join(__dirname, cleanOriginalUrl.replace('./', '').replace(/\//g, path.sep));
+          if (!fs.existsSync(origPath)) throw new Error('Original file not found');
+          
+          const fileData = fs.readFileSync(origPath);
+          const origBuffer = await sharp(fileData).rotate(direction).toBuffer();
+          fs.writeFileSync(origPath, origBuffer);
+          
+          if (cleanThumbUrl && cleanThumbUrl !== cleanOriginalUrl) {
+            const thumbPath = path.join(__dirname, cleanThumbUrl.replace('./', '').replace(/\//g, path.sep));
+            if (fs.existsSync(thumbPath)) {
+               const thumbData = fs.readFileSync(thumbPath);
+               const thumbBuffer = await sharp(thumbData).rotate(direction).toBuffer();
+               fs.writeFileSync(thumbPath, thumbBuffer);
+            }
+          }
+          
+          res.writeHead(200, { 'Content-Type': 'application/json' });
+          res.end(JSON.stringify({ success: true }));
+        } catch (err) {
+          console.error('Error rotating image:', err.message);
+          res.writeHead(500, { 'Content-Type': 'application/json' });
+          res.end(JSON.stringify({ error: err.message }));
+        }
+    });
+    return;
+  }
+
   if (req.method === 'GET' && req.url.startsWith('/api/marker-images')) {
     const url = new URL(req.url, `http://${req.headers.host}`);
     const branch = url.searchParams.get('branch');

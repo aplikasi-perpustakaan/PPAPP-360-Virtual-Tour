@@ -303,12 +303,76 @@ export function initMarkerPlacer(viewer, virtualTour, allNodes, isDebug) {
         container.style.background = 'rgba(0,0,0,0.1)';
         container.title = fileName;
 
+        const imgWrapper = document.createElement('div');
+        imgWrapper.style.position = 'relative';
+
         const img = document.createElement('img');
         img.src = imgData.thumbUrl;
         img.style.width = '100%';
         img.style.height = '120px';
         img.style.objectFit = 'cover';
         img.style.borderRadius = '4px';
+        img.style.transition = 'transform 0.2s';
+        
+        const rotateBtn = document.createElement('button');
+        rotateBtn.innerHTML = '↻';
+        rotateBtn.title = 'Rotate Image 90°';
+        rotateBtn.style.position = 'absolute';
+        rotateBtn.style.top = '4px';
+        rotateBtn.style.right = '4px';
+        rotateBtn.style.background = 'rgba(0,0,0,0.6)';
+        rotateBtn.style.color = 'white';
+        rotateBtn.style.border = 'none';
+        rotateBtn.style.borderRadius = '50%';
+        rotateBtn.style.width = '24px';
+        rotateBtn.style.height = '24px';
+        rotateBtn.style.cursor = 'pointer';
+        rotateBtn.style.display = 'flex';
+        rotateBtn.style.alignItems = 'center';
+        rotateBtn.style.justifyContent = 'center';
+        rotateBtn.style.fontSize = '14px';
+        rotateBtn.style.zIndex = '10';
+        
+        rotateBtn.addEventListener('click', async (e) => {
+          e.stopPropagation();
+          rotateBtn.disabled = true;
+          rotateBtn.style.opacity = '0.5';
+          try {
+            const res = await fetch('/api/rotate-image', {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify({
+                originalUrl: imgData.originalUrl,
+                thumbUrl: imgData.thumbUrl,
+                direction: 90
+              })
+            });
+            if (res.ok) {
+               const ts = Date.now();
+               const originalSrc = imgData.thumbUrl.split('?')[0];
+               imgData.thumbUrl = `${originalSrc}?t=${ts}`;
+               imgData.originalUrl = `${imgData.originalUrl.split('?')[0]}?t=${ts}`;
+               img.src = imgData.thumbUrl;
+               
+               if (contentInput.value && contentInput.value.split('?')[0] === originalSrc) {
+                 contentInput.value = imgData.thumbUrl;
+                 contentInput.setAttribute('data-original', imgData.originalUrl);
+               }
+               showToast('✅ Image rotated');
+            } else {
+               showToast('❌ Failed to rotate');
+            }
+          } catch(err) {
+             console.error(err);
+             showToast('❌ Error rotating');
+          } finally {
+             rotateBtn.disabled = false;
+             rotateBtn.style.opacity = '1';
+          }
+        });
+
+        imgWrapper.appendChild(img);
+        imgWrapper.appendChild(rotateBtn);
         
         const label = document.createElement('div');
         label.textContent = fileName;
@@ -318,10 +382,10 @@ export function initMarkerPlacer(viewer, virtualTour, allNodes, isDebug) {
         label.style.wordBreak = 'break-word';
         label.style.lineHeight = '1.2';
         
-        container.appendChild(img);
+        container.appendChild(imgWrapper);
         container.appendChild(label);
         
-        if (imgData.thumbUrl === contentInput.value || imgData.originalUrl === contentInput.value) {
+        if (imgData.thumbUrl.split('?')[0] === contentInput.value.split('?')[0] || imgData.originalUrl.split('?')[0] === contentInput.value.split('?')[0]) {
             container.style.border = '2px solid var(--color-accent-blue)';
             container.style.background = 'rgba(45, 108, 223, 0.2)';
         }

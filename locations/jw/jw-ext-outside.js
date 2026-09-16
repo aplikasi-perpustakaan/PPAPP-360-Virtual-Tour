@@ -273,7 +273,54 @@ export default [
         name: 'Go back to Outside 9',
       },
     ],
-    markers: [],
+    markers: [
+      {
+        id: 'jw-ext-outside-10-marker-1789537537297',
+        position: {
+          yaw: '348.53deg',
+          pitch: '-1.87deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: '',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/jw/markers/OUTSIDE/IMG_20260910_093200_968.webp',
+          originalUrl: './images/jw/markers/OUTSIDE/IMG_20260910_093200_968.webp',
+          caption: ''
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/jw/markers/OUTSIDE/IMG_20260910_093200_968.webp\'>\n        <img src=\'./images/jw/markers/OUTSIDE/IMG_20260910_093200_968.webp\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      {
+        id: 'jw-ext-outside-10-marker-1789538043764',
+        position: {
+          yaw: '2.78deg',
+          pitch: '10.52deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: '',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/jw/markers/FLOOR 1/KANAK KANAK/IMG_20260910_093822_234.webp?t=1789538338720',
+          originalUrl: './images/jw/markers/FLOOR 1/KANAK KANAK/IMG_20260910_093822_234.webp?t=1789538338720',
+          caption: ''
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/jw/markers/FLOOR 1/KANAK KANAK/IMG_20260910_093822_234.webp?t=1789538338720\'>\n        <img src=\'./images/jw/markers/FLOOR 1/KANAK KANAK/IMG_20260910_093822_234.webp?t=1789538338720\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      }
+    ],
     data: {
       floor: 'ext',
       tags: ['outside'],
