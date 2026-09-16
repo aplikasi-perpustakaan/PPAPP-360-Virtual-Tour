@@ -215,9 +215,11 @@ export function initMarkerPlacer(viewer, virtualTour, allNodes, isDebug) {
       if (coords) {
          capturedYawDeg = (coords.yaw * 180 / Math.PI) % 360;
          capturedPitchDeg = coords.pitch * 180 / Math.PI;
-         showToast('📍 Position updated! Click Save.');
+         showToast('📍 Position updated! Saving...');
+         saveBtn.click(); // Automatically trigger save
+      } else {
+         modal.classList.add('is-visible');
       }
-      modal.classList.add('is-visible');
     }
   });
 
@@ -519,6 +521,12 @@ export function initMarkerPlacer(viewer, virtualTour, allNodes, isDebug) {
         const errorData = await response.json();
         throw new Error(errorData.error || 'Failed to save');
       }
+
+      closeModal();
+      showToast('✅ Marker saved! Refreshing...');
+      setTimeout(() => {
+        window.location.reload();
+      }, 500);
     } catch (err) {
       showToast(`❌ Error saving marker: ${err.message}`);
     } finally {

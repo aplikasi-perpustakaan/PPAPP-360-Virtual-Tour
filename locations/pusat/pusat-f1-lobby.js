@@ -21,7 +21,29 @@ export default [
         name: 'Go to Floor 1 - Lobby 29'
       },
     ],
-    markers: [],
+    markers: [
+      {
+        id: 'pusat-f1-lobby-1-marker-1789556189154',
+        position: {
+          yaw: '311.76deg',
+          pitch: '-12.05deg'
+        },
+        size: {
+          width: 56,
+          height: 56
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'P. Ramlee section',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'info\' data-color=\'blue\'>\n        <h2>P. Ramlee section</h2>\n        <p></p>\n      </custom-marker>'
+      }
+    ],
     data: {
       floor: 'f1',
       tags: ['lobby'],

@@ -61,29 +61,7 @@ export default [
         },
         html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/ppaj/markers/OUTSIDE/AEON_outside_4.jpg\'>\n        <img src=\'./images/ppaj/markers/OUTSIDE/AEON_outside_4.jpg\' alt=\'AEON outside 4\' style=\'cursor:pointer;\' />\n        <h2>AEON outside 4</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
       },
-      {
-        id: 'ppaj-f1-01-img-4',
-        position: {
-          yaw: '348.33deg',
-          pitch: '-8.00deg'
-        },
-        size: {
-          width: 44,
-          height: 44
-        },
-        anchor: 'center center',
-        data: {
-          type: 'image',
-          title: 'AEON outside 3',
-          icon: 'info',
-          color: 'gold',
-          animated: false,
-          imageSrc: './images/ppaj/markers/OUTSIDE/AEON_outside_3.jpg',
-          originalUrl: './images/ppaj/markers/OUTSIDE/AEON_outside_3.jpg',
-          caption: 'AEON outside 3'
-        },
-        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'gold\' data-url=\'./images/ppaj/markers/OUTSIDE/AEON_outside_3.jpg\'>\n        <img src=\'./images/ppaj/markers/OUTSIDE/AEON_outside_3.jpg\' alt=\'AEON outside 3\' style=\'cursor:pointer;\' />\n        <h2>AEON outside 3</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
-      },
+      
       {
         id: 'ppaj-f1-01-img-3',
         position: {
@@ -106,6 +84,29 @@ export default [
           caption: 'AEON outside 1'
         },
         html: '<custom-marker type=\'image\' data-icon=\'pin\' data-color=\'blue\' data-url=\'./images/ppaj/markers/OUTSIDE/AEON_outside_1.jpg\'>\n        <img src=\'./images/ppaj/markers/OUTSIDE/AEON_outside_1.jpg\' alt=\'AEON outside 1\' style=\'cursor:pointer;\' />\n        <h2>AEON outside 1</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      {
+        id: 'ppaj-f1-01-img-4',
+        position: {
+          yaw: '348.33deg',
+          pitch: '-8.00deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: 'AEON outside 3',
+          icon: 'info',
+          color: 'gold',
+          animated: false,
+          imageSrc: './images/ppaj/markers/OUTSIDE/AEON_outside_3.jpg',
+          originalUrl: './images/ppaj/markers/OUTSIDE/AEON_outside_3.jpg',
+          caption: 'AEON outside 3'
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'gold\' data-url=\'./images/ppaj/markers/OUTSIDE/AEON_outside_3.jpg\'>\n        <img src=\'./images/ppaj/markers/OUTSIDE/AEON_outside_3.jpg\' alt=\'AEON outside 3\' style=\'cursor:pointer;\' />\n        <h2>AEON outside 3</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
       }
     ],
     data: {
