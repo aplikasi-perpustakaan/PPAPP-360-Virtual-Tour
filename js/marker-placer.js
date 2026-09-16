@@ -461,73 +461,50 @@ export function initMarkerPlacer(viewer, virtualTour, allNodes, isDebug) {
     saveBtn.disabled = true;
     try {
       const id = (isEditing && editingMarkerId) ? editingMarkerId : `${currentNodeId}-marker-${Date.now()}`;
-    const type = typeSelect.value;
-    const title = titleInput.value.trim();
-    const yaw = `${capturedYawDeg.toFixed(2)}deg`;
-    const pitch = `${capturedPitchDeg.toFixed(2)}deg`;
-    const size = parseInt(sizeSelect.value, 10) || 44;
-    const icon = iconSelect.value;
-    const color = colorSelect.value;
-    const anim = animCheck.checked;
-    
-    let markerConfig = {
-      id,
-      position: { yaw, pitch },
-      size: { width: size, height: size },
-      anchor: 'center center',
-      data: {
-        type,
-        title,
-        icon,
-        color,
-        animated: anim
+      const type = typeSelect.value;
+      const title = titleInput.value.trim();
+      const yaw = `${capturedYawDeg.toFixed(2)}deg`;
+      const pitch = `${capturedPitchDeg.toFixed(2)}deg`;
+      const size = parseInt(sizeSelect.value, 10) || 44;
+      const icon = iconSelect.value;
+      const color = colorSelect.value;
+      const anim = animCheck.checked;
+      
+      let markerConfig = {
+        id,
+        position: { yaw, pitch },
+        size: { width: size, height: size },
+        anchor: 'center center',
+        data: {
+          type,
+          title,
+          icon,
+          color,
+          animated: anim
+        }
+      };
+      
+      let customMarkerProps = `type="${type}" data-icon="${icon}" data-color="${color}"`;
+      if (anim) customMarkerProps += ' animated';
+
+      if (type === 'info') {
+        markerConfig.html = `<custom-marker ${customMarkerProps}>\n        <h2>${title}</h2>\n        <p>${contentInput.value.trim()}</p>\n      </custom-marker>`;
+        markerConfig.data.content = contentInput.value.trim();
+      } else if (type === 'audio') {
+        markerConfig.html = `<custom-marker ${customMarkerProps}>\n        <h2>${title}</h2>\n        <p>🔊 Audio Narration</p>\n      </custom-marker>`;
+        markerConfig.data.audioSrc = audioInput.value.trim();
+      } else if (type === 'image') {
+        const originalUrl = contentInput.getAttribute('data-original') || contentInput.value.trim().replace('/thumbs/', '/');
+        markerConfig.html = `<custom-marker ${customMarkerProps} data-url="${originalUrl}">\n        <img src="${contentInput.value.trim()}" alt="${title}" style="cursor:pointer;" />\n        <h2>${title}</h2>\n        <p style="font-size: 11px; opacity:0.7;">🔍 Click to enlarge</p>\n      </custom-marker>`;
+        markerConfig.data.imageSrc = contentInput.value.trim();
+        markerConfig.data.originalUrl = originalUrl;
+        markerConfig.data.caption = title;
+      } else if (type === 'link') {
+        markerConfig.html = `<custom-marker ${customMarkerProps} data-url="${linkInput.value.trim()}">\n        <h2>${title}</h2>\n        <p>🔗 Click to open link</p>\n      </custom-marker>`;
+        markerConfig.data.url = linkInput.value.trim();
       }
-    };
-    
-    let customMarkerProps = `type="${type}" data-icon="${icon}" data-color="${color}"`;
-    if (anim) customMarkerProps += ' animated';
 
-    if (type === 'info') {
-      markerConfig.html = `<custom-marker ${customMarkerProps}>\n        <h2>${title}</h2>\n        <p>${contentInput.value.trim()}</p>\n      </custom-marker>`;
-      markerConfig.data.content = contentInput.value.trim();
-    } else if (type === 'audio') {
-      markerConfig.html = `<custom-marker ${customMarkerProps}>\n        <h2>${title}</h2>\n        <p>🔊 Audio Narration</p>\n      </custom-marker>`;
-      markerConfig.data.audioSrc = audioInput.value.trim();
-    } else if (type === 'image') {
-      const originalUrl = contentInput.getAttribute('data-original') || contentInput.value.trim().replace('/thumbs/', '/');
-      markerConfig.html = `<custom-marker ${customMarkerProps} data-url="${originalUrl}">\n        <img src="${contentInput.value.trim()}" alt="${title}" style="cursor:pointer;" />\n        <h2>${title}</h2>\n        <p style="font-size: 11px; opacity:0.7;">🔍 Click to enlarge</p>\n      </custom-marker>`;
-      markerConfig.data.imageSrc = contentInput.value.trim();
-      markerConfig.data.originalUrl = originalUrl;
-      markerConfig.data.caption = title;
-    } else if (type === 'link') {
-      markerConfig.html = `<custom-marker ${customMarkerProps} data-url="${linkInput.value.trim()}">\n        <h2>${title}</h2>\n        <p>🔗 Click to open link</p>\n      </custom-marker>`;
-      markerConfig.data.url = linkInput.value.trim();
-    }
-
-    // 1. Inject into PSV immediately
-    if (markersPlugin) {
-      if (isEditing) {
-        markersPlugin.updateMarker(markerConfig);
-      } else {
-        markersPlugin.addMarker(markerConfig);
-      }
-    }
-
-    // 2. Add to allNodes in memory
-    const node = allNodes.find(n => n.id === currentNodeId);
-    if (node) {
-      if (!node.markers) node.markers = [];
-      const existing = node.markers.findIndex(m => m.id === id);
-      if (existing >= 0) node.markers[existing] = markerConfig;
-      else node.markers.push(markerConfig);
-    }
-
-    showToast(isEditing ? `📍 Marker updated: ${id}` : `📍 Marker added: ${id}`);
-    closeModal();
-    window.dispatchEvent(new CustomEvent('debug-markers-updated'));
-
-    // 3. Save to disk via dev server
-    try {
+      // 1. Save to disk via dev server FIRST
       const response = await fetch('/api/save-marker', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -561,21 +538,7 @@ export function initMarkerPlacer(viewer, virtualTour, allNodes, isDebug) {
       const node = allNodes.find(n => n.id === currentNodeId);
       const markerToDelete = node?.markers?.find(m => m.id === editingMarkerId);
 
-      // 1. Remove from PSV
-      if (markersPlugin) {
-        markersPlugin.removeMarker(editingMarkerId);
-      }
-
-      // 2. Remove from allNodes memory
-      if (node && node.markers) {
-        node.markers = node.markers.filter(m => m.id !== editingMarkerId);
-      }
-
-      showToast(`🗑️ Marker deleted: ${editingMarkerId}`);
-      closeModal();
-      window.dispatchEvent(new CustomEvent('debug-markers-updated'));
-
-      // 3. Delete from disk
+      // 1. Delete from disk FIRST
       try {
         const response = await fetch('/api/save-marker', {
           method: 'POST',
@@ -591,7 +554,22 @@ export function initMarkerPlacer(viewer, virtualTour, allNodes, isDebug) {
         if (!response.ok) throw new Error('Failed to delete');
       } catch (err) {
         showToast(`❌ Error deleting marker: ${err.message}`);
+        return; // Don't update UI if delete failed
       }
+
+      // 2. Remove from PSV (only after successful API call)
+      if (markersPlugin) {
+        markersPlugin.removeMarker(editingMarkerId);
+      }
+
+      // 3. Remove from allNodes memory
+      if (node && node.markers) {
+        node.markers = node.markers.filter(m => m.id !== editingMarkerId);
+      }
+
+      showToast(`🗑️ Marker deleted: ${editingMarkerId}`);
+      closeModal();
+      window.dispatchEvent(new CustomEvent('debug-markers-updated'));
     });
   }
 
