@@ -567,6 +567,90 @@ export default [
           content: ''
         },
         html: '<custom-marker type=\'info\' data-icon=\'info\' data-color=\'blue\'>\n        <h2>Majalah</h2>\n        <p></p>\n      </custom-marker>'
+      },
+      {
+        id: 'ppk-f1-main-area-8-marker-1789554344723',
+        position: {
+          yaw: '166.51deg',
+          pitch: '-6.49deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Fiksyen',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'info\' data-color=\'blue\'>\n        <h2>Fiksyen</h2>\n        <p></p>\n      </custom-marker>'
+      },
+      {
+        id: 'ppk-f1-main-area-8-marker-1789554469328',
+        position: {
+          yaw: '41.09deg',
+          pitch: '-1.33deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Bukan Fiksyen',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'info\' data-color=\'blue\'>\n        <h2>Bukan Fiksyen</h2>\n        <p></p>\n      </custom-marker>'
+      },
+      {
+        id: 'ppk-f1-main-area-8-marker-1789554486587',
+        position: {
+          yaw: '51.24deg',
+          pitch: '-2.97deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Bukan Fiksyen',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'info\' data-color=\'blue\'>\n        <h2>Bukan Fiksyen</h2>\n        <p></p>\n      </custom-marker>'
+      },
+      {
+        id: 'ppk-f1-main-area-8-marker-1789554492551',
+        position: {
+          yaw: '50.26deg',
+          pitch: '-15.77deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Bukan Fiksyen',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'info\' data-color=\'blue\'>\n        <h2>Bukan Fiksyen</h2>\n        <p></p>\n      </custom-marker>'
       }
     ],
     data: {

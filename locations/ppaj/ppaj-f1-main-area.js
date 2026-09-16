@@ -310,8 +310,8 @@ export default [
       {
         id: 'ppaj-f1-04-marker-1789454231324',
         position: {
-          yaw: '347.71deg',
-          pitch: '15.60deg'
+          yaw: '353.40deg',
+          pitch: '16.46deg'
         },
         size: {
           width: 44,
@@ -319,22 +319,20 @@ export default [
         },
         anchor: 'center center',
         data: {
-          type: 'image',
-          title: '',
+          type: 'info',
+          title: 'Bahasa Cina',
           icon: 'info',
           color: 'blue',
           animated: false,
-          imageSrc: './images/ppaj/markers/LOBBY/AEON_lobby_4.jpg',
-          originalUrl: './images/ppaj/markers/LOBBY/AEON_lobby_4.jpg',
-          caption: ''
+          content: ''
         },
-        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/ppaj/markers/LOBBY/AEON_lobby_4.jpg\'>\n        <img src=\'./images/ppaj/markers/LOBBY/AEON_lobby_4.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+        html: '<custom-marker type=\'info\' data-icon=\'info\' data-color=\'blue\'>\n        <h2>Bahasa Cina</h2>\n        <p></p>\n      </custom-marker>'
       },
       {
         id: 'ppaj-f1-04-marker-1789454243160',
         position: {
-          yaw: '32.04deg',
-          pitch: '13.92deg'
+          yaw: '36.86deg',
+          pitch: '12.49deg'
         },
         size: {
           width: 44,
@@ -342,16 +340,14 @@ export default [
         },
         anchor: 'center center',
         data: {
-          type: 'image',
-          title: '',
+          type: 'info',
+          title: 'Bahasa Cina',
           icon: 'info',
           color: 'blue',
           animated: false,
-          imageSrc: './images/ppaj/markers/LOBBY/AEON_lobby_4.jpg',
-          originalUrl: './images/ppaj/markers/LOBBY/AEON_lobby_4.jpg',
-          caption: ''
+          content: ''
         },
-        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/ppaj/markers/LOBBY/AEON_lobby_4.jpg\'>\n        <img src=\'./images/ppaj/markers/LOBBY/AEON_lobby_4.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+        html: '<custom-marker type=\'info\' data-icon=\'info\' data-color=\'blue\'>\n        <h2>Bahasa Cina</h2>\n        <p></p>\n      </custom-marker>'
       },
       {
         id: 'ppaj-f1-04-marker-1789454260421',
@@ -365,16 +361,14 @@ export default [
         },
         anchor: 'center center',
         data: {
-          type: 'image',
-          title: '',
+          type: 'info',
+          title: 'Bahasa Cina',
           icon: 'info',
           color: 'blue',
           animated: false,
-          imageSrc: './images/ppaj/markers/LOBBY/AEON_lobby_4.jpg',
-          originalUrl: './images/ppaj/markers/LOBBY/AEON_lobby_4.jpg',
-          caption: ''
+          content: ''
         },
-        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/ppaj/markers/LOBBY/AEON_lobby_4.jpg\'>\n        <img src=\'./images/ppaj/markers/LOBBY/AEON_lobby_4.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+        html: '<custom-marker type=\'info\' data-icon=\'info\' data-color=\'blue\'>\n        <h2>Bahasa Cina</h2>\n        <p></p>\n      </custom-marker>'
       }
     ],
     data: {
