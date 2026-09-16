@@ -358,9 +358,10 @@ export default [
       },
       {
         nodeId: 'gt-f1-main-area-11',
-        position: { yaw: '297.26deg', pitch: '-10deg' },
+        position: { yaw: '310.92deg', pitch: '-10deg' },
         name: 'Go to Main Area 11'
       },
+      
 
       {
         nodeId: 'gt-f1-main-area-12',
@@ -496,21 +497,27 @@ export default [
       },
       {
         nodeId: 'gt-f1-main-area-12',
-        position: { yaw: '358.45deg', pitch: '-8.15deg' },
-        name: 'Go to Area 12',
+        position: { yaw: '91.60deg', pitch: '-9.21deg' },
+        name: 'Go to Main Area 12'
       },
+      
       {
         nodeId: 'gt-f1-main-area-9',
-        position: { yaw: '117.26deg', pitch: '-8.33deg' },
+        position: { yaw: '130.92deg', pitch: '-10.56deg' },
         name: 'Go to Main Area 9'
+      },
+      {
+        nodeId: 'gt-f1-main-area-13',
+        position: { yaw: '46.27deg', pitch: '-6.03deg' },
+        name: 'Go to Main Area 13'
       },
     ],
     markers: [
       {
         id: 'gt-f1-main-area-11-marker-1789531431102',
         position: {
-          yaw: '3.79deg',
-          pitch: '-10.28deg'
+          yaw: '3.77deg',
+          pitch: '-35.38deg'
         },
         size: {
           width: 44,
@@ -519,15 +526,15 @@ export default [
         anchor: 'center center',
         data: {
           type: 'image',
-          title: '',
+          title: 'Kiosk peminjaman / pemulangan buku (layan diri)',
           icon: 'info',
           color: 'blue',
           animated: false,
           imageSrc: './images/gt/markers/GT_lobby_3.jpg',
           originalUrl: './images/gt/markers/GT_lobby_3.jpg',
-          caption: ''
+          caption: 'Kiosk peminjaman / pemulangan buku (layan diri)'
         },
-        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/gt/markers/GT_lobby_3.jpg\'>\n        <img src=\'./images/gt/markers/GT_lobby_3.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/gt/markers/GT_lobby_3.jpg\'>\n        <img src=\'./images/gt/markers/GT_lobby_3.jpg\' alt=\'Kiosk peminjaman / pemulangan buku (layan diri)\' style=\'cursor:pointer;\' />\n        <h2>Kiosk peminjaman / pemulangan buku (layan diri)</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
       }
     ],
     data: {
@@ -546,9 +553,10 @@ export default [
     links: [
       {
         nodeId: 'gt-f1-main-area-11',
-        position: { yaw: '290.22deg', pitch: '-7.70deg' },
-        name: 'Go to Area 11',
+        position: { yaw: '271.60deg', pitch: '-10deg' },
+        name: 'Go to Main Area 11'
       },
+      
       {
         nodeId: 'gt-f1-main-area-13',
         position: { yaw: '358.45deg', pitch: '-8.15deg' },
@@ -641,6 +649,11 @@ export default [
         nodeId: 'gt-f1-main-area-24',
         position: { yaw: '59.32deg', pitch: '-6.13deg' },
         name: 'Go to Main Area 24'
+      },
+      {
+        nodeId: 'gt-f1-main-area-11',
+        position: { yaw: '226.27deg', pitch: '-10deg' },
+        name: 'Go to Main Area 11'
       },
     ],
     markers: [],
@@ -1602,7 +1615,31 @@ export default [
         name: 'Go to Main Area 29'
       },
     ],
-    markers: [],
+    markers: [
+      {
+        id: 'gt-f1-main-area-65-marker-1789539991055',
+        position: {
+          yaw: '29.75deg',
+          pitch: '-14.51deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: '',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/gt/markers/GT_kids_2.jpg',
+          originalUrl: './images/gt/markers/GT_kids_2.jpg',
+          caption: ''
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/gt/markers/GT_kids_2.jpg\'>\n        <img src=\'./images/gt/markers/GT_kids_2.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      }
+    ],
     data: {
       floor: 'f1',
       tags: ['main'],

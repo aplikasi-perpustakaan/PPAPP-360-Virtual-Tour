@@ -142,27 +142,6 @@ export default [
     ],
     markers: [
       {
-        id: 'gt-ext-outside-4-marker-1789530848810',
-        position: {
-          yaw: '90.35deg',
-          pitch: '5.11deg'
-        },
-        size: {
-          width: 44,
-          height: 44
-        },
-        anchor: 'center center',
-        data: {
-          type: 'info',
-          title: '',
-          icon: 'info',
-          color: 'blue',
-          animated: false,
-          content: './images/gt/markers/GT_outside_5.jpg'
-        },
-        html: '<custom-marker type=\'info\' data-icon=\'info\' data-color=\'blue\'>\n        <h2></h2>\n        <p>./images/gt/markers/GT_outside_5.jpg</p>\n      </custom-marker>'
-      },
-      {
         id: 'gt-ext-outside-4-marker-1789530868322',
         position: {
           yaw: '88.18deg',
@@ -184,6 +163,29 @@ export default [
           caption: ''
         },
         html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/gt/markers/GT_outside_4.jpg\'>\n        <img src=\'./images/gt/markers/GT_outside_4.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      {
+        id: 'gt-ext-outside-4-marker-1789530848810',
+        position: {
+          yaw: '90.35deg',
+          pitch: '5.11deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: 'Book Drop',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/gt/markers/GT_outside_5.jpg',
+          originalUrl: './images/gt/markers/GT_outside_5.jpg',
+          caption: 'Book Drop'
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/gt/markers/GT_outside_5.jpg\'>\n        <img src=\'./images/gt/markers/GT_outside_5.jpg\' alt=\'Book Drop\' style=\'cursor:pointer;\' />\n        <h2>Book Drop</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
       }
     ],
     data: {
