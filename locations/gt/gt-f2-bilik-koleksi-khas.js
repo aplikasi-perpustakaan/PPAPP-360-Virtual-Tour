@@ -20,6 +20,11 @@ export default [
         position: { yaw: '2.41deg', pitch: '-7.27deg' },
         name: 'Go to Bilik Koleksi Khas 3'
       },
+      {
+        nodeId: 'gt-f2-main-area-16',
+        position: { yaw: '184.87deg', pitch: '-10deg' },
+        name: 'Go to Main Area 16'
+      },
     ],
     markers: [],
     data: {

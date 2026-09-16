@@ -46,7 +46,31 @@ export default [
         name: 'Go to Area 3',
       }
     ],
-    markers: [],
+    markers: [
+      {
+        id: 'gt-f1-main-area-2-marker-1789531215433',
+        position: {
+          yaw: '0.84deg',
+          pitch: '-10.96deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: '',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/gt/markers/GT_lobby_7.jpg',
+          originalUrl: './images/gt/markers/GT_lobby_7.jpg',
+          caption: ''
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/gt/markers/GT_lobby_7.jpg\'>\n        <img src=\'./images/gt/markers/GT_lobby_7.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      }
+    ],
     data: {
       floor: 'f1',
       tags: ['main'],
@@ -111,6 +135,11 @@ export default [
         nodeId: 'gt-f1-main-area-9',
         position: { yaw: '4.47deg', pitch: '-10deg' },
         name: 'Go to Main Area 9'
+      },
+      {
+        nodeId: 'gt-stairs-1',
+        position: { yaw: '31.22deg', pitch: '-5.19deg' },
+        name: 'Go to Stairs 1'
       },
     ],
     markers: [],
@@ -316,7 +345,31 @@ export default [
         name: 'Go to Main Area 9'
       },
     ],
-    markers: [],
+    markers: [
+      {
+        id: 'gt-f1-main-area-11-marker-1789531431102',
+        position: {
+          yaw: '3.79deg',
+          pitch: '-10.28deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: '',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/gt/markers/GT_lobby_3.jpg',
+          originalUrl: './images/gt/markers/GT_lobby_3.jpg',
+          caption: ''
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/gt/markers/GT_lobby_3.jpg\'>\n        <img src=\'./images/gt/markers/GT_lobby_3.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      }
+    ],
     data: {
       floor: 'f1',
       tags: ['main'],

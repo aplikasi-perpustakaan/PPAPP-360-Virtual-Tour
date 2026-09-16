@@ -82,6 +82,11 @@ export default [
         position: { yaw: '83.97deg', pitch: '-15.26deg' },
         name: 'Go to Main Area 17'
       },
+      {
+        nodeId: 'gt-f2-main-area-16',
+        position: { yaw: '338.76deg', pitch: '-10deg' },
+        name: 'Go to Main Area 16'
+      },
     ],
     markers: [],
     data: {
@@ -201,12 +206,6 @@ export default [
     defaultPitch: '0deg',
     links: [
       {
-        nodeId: 'gt-f2-main-area-8',
-        position: { yaw: '271.03deg', pitch: '-12.18deg' },
-        name: 'Go to Main Area 8'
-      },
-      
-      {
         nodeId: 'gt-f2-main-area-2',
         position: { yaw: '98.29deg', pitch: '-10deg' },
         name: 'Go to Main Area 2'
@@ -232,11 +231,6 @@ export default [
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [
-      {
-        nodeId: 'gt-f2-main-area-7',
-        position: { yaw: '91.03deg', pitch: '-10deg' },
-        name: 'Go to Main Area 7'
-      },
       {
         nodeId: 'gt-f2-main-area-6',
         position: { yaw: '4.64deg', pitch: '-10deg' },
@@ -280,6 +274,11 @@ export default [
         position: { yaw: '303.75deg', pitch: '-10deg' },
         name: 'Go to Main Area 8'
       },
+      {
+        nodeId: 'gt-f2-main-area-13',
+        position: { yaw: '207.01deg', pitch: '-10deg' },
+        name: 'Go to Main Area 13'
+      },
     ],
     markers: [],
     data: {
@@ -301,13 +300,6 @@ export default [
         position: { yaw: '80.74deg', pitch: '-10deg' },
         name: 'Go to Main Area 9'
       },
-      
-      
-      {
-        nodeId: 'gt-f2-main-area-11',
-        position: { yaw: '183.33deg', pitch: '-13.23deg' },
-        name: 'Go to Main Area 11'
-      },
     ],
     markers: [],
     data: {
@@ -325,9 +317,9 @@ export default [
     defaultPitch: '0deg',
     links: [
       {
-        nodeId: 'gt-f2-main-area-10',
-        position: { yaw: '3.33deg', pitch: '-10deg' },
-        name: 'Go to Main Area 10'
+        nodeId: 'gt-f2-main-area-13',
+        position: { yaw: '111.70deg', pitch: '-10deg' },
+        name: 'Go to Main Area 13'
       },
     ],
     markers: [],
@@ -350,11 +342,6 @@ export default [
         position: { yaw: '57.61deg', pitch: '-10deg' },
         name: 'Go to Main Area 13'
       },
-      {
-        nodeId: 'gt-f1-i-play-toy-1',
-        position: { yaw: '179.85deg', pitch: '-19.83deg' },
-        name: 'Go to i-Play Toy 1'
-      },
     ],
     markers: [],
     data: {
@@ -375,6 +362,16 @@ export default [
         nodeId: 'gt-f2-main-area-12',
         position: { yaw: '237.61deg', pitch: '-9.31deg' },
         name: 'Go to Main Area 12'
+      },
+      {
+        nodeId: 'gt-f2-main-area-11',
+        position: { yaw: '291.70deg', pitch: '-12.95deg' },
+        name: 'Go to Main Area 11'
+      },
+      {
+        nodeId: 'gt-f2-main-area-9',
+        position: { yaw: '27.01deg', pitch: '-2.64deg' },
+        name: 'Go to Main Area 9'
       },
     ],
     markers: [],
@@ -445,10 +442,15 @@ export default [
     defaultPitch: '0deg',
     links: [
       {
-        nodeId: 'gt-f2-main-area-17',
-        position: { yaw: '358.45deg', pitch: '-8.15deg' },
-        name: 'Go to Floor 2 – Main Area 17',
-      }
+        nodeId: 'gt-f2-main-area-3',
+        position: { yaw: '158.76deg', pitch: '-15.75deg' },
+        name: 'Go to Main Area 3'
+      },
+      {
+        nodeId: 'gt-f2-bilik-koleksi-khas-1',
+        position: { yaw: '4.87deg', pitch: '-1.97deg' },
+        name: 'Go to Bilik Koleksi Khas 1'
+      },
     ],
     markers: [],
     data: {
@@ -465,11 +467,6 @@ export default [
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [
-      {
-        nodeId: 'gt-f2-main-area-16',
-        position: { yaw: '178.45deg', pitch: '-8.15deg' },
-        name: 'Go to Floor 2 – Main Area 16',
-      },
       {
         nodeId: 'gt-f2-main-area-18',
         position: { yaw: '19.04deg', pitch: '-3.36deg' },
