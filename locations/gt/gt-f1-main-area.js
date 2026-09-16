@@ -144,9 +144,13 @@ export default [
       },
       {
         nodeId: 'gt-f1-main-area-5',
-        position: { yaw: '183.17deg', pitch: '-4.98deg' },
+        position: { yaw: '183.37deg', pitch: '-2.29deg' },
         name: 'Go to Area 5',
+        targetYaw: '179.34deg',
+        targetPitch: '-4.46deg'
       },
+      
+      
       {
         nodeId: 'gt-f1-main-area-6',
         position: { yaw: '274.78deg', pitch: '-7.19deg' },
@@ -190,7 +194,29 @@ export default [
         name: 'Go to Area 4',
       }
     ],
-    markers: [],
+    markers: [
+      {
+        id: 'gt-f1-main-area-5-marker-1789557480930',
+        position: {
+          yaw: '179.61deg',
+          pitch: '-17.36deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'E-Sport',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'info\' data-color=\'blue\'>\n        <h2>E-Sport</h2>\n        <p></p>\n      </custom-marker>'
+      }
+    ],
     data: {
       floor: 'f1',
       tags: ['main'],
@@ -219,29 +245,6 @@ export default [
     ],
     markers: [
       {
-        id: 'gt-f1-main-area-6-marker-1789536748660',
-        position: {
-          yaw: '350.28deg',
-          pitch: '-6.93deg'
-        },
-        size: {
-          width: 44,
-          height: 44
-        },
-        anchor: 'center center',
-        data: {
-          type: 'image',
-          title: '',
-          icon: 'info',
-          color: 'blue',
-          animated: false,
-          imageSrc: './images/gt/markers/GT_lobby_1.jpg',
-          originalUrl: './images/gt/markers/GT_lobby_1.jpg',
-          caption: ''
-        },
-        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/gt/markers/GT_lobby_1.jpg\'>\n        <img src=\'./images/gt/markers/GT_lobby_1.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
-      },
-      {
         id: 'gt-f1-main-area-6-marker-1789540429010',
         position: {
           yaw: '189.74deg',
@@ -261,6 +264,29 @@ export default [
           content: ''
         },
         html: '<custom-marker type=\'info\' data-icon=\'info\' data-color=\'red\' animated>\n        <h2>Staff Only</h2>\n        <p></p>\n      </custom-marker>'
+      },
+      {
+        id: 'gt-f1-main-area-6-marker-1789536748660',
+        position: {
+          yaw: '350.78deg',
+          pitch: '-9.06deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: 'Waktu Perkhidmatan',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/gt/markers/GT_lobby_1.jpg',
+          originalUrl: './images/gt/markers/GT_lobby_1.jpg',
+          caption: 'Waktu Perkhidmatan'
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/gt/markers/GT_lobby_1.jpg\'>\n        <img src=\'./images/gt/markers/GT_lobby_1.jpg\' alt=\'Waktu Perkhidmatan\' style=\'cursor:pointer;\' />\n        <h2>Waktu Perkhidmatan</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
       }
     ],
     data: {
@@ -313,33 +339,10 @@ export default [
     ],
     markers: [
       {
-        id: 'gt-f1-main-area-8-marker-1789536822305',
-        position: {
-          yaw: '292.75deg',
-          pitch: '1.77deg'
-        },
-        size: {
-          width: 44,
-          height: 44
-        },
-        anchor: 'center center',
-        data: {
-          type: 'image',
-          title: '',
-          icon: 'info',
-          color: 'blue',
-          animated: false,
-          imageSrc: './images/gt/markers/GT_lobby_4.jpg',
-          originalUrl: './images/gt/markers/GT_lobby_4.jpg',
-          caption: ''
-        },
-        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/gt/markers/GT_lobby_4.jpg\'>\n        <img src=\'./images/gt/markers/GT_lobby_4.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
-      },
-      {
         id: 'gt-f1-main-area-8-marker-1789536829691',
         position: {
-          yaw: '287.94deg',
-          pitch: '4.59deg'
+          yaw: '287.92deg',
+          pitch: '1.39deg'
         },
         size: {
           width: 44,
@@ -348,21 +351,21 @@ export default [
         anchor: 'center center',
         data: {
           type: 'image',
-          title: '',
+          title: 'Visi & Misi PPAPP',
           icon: 'info',
           color: 'blue',
           animated: false,
           imageSrc: './images/gt/markers/GT_lobby_5.jpg',
           originalUrl: './images/gt/markers/GT_lobby_5.jpg',
-          caption: ''
+          caption: 'Visi & Misi PPAPP'
         },
-        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/gt/markers/GT_lobby_5.jpg\'>\n        <img src=\'./images/gt/markers/GT_lobby_5.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/gt/markers/GT_lobby_5.jpg\'>\n        <img src=\'./images/gt/markers/GT_lobby_5.jpg\' alt=\'Visi & Misi PPAPP\' style=\'cursor:pointer;\' />\n        <h2>Visi & Misi PPAPP</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
       },
       {
-        id: 'gt-f1-main-area-8-marker-1789538237445',
+        id: 'gt-f1-main-area-8-marker-1789536822305',
         position: {
-          yaw: '298.55deg',
-          pitch: '4.13deg'
+          yaw: '293.09deg',
+          pitch: '-0.30deg'
         },
         size: {
           width: 44,
@@ -371,15 +374,59 @@ export default [
         anchor: 'center center',
         data: {
           type: 'image',
-          title: '',
+          title: 'Piagam Pelanggan',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/gt/markers/GT_lobby_4.jpg',
+          originalUrl: './images/gt/markers/GT_lobby_4.jpg',
+          caption: 'Piagam Pelanggan'
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/gt/markers/GT_lobby_4.jpg\'>\n        <img src=\'./images/gt/markers/GT_lobby_4.jpg\' alt=\'Piagam Pelanggan\' style=\'cursor:pointer;\' />\n        <h2>Piagam Pelanggan</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      {
+        id: 'gt-f1-main-area-8-marker-1789538237445',
+        position: {
+          yaw: '298.00deg',
+          pitch: '1.22deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: 'Skop Penyediaan Perkhidmatan Perpustakaan & Informasi',
           icon: 'info',
           color: 'blue',
           animated: false,
           imageSrc: './images/gt/markers/GT_lobby_10.jpg',
           originalUrl: './images/gt/markers/GT_lobby_10.jpg',
-          caption: ''
+          caption: 'Skop Penyediaan Perkhidmatan Perpustakaan & Informasi'
         },
-        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/gt/markers/GT_lobby_10.jpg\'>\n        <img src=\'./images/gt/markers/GT_lobby_10.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/gt/markers/GT_lobby_10.jpg\'>\n        <img src=\'./images/gt/markers/GT_lobby_10.jpg\' alt=\'Skop Penyediaan Perkhidmatan Perpustakaan & Informasi\' style=\'cursor:pointer;\' />\n        <h2>Skop Penyediaan Perkhidmatan Perpustakaan & Informasi</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      {
+        id: 'gt-f1-main-area-8-marker-1789557434055',
+        position: {
+          yaw: '249.40deg',
+          pitch: '-38.35deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Kaunter Peminjaman & Pemulangan',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'info\' data-color=\'blue\'>\n        <h2>Kaunter Peminjaman & Pemulangan</h2>\n        <p></p>\n      </custom-marker>'
       }
     ],
     data: {
@@ -625,29 +672,6 @@ export default [
     ],
     markers: [
       {
-        id: 'gt-f1-main-area-12-marker-1789538261374',
-        position: {
-          yaw: '62.23deg',
-          pitch: '-10.62deg'
-        },
-        size: {
-          width: 44,
-          height: 44
-        },
-        anchor: 'center center',
-        data: {
-          type: 'image',
-          title: '',
-          icon: 'info',
-          color: 'blue',
-          animated: false,
-          imageSrc: './images/gt/markers/GT_lobby_8.jpg',
-          originalUrl: './images/gt/markers/GT_lobby_8.jpg',
-          caption: ''
-        },
-        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/gt/markers/GT_lobby_8.jpg\'>\n        <img src=\'./images/gt/markers/GT_lobby_8.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
-      },
-      {
         id: 'gt-f1-main-area-12-marker-1789538281717',
         position: {
           yaw: '120.78deg',
@@ -669,6 +693,29 @@ export default [
           caption: ''
         },
         html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/gt/markers/GT_lobby_6.jpg\'>\n        <img src=\'./images/gt/markers/GT_lobby_6.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      {
+        id: 'gt-f1-main-area-12-marker-1789538261374',
+        position: {
+          yaw: '61.05deg',
+          pitch: '-21.15deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: 'Pencapaian',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/gt/markers/GT_lobby_8.jpg',
+          originalUrl: './images/gt/markers/GT_lobby_8.jpg',
+          caption: 'Pencapaian'
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/gt/markers/GT_lobby_8.jpg\'>\n        <img src=\'./images/gt/markers/GT_lobby_8.jpg\' alt=\'Pencapaian\' style=\'cursor:pointer;\' />\n        <h2>Pencapaian</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
       }
     ],
     data: {
@@ -1162,6 +1209,13 @@ export default [
         position: { yaw: '199.48deg', pitch: '-7.74deg' },
         name: 'Go to Main Area 13'
       },
+      {
+        nodeId: 'gt-f1-main-area-23',
+        position: { yaw: '51.82deg', pitch: '-10.53deg' },
+        name: 'Go to Main Area 23',
+        targetYaw: '96.94deg',
+        targetPitch: '-1.60deg'
+      },
     ],
     markers: [
       {
@@ -1354,6 +1408,13 @@ export default [
         position: { yaw: '336.56deg', pitch: '-5.99deg' },
         name: 'Go to Area 22',
       },
+      {
+        nodeId: 'gt-f1-main-area-21',
+        position: { yaw: '232.85deg', pitch: '-8.46deg' },
+        name: 'Go to Main Area 21',
+        targetYaw: '192.00deg',
+        targetPitch: '-4.48deg'
+      },
     ],
     markers: [],
     data: {
@@ -1534,7 +1595,29 @@ export default [
         name: 'Go to Main Area 65'
       },
     ],
-    markers: [],
+    markers: [
+      {
+        id: 'gt-f1-main-area-29-marker-1789558061489',
+        position: {
+          yaw: '10.76deg',
+          pitch: '-4.80deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Kakitangan sahaja',
+          icon: 'no-entry',
+          color: 'red',
+          animated: false,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'no-entry\' data-color=\'red\'>\n        <h2>Kakitangan sahaja</h2>\n        <p></p>\n      </custom-marker>'
+      }
+    ],
     data: {
       floor: 'f1',
       tags: ['main'],
@@ -1722,9 +1805,13 @@ export default [
       
       {
         nodeId: 'gt-f1-main-area-66',
-        position: { yaw: '358.45deg', pitch: '-8.15deg' },
+        position: { yaw: '3.40deg', pitch: '-1.48deg' },
         name: 'Go to Area 66',
+        targetYaw: '2.03deg',
+        targetPitch: '-1.10deg'
       },
+      
+      
       {
         nodeId: 'gt-f1-main-area-71',
         position: { yaw: '98.96deg', pitch: '-6.12deg' },
@@ -1783,9 +1870,13 @@ export default [
       },
       {
         nodeId: 'gt-f1-main-area-67',
-        position: { yaw: '358.45deg', pitch: '-8.15deg' },
+        position: { yaw: '1.53deg', pitch: '-3.27deg' },
         name: 'Go to Area 67',
+        targetYaw: '358.27deg',
+        targetPitch: '-3.83deg'
       },
+      
+      
       {
         nodeId: 'gt-f1-main-area-63',
         position: { yaw: '272.97deg', pitch: '-10deg' },
@@ -1873,8 +1964,8 @@ export default [
       {
         id: 'gt-f1-main-area-68-marker-1789534295048',
         position: {
-          yaw: '52.88deg',
-          pitch: '-8.39deg'
+          yaw: '53.53deg',
+          pitch: '-21.50deg'
         },
         size: {
           width: 44,
@@ -1892,6 +1983,48 @@ export default [
           caption: ''
         },
         html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/gt/markers/GT_kids_1.jpg\'>\n        <img src=\'./images/gt/markers/GT_kids_1.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      {
+        id: 'gt-f1-main-area-68-marker-1789558300071',
+        position: {
+          yaw: '85.39deg',
+          pitch: '-1.22deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Mainan Untuk Kanak Kanak',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'info\' data-color=\'blue\'>\n        <h2>Mainan Untuk Kanak Kanak</h2>\n        <p></p>\n      </custom-marker>'
+      },
+      {
+        id: 'gt-f1-main-area-68-marker-1789558311853',
+        position: {
+          yaw: '100.16deg',
+          pitch: '-0.55deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Mainan Untuk Kanak Kanak',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'info\' data-color=\'blue\'>\n        <h2>Mainan Untuk Kanak Kanak</h2>\n        <p></p>\n      </custom-marker>'
       }
     ],
     data: {
@@ -1917,11 +2050,35 @@ export default [
       
       {
         nodeId: 'gt-f1-main-area-70',
-        position: { yaw: '270.82deg', pitch: '-10deg' },
-        name: 'Go to Main Area 70'
+        position: { yaw: '270.82deg', pitch: '-7.95deg' },
+        name: 'Go to Main Area 70',
+        targetYaw: '274.57deg',
+        targetPitch: '2.05deg'
       },
     ],
-    markers: [],
+    markers: [
+      {
+        id: 'gt-f1-main-area-69-marker-1789557366958',
+        position: {
+          yaw: '94.89deg',
+          pitch: '-36.42deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Kaunter Peminjaman / Pemulangan & I play toy',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'info\' data-color=\'blue\'>\n        <h2>Kaunter Peminjaman / Pemulangan & I play toy</h2>\n        <p></p>\n      </custom-marker>'
+      }
+    ],
     data: {
       floor: 'f1',
       tags: ['main'],
@@ -1946,8 +2103,10 @@ export default [
       
       {
         nodeId: 'gt-f1-main-area-71',
-        position: { yaw: '170.04deg', pitch: '-10deg' },
-        name: 'Go to Main Area 71'
+        position: { yaw: '186.58deg', pitch: '-6.22deg' },
+        name: 'Go to Main Area 71',
+        targetYaw: '186.94deg',
+        targetPitch: '-0.84deg'
       },
     ],
     markers: [],
@@ -2019,79 +2178,10 @@ export default [
     ],
     markers: [
       {
-        id: 'gt-f1-main-area-72-marker-1789533883984',
-        position: {
-          yaw: '195.36deg',
-          pitch: '-12.51deg'
-        },
-        size: {
-          width: 44,
-          height: 44
-        },
-        anchor: 'center center',
-        data: {
-          type: 'image',
-          title: '',
-          icon: 'info',
-          color: 'blue',
-          animated: false,
-          imageSrc: './images/gt/markers/GT_iplay_1.jpg',
-          originalUrl: './images/gt/markers/GT_iplay_1.jpg',
-          caption: ''
-        },
-        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/gt/markers/GT_iplay_1.jpg\'>\n        <img src=\'./images/gt/markers/GT_iplay_1.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
-      },
-      {
-        id: 'gt-f1-main-area-72-marker-1789533895373',
-        position: {
-          yaw: '199.56deg',
-          pitch: '-5.19deg'
-        },
-        size: {
-          width: 44,
-          height: 44
-        },
-        anchor: 'center center',
-        data: {
-          type: 'image',
-          title: '',
-          icon: 'info',
-          color: 'blue',
-          animated: false,
-          imageSrc: './images/gt/markers/GT_iplay_8.jpg',
-          originalUrl: './images/gt/markers/GT_iplay_8.jpg',
-          caption: ''
-        },
-        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/gt/markers/GT_iplay_8.jpg\'>\n        <img src=\'./images/gt/markers/GT_iplay_8.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
-      },
-      {
-        id: 'gt-f1-main-area-72-marker-1789533921680',
-        position: {
-          yaw: '191.61deg',
-          pitch: '-5.70deg'
-        },
-        size: {
-          width: 44,
-          height: 44
-        },
-        anchor: 'center center',
-        data: {
-          type: 'image',
-          title: '',
-          icon: 'info',
-          color: 'blue',
-          animated: false,
-          imageSrc: './images/gt/markers/GT_iplay_2.jpg',
-          originalUrl: './images/gt/markers/GT_iplay_2.jpg',
-          caption: ''
-        },
-        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/gt/markers/GT_iplay_2.jpg\'>\n        <img src=\'./images/gt/markers/GT_iplay_2.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
-      },
-      {
         id: 'gt-f1-main-area-72-marker-1789533944500',
         position: {
-          yaw: '189.32deg',
-          pitch: '0.29deg'
+          yaw: '189.28deg',
+          pitch: '-2.57deg'
         },
         size: {
           width: 44,
@@ -2100,21 +2190,21 @@ export default [
         anchor: 'center center',
         data: {
           type: 'image',
-          title: '',
+          title: 'Notis',
           icon: 'info',
           color: 'blue',
           animated: false,
           imageSrc: './images/gt/markers/GT_iplay_7.jpg',
           originalUrl: './images/gt/markers/GT_iplay_7.jpg',
-          caption: ''
+          caption: 'Notis'
         },
-        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/gt/markers/GT_iplay_7.jpg\'>\n        <img src=\'./images/gt/markers/GT_iplay_7.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/gt/markers/GT_iplay_7.jpg\'>\n        <img src=\'./images/gt/markers/GT_iplay_7.jpg\' alt=\'Notis\' style=\'cursor:pointer;\' />\n        <h2>Notis</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
       },
       {
         id: 'gt-f1-main-area-72-marker-1789533960801',
         position: {
-          yaw: '195.70deg',
-          pitch: '-0.86deg'
+          yaw: '195.80deg',
+          pitch: '-2.86deg'
         },
         size: {
           width: 44,
@@ -2123,15 +2213,84 @@ export default [
         anchor: 'center center',
         data: {
           type: 'image',
-          title: '',
+          title: 'Notis',
           icon: 'info',
           color: 'blue',
           animated: false,
           imageSrc: './images/gt/markers/GT_iplay_5.jpg',
           originalUrl: './images/gt/markers/GT_iplay_5.jpg',
-          caption: ''
+          caption: 'Notis'
         },
-        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/gt/markers/GT_iplay_5.jpg\'>\n        <img src=\'./images/gt/markers/GT_iplay_5.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/gt/markers/GT_iplay_5.jpg\'>\n        <img src=\'./images/gt/markers/GT_iplay_5.jpg\' alt=\'Notis\' style=\'cursor:pointer;\' />\n        <h2>Notis</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      {
+        id: 'gt-f1-main-area-72-marker-1789533921680',
+        position: {
+          yaw: '191.75deg',
+          pitch: '-8.41deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: 'Notis',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/gt/markers/GT_iplay_2.jpg',
+          originalUrl: './images/gt/markers/GT_iplay_2.jpg',
+          caption: 'Notis'
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/gt/markers/GT_iplay_2.jpg\'>\n        <img src=\'./images/gt/markers/GT_iplay_2.jpg\' alt=\'Notis\' style=\'cursor:pointer;\' />\n        <h2>Notis</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      {
+        id: 'gt-f1-main-area-72-marker-1789533895373',
+        position: {
+          yaw: '199.97deg',
+          pitch: '-8.83deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: 'Notis',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/gt/markers/GT_iplay_8.jpg',
+          originalUrl: './images/gt/markers/GT_iplay_8.jpg',
+          caption: 'Notis'
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/gt/markers/GT_iplay_8.jpg\'>\n        <img src=\'./images/gt/markers/GT_iplay_8.jpg\' alt=\'Notis\' style=\'cursor:pointer;\' />\n        <h2>Notis</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      {
+        id: 'gt-f1-main-area-72-marker-1789533883984',
+        position: {
+          yaw: '195.44deg',
+          pitch: '-14.70deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: 'Notis',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/gt/markers/GT_iplay_1.jpg',
+          originalUrl: './images/gt/markers/GT_iplay_1.jpg',
+          caption: 'Notis'
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/gt/markers/GT_iplay_1.jpg\'>\n        <img src=\'./images/gt/markers/GT_iplay_1.jpg\' alt=\'Notis\' style=\'cursor:pointer;\' />\n        <h2>Notis</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
       }
     ],
     data: {

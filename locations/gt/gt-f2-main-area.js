@@ -117,10 +117,33 @@ export default [
     ],
     markers: [
       {
+        id: 'gt-f2-main-area-3-marker-1789535527975',
+        position: {
+          yaw: '147.57deg',
+          pitch: '-2.48deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: '',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/gt/markers/GT_reference_9.jpg',
+          originalUrl: './images/gt/markers/GT_reference_9.jpg',
+          caption: ''
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/gt/markers/GT_reference_9.jpg\'>\n        <img src=\'./images/gt/markers/GT_reference_9.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      {
         id: 'gt-f2-main-area-3-marker-1789535517656',
         position: {
-          yaw: '141.82deg',
-          pitch: '-11.74deg'
+          yaw: '141.94deg',
+          pitch: '-13.39deg'
         },
         size: {
           width: 44,
@@ -140,10 +163,31 @@ export default [
         html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/gt/markers/GT_reference_8.jpg\'>\n        <img src=\'./images/gt/markers/GT_reference_8.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
       },
       {
-        id: 'gt-f2-main-area-3-marker-1789535527975',
+        id: 'gt-f2-main-area-3-marker-1789557783298',
         position: {
-          yaw: '149.18deg',
-          pitch: '-1.25deg'
+          yaw: '25.03deg',
+          pitch: '-0.25deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: '',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          content: './images/gt/markers/GT_reference_26.jpg'
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'info\' data-color=\'blue\'>\n        <h2></h2>\n        <p>./images/gt/markers/GT_reference_26.jpg</p>\n      </custom-marker>'
+      },
+      {
+        id: 'gt-f2-main-area-3-marker-1789557835105',
+        position: {
+          yaw: '25.00deg',
+          pitch: '5.78deg'
         },
         size: {
           width: 44,
@@ -156,11 +200,11 @@ export default [
           icon: 'info',
           color: 'blue',
           animated: false,
-          imageSrc: './images/gt/markers/GT_reference_9.jpg',
-          originalUrl: './images/gt/markers/GT_reference_9.jpg',
+          imageSrc: './images/gt/markers/GT_reference_27.jpg',
+          originalUrl: './images/gt/markers/GT_reference_27.jpg',
           caption: ''
         },
-        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/gt/markers/GT_reference_9.jpg\'>\n        <img src=\'./images/gt/markers/GT_reference_9.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/gt/markers/GT_reference_27.jpg\'>\n        <img src=\'./images/gt/markers/GT_reference_27.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
       }
     ],
     data: {
@@ -239,15 +283,15 @@ export default [
         anchor: 'center center',
         data: {
           type: 'image',
-          title: '',
+          title: 'Pameran',
           icon: 'info',
           color: 'blue',
           animated: false,
           imageSrc: './images/gt/markers/GT_reference_10.jpg',
           originalUrl: './images/gt/markers/GT_reference_10.jpg',
-          caption: ''
+          caption: 'Pameran'
         },
-        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/gt/markers/GT_reference_10.jpg\'>\n        <img src=\'./images/gt/markers/GT_reference_10.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/gt/markers/GT_reference_10.jpg\'>\n        <img src=\'./images/gt/markers/GT_reference_10.jpg\' alt=\'Pameran\' style=\'cursor:pointer;\' />\n        <h2>Pameran</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
       }
     ],
     data: {
@@ -295,8 +339,31 @@ export default [
       {
         id: 'gt-f2-main-area-6-marker-1789534489580',
         position: {
-          yaw: '256.51deg',
-          pitch: '5.56deg'
+          yaw: '257.49deg',
+          pitch: '-1.36deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: 'Sir Abraham Lincoln',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/gt/markers/GT_reference_6.jpg',
+          originalUrl: './images/gt/markers/GT_reference_6.jpg',
+          caption: 'Sir Abraham Lincoln'
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/gt/markers/GT_reference_6.jpg\'>\n        <img src=\'./images/gt/markers/GT_reference_6.jpg\' alt=\'Sir Abraham Lincoln\' style=\'cursor:pointer;\' />\n        <h2>Sir Abraham Lincoln</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      {
+        id: 'gt-f2-main-area-6-marker-1789557641412',
+        position: {
+          yaw: '311.53deg',
+          pitch: '-1.32deg'
         },
         size: {
           width: 44,
@@ -309,11 +376,11 @@ export default [
           icon: 'info',
           color: 'blue',
           animated: false,
-          imageSrc: './images/gt/markers/GT_reference_6.jpg',
-          originalUrl: './images/gt/markers/GT_reference_6.jpg',
+          imageSrc: './images/gt/markers/GT_reference_5.jpg',
+          originalUrl: './images/gt/markers/GT_reference_5.jpg',
           caption: ''
         },
-        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/gt/markers/GT_reference_6.jpg\'>\n        <img src=\'./images/gt/markers/GT_reference_6.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/gt/markers/GT_reference_5.jpg\'>\n        <img src=\'./images/gt/markers/GT_reference_5.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
       }
     ],
     data: {
@@ -653,8 +720,8 @@ export default [
       {
         id: 'gt-f2-main-area-17-marker-1789535399875',
         position: {
-          yaw: '335.34deg',
-          pitch: '0.52deg'
+          yaw: '335.42deg',
+          pitch: '-1.26deg'
         },
         size: {
           width: 44,
@@ -676,8 +743,8 @@ export default [
       {
         id: 'gt-f2-main-area-17-marker-1789535417161',
         position: {
-          yaw: '335.83deg',
-          pitch: '3.98deg'
+          yaw: '335.47deg',
+          pitch: '6.14deg'
         },
         size: {
           width: 44,
@@ -695,6 +762,29 @@ export default [
           caption: ''
         },
         html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/gt/markers/GT_reference_27.jpg\'>\n        <img src=\'./images/gt/markers/GT_reference_27.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      {
+        id: 'gt-f2-main-area-17-marker-1789557869542',
+        position: {
+          yaw: '339.56deg',
+          pitch: '-1.99deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: 'Plan Laluan Kecemasan Tingkat Atas',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/gt/markers/GT_route_2.jpg',
+          originalUrl: './images/gt/markers/GT_route_2.jpg',
+          caption: 'Plan Laluan Kecemasan Tingkat Atas'
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/gt/markers/GT_route_2.jpg\'>\n        <img src=\'./images/gt/markers/GT_route_2.jpg\' alt=\'Plan Laluan Kecemasan Tingkat Atas\' style=\'cursor:pointer;\' />\n        <h2>Plan Laluan Kecemasan Tingkat Atas</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
       }
     ],
     data: {
