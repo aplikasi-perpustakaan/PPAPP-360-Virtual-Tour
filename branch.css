@@ -2,23 +2,7 @@
    360° Virtual Tour – Branch Details Styles
    =================================================================== */
 
-:root {
-  /* Light Theme Minimalist Palette */
-  --color-navy:        #F5F6F8; /* Light grey background */
-  --color-charcoal:    #E9ECEF; /* Slightly darker grey for gradients/borders */
-  --color-steel:       #333333; /* Dark charcoal text */
-  --color-silver:      #666666; /* Medium grey text */
-  --color-offwhite:    #FFFFFF; /* Pure white panels */
-  --color-accent-blue: #2D6CDF; /* Restored original blue */
-  --color-accent-gold: #C9A84C; /* Restored original gold */
-  --color-black:       #111111; /* Restored neutral black */
-  --color-white:       #FFFFFF; /* Pure white */
-
-  --glass-bg:          var(--color-white);
-  --glass-border:      transparent;
-  --glass-blur:        0px;
-}
-
+/* Removed light theme :root to inherit dark theme from style.css */
 .branch-body {
   overflow-y: auto;
   background: var(--color-navy);
@@ -34,7 +18,7 @@
   flex-wrap: wrap;
   gap: 16px;
   background: var(--color-navy);
-  color: var(--color-steel);
+  color: #FFFFFF;
   padding: 22px 24px 18px;
   border-bottom: none;
   box-shadow: none;
@@ -73,7 +57,7 @@
 
 .branch-header h1 {
   font-size: 2rem;
-  color: var(--color-white);
+  color: #FFFFFF;
   letter-spacing: 1px;
   margin: 0;
 }
@@ -132,7 +116,7 @@
 
 .hero-overlay h2 {
   font-size: 2.5rem;
-  color: var(--color-white);
+  color: #FFFFFF;
   margin: 0 0 var(--space-lg);
   text-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
 }
@@ -140,7 +124,7 @@
 .primary-btn {
   display: inline-block;
   background: var(--color-accent-blue);
-  color: var(--color-white);
+  color: #FFFFFF;
   padding: 12px 30px;
   font-size: 1.1rem;
   text-decoration: none;
@@ -155,7 +139,7 @@
 
 .primary-btn:hover {
   background: var(--color-black);
-  color: var(--color-white);
+  color: #FFFFFF;
   transform: translateY(-2px);
   box-shadow: 0 6px 16px rgba(37, 99, 235, 0.6);
 }
@@ -168,14 +152,14 @@
   margin-bottom: var(--space-xl);
 }
 
-.info-section, .facilities-section, .quick-links-section, .map-section {
+.info-section, .facilities-section, .quick-links-section, .map-section, .rules-section {
   padding: var(--space-lg);
-  background: var(--color-white);
-  color: var(--color-steel);
+  background: var(--glass-bg);
+  color: #FFFFFF;
 }
 
-.info-section h3, .facilities-section h3, .quick-links-section h3, .map-section h3 {
-  color: var(--color-navy);
+.info-section h3, .facilities-section h3, .quick-links-section h3, .map-section h3, .rules-section h3 {
+  color: #FFFFFF;
   margin-top: 0;
   margin-bottom: var(--space-md);
   font-size: 1.3rem;
@@ -184,9 +168,13 @@
   text-transform: uppercase;
 }
 
+.rules-section h3 {
+  text-align: center;
+}
+
 .info-section p {
   line-height: 1.6;
-  color: var(--color-steel);
+  color: #FFFFFF;
   margin-bottom: var(--space-md);
 }
 
@@ -203,7 +191,7 @@
 
 .info-item p {
   margin: 0;
-  color: var(--color-navy);
+  color: #FFFFFF;
   font-weight: 600;
 }
 
@@ -216,7 +204,7 @@
 
 .facilities-list li {
   padding: 8px 0;
-  color: var(--color-steel);
+  color: #FFFFFF;
   display: flex;
   align-items: center;
   gap: 10px;
