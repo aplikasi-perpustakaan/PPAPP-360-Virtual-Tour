@@ -8,7 +8,16 @@ export default [
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [
-      { nodeId: 'pusat-f1-castle-2', position: { yaw: '0deg', pitch: '0deg' }, name: 'Go to Castle 2' }
+      {
+        nodeId: 'pusat-f1-castle-2',
+        position: { yaw: '265.68deg', pitch: '-10deg' },
+        name: 'Go to Floor 1 - Castle 2'
+      },
+      {
+        nodeId: 'pusat-f1-castle-3',
+        position: { yaw: '213.02deg', pitch: '-6.19deg' },
+        name: 'Go to Floor 1 - Castle 3'
+      },
     ],
     markers: [],
     data: {
@@ -25,8 +34,17 @@ export default [
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [
-      { nodeId: 'pusat-f1-castle-1', position: { yaw: '180deg', pitch: '0deg' }, name: 'Go back' },
-      { nodeId: 'pusat-f1-castle-3', position: { yaw: '0deg', pitch: '0deg' }, name: 'Go to Castle 3' }
+      {
+        nodeId: 'pusat-f1-castle-1',
+        position: { yaw: '85.68deg', pitch: '-8.11deg' },
+        name: 'Go to Floor 1 - Castle 1'
+      },
+      
+      {
+        nodeId: 'pusat-f1-castle-3',
+        position: { yaw: '135.76deg', pitch: '-10deg' },
+        name: 'Go to Floor 1 - Castle 3'
+      },
     ],
     markers: [],
     data: {
@@ -43,8 +61,27 @@ export default [
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [
-      { nodeId: 'pusat-f1-castle-2', position: { yaw: '180deg', pitch: '0deg' }, name: 'Go back' },
-      { nodeId: 'pusat-f1-castle-4', position: { yaw: '0deg', pitch: '0deg' }, name: 'Go to Castle 4' }
+      {
+        nodeId: 'pusat-f1-castle-2',
+        position: { yaw: '315.76deg', pitch: '-8.67deg' },
+        name: 'Go to Floor 1 - Castle 2'
+      },
+      
+      {
+        nodeId: 'pusat-f1-castle-4',
+        position: { yaw: '242.03deg', pitch: '-8.80deg' },
+        name: 'Go to Floor 1 - Castle 4'
+      },
+      {
+        nodeId: 'pusat-f1-castle-1',
+        position: { yaw: '33.02deg', pitch: '-10deg' },
+        name: 'Go to Floor 1 - Castle 1'
+      },
+      {
+        nodeId: 'pusat-f1-kids-15',
+        position: { yaw: '133.70deg', pitch: '-8.22deg' },
+        name: 'Go to Floor 1 - Kids 15'
+      },
     ],
     markers: [],
     data: {
@@ -61,7 +98,11 @@ export default [
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [
-      { nodeId: 'pusat-f1-castle-3', position: { yaw: '180deg', pitch: '0deg' }, name: 'Go back' }
+      {
+        nodeId: 'pusat-f1-castle-3',
+        position: { yaw: '62.03deg', pitch: '-10deg' },
+        name: 'Go to Floor 1 - Castle 3'
+      },
     ],
     markers: [],
     data: {

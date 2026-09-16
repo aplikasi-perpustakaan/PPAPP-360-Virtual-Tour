@@ -8,7 +8,12 @@ export default [
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [
-      { nodeId: 'pusat-f1-kids-2', position: { yaw: '0deg', pitch: '0deg' }, name: 'Go to Kids 2' }
+      { nodeId: 'pusat-f1-kids-2', position: { yaw: '0deg', pitch: '0deg' }, name: 'Go to Kids 2' },
+      {
+        nodeId: 'pusat-f1-lobby-18',
+        position: { yaw: '145.05deg', pitch: '-10deg' },
+        name: 'Go to Floor 1 - Lobby 18'
+      },
     ],
     markers: [],
     data: {
@@ -26,7 +31,6 @@ export default [
     defaultPitch: '0deg',
     links: [
       { nodeId: 'pusat-f1-kids-1', position: { yaw: '180deg', pitch: '0deg' }, name: 'Go back' },
-      { nodeId: 'pusat-f1-kids-3', position: { yaw: '0deg', pitch: '0deg' }, name: 'Go to Kids 3' }
     ],
     markers: [],
     data: {
@@ -43,8 +47,17 @@ export default [
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [
-      { nodeId: 'pusat-f1-kids-2', position: { yaw: '180deg', pitch: '0deg' }, name: 'Go back' },
-      { nodeId: 'pusat-f1-kids-4', position: { yaw: '0deg', pitch: '0deg' }, name: 'Go to Kids 4' }
+      {
+        nodeId: 'pusat-f1-kids-4',
+        position: { yaw: '324.56deg', pitch: '-6.13deg' },
+        name: 'Go to Floor 1 - Kids 4'
+      },
+      
+      {
+        nodeId: 'pusat-f1-i-play-toys-1',
+        position: { yaw: '49.89deg', pitch: '-5.85deg' },
+        name: 'Go to Floor 1 - I Play Toys 1'
+      },
     ],
     markers: [],
     data: {
@@ -61,8 +74,11 @@ export default [
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [
-      { nodeId: 'pusat-f1-kids-3', position: { yaw: '180deg', pitch: '0deg' }, name: 'Go back' },
-      { nodeId: 'pusat-f1-kids-5', position: { yaw: '0deg', pitch: '0deg' }, name: 'Go to Kids 5' }
+      {
+        nodeId: 'pusat-f1-kids-3',
+        position: { yaw: '144.56deg', pitch: '-10deg' },
+        name: 'Go to Floor 1 - Kids 3'
+      },
     ],
     markers: [],
     data: {
@@ -79,8 +95,18 @@ export default [
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [
-      { nodeId: 'pusat-f1-kids-4', position: { yaw: '180deg', pitch: '0deg' }, name: 'Go back' },
-      { nodeId: 'pusat-f1-kids-6', position: { yaw: '0deg', pitch: '0deg' }, name: 'Go to Kids 6' }
+      {
+        nodeId: 'pusat-f1-kids-6',
+        position: { yaw: '217.82deg', pitch: '-2.65deg' },
+        name: 'Go to Floor 1 - Kids 6'
+      },
+      
+      
+      {
+        nodeId: 'pusat-f1-kids-10',
+        position: { yaw: '57.18deg', pitch: '-10deg' },
+        name: 'Go to Floor 1 - Kids 10'
+      },
     ],
     markers: [],
     data: {
@@ -97,8 +123,23 @@ export default [
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [
-      { nodeId: 'pusat-f1-kids-5', position: { yaw: '180deg', pitch: '0deg' }, name: 'Go back' },
-      { nodeId: 'pusat-f1-kids-7', position: { yaw: '0deg', pitch: '0deg' }, name: 'Go to Kids 7' }
+      {
+        nodeId: 'pusat-f1-kids-5',
+        position: { yaw: '37.82deg', pitch: '-10deg' },
+        name: 'Go to Floor 1 - Kids 5'
+      },
+      
+      
+      {
+        nodeId: 'pusat-f1-kids-7',
+        position: { yaw: '250.14deg', pitch: '-3.13deg' },
+        name: 'Go to Floor 1 - Kids 7'
+      },
+      {
+        nodeId: 'pusat-f1-sensory-1',
+        position: { yaw: '145.49deg', pitch: '-11.86deg' },
+        name: 'Go to Floor 1 - Sensory 1'
+      },
     ],
     markers: [],
     data: {
@@ -115,8 +156,22 @@ export default [
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [
-      { nodeId: 'pusat-f1-kids-6', position: { yaw: '180deg', pitch: '0deg' }, name: 'Go back' },
-      { nodeId: 'pusat-f1-kids-8', position: { yaw: '0deg', pitch: '0deg' }, name: 'Go to Kids 8' }
+      {
+        nodeId: 'pusat-f1-kids-6',
+        position: { yaw: '70.14deg', pitch: '-10deg' },
+        name: 'Go to Floor 1 - Kids 6'
+      },
+      
+      {
+        nodeId: 'pusat-f1-kids-8',
+        position: { yaw: '313.82deg', pitch: '-3.67deg' },
+        name: 'Go to Floor 1 - Kids 8'
+      },
+      {
+        nodeId: 'pusat-f1-kids-9',
+        position: { yaw: '226.76deg', pitch: '-10.99deg' },
+        name: 'Go to Floor 1 - Kids 9'
+      },
     ],
     markers: [],
     data: {
@@ -133,8 +188,11 @@ export default [
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [
-      { nodeId: 'pusat-f1-kids-7', position: { yaw: '180deg', pitch: '0deg' }, name: 'Go back' },
-      { nodeId: 'pusat-f1-kids-9', position: { yaw: '0deg', pitch: '0deg' }, name: 'Go to Kids 9' }
+      {
+        nodeId: 'pusat-f1-kids-7',
+        position: { yaw: '133.82deg', pitch: '-10deg' },
+        name: 'Go to Floor 1 - Kids 7'
+      },
     ],
     markers: [],
     data: {
@@ -151,8 +209,11 @@ export default [
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [
-      { nodeId: 'pusat-f1-kids-8', position: { yaw: '180deg', pitch: '0deg' }, name: 'Go back' },
-      { nodeId: 'pusat-f1-kids-10', position: { yaw: '0deg', pitch: '0deg' }, name: 'Go to Kids 10' }
+      {
+        nodeId: 'pusat-f1-kids-7',
+        position: { yaw: '46.76deg', pitch: '-10deg' },
+        name: 'Go to Floor 1 - Kids 7'
+      },
     ],
     markers: [],
     data: {
@@ -169,8 +230,17 @@ export default [
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [
-      { nodeId: 'pusat-f1-kids-9', position: { yaw: '180deg', pitch: '0deg' }, name: 'Go back' },
-      { nodeId: 'pusat-f1-kids-11', position: { yaw: '0deg', pitch: '0deg' }, name: 'Go to Kids 11' }
+      {
+        nodeId: 'pusat-f1-kids-5',
+        position: { yaw: '237.18deg', pitch: '-9.54deg' },
+        name: 'Go to Floor 1 - Kids 5'
+      },
+      
+      {
+        nodeId: 'pusat-f1-kids-15',
+        position: { yaw: '240.84deg', pitch: '-10deg' },
+        name: 'Go to Floor 1 - Kids 15'
+      },
     ],
     markers: [],
     data: {
@@ -187,8 +257,11 @@ export default [
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [
-      { nodeId: 'pusat-f1-kids-10', position: { yaw: '180deg', pitch: '0deg' }, name: 'Go back' },
-      { nodeId: 'pusat-f1-kids-12', position: { yaw: '0deg', pitch: '0deg' }, name: 'Go to Kids 12' }
+      {
+        nodeId: 'pusat-f1-kids-12',
+        position: { yaw: '315.44deg', pitch: '-8.66deg' },
+        name: 'Go to Floor 1 - Kids 12'
+      },
     ],
     markers: [],
     data: {
@@ -205,8 +278,17 @@ export default [
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [
-      { nodeId: 'pusat-f1-kids-11', position: { yaw: '180deg', pitch: '0deg' }, name: 'Go back' },
-      { nodeId: 'pusat-f1-kids-13', position: { yaw: '0deg', pitch: '0deg' }, name: 'Go to Kids 13' }
+      {
+        nodeId: 'pusat-f1-kids-11',
+        position: { yaw: '135.44deg', pitch: '-10deg' },
+        name: 'Go to Floor 1 - Kids 11'
+      },
+      
+      {
+        nodeId: 'pusat-f1-kids-13',
+        position: { yaw: '296.58deg', pitch: '-10deg' },
+        name: 'Go to Floor 1 - Kids 13'
+      },
     ],
     markers: [],
     data: {
@@ -223,8 +305,18 @@ export default [
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [
-      { nodeId: 'pusat-f1-kids-12', position: { yaw: '180deg', pitch: '0deg' }, name: 'Go back' },
-      { nodeId: 'pusat-f1-kids-14', position: { yaw: '0deg', pitch: '0deg' }, name: 'Go to Kids 14' }
+      {
+        nodeId: 'pusat-f1-kids-12',
+        position: { yaw: '116.58deg', pitch: '-4.04deg' },
+        name: 'Go to Floor 1 - Kids 12'
+      },
+      
+      
+      {
+        nodeId: 'pusat-f1-kids-14',
+        position: { yaw: '251.95deg', pitch: '-10.41deg' },
+        name: 'Go to Floor 1 - Kids 14'
+      },
     ],
     markers: [],
     data: {
@@ -241,8 +333,17 @@ export default [
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [
-      { nodeId: 'pusat-f1-kids-13', position: { yaw: '180deg', pitch: '0deg' }, name: 'Go back' },
-      { nodeId: 'pusat-f1-kids-15', position: { yaw: '0deg', pitch: '0deg' }, name: 'Go to Kids 15' }
+      {
+        nodeId: 'pusat-f1-kids-13',
+        position: { yaw: '71.95deg', pitch: '-10deg' },
+        name: 'Go to Floor 1 - Kids 13'
+      },
+      
+      {
+        nodeId: 'pusat-f1-kids-15',
+        position: { yaw: '52.40deg', pitch: '-10deg' },
+        name: 'Go to Floor 1 - Kids 15'
+      },
     ],
     markers: [],
     data: {
@@ -259,7 +360,21 @@ export default [
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [
-      { nodeId: 'pusat-f1-kids-14', position: { yaw: '180deg', pitch: '0deg' }, name: 'Go back' }
+      {
+        nodeId: 'pusat-f1-kids-14',
+        position: { yaw: '232.40deg', pitch: '-5.95deg' },
+        name: 'Go to Floor 1 - Kids 14'
+      },
+      {
+        nodeId: 'pusat-f1-kids-10',
+        position: { yaw: '60.84deg', pitch: '-9.42deg' },
+        name: 'Go to Floor 1 - Kids 10'
+      },
+      {
+        nodeId: 'pusat-f1-castle-3',
+        position: { yaw: '313.70deg', pitch: '-10deg' },
+        name: 'Go to Floor 1 - Castle 3'
+      },
     ],
     markers: [],
     data: {

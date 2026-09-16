@@ -8,7 +8,12 @@ export default [
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [
-      { nodeId: 'pusat-f1-i-play-toys-2', position: { yaw: '0deg', pitch: '0deg' }, name: 'Go to I Play Toys 2' }
+      { nodeId: 'pusat-f1-i-play-toys-2', position: { yaw: '0deg', pitch: '0deg' }, name: 'Go to I Play Toys 2' },
+      {
+        nodeId: 'pusat-f1-kids-3',
+        position: { yaw: '229.89deg', pitch: '-10deg' },
+        name: 'Go to Floor 1 - Kids 3'
+      },
     ],
     markers: [],
     data: {

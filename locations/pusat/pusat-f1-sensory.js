@@ -8,7 +8,22 @@ export default [
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [
-      { nodeId: 'pusat-f1-sensory-2', position: { yaw: '0deg', pitch: '0deg' }, name: 'Go to Sensory 2' }
+      {
+        nodeId: 'pusat-f1-sensory-2',
+        position: { yaw: '169.31deg', pitch: '-6.63deg' },
+        name: 'Go to Floor 1 - Sensory 2'
+      },
+      
+      {
+        nodeId: 'pusat-f1-kids-6',
+        position: { yaw: '325.49deg', pitch: '-10deg' },
+        name: 'Go to Floor 1 - Kids 6'
+      },
+      {
+        nodeId: 'pusat-f1-sensory-3',
+        position: { yaw: '115.47deg', pitch: '-0.11deg' },
+        name: 'Go to Floor 1 - Sensory 3'
+      },
     ],
     markers: [],
     data: {
@@ -25,8 +40,17 @@ export default [
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [
-      { nodeId: 'pusat-f1-sensory-1', position: { yaw: '180deg', pitch: '0deg' }, name: 'Go back' },
-      { nodeId: 'pusat-f1-sensory-3', position: { yaw: '0deg', pitch: '0deg' }, name: 'Go to Sensory 3' }
+      {
+        nodeId: 'pusat-f1-sensory-1',
+        position: { yaw: '349.31deg', pitch: '-10deg' },
+        name: 'Go to Floor 1 - Sensory 1'
+      },
+      
+      {
+        nodeId: 'pusat-f1-sensory-3',
+        position: { yaw: '53.02deg', pitch: '-3.96deg' },
+        name: 'Go to Floor 1 - Sensory 3'
+      },
     ],
     markers: [],
     data: {
@@ -43,7 +67,16 @@ export default [
     defaultYaw: '0deg',
     defaultPitch: '0deg',
     links: [
-      { nodeId: 'pusat-f1-sensory-2', position: { yaw: '180deg', pitch: '0deg' }, name: 'Go back' }
+      {
+        nodeId: 'pusat-f1-sensory-2',
+        position: { yaw: '233.02deg', pitch: '-10deg' },
+        name: 'Go to Floor 1 - Sensory 2'
+      },
+      {
+        nodeId: 'pusat-f1-sensory-1',
+        position: { yaw: '295.47deg', pitch: '-10deg' },
+        name: 'Go to Floor 1 - Sensory 1'
+      },
     ],
     markers: [],
     data: {
