@@ -66,11 +66,15 @@ async function bootstrap() {
       defaultBranch = requestedNodeId.split('-')[0];
     }
     
-    const optionsHTML = branches.map(b => 
-      `<option value="${b.id}" ${b.id === defaultBranch ? 'selected' : ''}>${b.name}</option>`
-    ).join('');
+    const branchConfig = branches.find(b => b.id === defaultBranch);
+    const optionsHTML = branchConfig?.quickLinks?.map(link => 
+      `<option value="${link.sceneId}">${link.label}</option>`
+    ).join('') || '';
     
-    const locationSelectHTML = `<select id="location-select" class="navbar-select">${optionsHTML}</select>`;
+    const locationSelectHTML = `<select id="location-select" class="navbar-select">
+      <option value="" disabled selected>Select Area...</option>
+      ${optionsHTML}
+    </select>`;
     
     // 3. Load the initial nodes dynamically BEFORE initializing the viewer
     const module = await import(`./locations/${defaultBranch}/${defaultBranch}-index.js`);
@@ -118,7 +122,7 @@ async function bootstrap() {
           id: 'location',
           content: locationSelectHTML,
           className: 'navbar-location-container',
-          title: 'Select Location'
+          title: 'Select Area'
         },
         'caption',
         'gallery',
