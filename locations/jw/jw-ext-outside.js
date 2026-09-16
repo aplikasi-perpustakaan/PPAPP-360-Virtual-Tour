@@ -180,7 +180,98 @@ export default [
         name: 'Go back to Outside 8',
       }
     ],
-    markers: [],
+    markers: [
+      {
+        id: 'jw-ext-outside-7-marker-1789538545745',
+        position: {
+          yaw: '53.49deg',
+          pitch: '-27.58deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: '',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/jw/markers/OUTSIDE/IMG_20260910_093311_209.webp',
+          originalUrl: './images/jw/markers/OUTSIDE/IMG_20260910_093311_209.webp',
+          caption: ''
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/jw/markers/OUTSIDE/IMG_20260910_093311_209.webp\'>\n        <img src=\'./images/jw/markers/OUTSIDE/IMG_20260910_093311_209.webp\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      {
+        id: 'jw-ext-outside-7-marker-1789538566926',
+        position: {
+          yaw: '355.81deg',
+          pitch: '-35.84deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: '',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/jw/markers/OUTSIDE/IMG_20260910_093252_049.webp',
+          originalUrl: './images/jw/markers/OUTSIDE/IMG_20260910_093252_049.webp',
+          caption: ''
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/jw/markers/OUTSIDE/IMG_20260910_093252_049.webp\'>\n        <img src=\'./images/jw/markers/OUTSIDE/IMG_20260910_093252_049.webp\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      {
+        id: 'jw-ext-outside-7-marker-1789538591207',
+        position: {
+          yaw: '318.23deg',
+          pitch: '-20.74deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: '',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/jw/markers/OUTSIDE/IMG_20260910_093230_028.webp',
+          originalUrl: './images/jw/markers/OUTSIDE/IMG_20260910_093230_028.webp',
+          caption: ''
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/jw/markers/OUTSIDE/IMG_20260910_093230_028.webp\'>\n        <img src=\'./images/jw/markers/OUTSIDE/IMG_20260910_093230_028.webp\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      {
+        id: 'jw-ext-outside-7-marker-1789538675499',
+        position: {
+          yaw: '352.54deg',
+          pitch: '-8.16deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Sila Patuhi Etika Pemakaian Ketika Di Perpustakaan',
+          icon: 'warning',
+          color: 'gold',
+          animated: true,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'warning\' data-color=\'gold\' animated>\n        <h2>Sila Patuhi Etika Pemakaian Ketika Di Perpustakaan</h2>\n        <p></p>\n      </custom-marker>'
+      }
+    ],
     data: {
       floor: 'ext',
       tags: ['outside'],
@@ -247,7 +338,77 @@ export default [
         name: 'Go back to Outside 8',
       }
     ],
-    markers: [],
+    markers: [
+      {
+        id: 'jw-ext-outside-9-marker-1789538460575',
+        position: {
+          yaw: '274.82deg',
+          pitch: '-13.55deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: '',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/jw/markers/OUTSIDE/IMG_20260910_092907_759.webp',
+          originalUrl: './images/jw/markers/OUTSIDE/IMG_20260910_092907_759.webp',
+          caption: ''
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/jw/markers/OUTSIDE/IMG_20260910_092907_759.webp\'>\n        <img src=\'./images/jw/markers/OUTSIDE/IMG_20260910_092907_759.webp\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      {
+        id: 'jw-ext-outside-9-marker-1789538467883',
+        position: {
+          yaw: '324.00deg',
+          pitch: '-25.99deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: '',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/jw/markers/OUTSIDE/IMG_20260910_093200_968.webp',
+          originalUrl: './images/jw/markers/OUTSIDE/IMG_20260910_093200_968.webp',
+          caption: ''
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/jw/markers/OUTSIDE/IMG_20260910_093200_968.webp\'>\n        <img src=\'./images/jw/markers/OUTSIDE/IMG_20260910_093200_968.webp\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      {
+        id: 'jw-ext-outside-9-marker-1789538479682',
+        position: {
+          yaw: '303.10deg',
+          pitch: '-17.11deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: '',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/jw/markers/OUTSIDE/IMG_20260910_092923_777.webp',
+          originalUrl: './images/jw/markers/OUTSIDE/IMG_20260910_092923_777.webp',
+          caption: ''
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/jw/markers/OUTSIDE/IMG_20260910_092923_777.webp\'>\n        <img src=\'./images/jw/markers/OUTSIDE/IMG_20260910_092923_777.webp\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      }
+    ],
     data: {
       floor: 'ext',
       tags: ['outside'],
@@ -277,8 +438,8 @@ export default [
       {
         id: 'jw-ext-outside-10-marker-1789537537297',
         position: {
-          yaw: '348.53deg',
-          pitch: '-1.87deg'
+          yaw: '348.45deg',
+          pitch: '-6.00deg'
         },
         size: {
           width: 44,
@@ -296,29 +457,6 @@ export default [
           caption: ''
         },
         html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/jw/markers/OUTSIDE/IMG_20260910_093200_968.webp\'>\n        <img src=\'./images/jw/markers/OUTSIDE/IMG_20260910_093200_968.webp\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
-      },
-      {
-        id: 'jw-ext-outside-10-marker-1789538043764',
-        position: {
-          yaw: '2.78deg',
-          pitch: '10.52deg'
-        },
-        size: {
-          width: 44,
-          height: 44
-        },
-        anchor: 'center center',
-        data: {
-          type: 'image',
-          title: '',
-          icon: 'info',
-          color: 'blue',
-          animated: false,
-          imageSrc: './images/jw/markers/FLOOR 1/KANAK KANAK/IMG_20260910_093822_234.webp?t=1789538338720',
-          originalUrl: './images/jw/markers/FLOOR 1/KANAK KANAK/IMG_20260910_093822_234.webp?t=1789538338720',
-          caption: ''
-        },
-        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/jw/markers/FLOOR 1/KANAK KANAK/IMG_20260910_093822_234.webp?t=1789538338720\'>\n        <img src=\'./images/jw/markers/FLOOR 1/KANAK KANAK/IMG_20260910_093822_234.webp?t=1789538338720\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
       }
     ],
     data: {

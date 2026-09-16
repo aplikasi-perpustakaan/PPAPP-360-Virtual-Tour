@@ -190,7 +190,29 @@ export default [
         name: 'Go back to Reference 6',
       }
     ],
-    markers: [],
+    markers: [
+      {
+        id: 'jw-f2-reference-7-marker-1789539802267',
+        position: {
+          yaw: '68.97deg',
+          pitch: '4.03deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Rujukan',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'info\' data-color=\'blue\'>\n        <h2>Rujukan</h2>\n        <p></p>\n      </custom-marker>'
+      }
+    ],
     data: {
       floor: 'f2',
       tags: ['reference'],
