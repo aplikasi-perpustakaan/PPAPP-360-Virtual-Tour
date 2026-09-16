@@ -21,6 +21,7 @@ export function initLinkEditor(viewer, virtualTour, allNodes, isDebug) {
   let previewViewer = null;
   let currentSourceId = null;
   let currentTargetId = null;
+  let currentOriginalTargetId = null;
   let currentLinkOriginalYaw = null;
   let currentLinkOriginalPitch = null;
   let currentTargetName = null;
@@ -42,6 +43,7 @@ export function initLinkEditor(viewer, virtualTour, allNodes, isDebug) {
 
     currentSourceId = currentNode.id;
     currentTargetId = nodeId;
+    currentOriginalTargetId = nodeId;
     const node = allNodes.find(n => n.id === currentSourceId);
     
     // Check if there is a link from the current node to the requested node
@@ -62,11 +64,14 @@ export function initLinkEditor(viewer, virtualTour, allNodes, isDebug) {
      modal.classList.add('is-visible');
      
      targetSelect.innerHTML = '';
-     const targetNode = allNodes.find(n => n.id === link.nodeId);
-     const option = document.createElement('option');
-     option.value = link.nodeId;
-     option.textContent = targetNode ? targetNode.name || link.nodeId : link.nodeId;
-     targetSelect.appendChild(option);
+     allNodes.forEach(n => {
+       if (n.id === currentSourceId) return; // Don't allow linking to itself
+       const option = document.createElement('option');
+       option.value = n.id;
+       option.textContent = n.name || n.id;
+       targetSelect.appendChild(option);
+     });
+     targetSelect.value = link.nodeId;
      
      nameInput.value = link.name || '';
      
@@ -119,6 +124,11 @@ export function initLinkEditor(viewer, virtualTour, allNodes, isDebug) {
     }
   }
 
+  targetSelect.addEventListener('change', () => {
+    currentTargetId = targetSelect.value;
+    loadPreviewViewer(currentTargetId);
+  });
+
   cancelBtn.addEventListener('click', () => {
     modal.classList.remove('is-visible');
     if (previewViewer) {
@@ -141,7 +151,8 @@ export function initLinkEditor(viewer, virtualTour, allNodes, isDebug) {
     if (!previewViewer || !currentSourceId || !currentTargetId) return;
 
     const pos = previewViewer.getPosition();
-    const newTargetYaw = `${((pos.yaw * 180 / Math.PI) % 360).toFixed(2)}deg`;
+    const yawDeg = ((pos.yaw * 180 / Math.PI) % 360 + 360) % 360;
+    const newTargetYaw = `${yawDeg.toFixed(2)}deg`;
     const newTargetPitch = `${(pos.pitch * 180 / Math.PI).toFixed(2)}deg`;
 
     try {
@@ -152,9 +163,10 @@ export function initLinkEditor(viewer, virtualTour, allNodes, isDebug) {
           action: 'edit',
           sourceId: currentSourceId,
           targetId: currentTargetId,
+          oldTargetId: currentOriginalTargetId,
           yaw: currentLinkOriginalYaw,
           pitch: currentLinkOriginalPitch,
-          targetName: currentTargetName,
+          targetName: nameInput.value.trim(),
           targetYaw: newTargetYaw,
           targetPitch: newTargetPitch
         })
@@ -166,11 +178,16 @@ export function initLinkEditor(viewer, virtualTour, allNodes, isDebug) {
         console.log(`              Target Yaw: ${newTargetYaw}, Target Pitch: ${newTargetPitch}`);
         
         const node = allNodes.find(n => n.id === currentSourceId);
-        const link = node.links.find(l => l.nodeId === currentTargetId);
+        const link = node.links.find(l => l.nodeId === currentOriginalTargetId);
         if (link) {
+          link.nodeId = currentTargetId;
           link.targetYaw = newTargetYaw;
           link.targetPitch = newTargetPitch;
+          link.name = nameInput.value.trim();
         }
+        
+        // Force virtual tour to re-render links (updates tooltip text and markers)
+        virtualTour.setNodes(allNodes, currentSourceId);
 
         modal.classList.remove('is-visible');
         if (previewViewer) {
@@ -190,12 +207,14 @@ export function initLinkEditor(viewer, virtualTour, allNodes, isDebug) {
 
     // Grab the MAIN viewer's current crosshair position (where they are looking)
     const pos = viewer.getPosition();
-    const newYaw = `${((pos.yaw * 180 / Math.PI) % 360).toFixed(2)}deg`;
+    const yawDeg = ((pos.yaw * 180 / Math.PI) % 360 + 360) % 360;
+    const newYaw = `${yawDeg.toFixed(2)}deg`;
     const newPitch = `${(pos.pitch * 180 / Math.PI).toFixed(2)}deg`;
 
     // Keep the targetYaw and targetPitch what they currently are in the editor
     const previewPos = previewViewer.getPosition();
-    const newTargetYaw = `${((previewPos.yaw * 180 / Math.PI) % 360).toFixed(2)}deg`;
+    const targetYawDeg = ((previewPos.yaw * 180 / Math.PI) % 360 + 360) % 360;
+    const newTargetYaw = `${targetYawDeg.toFixed(2)}deg`;
     const newTargetPitch = `${(previewPos.pitch * 180 / Math.PI).toFixed(2)}deg`;
 
     try {
@@ -206,9 +225,10 @@ export function initLinkEditor(viewer, virtualTour, allNodes, isDebug) {
           action: 'edit',
           sourceId: currentSourceId,
           targetId: currentTargetId,
+          oldTargetId: currentOriginalTargetId,
           yaw: newYaw,
           pitch: newPitch,
-          targetName: currentTargetName,
+          targetName: nameInput.value.trim(),
           targetYaw: newTargetYaw,
           targetPitch: newTargetPitch
         })
@@ -221,24 +241,23 @@ export function initLinkEditor(viewer, virtualTour, allNodes, isDebug) {
         
         // Update local memory
         const node = allNodes.find(n => n.id === currentSourceId);
-        const link = node.links.find(l => l.nodeId === currentTargetId);
+        const link = node.links.find(l => l.nodeId === currentOriginalTargetId);
+        const oldId = currentOriginalTargetId;
         if (link) {
+          link.nodeId = currentTargetId;
           link.position.yaw = newYaw;
           link.position.pitch = newPitch;
           link.targetYaw = newTargetYaw;
           link.targetPitch = newTargetPitch;
+          link.name = nameInput.value.trim();
           
           currentLinkOriginalYaw = newYaw;
           currentLinkOriginalPitch = newPitch;
+          currentOriginalTargetId = currentTargetId; // Reset it since we just saved
         }
 
-        // Update the marker instantly on screen
-        if (markersPlugin) {
-          markersPlugin.updateMarker({
-            id: `tour-link-${currentTargetId}`,
-            position: { yaw: newYaw, pitch: newPitch }
-          });
-        }
+        // Force virtual tour to re-render links instantly
+        virtualTour.setNodes(allNodes, currentSourceId);
       } else {
         showToast('❌ Failed to move arrow.');
       }
@@ -248,7 +267,7 @@ export function initLinkEditor(viewer, virtualTour, allNodes, isDebug) {
   });
 
   deleteBtn.addEventListener('click', async () => {
-    if (!currentSourceId || !currentTargetId) return;
+    if (!currentSourceId || !currentOriginalTargetId) return;
     
     try {
       const response = await fetch('/api/save-link', {
@@ -257,7 +276,7 @@ export function initLinkEditor(viewer, virtualTour, allNodes, isDebug) {
         body: JSON.stringify({
           action: 'delete',
           sourceId: currentSourceId,
-          targetId: currentTargetId
+          targetId: currentOriginalTargetId
         })
       });
 
@@ -265,16 +284,17 @@ export function initLinkEditor(viewer, virtualTour, allNodes, isDebug) {
         await fetch('/api/save-link', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ action: 'delete', sourceId: currentTargetId, targetId: currentSourceId })
+          body: JSON.stringify({ action: 'delete', sourceId: currentOriginalTargetId, targetId: currentSourceId })
         });
         
         showToast('🗑️ Link deleted.');
-        console.log(`[Link Editor] Deleted bidirectional link between ${currentSourceId} and ${currentTargetId}`);
+        console.log(`[Link Editor] Deleted bidirectional link between ${currentSourceId} and ${currentOriginalTargetId}`);
         
         const node = allNodes.find(n => n.id === currentSourceId);
-        node.links = node.links.filter(l => l.nodeId !== currentTargetId);
+        node.links = node.links.filter(l => l.nodeId !== currentOriginalTargetId);
         
-        if (markersPlugin) markersPlugin.removeMarker(`tour-link-${currentTargetId}`);
+        // Force virtual tour to re-render links for the current node
+        virtualTour.setNodes(allNodes, currentSourceId);
 
         modal.classList.remove('is-visible');
         if (previewViewer) {

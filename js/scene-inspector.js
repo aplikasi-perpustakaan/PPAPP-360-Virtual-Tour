@@ -6,7 +6,7 @@ export function initSceneInspector(viewer, virtualTour, allNodes, isDebug) {
   const panel = document.getElementById('debug-scene-inspector');
   const contentDiv = document.getElementById('debug-inspector-content');
   const closeBtn = document.getElementById('debug-inspector-close');
-  const copyBtn = document.getElementById('debug-copy-url-btn');
+  const openTabBtn = document.getElementById('debug-open-tab-btn');
   const toast = document.getElementById('debug-toast');
   const startupSceneBtn = document.getElementById('debug-startup-scene-btn');
   const saveDefaultsBtn = document.getElementById('debug-save-defaults-btn');
@@ -59,19 +59,15 @@ export function initSceneInspector(viewer, virtualTour, allNodes, isDebug) {
     updateStartupSceneButton();
   }, { once: true });
 
-  // Quick Copy URL
-  const copyUrl = () => {
-    const url = window.location.href;
-    navigator.clipboard.writeText(url).then(() => {
-      showToast('🔗 Copied URL to clipboard!');
-    }).catch(err => {
-      console.error('Failed to copy URL', err);
-      showToast('❌ Failed to copy URL');
-    });
+  // Open in New Tab without debug=true
+  const openInNewTab = () => {
+    const url = new URL(window.location.href);
+    url.searchParams.delete('debug');
+    window.open(url.toString(), '_blank');
   };
 
-  if (copyBtn) {
-    copyBtn.addEventListener('click', copyUrl);
+  if (openTabBtn) {
+    openTabBtn.addEventListener('click', openInNewTab);
   }
 
   if (saveDefaultsBtn) {
@@ -168,11 +164,11 @@ export function initSceneInspector(viewer, virtualTour, allNodes, isDebug) {
     });
   }
 
-  // Copy with 'C'
+  // Open in new tab with 'O'
   window.addEventListener('keydown', (e) => {
     if (document.activeElement.tagName === 'INPUT' || document.activeElement.tagName === 'TEXTAREA') return;
-    if (e.key === 'c' || e.key === 'C') {
-      copyUrl();
+    if (e.key === 'o' || e.key === 'O') {
+      openInNewTab();
     }
   });
 

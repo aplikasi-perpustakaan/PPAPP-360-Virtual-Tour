@@ -62,7 +62,7 @@
       <button id="debug-save-defaults-btn" class="debug-btn" title="Save current yaw, pitch, zoom as scene defaults">💾 Save Defaults</button>
       <button id="debug-startup-scene-btn" class="debug-btn" title="Set current scene as the startup scene for this branch">⭐ Set Startup Scene</button>
       <button id="debug-save-thumb-btn" class="debug-btn" title="Save scene thumbnail">📸 Save Thumbnail</button>
-      <button id="debug-copy-url-btn" class="debug-btn" title="Copy current view URL (C)">🔗 Copy URL</button>
+      <button id="debug-open-tab-btn" class="debug-btn" title="Open current view in new tab (O)">🔗 Open in New Tab</button>
     </div>
     <div class="debug-divider"></div>
     <div class="debug-btn-group">
@@ -247,7 +247,7 @@
         <div><strong>Shift + 0</strong></div><div>Reset yaw</div>
         <div><strong>M</strong></div><div>Toggle Graph Minimap</div>
         <div><strong>I</strong></div><div>Toggle Scene Inspector</div>
-        <div><strong>C</strong></div><div>Copy current view URL</div>
+        <div><strong>O</strong></div><div>Open view in new tab</div>
         <div><strong>G</strong></div><div>Toggle Gridlines</div>
         <div><strong>X</strong></div><div>Toggle Crosshair</div>
         <div><strong>Ctrl+K</strong></div><div>Teleport Menu</div>
@@ -266,11 +266,11 @@
       <div style="display:flex; gap: 10px; margin-bottom: 10px;">
         <div style="flex: 1;">
           <label>Destination Scene</label>
-          <select id="debug-edit-link-target" class="debug-input" style="width: 100%;" disabled></select>
+          <select id="debug-edit-link-target" class="debug-input" style="width: 100%;"></select>
         </div>
         <div style="flex: 1;">
           <label>Display Text (Optional)</label>
-          <input id="debug-edit-link-name" type="text" class="debug-input" placeholder="e.g. Go to Lobby" style="width: 100%;" disabled>
+          <input id="debug-edit-link-name" type="text" class="debug-input" placeholder="e.g. Go to Lobby" style="width: 100%;">
         </div>
       </div>
       

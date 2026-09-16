@@ -16,7 +16,8 @@ const MIME_TYPES = {
   '.svg': 'image/svg+xml'
 };
 
-function handleSaveLink({ action, sourceId, targetId, yaw, pitch, targetName, targetYaw, targetPitch }) {
+function handleSaveLink(payload) {
+  const { action, sourceId, targetId, oldTargetId, yaw, pitch, targetName, targetYaw, targetPitch } = payload;
   const branch = sourceId.split('-')[0];
   const branchDir = path.join(__dirname, 'locations', branch);
   
@@ -51,8 +52,10 @@ function handleSaveLink({ action, sourceId, targetId, yaw, pitch, targetName, ta
   content = content.replace(blockRegex, (match, prefix, linksStr, suffix) => {
     modified = true;
     
+    const searchTargetId = payload.oldTargetId || targetId;
+    
     // Match the specific object for this targetId, allowing exactly one level of nested braces (for `position: {}`)
-    const linkObjRegex = new RegExp(`\\{\\s*nodeId:\\s*['"]${targetId}['"](?:[^{}]|\\{[^{}]*\\})*\\}\\s*,?`, 'g');
+    const linkObjRegex = new RegExp(`\\{\\s*nodeId:\\s*['"]${searchTargetId}['"](?:[^{}]|\\{[^{}]*\\})*\\}\\s*,?`, 'g');
     
     const exists = linkObjRegex.test(linksStr);
     linkObjRegex.lastIndex = 0; // reset
