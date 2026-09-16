@@ -114,10 +114,10 @@ export default [
           color: 'blue',
           animated: false,
           imageSrc: './images/gt/markers/GT_outside_7.jpg',
-          originalUrl: './images/gt/markers/GT_reference_1.jpg',
+          originalUrl: './images/gt/markers/GT_outside_7.jpg',
           caption: ''
         },
-        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/gt/markers/GT_reference_1.jpg\'>\n        <img src=\'./images/gt/markers/GT_outside_7.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/gt/markers/GT_outside_7.jpg\'>\n        <img src=\'./images/gt/markers/GT_outside_7.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
       }
     ],
     data: {
