@@ -26,29 +26,6 @@ export default [
     ],
     markers: [
       {
-        id: 'bm-gf-reading-1-marker-1789464924315',
-        position: {
-          yaw: '68.32deg',
-          pitch: '-4.48deg'
-        },
-        size: {
-          width: 44,
-          height: 44
-        },
-        anchor: 'center center',
-        data: {
-          type: 'image',
-          title: '',
-          icon: 'info',
-          color: 'blue',
-          animated: false,
-          imageSrc: './images/bm/markers/FACILITIES/BTM_facilities_1.jpg',
-          originalUrl: './images/bm/markers/FACILITIES/BTM_facilities_1.jpg',
-          caption: ''
-        },
-        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bm/markers/FACILITIES/BTM_facilities_1.jpg\'>\n        <img src=\'./images/bm/markers/FACILITIES/BTM_facilities_1.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
-      },
-      {
         id: 'bm-gf-reading-1-marker-1789464956705',
         position: {
           yaw: '143.40deg',
@@ -89,6 +66,29 @@ export default [
           content: ''
         },
         html: '<custom-marker type=\'info\' data-icon=\'info\' data-color=\'blue\'>\n        <h2>Novel BI</h2>\n        <p></p>\n      </custom-marker>'
+      },
+      {
+        id: 'bm-gf-reading-1-marker-1789464924315',
+        position: {
+          yaw: '68.32deg',
+          pitch: '-4.48deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: 'Tandas',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/bm/markers/FACILITIES/BTM_facilities_1.jpg',
+          originalUrl: './images/bm/markers/FACILITIES/BTM_facilities_1.jpg',
+          caption: 'Tandas'
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bm/markers/FACILITIES/BTM_facilities_1.jpg\'>\n        <img src=\'./images/bm/markers/FACILITIES/BTM_facilities_1.jpg\' alt=\'Tandas\' style=\'cursor:pointer;\' />\n        <h2>Tandas</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
       }
     ],
     data: {
@@ -123,29 +123,6 @@ export default [
       },
     ],
     markers: [
-      {
-        id: 'bm-gf-reading-2-marker-1789465094058',
-        position: {
-          yaw: '101.36deg',
-          pitch: '-3.96deg'
-        },
-        size: {
-          width: 44,
-          height: 44
-        },
-        anchor: 'center center',
-        data: {
-          type: 'image',
-          title: '',
-          icon: 'info',
-          color: 'blue',
-          animated: false,
-          imageSrc: './images/bm/markers/MULTIMEDIA/BTM_multimedia_1.jpg',
-          originalUrl: './images/bm/markers/MULTIMEDIA/BTM_multimedia_1.jpg',
-          caption: ''
-        },
-        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bm/markers/MULTIMEDIA/BTM_multimedia_1.jpg\'>\n        <img src=\'./images/bm/markers/MULTIMEDIA/BTM_multimedia_1.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
-      },
       {
         id: 'bm-gf-reading-2-marker-1789465116670',
         position: {
@@ -278,6 +255,30 @@ export default [
         },
         html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bm/markers/LOBBY/BTM_lobby_14.jpg\'>\n        <img src=\'./images/bm/markers/LOBBY/BTM_lobby_14.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
       },
+      
+      {
+        id: 'bm-gf-reading-2-marker-1789465094058',
+        position: {
+          yaw: '101.36deg',
+          pitch: '-3.96deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: 'Bahagian Multimedia',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/bm/markers/MULTIMEDIA/BTM_multimedia_1.jpg',
+          originalUrl: './images/bm/markers/MULTIMEDIA/BTM_multimedia_1.jpg',
+          caption: 'Bahagian Multimedia'
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bm/markers/MULTIMEDIA/BTM_multimedia_1.jpg\'>\n        <img src=\'./images/bm/markers/MULTIMEDIA/BTM_multimedia_1.jpg\' alt=\'Bahagian Multimedia\' style=\'cursor:pointer;\' />\n        <h2>Bahagian Multimedia</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
       {
         id: 'bm-gf-reading-2-marker-1789465270857',
         position: {
@@ -291,13 +292,13 @@ export default [
         anchor: 'center center',
         data: {
           type: 'info',
-          title: 'Staff Only',
+          title: 'Kakitangan Sahaja',
           icon: 'no-entry',
           color: 'red',
           animated: true,
           content: ''
         },
-        html: '<custom-marker type=\'info\' data-icon=\'no-entry\' data-color=\'red\' animated>\n        <h2>Staff Only</h2>\n        <p></p>\n      </custom-marker>'
+        html: '<custom-marker type=\'info\' data-icon=\'no-entry\' data-color=\'red\' animated>\n        <h2>Kakitangan Sahaja</h2>\n        <p></p>\n      </custom-marker>'
       }
     ],
     data: {
@@ -361,15 +362,15 @@ export default [
         anchor: 'center center',
         data: {
           type: 'image',
-          title: '',
+          title: 'Novel BM',
           icon: 'info',
           color: 'blue',
           animated: false,
           imageSrc: './images/bm/markers/LOBBY/BTM_lobby_13.jpg',
           originalUrl: './images/bm/markers/LOBBY/BTM_lobby_13.jpg',
-          caption: ''
+          caption: 'Novel BM'
         },
-        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bm/markers/LOBBY/BTM_lobby_13.jpg\'>\n        <img src=\'./images/bm/markers/LOBBY/BTM_lobby_13.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bm/markers/LOBBY/BTM_lobby_13.jpg\'>\n        <img src=\'./images/bm/markers/LOBBY/BTM_lobby_13.jpg\' alt=\'Novel BM\' style=\'cursor:pointer;\' />\n        <h2>Novel BM</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
       }
     ],
     data: {
@@ -438,15 +439,15 @@ export default [
         anchor: 'center center',
         data: {
           type: 'image',
-          title: '',
+          title: 'Bahagian Kanak-Kanak',
           icon: 'info',
           color: 'blue',
           animated: false,
           imageSrc: './images/bm/markers/LOBBY/BTM_lobby_31.jpg',
           originalUrl: './images/bm/markers/LOBBY/BTM_lobby_31.jpg',
-          caption: ''
+          caption: 'Bahagian Kanak-Kanak'
         },
-        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bm/markers/LOBBY/BTM_lobby_31.jpg\'>\n        <img src=\'./images/bm/markers/LOBBY/BTM_lobby_31.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bm/markers/LOBBY/BTM_lobby_31.jpg\'>\n        <img src=\'./images/bm/markers/LOBBY/BTM_lobby_31.jpg\' alt=\'Bahagian Kanak-Kanak\' style=\'cursor:pointer;\' />\n        <h2>Bahagian Kanak-Kanak</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
       }
     ],
     data: {

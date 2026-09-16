@@ -38,15 +38,15 @@ export default [
         anchor: 'center center',
         data: {
           type: 'image',
-          title: '',
+          title: 'Book Drop',
           icon: 'info',
           color: 'blue',
           animated: false,
           imageSrc: './images/bm/markers/OUTSIDE/BTM_outside_6.jpg',
           originalUrl: './images/bm/markers/OUTSIDE/BTM_outside_6.jpg',
-          caption: ''
+          caption: 'Book Drop'
         },
-        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bm/markers/OUTSIDE/BTM_outside_6.jpg\'>\n        <img src=\'./images/bm/markers/OUTSIDE/BTM_outside_6.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bm/markers/OUTSIDE/BTM_outside_6.jpg\'>\n        <img src=\'./images/bm/markers/OUTSIDE/BTM_outside_6.jpg\' alt=\'Book Drop\' style=\'cursor:pointer;\' />\n        <h2>Book Drop</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
       }
     ],
     data: {
@@ -84,15 +84,15 @@ export default [
         anchor: 'center center',
         data: {
           type: 'image',
-          title: '',
+          title: 'Perpustakaan Bukit Mertajam',
           icon: 'info',
           color: 'blue',
           animated: false,
           imageSrc: './images/bm/markers/OUTSIDE/BTM_outside_1.jpg',
           originalUrl: './images/bm/markers/OUTSIDE/BTM_outside_1.jpg',
-          caption: ''
+          caption: 'Perpustakaan Bukit Mertajam'
         },
-        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bm/markers/OUTSIDE/BTM_outside_1.jpg\'>\n        <img src=\'./images/bm/markers/OUTSIDE/BTM_outside_1.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bm/markers/OUTSIDE/BTM_outside_1.jpg\'>\n        <img src=\'./images/bm/markers/OUTSIDE/BTM_outside_1.jpg\' alt=\'Perpustakaan Bukit Mertajam\' style=\'cursor:pointer;\' />\n        <h2>Perpustakaan Bukit Mertajam</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
       }
     ],
     data: {
@@ -137,15 +137,15 @@ export default [
         anchor: 'center center',
         data: {
           type: 'image',
-          title: '',
+          title: 'Scan sebelum masuk',
           icon: 'info',
           color: 'blue',
           animated: false,
           imageSrc: './images/bm/markers/OUTSIDE/BTM_outside_2.jpg',
           originalUrl: './images/bm/markers/OUTSIDE/BTM_outside_2.jpg',
-          caption: ''
+          caption: 'Scan sebelum masuk'
         },
-        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bm/markers/OUTSIDE/BTM_outside_2.jpg\'>\n        <img src=\'./images/bm/markers/OUTSIDE/BTM_outside_2.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bm/markers/OUTSIDE/BTM_outside_2.jpg\'>\n        <img src=\'./images/bm/markers/OUTSIDE/BTM_outside_2.jpg\' alt=\'Scan sebelum masuk\' style=\'cursor:pointer;\' />\n        <h2>Scan sebelum masuk</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
       },
       {
         id: 'bm-ext-outside-3-marker-1789464432407',
@@ -160,15 +160,15 @@ export default [
         anchor: 'center center',
         data: {
           type: 'image',
-          title: '',
+          title: 'Sila Patuhi Etika Pemakaian Ketika Di Perpustakaan',
           icon: 'info',
           color: 'gold',
           animated: false,
           imageSrc: './images/bm/markers/OUTSIDE/BTM_outside_3.jpg',
           originalUrl: './images/bm/markers/OUTSIDE/BTM_outside_3.jpg',
-          caption: ''
+          caption: 'Sila Patuhi Etika Pemakaian Ketika Di Perpustakaan'
         },
-        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'gold\' data-url=\'./images/bm/markers/OUTSIDE/BTM_outside_3.jpg\'>\n        <img src=\'./images/bm/markers/OUTSIDE/BTM_outside_3.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'gold\' data-url=\'./images/bm/markers/OUTSIDE/BTM_outside_3.jpg\'>\n        <img src=\'./images/bm/markers/OUTSIDE/BTM_outside_3.jpg\' alt=\'Sila Patuhi Etika Pemakaian Ketika Di Perpustakaan\' style=\'cursor:pointer;\' />\n        <h2>Sila Patuhi Etika Pemakaian Ketika Di Perpustakaan</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
       }
     ],
     data: {

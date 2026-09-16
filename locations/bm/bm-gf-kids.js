@@ -86,11 +86,11 @@ export default [
           type: 'info',
           title: 'Sebelum Mengambil Permainan, Sila Maklumkan Kepada Staf Yang Bertugas',
           icon: 'warning',
-          color: 'red',
+          color: 'gold',
           animated: true,
           content: ''
         },
-        html: '<custom-marker type=\'info\' data-icon=\'warning\' data-color=\'red\' animated>\n        <h2>Sebelum Mengambil Permainan, Sila Maklumkan Kepada Staf Yang Bertugas</h2>\n        <p></p>\n      </custom-marker>'
+        html: '<custom-marker type=\'info\' data-icon=\'warning\' data-color=\'gold\' animated>\n        <h2>Sebelum Mengambil Permainan, Sila Maklumkan Kepada Staf Yang Bertugas</h2>\n        <p></p>\n      </custom-marker>'
       }
     ],
     data: {
@@ -116,52 +116,6 @@ export default [
     ],
     markers: [
       {
-        id: 'bm-gf-kids-2-marker-1789465376003',
-        position: {
-          yaw: '91.89deg',
-          pitch: '7.53deg'
-        },
-        size: {
-          width: 44,
-          height: 44
-        },
-        anchor: 'center center',
-        data: {
-          type: 'image',
-          title: '',
-          icon: 'info',
-          color: 'blue',
-          animated: false,
-          imageSrc: './images/bm/markers/MULTIMEDIA/BTM_multimedia_2.jpg',
-          originalUrl: './images/bm/markers/MULTIMEDIA/BTM_multimedia_2.jpg',
-          caption: ''
-        },
-        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bm/markers/MULTIMEDIA/BTM_multimedia_2.jpg\'>\n        <img src=\'./images/bm/markers/MULTIMEDIA/BTM_multimedia_2.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
-      },
-      {
-        id: 'bm-gf-kids-2-marker-1789465398234',
-        position: {
-          yaw: '266.29deg',
-          pitch: '-7.92deg'
-        },
-        size: {
-          width: 44,
-          height: 44
-        },
-        anchor: 'center center',
-        data: {
-          type: 'image',
-          title: '',
-          icon: 'info',
-          color: 'blue',
-          animated: false,
-          imageSrc: './images/bm/markers/LOBBY/BTM_lobby_28.jpg',
-          originalUrl: './images/bm/markers/LOBBY/BTM_lobby_28.jpg',
-          caption: ''
-        },
-        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bm/markers/LOBBY/BTM_lobby_28.jpg\'>\n        <img src=\'./images/bm/markers/LOBBY/BTM_lobby_28.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
-      },
-      {
         id: 'bm-gf-kids-2-marker-1789465461917',
         position: {
           yaw: '286.35deg',
@@ -176,11 +130,57 @@ export default [
           type: 'info',
           title: 'Sebelum Mengambil Permainan, Sila Maklumkan Kepada Staf Yang Bertugas',
           icon: 'warning',
-          color: 'red',
+          color: 'gold',
           animated: true,
           content: ''
         },
-        html: '<custom-marker type=\'info\' data-icon=\'warning\' data-color=\'red\' animated>\n        <h2>Sebelum Mengambil Permainan, Sila Maklumkan Kepada Staf Yang Bertugas</h2>\n        <p></p>\n      </custom-marker>'
+        html: '<custom-marker type=\'info\' data-icon=\'warning\' data-color=\'gold\' animated>\n        <h2>Sebelum Mengambil Permainan, Sila Maklumkan Kepada Staf Yang Bertugas</h2>\n        <p></p>\n      </custom-marker>'
+      },
+      {
+        id: 'bm-gf-kids-2-marker-1789465398234',
+        position: {
+          yaw: '266.29deg',
+          pitch: '-7.92deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: 'Notis',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/bm/markers/LOBBY/BTM_lobby_28.jpg',
+          originalUrl: './images/bm/markers/LOBBY/BTM_lobby_28.jpg',
+          caption: 'Notis'
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bm/markers/LOBBY/BTM_lobby_28.jpg\'>\n        <img src=\'./images/bm/markers/LOBBY/BTM_lobby_28.jpg\' alt=\'Notis\' style=\'cursor:pointer;\' />\n        <h2>Notis</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      {
+        id: 'bm-gf-kids-2-marker-1789465376003',
+        position: {
+          yaw: '91.89deg',
+          pitch: '7.53deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: 'Digital Hub',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/bm/markers/MULTIMEDIA/BTM_multimedia_2.jpg',
+          originalUrl: './images/bm/markers/MULTIMEDIA/BTM_multimedia_2.jpg',
+          caption: 'Digital Hub'
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bm/markers/MULTIMEDIA/BTM_multimedia_2.jpg\'>\n        <img src=\'./images/bm/markers/MULTIMEDIA/BTM_multimedia_2.jpg\' alt=\'Digital Hub\' style=\'cursor:pointer;\' />\n        <h2>Digital Hub</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
       }
     ],
     data: {
