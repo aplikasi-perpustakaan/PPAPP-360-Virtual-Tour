@@ -727,6 +727,133 @@ export default [
           caption: ''
         },
         html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/ppaj/markers/LOBBY/AEON_lobby_13.jpg\'>\n        <img src=\'./images/ppaj/markers/LOBBY/AEON_lobby_13.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      {
+        id: 'ppaj-f1-07-marker-1789555038929',
+        position: {
+          yaw: '238.97deg',
+          pitch: '-4.51deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Bahasa Inggeris',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'info\' data-color=\'blue\'>\n        <h2>Bahasa Inggeris</h2>\n        <p></p>\n      </custom-marker>'
+      },
+      {
+        id: 'ppaj-f1-07-marker-1789555059545',
+        position: {
+          yaw: '256.61deg',
+          pitch: '-4.82deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Bahasa Melayu',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'info\' data-color=\'blue\'>\n        <h2>Bahasa Melayu</h2>\n        <p></p>\n      </custom-marker>'
+      },
+      {
+        id: 'ppaj-f1-07-marker-1789555083557',
+        position: {
+          yaw: '278.64deg',
+          pitch: '-4.92deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Bahasa Melayu',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'info\' data-color=\'blue\'>\n        <h2>Bahasa Melayu</h2>\n        <p></p>\n      </custom-marker>'
+      },
+      
+      {
+        id: 'ppaj-f1-07-marker-1789555109065',
+        position: {
+          yaw: '312.60deg',
+          pitch: '-4.25deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Bahasa Tamil',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'info\' data-color=\'blue\'>\n        <h2>Bahasa Tamil</h2>\n        <p></p>\n      </custom-marker>'
+      },
+      {
+        id: 'ppaj-f1-07-marker-1789555125780',
+        position: {
+          yaw: '318.87deg',
+          pitch: '-4.12deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'PT3/ SPM/ STPM',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'info\' data-color=\'blue\'>\n        <h2>PT3/ SPM/ STPM</h2>\n        <p></p>\n      </custom-marker>'
+      },
+      {
+        id: 'ppaj-f1-07-marker-1789555095771',
+        position: {
+          yaw: '300.02deg',
+          pitch: '-5.01deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Bahasa Melayu',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'info\' data-color=\'blue\'>\n        <h2>Bahasa Melayu</h2>\n        <p></p>\n      </custom-marker>'
       }
     ],
     data: {
