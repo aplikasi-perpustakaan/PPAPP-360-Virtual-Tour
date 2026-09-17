@@ -202,33 +202,6 @@ export default [
     ],
     markers: [
       {
-        id: 'bm-gf-lobby-2-marker-1789464687686',
-        position: {
-          yaw: '281.69deg',
-          pitch: '-8.18deg'
-        },
-        size: {
-          width: 44,
-          height: 44
-        },
-        anchor: 'center center',
-        data: {
-          type: 'image',
-          title: '',
-          icon: 'info',
-          color: 'blue',
-          animated: false,
-          imageSrc: './images/bm/markers/LOBBY/BTM_lobby_8.jpg',
-          originalUrl: './images/bm/markers/LOBBY/BTM_lobby_8.jpg',
-          caption: ''
-        },
-        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bm/markers/LOBBY/BTM_lobby_8.jpg\'>\n        <img src=\'./images/bm/markers/LOBBY/BTM_lobby_8.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
-      },
-      
-      
-      
-      
-      {
         id: 'bm-gf-lobby-2-marker-1789464718296',
         position: {
           yaw: '262.25deg',
@@ -317,6 +290,29 @@ export default [
           content: ''
         },
         html: '<custom-marker type=\'info\' data-icon=\'no-entry\' data-color=\'red\' animated>\n        <h2>Kakitangan Sahaja</h2>\n        <p></p>\n      </custom-marker>'
+      },
+      {
+        id: 'bm-gf-lobby-2-marker-1789464687686',
+        position: {
+          yaw: '281.69deg',
+          pitch: '-8.18deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: 'Informasi Semasa',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/bm/markers/LOBBY/BTM_lobby_8.jpg',
+          originalUrl: './images/bm/markers/LOBBY/BTM_lobby_8.jpg',
+          caption: 'Informasi Semasa'
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bm/markers/LOBBY/BTM_lobby_8.jpg\'>\n        <img src=\'./images/bm/markers/LOBBY/BTM_lobby_8.jpg\' alt=\'Informasi Semasa\' style=\'cursor:pointer;\' />\n        <h2>Informasi Semasa</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
       }
     ],
     data: {
@@ -369,27 +365,7 @@ export default [
       },
       
       
-      {
-        id: 'bm-gf-lobby-3-marker-1789464898729',
-        position: {
-          yaw: '178.14deg',
-          pitch: '-7.62deg'
-        },
-        size: {
-          width: 44,
-          height: 44
-        },
-        anchor: 'center center',
-        data: {
-          type: 'info',
-          title: 'Staff Only',
-          icon: 'no-entry',
-          color: 'red',
-          animated: true,
-          content: ''
-        },
-        html: '<custom-marker type=\'info\' data-icon=\'no-entry\' data-color=\'red\' animated>\n        <h2>Staff Only</h2>\n        <p></p>\n      </custom-marker>'
-      },
+      
       {
         id: 'bm-gf-lobby-3-marker-1789465018445',
         position: {
@@ -477,6 +453,27 @@ export default [
           caption: 'Bahan Baru Untuk Pinjaman'
         },
         html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' animated data-url=\'./images/bm/markers/LOBBY/BTM_lobby_29.jpg\'>\n        <img src=\'./images/bm/markers/LOBBY/BTM_lobby_29.jpg\' alt=\'Bahan Baru Untuk Pinjaman\' style=\'cursor:pointer;\' />\n        <h2>Bahan Baru Untuk Pinjaman</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      {
+        id: 'bm-gf-lobby-3-marker-1789464898729',
+        position: {
+          yaw: '178.14deg',
+          pitch: '-7.62deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Kakitangan Sahaja',
+          icon: 'no-entry',
+          color: 'red',
+          animated: true,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'no-entry\' data-color=\'red\' animated>\n        <h2>Kakitangan Sahaja</h2>\n        <p></p>\n      </custom-marker>'
       }
     ],
     data: {

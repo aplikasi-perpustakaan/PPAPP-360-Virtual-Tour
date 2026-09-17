@@ -209,52 +209,8 @@ export default [
         },
         html: '<custom-marker type=\'info\' data-icon=\'info\' data-color=\'blue\'>\n        <h2>Bukan Fiksyen</h2>\n        <p></p>\n      </custom-marker>'
       },
-      {
-        id: 'bm-gf-reading-2-marker-1789465220833',
-        position: {
-          yaw: '346.55deg',
-          pitch: '3.78deg'
-        },
-        size: {
-          width: 44,
-          height: 44
-        },
-        anchor: 'center center',
-        data: {
-          type: 'image',
-          title: '',
-          icon: 'info',
-          color: 'blue',
-          animated: false,
-          imageSrc: './images/bm/markers/LOBBY/BTM_lobby_16.jpg',
-          originalUrl: './images/bm/markers/LOBBY/BTM_lobby_16.jpg',
-          caption: ''
-        },
-        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bm/markers/LOBBY/BTM_lobby_16.jpg\'>\n        <img src=\'./images/bm/markers/LOBBY/BTM_lobby_16.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
-      },
-      {
-        id: 'bm-gf-reading-2-marker-1789465255534',
-        position: {
-          yaw: '321.56deg',
-          pitch: '3.75deg'
-        },
-        size: {
-          width: 44,
-          height: 44
-        },
-        anchor: 'center center',
-        data: {
-          type: 'image',
-          title: '',
-          icon: 'info',
-          color: 'blue',
-          animated: false,
-          imageSrc: './images/bm/markers/LOBBY/BTM_lobby_14.jpg',
-          originalUrl: './images/bm/markers/LOBBY/BTM_lobby_14.jpg',
-          caption: ''
-        },
-        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bm/markers/LOBBY/BTM_lobby_14.jpg\'>\n        <img src=\'./images/bm/markers/LOBBY/BTM_lobby_14.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
-      },
+      
+      
       
       {
         id: 'bm-gf-reading-2-marker-1789465094058',
@@ -299,6 +255,52 @@ export default [
           content: ''
         },
         html: '<custom-marker type=\'info\' data-icon=\'no-entry\' data-color=\'red\' animated>\n        <h2>Kakitangan Sahaja</h2>\n        <p></p>\n      </custom-marker>'
+      },
+      {
+        id: 'bm-gf-reading-2-marker-1789465220833',
+        position: {
+          yaw: '346.55deg',
+          pitch: '3.78deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: 'BM & BI 571 - 959',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/bm/markers/LOBBY/BTM_lobby_16.jpg',
+          originalUrl: './images/bm/markers/LOBBY/BTM_lobby_16.jpg',
+          caption: 'BM & BI 571 - 959'
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bm/markers/LOBBY/BTM_lobby_16.jpg\'>\n        <img src=\'./images/bm/markers/LOBBY/BTM_lobby_16.jpg\' alt=\'BM & BI 571 - 959\' style=\'cursor:pointer;\' />\n        <h2>BM & BI 571 - 959</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      {
+        id: 'bm-gf-reading-2-marker-1789465255534',
+        position: {
+          yaw: '321.56deg',
+          pitch: '3.75deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: 'BM & BI 000 - 570',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/bm/markers/LOBBY/BTM_lobby_14.jpg',
+          originalUrl: './images/bm/markers/LOBBY/BTM_lobby_14.jpg',
+          caption: 'BM & BI 000 - 570'
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bm/markers/LOBBY/BTM_lobby_14.jpg\'>\n        <img src=\'./images/bm/markers/LOBBY/BTM_lobby_14.jpg\' alt=\'BM & BI 000 - 570\' style=\'cursor:pointer;\' />\n        <h2>BM & BI 000 - 570</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
       }
     ],
     data: {
@@ -490,13 +492,13 @@ export default [
         anchor: 'center center',
         data: {
           type: 'info',
-          title: 'Staff Only',
+          title: 'Kakitangan Sahaja',
           icon: 'no-entry',
           color: 'red',
           animated: true,
           content: ''
         },
-        html: '<custom-marker type=\'info\' data-icon=\'no-entry\' data-color=\'red\' animated>\n        <h2>Staff Only</h2>\n        <p></p>\n      </custom-marker>'
+        html: '<custom-marker type=\'info\' data-icon=\'no-entry\' data-color=\'red\' animated>\n        <h2>Kakitangan Sahaja</h2>\n        <p></p>\n      </custom-marker>'
       }
     ],
     data: {
