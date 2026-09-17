@@ -77,29 +77,6 @@ export default [
     ],
     markers: [
       {
-        id: 'gt-ext-outside-3-marker-1789530821157',
-        position: {
-          yaw: '34.42deg',
-          pitch: '-0.90deg'
-        },
-        size: {
-          width: 44,
-          height: 44
-        },
-        anchor: 'center center',
-        data: {
-          type: 'image',
-          title: '',
-          icon: 'info',
-          color: 'blue',
-          animated: false,
-          imageSrc: './images/gt/markers/GT_outside_6.jpg',
-          originalUrl: './images/gt/markers/GT_outside_6.jpg',
-          caption: ''
-        },
-        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/gt/markers/GT_outside_6.jpg\'>\n        <img src=\'./images/gt/markers/GT_outside_6.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
-      },
-      {
         id: 'gt-ext-outside-3-marker-1789530795545',
         position: {
           yaw: '23.86deg',
@@ -112,15 +89,38 @@ export default [
         anchor: 'center center',
         data: {
           type: 'image',
-          title: '',
+          title: 'PPAPP @ Daerah Timur Laut',
           icon: 'info',
           color: 'blue',
           animated: false,
           imageSrc: './images/gt/markers/GT_outside_7.jpg',
           originalUrl: './images/gt/markers/GT_outside_7.jpg',
-          caption: ''
+          caption: 'PPAPP @ Daerah Timur Laut'
         },
-        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/gt/markers/GT_outside_7.jpg\'>\n        <img src=\'./images/gt/markers/GT_outside_7.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/gt/markers/GT_outside_7.jpg\'>\n        <img src=\'./images/gt/markers/GT_outside_7.jpg\' alt=\'PPAPP @ Daerah Timur Laut\' style=\'cursor:pointer;\' />\n        <h2>PPAPP @ Daerah Timur Laut</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      {
+        id: 'gt-ext-outside-3-marker-1789530821157',
+        position: {
+          yaw: '34.42deg',
+          pitch: '-0.90deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: 'Notis',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/gt/markers/GT_outside_6.jpg',
+          originalUrl: './images/gt/markers/GT_outside_6.jpg',
+          caption: 'Notis'
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/gt/markers/GT_outside_6.jpg\'>\n        <img src=\'./images/gt/markers/GT_outside_6.jpg\' alt=\'Notis\' style=\'cursor:pointer;\' />\n        <h2>Notis</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
       }
     ],
     data: {
@@ -146,29 +146,6 @@ export default [
     ],
     markers: [
       {
-        id: 'gt-ext-outside-4-marker-1789530868322',
-        position: {
-          yaw: '88.18deg',
-          pitch: '30.77deg'
-        },
-        size: {
-          width: 44,
-          height: 44
-        },
-        anchor: 'center center',
-        data: {
-          type: 'image',
-          title: '',
-          icon: 'info',
-          color: 'blue',
-          animated: false,
-          imageSrc: './images/gt/markers/GT_outside_4.jpg',
-          originalUrl: './images/gt/markers/GT_outside_4.jpg',
-          caption: ''
-        },
-        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/gt/markers/GT_outside_4.jpg\'>\n        <img src=\'./images/gt/markers/GT_outside_4.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
-      },
-      {
         id: 'gt-ext-outside-4-marker-1789530848810',
         position: {
           yaw: '90.35deg',
@@ -190,6 +167,29 @@ export default [
           caption: 'Book Drop'
         },
         html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/gt/markers/GT_outside_5.jpg\'>\n        <img src=\'./images/gt/markers/GT_outside_5.jpg\' alt=\'Book Drop\' style=\'cursor:pointer;\' />\n        <h2>Book Drop</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      {
+        id: 'gt-ext-outside-4-marker-1789530868322',
+        position: {
+          yaw: '88.18deg',
+          pitch: '30.77deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: 'Petanda Book Drop',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/gt/markers/GT_outside_4.jpg',
+          originalUrl: './images/gt/markers/GT_outside_4.jpg',
+          caption: 'Petanda Book Drop'
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/gt/markers/GT_outside_4.jpg\'>\n        <img src=\'./images/gt/markers/GT_outside_4.jpg\' alt=\'Petanda Book Drop\' style=\'cursor:pointer;\' />\n        <h2>Petanda Book Drop</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
       }
     ],
     data: {
@@ -334,29 +334,6 @@ export default [
     ],
     markers: [
       {
-        id: 'gt-ext-outside-8-marker-1789531171534',
-        position: {
-          yaw: '299.39deg',
-          pitch: '-9.24deg'
-        },
-        size: {
-          width: 44,
-          height: 44
-        },
-        anchor: 'center center',
-        data: {
-          type: 'image',
-          title: '',
-          icon: 'info',
-          color: 'blue',
-          animated: false,
-          imageSrc: './images/gt/markers/GT_outside_3.jpg',
-          originalUrl: './images/gt/markers/GT_outside_3.jpg',
-          caption: ''
-        },
-        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/gt/markers/GT_outside_3.jpg\'>\n        <img src=\'./images/gt/markers/GT_outside_3.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
-      },
-      {
         id: 'gt-ext-outside-8-marker-1789531113123',
         position: {
           yaw: '299.03deg',
@@ -369,15 +346,38 @@ export default [
         anchor: 'center center',
         data: {
           type: 'image',
-          title: '',
+          title: 'Perasmian',
           icon: 'info',
           color: 'blue',
           animated: false,
           imageSrc: './images/gt/markers/GT_outside_2.jpg',
           originalUrl: './images/gt/markers/GT_outside_2.jpg',
-          caption: ''
+          caption: 'Perasmian'
         },
-        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/gt/markers/GT_outside_2.jpg\'>\n        <img src=\'./images/gt/markers/GT_outside_2.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/gt/markers/GT_outside_2.jpg\'>\n        <img src=\'./images/gt/markers/GT_outside_2.jpg\' alt=\'Perasmian\' style=\'cursor:pointer;\' />\n        <h2>Perasmian</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      {
+        id: 'gt-ext-outside-8-marker-1789531171534',
+        position: {
+          yaw: '299.39deg',
+          pitch: '-9.24deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: 'Waktu Operasi',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/gt/markers/GT_outside_3.jpg',
+          originalUrl: './images/gt/markers/GT_outside_3.jpg',
+          caption: 'Waktu Operasi'
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/gt/markers/GT_outside_3.jpg\'>\n        <img src=\'./images/gt/markers/GT_outside_3.jpg\' alt=\'Waktu Operasi\' style=\'cursor:pointer;\' />\n        <h2>Waktu Operasi</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
       }
     ],
     data: {
