@@ -320,6 +320,13 @@ export default [
         position: { yaw: '149.56deg', pitch: '-6.20deg' },
         name: 'Go to Floor 1 - Lobby 12'
       },
+      {
+        nodeId: 'pusat-f1-reading-1',
+        position: { yaw: '331.13deg', pitch: '-4.80deg' },
+        name: 'Go to Floor 1 - Reading 1',
+        targetYaw: '309.00deg',
+        targetPitch: '-3.15deg'
+      },
     ],
     markers: [],
     data: {
@@ -475,6 +482,13 @@ export default [
         name: 'Go to Floor 1 - Lobby 17',
         targetYaw: '49.30deg',
         targetPitch: '4.49deg'
+      },
+      {
+        nodeId: 'pusat-f1-reading-12',
+        position: { yaw: '352.00deg', pitch: '-3.52deg' },
+        name: 'Go to Floor 1 - Reading 12',
+        targetYaw: '319.10deg',
+        targetPitch: '-1.36deg'
       },
     ],
     markers: [],

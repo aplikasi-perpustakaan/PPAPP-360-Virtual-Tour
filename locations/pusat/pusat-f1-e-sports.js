@@ -9,7 +9,22 @@ export default [
     defaultPitch: '0deg',
     defaultZoomLvl: 0,
     links: [
-      { nodeId: 'pusat-f1-e-sports-2', position: { yaw: '0deg', pitch: '0deg' }, name: 'Go to E-Sports 2' }
+      {
+        nodeId: 'pusat-f1-e-sports-2',
+        position: { yaw: '322.38deg', pitch: '-2.00deg' },
+        name: 'Go to E-Sports 2',
+        targetYaw: '330.35deg',
+        targetPitch: '1.44deg'
+      },
+      
+      
+      {
+        nodeId: 'pusat-f1-reading-9',
+        position: { yaw: '92.68deg', pitch: '-0.67deg' },
+        name: 'Go to Floor 1 - Reading 9',
+        targetYaw: '60.13deg',
+        targetPitch: '-0.83deg'
+      },
     ],
     markers: [],
     data: {
@@ -27,8 +42,22 @@ export default [
     defaultPitch: '0deg',
     defaultZoomLvl: 0,
     links: [
-      { nodeId: 'pusat-f1-e-sports-1', position: { yaw: '180deg', pitch: '0deg' }, name: 'Go back' },
-      { nodeId: 'pusat-f1-e-sports-3', position: { yaw: '0deg', pitch: '0deg' }, name: 'Go to E-Sports 3' }
+      {
+        nodeId: 'pusat-f1-e-sports-1',
+        position: { yaw: '147.73deg', pitch: '-1.17deg' },
+        name: 'Go back',
+        targetYaw: '145.97deg',
+        targetPitch: '-2.08deg'
+      },
+      
+      
+      {
+        nodeId: 'pusat-f1-e-sports-3',
+        position: { yaw: '326.71deg', pitch: '-0.06deg' },
+        name: 'Go to E-Sports 3',
+        targetYaw: '331.16deg',
+        targetPitch: '-1.01deg'
+      },
     ],
     markers: [],
     data: {
