@@ -25,7 +25,29 @@ export default [
         name: 'Go to Facilities 3',
       }
     ],
-    markers: [],
+    markers: [
+      {
+        id: 'jw-f2-facilities-1-marker-1789620362101',
+        position: {
+          yaw: '97.32deg',
+          pitch: '-3.62deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Pintu Kecemasan',
+          icon: 'warning',
+          color: 'gold',
+          animated: true,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'warning\' data-color=\'gold\' animated>\n        <h2>Pintu Kecemasan</h2>\n        <p></p>\n      </custom-marker>'
+      }
+    ],
     data: {
       floor: 'f2',
       tags: ['facilities'],

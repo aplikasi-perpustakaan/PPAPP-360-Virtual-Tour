@@ -77,15 +77,15 @@ export default [
         anchor: 'center center',
         data: {
           type: 'image',
-          title: '',
+          title: 'PPAPP @ Daerah Seberang Perai Selatan',
           icon: 'info',
           color: 'blue',
           animated: false,
           imageSrc: './images/jw/markers/FLOOR 1/LOBBY/IMG_20260910_102142_034.webp?t=1789538701327',
           originalUrl: './images/jw/markers/FLOOR 1/LOBBY/IMG_20260910_102142_034.webp?t=1789538701327',
-          caption: ''
+          caption: 'PPAPP @ Daerah Seberang Perai Selatan'
         },
-        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/jw/markers/FLOOR 1/LOBBY/IMG_20260910_102142_034.webp?t=1789538701327\'>\n        <img src=\'./images/jw/markers/FLOOR 1/LOBBY/IMG_20260910_102142_034.webp?t=1789538701327\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/jw/markers/FLOOR 1/LOBBY/IMG_20260910_102142_034.webp?t=1789538701327\'>\n        <img src=\'./images/jw/markers/FLOOR 1/LOBBY/IMG_20260910_102142_034.webp?t=1789538701327\' alt=\'PPAPP @ Daerah Seberang Perai Selatan\' style=\'cursor:pointer;\' />\n        <h2>PPAPP @ Daerah Seberang Perai Selatan</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
       }
     ],
     data: {
@@ -148,15 +148,15 @@ export default [
         anchor: 'center center',
         data: {
           type: 'image',
-          title: '',
+          title: 'PPAPP @ Daerah Seberang Perai Selatan',
           icon: 'info',
           color: 'blue',
           animated: false,
           imageSrc: './images/jw/markers/FLOOR 1/LOBBY/IMG_20260910_102142_034.webp?t=1789538701327',
           originalUrl: './images/jw/markers/FLOOR 1/LOBBY/IMG_20260910_102142_034.webp?t=1789538701327',
-          caption: ''
+          caption: 'PPAPP @ Daerah Seberang Perai Selatan'
         },
-        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/jw/markers/FLOOR 1/LOBBY/IMG_20260910_102142_034.webp?t=1789538701327\'>\n        <img src=\'./images/jw/markers/FLOOR 1/LOBBY/IMG_20260910_102142_034.webp?t=1789538701327\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/jw/markers/FLOOR 1/LOBBY/IMG_20260910_102142_034.webp?t=1789538701327\'>\n        <img src=\'./images/jw/markers/FLOOR 1/LOBBY/IMG_20260910_102142_034.webp?t=1789538701327\' alt=\'PPAPP @ Daerah Seberang Perai Selatan\' style=\'cursor:pointer;\' />\n        <h2>PPAPP @ Daerah Seberang Perai Selatan</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
       },
       {
         id: 'jw-f1-lobby-3-marker-1789539632987',
@@ -171,15 +171,15 @@ export default [
         anchor: 'center center',
         data: {
           type: 'image',
-          title: '',
+          title: 'Pickatale',
           icon: 'info',
           color: 'blue',
           animated: false,
           imageSrc: './images/jw/markers/FLOOR 1/LOBBY/IMG_20260910_093339_856.webp',
           originalUrl: './images/jw/markers/FLOOR 1/LOBBY/IMG_20260910_093339_856.webp',
-          caption: ''
+          caption: 'Pickatale'
         },
-        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/jw/markers/FLOOR 1/LOBBY/IMG_20260910_093339_856.webp\'>\n        <img src=\'./images/jw/markers/FLOOR 1/LOBBY/IMG_20260910_093339_856.webp\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/jw/markers/FLOOR 1/LOBBY/IMG_20260910_093339_856.webp\'>\n        <img src=\'./images/jw/markers/FLOOR 1/LOBBY/IMG_20260910_093339_856.webp\' alt=\'Pickatale\' style=\'cursor:pointer;\' />\n        <h2>Pickatale</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
       }
     ],
     data: {
@@ -606,15 +606,15 @@ export default [
         anchor: 'center center',
         data: {
           type: 'image',
-          title: '',
+          title: 'Cafe @ PPAPP',
           icon: 'info',
           color: 'blue',
           animated: false,
           imageSrc: './images/jw/markers/FLOOR 1/LOBBY/IMG_20260910_093518_102.webp?t=1789538733645',
           originalUrl: './images/jw/markers/FLOOR 1/LOBBY/IMG_20260910_093518_102.webp?t=1789538733645',
-          caption: ''
+          caption: 'Cafe @ PPAPP'
         },
-        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/jw/markers/FLOOR 1/LOBBY/IMG_20260910_093518_102.webp?t=1789538733645\'>\n        <img src=\'./images/jw/markers/FLOOR 1/LOBBY/IMG_20260910_093518_102.webp?t=1789538733645\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/jw/markers/FLOOR 1/LOBBY/IMG_20260910_093518_102.webp?t=1789538733645\'>\n        <img src=\'./images/jw/markers/FLOOR 1/LOBBY/IMG_20260910_093518_102.webp?t=1789538733645\' alt=\'Cafe @ PPAPP\' style=\'cursor:pointer;\' />\n        <h2>Cafe @ PPAPP</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
       }
     ],
     data: {
@@ -667,121 +667,11 @@ export default [
         },
         html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/jw/markers/FLOOR 1/LOBBY/IMG_20260910_093518_102.webp?t=1789538733645\'>\n        <img src=\'./images/jw/markers/FLOOR 1/LOBBY/IMG_20260910_093518_102.webp?t=1789538733645\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
       },
-      {
-        id: 'jw-f1-lobby-9-marker-1789539019864',
-        position: {
-          yaw: '293.13deg',
-          pitch: '-22.48deg'
-        },
-        size: {
-          width: 44,
-          height: 44
-        },
-        anchor: 'center center',
-        data: {
-          type: 'image',
-          title: '',
-          icon: 'info',
-          color: 'blue',
-          animated: false,
-          imageSrc: './images/jw/markers/FLOOR 1/LOBBY/IMG_20260910_093539_146.webp',
-          originalUrl: './images/jw/markers/FLOOR 1/LOBBY/IMG_20260910_093539_146.webp',
-          caption: ''
-        },
-        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/jw/markers/FLOOR 1/LOBBY/IMG_20260910_093539_146.webp\'>\n        <img src=\'./images/jw/markers/FLOOR 1/LOBBY/IMG_20260910_093539_146.webp\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
-      },
-      {
-        id: 'jw-f1-lobby-9-marker-1789539032023',
-        position: {
-          yaw: '308.56deg',
-          pitch: '-19.34deg'
-        },
-        size: {
-          width: 44,
-          height: 44
-        },
-        anchor: 'center center',
-        data: {
-          type: 'image',
-          title: '',
-          icon: 'info',
-          color: 'blue',
-          animated: false,
-          imageSrc: './images/jw/markers/FLOOR 1/LOBBY/IMG_20260910_093547_927.webp',
-          originalUrl: './images/jw/markers/FLOOR 1/LOBBY/IMG_20260910_093547_927.webp',
-          caption: ''
-        },
-        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/jw/markers/FLOOR 1/LOBBY/IMG_20260910_093547_927.webp\'>\n        <img src=\'./images/jw/markers/FLOOR 1/LOBBY/IMG_20260910_093547_927.webp\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
-      },
-      {
-        id: 'jw-f1-lobby-9-marker-1789539038233',
-        position: {
-          yaw: '324.71deg',
-          pitch: '-14.12deg'
-        },
-        size: {
-          width: 44,
-          height: 44
-        },
-        anchor: 'center center',
-        data: {
-          type: 'image',
-          title: '',
-          icon: 'info',
-          color: 'blue',
-          animated: false,
-          imageSrc: './images/jw/markers/FLOOR 1/LOBBY/IMG_20260910_093600_334.webp',
-          originalUrl: './images/jw/markers/FLOOR 1/LOBBY/IMG_20260910_093600_334.webp',
-          caption: ''
-        },
-        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/jw/markers/FLOOR 1/LOBBY/IMG_20260910_093600_334.webp\'>\n        <img src=\'./images/jw/markers/FLOOR 1/LOBBY/IMG_20260910_093600_334.webp\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
-      },
-      {
-        id: 'jw-f1-lobby-9-marker-1789539047539',
-        position: {
-          yaw: '347.18deg',
-          pitch: '-12.93deg'
-        },
-        size: {
-          width: 44,
-          height: 44
-        },
-        anchor: 'center center',
-        data: {
-          type: 'image',
-          title: '',
-          icon: 'info',
-          color: 'blue',
-          animated: false,
-          imageSrc: './images/jw/markers/FLOOR 1/LOBBY/IMG_20260910_093637_616.webp',
-          originalUrl: './images/jw/markers/FLOOR 1/LOBBY/IMG_20260910_093637_616.webp',
-          caption: ''
-        },
-        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/jw/markers/FLOOR 1/LOBBY/IMG_20260910_093637_616.webp\'>\n        <img src=\'./images/jw/markers/FLOOR 1/LOBBY/IMG_20260910_093637_616.webp\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
-      },
-      {
-        id: 'jw-f1-lobby-9-marker-1789539054600',
-        position: {
-          yaw: '12.34deg',
-          pitch: '-13.28deg'
-        },
-        size: {
-          width: 44,
-          height: 44
-        },
-        anchor: 'center center',
-        data: {
-          type: 'image',
-          title: '',
-          icon: 'info',
-          color: 'blue',
-          animated: false,
-          imageSrc: './images/jw/markers/FLOOR 1/LOBBY/IMG_20260910_093708_487.webp',
-          originalUrl: './images/jw/markers/FLOOR 1/LOBBY/IMG_20260910_093708_487.webp',
-          caption: ''
-        },
-        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/jw/markers/FLOOR 1/LOBBY/IMG_20260910_093708_487.webp\'>\n        <img src=\'./images/jw/markers/FLOOR 1/LOBBY/IMG_20260910_093708_487.webp\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
-      },
+      
+      
+      
+      
+      
       {
         id: 'jw-f1-lobby-9-marker-1789539079293',
         position: {
@@ -802,6 +692,121 @@ export default [
           content: ''
         },
         html: '<custom-marker type=\'info\' data-icon=\'info\' data-color=\'blue\'>\n        <h2>OPAC</h2>\n        <p></p>\n      </custom-marker>'
+      },
+      {
+        id: 'jw-f1-lobby-9-marker-1789539019864',
+        position: {
+          yaw: '293.13deg',
+          pitch: '-22.48deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: 'Permainan',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/jw/markers/FLOOR 1/LOBBY/IMG_20260910_093539_146.webp',
+          originalUrl: './images/jw/markers/FLOOR 1/LOBBY/IMG_20260910_093539_146.webp',
+          caption: 'Permainan'
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/jw/markers/FLOOR 1/LOBBY/IMG_20260910_093539_146.webp\'>\n        <img src=\'./images/jw/markers/FLOOR 1/LOBBY/IMG_20260910_093539_146.webp\' alt=\'Permainan\' style=\'cursor:pointer;\' />\n        <h2>Permainan</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      {
+        id: 'jw-f1-lobby-9-marker-1789539032023',
+        position: {
+          yaw: '308.56deg',
+          pitch: '-19.34deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: 'Permainan',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/jw/markers/FLOOR 1/LOBBY/IMG_20260910_093547_927.webp',
+          originalUrl: './images/jw/markers/FLOOR 1/LOBBY/IMG_20260910_093547_927.webp',
+          caption: 'Permainan'
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/jw/markers/FLOOR 1/LOBBY/IMG_20260910_093547_927.webp\'>\n        <img src=\'./images/jw/markers/FLOOR 1/LOBBY/IMG_20260910_093547_927.webp\' alt=\'Permainan\' style=\'cursor:pointer;\' />\n        <h2>Permainan</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      {
+        id: 'jw-f1-lobby-9-marker-1789539038233',
+        position: {
+          yaw: '324.71deg',
+          pitch: '-14.12deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: 'Permainan',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/jw/markers/FLOOR 1/LOBBY/IMG_20260910_093600_334.webp',
+          originalUrl: './images/jw/markers/FLOOR 1/LOBBY/IMG_20260910_093600_334.webp',
+          caption: 'Permainan'
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/jw/markers/FLOOR 1/LOBBY/IMG_20260910_093600_334.webp\'>\n        <img src=\'./images/jw/markers/FLOOR 1/LOBBY/IMG_20260910_093600_334.webp\' alt=\'Permainan\' style=\'cursor:pointer;\' />\n        <h2>Permainan</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      {
+        id: 'jw-f1-lobby-9-marker-1789539047539',
+        position: {
+          yaw: '347.18deg',
+          pitch: '-12.93deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: 'Permainan',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/jw/markers/FLOOR 1/LOBBY/IMG_20260910_093637_616.webp',
+          originalUrl: './images/jw/markers/FLOOR 1/LOBBY/IMG_20260910_093637_616.webp',
+          caption: 'Permainan'
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/jw/markers/FLOOR 1/LOBBY/IMG_20260910_093637_616.webp\'>\n        <img src=\'./images/jw/markers/FLOOR 1/LOBBY/IMG_20260910_093637_616.webp\' alt=\'Permainan\' style=\'cursor:pointer;\' />\n        <h2>Permainan</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      {
+        id: 'jw-f1-lobby-9-marker-1789539054600',
+        position: {
+          yaw: '12.34deg',
+          pitch: '-13.28deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: 'Permainan',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/jw/markers/FLOOR 1/LOBBY/IMG_20260910_093708_487.webp',
+          originalUrl: './images/jw/markers/FLOOR 1/LOBBY/IMG_20260910_093708_487.webp',
+          caption: 'Permainan'
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/jw/markers/FLOOR 1/LOBBY/IMG_20260910_093708_487.webp\'>\n        <img src=\'./images/jw/markers/FLOOR 1/LOBBY/IMG_20260910_093708_487.webp\' alt=\'Permainan\' style=\'cursor:pointer;\' />\n        <h2>Permainan</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
       }
     ],
     data: {
@@ -849,15 +854,15 @@ export default [
         anchor: 'center center',
         data: {
           type: 'image',
-          title: '',
+          title: 'BI Fiksyen',
           icon: 'info',
           color: 'blue',
           animated: false,
           imageSrc: './images/jw/markers/FLOOR 1/KANAK KANAK/IMG_20260910_093811_803.webp',
           originalUrl: './images/jw/markers/FLOOR 1/KANAK KANAK/IMG_20260910_093811_803.webp',
-          caption: ''
+          caption: 'BI Fiksyen'
         },
-        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/jw/markers/FLOOR 1/KANAK KANAK/IMG_20260910_093811_803.webp\'>\n        <img src=\'./images/jw/markers/FLOOR 1/KANAK KANAK/IMG_20260910_093811_803.webp\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/jw/markers/FLOOR 1/KANAK KANAK/IMG_20260910_093811_803.webp\'>\n        <img src=\'./images/jw/markers/FLOOR 1/KANAK KANAK/IMG_20260910_093811_803.webp\' alt=\'BI Fiksyen\' style=\'cursor:pointer;\' />\n        <h2>BI Fiksyen</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
       }
     ],
     data: {
@@ -916,6 +921,9 @@ export default [
         },
         html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/jw/markers/FLOOR 1/KANAK KANAK/IMG_20260910_093822_234.webp\'>\n        <img src=\'./images/jw/markers/FLOOR 1/KANAK KANAK/IMG_20260910_093822_234.webp\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
       },
+      
+      
+      
       {
         id: 'jw-f1-lobby-11-marker-1789539497670',
         position: {
@@ -929,15 +937,15 @@ export default [
         anchor: 'center center',
         data: {
           type: 'image',
-          title: '',
+          title: 'BM Fiksyen',
           icon: 'info',
           color: 'blue',
           animated: false,
           imageSrc: './images/jw/markers/FLOOR 1/KANAK KANAK/IMG_20260910_093803_373.webp',
           originalUrl: './images/jw/markers/FLOOR 1/KANAK KANAK/IMG_20260910_093803_373.webp',
-          caption: ''
+          caption: 'BM Fiksyen'
         },
-        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/jw/markers/FLOOR 1/KANAK KANAK/IMG_20260910_093803_373.webp\'>\n        <img src=\'./images/jw/markers/FLOOR 1/KANAK KANAK/IMG_20260910_093803_373.webp\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/jw/markers/FLOOR 1/KANAK KANAK/IMG_20260910_093803_373.webp\'>\n        <img src=\'./images/jw/markers/FLOOR 1/KANAK KANAK/IMG_20260910_093803_373.webp\' alt=\'BM Fiksyen\' style=\'cursor:pointer;\' />\n        <h2>BM Fiksyen</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
       },
       {
         id: 'jw-f1-lobby-11-marker-1789539510527',
@@ -952,15 +960,15 @@ export default [
         anchor: 'center center',
         data: {
           type: 'image',
-          title: '',
+          title: 'BI Fiksyen',
           icon: 'info',
           color: 'blue',
           animated: false,
           imageSrc: './images/jw/markers/FLOOR 1/KANAK KANAK/IMG_20260910_093811_803.webp',
           originalUrl: './images/jw/markers/FLOOR 1/KANAK KANAK/IMG_20260910_093811_803.webp',
-          caption: ''
+          caption: 'BI Fiksyen'
         },
-        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/jw/markers/FLOOR 1/KANAK KANAK/IMG_20260910_093811_803.webp\'>\n        <img src=\'./images/jw/markers/FLOOR 1/KANAK KANAK/IMG_20260910_093811_803.webp\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/jw/markers/FLOOR 1/KANAK KANAK/IMG_20260910_093811_803.webp\'>\n        <img src=\'./images/jw/markers/FLOOR 1/KANAK KANAK/IMG_20260910_093811_803.webp\' alt=\'BI Fiksyen\' style=\'cursor:pointer;\' />\n        <h2>BI Fiksyen</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
       },
       {
         id: 'jw-f1-lobby-11-marker-1789539532369',
@@ -975,15 +983,15 @@ export default [
         anchor: 'center center',
         data: {
           type: 'image',
-          title: '',
+          title: 'Buku Bersiri Kanak-Kanak',
           icon: 'info',
           color: 'blue',
           animated: false,
           imageSrc: './images/jw/markers/FLOOR 1/KANAK KANAK/IMG_20260910_093752_761.webp',
           originalUrl: './images/jw/markers/FLOOR 1/KANAK KANAK/IMG_20260910_093752_761.webp',
-          caption: ''
+          caption: 'Buku Bersiri Kanak-Kanak'
         },
-        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/jw/markers/FLOOR 1/KANAK KANAK/IMG_20260910_093752_761.webp\'>\n        <img src=\'./images/jw/markers/FLOOR 1/KANAK KANAK/IMG_20260910_093752_761.webp\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/jw/markers/FLOOR 1/KANAK KANAK/IMG_20260910_093752_761.webp\'>\n        <img src=\'./images/jw/markers/FLOOR 1/KANAK KANAK/IMG_20260910_093752_761.webp\' alt=\'Buku Bersiri Kanak-Kanak\' style=\'cursor:pointer;\' />\n        <h2>Buku Bersiri Kanak-Kanak</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
       }
     ],
     data: {
