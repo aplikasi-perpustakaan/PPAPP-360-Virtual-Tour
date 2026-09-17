@@ -213,6 +213,29 @@ export default [
           caption: 'Notis'
         },
         html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/pusat/markers/FLOOR-1/PUSAT_F1_66.jpg\'>\n        <img src=\'./images/pusat/markers/FLOOR-1/PUSAT_F1_66.jpg\' alt=\'Notis\' style=\'cursor:pointer;\' />\n        <h2>Notis</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      {
+        id: 'pusat-f1-kids-3-marker-1789637828002',
+        position: {
+          yaw: '63.44deg',
+          pitch: '-0.74deg'
+        },
+        size: {
+          width: 32,
+          height: 32
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: '',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/pusat/markers/FLOOR-1/PUSAT_F1_68.jpg',
+          originalUrl: './images/pusat/markers/FLOOR-1/PUSAT_F1_68.jpg',
+          caption: ''
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/pusat/markers/FLOOR-1/PUSAT_F1_68.jpg\'>\n        <img src=\'./images/pusat/markers/FLOOR-1/PUSAT_F1_68.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
       }
     ],
     data: {

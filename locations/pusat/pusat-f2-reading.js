@@ -66,7 +66,54 @@ export default [
         targetPitch: '-0.65deg'
       },
     ],
-    markers: [],
+    markers: [
+      {
+        id: 'pusat-f2-reading-2-marker-1789637771761',
+        position: {
+          yaw: '182.63deg',
+          pitch: '-23.27deg'
+        },
+        size: {
+          width: 32,
+          height: 32
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: '',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/pusat/markers/FLOOR-2/PUSAT_F2_4.jpg',
+          originalUrl: './images/pusat/markers/FLOOR-2/PUSAT_F2_4.jpg',
+          caption: ''
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/pusat/markers/FLOOR-2/PUSAT_F2_4.jpg\'>\n        <img src=\'./images/pusat/markers/FLOOR-2/PUSAT_F2_4.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      {
+        id: 'pusat-f2-reading-2-marker-1789637779449',
+        position: {
+          yaw: '106.29deg',
+          pitch: '-26.14deg'
+        },
+        size: {
+          width: 32,
+          height: 32
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: '',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/pusat/markers/FLOOR-2/PUSAT_F2_4.jpg',
+          originalUrl: './images/pusat/markers/FLOOR-2/PUSAT_F2_4.jpg',
+          caption: ''
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/pusat/markers/FLOOR-2/PUSAT_F2_4.jpg\'>\n        <img src=\'./images/pusat/markers/FLOOR-2/PUSAT_F2_4.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      }
+    ],
     data: {
       floor: 'f2',
       tags: [
