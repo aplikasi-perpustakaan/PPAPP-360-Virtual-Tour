@@ -39,14 +39,16 @@ export default [
         },
         anchor: 'center center',
         data: {
-          type: 'info',
+          type: 'image',
           title: 'P. Ramlee section',
           icon: 'info',
           color: 'blue',
           animated: false,
-          content: ''
+          imageSrc: './images/pusat/markers/FLOOR-1/PUSAT_F1_1.jpg',
+          originalUrl: './images/pusat/markers/FLOOR-1/PUSAT_F1_1.jpg',
+          caption: 'P. Ramlee section'
         },
-        html: '<custom-marker type=\'info\' data-icon=\'info\' data-color=\'blue\'>\n        <h2>P. Ramlee section</h2>\n        <p></p>\n      </custom-marker>'
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/pusat/markers/FLOOR-1/PUSAT_F1_1.jpg\'>\n        <img src=\'./images/pusat/markers/FLOOR-1/PUSAT_F1_1.jpg\' alt=\'P. Ramlee section\' style=\'cursor:pointer;\' />\n        <h2>P. Ramlee section</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
       }
     ],
     data: {
@@ -145,7 +147,31 @@ export default [
         name: 'Go to Floor 1 - Lobby 8'
       },
     ],
-    markers: [],
+    markers: [
+      {
+        id: 'pusat-f1-lobby-4-marker-1789630304193',
+        position: {
+          yaw: '8.78deg',
+          pitch: '-22.04deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: '',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/pusat/markers/FLOOR-1/PUSAT_F1_7.jpg',
+          originalUrl: './images/pusat/markers/FLOOR-1/PUSAT_F1_7.jpg',
+          caption: ''
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/pusat/markers/FLOOR-1/PUSAT_F1_7.jpg\'>\n        <img src=\'./images/pusat/markers/FLOOR-1/PUSAT_F1_7.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      }
+    ],
     data: {
       floor: 'f1',
       tags: ['lobby'],
