@@ -20,6 +20,11 @@ export default [
         position: { yaw: '102.09deg', pitch: '-10deg' },
         name: 'Go to Floor 1 - Lobby 29'
       },
+      {
+        nodeId: 'pusat-outside-19',
+        position: { yaw: '187.63deg', pitch: '-10deg' },
+        name: 'Go to Exterior - Outside 19'
+      },
     ],
     markers: [
       {
@@ -966,6 +971,13 @@ export default [
         name: 'Go to Lobby 29',
         targetYaw: '275.03deg',
         targetPitch: '-5.84deg'
+      },
+      {
+        nodeId: 'pusat-outside-20',
+        position: { yaw: '192.83deg', pitch: '-7.16deg' },
+        name: 'Go to Exterior - Outside 20',
+        targetYaw: '187.34deg',
+        targetPitch: '-0.77deg'
       },
     ],
     markers: [],
