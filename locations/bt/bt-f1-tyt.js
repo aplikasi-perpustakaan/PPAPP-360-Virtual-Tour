@@ -25,29 +25,6 @@ export default [
     ],
     markers: [
       {
-        id: 'bt-f1-tyt-1-marker-1789461024791',
-        position: {
-          yaw: '40.23deg',
-          pitch: '-6.48deg'
-        },
-        size: {
-          width: 44,
-          height: 44
-        },
-        anchor: 'center center',
-        data: {
-          type: 'image',
-          title: '',
-          icon: 'info',
-          color: 'blue',
-          animated: false,
-          imageSrc: './images/bt/markers/TYT/BT_tyt_1.jpg',
-          originalUrl: './images/bt/markers/TYT/BT_tyt_1.jpg',
-          caption: ''
-        },
-        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bt/markers/TYT/BT_tyt_1.jpg\'>\n        <img src=\'./images/bt/markers/TYT/BT_tyt_1.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
-      },
-      {
         id: 'bt-f1-tyt-1-marker-1789461049537',
         position: {
           yaw: '175.87deg',
@@ -92,6 +69,29 @@ export default [
           caption: ''
         },
         html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bt/markers/TYT/BT_tyt_3.jpg\'>\n        <img src=\'./images/bt/markers/TYT/BT_tyt_3.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      {
+        id: 'bt-f1-tyt-1-marker-1789461024791',
+        position: {
+          yaw: '40.23deg',
+          pitch: '-6.48deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: 'Galeri Tuan Yang Terutama',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/bt/markers/TYT/BT_tyt_1.jpg',
+          originalUrl: './images/bt/markers/TYT/BT_tyt_1.jpg',
+          caption: 'Galeri Tuan Yang Terutama'
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bt/markers/TYT/BT_tyt_1.jpg\'>\n        <img src=\'./images/bt/markers/TYT/BT_tyt_1.jpg\' alt=\'Galeri Tuan Yang Terutama\' style=\'cursor:pointer;\' />\n        <h2>Galeri Tuan Yang Terutama</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
       }
     ],
     data: {
@@ -122,54 +122,7 @@ export default [
         name: 'Go to Tyt 3',
       },
     ],
-    markers: [
-      {
-        id: 'bt-f1-tyt-2-marker-1789461104468',
-        position: {
-          yaw: '144.83deg',
-          pitch: '0.09deg'
-        },
-        size: {
-          width: 44,
-          height: 44
-        },
-        anchor: 'center center',
-        data: {
-          type: 'image',
-          title: '',
-          icon: 'info',
-          color: 'blue',
-          animated: false,
-          imageSrc: './images/bt/markers/TYT/BT_tyt_5.jpg',
-          originalUrl: './images/bt/markers/TYT/BT_tyt_5.jpg',
-          caption: ''
-        },
-        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bt/markers/TYT/BT_tyt_5.jpg\'>\n        <img src=\'./images/bt/markers/TYT/BT_tyt_5.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
-      },
-      {
-        id: 'bt-f1-tyt-2-marker-1789461128012',
-        position: {
-          yaw: '155.23deg',
-          pitch: '0.46deg'
-        },
-        size: {
-          width: 44,
-          height: 44
-        },
-        anchor: 'center center',
-        data: {
-          type: 'image',
-          title: '',
-          icon: 'info',
-          color: 'blue',
-          animated: false,
-          imageSrc: './images/bt/markers/TYT/BT_tyt_4.jpg',
-          originalUrl: './images/bt/markers/TYT/BT_tyt_4.jpg',
-          caption: ''
-        },
-        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bt/markers/TYT/BT_tyt_4.jpg\'>\n        <img src=\'./images/bt/markers/TYT/BT_tyt_4.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
-      }
-    ],
+    markers: [],
     data: {
       floor: 'f1',
       tags: ['tyt'],
@@ -200,29 +153,6 @@ export default [
     ],
     markers: [
       {
-        id: 'bt-f1-tyt-3-marker-1789461162825',
-        position: {
-          yaw: '125.81deg',
-          pitch: '11.11deg'
-        },
-        size: {
-          width: 44,
-          height: 44
-        },
-        anchor: 'center center',
-        data: {
-          type: 'image',
-          title: '',
-          icon: 'info',
-          color: 'blue',
-          animated: false,
-          imageSrc: './images/bt/markers/TYT/BT_tyt_8.jpg',
-          originalUrl: './images/bt/markers/TYT/BT_tyt_8.jpg',
-          caption: ''
-        },
-        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bt/markers/TYT/BT_tyt_8.jpg\'>\n        <img src=\'./images/bt/markers/TYT/BT_tyt_8.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
-      },
-      {
         id: 'bt-f1-tyt-3-marker-1789461173845',
         position: {
           yaw: '98.77deg',
@@ -245,52 +175,8 @@ export default [
         },
         html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bt/markers/TYT/BT_tyt_9.jpg\'>\n        <img src=\'./images/bt/markers/TYT/BT_tyt_9.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
       },
-      {
-        id: 'bt-f1-tyt-3-marker-1789461188580',
-        position: {
-          yaw: '130.11deg',
-          pitch: '-9.76deg'
-        },
-        size: {
-          width: 44,
-          height: 44
-        },
-        anchor: 'center center',
-        data: {
-          type: 'image',
-          title: '',
-          icon: 'info',
-          color: 'blue',
-          animated: false,
-          imageSrc: './images/bt/markers/TYT/BT_tyt_10.jpg',
-          originalUrl: './images/bt/markers/TYT/BT_tyt_10.jpg',
-          caption: ''
-        },
-        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bt/markers/TYT/BT_tyt_10.jpg\'>\n        <img src=\'./images/bt/markers/TYT/BT_tyt_10.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
-      },
-      {
-        id: 'bt-f1-tyt-3-marker-1789461204971',
-        position: {
-          yaw: '62.93deg',
-          pitch: '-31.69deg'
-        },
-        size: {
-          width: 44,
-          height: 44
-        },
-        anchor: 'center center',
-        data: {
-          type: 'image',
-          title: '',
-          icon: 'info',
-          color: 'blue',
-          animated: false,
-          imageSrc: './images/bt/markers/TYT/BT_tyt_11.jpg',
-          originalUrl: './images/bt/markers/TYT/BT_tyt_11.jpg',
-          caption: ''
-        },
-        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bt/markers/TYT/BT_tyt_11.jpg\'>\n        <img src=\'./images/bt/markers/TYT/BT_tyt_11.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
-      },
+      
+      
       {
         id: 'bt-f1-tyt-3-marker-1789461323661',
         position: {
@@ -313,6 +199,75 @@ export default [
           caption: ''
         },
         html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bt/markers/TYT/BT_tyt_16.jpg\'>\n        <img src=\'./images/bt/markers/TYT/BT_tyt_16.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      {
+        id: 'bt-f1-tyt-3-marker-1789461204971',
+        position: {
+          yaw: '62.93deg',
+          pitch: '-31.69deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: 'Model Kaabah',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/bt/markers/TYT/BT_tyt_11.jpg',
+          originalUrl: './images/bt/markers/TYT/BT_tyt_11.jpg',
+          caption: 'Model Kaabah'
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bt/markers/TYT/BT_tyt_11.jpg\'>\n        <img src=\'./images/bt/markers/TYT/BT_tyt_11.jpg\' alt=\'Model Kaabah\' style=\'cursor:pointer;\' />\n        <h2>Model Kaabah</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      {
+        id: 'bt-f1-tyt-3-marker-1789461162825',
+        position: {
+          yaw: '125.81deg',
+          pitch: '11.11deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: 'Keratan Akhbar',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/bt/markers/TYT/BT_tyt_8.jpg',
+          originalUrl: './images/bt/markers/TYT/BT_tyt_8.jpg',
+          caption: 'Keratan Akhbar'
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bt/markers/TYT/BT_tyt_8.jpg\'>\n        <img src=\'./images/bt/markers/TYT/BT_tyt_8.jpg\' alt=\'Keratan Akhbar\' style=\'cursor:pointer;\' />\n        <h2>Keratan Akhbar</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      {
+        id: 'bt-f1-tyt-3-marker-1789461188580',
+        position: {
+          yaw: '130.11deg',
+          pitch: '-9.76deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: 'Keratan Akhbar',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/bt/markers/TYT/BT_tyt_10.jpg',
+          originalUrl: './images/bt/markers/TYT/BT_tyt_10.jpg',
+          caption: 'Keratan Akhbar'
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bt/markers/TYT/BT_tyt_10.jpg\'>\n        <img src=\'./images/bt/markers/TYT/BT_tyt_10.jpg\' alt=\'Keratan Akhbar\' style=\'cursor:pointer;\' />\n        <h2>Keratan Akhbar</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
       }
     ],
     data: {
@@ -344,98 +299,6 @@ export default [
       },
     ],
     markers: [
-      {
-        id: 'bt-f1-tyt-4-marker-1789461222404',
-        position: {
-          yaw: '116.10deg',
-          pitch: '-19.99deg'
-        },
-        size: {
-          width: 44,
-          height: 44
-        },
-        anchor: 'center center',
-        data: {
-          type: 'image',
-          title: '',
-          icon: 'info',
-          color: 'blue',
-          animated: false,
-          imageSrc: './images/bt/markers/TYT/BT_tyt_15.jpg',
-          originalUrl: './images/bt/markers/TYT/BT_tyt_15.jpg',
-          caption: ''
-        },
-        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bt/markers/TYT/BT_tyt_15.jpg\'>\n        <img src=\'./images/bt/markers/TYT/BT_tyt_15.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
-      },
-      {
-        id: 'bt-f1-tyt-4-marker-1789461244582',
-        position: {
-          yaw: '69.81deg',
-          pitch: '-20.57deg'
-        },
-        size: {
-          width: 44,
-          height: 44
-        },
-        anchor: 'center center',
-        data: {
-          type: 'image',
-          title: '',
-          icon: 'info',
-          color: 'blue',
-          animated: false,
-          imageSrc: './images/bt/markers/TYT/BT_tyt_14.jpg',
-          originalUrl: './images/bt/markers/TYT/BT_tyt_14.jpg',
-          caption: ''
-        },
-        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bt/markers/TYT/BT_tyt_14.jpg\'>\n        <img src=\'./images/bt/markers/TYT/BT_tyt_14.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
-      },
-      {
-        id: 'bt-f1-tyt-4-marker-1789461281589',
-        position: {
-          yaw: '150.75deg',
-          pitch: '-20.24deg'
-        },
-        size: {
-          width: 44,
-          height: 44
-        },
-        anchor: 'center center',
-        data: {
-          type: 'image',
-          title: '',
-          icon: 'info',
-          color: 'blue',
-          animated: false,
-          imageSrc: './images/bt/markers/TYT/BT_tyt_13.jpg',
-          originalUrl: './images/bt/markers/TYT/BT_tyt_13.jpg',
-          caption: ''
-        },
-        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bt/markers/TYT/BT_tyt_13.jpg\'>\n        <img src=\'./images/bt/markers/TYT/BT_tyt_13.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
-      },
-      {
-        id: 'bt-f1-tyt-4-marker-1789461290032',
-        position: {
-          yaw: '36.57deg',
-          pitch: '-24.73deg'
-        },
-        size: {
-          width: 44,
-          height: 44
-        },
-        anchor: 'center center',
-        data: {
-          type: 'image',
-          title: '',
-          icon: 'info',
-          color: 'blue',
-          animated: false,
-          imageSrc: './images/bt/markers/TYT/BT_tyt_20.jpg',
-          originalUrl: './images/bt/markers/TYT/BT_tyt_20.jpg',
-          caption: ''
-        },
-        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bt/markers/TYT/BT_tyt_20.jpg\'>\n        <img src=\'./images/bt/markers/TYT/BT_tyt_20.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
-      },
       {
         id: 'bt-f1-tyt-4-marker-1789461350265',
         position: {
@@ -504,6 +367,98 @@ export default [
           caption: ''
         },
         html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bt/markers/TYT/BT_tyt_19.jpg\'>\n        <img src=\'./images/bt/markers/TYT/BT_tyt_19.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      {
+        id: 'bt-f1-tyt-4-marker-1789461290032',
+        position: {
+          yaw: '36.57deg',
+          pitch: '-24.73deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: 'Model Rumah',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/bt/markers/TYT/BT_tyt_20.jpg',
+          originalUrl: './images/bt/markers/TYT/BT_tyt_20.jpg',
+          caption: 'Model Rumah'
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bt/markers/TYT/BT_tyt_20.jpg\'>\n        <img src=\'./images/bt/markers/TYT/BT_tyt_20.jpg\' alt=\'Model Rumah\' style=\'cursor:pointer;\' />\n        <h2>Model Rumah</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      {
+        id: 'bt-f1-tyt-4-marker-1789461244582',
+        position: {
+          yaw: '69.81deg',
+          pitch: '-20.57deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: 'Portrait TYT',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/bt/markers/TYT/BT_tyt_14.jpg',
+          originalUrl: './images/bt/markers/TYT/BT_tyt_14.jpg',
+          caption: 'Portrait TYT'
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bt/markers/TYT/BT_tyt_14.jpg\'>\n        <img src=\'./images/bt/markers/TYT/BT_tyt_14.jpg\' alt=\'Portrait TYT\' style=\'cursor:pointer;\' />\n        <h2>Portrait TYT</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      {
+        id: 'bt-f1-tyt-4-marker-1789461222404',
+        position: {
+          yaw: '116.10deg',
+          pitch: '-19.99deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: 'Portrait Toh Puan',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/bt/markers/TYT/BT_tyt_15.jpg',
+          originalUrl: './images/bt/markers/TYT/BT_tyt_15.jpg',
+          caption: 'Portrait Toh Puan'
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bt/markers/TYT/BT_tyt_15.jpg\'>\n        <img src=\'./images/bt/markers/TYT/BT_tyt_15.jpg\' alt=\'Portrait Toh Puan\' style=\'cursor:pointer;\' />\n        <h2>Portrait Toh Puan</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      {
+        id: 'bt-f1-tyt-4-marker-1789461281589',
+        position: {
+          yaw: '150.75deg',
+          pitch: '-20.24deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: 'Model Rumah',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/bt/markers/TYT/BT_tyt_13.jpg',
+          originalUrl: './images/bt/markers/TYT/BT_tyt_13.jpg',
+          caption: 'Model Rumah'
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bt/markers/TYT/BT_tyt_13.jpg\'>\n        <img src=\'./images/bt/markers/TYT/BT_tyt_13.jpg\' alt=\'Model Rumah\' style=\'cursor:pointer;\' />\n        <h2>Model Rumah</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
       }
     ],
     data: {
@@ -535,121 +490,6 @@ export default [
       },
     ],
     markers: [
-      {
-        id: 'bt-f1-tyt-5-marker-1789461381665',
-        position: {
-          yaw: '118.13deg',
-          pitch: '2.37deg'
-        },
-        size: {
-          width: 44,
-          height: 44
-        },
-        anchor: 'center center',
-        data: {
-          type: 'image',
-          title: '',
-          icon: 'info',
-          color: 'blue',
-          animated: false,
-          imageSrc: './images/bt/markers/TYT/BT_tyt_21.jpg',
-          originalUrl: './images/bt/markers/TYT/BT_tyt_21.jpg',
-          caption: ''
-        },
-        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bt/markers/TYT/BT_tyt_21.jpg\'>\n        <img src=\'./images/bt/markers/TYT/BT_tyt_21.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
-      },
-      {
-        id: 'bt-f1-tyt-5-marker-1789461390645',
-        position: {
-          yaw: '105.26deg',
-          pitch: '4.92deg'
-        },
-        size: {
-          width: 44,
-          height: 44
-        },
-        anchor: 'center center',
-        data: {
-          type: 'image',
-          title: '',
-          icon: 'info',
-          color: 'blue',
-          animated: false,
-          imageSrc: './images/bt/markers/TYT/BT_tyt_23.jpg',
-          originalUrl: './images/bt/markers/TYT/BT_tyt_23.jpg',
-          caption: ''
-        },
-        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bt/markers/TYT/BT_tyt_23.jpg\'>\n        <img src=\'./images/bt/markers/TYT/BT_tyt_23.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
-      },
-      {
-        id: 'bt-f1-tyt-5-marker-1789461399644',
-        position: {
-          yaw: '90.46deg',
-          pitch: '0.08deg'
-        },
-        size: {
-          width: 44,
-          height: 44
-        },
-        anchor: 'center center',
-        data: {
-          type: 'image',
-          title: '',
-          icon: 'info',
-          color: 'blue',
-          animated: false,
-          imageSrc: './images/bt/markers/TYT/BT_tyt_24.jpg',
-          originalUrl: './images/bt/markers/TYT/BT_tyt_24.jpg',
-          caption: ''
-        },
-        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bt/markers/TYT/BT_tyt_24.jpg\'>\n        <img src=\'./images/bt/markers/TYT/BT_tyt_24.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
-      },
-      {
-        id: 'bt-f1-tyt-5-marker-1789461408830',
-        position: {
-          yaw: '105.13deg',
-          pitch: '-7.98deg'
-        },
-        size: {
-          width: 44,
-          height: 44
-        },
-        anchor: 'center center',
-        data: {
-          type: 'image',
-          title: '',
-          icon: 'info',
-          color: 'blue',
-          animated: false,
-          imageSrc: './images/bt/markers/TYT/BT_tyt_22.jpg',
-          originalUrl: './images/bt/markers/TYT/BT_tyt_22.jpg',
-          caption: ''
-        },
-        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bt/markers/TYT/BT_tyt_22.jpg\'>\n        <img src=\'./images/bt/markers/TYT/BT_tyt_22.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
-      },
-      {
-        id: 'bt-f1-tyt-5-marker-1789461417444',
-        position: {
-          yaw: '72.30deg',
-          pitch: '-16.62deg'
-        },
-        size: {
-          width: 44,
-          height: 44
-        },
-        anchor: 'center center',
-        data: {
-          type: 'image',
-          title: '',
-          icon: 'info',
-          color: 'blue',
-          animated: false,
-          imageSrc: './images/bt/markers/TYT/BT_tyt_25.jpg',
-          originalUrl: './images/bt/markers/TYT/BT_tyt_25.jpg',
-          caption: ''
-        },
-        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bt/markers/TYT/BT_tyt_25.jpg\'>\n        <img src=\'./images/bt/markers/TYT/BT_tyt_25.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
-      },
       {
         id: 'bt-f1-tyt-5-marker-1789461425670',
         position: {
@@ -695,6 +535,121 @@ export default [
           caption: ''
         },
         html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bt/markers/TYT/BT_tyt_31.jpg\'>\n        <img src=\'./images/bt/markers/TYT/BT_tyt_31.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      {
+        id: 'bt-f1-tyt-5-marker-1789461399644',
+        position: {
+          yaw: '90.46deg',
+          pitch: '0.08deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: 'Portrait Karikatur TYT',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/bt/markers/TYT/BT_tyt_24.jpg',
+          originalUrl: './images/bt/markers/TYT/BT_tyt_24.jpg',
+          caption: 'Portrait Karikatur TYT'
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bt/markers/TYT/BT_tyt_24.jpg\'>\n        <img src=\'./images/bt/markers/TYT/BT_tyt_24.jpg\' alt=\'Portrait Karikatur TYT\' style=\'cursor:pointer;\' />\n        <h2>Portrait Karikatur TYT</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      {
+        id: 'bt-f1-tyt-5-marker-1789461390645',
+        position: {
+          yaw: '105.26deg',
+          pitch: '4.92deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: 'Portrait Karikatur TYT',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/bt/markers/TYT/BT_tyt_23.jpg',
+          originalUrl: './images/bt/markers/TYT/BT_tyt_23.jpg',
+          caption: 'Portrait Karikatur TYT'
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bt/markers/TYT/BT_tyt_23.jpg\'>\n        <img src=\'./images/bt/markers/TYT/BT_tyt_23.jpg\' alt=\'Portrait Karikatur TYT\' style=\'cursor:pointer;\' />\n        <h2>Portrait Karikatur TYT</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      {
+        id: 'bt-f1-tyt-5-marker-1789461381665',
+        position: {
+          yaw: '118.13deg',
+          pitch: '2.37deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: 'Portrait Karikatur TYT',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/bt/markers/TYT/BT_tyt_21.jpg',
+          originalUrl: './images/bt/markers/TYT/BT_tyt_21.jpg',
+          caption: 'Portrait Karikatur TYT'
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bt/markers/TYT/BT_tyt_21.jpg\'>\n        <img src=\'./images/bt/markers/TYT/BT_tyt_21.jpg\' alt=\'Portrait Karikatur TYT\' style=\'cursor:pointer;\' />\n        <h2>Portrait Karikatur TYT</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      {
+        id: 'bt-f1-tyt-5-marker-1789461408830',
+        position: {
+          yaw: '105.13deg',
+          pitch: '-7.98deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: 'Portrait Karikatur TYT',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/bt/markers/TYT/BT_tyt_22.jpg',
+          originalUrl: './images/bt/markers/TYT/BT_tyt_22.jpg',
+          caption: 'Portrait Karikatur TYT'
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bt/markers/TYT/BT_tyt_22.jpg\'>\n        <img src=\'./images/bt/markers/TYT/BT_tyt_22.jpg\' alt=\'Portrait Karikatur TYT\' style=\'cursor:pointer;\' />\n        <h2>Portrait Karikatur TYT</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      {
+        id: 'bt-f1-tyt-5-marker-1789461417444',
+        position: {
+          yaw: '72.30deg',
+          pitch: '-16.62deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: 'Model Masjid Negeri Pulau Pinang',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/bt/markers/TYT/BT_tyt_25.jpg',
+          originalUrl: './images/bt/markers/TYT/BT_tyt_25.jpg',
+          caption: 'Model Masjid Negeri Pulau Pinang'
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bt/markers/TYT/BT_tyt_25.jpg\'>\n        <img src=\'./images/bt/markers/TYT/BT_tyt_25.jpg\' alt=\'Model Masjid Negeri Pulau Pinang\' style=\'cursor:pointer;\' />\n        <h2>Model Masjid Negeri Pulau Pinang</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
       }
     ],
     data: {
@@ -877,29 +832,6 @@ export default [
     ],
     markers: [
       {
-        id: 'bt-f1-tyt-7-marker-1789461537550',
-        position: {
-          yaw: '255.72deg',
-          pitch: '-5.07deg'
-        },
-        size: {
-          width: 44,
-          height: 44
-        },
-        anchor: 'center center',
-        data: {
-          type: 'image',
-          title: '',
-          icon: 'info',
-          color: 'blue',
-          animated: false,
-          imageSrc: './images/bt/markers/TYT/BT_tyt_43.jpg',
-          originalUrl: './images/bt/markers/TYT/BT_tyt_43.jpg',
-          caption: ''
-        },
-        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bt/markers/TYT/BT_tyt_43.jpg\'>\n        <img src=\'./images/bt/markers/TYT/BT_tyt_43.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
-      },
-      {
         id: 'bt-f1-tyt-7-marker-1789461610587',
         position: {
           yaw: '65.70deg',
@@ -912,15 +844,38 @@ export default [
         anchor: 'center center',
         data: {
           type: 'image',
-          title: '',
+          title: 'Keris',
           icon: 'info',
           color: 'blue',
           animated: false,
           imageSrc: './images/bt/markers/TYT/BT_tyt_33.jpg',
           originalUrl: './images/bt/markers/TYT/BT_tyt_33.jpg',
-          caption: ''
+          caption: 'Keris'
         },
-        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bt/markers/TYT/BT_tyt_33.jpg\'>\n        <img src=\'./images/bt/markers/TYT/BT_tyt_33.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bt/markers/TYT/BT_tyt_33.jpg\'>\n        <img src=\'./images/bt/markers/TYT/BT_tyt_33.jpg\' alt=\'Keris\' style=\'cursor:pointer;\' />\n        <h2>Keris</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      {
+        id: 'bt-f1-tyt-7-marker-1789461537550',
+        position: {
+          yaw: '255.72deg',
+          pitch: '-5.07deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: 'Informasi',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/bt/markers/TYT/BT_tyt_43.jpg',
+          originalUrl: './images/bt/markers/TYT/BT_tyt_43.jpg',
+          caption: 'Informasi'
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bt/markers/TYT/BT_tyt_43.jpg\'>\n        <img src=\'./images/bt/markers/TYT/BT_tyt_43.jpg\' alt=\'Informasi\' style=\'cursor:pointer;\' />\n        <h2>Informasi</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
       }
     ],
     data: {
@@ -948,52 +903,6 @@ export default [
     ],
     markers: [
       {
-        id: 'bt-f1-tyt-8-marker-1789461579113',
-        position: {
-          yaw: '164.02deg',
-          pitch: '-36.86deg'
-        },
-        size: {
-          width: 44,
-          height: 44
-        },
-        anchor: 'center center',
-        data: {
-          type: 'image',
-          title: '',
-          icon: 'info',
-          color: 'blue',
-          animated: false,
-          imageSrc: './images/bt/markers/TYT/BT_tyt_32.jpg',
-          originalUrl: './images/bt/markers/TYT/BT_tyt_32.jpg',
-          caption: ''
-        },
-        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bt/markers/TYT/BT_tyt_32.jpg\'>\n        <img src=\'./images/bt/markers/TYT/BT_tyt_32.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
-      },
-      {
-        id: 'bt-f1-tyt-8-marker-1789461591624',
-        position: {
-          yaw: '233.57deg',
-          pitch: '-29.94deg'
-        },
-        size: {
-          width: 44,
-          height: 44
-        },
-        anchor: 'center center',
-        data: {
-          type: 'image',
-          title: '',
-          icon: 'info',
-          color: 'blue',
-          animated: false,
-          imageSrc: './images/bt/markers/TYT/BT_tyt_31.jpg',
-          originalUrl: './images/bt/markers/TYT/BT_tyt_31.jpg',
-          caption: ''
-        },
-        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bt/markers/TYT/BT_tyt_31.jpg\'>\n        <img src=\'./images/bt/markers/TYT/BT_tyt_31.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
-      },
-      {
         id: 'bt-f1-tyt-8-marker-1789461599580',
         position: {
           yaw: '305.06deg',
@@ -1016,6 +925,15 @@ export default [
         },
         html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bt/markers/TYT/BT_tyt_33.jpg\'>\n        <img src=\'./images/bt/markers/TYT/BT_tyt_33.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
       },
+      
+      
+      
+      
+      
+      
+      
+      
+      
       {
         id: 'bt-f1-tyt-8-marker-1789461622529',
         position: {
@@ -1029,153 +947,15 @@ export default [
         anchor: 'center center',
         data: {
           type: 'image',
-          title: '',
+          title: 'Portrait TYT',
           icon: 'info',
           color: 'blue',
           animated: false,
           imageSrc: './images/bt/markers/TYT/BT_tyt_36.jpg',
           originalUrl: './images/bt/markers/TYT/BT_tyt_36.jpg',
-          caption: ''
+          caption: 'Portrait TYT'
         },
-        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bt/markers/TYT/BT_tyt_36.jpg\'>\n        <img src=\'./images/bt/markers/TYT/BT_tyt_36.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
-      },
-      {
-        id: 'bt-f1-tyt-8-marker-1789461637476',
-        position: {
-          yaw: '8.79deg',
-          pitch: '-50.08deg'
-        },
-        size: {
-          width: 44,
-          height: 44
-        },
-        anchor: 'center center',
-        data: {
-          type: 'image',
-          title: '',
-          icon: 'info',
-          color: 'blue',
-          animated: false,
-          imageSrc: './images/bt/markers/TYT/BT_tyt_37.jpg',
-          originalUrl: './images/bt/markers/TYT/BT_tyt_37.jpg',
-          caption: ''
-        },
-        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bt/markers/TYT/BT_tyt_37.jpg\'>\n        <img src=\'./images/bt/markers/TYT/BT_tyt_37.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
-      },
-      {
-        id: 'bt-f1-tyt-8-marker-1789461653454',
-        position: {
-          yaw: '104.78deg',
-          pitch: '0.03deg'
-        },
-        size: {
-          width: 44,
-          height: 44
-        },
-        anchor: 'center center',
-        data: {
-          type: 'image',
-          title: '',
-          icon: 'info',
-          color: 'blue',
-          animated: false,
-          imageSrc: './images/bt/markers/TYT/BT_tyt_42.jpg',
-          originalUrl: './images/bt/markers/TYT/BT_tyt_42.jpg',
-          caption: ''
-        },
-        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bt/markers/TYT/BT_tyt_42.jpg\'>\n        <img src=\'./images/bt/markers/TYT/BT_tyt_42.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
-      },
-      {
-        id: 'bt-f1-tyt-8-marker-1789461662052',
-        position: {
-          yaw: '51.75deg',
-          pitch: '11.02deg'
-        },
-        size: {
-          width: 44,
-          height: 44
-        },
-        anchor: 'center center',
-        data: {
-          type: 'image',
-          title: '',
-          icon: 'info',
-          color: 'blue',
-          animated: false,
-          imageSrc: './images/bt/markers/TYT/BT_tyt_38.jpg',
-          originalUrl: './images/bt/markers/TYT/BT_tyt_38.jpg',
-          caption: ''
-        },
-        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bt/markers/TYT/BT_tyt_38.jpg\'>\n        <img src=\'./images/bt/markers/TYT/BT_tyt_38.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
-      },
-      {
-        id: 'bt-f1-tyt-8-marker-1789461681533',
-        position: {
-          yaw: '52.60deg',
-          pitch: '-17.74deg'
-        },
-        size: {
-          width: 44,
-          height: 44
-        },
-        anchor: 'center center',
-        data: {
-          type: 'image',
-          title: '',
-          icon: 'info',
-          color: 'blue',
-          animated: false,
-          imageSrc: './images/bt/markers/TYT/BT_tyt_39.jpg',
-          originalUrl: './images/bt/markers/TYT/BT_tyt_39.jpg',
-          caption: ''
-        },
-        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bt/markers/TYT/BT_tyt_39.jpg\'>\n        <img src=\'./images/bt/markers/TYT/BT_tyt_39.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
-      },
-      {
-        id: 'bt-f1-tyt-8-marker-1789461699952',
-        position: {
-          yaw: '66.42deg',
-          pitch: '-11.76deg'
-        },
-        size: {
-          width: 44,
-          height: 44
-        },
-        anchor: 'center center',
-        data: {
-          type: 'image',
-          title: '',
-          icon: 'info',
-          color: 'blue',
-          animated: false,
-          imageSrc: './images/bt/markers/TYT/BT_tyt_40.jpg',
-          originalUrl: './images/bt/markers/TYT/BT_tyt_40.jpg',
-          caption: ''
-        },
-        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bt/markers/TYT/BT_tyt_40.jpg\'>\n        <img src=\'./images/bt/markers/TYT/BT_tyt_40.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
-      },
-      {
-        id: 'bt-f1-tyt-8-marker-1789461716371',
-        position: {
-          yaw: '61.97deg',
-          pitch: '-32.52deg'
-        },
-        size: {
-          width: 44,
-          height: 44
-        },
-        anchor: 'center center',
-        data: {
-          type: 'image',
-          title: '',
-          icon: 'info',
-          color: 'blue',
-          animated: false,
-          imageSrc: './images/bt/markers/TYT/BT_tyt_41.jpg',
-          originalUrl: './images/bt/markers/TYT/BT_tyt_41.jpg',
-          caption: ''
-        },
-        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bt/markers/TYT/BT_tyt_41.jpg\'>\n        <img src=\'./images/bt/markers/TYT/BT_tyt_41.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bt/markers/TYT/BT_tyt_36.jpg\'>\n        <img src=\'./images/bt/markers/TYT/BT_tyt_36.jpg\' alt=\'Portrait TYT\' style=\'cursor:pointer;\' />\n        <h2>Portrait TYT</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
       },
       {
         id: 'bt-f1-tyt-8-marker-1789461726645',
@@ -1190,15 +970,15 @@ export default [
         anchor: 'center center',
         data: {
           type: 'image',
-          title: '',
+          title: 'Portrait TYT',
           icon: 'info',
           color: 'blue',
           animated: false,
           imageSrc: './images/bt/markers/TYT/BT_tyt_35.jpg',
           originalUrl: './images/bt/markers/TYT/BT_tyt_35.jpg',
-          caption: ''
+          caption: 'Portrait TYT'
         },
-        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bt/markers/TYT/BT_tyt_35.jpg\'>\n        <img src=\'./images/bt/markers/TYT/BT_tyt_35.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bt/markers/TYT/BT_tyt_35.jpg\'>\n        <img src=\'./images/bt/markers/TYT/BT_tyt_35.jpg\' alt=\'Portrait TYT\' style=\'cursor:pointer;\' />\n        <h2>Portrait TYT</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
       },
       {
         id: 'bt-f1-tyt-8-marker-1789461758808',
@@ -1213,15 +993,199 @@ export default [
         anchor: 'center center',
         data: {
           type: 'image',
-          title: '',
+          title: 'Portrait TYT',
           icon: 'info',
           color: 'blue',
           animated: false,
           imageSrc: './images/bt/markers/TYT/BT_tyt_34.jpg',
           originalUrl: './images/bt/markers/TYT/BT_tyt_34.jpg',
-          caption: ''
+          caption: 'Portrait TYT'
         },
-        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bt/markers/TYT/BT_tyt_34.jpg\'>\n        <img src=\'./images/bt/markers/TYT/BT_tyt_34.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bt/markers/TYT/BT_tyt_34.jpg\'>\n        <img src=\'./images/bt/markers/TYT/BT_tyt_34.jpg\' alt=\'Portrait TYT\' style=\'cursor:pointer;\' />\n        <h2>Portrait TYT</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      {
+        id: 'bt-f1-tyt-8-marker-1789461662052',
+        position: {
+          yaw: '51.75deg',
+          pitch: '11.02deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: 'Portrait TYT',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/bt/markers/TYT/BT_tyt_38.jpg',
+          originalUrl: './images/bt/markers/TYT/BT_tyt_38.jpg',
+          caption: 'Portrait TYT'
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bt/markers/TYT/BT_tyt_38.jpg\'>\n        <img src=\'./images/bt/markers/TYT/BT_tyt_38.jpg\' alt=\'Portrait TYT\' style=\'cursor:pointer;\' />\n        <h2>Portrait TYT</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      {
+        id: 'bt-f1-tyt-8-marker-1789461699952',
+        position: {
+          yaw: '66.42deg',
+          pitch: '-11.76deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: 'Portrait TYT',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/bt/markers/TYT/BT_tyt_40.jpg',
+          originalUrl: './images/bt/markers/TYT/BT_tyt_40.jpg',
+          caption: 'Portrait TYT'
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bt/markers/TYT/BT_tyt_40.jpg\'>\n        <img src=\'./images/bt/markers/TYT/BT_tyt_40.jpg\' alt=\'Portrait TYT\' style=\'cursor:pointer;\' />\n        <h2>Portrait TYT</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      {
+        id: 'bt-f1-tyt-8-marker-1789461637476',
+        position: {
+          yaw: '8.79deg',
+          pitch: '-50.08deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: 'Pameran',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/bt/markers/TYT/BT_tyt_37.jpg',
+          originalUrl: './images/bt/markers/TYT/BT_tyt_37.jpg',
+          caption: 'Pameran'
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bt/markers/TYT/BT_tyt_37.jpg\'>\n        <img src=\'./images/bt/markers/TYT/BT_tyt_37.jpg\' alt=\'Pameran\' style=\'cursor:pointer;\' />\n        <h2>Pameran</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      {
+        id: 'bt-f1-tyt-8-marker-1789461716371',
+        position: {
+          yaw: '61.97deg',
+          pitch: '-32.52deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: 'Pameran',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/bt/markers/TYT/BT_tyt_41.jpg',
+          originalUrl: './images/bt/markers/TYT/BT_tyt_41.jpg',
+          caption: 'Pameran'
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bt/markers/TYT/BT_tyt_41.jpg\'>\n        <img src=\'./images/bt/markers/TYT/BT_tyt_41.jpg\' alt=\'Pameran\' style=\'cursor:pointer;\' />\n        <h2>Pameran</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      {
+        id: 'bt-f1-tyt-8-marker-1789461681533',
+        position: {
+          yaw: '52.60deg',
+          pitch: '-17.74deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: 'Pameran',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/bt/markers/TYT/BT_tyt_39.jpg',
+          originalUrl: './images/bt/markers/TYT/BT_tyt_39.jpg',
+          caption: 'Pameran'
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bt/markers/TYT/BT_tyt_39.jpg\'>\n        <img src=\'./images/bt/markers/TYT/BT_tyt_39.jpg\' alt=\'Pameran\' style=\'cursor:pointer;\' />\n        <h2>Pameran</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      {
+        id: 'bt-f1-tyt-8-marker-1789461653454',
+        position: {
+          yaw: '104.78deg',
+          pitch: '0.03deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: 'Poster TYT',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/bt/markers/TYT/BT_tyt_42.jpg',
+          originalUrl: './images/bt/markers/TYT/BT_tyt_42.jpg',
+          caption: 'Poster TYT'
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bt/markers/TYT/BT_tyt_42.jpg\'>\n        <img src=\'./images/bt/markers/TYT/BT_tyt_42.jpg\' alt=\'Poster TYT\' style=\'cursor:pointer;\' />\n        <h2>Poster TYT</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      {
+        id: 'bt-f1-tyt-8-marker-1789461579113',
+        position: {
+          yaw: '164.02deg',
+          pitch: '-36.86deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: 'Pameran Pinggan dan Cawan Seramik',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/bt/markers/TYT/BT_tyt_32.jpg',
+          originalUrl: './images/bt/markers/TYT/BT_tyt_32.jpg',
+          caption: 'Pameran Pinggan dan Cawan Seramik'
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bt/markers/TYT/BT_tyt_32.jpg\'>\n        <img src=\'./images/bt/markers/TYT/BT_tyt_32.jpg\' alt=\'Pameran Pinggan dan Cawan Seramik\' style=\'cursor:pointer;\' />\n        <h2>Pameran Pinggan dan Cawan Seramik</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      {
+        id: 'bt-f1-tyt-8-marker-1789461591624',
+        position: {
+          yaw: '233.57deg',
+          pitch: '-29.94deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: 'Pameran Anugerah dan Pengiktirafan',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/bt/markers/TYT/BT_tyt_31.jpg',
+          originalUrl: './images/bt/markers/TYT/BT_tyt_31.jpg',
+          caption: 'Pameran Anugerah dan Pengiktirafan'
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bt/markers/TYT/BT_tyt_31.jpg\'>\n        <img src=\'./images/bt/markers/TYT/BT_tyt_31.jpg\' alt=\'Pameran Anugerah dan Pengiktirafan\' style=\'cursor:pointer;\' />\n        <h2>Pameran Anugerah dan Pengiktirafan</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
       }
     ],
     data: {
@@ -1300,15 +1264,15 @@ export default [
         anchor: 'center center',
         data: {
           type: 'image',
-          title: '',
+          title: 'Golf',
           icon: 'info',
           color: 'blue',
           animated: false,
           imageSrc: './images/bt/markers/TYT/BT_tyt_44.jpg',
           originalUrl: './images/bt/markers/TYT/BT_tyt_44.jpg',
-          caption: ''
+          caption: 'Golf'
         },
-        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bt/markers/TYT/BT_tyt_44.jpg\'>\n        <img src=\'./images/bt/markers/TYT/BT_tyt_44.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bt/markers/TYT/BT_tyt_44.jpg\'>\n        <img src=\'./images/bt/markers/TYT/BT_tyt_44.jpg\' alt=\'Golf\' style=\'cursor:pointer;\' />\n        <h2>Golf</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
       }
     ],
     data: {
@@ -1340,52 +1304,6 @@ export default [
       },
     ],
     markers: [
-      {
-        id: 'bt-f1-tyt-11-marker-1789461900799',
-        position: {
-          yaw: '109.22deg',
-          pitch: '-31.75deg'
-        },
-        size: {
-          width: 44,
-          height: 44
-        },
-        anchor: 'center center',
-        data: {
-          type: 'image',
-          title: '',
-          icon: 'info',
-          color: 'blue',
-          animated: false,
-          imageSrc: './images/bt/markers/TYT/BT_tyt_45.jpg',
-          originalUrl: './images/bt/markers/TYT/BT_tyt_45.jpg',
-          caption: ''
-        },
-        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bt/markers/TYT/BT_tyt_45.jpg\'>\n        <img src=\'./images/bt/markers/TYT/BT_tyt_45.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
-      },
-      {
-        id: 'bt-f1-tyt-11-marker-1789461912827',
-        position: {
-          yaw: '51.68deg',
-          pitch: '-17.14deg'
-        },
-        size: {
-          width: 44,
-          height: 44
-        },
-        anchor: 'center center',
-        data: {
-          type: 'image',
-          title: '',
-          icon: 'info',
-          color: 'blue',
-          animated: false,
-          imageSrc: './images/bt/markers/TYT/BT_tyt_46.jpg',
-          originalUrl: './images/bt/markers/TYT/BT_tyt_46.jpg',
-          caption: ''
-        },
-        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bt/markers/TYT/BT_tyt_46.jpg\'>\n        <img src=\'./images/bt/markers/TYT/BT_tyt_46.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
-      },
       {
         id: 'bt-f1-tyt-11-marker-1789461919512',
         position: {
@@ -1431,6 +1349,52 @@ export default [
           caption: ''
         },
         html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bt/markers/TYT/BT_tyt_47.jpg\'>\n        <img src=\'./images/bt/markers/TYT/BT_tyt_47.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      {
+        id: 'bt-f1-tyt-11-marker-1789461900799',
+        position: {
+          yaw: '109.22deg',
+          pitch: '-31.75deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: 'Kerusi Akar Kayu',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/bt/markers/TYT/BT_tyt_45.jpg',
+          originalUrl: './images/bt/markers/TYT/BT_tyt_45.jpg',
+          caption: 'Kerusi Akar Kayu'
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bt/markers/TYT/BT_tyt_45.jpg\'>\n        <img src=\'./images/bt/markers/TYT/BT_tyt_45.jpg\' alt=\'Kerusi Akar Kayu\' style=\'cursor:pointer;\' />\n        <h2>Kerusi Akar Kayu</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      {
+        id: 'bt-f1-tyt-11-marker-1789461912827',
+        position: {
+          yaw: '51.68deg',
+          pitch: '-17.14deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: 'Singapore Airlines',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/bt/markers/TYT/BT_tyt_46.jpg',
+          originalUrl: './images/bt/markers/TYT/BT_tyt_46.jpg',
+          caption: 'Singapore Airlines'
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bt/markers/TYT/BT_tyt_46.jpg\'>\n        <img src=\'./images/bt/markers/TYT/BT_tyt_46.jpg\' alt=\'Singapore Airlines\' style=\'cursor:pointer;\' />\n        <h2>Singapore Airlines</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
       }
     ],
     data: {
@@ -1480,15 +1444,15 @@ export default [
         anchor: 'center center',
         data: {
           type: 'image',
-          title: '',
+          title: 'Portrait TYT',
           icon: 'info',
           color: 'blue',
           animated: false,
           imageSrc: './images/bt/markers/TYT/BT_tyt_53.jpg',
           originalUrl: './images/bt/markers/TYT/BT_tyt_53.jpg',
-          caption: ''
+          caption: 'Portrait TYT'
         },
-        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bt/markers/TYT/BT_tyt_53.jpg\'>\n        <img src=\'./images/bt/markers/TYT/BT_tyt_53.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bt/markers/TYT/BT_tyt_53.jpg\'>\n        <img src=\'./images/bt/markers/TYT/BT_tyt_53.jpg\' alt=\'Portrait TYT\' style=\'cursor:pointer;\' />\n        <h2>Portrait TYT</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
       }
     ],
     data: {

@@ -42,15 +42,15 @@ export default [
         anchor: 'center center',
         data: {
           type: 'image',
-          title: '',
+          title: 'Papar Layar PS4',
           icon: 'info',
           color: 'blue',
           animated: false,
           imageSrc: './images/bt/markers/E-SPORT/BT_esport_1.jpg',
           originalUrl: './images/bt/markers/E-SPORT/BT_esport_1.jpg',
-          caption: ''
+          caption: 'Papar Layar PS4'
         },
-        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bt/markers/E-SPORT/BT_esport_1.jpg\'>\n        <img src=\'./images/bt/markers/E-SPORT/BT_esport_1.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bt/markers/E-SPORT/BT_esport_1.jpg\'>\n        <img src=\'./images/bt/markers/E-SPORT/BT_esport_1.jpg\' alt=\'Papar Layar PS4\' style=\'cursor:pointer;\' />\n        <h2>Papar Layar PS4</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
       },
       {
         id: 'bt-f1-kids-1-marker-1789460871368',
@@ -65,15 +65,15 @@ export default [
         anchor: 'center center',
         data: {
           type: 'image',
-          title: '',
+          title: 'Papar Layar PS5',
           icon: 'info',
           color: 'blue',
           animated: false,
           imageSrc: './images/bt/markers/E-SPORT/BT_esport_2.jpg',
           originalUrl: './images/bt/markers/E-SPORT/BT_esport_2.jpg',
-          caption: ''
+          caption: 'Papar Layar PS5'
         },
-        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bt/markers/E-SPORT/BT_esport_2.jpg\'>\n        <img src=\'./images/bt/markers/E-SPORT/BT_esport_2.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bt/markers/E-SPORT/BT_esport_2.jpg\'>\n        <img src=\'./images/bt/markers/E-SPORT/BT_esport_2.jpg\' alt=\'Papar Layar PS5\' style=\'cursor:pointer;\' />\n        <h2>Papar Layar PS5</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
       },
       {
         id: 'bt-f1-kids-1-marker-1789460883528',
@@ -88,15 +88,15 @@ export default [
         anchor: 'center center',
         data: {
           type: 'image',
-          title: '',
+          title: 'Diorama Rumah Kampung',
           icon: 'info',
           color: 'blue',
           animated: false,
           imageSrc: './images/bt/markers/E-SPORT/BT_esport_3.jpg',
           originalUrl: './images/bt/markers/E-SPORT/BT_esport_3.jpg',
-          caption: ''
+          caption: 'Diorama Rumah Kampung'
         },
-        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bt/markers/E-SPORT/BT_esport_3.jpg\'>\n        <img src=\'./images/bt/markers/E-SPORT/BT_esport_3.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bt/markers/E-SPORT/BT_esport_3.jpg\'>\n        <img src=\'./images/bt/markers/E-SPORT/BT_esport_3.jpg\' alt=\'Diorama Rumah Kampung\' style=\'cursor:pointer;\' />\n        <h2>Diorama Rumah Kampung</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
       }
     ],
     data: {
@@ -174,29 +174,7 @@ export default [
         },
         html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bt/markers/E-SPORT/BT_esport_1.jpg\'>\n        <img src=\'./images/bt/markers/E-SPORT/BT_esport_1.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
       },
-      {
-        id: 'bt-f1-kids-2-marker-1789460907305',
-        position: {
-          yaw: '208.02deg',
-          pitch: '-9.32deg'
-        },
-        size: {
-          width: 44,
-          height: 44
-        },
-        anchor: 'center center',
-        data: {
-          type: 'image',
-          title: '',
-          icon: 'info',
-          color: 'blue',
-          animated: false,
-          imageSrc: './images/bt/markers/E-SPORT/BT_esport_5.jpg',
-          originalUrl: './images/bt/markers/E-SPORT/BT_esport_5.jpg',
-          caption: ''
-        },
-        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bt/markers/E-SPORT/BT_esport_5.jpg\'>\n        <img src=\'./images/bt/markers/E-SPORT/BT_esport_5.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
-      },
+      
       {
         id: 'bt-f1-kids-2-marker-1789460953446',
         position: {
@@ -210,15 +188,38 @@ export default [
         anchor: 'center center',
         data: {
           type: 'image',
-          title: '',
+          title: 'Surat Akhbar',
           icon: 'info',
           color: 'blue',
           animated: false,
           imageSrc: './images/bt/markers/E-SPORT/BT_esport_4.jpg',
           originalUrl: './images/bt/markers/E-SPORT/BT_esport_4.jpg',
-          caption: ''
+          caption: 'Surat Akhbar'
         },
-        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bt/markers/E-SPORT/BT_esport_4.jpg\'>\n        <img src=\'./images/bt/markers/E-SPORT/BT_esport_4.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bt/markers/E-SPORT/BT_esport_4.jpg\'>\n        <img src=\'./images/bt/markers/E-SPORT/BT_esport_4.jpg\' alt=\'Surat Akhbar\' style=\'cursor:pointer;\' />\n        <h2>Surat Akhbar</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      {
+        id: 'bt-f1-kids-2-marker-1789460907305',
+        position: {
+          yaw: '208.02deg',
+          pitch: '-9.32deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: 'Anugerah',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/bt/markers/E-SPORT/BT_esport_5.jpg',
+          originalUrl: './images/bt/markers/E-SPORT/BT_esport_5.jpg',
+          caption: 'Anugerah'
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bt/markers/E-SPORT/BT_esport_5.jpg\'>\n        <img src=\'./images/bt/markers/E-SPORT/BT_esport_5.jpg\' alt=\'Anugerah\' style=\'cursor:pointer;\' />\n        <h2>Anugerah</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
       }
     ],
     data: {
@@ -268,15 +269,15 @@ export default [
         anchor: 'center center',
         data: {
           type: 'image',
-          title: '',
+          title: 'Pickatale',
           icon: 'info',
           color: 'blue',
           animated: false,
           imageSrc: './images/bt/markers/E-SPORT/BT_esport_6.jpg',
           originalUrl: './images/bt/markers/E-SPORT/BT_esport_6.jpg',
-          caption: ''
+          caption: 'Pickatale'
         },
-        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bt/markers/E-SPORT/BT_esport_6.jpg\'>\n        <img src=\'./images/bt/markers/E-SPORT/BT_esport_6.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bt/markers/E-SPORT/BT_esport_6.jpg\'>\n        <img src=\'./images/bt/markers/E-SPORT/BT_esport_6.jpg\' alt=\'Pickatale\' style=\'cursor:pointer;\' />\n        <h2>Pickatale</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
       }
     ],
     data: {
@@ -457,29 +458,6 @@ export default [
     ],
     markers: [
       {
-        id: 'bt-f1-kids-7-marker-1789462139861',
-        position: {
-          yaw: '26.58deg',
-          pitch: '-43.73deg'
-        },
-        size: {
-          width: 44,
-          height: 44
-        },
-        anchor: 'center center',
-        data: {
-          type: 'image',
-          title: '',
-          icon: 'info',
-          color: 'blue',
-          animated: false,
-          imageSrc: './images/bt/markers/KANAK-KANAK/BT_KNK_1.jpg',
-          originalUrl: './images/bt/markers/KANAK-KANAK/BT_KNK_1.jpg',
-          caption: ''
-        },
-        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bt/markers/KANAK-KANAK/BT_KNK_1.jpg\'>\n        <img src=\'./images/bt/markers/KANAK-KANAK/BT_KNK_1.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
-      },
-      {
         id: 'bt-f1-kids-7-marker-1789462157949',
         position: {
           yaw: '227.61deg',
@@ -492,15 +470,38 @@ export default [
         anchor: 'center center',
         data: {
           type: 'image',
-          title: '',
+          title: 'Bahan Kanak-kanak',
           icon: 'info',
           color: 'blue',
           animated: false,
           imageSrc: './images/bt/markers/KANAK-KANAK/BT_KNK_2.jpg',
           originalUrl: './images/bt/markers/KANAK-KANAK/BT_KNK_2.jpg',
-          caption: ''
+          caption: 'Bahan Kanak-kanak'
         },
-        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bt/markers/KANAK-KANAK/BT_KNK_2.jpg\'>\n        <img src=\'./images/bt/markers/KANAK-KANAK/BT_KNK_2.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bt/markers/KANAK-KANAK/BT_KNK_2.jpg\'>\n        <img src=\'./images/bt/markers/KANAK-KANAK/BT_KNK_2.jpg\' alt=\'Bahan Kanak-kanak\' style=\'cursor:pointer;\' />\n        <h2>Bahan Kanak-kanak</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      {
+        id: 'bt-f1-kids-7-marker-1789462139861',
+        position: {
+          yaw: '26.58deg',
+          pitch: '-43.73deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: 'Bahasa Tamil',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/bt/markers/KANAK-KANAK/BT_KNK_1.jpg',
+          originalUrl: './images/bt/markers/KANAK-KANAK/BT_KNK_1.jpg',
+          caption: 'Bahasa Tamil'
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bt/markers/KANAK-KANAK/BT_KNK_1.jpg\'>\n        <img src=\'./images/bt/markers/KANAK-KANAK/BT_KNK_1.jpg\' alt=\'Bahasa Tamil\' style=\'cursor:pointer;\' />\n        <h2>Bahasa Tamil</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
       }
     ],
     data: {
