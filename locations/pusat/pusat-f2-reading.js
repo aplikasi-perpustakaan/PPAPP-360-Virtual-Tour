@@ -99,7 +99,50 @@ export default [
         name: 'Go to Floor 2 - Stairs 1'
       },
     ],
-    markers: [],
+    markers: [
+      {
+        id: 'pusat-f2-reading-3-marker-1789635196324',
+        position: {
+          yaw: '124.93deg',
+          pitch: '14.49deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Bahasa Melayu (Rujukan)',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'info\' data-color=\'blue\'>\n        <h2>Bahasa Melayu (Rujukan)</h2>\n        <p></p>\n      </custom-marker>'
+      },
+      {
+        id: 'pusat-f2-reading-3-marker-1789635225746',
+        position: {
+          yaw: '192.90deg',
+          pitch: '10.55deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Bahasa Cina (Rujukan)',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'info\' data-color=\'blue\'>\n        <h2>Bahasa Cina (Rujukan)</h2>\n        <p></p>\n      </custom-marker>'
+      }
+    ],
     data: {
       floor: 'f2',
       tags: [
@@ -133,7 +176,115 @@ export default [
         targetPitch: '-2.54deg'
       },
     ],
-    markers: [],
+    markers: [
+      {
+        id: 'pusat-f2-reading-4-marker-1789635251710',
+        position: {
+          yaw: '81.94deg',
+          pitch: '3.42deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Bahasa Melayu (Rujukan)',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'info\' data-color=\'blue\'>\n        <h2>Bahasa Melayu (Rujukan)</h2>\n        <p></p>\n      </custom-marker>'
+      },
+      {
+        id: 'pusat-f2-reading-4-marker-1789635270681',
+        position: {
+          yaw: '94.07deg',
+          pitch: '6.69deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Bahasa Tamil (Rujukan)',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'info\' data-color=\'blue\'>\n        <h2>Bahasa Tamil (Rujukan)</h2>\n        <p></p>\n      </custom-marker>'
+      },
+      {
+        id: 'pusat-f2-reading-4-marker-1789635303098',
+        position: {
+          yaw: '138.07deg',
+          pitch: '12.97deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Ensiklopedia Bahasa Melayu',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'info\' data-color=\'blue\'>\n        <h2>Ensiklopedia Bahasa Melayu</h2>\n        <p></p>\n      </custom-marker>'
+      },
+      {
+        id: 'pusat-f2-reading-4-marker-1789635446576',
+        position: {
+          yaw: '205.13deg',
+          pitch: '9.10deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Ensiklopedia Bahasa Inggeris',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'info\' data-color=\'blue\'>\n        <h2>Ensiklopedia Bahasa Inggeris</h2>\n        <p></p>\n      </custom-marker>'
+      },
+      {
+        id: 'pusat-f2-reading-4-marker-1789635591693',
+        position: {
+          yaw: '284.81deg',
+          pitch: '-0.66deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: 'Internet',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/pusat/markers/FLOOR-2/PUSAT_F2_8.jpg',
+          originalUrl: './images/pusat/markers/FLOOR-2/PUSAT_F2_8.jpg',
+          caption: 'Internet'
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/pusat/markers/FLOOR-2/PUSAT_F2_8.jpg\'>\n        <img src=\'./images/pusat/markers/FLOOR-2/PUSAT_F2_8.jpg\' alt=\'Internet\' style=\'cursor:pointer;\' />\n        <h2>Internet</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      }
+    ],
     data: {
       floor: 'f2',
       tags: [
@@ -179,7 +330,50 @@ export default [
         targetPitch: '0.27deg'
       },
     ],
-    markers: [],
+    markers: [
+      {
+        id: 'pusat-f2-reading-5-marker-1789635473599',
+        position: {
+          yaw: '74.23deg',
+          pitch: '3.18deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Ensiklopedia Bahasa Inggeris',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'info\' data-color=\'blue\'>\n        <h2>Ensiklopedia Bahasa Inggeris</h2>\n        <p></p>\n      </custom-marker>'
+      },
+      {
+        id: 'pusat-f2-reading-5-marker-1789635484731',
+        position: {
+          yaw: '86.12deg',
+          pitch: '7.05deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Koleksi Akta',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'info\' data-color=\'blue\'>\n        <h2>Koleksi Akta</h2>\n        <p></p>\n      </custom-marker>'
+      }
+    ],
     data: {
       floor: 'f2',
       tags: [
@@ -204,7 +398,31 @@ export default [
         targetPitch: '-2.17deg'
       },
     ],
-    markers: [],
+    markers: [
+      {
+        id: 'pusat-f2-reading-6-marker-1789635521022',
+        position: {
+          yaw: '51.53deg',
+          pitch: '-20.93deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: 'Mikrofilem',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/pusat/markers/FLOOR-2/PUSAT_F2_2.jpg',
+          originalUrl: './images/pusat/markers/FLOOR-2/PUSAT_F2_2.jpg',
+          caption: 'Mikrofilem'
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/pusat/markers/FLOOR-2/PUSAT_F2_2.jpg\'>\n        <img src=\'./images/pusat/markers/FLOOR-2/PUSAT_F2_2.jpg\' alt=\'Mikrofilem\' style=\'cursor:pointer;\' />\n        <h2>Mikrofilem</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      }
+    ],
     data: {
       floor: 'f2',
       tags: [
@@ -427,7 +645,31 @@ export default [
         name: 'Go to Floor 2 - Reading 5'
       },
     ],
-    markers: [],
+    markers: [
+      {
+        id: 'pusat-f2-reading-12-marker-1789635679279',
+        position: {
+          yaw: '301.77deg',
+          pitch: '1.23deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: 'Web OPAC',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/pusat/markers/FLOOR-2/PUSAT_F2_1.jpg',
+          originalUrl: './images/pusat/markers/FLOOR-2/PUSAT_F2_1.jpg',
+          caption: 'Web OPAC'
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/pusat/markers/FLOOR-2/PUSAT_F2_1.jpg\'>\n        <img src=\'./images/pusat/markers/FLOOR-2/PUSAT_F2_1.jpg\' alt=\'Web OPAC\' style=\'cursor:pointer;\' />\n        <h2>Web OPAC</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      }
+    ],
     data: {
       floor: 'f2',
       tags: [
@@ -543,7 +785,29 @@ export default [
         name: 'Go to Floor 2 - Reading 17'
       },
     ],
-    markers: [],
+    markers: [
+      {
+        id: 'pusat-f2-reading-16-marker-1789635724682',
+        position: {
+          yaw: '287.95deg',
+          pitch: '-3.45deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Kakitangan sahaja',
+          icon: 'no-entry',
+          color: 'red',
+          animated: false,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'no-entry\' data-color=\'red\'>\n        <h2>Kakitangan sahaja</h2>\n        <p></p>\n      </custom-marker>'
+      }
+    ],
     data: {
       floor: 'f2',
       tags: [
@@ -612,7 +876,50 @@ export default [
         targetPitch: '7.48deg'
       },
     ],
-    markers: [],
+    markers: [
+      {
+        id: 'pusat-f2-reading-18-marker-1789635825918',
+        position: {
+          yaw: '5.30deg',
+          pitch: '0.15deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Bahasa Inggeris (Rujukan)',
+          icon: 'info',
+          color: 'blue',
+          animated: true,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'info\' data-color=\'blue\' animated>\n        <h2>Bahasa Inggeris (Rujukan)</h2>\n        <p></p>\n      </custom-marker>'
+      },
+      {
+        id: 'pusat-f2-reading-18-marker-1789635820466',
+        position: {
+          yaw: '351.16deg',
+          pitch: '-1.03deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Bahasa Inggeris (Rujukan)',
+          icon: 'info',
+          color: 'blue',
+          animated: true,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'info\' data-color=\'blue\' animated>\n        <h2>Bahasa Inggeris (Rujukan)</h2>\n        <p></p>\n      </custom-marker>'
+      }
+    ],
     data: {
       floor: 'f2',
       tags: [
@@ -850,7 +1157,29 @@ export default [
         targetPitch: '-0.23deg'
       },
     ],
-    markers: [],
+    markers: [
+      {
+        id: 'pusat-f2-reading-25-marker-1789635881207',
+        position: {
+          yaw: '17.40deg',
+          pitch: '-6.99deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Bilik Mesyuarat',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'info\' data-color=\'blue\'>\n        <h2>Bilik Mesyuarat</h2>\n        <p></p>\n      </custom-marker>'
+      }
+    ],
     data: {
       floor: 'f2',
       tags: [
@@ -884,7 +1213,29 @@ export default [
         name: 'Go to Floor 2 - Reading 25'
       }
     ],
-    markers: [],
+    markers: [
+      {
+        id: 'pusat-f2-reading-26-marker-1789635908136',
+        position: {
+          yaw: '198.02deg',
+          pitch: '-17.10deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Koleksi Braille PPAPP',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'info\' data-color=\'blue\'>\n        <h2>Koleksi Braille PPAPP</h2>\n        <p></p>\n      </custom-marker>'
+      }
+    ],
     data: {
       floor: 'f2',
       tags: [

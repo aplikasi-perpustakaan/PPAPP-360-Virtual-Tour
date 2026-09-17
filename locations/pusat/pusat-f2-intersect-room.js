@@ -73,7 +73,29 @@ export default [
         targetPitch: '7.44deg'
       },
     ],
-    markers: [],
+    markers: [
+      {
+        id: 'pusat-f2-intersect-room-2-marker-1789635994150',
+        position: {
+          yaw: '121.74deg',
+          pitch: '-8.00deg'
+        },
+        size: {
+          width: 32,
+          height: 32
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Bilik Auditorium',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'info\' data-color=\'blue\'>\n        <h2>Bilik Auditorium</h2>\n        <p></p>\n      </custom-marker>'
+      }
+    ],
     data: {
       floor: 'f2',
       tags: [
@@ -114,7 +136,29 @@ export default [
         targetPitch: '5.53deg'
       },
     ],
-    markers: [],
+    markers: [
+      {
+        id: 'pusat-f2-intersect-room-3-marker-1789636054964',
+        position: {
+          yaw: '323.54deg',
+          pitch: '-8.76deg'
+        },
+        size: {
+          width: 32,
+          height: 32
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Bilik Latihan',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'info\' data-color=\'blue\'>\n        <h2>Bilik Latihan</h2>\n        <p></p>\n      </custom-marker>'
+      }
+    ],
     data: {
       floor: 'f2',
       tags: [

@@ -119,7 +119,102 @@ export default [
         name: 'Go to Floor 1 - Kids 14'
       },
     ],
-    markers: [],
+    markers: [
+      {
+        id: 'pusat-f1-kids-3-marker-1789632282911',
+        position: {
+          yaw: '37.38deg',
+          pitch: '-18.24deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: 'Notis',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/pusat/markers/FLOOR-1/PUSAT_F1_62.jpg',
+          originalUrl: './images/pusat/markers/FLOOR-1/PUSAT_F1_62.jpg',
+          caption: 'Notis'
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/pusat/markers/FLOOR-1/PUSAT_F1_62.jpg\'>\n        <img src=\'./images/pusat/markers/FLOOR-1/PUSAT_F1_62.jpg\' alt=\'Notis\' style=\'cursor:pointer;\' />\n        <h2>Notis</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      {
+        id: 'pusat-f1-kids-3-marker-1789632357247',
+        position: {
+          yaw: '63.38deg',
+          pitch: '-17.88deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: 'Notis',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/pusat/markers/FLOOR-1/PUSAT_F1_63.jpg',
+          originalUrl: './images/pusat/markers/FLOOR-1/PUSAT_F1_63.jpg',
+          caption: 'Notis'
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/pusat/markers/FLOOR-1/PUSAT_F1_63.jpg\'>\n        <img src=\'./images/pusat/markers/FLOOR-1/PUSAT_F1_63.jpg\' alt=\'Notis\' style=\'cursor:pointer;\' />\n        <h2>Notis</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      
+      
+      {
+        id: 'pusat-f1-kids-3-marker-1789632389556',
+        position: {
+          yaw: '100.33deg',
+          pitch: '-31.97deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: 'Notis',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/pusat/markers/FLOOR-1/PUSAT_F1_67.jpg',
+          originalUrl: './images/pusat/markers/FLOOR-1/PUSAT_F1_67.jpg',
+          caption: 'Notis'
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/pusat/markers/FLOOR-1/PUSAT_F1_67.jpg\'>\n        <img src=\'./images/pusat/markers/FLOOR-1/PUSAT_F1_67.jpg\' alt=\'Notis\' style=\'cursor:pointer;\' />\n        <h2>Notis</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      {
+        id: 'pusat-f1-kids-3-marker-1789632421230',
+        position: {
+          yaw: '98.97deg',
+          pitch: '-22.21deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: 'Notis',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/pusat/markers/FLOOR-1/PUSAT_F1_66.jpg',
+          originalUrl: './images/pusat/markers/FLOOR-1/PUSAT_F1_66.jpg',
+          caption: 'Notis'
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/pusat/markers/FLOOR-1/PUSAT_F1_66.jpg\'>\n        <img src=\'./images/pusat/markers/FLOOR-1/PUSAT_F1_66.jpg\' alt=\'Notis\' style=\'cursor:pointer;\' />\n        <h2>Notis</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      }
+    ],
     data: {
       floor: 'f1',
       tags: ['kids'],
@@ -143,7 +238,75 @@ export default [
         targetPitch: '-3.02deg'
       },
     ],
-    markers: [],
+    markers: [
+      {
+        id: 'pusat-f1-kids-4-marker-1789632701152',
+        position: {
+          yaw: '347.02deg',
+          pitch: '-4.73deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: 'Notis',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/pusat/markers/FLOOR-1/PUSAT_F1_60.jpg',
+          originalUrl: './images/pusat/markers/FLOOR-1/PUSAT_F1_60.jpg',
+          caption: 'Notis'
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/pusat/markers/FLOOR-1/PUSAT_F1_60.jpg\'>\n        <img src=\'./images/pusat/markers/FLOOR-1/PUSAT_F1_60.jpg\' alt=\'Notis\' style=\'cursor:pointer;\' />\n        <h2>Notis</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      {
+        id: 'pusat-f1-kids-4-marker-1789632786190',
+        position: {
+          yaw: '343.39deg',
+          pitch: '-3.72deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: 'Notis',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/pusat/markers/FLOOR-1/PUSAT_F1_61.jpg',
+          originalUrl: './images/pusat/markers/FLOOR-1/PUSAT_F1_61.jpg',
+          caption: 'Notis'
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/pusat/markers/FLOOR-1/PUSAT_F1_61.jpg\'>\n        <img src=\'./images/pusat/markers/FLOOR-1/PUSAT_F1_61.jpg\' alt=\'Notis\' style=\'cursor:pointer;\' />\n        <h2>Notis</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      {
+        id: 'pusat-f1-kids-4-marker-1789632825683',
+        position: {
+          yaw: '332.71deg',
+          pitch: '-1.95deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Majalah Pinjaman (Kanak--Kanak)',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'info\' data-color=\'blue\'>\n        <h2>Majalah Pinjaman (Kanak--Kanak)</h2>\n        <p></p>\n      </custom-marker>'
+      }
+    ],
     data: {
       floor: 'f1',
       tags: ['kids'],
@@ -174,7 +337,100 @@ export default [
         targetPitch: '0.92deg'
       },
     ],
-    markers: [],
+    markers: [
+      {
+        id: 'pusat-f1-kids-5-marker-1789633760741',
+        position: {
+          yaw: '13.94deg',
+          pitch: '-4.84deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: 'Bahasa Inggeris (Kanak-Kanak)',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/pusat/markers/FLOOR-1/PUSAT_F1_48.jpg',
+          originalUrl: './images/pusat/markers/FLOOR-1/PUSAT_F1_48.jpg',
+          caption: 'Bahasa Inggeris (Kanak-Kanak)'
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/pusat/markers/FLOOR-1/PUSAT_F1_48.jpg\'>\n        <img src=\'./images/pusat/markers/FLOOR-1/PUSAT_F1_48.jpg\' alt=\'Bahasa Inggeris (Kanak-Kanak)\' style=\'cursor:pointer;\' />\n        <h2>Bahasa Inggeris (Kanak-Kanak)</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      {
+        id: 'pusat-f1-kids-5-marker-1789633767102',
+        position: {
+          yaw: '343.63deg',
+          pitch: '-9.27deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: 'Bahasa Inggeris (Kanak-Kanak)',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/pusat/markers/FLOOR-1/PUSAT_F1_48.jpg',
+          originalUrl: './images/pusat/markers/FLOOR-1/PUSAT_F1_48.jpg',
+          caption: 'Bahasa Inggeris (Kanak-Kanak)'
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/pusat/markers/FLOOR-1/PUSAT_F1_48.jpg\'>\n        <img src=\'./images/pusat/markers/FLOOR-1/PUSAT_F1_48.jpg\' alt=\'Bahasa Inggeris (Kanak-Kanak)\' style=\'cursor:pointer;\' />\n        <h2>Bahasa Inggeris (Kanak-Kanak)</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      {
+        id: 'pusat-f1-kids-5-marker-1789633855745',
+        position: {
+          yaw: '297.14deg',
+          pitch: '-10.57deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: 'Bahasa Cina (Kanak-Kanak)',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/pusat/markers/FLOOR-1/PUSAT_F1_47.jpg',
+          originalUrl: './images/pusat/markers/FLOOR-1/PUSAT_F1_47.jpg',
+          caption: 'Bahasa Cina (Kanak-Kanak)'
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/pusat/markers/FLOOR-1/PUSAT_F1_47.jpg\'>\n        <img src=\'./images/pusat/markers/FLOOR-1/PUSAT_F1_47.jpg\' alt=\'Bahasa Cina (Kanak-Kanak)\' style=\'cursor:pointer;\' />\n        <h2>Bahasa Cina (Kanak-Kanak)</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      {
+        id: 'pusat-f1-kids-5-marker-1789636748122',
+        position: {
+          yaw: '289.50deg',
+          pitch: '-10.57deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: 'Bahasa Cina (Kanak-Kanak)',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/pusat/markers/FLOOR-1/PUSAT_F1_47.jpg',
+          originalUrl: './images/pusat/markers/FLOOR-1/PUSAT_F1_47.jpg',
+          caption: 'Bahasa Cina (Kanak-Kanak)'
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/pusat/markers/FLOOR-1/PUSAT_F1_47.jpg\'>\n        <img src=\'./images/pusat/markers/FLOOR-1/PUSAT_F1_47.jpg\' alt=\'Bahasa Cina (Kanak-Kanak)\' style=\'cursor:pointer;\' />\n        <h2>Bahasa Cina (Kanak-Kanak)</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      }
+    ],
     data: {
       floor: 'f1',
       tags: ['kids'],
@@ -218,7 +474,192 @@ export default [
         name: 'Go to Floor 1 - Sensory 1'
       },
     ],
-    markers: [],
+    markers: [
+      {
+        id: 'pusat-f1-kids-6-marker-1789633964636',
+        position: {
+          yaw: '342.66deg',
+          pitch: '-6.22deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: '',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/pusat/markers/FLOOR-1/PUSAT_F1_49.jpg',
+          originalUrl: './images/pusat/markers/FLOOR-1/PUSAT_F1_49.jpg',
+          caption: ''
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/pusat/markers/FLOOR-1/PUSAT_F1_49.jpg\'>\n        <img src=\'./images/pusat/markers/FLOOR-1/PUSAT_F1_49.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      {
+        id: 'pusat-f1-kids-6-marker-1789634053874',
+        position: {
+          yaw: '305.03deg',
+          pitch: '-7.98deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: '',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/pusat/markers/FLOOR-1/PUSAT_F1_51.jpg',
+          originalUrl: './images/pusat/markers/FLOOR-1/PUSAT_F1_51.jpg',
+          caption: ''
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/pusat/markers/FLOOR-1/PUSAT_F1_51.jpg\'>\n        <img src=\'./images/pusat/markers/FLOOR-1/PUSAT_F1_51.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      {
+        id: 'pusat-f1-kids-6-marker-1789634075497',
+        position: {
+          yaw: '298.30deg',
+          pitch: '-7.80deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: '',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/pusat/markers/FLOOR-1/PUSAT_F1_52.jpg',
+          originalUrl: './images/pusat/markers/FLOOR-1/PUSAT_F1_52.jpg',
+          caption: ''
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/pusat/markers/FLOOR-1/PUSAT_F1_52.jpg\'>\n        <img src=\'./images/pusat/markers/FLOOR-1/PUSAT_F1_52.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      {
+        id: 'pusat-f1-kids-6-marker-1789634098675',
+        position: {
+          yaw: '335.03deg',
+          pitch: '-7.12deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: '',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/pusat/markers/FLOOR-1/PUSAT_F1_50.jpg',
+          originalUrl: './images/pusat/markers/FLOOR-1/PUSAT_F1_50.jpg',
+          caption: ''
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/pusat/markers/FLOOR-1/PUSAT_F1_50.jpg\'>\n        <img src=\'./images/pusat/markers/FLOOR-1/PUSAT_F1_50.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      {
+        id: 'pusat-f1-kids-6-marker-1789634132525',
+        position: {
+          yaw: '192.46deg',
+          pitch: '-20.41deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: '',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/pusat/markers/FLOOR-1/PUSAT_F1_54.jpg',
+          originalUrl: './images/pusat/markers/FLOOR-1/PUSAT_F1_54.jpg',
+          caption: ''
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/pusat/markers/FLOOR-1/PUSAT_F1_54.jpg\'>\n        <img src=\'./images/pusat/markers/FLOOR-1/PUSAT_F1_54.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      {
+        id: 'pusat-f1-kids-6-marker-1789634174565',
+        position: {
+          yaw: '95.89deg',
+          pitch: '-11.06deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: '',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/pusat/markers/FLOOR-1/PUSAT_F1_55.jpg',
+          originalUrl: './images/pusat/markers/FLOOR-1/PUSAT_F1_55.jpg',
+          caption: ''
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/pusat/markers/FLOOR-1/PUSAT_F1_55.jpg\'>\n        <img src=\'./images/pusat/markers/FLOOR-1/PUSAT_F1_55.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      
+      
+      {
+        id: 'pusat-f1-kids-6-marker-1789634304235',
+        position: {
+          yaw: '87.40deg',
+          pitch: '-11.90deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: 'Kadar Bayaran Snoezelen / Sensori',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/pusat/markers/FLOOR-1/PUSAT_F1_56.jpg',
+          originalUrl: './images/pusat/markers/FLOOR-1/PUSAT_F1_56.jpg',
+          caption: 'Kadar Bayaran Snoezelen / Sensori'
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/pusat/markers/FLOOR-1/PUSAT_F1_56.jpg\'>\n        <img src=\'./images/pusat/markers/FLOOR-1/PUSAT_F1_56.jpg\' alt=\'Kadar Bayaran Snoezelen / Sensori\' style=\'cursor:pointer;\' />\n        <h2>Kadar Bayaran Snoezelen / Sensori</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      {
+        id: 'pusat-f1-kids-6-marker-1789634395850',
+        position: {
+          yaw: '95.40deg',
+          pitch: '-21.69deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Untuk Penggunaan Bilik Snoezelen / Sensori, sila rujuk ke kaunter terlebih dahulu, Terima Kasih',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'info\' data-color=\'blue\'>\n        <h2>Untuk Penggunaan Bilik Snoezelen / Sensori, sila rujuk ke kaunter terlebih dahulu, Terima Kasih</h2>\n        <p></p>\n      </custom-marker>'
+      }
+    ],
     data: {
       floor: 'f1',
       tags: ['kids'],
@@ -342,7 +783,29 @@ export default [
         targetPitch: '-3.85deg'
       },
     ],
-    markers: [],
+    markers: [
+      {
+        id: 'pusat-f1-kids-10-marker-1789633516315',
+        position: {
+          yaw: '79.83deg',
+          pitch: '-15.64deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Bahasa Melayu (Kanak-Kanak)',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'info\' data-color=\'blue\'>\n        <h2>Bahasa Melayu (Kanak-Kanak)</h2>\n        <p></p>\n      </custom-marker>'
+      }
+    ],
     data: {
       floor: 'f1',
       tags: ['kids'],
@@ -364,7 +827,92 @@ export default [
         name: 'Go to Floor 1 - Kids 12'
       },
     ],
-    markers: [],
+    markers: [
+      {
+        id: 'pusat-f1-kids-11-marker-1789633186489',
+        position: {
+          yaw: '70.05deg',
+          pitch: '-8.86deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Bahasa Tamil (kanak-kanak)',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'info\' data-color=\'blue\'>\n        <h2>Bahasa Tamil (kanak-kanak)</h2>\n        <p></p>\n      </custom-marker>'
+      },
+      {
+        id: 'pusat-f1-kids-11-marker-1789633191436',
+        position: {
+          yaw: '74.75deg',
+          pitch: '-12.48deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Bahasa Tamil (kanak-kanak)',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'info\' data-color=\'blue\'>\n        <h2>Bahasa Tamil (kanak-kanak)</h2>\n        <p></p>\n      </custom-marker>'
+      },
+      {
+        id: 'pusat-f1-kids-11-marker-1789633293627',
+        position: {
+          yaw: '138.11deg',
+          pitch: '-33.29deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Bahasa Melayu (Kanak-Kanak)',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'info\' data-color=\'blue\'>\n        <h2>Bahasa Melayu (Kanak-Kanak)</h2>\n        <p></p>\n      </custom-marker>'
+      },
+      {
+        id: 'pusat-f1-kids-11-marker-1789633298881',
+        position: {
+          yaw: '177.32deg',
+          pitch: '-29.39deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Bahasa Inggeris (Kanak-Kanak)',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'info\' data-color=\'blue\'>\n        <h2>Bahasa Inggeris (Kanak-Kanak)</h2>\n        <p></p>\n      </custom-marker>'
+      }
+    ],
     data: {
       floor: 'f1',
       tags: ['kids'],
@@ -446,7 +994,29 @@ export default [
         targetPitch: '-2.73deg'
       },
     ],
-    markers: [],
+    markers: [
+      {
+        id: 'pusat-f1-kids-13-marker-1789632950234',
+        position: {
+          yaw: '161.44deg',
+          pitch: '-8.18deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Bahasa Melayu (Kanak-Kanak)',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'info\' data-color=\'blue\'>\n        <h2>Bahasa Melayu (Kanak-Kanak)</h2>\n        <p></p>\n      </custom-marker>'
+      }
+    ],
     data: {
       floor: 'f1',
       tags: ['kids'],
@@ -497,7 +1067,54 @@ export default [
         targetPitch: '-2.21deg'
       },
     ],
-    markers: [],
+    markers: [
+      {
+        id: 'pusat-f1-kids-14-marker-1789633391641',
+        position: {
+          yaw: '74.83deg',
+          pitch: '-4.44deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: '',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/pusat/markers/FLOOR-1/PUSAT_F1_19.jpg',
+          originalUrl: './images/pusat/markers/FLOOR-1/PUSAT_F1_19.jpg',
+          caption: ''
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/pusat/markers/FLOOR-1/PUSAT_F1_19.jpg\'>\n        <img src=\'./images/pusat/markers/FLOOR-1/PUSAT_F1_19.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      {
+        id: 'pusat-f1-kids-14-marker-1789633375537',
+        position: {
+          yaw: '110.46deg',
+          pitch: '-20.14deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: 'Bahan Baharu',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/pusat/markers/FLOOR-1/PUSAT_F1_44.jpg',
+          originalUrl: './images/pusat/markers/FLOOR-1/PUSAT_F1_44.jpg',
+          caption: 'Bahan Baharu'
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/pusat/markers/FLOOR-1/PUSAT_F1_44.jpg\'>\n        <img src=\'./images/pusat/markers/FLOOR-1/PUSAT_F1_44.jpg\' alt=\'Bahan Baharu\' style=\'cursor:pointer;\' />\n        <h2>Bahan Baharu</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      }
+    ],
     data: {
       floor: 'f1',
       tags: ['kids'],

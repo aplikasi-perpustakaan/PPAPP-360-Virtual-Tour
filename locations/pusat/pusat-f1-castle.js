@@ -98,7 +98,54 @@ export default [
         name: 'Go to Floor 1 - Kids 15'
       },
     ],
-    markers: [],
+    markers: [
+      {
+        id: 'pusat-f1-castle-3-marker-1789634521912',
+        position: {
+          yaw: '341.46deg',
+          pitch: '-54.40deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: '',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/pusat/markers/FLOOR-1/PUSAT_F1_57.jpg',
+          originalUrl: './images/pusat/markers/FLOOR-1/PUSAT_F1_57.jpg',
+          caption: ''
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/pusat/markers/FLOOR-1/PUSAT_F1_57.jpg\'>\n        <img src=\'./images/pusat/markers/FLOOR-1/PUSAT_F1_57.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      {
+        id: 'pusat-f1-castle-3-marker-1789634552614',
+        position: {
+          yaw: '5.72deg',
+          pitch: '-2.72deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: '',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/pusat/markers/FLOOR-1/PUSAT_F1_58.jpg',
+          originalUrl: './images/pusat/markers/FLOOR-1/PUSAT_F1_58.jpg',
+          caption: ''
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/pusat/markers/FLOOR-1/PUSAT_F1_58.jpg\'>\n        <img src=\'./images/pusat/markers/FLOOR-1/PUSAT_F1_58.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      }
+    ],
     data: {
       floor: 'f1',
       tags: ['castle'],

@@ -108,7 +108,29 @@ export default [
         targetPitch: '0.05deg'
       },
     ],
-    markers: [],
+    markers: [
+      {
+        id: 'pusat-f1-lobby-3-marker-1789634647875',
+        position: {
+          yaw: '348.16deg',
+          pitch: '-7.61deg'
+        },
+        size: {
+          width: 32,
+          height: 32
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Kaunter Peminjaman & Pemulangan',
+          icon: 'pin',
+          color: 'green',
+          animated: false,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'pin\' data-color=\'green\'>\n        <h2>Kaunter Peminjaman & Pemulangan</h2>\n        <p></p>\n      </custom-marker>'
+      }
+    ],
     data: {
       floor: 'f1',
       tags: ['lobby'],
@@ -161,15 +183,15 @@ export default [
         anchor: 'center center',
         data: {
           type: 'image',
-          title: '',
+          title: 'Waktu Perkhidmatan',
           icon: 'info',
           color: 'blue',
           animated: false,
           imageSrc: './images/pusat/markers/FLOOR-1/PUSAT_F1_7.jpg',
           originalUrl: './images/pusat/markers/FLOOR-1/PUSAT_F1_7.jpg',
-          caption: ''
+          caption: 'Waktu Perkhidmatan'
         },
-        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/pusat/markers/FLOOR-1/PUSAT_F1_7.jpg\'>\n        <img src=\'./images/pusat/markers/FLOOR-1/PUSAT_F1_7.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/pusat/markers/FLOOR-1/PUSAT_F1_7.jpg\'>\n        <img src=\'./images/pusat/markers/FLOOR-1/PUSAT_F1_7.jpg\' alt=\'Waktu Perkhidmatan\' style=\'cursor:pointer;\' />\n        <h2>Waktu Perkhidmatan</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
       }
     ],
     data: {
@@ -359,7 +381,31 @@ export default [
         name: 'Go to Floor 1 - Lobby 14'
       },
     ],
-    markers: [],
+    markers: [
+      {
+        id: 'pusat-f1-lobby-10-marker-1789630918596',
+        position: {
+          yaw: '49.80deg',
+          pitch: '-36.78deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: 'Kiosk peminjaman / pemulangan buku (layan diri)',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/pusat/markers/FLOOR-1/PUSAT_F1_9.jpg',
+          originalUrl: './images/pusat/markers/FLOOR-1/PUSAT_F1_9.jpg',
+          caption: 'Kiosk peminjaman / pemulangan buku (layan diri)'
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/pusat/markers/FLOOR-1/PUSAT_F1_9.jpg\'>\n        <img src=\'./images/pusat/markers/FLOOR-1/PUSAT_F1_9.jpg\' alt=\'Kiosk peminjaman / pemulangan buku (layan diri)\' style=\'cursor:pointer;\' />\n        <h2>Kiosk peminjaman / pemulangan buku (layan diri)</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      }
+    ],
     data: {
       floor: 'f1',
       tags: ['lobby'],
@@ -583,7 +629,54 @@ export default [
         name: 'Go to Floor 1 - Lobby 17'
       },
     ],
-    markers: [],
+    markers: [
+      {
+        id: 'pusat-f1-lobby-16-marker-1789634766850',
+        position: {
+          yaw: '22.68deg',
+          pitch: '-23.25deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: '',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/pusat/markers/FLOOR-1/PUSAT_F1_21.jpg',
+          originalUrl: './images/pusat/markers/FLOOR-1/PUSAT_F1_21.jpg',
+          caption: ''
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/pusat/markers/FLOOR-1/PUSAT_F1_21.jpg\'>\n        <img src=\'./images/pusat/markers/FLOOR-1/PUSAT_F1_21.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      {
+        id: 'pusat-f1-lobby-16-marker-1789634772795',
+        position: {
+          yaw: '88.16deg',
+          pitch: '-23.54deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: '',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/pusat/markers/FLOOR-1/PUSAT_F1_21.jpg',
+          originalUrl: './images/pusat/markers/FLOOR-1/PUSAT_F1_21.jpg',
+          caption: ''
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/pusat/markers/FLOOR-1/PUSAT_F1_21.jpg\'>\n        <img src=\'./images/pusat/markers/FLOOR-1/PUSAT_F1_21.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      }
+    ],
     data: {
       floor: 'f1',
       tags: ['lobby'],
@@ -632,7 +725,31 @@ export default [
         name: 'Go to Floor 1 - Lobby 26'
       },
     ],
-    markers: [],
+    markers: [
+      {
+        id: 'pusat-f1-lobby-17-marker-1789632217602',
+        position: {
+          yaw: '70.99deg',
+          pitch: '-3.03deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: 'Tandas Awam',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/pusat/markers/FLOOR-1/PUSAT_F1_20.jpg',
+          originalUrl: './images/pusat/markers/FLOOR-1/PUSAT_F1_20.jpg',
+          caption: 'Tandas Awam'
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/pusat/markers/FLOOR-1/PUSAT_F1_20.jpg\'>\n        <img src=\'./images/pusat/markers/FLOOR-1/PUSAT_F1_20.jpg\' alt=\'Tandas Awam\' style=\'cursor:pointer;\' />\n        <h2>Tandas Awam</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      }
+    ],
     data: {
       floor: 'f1',
       tags: ['lobby'],
@@ -674,7 +791,195 @@ export default [
         name: 'Go to Floor 1 - Lobby 17'
       },
     ],
-    markers: [],
+    markers: [
+      {
+        id: 'pusat-f1-lobby-18-marker-1789632246040',
+        position: {
+          yaw: '7.93deg',
+          pitch: '-22.31deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Bahagian Kanak-Kanak',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'info\' data-color=\'blue\'>\n        <h2>Bahagian Kanak-Kanak</h2>\n        <p></p>\n      </custom-marker>'
+      },
+      
+      
+      
+      
+      
+      {
+        id: 'pusat-f1-lobby-18-marker-1789635026381',
+        position: {
+          yaw: '164.01deg',
+          pitch: '-4.55deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: '',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/pusat/markers/FLOOR-1/PUSAT_F1_14.jpg',
+          originalUrl: './images/pusat/markers/FLOOR-1/PUSAT_F1_14.jpg',
+          caption: ''
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/pusat/markers/FLOOR-1/PUSAT_F1_14.jpg\'>\n        <img src=\'./images/pusat/markers/FLOOR-1/PUSAT_F1_14.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      {
+        id: 'pusat-f1-lobby-18-marker-1789636611649',
+        position: {
+          yaw: '352.96deg',
+          pitch: '-37.90deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: '',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/pusat/markers/FLOOR-1/PUSAT_F1_43.jpg',
+          originalUrl: './images/pusat/markers/FLOOR-1/PUSAT_F1_43.jpg',
+          caption: ''
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/pusat/markers/FLOOR-1/PUSAT_F1_43.jpg\'>\n        <img src=\'./images/pusat/markers/FLOOR-1/PUSAT_F1_43.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      {
+        id: 'pusat-f1-lobby-18-marker-1789634984632',
+        position: {
+          yaw: '164.35deg',
+          pitch: '-0.35deg'
+        },
+        size: {
+          width: 32,
+          height: 32
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: '',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/pusat/markers/FLOOR-1/PUSAT_F1_15.jpg',
+          originalUrl: './images/pusat/markers/FLOOR-1/PUSAT_F1_15.jpg',
+          caption: ''
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/pusat/markers/FLOOR-1/PUSAT_F1_15.jpg\'>\n        <img src=\'./images/pusat/markers/FLOOR-1/PUSAT_F1_15.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      {
+        id: 'pusat-f1-lobby-18-marker-1789634911645',
+        position: {
+          yaw: '160.29deg',
+          pitch: '-1.54deg'
+        },
+        size: {
+          width: 32,
+          height: 32
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: '',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/pusat/markers/FLOOR-1/PUSAT_F1_16.jpg',
+          originalUrl: './images/pusat/markers/FLOOR-1/PUSAT_F1_16.jpg',
+          caption: ''
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/pusat/markers/FLOOR-1/PUSAT_F1_16.jpg\'>\n        <img src=\'./images/pusat/markers/FLOOR-1/PUSAT_F1_16.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      {
+        id: 'pusat-f1-lobby-18-marker-1789634841337',
+        position: {
+          yaw: '155.48deg',
+          pitch: '-4.38deg'
+        },
+        size: {
+          width: 32,
+          height: 32
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: '',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/pusat/markers/FLOOR-1/PUSAT_F1_17.jpg',
+          originalUrl: './images/pusat/markers/FLOOR-1/PUSAT_F1_17.jpg',
+          caption: ''
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/pusat/markers/FLOOR-1/PUSAT_F1_17.jpg\'>\n        <img src=\'./images/pusat/markers/FLOOR-1/PUSAT_F1_17.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      {
+        id: 'pusat-f1-lobby-18-marker-1789634855865',
+        position: {
+          yaw: '155.28deg',
+          pitch: '-9.17deg'
+        },
+        size: {
+          width: 32,
+          height: 32
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: '',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/pusat/markers/FLOOR-1/PUSAT_F1_18.jpg',
+          originalUrl: './images/pusat/markers/FLOOR-1/PUSAT_F1_18.jpg',
+          caption: ''
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/pusat/markers/FLOOR-1/PUSAT_F1_18.jpg\'>\n        <img src=\'./images/pusat/markers/FLOOR-1/PUSAT_F1_18.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      {
+        id: 'pusat-f1-lobby-18-marker-1789634965719',
+        position: {
+          yaw: '160.01deg',
+          pitch: '-10.05deg'
+        },
+        size: {
+          width: 32,
+          height: 32
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: '',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/pusat/markers/FLOOR-1/PUSAT_F1_19.jpg',
+          originalUrl: './images/pusat/markers/FLOOR-1/PUSAT_F1_19.jpg',
+          caption: ''
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/pusat/markers/FLOOR-1/PUSAT_F1_19.jpg\'>\n        <img src=\'./images/pusat/markers/FLOOR-1/PUSAT_F1_19.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      }
+    ],
     data: {
       floor: 'f1',
       tags: ['lobby'],
@@ -701,7 +1006,31 @@ export default [
         name: 'Go to Floor 1 - Lobby 17'
       },
     ],
-    markers: [],
+    markers: [
+      {
+        id: 'pusat-f1-lobby-19-marker-1789632117496',
+        position: {
+          yaw: '200.07deg',
+          pitch: '-24.79deg'
+        },
+        size: {
+          width: 32,
+          height: 32
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: 'Buku Sumbangan',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/pusat/markers/FLOOR-1/PUSAT_F1_42.jpg',
+          originalUrl: './images/pusat/markers/FLOOR-1/PUSAT_F1_42.jpg',
+          caption: 'Buku Sumbangan'
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/pusat/markers/FLOOR-1/PUSAT_F1_42.jpg\'>\n        <img src=\'./images/pusat/markers/FLOOR-1/PUSAT_F1_42.jpg\' alt=\'Buku Sumbangan\' style=\'cursor:pointer;\' />\n        <h2>Buku Sumbangan</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      }
+    ],
     data: {
       floor: 'f1',
       tags: ['lobby'],
@@ -909,7 +1238,50 @@ export default [
         targetPitch: '-1.15deg'
       },
     ],
-    markers: [],
+    markers: [
+      {
+        id: 'pusat-f1-lobby-25-marker-1789635070688',
+        position: {
+          yaw: '300.66deg',
+          pitch: '-2.41deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Surau Lelaki',
+          icon: 'info',
+          color: 'green',
+          animated: false,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'info\' data-color=\'green\'>\n        <h2>Surau Lelaki</h2>\n        <p></p>\n      </custom-marker>'
+      },
+      {
+        id: 'pusat-f1-lobby-25-marker-1789635091995',
+        position: {
+          yaw: '12.88deg',
+          pitch: '0.59deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Surau Perempuan',
+          icon: 'info',
+          color: 'green',
+          animated: false,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'info\' data-color=\'green\'>\n        <h2>Surau Perempuan</h2>\n        <p></p>\n      </custom-marker>'
+      }
+    ],
     data: {
       floor: 'f1',
       tags: ['lobby'],
@@ -938,7 +1310,29 @@ export default [
         name: 'Go to Floor 1 - Lobby 17'
       },
     ],
-    markers: [],
+    markers: [
+      {
+        id: 'pusat-f1-lobby-26-marker-1789632156614',
+        position: {
+          yaw: '128.64deg',
+          pitch: '-6.48deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Carta Organisasi PPAPP',
+          icon: 'star',
+          color: 'gold',
+          animated: false,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'star\' data-color=\'gold\'>\n        <h2>Carta Organisasi PPAPP</h2>\n        <p></p>\n      </custom-marker>'
+      }
+    ],
     data: {
       floor: 'f1',
       tags: ['lobby'],
@@ -1017,7 +1411,31 @@ export default [
         targetPitch: '-0.77deg'
       },
     ],
-    markers: [],
+    markers: [
+      {
+        id: 'pusat-f1-lobby-28-marker-1789636125326',
+        position: {
+          yaw: '51.46deg',
+          pitch: '-45.85deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: '',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/pusat/markers/FLOOR-1/PUSAT_F1_2.jpg',
+          originalUrl: './images/pusat/markers/FLOOR-1/PUSAT_F1_2.jpg',
+          caption: ''
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/pusat/markers/FLOOR-1/PUSAT_F1_2.jpg\'>\n        <img src=\'./images/pusat/markers/FLOOR-1/PUSAT_F1_2.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      }
+    ],
     data: {
       floor: 'f1',
       tags: ['lobby'],
@@ -1055,7 +1473,31 @@ export default [
         name: 'Go to Floor 1 - Lobby 27'
       },
     ],
-    markers: [],
+    markers: [
+      {
+        id: 'pusat-f1-lobby-29-marker-1789630814048',
+        position: {
+          yaw: '199.38deg',
+          pitch: '3.27deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: 'Notis',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/pusat/markers/FLOOR-1/PUSAT_F1_3.jpg',
+          originalUrl: './images/pusat/markers/FLOOR-1/PUSAT_F1_3.jpg',
+          caption: 'Notis'
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/pusat/markers/FLOOR-1/PUSAT_F1_3.jpg\'>\n        <img src=\'./images/pusat/markers/FLOOR-1/PUSAT_F1_3.jpg\' alt=\'Notis\' style=\'cursor:pointer;\' />\n        <h2>Notis</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      }
+    ],
     data: {
       floor: 'f1',
       tags: ['lobby'],
