@@ -408,11 +408,6 @@ export default [
     defaultZoomLvl: 0,
     links: [
       {
-        nodeId: 'jw-f2-reference-15',
-        position: { yaw: '189.65deg', pitch: '0deg' },
-        name: 'Go to Reference 15',
-      },
-      {
         nodeId: 'jw-f2-reference-10',
         position: { yaw: '97.97deg', pitch: '0deg' },
         name: 'Go to Reference 10',
@@ -429,28 +424,7 @@ export default [
       tags: ['reference'],
     },
   },
-  {
-    id: 'jw-f2-reference-15',
-    name: 'Floor 2 – Reference 15',
-    caption: 'JW – Floor 2 – Reference 15',
-    panorama: './images/jw/f2-reference/jw-f2-reference-15.jpg',
-    thumbnail: './images/jw/f2-reference/thumbs/jw-f2-reference-15.jpg',
-    defaultYaw: '0deg',
-    defaultPitch: '0deg',
-    defaultZoomLvl: 0,
-    links: [
-      {
-        nodeId: 'jw-f2-reference-14',
-        position: { yaw: '0deg', pitch: '0deg' },
-        name: 'Go back to Reference 14',
-      }
-    ],
-    markers: [],
-    data: {
-      floor: 'f2',
-      tags: ['reference'],
-    },
-  },
+
   {
     id: 'jw-f2-reference-16',
     name: 'Floor 2 – Reference 16',

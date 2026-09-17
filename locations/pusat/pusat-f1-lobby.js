@@ -914,6 +914,13 @@ export default [
         position: { yaw: '21.59deg', pitch: '-10deg' },
         name: 'Go to Floor 1 - Lobby 17'
       },
+      {
+        nodeId: 'pusat-f2-stairs-2',
+        position: { yaw: '253.32deg', pitch: '8.21deg' },
+        name: 'Go to Floor 2 - Stairs 2',
+        targetYaw: '184.17deg',
+        targetPitch: '8.81deg'
+      },
     ],
     markers: [],
     data: {
