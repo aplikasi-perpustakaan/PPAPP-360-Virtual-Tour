@@ -30,12 +30,12 @@ export default [
       {
         id: 'ppk-f1-main-area-1-marker-1789530469519',
         position: {
-          yaw: '13.30deg',
-          pitch: '-8.93deg'
+          yaw: '13.65deg',
+          pitch: '-13.23deg'
         },
         size: {
-          width: 44,
-          height: 44
+          width: 32,
+          height: 32
         },
         anchor: 'center center',
         data: {
@@ -53,25 +53,25 @@ export default [
       {
         id: 'ppk-f1-main-area-1-marker-1789530441841',
         position: {
-          yaw: '40.10deg',
-          pitch: '-0.95deg'
+          yaw: '41.32deg',
+          pitch: '-6.77deg'
         },
         size: {
-          width: 44,
-          height: 44
+          width: 32,
+          height: 32
         },
         anchor: 'center center',
         data: {
           type: 'image',
           title: 'PPAPP Lounge @ KOMTAR',
-          icon: 'info',
-          color: 'blue',
+          icon: 'pin',
+          color: 'gold',
           animated: false,
           imageSrc: './images/ppk/markers/LOBBY/KOMTAR_lobby_10.jpg',
           originalUrl: './images/ppk/markers/LOBBY/KOMTAR_lobby_10.jpg',
           caption: 'PPAPP Lounge @ KOMTAR'
         },
-        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/ppk/markers/LOBBY/KOMTAR_lobby_10.jpg\'>\n        <img src=\'./images/ppk/markers/LOBBY/KOMTAR_lobby_10.jpg\' alt=\'PPAPP Lounge @ KOMTAR\' style=\'cursor:pointer;\' />\n        <h2>PPAPP Lounge @ KOMTAR</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+        html: '<custom-marker type=\'image\' data-icon=\'pin\' data-color=\'gold\' data-url=\'./images/ppk/markers/LOBBY/KOMTAR_lobby_10.jpg\'>\n        <img src=\'./images/ppk/markers/LOBBY/KOMTAR_lobby_10.jpg\' alt=\'PPAPP Lounge @ KOMTAR\' style=\'cursor:pointer;\' />\n        <h2>PPAPP Lounge @ KOMTAR</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
       }
     ],
     data: {
@@ -121,7 +121,29 @@ export default [
         name: 'Go to Main Area 1'
       },
     ],
-    markers: [],
+    markers: [
+      {
+        id: 'ppk-f1-main-area-3-marker-1789635717466',
+        position: {
+          yaw: '302.18deg',
+          pitch: '-4.38deg'
+        },
+        size: {
+          width: 32,
+          height: 32
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Pintu masuk',
+          icon: 'info',
+          color: 'green',
+          animated: false,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'info\' data-color=\'green\'>\n        <h2>Pintu masuk</h2>\n        <p></p>\n      </custom-marker>'
+      }
+    ],
     data: {
       floor: 'f1',
       tags: [
@@ -162,7 +184,50 @@ export default [
         name: 'Go to Main Area 6'
       },
     ],
-    markers: [],
+    markers: [
+      {
+        id: 'ppk-f1-main-area-4-marker-1789636403550',
+        position: {
+          yaw: '182.15deg',
+          pitch: '-13.15deg'
+        },
+        size: {
+          width: 32,
+          height: 32
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Pintu Keluar',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'info\' data-color=\'blue\'>\n        <h2>Pintu Keluar</h2>\n        <p></p>\n      </custom-marker>'
+      },
+      {
+        id: 'ppk-f1-main-area-4-marker-1789636493902',
+        position: {
+          yaw: '20.03deg',
+          pitch: '-2.50deg'
+        },
+        size: {
+          width: 32,
+          height: 32
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Kaunter Perkhidmatan',
+          icon: 'pin',
+          color: 'green',
+          animated: false,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'pin\' data-color=\'green\'>\n        <h2>Kaunter Perkhidmatan</h2>\n        <p></p>\n      </custom-marker>'
+      }
+    ],
     data: {
       floor: 'f1',
       tags: [
@@ -184,6 +249,13 @@ export default [
         nodeId: 'ppk-f1-main-area-4',
         position: { yaw: '162.34deg', pitch: '-10deg' },
         name: 'Go to Main Area 4'
+      },
+      {
+        nodeId: 'ppk-f1-main-area-7',
+        position: { yaw: '62.94deg', pitch: '1.02deg' },
+        name: 'Go to Main Area 6',
+        targetYaw: '43.11deg',
+        targetPitch: '-1.54deg'
       },
     ],
     markers: [
@@ -238,6 +310,11 @@ export default [
         position: { yaw: '19.51deg', pitch: '-10deg' },
         name: 'Go to Main Area 8'
       },
+      {
+        nodeId: 'ppk-f1-main-area-5',
+        position: { yaw: '250.50deg', pitch: '-10deg' },
+        name: 'Go to Main Area 5'
+      },
     ],
     markers: [],
     data: {
@@ -283,8 +360,8 @@ export default [
       {
         id: 'ppk-f1-main-area-7-marker-1789530554491',
         position: {
-          yaw: '284.66deg',
-          pitch: '-1.89deg'
+          yaw: '283.16deg',
+          pitch: '8.11deg'
         },
         size: {
           width: 44,
@@ -302,6 +379,50 @@ export default [
           caption: 'Painting'
         },
         html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/ppk/markers/LOBBY/KOMTAR_lobby_11.jpg\'>\n        <img src=\'./images/ppk/markers/LOBBY/KOMTAR_lobby_11.jpg\' alt=\'Painting\' style=\'cursor:pointer;\' />\n        <h2>Painting</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      {
+        id: 'ppk-f1-main-area-7-marker-1789636307772',
+        position: {
+          yaw: '7.98deg',
+          pitch: '4.82deg'
+        },
+        size: {
+          width: 32,
+          height: 32
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: '',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/ppk/markers/LOBBY/KOMTAR_lobby_12.jpg',
+          originalUrl: './images/ppk/markers/LOBBY/KOMTAR_lobby_12.jpg',
+          caption: ''
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/ppk/markers/LOBBY/KOMTAR_lobby_12.jpg\'>\n        <img src=\'./images/ppk/markers/LOBBY/KOMTAR_lobby_12.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      {
+        id: 'ppk-f1-main-area-7-marker-1789636372610',
+        position: {
+          yaw: '201.44deg',
+          pitch: '-8.18deg'
+        },
+        size: {
+          width: 32,
+          height: 32
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Pintu Keluar',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'info\' data-color=\'blue\'>\n        <h2>Pintu Keluar</h2>\n        <p></p>\n      </custom-marker>'
       }
     ],
     data: {
