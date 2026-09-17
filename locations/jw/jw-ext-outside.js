@@ -465,6 +465,27 @@ export default [
           caption: 'PPAPP @ Daerah Seberang Perai Selatan'
         },
         html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/jw/markers/OUTSIDE/IMG_20260910_093200_968.webp\'>\n        <img src=\'./images/jw/markers/OUTSIDE/IMG_20260910_093200_968.webp\' alt=\'PPAPP @ Daerah Seberang Perai Selatan\' style=\'cursor:pointer;\' />\n        <h2>PPAPP @ Daerah Seberang Perai Selatan</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      {
+        id: 'jw-ext-outside-10-marker-1789620591714',
+        position: {
+          yaw: '203.87deg',
+          pitch: '-6.14deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Jagalah Kelestarian Alam Sekitar',
+          icon: 'warning',
+          color: 'green',
+          animated: true,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'warning\' data-color=\'green\' animated>\n        <h2>Jagalah Kelestarian Alam Sekitar</h2>\n        <p></p>\n      </custom-marker>'
       }
     ],
     data: {

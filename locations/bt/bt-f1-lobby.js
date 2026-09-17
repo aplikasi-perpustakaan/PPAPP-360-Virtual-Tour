@@ -57,11 +57,18 @@ export default [
         },
         html: '<custom-marker type=\'image\' data-icon=\'star\' data-color=\'gold\' animated data-url=\'./images/bt/markers/LOBBY/BT_lobby_4.jpg\'>\n        <img src=\'./images/bt/markers/LOBBY/BT_lobby_4.jpg\' alt=\'Photo Point\' style=\'cursor:pointer;\' />\n        <h2>Photo Point</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
       },
+      
+      
+      
+      
+      
+      
+      
       {
-        id: 'bt-f1-lobby-1-marker-1789460097447',
+        id: 'bt-f1-lobby-1-marker-1789460435875',
         position: {
-          yaw: '122.75deg',
-          pitch: '-12.06deg'
+          yaw: '332.08deg',
+          pitch: '-11.13deg'
         },
         size: {
           width: 44,
@@ -69,39 +76,14 @@ export default [
         },
         anchor: 'center center',
         data: {
-          type: 'image',
-          title: '',
-          icon: 'info',
-          color: 'blue',
-          animated: false,
-          imageSrc: './images/bt/markers/LOBBY/BT_lobby_7.jpg',
-          originalUrl: './images/bt/markers/LOBBY/BT_lobby_7.jpg',
-          caption: ''
+          type: 'info',
+          title: 'Kakitangan Sahaja',
+          icon: 'no-entry',
+          color: 'red',
+          animated: true,
+          content: ''
         },
-        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bt/markers/LOBBY/BT_lobby_7.jpg\'>\n        <img src=\'./images/bt/markers/LOBBY/BT_lobby_7.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
-      },
-      {
-        id: 'bt-f1-lobby-1-marker-1789460123553',
-        position: {
-          yaw: '270.96deg',
-          pitch: '-23.54deg'
-        },
-        size: {
-          width: 44,
-          height: 44
-        },
-        anchor: 'center center',
-        data: {
-          type: 'image',
-          title: '',
-          icon: 'info',
-          color: 'blue',
-          animated: false,
-          imageSrc: './images/bt/markers/LOBBY/BT_lobby_6.jpg',
-          originalUrl: './images/bt/markers/LOBBY/BT_lobby_6.jpg',
-          caption: ''
-        },
-        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bt/markers/LOBBY/BT_lobby_6.jpg\'>\n        <img src=\'./images/bt/markers/LOBBY/BT_lobby_6.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+        html: '<custom-marker type=\'info\' data-icon=\'no-entry\' data-color=\'red\' animated>\n        <h2>Kakitangan Sahaja</h2>\n        <p></p>\n      </custom-marker>'
       },
       {
         id: 'bt-f1-lobby-1-marker-1789460406637',
@@ -116,15 +98,15 @@ export default [
         anchor: 'center center',
         data: {
           type: 'image',
-          title: '',
+          title: 'Visi Dan Misi PPAPP',
           icon: 'info',
           color: 'blue',
           animated: false,
           imageSrc: './images/bt/markers/LOBBY/BT_lobby_1.jpg',
           originalUrl: './images/bt/markers/LOBBY/BT_lobby_1.jpg',
-          caption: ''
+          caption: 'Visi Dan Misi PPAPP'
         },
-        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bt/markers/LOBBY/BT_lobby_1.jpg\'>\n        <img src=\'./images/bt/markers/LOBBY/BT_lobby_1.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bt/markers/LOBBY/BT_lobby_1.jpg\'>\n        <img src=\'./images/bt/markers/LOBBY/BT_lobby_1.jpg\' alt=\'Visi Dan Misi PPAPP\' style=\'cursor:pointer;\' />\n        <h2>Visi Dan Misi PPAPP</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
       },
       {
         id: 'bt-f1-lobby-1-marker-1789460416654',
@@ -139,15 +121,15 @@ export default [
         anchor: 'center center',
         data: {
           type: 'image',
-          title: '',
+          title: 'Piagam Pelanggan',
           icon: 'info',
           color: 'blue',
           animated: false,
           imageSrc: './images/bt/markers/LOBBY/BT_lobby_2.jpg',
           originalUrl: './images/bt/markers/LOBBY/BT_lobby_2.jpg',
-          caption: ''
+          caption: 'Piagam Pelanggan'
         },
-        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bt/markers/LOBBY/BT_lobby_2.jpg\'>\n        <img src=\'./images/bt/markers/LOBBY/BT_lobby_2.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bt/markers/LOBBY/BT_lobby_2.jpg\'>\n        <img src=\'./images/bt/markers/LOBBY/BT_lobby_2.jpg\' alt=\'Piagam Pelanggan\' style=\'cursor:pointer;\' />\n        <h2>Piagam Pelanggan</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
       },
       {
         id: 'bt-f1-lobby-1-marker-1789460423790',
@@ -162,21 +144,21 @@ export default [
         anchor: 'center center',
         data: {
           type: 'image',
-          title: '',
+          title: 'Skop PPAPP',
           icon: 'info',
           color: 'blue',
           animated: false,
           imageSrc: './images/bt/markers/LOBBY/BT_lobby_3.jpg',
           originalUrl: './images/bt/markers/LOBBY/BT_lobby_3.jpg',
-          caption: ''
+          caption: 'Skop PPAPP'
         },
-        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bt/markers/LOBBY/BT_lobby_3.jpg\'>\n        <img src=\'./images/bt/markers/LOBBY/BT_lobby_3.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bt/markers/LOBBY/BT_lobby_3.jpg\'>\n        <img src=\'./images/bt/markers/LOBBY/BT_lobby_3.jpg\' alt=\'Skop PPAPP\' style=\'cursor:pointer;\' />\n        <h2>Skop PPAPP</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
       },
       {
-        id: 'bt-f1-lobby-1-marker-1789460435875',
+        id: 'bt-f1-lobby-1-marker-1789460123553',
         position: {
-          yaw: '332.08deg',
-          pitch: '-11.13deg'
+          yaw: '270.96deg',
+          pitch: '-23.54deg'
         },
         size: {
           width: 44,
@@ -184,14 +166,16 @@ export default [
         },
         anchor: 'center center',
         data: {
-          type: 'info',
-          title: 'Staff Only',
-          icon: 'no-entry',
-          color: 'red',
-          animated: true,
-          content: ''
+          type: 'image',
+          title: 'PPAPP @ Daerah Seberang Perai Utara',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/bt/markers/LOBBY/BT_lobby_6.jpg',
+          originalUrl: './images/bt/markers/LOBBY/BT_lobby_6.jpg',
+          caption: 'PPAPP @ Daerah Seberang Perai Utara'
         },
-        html: '<custom-marker type=\'info\' data-icon=\'no-entry\' data-color=\'red\' animated>\n        <h2>Staff Only</h2>\n        <p></p>\n      </custom-marker>'
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bt/markers/LOBBY/BT_lobby_6.jpg\'>\n        <img src=\'./images/bt/markers/LOBBY/BT_lobby_6.jpg\' alt=\'PPAPP @ Daerah Seberang Perai Utara\' style=\'cursor:pointer;\' />\n        <h2>PPAPP @ Daerah Seberang Perai Utara</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
       },
       {
         id: 'bt-f1-lobby-1-marker-1789460779852',
@@ -206,15 +190,38 @@ export default [
         anchor: 'center center',
         data: {
           type: 'image',
-          title: '',
+          title: 'Book Disinfector',
           icon: 'info',
           color: 'blue',
           animated: false,
           imageSrc: './images/bt/markers/LOBBY/BT_lobby_5.jpg',
           originalUrl: './images/bt/markers/LOBBY/BT_lobby_5.jpg',
-          caption: ''
+          caption: 'Book Disinfector'
         },
-        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bt/markers/LOBBY/BT_lobby_5.jpg\'>\n        <img src=\'./images/bt/markers/LOBBY/BT_lobby_5.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bt/markers/LOBBY/BT_lobby_5.jpg\'>\n        <img src=\'./images/bt/markers/LOBBY/BT_lobby_5.jpg\' alt=\'Book Disinfector\' style=\'cursor:pointer;\' />\n        <h2>Book Disinfector</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      {
+        id: 'bt-f1-lobby-1-marker-1789460097447',
+        position: {
+          yaw: '122.75deg',
+          pitch: '-12.06deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: 'Cafe @ PPAPP Menu',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/bt/markers/LOBBY/BT_lobby_7.jpg',
+          originalUrl: './images/bt/markers/LOBBY/BT_lobby_7.jpg',
+          caption: 'Cafe @ PPAPP Menu'
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bt/markers/LOBBY/BT_lobby_7.jpg\'>\n        <img src=\'./images/bt/markers/LOBBY/BT_lobby_7.jpg\' alt=\'Cafe @ PPAPP Menu\' style=\'cursor:pointer;\' />\n        <h2>Cafe @ PPAPP Menu</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
       }
     ],
     data: {
@@ -286,27 +293,6 @@ export default [
     ],
     markers: [
       {
-        id: 'bt-f1-lobby-3-marker-1789460667102',
-        position: {
-          yaw: '0.24deg',
-          pitch: '-13.69deg'
-        },
-        size: {
-          width: 44,
-          height: 44
-        },
-        anchor: 'center center',
-        data: {
-          type: 'info',
-          title: 'Staff Only',
-          icon: 'no-entry',
-          color: 'red',
-          animated: true,
-          content: ''
-        },
-        html: '<custom-marker type=\'info\' data-icon=\'no-entry\' data-color=\'red\' animated>\n        <h2>Staff Only</h2>\n        <p></p>\n      </custom-marker>'
-      },
-      {
         id: 'bt-f1-lobby-3-marker-1789460707658',
         position: {
           yaw: '327.40deg',
@@ -328,6 +314,27 @@ export default [
           caption: ''
         },
         html: '<custom-marker type=\'image\' data-icon=\'star\' data-color=\'gold\' data-url=\'./images/bt/markers/LOBBY/BT_lobby_4.jpg\'>\n        <img src=\'./images/bt/markers/LOBBY/BT_lobby_4.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      {
+        id: 'bt-f1-lobby-3-marker-1789460667102',
+        position: {
+          yaw: '0.24deg',
+          pitch: '-13.69deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Kakitangan Sahaja',
+          icon: 'no-entry',
+          color: 'red',
+          animated: true,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'no-entry\' data-color=\'red\' animated>\n        <h2>Kakitangan Sahaja</h2>\n        <p></p>\n      </custom-marker>'
       }
     ],
     data: {

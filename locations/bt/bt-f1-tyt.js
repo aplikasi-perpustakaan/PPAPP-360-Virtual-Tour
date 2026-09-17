@@ -1538,15 +1538,15 @@ export default [
         anchor: 'center center',
         data: {
           type: 'image',
-          title: '',
+          title: 'Pengiktirafan',
           icon: 'info',
           color: 'blue',
           animated: false,
           imageSrc: './images/bt/markers/TYT/BT_tyt_48.jpg',
           originalUrl: './images/bt/markers/TYT/BT_tyt_48.jpg',
-          caption: ''
+          caption: 'Pengiktirafan'
         },
-        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bt/markers/TYT/BT_tyt_48.jpg\'>\n        <img src=\'./images/bt/markers/TYT/BT_tyt_48.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bt/markers/TYT/BT_tyt_48.jpg\'>\n        <img src=\'./images/bt/markers/TYT/BT_tyt_48.jpg\' alt=\'Pengiktirafan\' style=\'cursor:pointer;\' />\n        <h2>Pengiktirafan</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
       },
       {
         id: 'bt-f1-tyt-13-marker-1789461996691',
@@ -1561,15 +1561,15 @@ export default [
         anchor: 'center center',
         data: {
           type: 'image',
-          title: '',
+          title: 'Pengiktirafan',
           icon: 'info',
           color: 'blue',
           animated: false,
           imageSrc: './images/bt/markers/TYT/BT_tyt_49.jpg',
           originalUrl: './images/bt/markers/TYT/BT_tyt_49.jpg',
-          caption: ''
+          caption: 'Pengiktirafan'
         },
-        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bt/markers/TYT/BT_tyt_49.jpg\'>\n        <img src=\'./images/bt/markers/TYT/BT_tyt_49.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bt/markers/TYT/BT_tyt_49.jpg\'>\n        <img src=\'./images/bt/markers/TYT/BT_tyt_49.jpg\' alt=\'Pengiktirafan\' style=\'cursor:pointer;\' />\n        <h2>Pengiktirafan</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
       },
       {
         id: 'bt-f1-tyt-13-marker-1789462017570',
@@ -1584,15 +1584,15 @@ export default [
         anchor: 'center center',
         data: {
           type: 'image',
-          title: '',
+          title: 'Pengiktirafan',
           icon: 'info',
           color: 'blue',
           animated: false,
           imageSrc: './images/bt/markers/TYT/BT_tyt_50.jpg',
           originalUrl: './images/bt/markers/TYT/BT_tyt_50.jpg',
-          caption: ''
+          caption: 'Pengiktirafan'
         },
-        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bt/markers/TYT/BT_tyt_50.jpg\'>\n        <img src=\'./images/bt/markers/TYT/BT_tyt_50.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bt/markers/TYT/BT_tyt_50.jpg\'>\n        <img src=\'./images/bt/markers/TYT/BT_tyt_50.jpg\' alt=\'Pengiktirafan\' style=\'cursor:pointer;\' />\n        <h2>Pengiktirafan</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
       },
       {
         id: 'bt-f1-tyt-13-marker-1789462039388',
@@ -1607,15 +1607,15 @@ export default [
         anchor: 'center center',
         data: {
           type: 'image',
-          title: '',
+          title: 'Pengiktirafan',
           icon: 'info',
           color: 'blue',
           animated: false,
           imageSrc: './images/bt/markers/TYT/BT_tyt_51.jpg',
           originalUrl: './images/bt/markers/TYT/BT_tyt_51.jpg',
-          caption: ''
+          caption: 'Pengiktirafan'
         },
-        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bt/markers/TYT/BT_tyt_51.jpg\'>\n        <img src=\'./images/bt/markers/TYT/BT_tyt_51.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bt/markers/TYT/BT_tyt_51.jpg\'>\n        <img src=\'./images/bt/markers/TYT/BT_tyt_51.jpg\' alt=\'Pengiktirafan\' style=\'cursor:pointer;\' />\n        <h2>Pengiktirafan</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
       },
       {
         id: 'bt-f1-tyt-13-marker-1789462046344',
@@ -1630,13 +1630,13 @@ export default [
         anchor: 'center center',
         data: {
           type: 'info',
-          title: '',
+          title: 'Pengiktirafan',
           icon: 'info',
           color: 'blue',
           animated: false,
           content: './images/bt/markers/TYT/BT_tyt_52.jpg'
         },
-        html: '<custom-marker type=\'info\' data-icon=\'info\' data-color=\'blue\'>\n        <h2></h2>\n        <p>./images/bt/markers/TYT/BT_tyt_52.jpg</p>\n      </custom-marker>'
+        html: '<custom-marker type=\'info\' data-icon=\'info\' data-color=\'blue\'>\n        <h2>Pengiktirafan</h2>\n        <p>./images/bt/markers/TYT/BT_tyt_52.jpg</p>\n      </custom-marker>'
       }
     ],
     data: {
@@ -1715,13 +1715,13 @@ export default [
         anchor: 'center center',
         data: {
           type: 'info',
-          title: 'Staff Only',
+          title: 'Kakitangan Sahaja',
           icon: 'no-entry',
           color: 'red',
           animated: true,
           content: ''
         },
-        html: '<custom-marker type=\'info\' data-icon=\'no-entry\' data-color=\'red\' animated>\n        <h2>Staff Only</h2>\n        <p></p>\n      </custom-marker>'
+        html: '<custom-marker type=\'info\' data-icon=\'no-entry\' data-color=\'red\' animated>\n        <h2>Kakitangan Sahaja</h2>\n        <p></p>\n      </custom-marker>'
       }
     ],
     data: {

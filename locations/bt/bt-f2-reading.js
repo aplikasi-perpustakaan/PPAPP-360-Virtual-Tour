@@ -744,7 +744,10 @@ export default [
         nodeId: 'bt-f2-reading-12',
         position: { yaw: '13.91deg', pitch: '0deg' },
         name: 'Go to Reading 12',
+        targetYaw: '0.00deg',
+        targetPitch: '0.00deg'
       },
+      
       {
         nodeId: 'bt-f2-reading-14',
         position: { yaw: '134.57deg', pitch: '0deg' },
@@ -820,6 +823,90 @@ export default [
           caption: ''
         },
         html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bt/markers/FLOOR-2/BT_f2_7.jpg\'>\n        <img src=\'./images/bt/markers/FLOOR-2/BT_f2_7.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      {
+        id: 'bt-f2-reading-13-marker-1789626222231',
+        position: {
+          yaw: '153.22deg',
+          pitch: '19.23deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Bahan PT3',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'info\' data-color=\'blue\'>\n        <h2>Bahan PT3</h2>\n        <p></p>\n      </custom-marker>'
+      },
+      {
+        id: 'bt-f2-reading-13-marker-1789626235490',
+        position: {
+          yaw: '181.10deg',
+          pitch: '21.29deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Bahan SPM',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'info\' data-color=\'blue\'>\n        <h2>Bahan SPM</h2>\n        <p></p>\n      </custom-marker>'
+      },
+      {
+        id: 'bt-f2-reading-13-marker-1789626244356',
+        position: {
+          yaw: '202.93deg',
+          pitch: '19.81deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Bahan STPM',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'info\' data-color=\'blue\'>\n        <h2>Bahan STPM</h2>\n        <p></p>\n      </custom-marker>'
+      },
+      {
+        id: 'bt-f2-reading-13-marker-1789626261342',
+        position: {
+          yaw: '215.14deg',
+          pitch: '17.74deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Kamus',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'info\' data-color=\'blue\'>\n        <h2>Kamus</h2>\n        <p></p>\n      </custom-marker>'
       }
     ],
     data: {

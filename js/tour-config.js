@@ -19,7 +19,7 @@ export const branches = [
   {
     id: 'bt',
     name: 'BT - Daerah Seberang Perai Utara',
-    startNode: 'bt-f1-lobby-1',
+    startNode: 'bt-ext-outside-1',
     description: 'Serving the Northern Seberang Perai district, this branch provides community-focused learning resources and comfortable reading spaces.',
     address: 'Jalan Bertam 2, 13200 Kepala Batas, Pulau Pinang',
     phone: '+604-575 1153',
