@@ -38,29 +38,7 @@ export default [
         },
         html: '<custom-marker type=\'image\' data-icon=\'pin\' data-color=\'blue\' data-url=\'./images/ppaj/markers/OUTSIDE/AEON_outside_1.jpg\'>\n        <img src=\'./images/ppaj/markers/OUTSIDE/AEON_outside_1.jpg\' alt=\'PPAPP @ AEON Alma\' style=\'cursor:pointer;\' />\n        <h2>PPAPP @ AEON Alma</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
       },
-      {
-        id: 'ppaj-f1-01-img-4',
-        position: {
-          yaw: '348.33deg',
-          pitch: '-8.00deg'
-        },
-        size: {
-          width: 44,
-          height: 44
-        },
-        anchor: 'center center',
-        data: {
-          type: 'image',
-          title: 'Sila Patuhi Etika Pemakaian Ketika Di Perpustakaan',
-          icon: 'info',
-          color: 'gold',
-          animated: false,
-          imageSrc: './images/ppaj/markers/OUTSIDE/AEON_outside_3.jpg',
-          originalUrl: './images/ppaj/markers/OUTSIDE/AEON_outside_3.jpg',
-          caption: 'Sila Patuhi Etika Pemakaian Ketika Di Perpustakaan'
-        },
-        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'gold\' data-url=\'./images/ppaj/markers/OUTSIDE/AEON_outside_3.jpg\'>\n        <img src=\'./images/ppaj/markers/OUTSIDE/AEON_outside_3.jpg\' alt=\'Sila Patuhi Etika Pemakaian Ketika Di Perpustakaan\' style=\'cursor:pointer;\' />\n        <h2>Sila Patuhi Etika Pemakaian Ketika Di Perpustakaan</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
-      },
+      
       {
         id: 'ppaj-f1-01-img-5',
         position: {
@@ -106,6 +84,29 @@ export default [
           caption: 'Waktu Operasi'
         },
         html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/ppaj/markers/OUTSIDE/AEON_outside_2.jpg\'>\n        <img src=\'./images/ppaj/markers/OUTSIDE/AEON_outside_2.jpg\' alt=\'Waktu Operasi\' style=\'cursor:pointer;\' />\n        <h2>Waktu Operasi</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      {
+        id: 'ppaj-f1-01-img-4',
+        position: {
+          yaw: '348.33deg',
+          pitch: '-8.00deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: 'Sila Patuhi Etika Pemakaian Ketika Di Perpustakaan',
+          icon: 'warning',
+          color: 'gold',
+          animated: false,
+          imageSrc: './images/ppaj/markers/OUTSIDE/AEON_outside_3.jpg',
+          originalUrl: './images/ppaj/markers/OUTSIDE/AEON_outside_3.jpg',
+          caption: 'Sila Patuhi Etika Pemakaian Ketika Di Perpustakaan'
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'warning\' data-color=\'gold\' data-url=\'./images/ppaj/markers/OUTSIDE/AEON_outside_3.jpg\'>\n        <img src=\'./images/ppaj/markers/OUTSIDE/AEON_outside_3.jpg\' alt=\'Sila Patuhi Etika Pemakaian Ketika Di Perpustakaan\' style=\'cursor:pointer;\' />\n        <h2>Sila Patuhi Etika Pemakaian Ketika Di Perpustakaan</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
       }
     ],
     data: {
@@ -175,29 +176,7 @@ export default [
         },
         html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/ppaj/markers/LOBBY/AEON_lobby_2.jpg\'>\n        <img src=\'./images/ppaj/markers/LOBBY/AEON_lobby_2.jpg\' alt=\'Hub Digital @ PPAPP\' style=\'cursor:pointer;\' />\n        <h2>Hub Digital @ PPAPP</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
       },
-      {
-        id: 'ppaj-f1-02-marker-1789453482345',
-        position: {
-          yaw: '291.26deg',
-          pitch: '2.45deg'
-        },
-        size: {
-          width: 44,
-          height: 44
-        },
-        anchor: 'center center',
-        data: {
-          type: 'image',
-          title: 'Dilarang Merokok',
-          icon: 'info',
-          color: 'gold',
-          animated: false,
-          imageSrc: './images/ppaj/markers/LOBBY/AEON_lobby_3.jpg',
-          originalUrl: './images/ppaj/markers/LOBBY/AEON_lobby_3.jpg',
-          caption: 'Dilarang Merokok'
-        },
-        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'gold\' data-url=\'./images/ppaj/markers/LOBBY/AEON_lobby_3.jpg\'>\n        <img src=\'./images/ppaj/markers/LOBBY/AEON_lobby_3.jpg\' alt=\'Dilarang Merokok\' style=\'cursor:pointer;\' />\n        <h2>Dilarang Merokok</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
-      },
+      
       {
         id: 'ppaj-f1-02-marker-1789453518145',
         position: {
@@ -220,6 +199,29 @@ export default [
           caption: 'Surat Akhbar'
         },
         html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/ppaj/markers/LOBBY/AEON_lobby_6.jpg\'>\n        <img src=\'./images/ppaj/markers/LOBBY/AEON_lobby_6.jpg\' alt=\'Surat Akhbar\' style=\'cursor:pointer;\' />\n        <h2>Surat Akhbar</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      {
+        id: 'ppaj-f1-02-marker-1789453482345',
+        position: {
+          yaw: '291.26deg',
+          pitch: '2.45deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: 'Dilarang Merokok',
+          icon: 'warning',
+          color: 'gold',
+          animated: false,
+          imageSrc: './images/ppaj/markers/LOBBY/AEON_lobby_3.jpg',
+          originalUrl: './images/ppaj/markers/LOBBY/AEON_lobby_3.jpg',
+          caption: 'Dilarang Merokok'
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'warning\' data-color=\'gold\' data-url=\'./images/ppaj/markers/LOBBY/AEON_lobby_3.jpg\'>\n        <img src=\'./images/ppaj/markers/LOBBY/AEON_lobby_3.jpg\' alt=\'Dilarang Merokok\' style=\'cursor:pointer;\' />\n        <h2>Dilarang Merokok</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
       }
     ],
     data: {
