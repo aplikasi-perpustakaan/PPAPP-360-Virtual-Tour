@@ -795,23 +795,7 @@ export default [
       ]
     }
   },
-  {
-    id: 'pusat-f2-reading-15',
-    name: 'Floor 2 - Reading 15',
-    caption: 'PUSAT - Floor 2 - Reading 15',
-    panorama: './images/pusat/f2-reading/pusat-f2-reading-15.jpg',
-    thumbnail: './images/pusat/f2-reading/thumbs/pusat-f2-reading-15.jpg',
-    defaultYaw: '0deg',
-    defaultPitch: '0deg',
-    links: [],
-    markers: [],
-    data: {
-      floor: 'f2',
-      tags: [
-        'reading'
-      ]
-    }
-  },
+
   {
     id: 'pusat-f2-reading-16',
     name: 'Floor 2 - Reading 16',

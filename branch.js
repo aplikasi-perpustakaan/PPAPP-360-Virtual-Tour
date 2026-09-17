@@ -76,31 +76,39 @@ async function initBranchPage() {
     facilitiesList.innerHTML = '<li>Information not available</li>';
   }
 
-  // Populate Quick Links
-  const quickLinksGrid = document.getElementById('quick-links-grid');
-  if (branch.quickLinks && branch.quickLinks.length > 0) {
-    quickLinksGrid.innerHTML = branch.quickLinks.map(link => {
-      const targetScene = scenes.find(s => s.id === link.sceneId);
-      const thumb = targetScene && targetScene.thumbnail ? targetScene.thumbnail : './images/shared/placeholder.jpg';
-
-      return `
-        <a href="./tour.html?scene=${link.sceneId}" class="quick-link-card">
-          <img src="${thumb}" alt="${link.label}" class="quick-link-img" onerror="this.src='./images/shared/placeholder.jpg'">
-          <div class="quick-link-label">${link.label}</div>
-        </a>
-      `;
-    }).join('');
+  // Populate Zones
+  const zonesContainer = document.getElementById('zones-container');
+  if (branch.zones && branch.zones.length > 0) {
+    let html = '';
+    branch.zones.forEach(zoneCategory => {
+      if (branch.zones.length > 1 || zoneCategory.category !== 'Main Areas') {
+        html += `<h4 class="zone-category-title">${zoneCategory.category}</h4>`;
+      }
+      
+      html += `<div class="zones-grid">`;
+      html += zoneCategory.items.map(link => {
+        const targetScene = scenes.find(s => s.id === link.sceneId);
+        const thumb = targetScene && targetScene.thumbnail ? targetScene.thumbnail : './images/shared/placeholder.jpg';
+        return `
+          <a href="./tour.html?scene=${link.sceneId}" class="zone-card">
+            <img src="${thumb}" alt="${link.label}" class="zone-img" onerror="this.src='./images/shared/placeholder.jpg'">
+            <div class="zone-label">${link.label}</div>
+          </a>
+        `;
+      }).join('');
+      html += `</div>`;
+    });
+    if (zonesContainer) {
+      zonesContainer.innerHTML = html;
+    }
   } else {
-    document.querySelector('.quick-links-section').classList.add('is-hidden');
+    const zonesSection = document.querySelector('.zones-section');
+    if (zonesSection) {
+      zonesSection.classList.add('is-hidden');
+    }
   }
 
-  // Populate Map
-  if (branch.map) {
-    const mapSection = document.getElementById('map-section');
-    const mapImg = document.getElementById('branch-map');
-    mapImg.src = branch.map;
-    mapSection.classList.remove('is-hidden');
-  }
+
 
   // Show content
   const spinner = document.getElementById('loading-spinner');

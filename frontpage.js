@@ -41,7 +41,7 @@ async function initFrontpage() {
           <img class="slideshow-img slideshow-img-2" style="position: absolute; inset: 0; opacity: 0; transition: opacity 1.2s ease-in-out, transform 0.6s ease;" src="" alt="" loading="lazy">
           <div class="card-overlay" style="z-index: 10;">
             <div class="text-bar">
-              <span class="take-tour-text">TAKE A TOUR</span>
+              <span class="take-tour-text">MULA LAWATAN</span>
               <span class="branch-name">${branch.name}</span>
             </div>
           </div>

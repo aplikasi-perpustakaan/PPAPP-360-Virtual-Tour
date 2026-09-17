@@ -152,13 +152,13 @@
   margin-bottom: var(--space-xl);
 }
 
-.info-section, .facilities-section, .quick-links-section, .map-section, .rules-section {
+.info-section, .facilities-section, .zones-section, .map-section, .rules-section {
   padding: var(--space-lg);
   background: var(--glass-bg);
   color: #FFFFFF;
 }
 
-.info-section h3, .facilities-section h3, .quick-links-section h3, .map-section h3, .rules-section h3 {
+.info-section h3, .facilities-section h3, .zones-section h3, .map-section h3, .rules-section h3 {
   color: #FFFFFF;
   margin-top: 0;
   margin-bottom: var(--space-md);
@@ -216,19 +216,19 @@
   font-weight: bold;
 }
 
-/* Quick Links */
-.quick-links-section {
+/* Zones */
+.zones-section {
   margin-bottom: var(--space-xl);
 }
 
-.quick-links-grid {
+.zones-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   gap: var(--space-md);
   margin-top: var(--space-md);
 }
 
-.quick-link-card {
+.zone-card {
   display: flex;
   flex-direction: column;
   text-decoration: none;
@@ -240,20 +240,20 @@
   transition: transform var(--transition-base), box-shadow var(--transition-base), background var(--transition-fast);
 }
 
-.quick-link-card:hover {
+.zone-card:hover {
   background: var(--color-black);
   transform: translateY(-3px);
   box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
 }
 
-.quick-link-img {
+.zone-img {
   width: 100%;
   height: 120px;
   object-fit: cover;
   background: var(--color-black);
 }
 
-.quick-link-label {
+.zone-label {
   padding: 10px;
   text-align: center;
   color: var(--color-white);
@@ -287,4 +287,13 @@
   .hero-overlay h2 {
     font-size: 2rem;
   }
+}
+
+.zone-category-title {
+  color: var(--color-accent-gold);
+  margin-top: var(--space-lg);
+  margin-bottom: var(--space-sm);
+  font-size: 1.1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 4px;
 }
