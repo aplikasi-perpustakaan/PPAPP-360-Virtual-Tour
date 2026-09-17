@@ -33,7 +33,7 @@ for scene_id, markers in markers_by_scene.items():
         id: '{marker_id}',
         position: {{ yaw: '{m['yaw']}', pitch: '{m['pitch']}' }},
         html: `{html_content}`,
-        size: {{ width: 44, height: 44 }},
+        size: {{ width: 32, height: 32 }},
         anchor: 'center center'
       }},
 """

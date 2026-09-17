@@ -125,3 +125,56 @@ export default [
 - The thumbnail captures the scene's `defaultYaw`/`defaultPitch` view direction.
 - The `thumbnail:` field in scene data MUST point to the `thumbs/` path, NOT the panorama path.
 
+## Marker Standards
+
+### Custom Marker Component (`<custom-marker>`)
+
+All interactive markers use the `<custom-marker>` Web Component defined in `js/custom-marker.js`. Markers are stored in scene data as `html:` strings (NOT `element:` closures) so the dev-server can serialize them to disk.
+
+**Canonical marker format in scene files:**
+```js
+{
+  id: '{sceneId}-marker-{timestamp}',
+  position: { yaw: '90deg', pitch: '-15deg' },
+  size: { width: 32, height: 32 },
+  anchor: 'center center',
+  data: {
+    type: 'info',        // 'info' | 'audio' | 'image' | 'link'
+    title: 'Marker Title',
+    icon: 'info',        // 'info' | 'star' | 'warning' | 'pin' | 'no-entry' | 'ring'
+    color: 'blue',       // 'blue' | 'gold' | 'red' | 'green'
+    animated: false,
+    content: ''           // For info type
+  },
+  html: '<custom-marker type="info" data-icon="info" data-color="blue">...</custom-marker>'
+}
+```
+
+### Marker Size Tiers
+
+| Tier   | Value (px) | Use Case |
+|--------|-----------|----------|
+| Small  | 32        | **Default.** Standard markers (info, image, audio) |
+| Medium | 44        | Legacy markers (pre-2026-09) |
+| Large  | 56        | High-visibility markers (rarely used) |
+
+### Image Marker Preview
+
+- Image markers display a preview in a 300px-wide tooltip card.
+- Images respect their original aspect ratio (`object-fit: contain`).
+- Maximum preview height: **250px** (prevents tall images from overwhelming the view).
+- Clicking the marker opens the full-resolution image in a new tab (via `data-url` attribute).
+- In debug mode (`?debug=true`), click-to-open is disabled so markers can be edited instead.
+
+### Legacy Marker Templates (`js/marker-templates.js`)
+
+These functions generate simple inline-styled `<div>` markers. They are **not used by the debug marker placer** (which uses `<custom-marker>`), but remain available for manual/programmatic marker creation:
+
+| Function | Default Size | Visual |
+|----------|-------------|--------|
+| `createInfoMarker()` | 24px | Blue circle with "i" |
+| `createAudioMarker()` | 24px | Gold circle with 🔊 |
+| `createNavArrow()` | 32px | Blue arrow circle |
+| `createLabelMarker({ text })` | auto | Glass badge with text |
+
+

@@ -30,8 +30,8 @@ These branches currently have only a single placeholder scene and need scaffoldi
 | `jw` | `gf-main-area.js` + `index.js` | Placeholder only |
 | `bm` | `gf-main-area.js` + `index.js` | Placeholder only |
 | `ppaj` | `f1-main-area.js` + `index.js` | Placeholder only |
-| `gt` | `gf-main-area.js` + `index.js` | Placeholder only |
-| `ppk` | `f1-main-area.js` + `index.js` | Placeholder only |
+
+> **Note:** `gt` and `ppk` have been fully scaffolded and no longer need this skill.
 
 ## Input Specification
 

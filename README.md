@@ -66,8 +66,8 @@ A 360° Virtual Tour web application built for the **Perbadanan Perpustakaan Awa
 | `jw` | Cawangan Daerah Seberang Perai Selatan | Active | Multi-floor tour (Exterior, Lobby, Kids, Stairs, E-Sport, Facilities, Reference Hall) |
 | `bm` | Cawangan Daerah Seberang Perai Tengah | Active | 19 scenes (Entrance Steps, Verandah & Signboard, Porch, Service Counter, Reading Stacks, Kids Activity Area, Bahagian Kanak-Kanak) |
 | `ppaj` | PP AEON Jusco Alma | Active | 10 scenes (Level 1 Main Area, Collections, Reading Spaces) |
-| `gt` | Cawangan Daerah Timur Laut | Planned | Branch expansion |
-| `ppk` | PP Lounge@Komtar | Planned | Branch expansion |
+| `gt` | Cawangan Daerah Timur Laut | Active | Multi-floor tour (Exterior, I-Play Toys, Main Area, Meeting Room, Bilik Koleksi Khas, Stairs) |
+| `ppk` | PP Lounge@Komtar | Active | Level 1 Main Area |
 
 ---
 
@@ -222,28 +222,44 @@ python scripts/generate-thumbnails.py --branch bm --update-scenes
 
 ## 📍 Custom Markers
 
-The project features a custom Web Component `<custom-marker>` ([js/custom-marker.js](js/custom-marker.js)) that provides an animated pulsing button and an interactive floating card:
+The project features a custom Web Component `<custom-marker>` ([js/custom-marker.js](js/custom-marker.js)) that provides an animated pulsing button and an interactive floating card with image preview, text content, and click-to-enlarge behavior.
+
+Markers are stored as `html:` strings in scene data (serializable by the dev-server):
 
 ```javascript
-import '../../js/custom-marker.js';
-
 markers: [
   {
-    id: 'bm-gf-kids-8-custom-img',
+    id: 'bm-gf-kids-8-marker-1234567890',
     position: { yaw: '91.17deg', pitch: '-23.31deg' },
-    element: (() => {
-      const el = document.createElement('custom-marker');
-      el.innerHTML = `
-        <img src="./images/bm/gf-kids/markers/custom-marker-8-v2.jpg" alt="Children's Corner" />
-        <h2>Children's Corner</h2>
-        <p>Bahasa Cina Kanak-Kanak Collection</p>
-      `;
-      return el;
-    })(),
+    size: { width: 32, height: 32 },
     anchor: 'center center',
+    data: {
+      type: 'image',
+      title: "Children's Corner",
+      icon: 'info',
+      color: 'blue',
+      animated: false,
+      imageSrc: './images/bm/gf-kids/markers/thumbs/custom-marker-8.jpg',
+      originalUrl: './images/bm/gf-kids/markers/custom-marker-8.jpg',
+      caption: "Children's Corner"
+    },
+    html: '<custom-marker type="image" data-icon="info" data-color="blue" data-url="./images/bm/gf-kids/markers/custom-marker-8.jpg"><img src="./images/bm/gf-kids/markers/thumbs/custom-marker-8.jpg" alt="Children\'s Corner" style="cursor:pointer;" /><h2>Children\'s Corner</h2><p style="font-size: 11px; opacity:0.7;">🔍 Click to enlarge</p></custom-marker>'
   }
 ]
 ```
+
+### Marker Size Tiers
+
+| Tier | Size (px) | Use Case |
+|------|----------|----------|
+| Small | 32 | **Default.** Standard markers |
+| Medium | 44 | Legacy markers |
+| Large | 56 | High-visibility markers |
+
+### Supported Icons & Colors
+
+- **Icons**: `info` (ℹ), `star` (⭐), `warning` (⚠️), `pin` (📍), `no-entry` (⛔), `ring` (◯)
+- **Colors**: `blue` (Accent Blue), `gold` (Accent Gold), `red` (Warning Red), `green` (Safe Green)
 
 ---
 

@@ -31,7 +31,7 @@ This rule defines the workflow for when the user provides a Google Photos link o
      name: '{Floor Title} – {Section Title} {N}',
      caption: '{BRANCH} – {Floor Title} – {Section Title} {N}',
      panorama: './images/{branch}/{section}/{branch}-{section}-{N}.jpg',
-     thumbnail: './images/{branch}/{section}/{branch}-{section}-{N}.jpg',
+     thumbnail: './images/{branch}/{section}/thumbs/{branch}-{section}-{N}.jpg',
      defaultYaw: '0deg',
      defaultPitch: '0deg',
      links: [],

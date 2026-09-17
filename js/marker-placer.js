@@ -144,7 +144,7 @@ export function initMarkerPlacer(viewer, virtualTour, allNodes, isDebug) {
 
         typeSelect.value = d.type || parsed.type || 'info';
         
-        sizeSelect.value = rawMarker.size?.width || '44';
+        sizeSelect.value = rawMarker.size?.width || '32';
         iconSelect.value = d.icon || parsed.icon || 'info';
         colorSelect.value = d.color || parsed.color || 'blue';
         animCheck.checked = !!(d.animated || parsed.animated);
@@ -467,7 +467,7 @@ export function initMarkerPlacer(viewer, virtualTour, allNodes, isDebug) {
       const title = titleInput.value.trim();
       const yaw = `${capturedYawDeg.toFixed(2)}deg`;
       const pitch = `${capturedPitchDeg.toFixed(2)}deg`;
-      const size = parseInt(sizeSelect.value, 10) || 44;
+      const size = parseInt(sizeSelect.value, 10) || 32;
       const icon = iconSelect.value;
       const color = colorSelect.value;
       const anim = animCheck.checked;

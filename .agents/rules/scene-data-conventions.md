@@ -13,7 +13,7 @@ Every scene object must have exactly these fields in this order:
   name: '{Floor Title} – {Section Title} {N}',  // e.g., 'Floor 2 – Reading 1'
   caption: '{BRANCH} – {Floor Title} – {Section Title} {N}',
   panorama: './images/{branch}/{section}/{branch}-{section}-{N}.jpg',
-  thumbnail: './images/{branch}/{section}/{branch}-{section}-{N}.jpg',
+  thumbnail: './images/{branch}/{section}/thumbs/{branch}-{section}-{N}.jpg',
   defaultYaw: '0deg',
   defaultPitch: '0deg',
   links: [],
