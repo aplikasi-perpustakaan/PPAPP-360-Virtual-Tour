@@ -8,6 +8,7 @@ import pusatF1IPlayToysSection from './pusat-f1-i-play-toys.js';
 import pusatF1KidsSection from './pusat-f1-kids.js';
 import pusatF1LobbySection from './pusat-f1-lobby.js';
 import pusatF1SensorySection from './pusat-f1-sensory.js';
+import pusatOutsideSection from './outside.js';
 
 export default [
   ...pusatF1CastleSection,
@@ -16,4 +17,5 @@ export default [
   ...pusatF1KidsSection,
   ...pusatF1LobbySection,
   ...pusatF1SensorySection,
+  ...pusatOutsideSection,
 ];
