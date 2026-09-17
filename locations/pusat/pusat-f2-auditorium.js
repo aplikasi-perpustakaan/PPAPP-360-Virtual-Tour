@@ -178,20 +178,16 @@ export default [
     defaultPitch: '0deg',
     links: [
       {
-        nodeId: 'pusat-f2-auditorium-7',
-        position: { yaw: '255.83deg', pitch: '1.64deg' },
-        name: 'Go to Floor 2 - Auditorium 7',
-        targetYaw: '279.40deg',
-        targetPitch: '1.93deg'
-      },
-      
-      
-      {
         nodeId: 'pusat-f2-auditorium-4',
         position: { yaw: '78.77deg', pitch: '-6.20deg' },
         name: 'Go to Floor 2 - Auditorium 4',
         targetYaw: '111.63deg',
         targetPitch: '1.28deg'
+      },
+      {
+        nodeId: 'pusat-f2-auditorium-7',
+        position: { yaw: '278.49deg', pitch: '-10deg' },
+        name: 'Go to Floor 2 - Auditorium 7'
       },
     ],
     markers: [],
@@ -213,12 +209,9 @@ export default [
     links: [
       {
         nodeId: 'pusat-f2-auditorium-6',
-        position: {
-          yaw: '178.45deg',
-          pitch: '-8.15deg'
-        },
+        position: { yaw: '98.49deg', pitch: '-9.17deg' },
         name: 'Go to Floor 2 - Auditorium 6'
-      }
+      },
     ],
     markers: [],
     data: {

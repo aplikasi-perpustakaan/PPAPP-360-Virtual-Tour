@@ -151,15 +151,6 @@ export default [
     defaultPitch: '0deg',
     links: [
       {
-        nodeId: 'pusat-f2-reading-6',
-        position: { yaw: '20.15deg', pitch: '-2.74deg' },
-        name: 'Go to Floor 2 - Reading 6',
-        targetYaw: '52.08deg',
-        targetPitch: '-11.66deg'
-      },
-      
-      
-      {
         nodeId: 'pusat-f2-reading-4',
         position: { yaw: '58.25deg', pitch: '-4.51deg' },
         name: 'Go to Floor 2 - Reading 4',
@@ -211,29 +202,6 @@ export default [
         name: 'Go to Floor 2 - Reading 7',
         targetYaw: '327.05deg',
         targetPitch: '-2.17deg'
-      },
-      
-      
-      
-      
-      
-      
-      
-      
-      {
-        nodeId: 'pusat-f2-reading-5',
-        position: {
-          yaw: '178.45deg',
-          pitch: '-8.15deg'
-        },
-        name: 'Go to Floor 2 - Reading 5'
-      },
-      {
-        nodeId: 'pusat-f2-reading-20',
-        position: { yaw: '255.22deg', pitch: '-2.56deg' },
-        name: 'Go to Floor 2 - Reading 20',
-        targetYaw: '228.69deg',
-        targetPitch: '-6.31deg'
       },
     ],
     markers: [],
@@ -526,10 +494,8 @@ export default [
       },
       {
         nodeId: 'pusat-f2-reading-17',
-        position: { yaw: '191.99deg', pitch: '-10.56deg' },
-        name: 'Go to Floor 2 - Reading 17',
-        targetYaw: '171.31deg',
-        targetPitch: '-7.80deg'
+        position: { yaw: '205.50deg', pitch: '-10deg' },
+        name: 'Go to Floor 2 - Reading 17'
       },
     ],
     markers: [],
@@ -548,15 +514,7 @@ export default [
     thumbnail: './images/pusat/f2-reading/thumbs/pusat-f2-reading-15.jpg',
     defaultYaw: '0deg',
     defaultPitch: '0deg',
-    links: [
-      {
-        nodeId: 'pusat-f2-reading-17',
-        position: { yaw: '167.65deg', pitch: '-5.35deg' },
-        name: 'Go to Floor 2 - Reading 17',
-        targetYaw: '170.84deg',
-        targetPitch: '-0.03deg'
-      },
-    ],
+    links: [],
     markers: [],
     data: {
       floor: 'f2',
@@ -578,6 +536,11 @@ export default [
         nodeId: 'pusat-f2-reading-14',
         position: { yaw: '68.63deg', pitch: '-10deg' },
         name: 'Go to Floor 2 - Reading 14'
+      },
+      {
+        nodeId: 'pusat-f2-reading-17',
+        position: { yaw: '133.39deg', pitch: '-10deg' },
+        name: 'Go to Floor 2 - Reading 17'
       },
     ],
     markers: [],
@@ -604,20 +567,15 @@ export default [
         targetYaw: '156.15deg',
         targetPitch: '4.93deg'
       },
-      
-      
-      
-      {
-        nodeId: 'pusat-f2-reading-15',
-        position: { yaw: '23.22deg', pitch: '-4.66deg' },
-        name: 'Go to Floor 2 - Reading 15',
-        targetYaw: '0.00deg',
-        targetPitch: '0.00deg'
-      },
       {
         nodeId: 'pusat-f2-reading-14',
-        position: { yaw: '11.99deg', pitch: '-10deg' },
+        position: { yaw: '25.50deg', pitch: '-13.46deg' },
         name: 'Go to Floor 2 - Reading 14'
+      },
+      {
+        nodeId: 'pusat-f2-reading-16',
+        position: { yaw: '313.39deg', pitch: '-9.36deg' },
+        name: 'Go to Floor 2 - Reading 16'
       },
     ],
     markers: [],
@@ -710,13 +668,7 @@ export default [
         position: { yaw: '5.98deg', pitch: '-10deg' },
         name: 'Go to Floor 2 - Reading 8'
       },
-      {
-        nodeId: 'pusat-f2-reading-6',
-        position: { yaw: '76.60deg', pitch: '-9.95deg' },
-        name: 'Go to Floor 2 - Reading 6',
-        targetYaw: '52.02deg',
-        targetPitch: '-3.26deg'
-      },
+      
       {
         nodeId: 'pusat-f2-reading-7',
         position: { yaw: '65.90deg', pitch: '-10deg' },

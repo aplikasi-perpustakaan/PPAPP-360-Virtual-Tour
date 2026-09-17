@@ -126,11 +126,7 @@ export default [
         targetYaw: '211.01deg',
         targetPitch: '-0.49deg'
       },
-      {
-        nodeId: 'pusat-outside-6',
-        position: { yaw: '239.89deg', pitch: '-10deg' },
-        name: 'Go to Exterior - Outside 6'
-      },
+      
       {
         nodeId: 'pusat-outside-15',
         position: { yaw: '337.28deg', pitch: '3.26deg' },
@@ -203,13 +199,6 @@ export default [
         name: 'Go to Exterior - Outside 3',
         targetYaw: '28.05deg',
         targetPitch: '1.36deg'
-      },
-      {
-        nodeId: 'pusat-outside-4',
-        position: { yaw: '59.89deg', pitch: '1.41deg' },
-        name: 'Go to Exterior - Outside 4',
-        targetYaw: '62.44deg',
-        targetPitch: '5.45deg'
       },
     ],
     markers: [],
