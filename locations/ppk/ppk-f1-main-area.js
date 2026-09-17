@@ -161,16 +161,6 @@ export default [
         position: { yaw: '78.14deg', pitch: '-10.42deg' },
         name: 'Go to Main Area 6'
       },
-      {
-        nodeId: 'ppk-f1-main-area-9',
-        position: { yaw: '10.02deg', pitch: '-10deg' },
-        name: 'Go to Main Area 9'
-      },
-      {
-        nodeId: 'ppk-f1-main-area-8',
-        position: { yaw: '41.00deg', pitch: '-10deg' },
-        name: 'Go to Main Area 8'
-      },
     ],
     markers: [],
     data: {
@@ -194,11 +184,6 @@ export default [
         nodeId: 'ppk-f1-main-area-4',
         position: { yaw: '162.34deg', pitch: '-10deg' },
         name: 'Go to Main Area 4'
-      },
-      {
-        nodeId: 'ppk-f1-main-area-7',
-        position: { yaw: '69.38deg', pitch: '-8.43deg' },
-        name: 'Go to Main Area 7'
       },
     ],
     markers: [
@@ -282,11 +267,7 @@ export default [
       
       
       
-      {
-        nodeId: 'ppk-f1-main-area-5',
-        position: { yaw: '249.38deg', pitch: '-10deg' },
-        name: 'Go to Main Area 5'
-      },
+      
       {
         nodeId: 'ppk-f1-main-area-4',
         position: { yaw: '204.76deg', pitch: '-10.45deg' },
@@ -355,16 +336,6 @@ export default [
         nodeId: 'ppk-f1-main-area-6',
         position: { yaw: '199.51deg', pitch: '-16.80deg' },
         name: 'Go to Main Area 6'
-      },
-      {
-        nodeId: 'ppk-f1-main-area-9',
-        position: { yaw: '291.74deg', pitch: '-10deg' },
-        name: 'Go to Main Area 9'
-      },
-      {
-        nodeId: 'ppk-f1-main-area-4',
-        position: { yaw: '221.00deg', pitch: '-6.82deg' },
-        name: 'Go to Main Area 4'
       },
     ],
     markers: [
@@ -680,16 +651,6 @@ export default [
         position: { yaw: '127.03deg', pitch: '-9.22deg' },
         name: 'Go to Main Area 7'
       },
-      {
-        nodeId: 'ppk-f1-main-area-8',
-        position: { yaw: '111.74deg', pitch: '-7.80deg' },
-        name: 'Go to Main Area 8'
-      },
-      {
-        nodeId: 'ppk-f1-main-area-4',
-        position: { yaw: '190.02deg', pitch: '-6.41deg' },
-        name: 'Go to Main Area 4'
-      },
     ],
     markers: [],
     data: {
@@ -898,48 +859,8 @@ export default [
         html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/ppk/markers/LOBBY/KOMTAR_lobby_5.jpg\'>\n        <img src=\'./images/ppk/markers/LOBBY/KOMTAR_lobby_5.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
       },
       
-      {
-        id: 'ppk-f1-main-area-12-marker-1789530695401',
-        position: {
-          yaw: '345.28deg',
-          pitch: '-9.74deg'
-        },
-        size: {
-          width: 44,
-          height: 44
-        },
-        anchor: 'center center',
-        data: {
-          type: 'info',
-          title: 'Staff Only',
-          icon: 'no-entry',
-          color: 'red',
-          animated: true,
-          content: ''
-        },
-        html: '<custom-marker type=\'info\' data-icon=\'no-entry\' data-color=\'red\' animated>\n        <h2>Staff Only</h2>\n        <p></p>\n      </custom-marker>'
-      },
-      {
-        id: 'ppk-f1-main-area-12-marker-1789530714963',
-        position: {
-          yaw: '31.25deg',
-          pitch: '-8.81deg'
-        },
-        size: {
-          width: 44,
-          height: 44
-        },
-        anchor: 'center center',
-        data: {
-          type: 'info',
-          title: 'Staff Only',
-          icon: 'no-entry',
-          color: 'red',
-          animated: true,
-          content: ''
-        },
-        html: '<custom-marker type=\'info\' data-icon=\'no-entry\' data-color=\'red\' animated>\n        <h2>Staff Only</h2>\n        <p></p>\n      </custom-marker>'
-      },
+      
+      
       {
         id: 'ppk-f1-main-area-12-marker-1789530652892',
         position: {
@@ -962,6 +883,48 @@ export default [
           caption: 'OPAC'
         },
         html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/ppk/markers/LOBBY/KOMTAR_lobby_16.jpg\'>\n        <img src=\'./images/ppk/markers/LOBBY/KOMTAR_lobby_16.jpg\' alt=\'OPAC\' style=\'cursor:pointer;\' />\n        <h2>OPAC</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      {
+        id: 'ppk-f1-main-area-12-marker-1789530714963',
+        position: {
+          yaw: '31.25deg',
+          pitch: '-8.81deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Kakitangan Sahaja',
+          icon: 'no-entry',
+          color: 'red',
+          animated: true,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'no-entry\' data-color=\'red\' animated>\n        <h2>Kakitangan Sahaja</h2>\n        <p></p>\n      </custom-marker>'
+      },
+      {
+        id: 'ppk-f1-main-area-12-marker-1789530695401',
+        position: {
+          yaw: '345.28deg',
+          pitch: '-9.74deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Kakitangan Sahaja',
+          icon: 'no-entry',
+          color: 'red',
+          animated: true,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'no-entry\' data-color=\'red\' animated>\n        <h2>Kakitangan Sahaja</h2>\n        <p></p>\n      </custom-marker>'
       }
     ],
     data: {
