@@ -20,52 +20,6 @@ export default [
     ],
     markers: [
       {
-        id: 'bt-ext-outside-1-marker-1789460575764',
-        position: {
-          yaw: '321.54deg',
-          pitch: '-4.78deg'
-        },
-        size: {
-          width: 32,
-          height: 32
-        },
-        anchor: 'center center',
-        data: {
-          type: 'image',
-          title: 'PPAPP @ Daerah Seberang Perai Utara',
-          icon: 'info',
-          color: 'blue',
-          animated: false,
-          imageSrc: './images/bt/markers/OUTSIDE/BT_outside_3.jpg',
-          originalUrl: './images/bt/markers/OUTSIDE/BT_outside_3.jpg',
-          caption: 'PPAPP @ Daerah Seberang Perai Utara'
-        },
-        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bt/markers/OUTSIDE/BT_outside_3.jpg\'>\n        <img src=\'./images/bt/markers/OUTSIDE/BT_outside_3.jpg\' alt=\'PPAPP @ Daerah Seberang Perai Utara\' style=\'cursor:pointer;\' />\n        <h2>PPAPP @ Daerah Seberang Perai Utara</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
-      },
-      {
-        id: 'bt-ext-outside-1-marker-1789460532190',
-        position: {
-          yaw: '31.71deg',
-          pitch: '-6.42deg'
-        },
-        size: {
-          width: 32,
-          height: 32
-        },
-        anchor: 'center center',
-        data: {
-          type: 'image',
-          title: 'Book Drop',
-          icon: 'info',
-          color: 'blue',
-          animated: false,
-          imageSrc: './images/bt/markers/OUTSIDE/BT_outside_2.jpg',
-          originalUrl: './images/bt/markers/OUTSIDE/BT_outside_2.jpg',
-          caption: 'Book Drop'
-        },
-        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bt/markers/OUTSIDE/BT_outside_2.jpg\'>\n        <img src=\'./images/bt/markers/OUTSIDE/BT_outside_2.jpg\' alt=\'Book Drop\' style=\'cursor:pointer;\' />\n        <h2>Book Drop</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
-      },
-      {
         id: 'bt-ext-outside-1-marker-1789460560624',
         position: {
           yaw: '37.50deg',
@@ -87,6 +41,52 @@ export default [
           caption: 'PPAPP @ Daerah Seberang Perai Utara'
         },
         html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bt/markers/OUTSIDE/BT_outside_1.jpg\'>\n        <img src=\'./images/bt/markers/OUTSIDE/BT_outside_1.jpg\' alt=\'PPAPP @ Daerah Seberang Perai Utara\' style=\'cursor:pointer;\' />\n        <h2>PPAPP @ Daerah Seberang Perai Utara</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      {
+        id: 'bt-ext-outside-1-marker-1789460532190',
+        position: {
+          yaw: '31.42deg',
+          pitch: '-8.92deg'
+        },
+        size: {
+          width: 32,
+          height: 32
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: 'Book Drop',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/bt/markers/OUTSIDE/BT_outside_2.jpg',
+          originalUrl: './images/bt/markers/OUTSIDE/BT_outside_2.jpg',
+          caption: 'Book Drop'
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bt/markers/OUTSIDE/BT_outside_2.jpg\'>\n        <img src=\'./images/bt/markers/OUTSIDE/BT_outside_2.jpg\' alt=\'Book Drop\' style=\'cursor:pointer;\' />\n        <h2>Book Drop</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      {
+        id: 'bt-ext-outside-1-marker-1789460575764',
+        position: {
+          yaw: '321.08deg',
+          pitch: '-8.44deg'
+        },
+        size: {
+          width: 32,
+          height: 32
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: 'PPAPP @ Daerah Seberang Perai Utara',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/bt/markers/OUTSIDE/BT_outside_3.jpg',
+          originalUrl: './images/bt/markers/OUTSIDE/BT_outside_3.jpg',
+          caption: 'PPAPP @ Daerah Seberang Perai Utara'
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bt/markers/OUTSIDE/BT_outside_3.jpg\'>\n        <img src=\'./images/bt/markers/OUTSIDE/BT_outside_3.jpg\' alt=\'PPAPP @ Daerah Seberang Perai Utara\' style=\'cursor:pointer;\' />\n        <h2>PPAPP @ Daerah Seberang Perai Utara</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
       }
     ],
     data: {
@@ -208,8 +208,8 @@ export default [
       {
         id: 'bt-ext-outside-5-marker-1789460498161',
         position: {
-          yaw: '13.57deg',
-          pitch: '0.23deg'
+          yaw: '14.26deg',
+          pitch: '-3.98deg'
         },
         size: {
           width: 32,

@@ -54,13 +54,13 @@ export function initMarkerPlacer(viewer, virtualTour, allNodes, isDebug) {
     if (savedStyle) {
       try {
         const parsed = JSON.parse(savedStyle);
-        sizeSelect.value = parsed.size || '44';
+        sizeSelect.value = parsed.size || '32';
         iconSelect.value = parsed.icon || 'info';
         colorSelect.value = parsed.color || 'blue';
         animCheck.checked = !!parsed.anim;
       } catch (e) {}
     } else {
-      sizeSelect.value = '44';
+      sizeSelect.value = '32';
       iconSelect.value = 'info';
       colorSelect.value = 'blue';
       animCheck.checked = false;

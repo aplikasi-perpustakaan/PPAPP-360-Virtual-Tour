@@ -61,9 +61,15 @@ button:hover {
 }
 
 ::slotted(img) {
+    max-width: 100%;
+    max-height: 250px;
     width: 100%;
+    height: auto;
+    object-fit: contain;
     border-radius: 10px 10px 0 0;
     display: block;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.3);
 }
 ::slotted(h2),
 ::slotted(p) {
