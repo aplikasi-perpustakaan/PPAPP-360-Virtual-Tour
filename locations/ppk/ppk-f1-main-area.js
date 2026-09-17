@@ -302,21 +302,93 @@ export default [
     links: [
       {
         nodeId: 'ppk-f1-main-area-4',
-        position: { yaw: '258.14deg', pitch: '-10deg' },
-        name: 'Go to Main Area 4'
+        position: { yaw: '358.88deg', pitch: '-10.14deg' },
+        name: 'Go to Main Area 4',
+        targetYaw: '0.00deg',
+        targetPitch: '0.00deg'
       },
+      
+      
       {
         nodeId: 'ppk-f1-main-area-8',
-        position: { yaw: '19.51deg', pitch: '-10deg' },
-        name: 'Go to Main Area 8'
+        position: { yaw: '26.74deg', pitch: '-3.17deg' },
+        name: 'Go to Main Area 8',
+        targetYaw: '350.19deg',
+        targetPitch: '-0.05deg'
       },
+      
+      
       {
         nodeId: 'ppk-f1-main-area-5',
         position: { yaw: '250.50deg', pitch: '-10deg' },
         name: 'Go to Main Area 5'
       },
     ],
-    markers: [],
+    markers: [
+      {
+        id: 'ppk-f1-main-area-6-marker-1789636647193',
+        position: {
+          yaw: '316.76deg',
+          pitch: '-8.88deg'
+        },
+        size: {
+          width: 32,
+          height: 32
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Perkhidmatan Komputer',
+          icon: 'pin',
+          color: 'green',
+          animated: false,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'pin\' data-color=\'green\'>\n        <h2>Perkhidmatan Komputer</h2>\n        <p></p>\n      </custom-marker>'
+      },
+      {
+        id: 'ppk-f1-main-area-6-marker-1789636661804',
+        position: {
+          yaw: '345.08deg',
+          pitch: '-6.74deg'
+        },
+        size: {
+          width: 32,
+          height: 32
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Perkhidmatan Komputer',
+          icon: 'pin',
+          color: 'green',
+          animated: false,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'pin\' data-color=\'green\'>\n        <h2>Perkhidmatan Komputer</h2>\n        <p></p>\n      </custom-marker>'
+      },
+      {
+        id: 'ppk-f1-main-area-6-marker-1789636686059',
+        position: {
+          yaw: '4.39deg',
+          pitch: '-3.99deg'
+        },
+        size: {
+          width: 32,
+          height: 32
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Perkhidmatan Komputer',
+          icon: 'pin',
+          color: 'green',
+          animated: false,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'pin\' data-color=\'green\'>\n        <h2>Perkhidmatan Komputer</h2>\n        <p></p>\n      </custom-marker>'
+      }
+    ],
     data: {
       floor: 'f1',
       tags: [
@@ -450,9 +522,13 @@ export default [
       
       {
         nodeId: 'ppk-f1-main-area-12',
-        position: { yaw: '21.38deg', pitch: '-7.97deg' },
-        name: 'Go to Main Area 12'
+        position: { yaw: '20.15deg', pitch: '-5.57deg' },
+        name: 'Go to Main Area 12',
+        targetYaw: '38.04deg',
+        targetPitch: '-5.02deg'
       },
+      
+      
       {
         nodeId: 'ppk-f1-main-area-6',
         position: { yaw: '199.51deg', pitch: '-16.80deg' },
@@ -982,29 +1058,7 @@ export default [
       
       
       
-      {
-        id: 'ppk-f1-main-area-12-marker-1789530652892',
-        position: {
-          yaw: '64.33deg',
-          pitch: '-16.06deg'
-        },
-        size: {
-          width: 44,
-          height: 44
-        },
-        anchor: 'center center',
-        data: {
-          type: 'image',
-          title: 'OPAC',
-          icon: 'info',
-          color: 'blue',
-          animated: false,
-          imageSrc: './images/ppk/markers/LOBBY/KOMTAR_lobby_16.jpg',
-          originalUrl: './images/ppk/markers/LOBBY/KOMTAR_lobby_16.jpg',
-          caption: 'OPAC'
-        },
-        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/ppk/markers/LOBBY/KOMTAR_lobby_16.jpg\'>\n        <img src=\'./images/ppk/markers/LOBBY/KOMTAR_lobby_16.jpg\' alt=\'OPAC\' style=\'cursor:pointer;\' />\n        <h2>OPAC</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
-      },
+      
       {
         id: 'ppk-f1-main-area-12-marker-1789530714963',
         position: {
@@ -1046,6 +1100,29 @@ export default [
           content: ''
         },
         html: '<custom-marker type=\'info\' data-icon=\'no-entry\' data-color=\'red\' animated>\n        <h2>Kakitangan Sahaja</h2>\n        <p></p>\n      </custom-marker>'
+      },
+      {
+        id: 'ppk-f1-main-area-12-marker-1789530652892',
+        position: {
+          yaw: '64.33deg',
+          pitch: '-16.06deg'
+        },
+        size: {
+          width: 32,
+          height: 32
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: 'Perkhidmatan ChatGPT Business',
+          icon: 'pin',
+          color: 'green',
+          animated: false,
+          imageSrc: './images/ppk/markers/LOBBY/KOMTAR_lobby_16.jpg',
+          originalUrl: './images/ppk/markers/LOBBY/KOMTAR_lobby_16.jpg',
+          caption: 'Perkhidmatan ChatGPT Business'
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'pin\' data-color=\'green\' data-url=\'./images/ppk/markers/LOBBY/KOMTAR_lobby_16.jpg\'>\n        <img src=\'./images/ppk/markers/LOBBY/KOMTAR_lobby_16.jpg\' alt=\'Perkhidmatan ChatGPT Business\' style=\'cursor:pointer;\' />\n        <h2>Perkhidmatan ChatGPT Business</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
       }
     ],
     data: {
