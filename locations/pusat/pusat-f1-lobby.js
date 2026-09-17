@@ -768,6 +768,13 @@ export default [
         targetYaw: '159.13deg',
         targetPitch: '4.16deg'
       },
+      {
+        nodeId: 'pusat-elevator-1',
+        position: { yaw: '66.29deg', pitch: '-3.53deg' },
+        name: 'Go to Elevator 1',
+        targetYaw: '359.42deg',
+        targetPitch: '-2.58deg'
+      },
     ],
     markers: [],
     data: {

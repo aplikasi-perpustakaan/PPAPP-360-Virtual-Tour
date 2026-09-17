@@ -10,12 +10,25 @@ export default [
     links: [
       {
         nodeId: 'pusat-f2-meeting-room-2',
-        position: {
-          yaw: '358.45deg',
-          pitch: '-8.15deg'
-        },
-        name: 'Go to Floor 2 - Meeting Room 2'
-      }
+        position: { yaw: '307.42deg', pitch: '-1.24deg' },
+        name: 'Go to Floor 2 - Meeting Room 2',
+        targetYaw: '297.60deg',
+        targetPitch: '-7.25deg'
+      },
+      
+      
+      {
+        nodeId: 'pusat-f2-reading-25',
+        position: { yaw: '132.10deg', pitch: '-11.12deg' },
+        name: 'Go to Floor 2 - Reading 25',
+        targetYaw: '169.29deg',
+        targetPitch: '1.33deg'
+      },
+      {
+        nodeId: 'pusat-f2-meeting-room-3',
+        position: { yaw: '8.71deg', pitch: '-10deg' },
+        name: 'Go to Floor 2 - Meeting Room 3'
+      },
     ],
     markers: [],
     data: {
@@ -35,21 +48,12 @@ export default [
     defaultPitch: '0deg',
     links: [
       {
-        nodeId: 'pusat-f2-meeting-room-3',
-        position: {
-          yaw: '358.45deg',
-          pitch: '-8.15deg'
-        },
-        name: 'Go to Floor 2 - Meeting Room 3'
-      },
-      {
         nodeId: 'pusat-f2-meeting-room-1',
-        position: {
-          yaw: '178.45deg',
-          pitch: '-8.15deg'
-        },
-        name: 'Go to Floor 2 - Meeting Room 1'
-      }
+        position: { yaw: '126.41deg', pitch: '-5.87deg' },
+        name: 'Go to Floor 2 - Meeting Room 1',
+        targetYaw: '130.06deg',
+        targetPitch: '0.15deg'
+      },
     ],
     markers: [],
     data: {
@@ -69,13 +73,12 @@ export default [
     defaultPitch: '0deg',
     links: [
       {
-        nodeId: 'pusat-f2-meeting-room-2',
-        position: {
-          yaw: '178.45deg',
-          pitch: '-8.15deg'
-        },
-        name: 'Go to Floor 2 - Meeting Room 2'
-      }
+        nodeId: 'pusat-f2-meeting-room-1',
+        position: { yaw: '188.71deg', pitch: '-1.60deg' },
+        name: 'Go to Floor 2 - Meeting Room 1',
+        targetYaw: '124.78deg',
+        targetPitch: '-0.76deg'
+      },
     ],
     markers: [],
     data: {

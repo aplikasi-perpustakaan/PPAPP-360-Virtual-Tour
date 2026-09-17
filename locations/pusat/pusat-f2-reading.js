@@ -361,6 +361,13 @@ export default [
         targetYaw: '126.77deg',
         targetPitch: '-1.70deg'
       },
+      {
+        nodeId: 'pusat-elevator-2',
+        position: { yaw: '222.62deg', pitch: '-7.39deg' },
+        name: 'Go to Elevator 2',
+        targetYaw: '0.00deg',
+        targetPitch: '0.00deg'
+      },
     ],
     markers: [],
     data: {
@@ -410,6 +417,13 @@ export default [
         name: 'Go to Floor 2 - Reading 5',
         targetYaw: '332.08deg',
         targetPitch: '4.93deg'
+      },
+      {
+        nodeId: 'pusat-f2-intersect-room-1',
+        position: { yaw: '122.45deg', pitch: '-7.07deg' },
+        name: 'Go to Floor 2 - Intersect Room 1',
+        targetYaw: '154.44deg',
+        targetPitch: '-0.56deg'
       },
     ],
     markers: [],
@@ -875,6 +889,13 @@ export default [
         name: 'Go to Floor 2 - Reading 24',
         targetYaw: '63.69deg',
         targetPitch: '-2.04deg'
+      },
+      {
+        nodeId: 'pusat-f2-meeting-room-1',
+        position: { yaw: '18.47deg', pitch: '-9.85deg' },
+        name: 'Go to Floor 2 - Meeting Room 1',
+        targetYaw: '308.03deg',
+        targetPitch: '-0.23deg'
       },
     ],
     markers: [],
