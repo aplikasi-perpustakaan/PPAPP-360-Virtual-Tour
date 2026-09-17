@@ -46,8 +46,8 @@ export default [
           pitch: '-11.77deg'
         },
         size: {
-          width: 44,
-          height: 44
+          width: 32,
+          height: 32
         },
         anchor: 'center center',
         data: {
@@ -69,8 +69,8 @@ export default [
           pitch: '-9.17deg'
         },
         size: {
-          width: 44,
-          height: 44
+          width: 32,
+          height: 32
         },
         anchor: 'center center',
         data: {
@@ -137,8 +137,8 @@ export default [
           pitch: '-18.51deg'
         },
         size: {
-          width: 44,
-          height: 44
+          width: 32,
+          height: 32
         },
         anchor: 'center center',
         data: {
@@ -160,8 +160,8 @@ export default [
           pitch: '0.47deg'
         },
         size: {
-          width: 44,
-          height: 44
+          width: 32,
+          height: 32
         },
         anchor: 'center center',
         data: {
@@ -184,8 +184,8 @@ export default [
           pitch: '-7.81deg'
         },
         size: {
-          width: 44,
-          height: 44
+          width: 32,
+          height: 32
         },
         anchor: 'center center',
         data: {
@@ -250,8 +250,8 @@ export default [
           pitch: '-0.92deg'
         },
         size: {
-          width: 44,
-          height: 44
+          width: 32,
+          height: 32
         },
         anchor: 'center center',
         data: {
@@ -273,8 +273,8 @@ export default [
           pitch: '5.10deg'
         },
         size: {
-          width: 44,
-          height: 44
+          width: 32,
+          height: 32
         },
         anchor: 'center center',
         data: {
@@ -316,8 +316,8 @@ export default [
           pitch: '16.46deg'
         },
         size: {
-          width: 44,
-          height: 44
+          width: 32,
+          height: 32
         },
         anchor: 'center center',
         data: {
@@ -337,8 +337,8 @@ export default [
           pitch: '12.49deg'
         },
         size: {
-          width: 44,
-          height: 44
+          width: 32,
+          height: 32
         },
         anchor: 'center center',
         data: {
@@ -358,8 +358,8 @@ export default [
           pitch: '10.24deg'
         },
         size: {
-          width: 44,
-          height: 44
+          width: 32,
+          height: 32
         },
         anchor: 'center center',
         data: {
@@ -400,8 +400,8 @@ export default [
           pitch: '-11.23deg'
         },
         size: {
-          width: 44,
-          height: 44
+          width: 32,
+          height: 32
         },
         anchor: 'center center',
         data: {
@@ -423,8 +423,8 @@ export default [
           pitch: '-19.79deg'
         },
         size: {
-          width: 44,
-          height: 44
+          width: 32,
+          height: 32
         },
         anchor: 'center center',
         data: {
@@ -487,8 +487,8 @@ export default [
           pitch: '-16.08deg'
         },
         size: {
-          width: 44,
-          height: 44
+          width: 32,
+          height: 32
         },
         anchor: 'center center',
         data: {
@@ -530,8 +530,8 @@ export default [
           pitch: '5.80deg'
         },
         size: {
-          width: 44,
-          height: 44
+          width: 32,
+          height: 32
         },
         anchor: 'center center',
         data: {
@@ -553,8 +553,8 @@ export default [
           pitch: '6.94deg'
         },
         size: {
-          width: 44,
-          height: 44
+          width: 32,
+          height: 32
         },
         anchor: 'center center',
         data: {
@@ -576,8 +576,8 @@ export default [
           pitch: '6.90deg'
         },
         size: {
-          width: 44,
-          height: 44
+          width: 32,
+          height: 32
         },
         anchor: 'center center',
         data: {
@@ -599,8 +599,8 @@ export default [
           pitch: '6.87deg'
         },
         size: {
-          width: 44,
-          height: 44
+          width: 32,
+          height: 32
         },
         anchor: 'center center',
         data: {
@@ -622,8 +622,8 @@ export default [
           pitch: '5.29deg'
         },
         size: {
-          width: 44,
-          height: 44
+          width: 32,
+          height: 32
         },
         anchor: 'center center',
         data: {
@@ -645,8 +645,8 @@ export default [
           pitch: '4.84deg'
         },
         size: {
-          width: 44,
-          height: 44
+          width: 32,
+          height: 32
         },
         anchor: 'center center',
         data: {
@@ -669,8 +669,8 @@ export default [
           pitch: '-4.51deg'
         },
         size: {
-          width: 44,
-          height: 44
+          width: 32,
+          height: 32
         },
         anchor: 'center center',
         data: {
@@ -690,8 +690,8 @@ export default [
           pitch: '-4.82deg'
         },
         size: {
-          width: 44,
-          height: 44
+          width: 32,
+          height: 32
         },
         anchor: 'center center',
         data: {
@@ -711,8 +711,8 @@ export default [
           pitch: '-4.92deg'
         },
         size: {
-          width: 44,
-          height: 44
+          width: 32,
+          height: 32
         },
         anchor: 'center center',
         data: {
@@ -733,8 +733,8 @@ export default [
           pitch: '-4.25deg'
         },
         size: {
-          width: 44,
-          height: 44
+          width: 32,
+          height: 32
         },
         anchor: 'center center',
         data: {
@@ -754,8 +754,8 @@ export default [
           pitch: '-4.12deg'
         },
         size: {
-          width: 44,
-          height: 44
+          width: 32,
+          height: 32
         },
         anchor: 'center center',
         data: {
@@ -775,8 +775,8 @@ export default [
           pitch: '-5.01deg'
         },
         size: {
-          width: 44,
-          height: 44
+          width: 32,
+          height: 32
         },
         anchor: 'center center',
         data: {
@@ -796,8 +796,8 @@ export default [
           pitch: '-46.56deg'
         },
         size: {
-          width: 44,
-          height: 44
+          width: 32,
+          height: 32
         },
         anchor: 'center center',
         data: {
@@ -819,8 +819,8 @@ export default [
           pitch: '-19.01deg'
         },
         size: {
-          width: 44,
-          height: 44
+          width: 32,
+          height: 32
         },
         anchor: 'center center',
         data: {
@@ -861,8 +861,8 @@ export default [
           pitch: '17.58deg'
         },
         size: {
-          width: 44,
-          height: 44
+          width: 32,
+          height: 32
         },
         anchor: 'center center',
         data: {
@@ -884,8 +884,8 @@ export default [
           pitch: '10.17deg'
         },
         size: {
-          width: 44,
-          height: 44
+          width: 32,
+          height: 32
         },
         anchor: 'center center',
         data: {
@@ -907,8 +907,8 @@ export default [
           pitch: '9.74deg'
         },
         size: {
-          width: 44,
-          height: 44
+          width: 32,
+          height: 32
         },
         anchor: 'center center',
         data: {
@@ -931,8 +931,8 @@ export default [
           pitch: '9.50deg'
         },
         size: {
-          width: 44,
-          height: 44
+          width: 32,
+          height: 32
         },
         anchor: 'center center',
         data: {
@@ -954,8 +954,8 @@ export default [
           pitch: '15.68deg'
         },
         size: {
-          width: 44,
-          height: 44
+          width: 32,
+          height: 32
         },
         anchor: 'center center',
         data: {
@@ -977,8 +977,8 @@ export default [
           pitch: '5.91deg'
         },
         size: {
-          width: 44,
-          height: 44
+          width: 32,
+          height: 32
         },
         anchor: 'center center',
         data: {
@@ -1020,8 +1020,8 @@ export default [
           pitch: '-12.00deg'
         },
         size: {
-          width: 44,
-          height: 44
+          width: 32,
+          height: 32
         },
         anchor: 'center center',
         data: {
@@ -1043,8 +1043,8 @@ export default [
           pitch: '-12.81deg'
         },
         size: {
-          width: 44,
-          height: 44
+          width: 32,
+          height: 32
         },
         anchor: 'center center',
         data: {
@@ -1066,8 +1066,8 @@ export default [
           pitch: '-15.69deg'
         },
         size: {
-          width: 44,
-          height: 44
+          width: 32,
+          height: 32
         },
         anchor: 'center center',
         data: {
@@ -1108,8 +1108,8 @@ export default [
           pitch: '-22.95deg'
         },
         size: {
-          width: 44,
-          height: 44
+          width: 32,
+          height: 32
         },
         anchor: 'center center',
         data: {
@@ -1131,8 +1131,8 @@ export default [
           pitch: '-14.01deg'
         },
         size: {
-          width: 44,
-          height: 44
+          width: 32,
+          height: 32
         },
         anchor: 'center center',
         data: {
@@ -1154,8 +1154,8 @@ export default [
           pitch: '-27.56deg'
         },
         size: {
-          width: 44,
-          height: 44
+          width: 32,
+          height: 32
         },
         anchor: 'center center',
         data: {
@@ -1177,8 +1177,8 @@ export default [
           pitch: '-26.18deg'
         },
         size: {
-          width: 44,
-          height: 44
+          width: 32,
+          height: 32
         },
         anchor: 'center center',
         data: {
@@ -1200,8 +1200,8 @@ export default [
           pitch: '-23.74deg'
         },
         size: {
-          width: 44,
-          height: 44
+          width: 32,
+          height: 32
         },
         anchor: 'center center',
         data: {
@@ -1223,8 +1223,8 @@ export default [
           pitch: '-11.06deg'
         },
         size: {
-          width: 44,
-          height: 44
+          width: 32,
+          height: 32
         },
         anchor: 'center center',
         data: {
@@ -1246,8 +1246,8 @@ export default [
           pitch: '-12.51deg'
         },
         size: {
-          width: 44,
-          height: 44
+          width: 32,
+          height: 32
         },
         anchor: 'center center',
         data: {
@@ -1269,8 +1269,8 @@ export default [
           pitch: '-13.62deg'
         },
         size: {
-          width: 44,
-          height: 44
+          width: 32,
+          height: 32
         },
         anchor: 'center center',
         data: {

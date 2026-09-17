@@ -106,8 +106,8 @@ export default [
           pitch: '-54.40deg'
         },
         size: {
-          width: 44,
-          height: 44
+          width: 32,
+          height: 32
         },
         anchor: 'center center',
         data: {
@@ -129,8 +129,8 @@ export default [
           pitch: '-2.72deg'
         },
         size: {
-          width: 44,
-          height: 44
+          width: 32,
+          height: 32
         },
         anchor: 'center center',
         data: {
