@@ -224,11 +224,11 @@ export default [
           icon: 'info',
           color: 'blue',
           animated: false,
-          imageSrc: './images/jw/markers/OUTSIDE/IMG_20260910_093311_209.webp',
-          originalUrl: './images/jw/markers/OUTSIDE/IMG_20260910_093311_209.webp',
+          imageSrc: './images/jw/markers/OUTSIDE/IMG_20260910_093311_209.jpg',
+          originalUrl: './images/jw/markers/OUTSIDE/IMG_20260910_093311_209.jpg',
           caption: 'Waktu Perkhidmatan'
         },
-        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/jw/markers/OUTSIDE/IMG_20260910_093311_209.webp\'>\n        <img src=\'./images/jw/markers/OUTSIDE/IMG_20260910_093311_209.webp\' alt=\'Waktu Perkhidmatan\' style=\'cursor:pointer;\' />\n        <h2>Waktu Perkhidmatan</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/jw/markers/OUTSIDE/IMG_20260910_093311_209.jpg\'>\n        <img src=\'./images/jw/markers/OUTSIDE/IMG_20260910_093311_209.jpg\' alt=\'Waktu Perkhidmatan\' style=\'cursor:pointer;\' />\n        <h2>Waktu Perkhidmatan</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
       },
       {
         id: 'jw-ext-outside-7-marker-1789538566926',
@@ -247,11 +247,11 @@ export default [
           icon: 'info',
           color: 'blue',
           animated: false,
-          imageSrc: './images/jw/markers/OUTSIDE/IMG_20260910_093252_049.webp',
-          originalUrl: './images/jw/markers/OUTSIDE/IMG_20260910_093252_049.webp',
+          imageSrc: './images/jw/markers/OUTSIDE/IMG_20260910_093252_049.jpg',
+          originalUrl: './images/jw/markers/OUTSIDE/IMG_20260910_093252_049.jpg',
           caption: 'Scan sebelum masuk'
         },
-        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/jw/markers/OUTSIDE/IMG_20260910_093252_049.webp\'>\n        <img src=\'./images/jw/markers/OUTSIDE/IMG_20260910_093252_049.webp\' alt=\'Scan sebelum masuk\' style=\'cursor:pointer;\' />\n        <h2>Scan sebelum masuk</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/jw/markers/OUTSIDE/IMG_20260910_093252_049.jpg\'>\n        <img src=\'./images/jw/markers/OUTSIDE/IMG_20260910_093252_049.jpg\' alt=\'Scan sebelum masuk\' style=\'cursor:pointer;\' />\n        <h2>Scan sebelum masuk</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
       },
       {
         id: 'jw-ext-outside-7-marker-1789538591207',
@@ -270,11 +270,11 @@ export default [
           icon: 'info',
           color: 'blue',
           animated: false,
-          imageSrc: './images/jw/markers/OUTSIDE/IMG_20260910_093230_028.webp',
-          originalUrl: './images/jw/markers/OUTSIDE/IMG_20260910_093230_028.webp',
+          imageSrc: './images/jw/markers/OUTSIDE/IMG_20260910_093230_028.jpg',
+          originalUrl: './images/jw/markers/OUTSIDE/IMG_20260910_093230_028.jpg',
           caption: 'Servis Pencetakan Di PPAPP @ Seberang Perai Selatan'
         },
-        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/jw/markers/OUTSIDE/IMG_20260910_093230_028.webp\'>\n        <img src=\'./images/jw/markers/OUTSIDE/IMG_20260910_093230_028.webp\' alt=\'Servis Pencetakan Di PPAPP @ Seberang Perai Selatan\' style=\'cursor:pointer;\' />\n        <h2>Servis Pencetakan Di PPAPP @ Seberang Perai Selatan</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/jw/markers/OUTSIDE/IMG_20260910_093230_028.jpg\'>\n        <img src=\'./images/jw/markers/OUTSIDE/IMG_20260910_093230_028.jpg\' alt=\'Servis Pencetakan Di PPAPP @ Seberang Perai Selatan\' style=\'cursor:pointer;\' />\n        <h2>Servis Pencetakan Di PPAPP @ Seberang Perai Selatan</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
       }
     ],
     data: {
@@ -363,11 +363,11 @@ export default [
           icon: 'info',
           color: 'blue',
           animated: false,
-          imageSrc: './images/jw/markers/OUTSIDE/IMG_20260910_093200_968.webp',
-          originalUrl: './images/jw/markers/OUTSIDE/IMG_20260910_093200_968.webp',
+          imageSrc: './images/jw/markers/OUTSIDE/IMG_20260910_093200_968.jpg',
+          originalUrl: './images/jw/markers/OUTSIDE/IMG_20260910_093200_968.jpg',
           caption: 'PPAPP @ Daerah Seberang Perai Selatan'
         },
-        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/jw/markers/OUTSIDE/IMG_20260910_093200_968.webp\'>\n        <img src=\'./images/jw/markers/OUTSIDE/IMG_20260910_093200_968.webp\' alt=\'PPAPP @ Daerah Seberang Perai Selatan\' style=\'cursor:pointer;\' />\n        <h2>PPAPP @ Daerah Seberang Perai Selatan</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/jw/markers/OUTSIDE/IMG_20260910_093200_968.jpg\'>\n        <img src=\'./images/jw/markers/OUTSIDE/IMG_20260910_093200_968.jpg\' alt=\'PPAPP @ Daerah Seberang Perai Selatan\' style=\'cursor:pointer;\' />\n        <h2>PPAPP @ Daerah Seberang Perai Selatan</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
       },
       {
         id: 'jw-ext-outside-9-marker-1789538479682',
@@ -386,11 +386,11 @@ export default [
           icon: 'info',
           color: 'blue',
           animated: false,
-          imageSrc: './images/jw/markers/OUTSIDE/IMG_20260910_092923_777.webp',
-          originalUrl: './images/jw/markers/OUTSIDE/IMG_20260910_092923_777.webp',
+          imageSrc: './images/jw/markers/OUTSIDE/IMG_20260910_092923_777.jpg',
+          originalUrl: './images/jw/markers/OUTSIDE/IMG_20260910_092923_777.jpg',
           caption: 'Book Drop'
         },
-        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/jw/markers/OUTSIDE/IMG_20260910_092923_777.webp\'>\n        <img src=\'./images/jw/markers/OUTSIDE/IMG_20260910_092923_777.webp\' alt=\'Book Drop\' style=\'cursor:pointer;\' />\n        <h2>Book Drop</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/jw/markers/OUTSIDE/IMG_20260910_092923_777.jpg\'>\n        <img src=\'./images/jw/markers/OUTSIDE/IMG_20260910_092923_777.jpg\' alt=\'Book Drop\' style=\'cursor:pointer;\' />\n        <h2>Book Drop</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
       },
       {
         id: 'jw-ext-outside-9-marker-1789538460575',
@@ -409,11 +409,11 @@ export default [
           icon: 'info',
           color: 'blue',
           animated: false,
-          imageSrc: './images/jw/markers/OUTSIDE/IMG_20260910_092907_759.webp',
-          originalUrl: './images/jw/markers/OUTSIDE/IMG_20260910_092907_759.webp',
+          imageSrc: './images/jw/markers/OUTSIDE/IMG_20260910_092907_759.jpg',
+          originalUrl: './images/jw/markers/OUTSIDE/IMG_20260910_092907_759.jpg',
           caption: 'PPAPP @ Daerah Seberang Perai Selatan'
         },
-        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/jw/markers/OUTSIDE/IMG_20260910_092907_759.webp\'>\n        <img src=\'./images/jw/markers/OUTSIDE/IMG_20260910_092907_759.webp\' alt=\'PPAPP @ Daerah Seberang Perai Selatan\' style=\'cursor:pointer;\' />\n        <h2>PPAPP @ Daerah Seberang Perai Selatan</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/jw/markers/OUTSIDE/IMG_20260910_092907_759.jpg\'>\n        <img src=\'./images/jw/markers/OUTSIDE/IMG_20260910_092907_759.jpg\' alt=\'PPAPP @ Daerah Seberang Perai Selatan\' style=\'cursor:pointer;\' />\n        <h2>PPAPP @ Daerah Seberang Perai Selatan</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
       }
     ],
     data: {
@@ -460,11 +460,11 @@ export default [
           icon: 'info',
           color: 'blue',
           animated: false,
-          imageSrc: './images/jw/markers/OUTSIDE/IMG_20260910_093200_968.webp',
-          originalUrl: './images/jw/markers/OUTSIDE/IMG_20260910_093200_968.webp',
+          imageSrc: './images/jw/markers/OUTSIDE/IMG_20260910_093200_968.jpg',
+          originalUrl: './images/jw/markers/OUTSIDE/IMG_20260910_093200_968.jpg',
           caption: 'PPAPP @ Daerah Seberang Perai Selatan'
         },
-        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/jw/markers/OUTSIDE/IMG_20260910_093200_968.webp\'>\n        <img src=\'./images/jw/markers/OUTSIDE/IMG_20260910_093200_968.webp\' alt=\'PPAPP @ Daerah Seberang Perai Selatan\' style=\'cursor:pointer;\' />\n        <h2>PPAPP @ Daerah Seberang Perai Selatan</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/jw/markers/OUTSIDE/IMG_20260910_093200_968.jpg\'>\n        <img src=\'./images/jw/markers/OUTSIDE/IMG_20260910_093200_968.jpg\' alt=\'PPAPP @ Daerah Seberang Perai Selatan\' style=\'cursor:pointer;\' />\n        <h2>PPAPP @ Daerah Seberang Perai Selatan</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
       },
       {
         id: 'jw-ext-outside-10-marker-1789620591714',

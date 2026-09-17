@@ -65,11 +65,11 @@ export default [
           icon: 'info',
           color: 'blue',
           animated: false,
-          imageSrc: './images/jw/markers/FLOOR 2/MIX/IMG_20260910_103814_007.webp?t=1789539604231',
-          originalUrl: './images/jw/markers/FLOOR 2/MIX/IMG_20260910_103814_007.webp?t=1789539604231',
+          imageSrc: './images/jw/markers/FLOOR 2/MIX/IMG_20260910_103814_007.jpg?t=1789539604231',
+          originalUrl: './images/jw/markers/FLOOR 2/MIX/IMG_20260910_103814_007.jpg?t=1789539604231',
           caption: 'Boombox'
         },
-        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/jw/markers/FLOOR 2/MIX/IMG_20260910_103814_007.webp?t=1789539604231\'>\n        <img src=\'./images/jw/markers/FLOOR 2/MIX/IMG_20260910_103814_007.webp?t=1789539604231\' alt=\'Boombox\' style=\'cursor:pointer;\' />\n        <h2>Boombox</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/jw/markers/FLOOR 2/MIX/IMG_20260910_103814_007.jpg?t=1789539604231\'>\n        <img src=\'./images/jw/markers/FLOOR 2/MIX/IMG_20260910_103814_007.jpg?t=1789539604231\' alt=\'Boombox\' style=\'cursor:pointer;\' />\n        <h2>Boombox</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
       },
       {
         id: 'jw-f2-esport-2-marker-1789539697323',
@@ -88,11 +88,11 @@ export default [
           icon: 'info',
           color: 'blue',
           animated: false,
-          imageSrc: './images/jw/markers/FLOOR 2/MIX/IMG_20260910_103829_470.webp?t=1789539606288',
-          originalUrl: './images/jw/markers/FLOOR 2/MIX/IMG_20260910_103829_470.webp?t=1789539606288',
+          imageSrc: './images/jw/markers/FLOOR 2/MIX/IMG_20260910_103829_470.jpg?t=1789539606288',
+          originalUrl: './images/jw/markers/FLOOR 2/MIX/IMG_20260910_103829_470.jpg?t=1789539606288',
           caption: 'CRT TV (Cathode Ray Tube Television)'
         },
-        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/jw/markers/FLOOR 2/MIX/IMG_20260910_103829_470.webp?t=1789539606288\'>\n        <img src=\'./images/jw/markers/FLOOR 2/MIX/IMG_20260910_103829_470.webp?t=1789539606288\' alt=\'CRT TV (Cathode Ray Tube Television)\' style=\'cursor:pointer;\' />\n        <h2>CRT TV (Cathode Ray Tube Television)</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/jw/markers/FLOOR 2/MIX/IMG_20260910_103829_470.jpg?t=1789539606288\'>\n        <img src=\'./images/jw/markers/FLOOR 2/MIX/IMG_20260910_103829_470.jpg?t=1789539606288\' alt=\'CRT TV (Cathode Ray Tube Television)\' style=\'cursor:pointer;\' />\n        <h2>CRT TV (Cathode Ray Tube Television)</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
       }
     ],
     data: {
@@ -134,11 +134,11 @@ export default [
           icon: 'info',
           color: 'blue',
           animated: false,
-          imageSrc: './images/jw/markers/FLOOR 2/MIX/IMG_20260910_103530_928.webp',
-          originalUrl: './images/jw/markers/FLOOR 2/MIX/IMG_20260910_103530_928.webp',
+          imageSrc: './images/jw/markers/FLOOR 2/MIX/IMG_20260910_103530_928.jpg',
+          originalUrl: './images/jw/markers/FLOOR 2/MIX/IMG_20260910_103530_928.jpg',
           caption: 'Senarai'
         },
-        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/jw/markers/FLOOR 2/MIX/IMG_20260910_103530_928.webp\'>\n        <img src=\'./images/jw/markers/FLOOR 2/MIX/IMG_20260910_103530_928.webp\' alt=\'Senarai\' style=\'cursor:pointer;\' />\n        <h2>Senarai</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/jw/markers/FLOOR 2/MIX/IMG_20260910_103530_928.jpg\'>\n        <img src=\'./images/jw/markers/FLOOR 2/MIX/IMG_20260910_103530_928.jpg\' alt=\'Senarai\' style=\'cursor:pointer;\' />\n        <h2>Senarai</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
       },
       {
         id: 'jw-f2-esport-3-marker-1789539725129',
@@ -157,11 +157,11 @@ export default [
           icon: 'info',
           color: 'blue',
           animated: false,
-          imageSrc: './images/jw/markers/FLOOR 2/MIX/IMG_20260910_103407_056.webp',
-          originalUrl: './images/jw/markers/FLOOR 2/MIX/IMG_20260910_103407_056.webp',
+          imageSrc: './images/jw/markers/FLOOR 2/MIX/IMG_20260910_103407_056.jpg',
+          originalUrl: './images/jw/markers/FLOOR 2/MIX/IMG_20260910_103407_056.jpg',
           caption: 'Senarai'
         },
-        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/jw/markers/FLOOR 2/MIX/IMG_20260910_103407_056.webp\'>\n        <img src=\'./images/jw/markers/FLOOR 2/MIX/IMG_20260910_103407_056.webp\' alt=\'Senarai\' style=\'cursor:pointer;\' />\n        <h2>Senarai</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/jw/markers/FLOOR 2/MIX/IMG_20260910_103407_056.jpg\'>\n        <img src=\'./images/jw/markers/FLOOR 2/MIX/IMG_20260910_103407_056.jpg\' alt=\'Senarai\' style=\'cursor:pointer;\' />\n        <h2>Senarai</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
       },
       {
         id: 'jw-f2-esport-3-marker-1789539749503',
@@ -180,11 +180,11 @@ export default [
           icon: 'info',
           color: 'blue',
           animated: false,
-          imageSrc: './images/jw/markers/FLOOR 2/MIX/IMG_20260910_103517_941.webp',
-          originalUrl: './images/jw/markers/FLOOR 2/MIX/IMG_20260910_103517_941.webp',
+          imageSrc: './images/jw/markers/FLOOR 2/MIX/IMG_20260910_103517_941.jpg',
+          originalUrl: './images/jw/markers/FLOOR 2/MIX/IMG_20260910_103517_941.jpg',
           caption: 'PS5'
         },
-        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/jw/markers/FLOOR 2/MIX/IMG_20260910_103517_941.webp\'>\n        <img src=\'./images/jw/markers/FLOOR 2/MIX/IMG_20260910_103517_941.webp\' alt=\'PS5\' style=\'cursor:pointer;\' />\n        <h2>PS5</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/jw/markers/FLOOR 2/MIX/IMG_20260910_103517_941.jpg\'>\n        <img src=\'./images/jw/markers/FLOOR 2/MIX/IMG_20260910_103517_941.jpg\' alt=\'PS5\' style=\'cursor:pointer;\' />\n        <h2>PS5</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
       },
       {
         id: 'jw-f2-esport-3-marker-1789539732138',
@@ -203,11 +203,11 @@ export default [
           icon: 'info',
           color: 'blue',
           animated: false,
-          imageSrc: './images/jw/markers/FLOOR 2/MIX/IMG_20260910_103457_713.webp',
-          originalUrl: './images/jw/markers/FLOOR 2/MIX/IMG_20260910_103457_713.webp',
+          imageSrc: './images/jw/markers/FLOOR 2/MIX/IMG_20260910_103457_713.jpg',
+          originalUrl: './images/jw/markers/FLOOR 2/MIX/IMG_20260910_103457_713.jpg',
           caption: 'CD & DVD'
         },
-        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/jw/markers/FLOOR 2/MIX/IMG_20260910_103457_713.webp\'>\n        <img src=\'./images/jw/markers/FLOOR 2/MIX/IMG_20260910_103457_713.webp\' alt=\'CD & DVD\' style=\'cursor:pointer;\' />\n        <h2>CD & DVD</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/jw/markers/FLOOR 2/MIX/IMG_20260910_103457_713.jpg\'>\n        <img src=\'./images/jw/markers/FLOOR 2/MIX/IMG_20260910_103457_713.jpg\' alt=\'CD & DVD\' style=\'cursor:pointer;\' />\n        <h2>CD & DVD</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
       },
       {
         id: 'jw-f2-esport-3-marker-1789539738749',
@@ -226,11 +226,11 @@ export default [
           icon: 'info',
           color: 'blue',
           animated: false,
-          imageSrc: './images/jw/markers/FLOOR 2/MIX/IMG_20260910_103436_219.webp',
-          originalUrl: './images/jw/markers/FLOOR 2/MIX/IMG_20260910_103436_219.webp',
+          imageSrc: './images/jw/markers/FLOOR 2/MIX/IMG_20260910_103436_219.jpg',
+          originalUrl: './images/jw/markers/FLOOR 2/MIX/IMG_20260910_103436_219.jpg',
           caption: 'CD & DVD'
         },
-        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/jw/markers/FLOOR 2/MIX/IMG_20260910_103436_219.webp\'>\n        <img src=\'./images/jw/markers/FLOOR 2/MIX/IMG_20260910_103436_219.webp\' alt=\'CD & DVD\' style=\'cursor:pointer;\' />\n        <h2>CD & DVD</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/jw/markers/FLOOR 2/MIX/IMG_20260910_103436_219.jpg\'>\n        <img src=\'./images/jw/markers/FLOOR 2/MIX/IMG_20260910_103436_219.jpg\' alt=\'CD & DVD\' style=\'cursor:pointer;\' />\n        <h2>CD & DVD</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
       }
     ],
     data: {
