@@ -916,10 +916,10 @@ export default [
       },
       {
         nodeId: 'pusat-f2-stairs-2',
-        position: { yaw: '253.32deg', pitch: '8.21deg' },
+        position: { yaw: '256.36deg', pitch: '9.81deg' },
         name: 'Go to Floor 2 - Stairs 2',
-        targetYaw: '184.17deg',
-        targetPitch: '8.81deg'
+        targetYaw: '285.95deg',
+        targetPitch: '-4.73deg'
       },
     ],
     markers: [],
