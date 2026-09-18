@@ -1276,8 +1276,9 @@ export default [
     caption: 'PUSAT - Balcony 33',
     panorama: './images/pusat/outside/pusat-outside-33.jpg',
     thumbnail: './images/pusat/outside/thumbs/pusat-outside-33.jpg',
-    defaultYaw: '0deg',
-    defaultPitch: '0deg',
+    defaultYaw: '196.31deg',
+    defaultPitch: '-13.01deg',
+    defaultZoomLvl: 5,
     links: [
       {
         nodeId: 'pusat-outside-34',
