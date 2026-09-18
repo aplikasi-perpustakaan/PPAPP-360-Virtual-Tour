@@ -10,11 +10,13 @@ export default [
     links: [
       {
         nodeId: 'pusat-f1-reading-2',
-        position: { yaw: '40.59deg', pitch: '-9.18deg' },
+        position: { yaw: '41.14deg', pitch: '0.26deg' },
         name: 'Go to Floor 1 - Reading Area 2',
-        targetYaw: '45.70deg',
-        targetPitch: '-0.40deg'
+        targetYaw: '50.35deg',
+        targetPitch: '-0.03deg'
       },
+      
+      
       
       
       {
@@ -155,6 +157,13 @@ export default [
         name: 'Go to Floor 1 - Reading Area 1',
         targetYaw: '226.13deg',
         targetPitch: '-3.48deg'
+      },
+      {
+        nodeId: 'pusat-f1-reading-5',
+        position: { yaw: '354.46deg', pitch: '-0.80deg' },
+        name: 'Go to Floor 1 - Reading Area 5',
+        targetYaw: '269.16deg',
+        targetPitch: '-3.38deg'
       },
     ],
     markers: [],
@@ -395,6 +404,13 @@ export default [
         name: 'Go to Floor 1 - Reading Area 10',
         targetYaw: '166.72deg',
         targetPitch: '-2.18deg'
+      },
+      {
+        nodeId: 'pusat-f1-reading-2',
+        position: { yaw: '180.77deg', pitch: '-7.53deg' },
+        name: 'Go to Floor 1 - Reading Area 2',
+        targetYaw: '231.17deg',
+        targetPitch: '-2.57deg'
       },
     ],
     markers: [
@@ -1138,8 +1154,8 @@ export default [
       {
         id: 'pusat-f1-reading-12-marker-1789700778865',
         position: {
-          yaw: '335.57deg',
-          pitch: '13.63deg'
+          yaw: '336.21deg',
+          pitch: '-2.32deg'
         },
         size: {
           width: 32,
@@ -1147,14 +1163,16 @@ export default [
         },
         anchor: 'center center',
         data: {
-          type: 'info',
+          type: 'image',
           title: 'Fiksyen Bahasa Inggeris',
           icon: 'info',
           color: 'blue',
           animated: false,
-          content: ''
+          imageSrc: './images/pusat/markers/FLOOR-1/PUSAT_F1_29.jpg',
+          originalUrl: './images/pusat/markers/FLOOR-1/PUSAT_F1_29.jpg',
+          caption: 'Fiksyen Bahasa Inggeris'
         },
-        html: '<custom-marker type=\'info\' data-icon=\'info\' data-color=\'blue\'>\n        <h2>Fiksyen Bahasa Inggeris</h2>\n        <p></p>\n      </custom-marker>'
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/pusat/markers/FLOOR-1/PUSAT_F1_29.jpg\'>\n        <img src=\'./images/pusat/markers/FLOOR-1/PUSAT_F1_29.jpg\' alt=\'Fiksyen Bahasa Inggeris\' style=\'cursor:pointer;\' />\n        <h2>Fiksyen Bahasa Inggeris</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
       }
     ],
     data: {

@@ -1656,6 +1656,27 @@ export default [
           caption: 'Buku Sumbangan'
         },
         html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/pusat/markers/FLOOR-1/PUSAT_F1_42.jpg\'>\n        <img src=\'./images/pusat/markers/FLOOR-1/PUSAT_F1_42.jpg\' alt=\'Buku Sumbangan\' style=\'cursor:pointer;\' />\n        <h2>Buku Sumbangan</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      {
+        id: 'pusat-f1-lobby-19-marker-1789715826023',
+        position: {
+          yaw: '255.38deg',
+          pitch: '-18.13deg'
+        },
+        size: {
+          width: 32,
+          height: 32
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Dilarang Sentuh',
+          icon: 'warning',
+          color: 'red',
+          animated: false,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'warning\' data-color=\'red\'>\n        <h2>Dilarang Sentuh</h2>\n        <p></p>\n      </custom-marker>'
       }
     ],
     data: {

@@ -58,6 +58,7 @@ export default [
         targetYaw: '50.81deg',
         targetPitch: '-8.52deg'
       },
+      
       {
         nodeId: 'pusat-f2-reading-8',
         position: { yaw: '232.42deg', pitch: '-3.82deg' },
@@ -419,6 +420,52 @@ export default [
           content: ''
         },
         html: '<custom-marker type=\'info\' data-icon=\'info\' data-color=\'blue\'>\n        <h2>Koleksi Akta</h2>\n        <p></p>\n      </custom-marker>'
+      },
+      {
+        id: 'pusat-f2-reading-5-marker-1789714684379',
+        position: {
+          yaw: '19.70deg',
+          pitch: '-7.68deg'
+        },
+        size: {
+          width: 32,
+          height: 32
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: '',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/pusat/markers/FLOOR-2/PUSAT_F2_2.jpg',
+          originalUrl: './images/pusat/markers/FLOOR-2/PUSAT_F2_2.jpg',
+          caption: ''
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/pusat/markers/FLOOR-2/PUSAT_F2_2.jpg\'>\n        <img src=\'./images/pusat/markers/FLOOR-2/PUSAT_F2_2.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      {
+        id: 'pusat-f2-reading-5-marker-1789714720672',
+        position: {
+          yaw: '26.42deg',
+          pitch: '-2.45deg'
+        },
+        size: {
+          width: 32,
+          height: 32
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: '',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/pusat/markers/FLOOR-2/PUSAT_F2_8.jpg',
+          originalUrl: './images/pusat/markers/FLOOR-2/PUSAT_F2_8.jpg',
+          caption: ''
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/pusat/markers/FLOOR-2/PUSAT_F2_8.jpg\'>\n        <img src=\'./images/pusat/markers/FLOOR-2/PUSAT_F2_8.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
       }
     ],
     data: {
@@ -509,13 +556,69 @@ export default [
         targetYaw: '232.00deg',
         targetPitch: '-1.19deg'
       },
+      
+      
       {
         nodeId: 'pusat-f2-reading-20',
         position: { yaw: '245.90deg', pitch: '-5.12deg' },
         name: 'Go to Floor 2 - Reference Area 20'
       },
+      {
+        nodeId: 'pusat-f2-reading-2',
+        position: { yaw: '50.60deg', pitch: '-7.00deg' },
+        name: 'Go to Floor 2 - Reading Area 2',
+        targetYaw: '53.31deg',
+        targetPitch: '-3.65deg'
+      },
     ],
-    markers: [],
+    markers: [
+      {
+        id: 'pusat-f2-reading-7-marker-1789714746885',
+        position: {
+          yaw: '81.71deg',
+          pitch: '-9.78deg'
+        },
+        size: {
+          width: 32,
+          height: 32
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: '',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/pusat/markers/FLOOR-2/PUSAT_F2_2.jpg',
+          originalUrl: './images/pusat/markers/FLOOR-2/PUSAT_F2_2.jpg',
+          caption: ''
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/pusat/markers/FLOOR-2/PUSAT_F2_2.jpg\'>\n        <img src=\'./images/pusat/markers/FLOOR-2/PUSAT_F2_2.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      {
+        id: 'pusat-f2-reading-7-marker-1789714775608',
+        position: {
+          yaw: '304.90deg',
+          pitch: '-9.25deg'
+        },
+        size: {
+          width: 32,
+          height: 32
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: '',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/pusat/markers/FLOOR-2/PUSAT_F2_6.jpg',
+          originalUrl: './images/pusat/markers/FLOOR-2/PUSAT_F2_6.jpg',
+          caption: ''
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/pusat/markers/FLOOR-2/PUSAT_F2_6.jpg\'>\n        <img src=\'./images/pusat/markers/FLOOR-2/PUSAT_F2_6.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      }
+    ],
     data: {
       floor: 'f2',
       tags: [
@@ -1120,7 +1223,52 @@ export default [
         name: 'Go to Floor 2 - Reference Area 7'
       },
     ],
-    markers: [],
+    markers: [
+      {
+        id: 'pusat-f2-reading-20-marker-1789714834898',
+        position: {
+          yaw: '0.15deg',
+          pitch: '-11.90deg'
+        },
+        size: {
+          width: 32,
+          height: 32
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: '',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/pusat/markers/FLOOR-2/PUSAT_F2_6.jpg',
+          originalUrl: './images/pusat/markers/FLOOR-2/PUSAT_F2_6.jpg',
+          caption: ''
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/pusat/markers/FLOOR-2/PUSAT_F2_6.jpg\'>\n        <img src=\'./images/pusat/markers/FLOOR-2/PUSAT_F2_6.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      {
+        id: 'pusat-f2-reading-20-marker-1789714860661',
+        position: {
+          yaw: '230.93deg',
+          pitch: '-12.02deg'
+        },
+        size: {
+          width: 32,
+          height: 32
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Kaunter Rujukan',
+          icon: 'pin',
+          color: 'green',
+          animated: false,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'pin\' data-color=\'green\'>\n        <h2>Kaunter Rujukan</h2>\n        <p></p>\n      </custom-marker>'
+      }
+    ],
     data: {
       floor: 'f2',
       tags: [
@@ -1157,7 +1305,29 @@ export default [
         targetPitch: '-0.78deg'
       },
     ],
-    markers: [],
+    markers: [
+      {
+        id: 'pusat-f2-reading-21-marker-1789714884552',
+        position: {
+          yaw: '294.13deg',
+          pitch: '-31.83deg'
+        },
+        size: {
+          width: 32,
+          height: 32
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Kaunter Rujukan',
+          icon: 'pin',
+          color: 'green',
+          animated: false,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'pin\' data-color=\'green\'>\n        <h2>Kaunter Rujukan</h2>\n        <p></p>\n      </custom-marker>'
+      }
+    ],
     data: {
       floor: 'f2',
       tags: [
@@ -1192,7 +1362,50 @@ export default [
         targetPitch: '6.31deg'
       },
     ],
-    markers: [],
+    markers: [
+      {
+        id: 'pusat-f2-reading-22-marker-1789714942454',
+        position: {
+          yaw: '26.95deg',
+          pitch: '-10.48deg'
+        },
+        size: {
+          width: 32,
+          height: 32
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Kaunter Rujukan',
+          icon: 'pin',
+          color: 'green',
+          animated: false,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'pin\' data-color=\'green\'>\n        <h2>Kaunter Rujukan</h2>\n        <p></p>\n      </custom-marker>'
+      },
+      {
+        id: 'pusat-f2-reading-22-marker-1789714974430',
+        position: {
+          yaw: '255.92deg',
+          pitch: '-2.69deg'
+        },
+        size: {
+          width: 32,
+          height: 32
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Bilik Mesyuarat',
+          icon: 'pin',
+          color: 'green',
+          animated: false,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'pin\' data-color=\'green\'>\n        <h2>Bilik Mesyuarat</h2>\n        <p></p>\n      </custom-marker>'
+      }
+    ],
     data: {
       floor: 'f2',
       tags: [
@@ -1275,6 +1488,13 @@ export default [
         targetYaw: '62.08deg',
         targetPitch: '1.48deg'
       },
+      {
+        nodeId: 'pusat-f2-reading-27',
+        position: { yaw: '152.02deg', pitch: '-5.49deg' },
+        name: 'Go to Floor 2 - Reading Area 27',
+        targetYaw: '107.15deg',
+        targetPitch: '-4.04deg'
+      },
     ],
     markers: [
       {
@@ -1297,6 +1517,27 @@ export default [
           content: ''
         },
         html: '<custom-marker type=\'info\' data-icon=\'pin\' data-color=\'green\'>\n        <h2>Bilik Mesyuarat</h2>\n        <p></p>\n      </custom-marker>'
+      },
+      {
+        id: 'pusat-f2-reading-24-marker-1789715005581',
+        position: {
+          yaw: '214.21deg',
+          pitch: '-7.46deg'
+        },
+        size: {
+          width: 32,
+          height: 32
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Koleksi Braille PPAPP',
+          icon: 'pin',
+          color: 'green',
+          animated: false,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'pin\' data-color=\'green\'>\n        <h2>Koleksi Braille PPAPP</h2>\n        <p></p>\n      </custom-marker>'
       }
     ],
     data: {
@@ -1338,8 +1579,34 @@ export default [
         targetYaw: '308.03deg',
         targetPitch: '-0.23deg'
       },
+      {
+        nodeId: 'pusat-f2-reading-27',
+        position: { yaw: '118.56deg', pitch: '-4.52deg' },
+        name: 'Go to Floor 2 - Reading Area 27'
+      },
     ],
     markers: [
+      {
+        id: 'pusat-f2-reading-25-marker-1789715027346',
+        position: {
+          yaw: '203.17deg',
+          pitch: '-12.56deg'
+        },
+        size: {
+          width: 32,
+          height: 32
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Koleksi Braille PPAPP',
+          icon: 'pin',
+          color: 'green',
+          animated: false,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'pin\' data-color=\'green\'>\n        <h2>Koleksi Braille PPAPP</h2>\n        <p></p>\n      </custom-marker>'
+      },
       {
         id: 'pusat-f2-reading-25-marker-1789635881207',
         position: {
@@ -1354,12 +1621,12 @@ export default [
         data: {
           type: 'info',
           title: 'Bilik Mesyuarat',
-          icon: 'info',
-          color: 'blue',
+          icon: 'pin',
+          color: 'green',
           animated: false,
           content: ''
         },
-        html: '<custom-marker type=\'info\' data-icon=\'info\' data-color=\'blue\'>\n        <h2>Bilik Mesyuarat</h2>\n        <p></p>\n      </custom-marker>'
+        html: '<custom-marker type=\'info\' data-icon=\'pin\' data-color=\'green\'>\n        <h2>Bilik Mesyuarat</h2>\n        <p></p>\n      </custom-marker>'
       }
     ],
     data: {
@@ -1380,27 +1647,28 @@ export default [
     links: [
       {
         nodeId: 'pusat-f2-reading-27',
-        position: {
-          yaw: '358.45deg',
-          pitch: '-8.15deg'
-        },
-        name: 'Go to Floor 2 - Reading 27'
+        position: { yaw: '63.96deg', pitch: '-6.21deg' },
+        name: 'Go to Floor 2 - Reading Area 27',
+        targetYaw: '13.69deg',
+        targetPitch: '-2.73deg'
       },
+      
+      
+      
       {
         nodeId: 'pusat-f2-reading-25',
-        position: {
-          yaw: '178.45deg',
-          pitch: '-8.15deg'
-        },
-        name: 'Go to Floor 2 - Reading 25'
-      }
+        position: { yaw: '13.41deg', pitch: '-4.93deg' },
+        name: 'Go to Floor 2 - Reading 25',
+        targetYaw: '15.52deg',
+        targetPitch: '-7.75deg'
+      },
     ],
     markers: [
       {
         id: 'pusat-f2-reading-26-marker-1789635908136',
         position: {
-          yaw: '198.02deg',
-          pitch: '-17.10deg'
+          yaw: '149.34deg',
+          pitch: '-45.16deg'
         },
         size: {
           width: 32,
@@ -1410,12 +1678,33 @@ export default [
         data: {
           type: 'info',
           title: 'Koleksi Braille PPAPP',
-          icon: 'info',
-          color: 'blue',
+          icon: 'pin',
+          color: 'green',
           animated: false,
           content: ''
         },
-        html: '<custom-marker type=\'info\' data-icon=\'info\' data-color=\'blue\'>\n        <h2>Koleksi Braille PPAPP</h2>\n        <p></p>\n      </custom-marker>'
+        html: '<custom-marker type=\'info\' data-icon=\'pin\' data-color=\'green\'>\n        <h2>Koleksi Braille PPAPP</h2>\n        <p></p>\n      </custom-marker>'
+      },
+      {
+        id: 'pusat-f2-reading-26-marker-1789715288663',
+        position: {
+          yaw: '14.22deg',
+          pitch: '-3.65deg'
+        },
+        size: {
+          width: 32,
+          height: 32
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Bilik Mesyuarat',
+          icon: 'pin',
+          color: 'green',
+          animated: false,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'pin\' data-color=\'green\'>\n        <h2>Bilik Mesyuarat</h2>\n        <p></p>\n      </custom-marker>'
       }
     ],
     data: {
@@ -1436,14 +1725,51 @@ export default [
     links: [
       {
         nodeId: 'pusat-f2-reading-26',
+        position: { yaw: '199.27deg', pitch: '-4.58deg' },
+        name: 'Go to Floor 2 - Reading Area 26',
+        targetYaw: '152.48deg',
+        targetPitch: '-28.58deg'
+      },
+      {
+        nodeId: 'pusat-f2-reading-25',
+        position: { yaw: '244.82deg', pitch: '-0.71deg' },
+        name: 'Go to Floor 2 - Reading Area 25',
+        targetYaw: '346.87deg',
+        targetPitch: '-0.08deg'
+      },
+      
+      
+      {
+        nodeId: 'pusat-f2-reading-24',
+        position: { yaw: '288.25deg', pitch: '-2.66deg' },
+        name: 'Go to Floor 2 - Reading Area 24',
+        targetYaw: '333.50deg',
+        targetPitch: '-4.42deg'
+      },
+    ],
+    markers: [
+      {
+        id: 'pusat-f2-reading-27-marker-1789715178558',
         position: {
-          yaw: '178.45deg',
-          pitch: '-8.15deg'
+          yaw: '253.10deg',
+          pitch: '-2.95deg'
         },
-        name: 'Go to Floor 2 - Reading 26'
+        size: {
+          width: 32,
+          height: 32
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Bilik Mesyuarat',
+          icon: 'pin',
+          color: 'green',
+          animated: false,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'pin\' data-color=\'green\'>\n        <h2>Bilik Mesyuarat</h2>\n        <p></p>\n      </custom-marker>'
       }
     ],
-    markers: [],
     data: {
       floor: 'f2',
       tags: [
