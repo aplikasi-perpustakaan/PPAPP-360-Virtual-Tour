@@ -351,13 +351,13 @@
 .branch-footer .credit-name {
   font-weight: 500;
   font-size: 0.8rem;
-  color: var(--color-offwhite);
+  color: #FFFFFF;
 }
 
 .branch-footer .credit-icon-link {
   display: inline-flex;
   align-items: center;
-  color: var(--color-steel);
+  color: #FFFFFF;
   transition: color 0.2s ease;
 }
 
@@ -367,11 +367,11 @@
 }
 
 .branch-footer .credit-icon-link:hover {
-  color: var(--color-offwhite);
+  color: var(--color-accent-blue);
 }
 
 .branch-footer .credit-divider {
-  color: var(--color-steel);
+  color: #FFFFFF;
   font-size: 1rem;
   user-select: none;
 }
