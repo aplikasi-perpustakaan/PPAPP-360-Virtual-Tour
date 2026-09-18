@@ -12,12 +12,12 @@ export default [
       {
         nodeId: 'jw-f1-lobby-5',
         position: { yaw: '322.41deg', pitch: '0deg' },
-        name: 'Go to Level 1 - Lobby 5',
+        name: 'Go to Floor 1 - Lobby 5',
       },
       {
         nodeId: 'jw-f2-reference-1',
         position: { yaw: '258.86deg', pitch: '0deg' },
-        name: 'Go to Level 2 - Reference Area 1',
+        name: 'Go to Floor 2 - Reference Area 1',
       }
 
     ],

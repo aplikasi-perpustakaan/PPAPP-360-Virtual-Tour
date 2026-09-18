@@ -149,7 +149,7 @@ export default [
       {
         nodeId: 'jw-f1-lobby-1',
         position: { yaw: '270.36deg', pitch: '0deg' },
-        name: 'Go to Level 1 - Lobby 1',
+        name: 'Go to Floor 1 - Lobby 1',
       },
       {
         nodeId: 'jw-ext-outside-5',
@@ -177,7 +177,7 @@ export default [
       {
         nodeId: 'jw-f1-lobby-2',
         position: { yaw: '0deg', pitch: '0deg' },
-        name: 'Go to Level 1 - Lobby 2',
+        name: 'Go to Floor 1 - Lobby 2',
       },
       {
         nodeId: 'jw-ext-outside-8',

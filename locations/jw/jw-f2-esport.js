@@ -1,8 +1,8 @@
 export default [
   {
     id: 'jw-f2-esport-1',
-    name: 'Level 2 - Esport 1',
-    caption: 'JW - Level 2 - Esport 1',
+    name: 'Floor 2 - Esport 1',
+    caption: 'JW - Floor 2 - Esport 1',
     panorama: './images/jw/f2-esport/jw-f2-esport-1.jpg',
     thumbnail: './images/jw/f2-esport/thumbs/jw-f2-esport-1.jpg',
     defaultYaw: '0deg',
@@ -12,12 +12,12 @@ export default [
       {
         nodeId: 'jw-f2-reference-4',
         position: { yaw: '83.59deg', pitch: '0deg' },
-        name: 'Go to Level 2 - Reference Area 4',
+        name: 'Go to Floor 2 - Reference Area 4',
       },
       {
         nodeId: 'jw-f2-esport-2',
         position: { yaw: '248.57deg', pitch: '0deg' },
-        name: 'Go to Level 2 - Esport 2',
+        name: 'Go to Floor 2 - Esport 2',
       }
     ],
     markers: [],
@@ -28,8 +28,8 @@ export default [
   },
   {
     id: 'jw-f2-esport-2',
-    name: 'Level 2 - Esport 2',
-    caption: 'JW - Level 2 - Esport 2',
+    name: 'Floor 2 - Esport 2',
+    caption: 'JW - Floor 2 - Esport 2',
     panorama: './images/jw/f2-esport/jw-f2-esport-2.jpg',
     thumbnail: './images/jw/f2-esport/thumbs/jw-f2-esport-2.jpg',
     defaultYaw: '0deg',
@@ -39,12 +39,12 @@ export default [
       {
         nodeId: 'jw-f2-esport-3',
         position: { yaw: '331.21deg', pitch: '0deg' },
-        name: 'Go to Level 2 - Esport 3',
+        name: 'Go to Floor 2 - Esport 3',
       },
       {
         nodeId: 'jw-f2-esport-1',
         position: { yaw: '66.12deg', pitch: '0deg' },
-        name: 'Go to Level 2 - Esport 1',
+        name: 'Go to Floor 2 - Esport 1',
       }
     ],
     markers: [
@@ -102,8 +102,8 @@ export default [
   },
   {
     id: 'jw-f2-esport-3',
-    name: 'Level 2 - Esport 3',
-    caption: 'JW - Level 2 - Esport 3',
+    name: 'Floor 2 - Esport 3',
+    caption: 'JW - Floor 2 - Esport 3',
     panorama: './images/jw/f2-esport/jw-f2-esport-3.jpg',
     thumbnail: './images/jw/f2-esport/thumbs/jw-f2-esport-3.jpg',
     defaultYaw: '0deg',
@@ -113,7 +113,7 @@ export default [
       {
         nodeId: 'jw-f2-esport-2',
         position: { yaw: '180deg', pitch: '0deg' },
-        name: 'Go to Level 2 - Esport 2',
+        name: 'Go to Floor 2 - Esport 2',
       }
     ],
     markers: [
@@ -240,8 +240,8 @@ export default [
   },
   {
     id: 'jw-f2-esport-4',
-    name: 'Level 2 - Esport 4',
-    caption: 'JW - Level 2 - Esport 4',
+    name: 'Floor 2 - Esport 4',
+    caption: 'JW - Floor 2 - Esport 4',
     panorama: './images/jw/f2-esport/jw-f2-esport-4.jpg',
     thumbnail: './images/jw/f2-esport/thumbs/jw-f2-esport-4.jpg',
     defaultYaw: '0deg',
@@ -251,12 +251,12 @@ export default [
       {
         nodeId: 'jw-f2-reference-2',
         position: { yaw: '100.98deg', pitch: '0deg' },
-        name: 'Go to Level 2 - Reference Area 2',
+        name: 'Go to Floor 2 - Reference Area 2',
       },
       {
         nodeId: 'jw-f2-esport-5',
         position: { yaw: '275.39deg', pitch: '0deg' },
-        name: 'Go to Level 2 - Esport 5',
+        name: 'Go to Floor 2 - Esport 5',
       },
     ],
     markers: [],
@@ -267,8 +267,8 @@ export default [
   },
   {
     id: 'jw-f2-esport-5',
-    name: 'Level 2 - Esport 5',
-    caption: 'JW - Level 2 - Esport 5',
+    name: 'Floor 2 - Esport 5',
+    caption: 'JW - Floor 2 - Esport 5',
     panorama: './images/jw/f2-esport/jw-f2-esport-5.jpg',
     thumbnail: './images/jw/f2-esport/thumbs/jw-f2-esport-5.jpg',
     defaultYaw: '0deg',
@@ -278,7 +278,7 @@ export default [
       {
         nodeId: 'jw-f2-esport-4',
         position: { yaw: '106.58deg', pitch: '0deg' },
-        name: 'Go to Level 2 - Esport 4',
+        name: 'Go to Floor 2 - Esport 4',
       }
     ],
     markers: [],

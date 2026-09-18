@@ -2,8 +2,8 @@
 export default [
   {
     id: 'bt-f1-backside-1',
-    name: 'Level 1 - Backside 1',
-    caption: 'BT - Level 1 - Backside 1',
+    name: 'Floor 1 - Backside 1',
+    caption: 'BT - Floor 1 - Backside 1',
     panorama: './images/bt/f1-backside/bt-f1-backside-1.jpg',
     thumbnail: './images/bt/f1-backside/thumbs/bt-f1-backside-1.jpg',
     defaultYaw: '0deg',
@@ -13,7 +13,7 @@ export default [
       {
         nodeId: 'bt-f1-backside-2',
         position: { yaw: '269.19deg', pitch: '0deg' },
-        name: 'Go to Level 1 - Backside 2',
+        name: 'Go to Floor 1 - Backside 2',
       },
       {
         nodeId: 'bt-stairs-back-1',
@@ -23,7 +23,7 @@ export default [
       {
         nodeId: 'bt-f1-tyt-16',
         position: { yaw: '179.57deg', pitch: '0deg' },
-        name: 'Go to Level 1 - Tyt 16',
+        name: 'Go to Floor 1 - Tyt 16',
       },
     ],
     markers: [],
@@ -34,8 +34,8 @@ export default [
   },
   {
     id: 'bt-f1-backside-2',
-    name: 'Level 1 - Backside 2',
-    caption: 'BT - Level 1 - Backside 2',
+    name: 'Floor 1 - Backside 2',
+    caption: 'BT - Floor 1 - Backside 2',
     panorama: './images/bt/f1-backside/bt-f1-backside-2.jpg',
     thumbnail: './images/bt/f1-backside/thumbs/bt-f1-backside-2.jpg',
     defaultYaw: '0deg',
@@ -45,17 +45,17 @@ export default [
       {
         nodeId: 'bt-f1-backside-1',
         position: { yaw: '92.53deg', pitch: '0deg' },
-        name: 'Go to Level 1 - Backside 1',
+        name: 'Go to Floor 1 - Backside 1',
       },
       {
         nodeId: 'bt-f1-surau-1',
         position: { yaw: '5.10deg', pitch: '0deg' },
-        name: 'Go to Level 1 - Surau 1',
+        name: 'Go to Floor 1 - Surau 1',
       },
       {
         nodeId: 'bt-f1-kids-8',
         position: { yaw: '198.32deg', pitch: '0deg' },
-        name: 'Go to Level 1 - Kids Area 8',
+        name: 'Go to Floor 1 - Kids Area 8',
       },
     ],
     markers: [],

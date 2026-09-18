@@ -2,8 +2,8 @@
 export default [
   {
     id: 'ppk-f1-main-area-1',
-    name: 'Level 1 - Main Area 1',
-    caption: 'PPK - Level 1 - Main Area 1',
+    name: 'Floor 1 - Main Area 1',
+    caption: 'PPK - Floor 1 - Main Area 1',
     panorama: './images/ppk/f1-main-area/ppk-f1-main-area-1.jpg',
     thumbnail: './images/ppk/f1-main-area/thumbs/ppk-f1-main-area-1.jpg',
     defaultYaw: '0deg',
@@ -13,17 +13,17 @@ export default [
       {
         nodeId: 'ppk-f1-main-area-4',
         position: { yaw: '10.82deg', pitch: '-1.85deg' },
-        name: 'Go to Level 1 - Main Area 4'
+        name: 'Go to Floor 1 - Main Area 4'
       },
       {
         nodeId: 'ppk-f1-main-area-2',
         position: { yaw: '280.89deg', pitch: '-5.57deg' },
-        name: 'Go to Level 1 - Main Area 2'
+        name: 'Go to Floor 1 - Main Area 2'
       },
       {
         nodeId: 'ppk-f1-main-area-3',
         position: { yaw: '101.07deg', pitch: '-6.70deg' },
-        name: 'Go to Level 1 - Main Area 3'
+        name: 'Go to Floor 1 - Main Area 3'
       },
     ],
     markers: [
@@ -83,8 +83,8 @@ export default [
   },
   {
     id: 'ppk-f1-main-area-2',
-    name: 'Level 1 - Main Area 2',
-    caption: 'PPK - Level 1 - Main Area 2',
+    name: 'Floor 1 - Main Area 2',
+    caption: 'PPK - Floor 1 - Main Area 2',
     panorama: './images/ppk/f1-main-area/ppk-f1-main-area-2.jpg',
     thumbnail: './images/ppk/f1-main-area/thumbs/ppk-f1-main-area-2.jpg',
     defaultYaw: '0deg',
@@ -94,7 +94,7 @@ export default [
       {
         nodeId: 'ppk-f1-main-area-1',
         position: { yaw: '100.89deg', pitch: '-10deg' },
-        name: 'Go to Level 1 - Main Area 1'
+        name: 'Go to Floor 1 - Main Area 1'
       },
     ],
     markers: [],
@@ -107,8 +107,8 @@ export default [
   },
   {
     id: 'ppk-f1-main-area-3',
-    name: 'Level 1 - Main Area 3',
-    caption: 'PPK - Level 1 - Main Area 3',
+    name: 'Floor 1 - Main Area 3',
+    caption: 'PPK - Floor 1 - Main Area 3',
     panorama: './images/ppk/f1-main-area/ppk-f1-main-area-3.jpg',
     thumbnail: './images/ppk/f1-main-area/thumbs/ppk-f1-main-area-3.jpg',
     defaultYaw: '0deg',
@@ -118,7 +118,7 @@ export default [
       {
         nodeId: 'ppk-f1-main-area-1',
         position: { yaw: '281.07deg', pitch: '-10deg' },
-        name: 'Go to Level 1 - Main Area 1'
+        name: 'Go to Floor 1 - Main Area 1'
       },
     ],
     markers: [
@@ -153,8 +153,8 @@ export default [
   },
   {
     id: 'ppk-f1-main-area-4',
-    name: 'Level 1 - Main Area 4',
-    caption: 'PPK - Level 1 - Main Area 4',
+    name: 'Floor 1 - Main Area 4',
+    caption: 'PPK - Floor 1 - Main Area 4',
     panorama: './images/ppk/f1-main-area/ppk-f1-main-area-4.jpg',
     thumbnail: './images/ppk/f1-main-area/thumbs/ppk-f1-main-area-4.jpg',
     defaultYaw: '0deg',
@@ -164,24 +164,24 @@ export default [
       {
         nodeId: 'ppk-f1-main-area-5',
         position: { yaw: '342.34deg', pitch: '-6.56deg' },
-        name: 'Go to Level 1 - Main Area 5'
+        name: 'Go to Floor 1 - Main Area 5'
       },
       
       
       {
         nodeId: 'ppk-f1-main-area-1',
         position: { yaw: '190.82deg', pitch: '-10deg' },
-        name: 'Go to Level 1 - Main Area 1'
+        name: 'Go to Floor 1 - Main Area 1'
       },
       {
         nodeId: 'ppk-f1-main-area-7',
         position: { yaw: '24.76deg', pitch: '-10deg' },
-        name: 'Go to Level 1 - Main Area 7'
+        name: 'Go to Floor 1 - Main Area 7'
       },
       {
         nodeId: 'ppk-f1-main-area-6',
         position: { yaw: '78.14deg', pitch: '-10.42deg' },
-        name: 'Go to Level 1 - Main Area 6'
+        name: 'Go to Floor 1 - Main Area 6'
       },
     ],
     markers: [
@@ -237,8 +237,8 @@ export default [
   },
   {
     id: 'ppk-f1-main-area-5',
-    name: 'Level 1 - Main Area 5',
-    caption: 'PPK - Level 1 - Main Area 5',
+    name: 'Floor 1 - Main Area 5',
+    caption: 'PPK - Floor 1 - Main Area 5',
     panorama: './images/ppk/f1-main-area/ppk-f1-main-area-5.jpg',
     thumbnail: './images/ppk/f1-main-area/thumbs/ppk-f1-main-area-5.jpg',
     defaultYaw: '0deg',
@@ -248,12 +248,12 @@ export default [
       {
         nodeId: 'ppk-f1-main-area-4',
         position: { yaw: '162.34deg', pitch: '-10deg' },
-        name: 'Go to Level 1 - Main Area 4'
+        name: 'Go to Floor 1 - Main Area 4'
       },
       {
         nodeId: 'ppk-f1-main-area-7',
         position: { yaw: '62.94deg', pitch: '1.02deg' },
-        name: 'Go to Level 1 - Main Area 7',
+        name: 'Go to Floor 1 - Main Area 7',
         targetYaw: '43.11deg',
         targetPitch: '-1.54deg'
       },
@@ -292,8 +292,8 @@ export default [
   },
   {
     id: 'ppk-f1-main-area-6',
-    name: 'Level 1 - Main Area 6',
-    caption: 'PPK - Level 1 - Main Area 6',
+    name: 'Floor 1 - Main Area 6',
+    caption: 'PPK - Floor 1 - Main Area 6',
     panorama: './images/ppk/f1-main-area/ppk-f1-main-area-6.jpg',
     thumbnail: './images/ppk/f1-main-area/thumbs/ppk-f1-main-area-6.jpg',
     defaultYaw: '0deg',
@@ -303,7 +303,7 @@ export default [
       {
         nodeId: 'ppk-f1-main-area-4',
         position: { yaw: '358.88deg', pitch: '-10.14deg' },
-        name: 'Go to Level 1 - Main Area 4',
+        name: 'Go to Floor 1 - Main Area 4',
         targetYaw: '0.00deg',
         targetPitch: '0.00deg'
       },
@@ -312,7 +312,7 @@ export default [
       {
         nodeId: 'ppk-f1-main-area-8',
         position: { yaw: '26.74deg', pitch: '-3.17deg' },
-        name: 'Go to Level 1 - Main Area 8',
+        name: 'Go to Floor 1 - Main Area 8',
         targetYaw: '350.19deg',
         targetPitch: '-0.05deg'
       },
@@ -321,7 +321,7 @@ export default [
       {
         nodeId: 'ppk-f1-main-area-5',
         position: { yaw: '250.50deg', pitch: '-10deg' },
-        name: 'Go to Level 1 - Main Area 5'
+        name: 'Go to Floor 1 - Main Area 5'
       },
     ],
     markers: [
@@ -398,8 +398,8 @@ export default [
   },
   {
     id: 'ppk-f1-main-area-7',
-    name: 'Level 1 - Main Area 7',
-    caption: 'PPK - Level 1 - Main Area 7',
+    name: 'Floor 1 - Main Area 7',
+    caption: 'PPK - Floor 1 - Main Area 7',
     panorama: './images/ppk/f1-main-area/ppk-f1-main-area-7.jpg',
     thumbnail: './images/ppk/f1-main-area/thumbs/ppk-f1-main-area-7.jpg',
     defaultYaw: '0deg',
@@ -409,7 +409,7 @@ export default [
       {
         nodeId: 'ppk-f1-main-area-8',
         position: { yaw: '78.54deg', pitch: '-15.04deg' },
-        name: 'Go to Level 1 - Main Area 8'
+        name: 'Go to Floor 1 - Main Area 8'
       },
       
       
@@ -420,12 +420,12 @@ export default [
       {
         nodeId: 'ppk-f1-main-area-4',
         position: { yaw: '204.76deg', pitch: '-10.45deg' },
-        name: 'Go to Level 1 - Main Area 4'
+        name: 'Go to Floor 1 - Main Area 4'
       },
       {
         nodeId: 'ppk-f1-main-area-9',
         position: { yaw: '307.03deg', pitch: '-10deg' },
-        name: 'Go to Level 1 - Main Area 9'
+        name: 'Go to Floor 1 - Main Area 9'
       },
     ],
     markers: [
@@ -506,8 +506,8 @@ export default [
   },
   {
     id: 'ppk-f1-main-area-8',
-    name: 'Level 1 - Main Area 8',
-    caption: 'PPK - Level 1 - Main Area 8',
+    name: 'Floor 1 - Main Area 8',
+    caption: 'PPK - Floor 1 - Main Area 8',
     panorama: './images/ppk/f1-main-area/ppk-f1-main-area-8.jpg',
     thumbnail: './images/ppk/f1-main-area/thumbs/ppk-f1-main-area-8.jpg',
     defaultYaw: '0deg',
@@ -517,13 +517,13 @@ export default [
       {
         nodeId: 'ppk-f1-main-area-7',
         position: { yaw: '258.54deg', pitch: '-10deg' },
-        name: 'Go to Level 1 - Main Area 7'
+        name: 'Go to Floor 1 - Main Area 7'
       },
       
       {
         nodeId: 'ppk-f1-main-area-12',
         position: { yaw: '20.15deg', pitch: '-5.57deg' },
-        name: 'Go to Level 1 - Main Area 12',
+        name: 'Go to Floor 1 - Main Area 12',
         targetYaw: '38.04deg',
         targetPitch: '-5.02deg'
       },
@@ -532,7 +532,7 @@ export default [
       {
         nodeId: 'ppk-f1-main-area-6',
         position: { yaw: '199.51deg', pitch: '-16.80deg' },
-        name: 'Go to Level 1 - Main Area 6'
+        name: 'Go to Floor 1 - Main Area 6'
       },
     ],
     markers: [
@@ -830,8 +830,8 @@ export default [
   },
   {
     id: 'ppk-f1-main-area-9',
-    name: 'Level 1 - Main Area 9',
-    caption: 'PPK - Level 1 - Main Area 9',
+    name: 'Floor 1 - Main Area 9',
+    caption: 'PPK - Floor 1 - Main Area 9',
     panorama: './images/ppk/f1-main-area/ppk-f1-main-area-9.jpg',
     thumbnail: './images/ppk/f1-main-area/thumbs/ppk-f1-main-area-9.jpg',
     defaultYaw: '0deg',
@@ -841,12 +841,12 @@ export default [
       {
         nodeId: 'ppk-f1-main-area-10',
         position: { yaw: '57.70deg', pitch: '-10deg' },
-        name: 'Go to Level 1 - Main Area 10'
+        name: 'Go to Floor 1 - Main Area 10'
       },
       {
         nodeId: 'ppk-f1-main-area-7',
         position: { yaw: '127.03deg', pitch: '-9.22deg' },
-        name: 'Go to Level 1 - Main Area 7'
+        name: 'Go to Floor 1 - Main Area 7'
       },
     ],
     markers: [],
@@ -859,8 +859,8 @@ export default [
   },
   {
     id: 'ppk-f1-main-area-10',
-    name: 'Level 1 - Main Area 10',
-    caption: 'PPK - Level 1 - Main Area 10',
+    name: 'Floor 1 - Main Area 10',
+    caption: 'PPK - Floor 1 - Main Area 10',
     panorama: './images/ppk/f1-main-area/ppk-f1-main-area-10.jpg',
     thumbnail: './images/ppk/f1-main-area/thumbs/ppk-f1-main-area-10.jpg',
     defaultYaw: '0deg',
@@ -870,20 +870,20 @@ export default [
       {
         nodeId: 'ppk-f1-main-area-11',
         position: { yaw: '310.45deg', pitch: '-10deg' },
-        name: 'Go to Level 1 - Main Area 11'
+        name: 'Go to Floor 1 - Main Area 11'
       },
       
       
       {
         nodeId: 'ppk-f1-main-area-9',
         position: { yaw: '237.70deg', pitch: '-15.96deg' },
-        name: 'Go to Level 1 - Main Area 9'
+        name: 'Go to Floor 1 - Main Area 9'
       },
       
       {
         nodeId: 'ppk-f1-main-area-12',
         position: { yaw: '111.14deg', pitch: '-10deg' },
-        name: 'Go to Level 1 - Main Area 12'
+        name: 'Go to Floor 1 - Main Area 12'
       },
     ],
     markers: [
@@ -964,8 +964,8 @@ export default [
   },
   {
     id: 'ppk-f1-main-area-11',
-    name: 'Level 1 - Main Area 11',
-    caption: 'PPK - Level 1 - Main Area 11',
+    name: 'Floor 1 - Main Area 11',
+    caption: 'PPK - Floor 1 - Main Area 11',
     panorama: './images/ppk/f1-main-area/ppk-f1-main-area-11.jpg',
     thumbnail: './images/ppk/f1-main-area/thumbs/ppk-f1-main-area-11.jpg',
     defaultYaw: '0deg',
@@ -975,7 +975,7 @@ export default [
       {
         nodeId: 'ppk-f1-main-area-10',
         position: { yaw: '130.45deg', pitch: '-7.40deg' },
-        name: 'Go to Level 1 - Main Area 10'
+        name: 'Go to Floor 1 - Main Area 10'
       },
     ],
     markers: [
@@ -1012,8 +1012,8 @@ export default [
   },
   {
     id: 'ppk-f1-main-area-12',
-    name: 'Level 1 - Main Area 12',
-    caption: 'PPK - Level 1 - Main Area 12',
+    name: 'Floor 1 - Main Area 12',
+    caption: 'PPK - Floor 1 - Main Area 12',
     panorama: './images/ppk/f1-main-area/ppk-f1-main-area-12.jpg',
     thumbnail: './images/ppk/f1-main-area/thumbs/ppk-f1-main-area-12.jpg',
     defaultYaw: '0deg',
@@ -1023,12 +1023,12 @@ export default [
       {
         nodeId: 'ppk-f1-main-area-8',
         position: { yaw: '201.38deg', pitch: '-10deg' },
-        name: 'Go to Level 1 - Main Area 8'
+        name: 'Go to Floor 1 - Main Area 8'
       },
       {
         nodeId: 'ppk-f1-main-area-10',
         position: { yaw: '291.14deg', pitch: '-8.42deg' },
-        name: 'Go to Level 1 - Main Area 10'
+        name: 'Go to Floor 1 - Main Area 10'
       },
     ],
     markers: [

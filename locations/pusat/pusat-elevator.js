@@ -20,7 +20,7 @@ export default [
       {
         nodeId: 'pusat-f1-lobby-21',
         position: { yaw: '177.61deg', pitch: '-4.67deg' },
-        name: 'Go to Level 1 - Lobby 21',
+        name: 'Go to Floor 1 - Lobby 21',
         targetYaw: '245.41deg',
         targetPitch: '1.68deg'
       },
@@ -54,7 +54,7 @@ export default [
       {
         nodeId: 'pusat-f2-reading-9',
         position: { yaw: '181.56deg', pitch: '-4.17deg' },
-        name: 'Go to Level 2 - Reading Area 9',
+        name: 'Go to Floor 2 - Reading Area 9',
         targetYaw: '30.94deg',
         targetPitch: '-0.24deg'
       },

@@ -13,11 +13,11 @@ export default [
       {
         nodeId: 'bt-f2-backside-1',
         position: { yaw: '205.21deg', pitch: '0deg' },
-        name: 'Go to Level 2 - Backside 1',
+        name: 'Go to Floor 2 - Backside 1',
       }, {
         nodeId: 'bt-f1-backside-1',
         position: { yaw: '168.63deg', pitch: '0deg' },
-        name: 'Go to Level 1 - Backside 1',
+        name: 'Go to Floor 1 - Backside 1',
       },],
     markers: [],
     data: {

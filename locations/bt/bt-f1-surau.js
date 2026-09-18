@@ -2,8 +2,8 @@
 export default [
   {
     id: 'bt-f1-surau-1',
-    name: 'Level 1 - Surau 1',
-    caption: 'BT - Level 1 - Surau 1',
+    name: 'Floor 1 - Surau 1',
+    caption: 'BT - Floor 1 - Surau 1',
     panorama: './images/bt/f1-surau/bt-f1-surau-1.jpg',
     thumbnail: './images/bt/f1-surau/thumbs/bt-f1-surau-1.jpg',
     defaultYaw: '0deg',
@@ -13,12 +13,12 @@ export default [
       {
         nodeId: 'bt-f1-surau-2',
         position: { yaw: '358.45deg', pitch: '0deg' },
-        name: 'Go to Level 1 - Surau 2',
+        name: 'Go to Floor 1 - Surau 2',
       },
       {
         nodeId: 'bt-f1-backside-2',
         position: { yaw: '179.24deg', pitch: '0deg' },
-        name: 'Go to Level 1 - Backside 2',
+        name: 'Go to Floor 1 - Backside 2',
       },
     ],
     markers: [],
@@ -29,8 +29,8 @@ export default [
   },
   {
     id: 'bt-f1-surau-2',
-    name: 'Level 1 - Surau 2',
-    caption: 'BT - Level 1 - Surau 2',
+    name: 'Floor 1 - Surau 2',
+    caption: 'BT - Floor 1 - Surau 2',
     panorama: './images/bt/f1-surau/bt-f1-surau-2.jpg',
     thumbnail: './images/bt/f1-surau/thumbs/bt-f1-surau-2.jpg',
     defaultYaw: '0deg',
@@ -40,7 +40,7 @@ export default [
       {
         nodeId: 'bt-f1-surau-1',
         position: { yaw: '178.45deg', pitch: '0deg' },
-        name: 'Go to Level 1 - Surau 1',
+        name: 'Go to Floor 1 - Surau 1',
       },
     ],
     markers: [],

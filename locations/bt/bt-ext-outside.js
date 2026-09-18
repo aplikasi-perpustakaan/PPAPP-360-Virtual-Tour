@@ -201,7 +201,7 @@ export default [
       {
         nodeId: 'bt-f1-lobby-1',
         position: { yaw: '358.45deg', pitch: '0deg' },
-        name: 'Go to Level 1 - Lobby 1',
+        name: 'Go to Floor 1 - Lobby 1',
       },
     ],
     markers: [

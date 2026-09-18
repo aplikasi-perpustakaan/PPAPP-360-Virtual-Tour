@@ -2,8 +2,8 @@
 export default [
   {
     id: 'gt-f1-i-play-toy-1',
-    name: 'Level 1 - I Play Toy 1',
-    caption: 'GT - Level 1 - I Play Toy 1',
+    name: 'Floor 1 - I Play Toy 1',
+    caption: 'GT - Floor 1 - I Play Toy 1',
     panorama: './images/gt/f1-i-play-toy/gt-f1-i-play-toy-1.jpg',
     thumbnail: './images/gt/f1-i-play-toy/thumbs/gt-f1-i-play-toy-1.jpg',
     defaultYaw: '0deg',
@@ -13,18 +13,18 @@ export default [
       {
         nodeId: 'gt-f1-i-play-toy-2',
         position: { yaw: '158.82deg', pitch: '-6.08deg' },
-        name: 'Go to Level 1 - I Play Toy 2'
+        name: 'Go to Floor 1 - I Play Toy 2'
       },
       
       {
         nodeId: 'gt-f1-main-area-72',
         position: { yaw: '15.40deg', pitch: '-10deg' },
-        name: 'Go to Level 1 - Main Area 72'
+        name: 'Go to Floor 1 - Main Area 72'
       },
       {
         nodeId: 'gt-f1-i-play-toy-3',
         position: { yaw: '93.49deg', pitch: '-10deg' },
-        name: 'Go to Level 1 - I Play Toy 3'
+        name: 'Go to Floor 1 - I Play Toy 3'
       },
     ],
     markers: [],
@@ -35,8 +35,8 @@ export default [
   },
   {
     id: 'gt-f1-i-play-toy-2',
-    name: 'Level 1 - I Play Toy 2',
-    caption: 'GT - Level 1 - I Play Toy 2',
+    name: 'Floor 1 - I Play Toy 2',
+    caption: 'GT - Floor 1 - I Play Toy 2',
     panorama: './images/gt/f1-i-play-toy/gt-f1-i-play-toy-2.jpg',
     thumbnail: './images/gt/f1-i-play-toy/thumbs/gt-f1-i-play-toy-2.jpg',
     defaultYaw: '0deg',
@@ -46,12 +46,12 @@ export default [
       {
         nodeId: 'gt-f1-i-play-toy-1',
         position: { yaw: '338.82deg', pitch: '-10deg' },
-        name: 'Go to Level 1 - I Play Toy 1'
+        name: 'Go to Floor 1 - I Play Toy 1'
       },
       {
         nodeId: 'gt-f1-i-play-toy-4',
         position: { yaw: '111.94deg', pitch: '-10deg' },
-        name: 'Go to Level 1 - I Play Toy 4'
+        name: 'Go to Floor 1 - I Play Toy 4'
       },
     ],
     markers: [
@@ -132,8 +132,8 @@ export default [
   },
   {
     id: 'gt-f1-i-play-toy-3',
-    name: 'Level 1 - I Play Toy 3',
-    caption: 'GT - Level 1 - I Play Toy 3',
+    name: 'Floor 1 - I Play Toy 3',
+    caption: 'GT - Floor 1 - I Play Toy 3',
     panorama: './images/gt/f1-i-play-toy/gt-f1-i-play-toy-3.jpg',
     thumbnail: './images/gt/f1-i-play-toy/thumbs/gt-f1-i-play-toy-3.jpg',
     defaultYaw: '0deg',
@@ -143,12 +143,12 @@ export default [
       {
         nodeId: 'gt-f1-i-play-toy-4',
         position: { yaw: '178.06deg', pitch: '-3.64deg' },
-        name: 'Go to Level 1 - I Play Toy 4'
+        name: 'Go to Floor 1 - I Play Toy 4'
       },
       {
         nodeId: 'gt-f1-i-play-toy-1',
         position: { yaw: '273.49deg', pitch: '-9.10deg' },
-        name: 'Go to Level 1 - I Play Toy 1'
+        name: 'Go to Floor 1 - I Play Toy 1'
       },
     ],
     markers: [
@@ -183,8 +183,8 @@ export default [
   },
   {
     id: 'gt-f1-i-play-toy-4',
-    name: 'Level 1 - I Play Toy 4',
-    caption: 'GT - Level 1 - I Play Toy 4',
+    name: 'Floor 1 - I Play Toy 4',
+    caption: 'GT - Floor 1 - I Play Toy 4',
     panorama: './images/gt/f1-i-play-toy/gt-f1-i-play-toy-4.jpg',
     thumbnail: './images/gt/f1-i-play-toy/thumbs/gt-f1-i-play-toy-4.jpg',
     defaultYaw: '0deg',
@@ -194,12 +194,12 @@ export default [
       {
         nodeId: 'gt-f1-i-play-toy-3',
         position: { yaw: '358.06deg', pitch: '-10deg' },
-        name: 'Go to Level 1 - I Play Toy 3'
+        name: 'Go to Floor 1 - I Play Toy 3'
       },
       {
         nodeId: 'gt-f1-i-play-toy-2',
         position: { yaw: '291.94deg', pitch: '-5.87deg' },
-        name: 'Go to Level 1 - I Play Toy 2'
+        name: 'Go to Floor 1 - I Play Toy 2'
       },
     ],
     markers: [],

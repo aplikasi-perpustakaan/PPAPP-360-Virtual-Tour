@@ -4,8 +4,8 @@ export default [
   {
 
     id: 'bt-f1-tyt-1',
-    name: 'Level 1 - Tyt 1',
-    caption: 'BT - Level 1 - Tyt 1',
+    name: 'Floor 1 - Tyt 1',
+    caption: 'BT - Floor 1 - Tyt 1',
     panorama: './images/bt/f1-tyt/bt-f1-tyt-1.jpg',
     thumbnail: './images/bt/f1-tyt/thumbs/bt-f1-tyt-1.jpg',
     defaultYaw: '0deg',
@@ -15,12 +15,12 @@ export default [
       {
         nodeId: 'bt-f1-tyt-2',
         position: { yaw: '127.87deg', pitch: '0deg' },
-        name: 'Go to Level 1 - Tyt 2',
+        name: 'Go to Floor 1 - Tyt 2',
       },
       {
         nodeId: 'bt-f1-lobby-2',
         position: { yaw: '269.17deg', pitch: '0deg' },
-        name: 'Go to Level 1 - Lobby 2',
+        name: 'Go to Floor 1 - Lobby 2',
       },
     ],
     markers: [
@@ -103,8 +103,8 @@ export default [
   {
 
     id: 'bt-f1-tyt-2',
-    name: 'Level 1 - Tyt 2',
-    caption: 'BT - Level 1 - Tyt 2',
+    name: 'Floor 1 - Tyt 2',
+    caption: 'BT - Floor 1 - Tyt 2',
     panorama: './images/bt/f1-tyt/bt-f1-tyt-2.jpg',
     thumbnail: './images/bt/f1-tyt/thumbs/bt-f1-tyt-2.jpg',
     defaultYaw: '0deg',
@@ -114,12 +114,12 @@ export default [
       {
         nodeId: 'bt-f1-tyt-1',
         position: { yaw: '298.48deg', pitch: '0deg' },
-        name: 'Go to Level 1 - Tyt 1',
+        name: 'Go to Floor 1 - Tyt 1',
       },
       {
         nodeId: 'bt-f1-tyt-3',
         position: { yaw: '109.28deg', pitch: '0deg' },
-        name: 'Go to Level 1 - Tyt 3',
+        name: 'Go to Floor 1 - Tyt 3',
       },
     ],
     markers: [],
@@ -132,8 +132,8 @@ export default [
   {
 
     id: 'bt-f1-tyt-3',
-    name: 'Level 1 - Tyt 3',
-    caption: 'BT - Level 1 - Tyt 3',
+    name: 'Floor 1 - Tyt 3',
+    caption: 'BT - Floor 1 - Tyt 3',
     panorama: './images/bt/f1-tyt/bt-f1-tyt-3.jpg',
     thumbnail: './images/bt/f1-tyt/thumbs/bt-f1-tyt-3.jpg',
     defaultYaw: '0deg',
@@ -143,12 +143,12 @@ export default [
       {
         nodeId: 'bt-f1-tyt-2',
         position: { yaw: '243.19deg', pitch: '0deg' },
-        name: 'Go to Level 1 - Tyt 2',
+        name: 'Go to Floor 1 - Tyt 2',
       },
       {
         nodeId: 'bt-f1-tyt-4',
         position: { yaw: '358.45deg', pitch: '0deg' },
-        name: 'Go to Level 1 - Tyt 4',
+        name: 'Go to Floor 1 - Tyt 4',
       },
     ],
     markers: [
@@ -279,8 +279,8 @@ export default [
   {
 
     id: 'bt-f1-tyt-4',
-    name: 'Level 1 - Tyt 4',
-    caption: 'BT - Level 1 - Tyt 4',
+    name: 'Floor 1 - Tyt 4',
+    caption: 'BT - Floor 1 - Tyt 4',
     panorama: './images/bt/f1-tyt/bt-f1-tyt-4.jpg',
     thumbnail: './images/bt/f1-tyt/thumbs/bt-f1-tyt-4.jpg',
     defaultYaw: '0deg',
@@ -290,12 +290,12 @@ export default [
       {
         nodeId: 'bt-f1-tyt-3',
         position: { yaw: '178.45deg', pitch: '0deg' },
-        name: 'Go to Level 1 - Tyt 3',
+        name: 'Go to Floor 1 - Tyt 3',
       },
       {
         nodeId: 'bt-f1-tyt-5',
         position: { yaw: '358.45deg', pitch: '0deg' },
-        name: 'Go to Level 1 - Tyt 5',
+        name: 'Go to Floor 1 - Tyt 5',
       },
     ],
     markers: [
@@ -470,8 +470,8 @@ export default [
   {
 
     id: 'bt-f1-tyt-5',
-    name: 'Level 1 - Tyt 5',
-    caption: 'BT - Level 1 - Tyt 5',
+    name: 'Floor 1 - Tyt 5',
+    caption: 'BT - Floor 1 - Tyt 5',
     panorama: './images/bt/f1-tyt/bt-f1-tyt-5.jpg',
     thumbnail: './images/bt/f1-tyt/thumbs/bt-f1-tyt-5.jpg',
     defaultYaw: '0deg',
@@ -481,12 +481,12 @@ export default [
       {
         nodeId: 'bt-f1-tyt-4',
         position: { yaw: '178.45deg', pitch: '0deg' },
-        name: 'Go to Level 1 - Tyt 4',
+        name: 'Go to Floor 1 - Tyt 4',
       },
       {
         nodeId: 'bt-f1-tyt-6',
         position: { yaw: '286.65deg', pitch: '0deg' },
-        name: 'Go to Level 1 - Tyt 6',
+        name: 'Go to Floor 1 - Tyt 6',
       },
     ],
     markers: [
@@ -661,8 +661,8 @@ export default [
   {
 
     id: 'bt-f1-tyt-6',
-    name: 'Level 1 - Tyt 6',
-    caption: 'BT - Level 1 - Tyt 6',
+    name: 'Floor 1 - Tyt 6',
+    caption: 'BT - Floor 1 - Tyt 6',
     panorama: './images/bt/f1-tyt/bt-f1-tyt-6.jpg',
     thumbnail: './images/bt/f1-tyt/thumbs/bt-f1-tyt-6.jpg',
     defaultYaw: '0deg',
@@ -672,12 +672,12 @@ export default [
       {
         nodeId: 'bt-f1-tyt-5',
         position: { yaw: '94.66deg', pitch: '0deg' },
-        name: 'Go to Level 1 - Tyt 5',
+        name: 'Go to Floor 1 - Tyt 5',
       },
       {
         nodeId: 'bt-f1-tyt-7',
         position: { yaw: '358.45deg', pitch: '0deg' },
-        name: 'Go to Level 1 - Tyt 7',
+        name: 'Go to Floor 1 - Tyt 7',
       },
     ],
     markers: [
@@ -806,8 +806,8 @@ export default [
   {
 
     id: 'bt-f1-tyt-7',
-    name: 'Level 1 - Tyt 7',
-    caption: 'BT - Level 1 - Tyt 7',
+    name: 'Floor 1 - Tyt 7',
+    caption: 'BT - Floor 1 - Tyt 7',
     panorama: './images/bt/f1-tyt/bt-f1-tyt-7.jpg',
     thumbnail: './images/bt/f1-tyt/thumbs/bt-f1-tyt-7.jpg',
     defaultYaw: '0deg',
@@ -817,17 +817,17 @@ export default [
       {
         nodeId: 'bt-f1-tyt-6',
         position: { yaw: '178.45deg', pitch: '0deg' },
-        name: 'Go to Level 1 - Tyt 6',
+        name: 'Go to Floor 1 - Tyt 6',
       },
       {
         nodeId: 'bt-f1-tyt-8',
         position: { yaw: '88.45deg', pitch: '0deg' },
-        name: 'Go to Level 1 - Tyt 8',
+        name: 'Go to Floor 1 - Tyt 8',
       },
       {
         nodeId: 'bt-f1-tyt-9',
         position: { yaw: '356.98deg', pitch: '0deg' },
-        name: 'Go to Level 1 - Tyt 9',
+        name: 'Go to Floor 1 - Tyt 9',
       },
     ],
     markers: [
@@ -887,8 +887,8 @@ export default [
   {
 
     id: 'bt-f1-tyt-8',
-    name: 'Level 1 - Tyt 8',
-    caption: 'BT - Level 1 - Tyt 8',
+    name: 'Floor 1 - Tyt 8',
+    caption: 'BT - Floor 1 - Tyt 8',
     panorama: './images/bt/f1-tyt/bt-f1-tyt-8.jpg',
     thumbnail: './images/bt/f1-tyt/thumbs/bt-f1-tyt-8.jpg',
     defaultYaw: '0deg',
@@ -898,7 +898,7 @@ export default [
       {
         nodeId: 'bt-f1-tyt-7',
         position: { yaw: '273.29deg', pitch: '0deg' },
-        name: 'Go to Level 1 - Tyt 7',
+        name: 'Go to Floor 1 - Tyt 7',
       },
     ],
     markers: [
@@ -1197,8 +1197,8 @@ export default [
   {
 
     id: 'bt-f1-tyt-9',
-    name: 'Level 1 - Tyt 9',
-    caption: 'BT - Level 1 - Tyt 9',
+    name: 'Floor 1 - Tyt 9',
+    caption: 'BT - Floor 1 - Tyt 9',
     panorama: './images/bt/f1-tyt/bt-f1-tyt-9.jpg',
     thumbnail: './images/bt/f1-tyt/thumbs/bt-f1-tyt-9.jpg',
     defaultYaw: '0deg',
@@ -1208,12 +1208,12 @@ export default [
       {
         nodeId: 'bt-f1-tyt-7',
         position: { yaw: '178.45deg', pitch: '0deg' },
-        name: 'Go to Level 1 - Tyt 7',
+        name: 'Go to Floor 1 - Tyt 7',
       },
       {
         nodeId: 'bt-f1-tyt-10',
         position: { yaw: '358.45deg', pitch: '0deg' },
-        name: 'Go to Level 1 - Tyt 10',
+        name: 'Go to Floor 1 - Tyt 10',
       },
     ],
     markers: [],
@@ -1226,8 +1226,8 @@ export default [
   {
 
     id: 'bt-f1-tyt-10',
-    name: 'Level 1 - Tyt 10',
-    caption: 'BT - Level 1 - Tyt 10',
+    name: 'Floor 1 - Tyt 10',
+    caption: 'BT - Floor 1 - Tyt 10',
     panorama: './images/bt/f1-tyt/bt-f1-tyt-10.jpg',
     thumbnail: './images/bt/f1-tyt/thumbs/bt-f1-tyt-10.jpg',
     defaultYaw: '0deg',
@@ -1237,17 +1237,17 @@ export default [
       {
         nodeId: 'bt-f1-tyt-9',
         position: { yaw: '178.45deg', pitch: '0deg' },
-        name: 'Go to Level 1 - Tyt 9',
+        name: 'Go to Floor 1 - Tyt 9',
       },
       {
         nodeId: 'bt-f1-tyt-11',
         position: { yaw: '46.09deg', pitch: '0deg' },
-        name: 'Go to Level 1 - Tyt 11',
+        name: 'Go to Floor 1 - Tyt 11',
       },
       {
         nodeId: 'bt-f1-tyt-12',
         position: { yaw: '5.48deg', pitch: '0deg' },
-        name: 'Go to Level 1 - Tyt 12',
+        name: 'Go to Floor 1 - Tyt 12',
       },
     ],
     markers: [
@@ -1284,8 +1284,8 @@ export default [
   {
 
     id: 'bt-f1-tyt-11',
-    name: 'Level 1 - Tyt 11',
-    caption: 'BT - Level 1 - Tyt 11',
+    name: 'Floor 1 - Tyt 11',
+    caption: 'BT - Floor 1 - Tyt 11',
     panorama: './images/bt/f1-tyt/bt-f1-tyt-11.jpg',
     thumbnail: './images/bt/f1-tyt/thumbs/bt-f1-tyt-11.jpg',
     defaultYaw: '0deg',
@@ -1295,12 +1295,12 @@ export default [
       {
         nodeId: 'bt-f1-tyt-10',
         position: { yaw: '178.45deg', pitch: '0deg' },
-        name: 'Go to Level 1 - Tyt 10',
+        name: 'Go to Floor 1 - Tyt 10',
       },
       {
         nodeId: 'bt-f1-tyt-12',
         position: { yaw: '316.06deg', pitch: '0deg' },
-        name: 'Go to Level 1 - Tyt 12',
+        name: 'Go to Floor 1 - Tyt 12',
       },
     ],
     markers: [
@@ -1406,8 +1406,8 @@ export default [
   {
 
     id: 'bt-f1-tyt-12',
-    name: 'Level 1 - Tyt 12',
-    caption: 'BT - Level 1 - Tyt 12',
+    name: 'Floor 1 - Tyt 12',
+    caption: 'BT - Floor 1 - Tyt 12',
     panorama: './images/bt/f1-tyt/bt-f1-tyt-12.jpg',
     thumbnail: './images/bt/f1-tyt/thumbs/bt-f1-tyt-12.jpg',
     defaultYaw: '0deg',
@@ -1417,17 +1417,17 @@ export default [
       {
         nodeId: 'bt-f1-tyt-11',
         position: { yaw: '143.13deg', pitch: '0deg' },
-        name: 'Go to Level 1 - Tyt 11',
+        name: 'Go to Floor 1 - Tyt 11',
       },
       {
         nodeId: 'bt-f1-tyt-10',
         position: { yaw: '187.40deg', pitch: '0deg' },
-        name: 'Go to Level 1 - Tyt 10',
+        name: 'Go to Floor 1 - Tyt 10',
       },
       {
         nodeId: 'bt-f1-tyt-13',
         position: { yaw: '282.49deg', pitch: '0deg' },
-        name: 'Go to Level 1 - Tyt 13',
+        name: 'Go to Floor 1 - Tyt 13',
       },
     ],
     markers: [
@@ -1464,8 +1464,8 @@ export default [
   {
 
     id: 'bt-f1-tyt-13',
-    name: 'Level 1 - Tyt 13',
-    caption: 'BT - Level 1 - Tyt 13',
+    name: 'Floor 1 - Tyt 13',
+    caption: 'BT - Floor 1 - Tyt 13',
     panorama: './images/bt/f1-tyt/bt-f1-tyt-13.jpg',
     thumbnail: './images/bt/f1-tyt/thumbs/bt-f1-tyt-13.jpg',
     defaultYaw: '0deg',
@@ -1475,17 +1475,17 @@ export default [
       {
         nodeId: 'bt-f1-tyt-12',
         position: { yaw: '107.13deg', pitch: '0deg' },
-        name: 'Go to Level 1 - Tyt 12',
+        name: 'Go to Floor 1 - Tyt 12',
       },
       {
         nodeId: 'bt-f1-tyt-14',
         position: { yaw: '358.45deg', pitch: '0deg' },
-        name: 'Go to Level 1 - Tyt 14',
+        name: 'Go to Floor 1 - Tyt 14',
       },
       {
         nodeId: 'bt-f1-kids-7',
         position: { yaw: '251.45deg', pitch: '0deg' },
-        name: 'Go to Level 1 - Kids Area 7',
+        name: 'Go to Floor 1 - Kids Area 7',
       },
     ],
     markers: [
@@ -1612,8 +1612,8 @@ export default [
   {
 
     id: 'bt-f1-tyt-14',
-    name: 'Level 1 - Tyt 14',
-    caption: 'BT - Level 1 - Tyt 14',
+    name: 'Floor 1 - Tyt 14',
+    caption: 'BT - Floor 1 - Tyt 14',
     panorama: './images/bt/f1-tyt/bt-f1-tyt-14.jpg',
     thumbnail: './images/bt/f1-tyt/thumbs/bt-f1-tyt-14.jpg',
     defaultYaw: '0deg',
@@ -1623,17 +1623,17 @@ export default [
       {
         nodeId: 'bt-f1-tyt-13',
         position: { yaw: '178.45deg', pitch: '0deg' },
-        name: 'Go to Level 1 - Tyt 13',
+        name: 'Go to Floor 1 - Tyt 13',
       },
       {
         nodeId: 'bt-f1-tyt-15',
         position: { yaw: '44.10deg', pitch: '0deg' },
-        name: 'Go to Level 1 - Tyt 15',
+        name: 'Go to Floor 1 - Tyt 15',
       },
       {
         nodeId: 'bt-f1-tyt-16',
         position: { yaw: '358.81deg', pitch: '0deg' },
-        name: 'Go to Level 1 - Tyt 16',
+        name: 'Go to Floor 1 - Tyt 16',
       },
     ],
     markers: [],
@@ -1646,8 +1646,8 @@ export default [
   {
 
     id: 'bt-f1-tyt-15',
-    name: 'Level 1 - Tyt 15',
-    caption: 'BT - Level 1 - Tyt 15',
+    name: 'Floor 1 - Tyt 15',
+    caption: 'BT - Floor 1 - Tyt 15',
     panorama: './images/bt/f1-tyt/bt-f1-tyt-15.jpg',
     thumbnail: './images/bt/f1-tyt/thumbs/bt-f1-tyt-15.jpg',
     defaultYaw: '0deg',
@@ -1657,12 +1657,12 @@ export default [
       {
         nodeId: 'bt-f1-tyt-14',
         position: { yaw: '233.36deg', pitch: '0deg' },
-        name: 'Go to Level 1 - Tyt 14',
+        name: 'Go to Floor 1 - Tyt 14',
       },
       {
         nodeId: 'bt-f1-tyt-16',
         position: { yaw: '314.46deg', pitch: '0deg' },
-        name: 'Go to Level 1 - Tyt 16',
+        name: 'Go to Floor 1 - Tyt 16',
       },
     ],
     markers: [
@@ -1697,8 +1697,8 @@ export default [
   {
 
     id: 'bt-f1-tyt-16',
-    name: 'Level 1 - Tyt 16',
-    caption: 'BT - Level 1 - Tyt 16',
+    name: 'Floor 1 - Tyt 16',
+    caption: 'BT - Floor 1 - Tyt 16',
     panorama: './images/bt/f1-tyt/bt-f1-tyt-16.jpg',
     thumbnail: './images/bt/f1-tyt/thumbs/bt-f1-tyt-16.jpg',
     defaultYaw: '0deg',
@@ -1708,17 +1708,17 @@ export default [
       {
         nodeId: 'bt-f1-tyt-15',
         position: { yaw: '127.33deg', pitch: '0deg' },
-        name: 'Go to Level 1 - Tyt 15',
+        name: 'Go to Floor 1 - Tyt 15',
       },
       {
         nodeId: 'bt-f1-tyt-14',
         position: { yaw: '179.68deg', pitch: '0deg' },
-        name: 'Go to Level 1 - Tyt 14',
+        name: 'Go to Floor 1 - Tyt 14',
       },
       {
         nodeId: 'bt-f1-backside-1',
         position: { yaw: '359.57deg', pitch: '0deg' },
-        name: 'Go to Level 1 - Backside 1',
+        name: 'Go to Floor 1 - Backside 1',
       },
     ],
     markers: [],

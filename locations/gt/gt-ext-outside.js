@@ -373,7 +373,7 @@ export default [
       {
         nodeId: 'gt-f1-main-area-1',
         position: { yaw: '7.71deg', pitch: '-3.82deg' },
-        name: 'Go to Level 1 - Main Area 1'
+        name: 'Go to Floor 1 - Main Area 1'
       },
     ],
     markers: [

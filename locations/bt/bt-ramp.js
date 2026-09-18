@@ -18,7 +18,7 @@ export default [
       {
         nodeId: 'bt-f1-lobby-2',
         position: { yaw: '188.76deg', pitch: '0.10deg' },
-        name: 'Go to Level 1 - Lobby 2',
+        name: 'Go to Floor 1 - Lobby 2',
       },
     ],
     markers: [],
@@ -99,7 +99,7 @@ export default [
       {
         nodeId: 'bt-f2-reading-1',
         position: { yaw: '186.18deg', pitch: '0deg' },
-        name: 'Go to Level 2 - Reading Area 1',
+        name: 'Go to Floor 2 - Reading Area 1',
       },
     ],
     markers: [],

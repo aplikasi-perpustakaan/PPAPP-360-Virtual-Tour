@@ -4,8 +4,8 @@ import glob
 
 # Mapping for floor codes
 floor_map = {
-    'f1': 'Level 1',
-    'f2': 'Level 2',
+    'f1': 'Floor 1',
+    'f2': 'Floor 2',
     'ext': 'Exterior',
     'gf': 'Ground Floor',
     'lounge': 'Lounge',

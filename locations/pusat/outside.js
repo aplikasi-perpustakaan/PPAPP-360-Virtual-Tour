@@ -727,7 +727,7 @@ export default [
       {
         nodeId: 'pusat-f1-lobby-1',
         position: { yaw: '7.63deg', pitch: '-3.11deg' },
-        name: 'Go to Level 1 - Lobby 1',
+        name: 'Go to Floor 1 - Lobby 1',
         targetYaw: '325.03deg',
         targetPitch: '-3.42deg'
       },
@@ -773,7 +773,7 @@ export default [
       {
         nodeId: 'pusat-f1-lobby-28',
         position: { yaw: '5.88deg', pitch: '-4.71deg' },
-        name: 'Go to Level 1 - Lobby 28',
+        name: 'Go to Floor 1 - Lobby 28',
         targetYaw: '7.54deg',
         targetPitch: '13.80deg'
       },

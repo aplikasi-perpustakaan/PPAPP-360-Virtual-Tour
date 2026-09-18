@@ -17,7 +17,7 @@ export const branches = [
         ]
       },
       {
-        category: 'Level 1',
+        category: 'Floor 1',
         items: [
           { label: 'Lobby', sceneId: 'pusat-f1-lobby-1' },
           { 
@@ -35,7 +35,7 @@ export const branches = [
         ]
       },
       {
-        category: 'Level 2',
+        category: 'Floor 2',
         items: [
           { label: 'Reading Area', sceneId: 'pusat-f2-reading-1' },
           { label: 'Auditorium', sceneId: 'pusat-f2-auditorium-1' },

@@ -2,8 +2,8 @@
 export default [
   {
     id: 'bt-f2-reading-1',
-    name: 'Level 2 - Reading Area 1',
-    caption: 'BT - Level 2 - Reading Area 1',
+    name: 'Floor 2 - Reading Area 1',
+    caption: 'BT - Floor 2 - Reading Area 1',
     panorama: './images/bt/f2-reading/bt-f2-reading-1.jpg',
     thumbnail: './images/bt/f2-reading/thumbs/bt-f2-reading-1.jpg',
     defaultYaw: '0deg',
@@ -13,7 +13,7 @@ export default [
       {
         nodeId: 'bt-f2-reading-2',
         position: { yaw: '193.92deg', pitch: '0deg' },
-        name: 'Go to Level 2 - Reading Area 2',
+        name: 'Go to Floor 2 - Reading Area 2',
       },
       {
         nodeId: 'bt-ramp-4',
@@ -29,8 +29,8 @@ export default [
   },
   {
     id: 'bt-f2-reading-2',
-    name: 'Level 2 - Reading Area 2',
-    caption: 'BT - Level 2 - Reading Area 2',
+    name: 'Floor 2 - Reading Area 2',
+    caption: 'BT - Floor 2 - Reading Area 2',
     panorama: './images/bt/f2-reading/bt-f2-reading-2.jpg',
     thumbnail: './images/bt/f2-reading/thumbs/bt-f2-reading-2.jpg',
     defaultYaw: '0deg',
@@ -40,17 +40,17 @@ export default [
       {
         nodeId: 'bt-f2-reading-1',
         position: { yaw: '6.36deg', pitch: '0deg' },
-        name: 'Go to Level 2 - Reading Area 1',
+        name: 'Go to Floor 2 - Reading Area 1',
       },
       {
         nodeId: 'bt-f2-reading-16',
         position: { yaw: '275.24deg', pitch: '0deg' },
-        name: 'Go to Level 2 - Reading Area 16',
+        name: 'Go to Floor 2 - Reading Area 16',
       },
       {
         nodeId: 'bt-f2-reading-3',
         position: { yaw: '95.07deg', pitch: '0deg' },
-        name: 'Go to Level 2 - Reading Area 3',
+        name: 'Go to Floor 2 - Reading Area 3',
       },
     ],
     markers: [],
@@ -61,8 +61,8 @@ export default [
   },
   {
     id: 'bt-f2-reading-3',
-    name: 'Level 2 - Reading Area 3',
-    caption: 'BT - Level 2 - Reading Area 3',
+    name: 'Floor 2 - Reading Area 3',
+    caption: 'BT - Floor 2 - Reading Area 3',
     panorama: './images/bt/f2-reading/bt-f2-reading-3.jpg',
     thumbnail: './images/bt/f2-reading/thumbs/bt-f2-reading-3.jpg',
     defaultYaw: '0deg',
@@ -72,22 +72,22 @@ export default [
       {
         nodeId: 'bt-f2-reading-6',
         position: { yaw: '358.45deg', pitch: '0deg' },
-        name: 'Go to Level 2 - Reading Area 6',
+        name: 'Go to Floor 2 - Reading Area 6',
       },
       {
         nodeId: 'bt-f2-reading-2',
         position: { yaw: '270.98deg', pitch: '0deg' },
-        name: 'Go to Level 2 - Reading Area 2',
+        name: 'Go to Floor 2 - Reading Area 2',
       },
       {
         nodeId: 'bt-f2-reading-19',
         position: { yaw: '170.58deg', pitch: '0deg' },
-        name: 'Go to Level 2 - Reading Area 19',
+        name: 'Go to Floor 2 - Reading Area 19',
       },
       {
         nodeId: 'bt-f2-reading-4',
         position: { yaw: '91.36deg', pitch: '0deg' },
-        name: 'Go to Level 2 - Reading Area 4',
+        name: 'Go to Floor 2 - Reading Area 4',
       },
     ],
     markers: [
@@ -145,8 +145,8 @@ export default [
   },
   {
     id: 'bt-f2-reading-4',
-    name: 'Level 2 - Reading Area 4',
-    caption: 'BT - Level 2 - Reading Area 4',
+    name: 'Floor 2 - Reading Area 4',
+    caption: 'BT - Floor 2 - Reading Area 4',
     panorama: './images/bt/f2-reading/bt-f2-reading-4.jpg',
     thumbnail: './images/bt/f2-reading/thumbs/bt-f2-reading-4.jpg',
     defaultYaw: '0deg',
@@ -156,12 +156,12 @@ export default [
       {
         nodeId: 'bt-f2-reading-3',
         position: { yaw: '274.71deg', pitch: '0deg' },
-        name: 'Go to Level 2 - Reading Area 3',
+        name: 'Go to Floor 2 - Reading Area 3',
       },
       {
         nodeId: 'bt-f2-reading-5',
         position: { yaw: '358.45deg', pitch: '0deg' },
-        name: 'Go to Level 2 - Reading Area 5',
+        name: 'Go to Floor 2 - Reading Area 5',
       },
     ],
     markers: [
@@ -219,8 +219,8 @@ export default [
   },
   {
     id: 'bt-f2-reading-5',
-    name: 'Level 2 - Reading Area 5',
-    caption: 'BT - Level 2 - Reading Area 5',
+    name: 'Floor 2 - Reading Area 5',
+    caption: 'BT - Floor 2 - Reading Area 5',
     panorama: './images/bt/f2-reading/bt-f2-reading-5.jpg',
     thumbnail: './images/bt/f2-reading/thumbs/bt-f2-reading-5.jpg',
     defaultYaw: '0deg',
@@ -230,12 +230,12 @@ export default [
       {
         nodeId: 'bt-f2-reading-4',
         position: { yaw: '178.45deg', pitch: '0deg' },
-        name: 'Go to Level 2 - Reading Area 4',
+        name: 'Go to Floor 2 - Reading Area 4',
       },
       {
         nodeId: 'bt-f2-reading-6',
         position: { yaw: '275.81deg', pitch: '0deg' },
-        name: 'Go to Level 2 - Reading Area 6',
+        name: 'Go to Floor 2 - Reading Area 6',
       },
     ],
     markers: [],
@@ -246,8 +246,8 @@ export default [
   },
   {
     id: 'bt-f2-reading-6',
-    name: 'Level 2 - Reading Area 6',
-    caption: 'BT - Level 2 - Reading Area 6',
+    name: 'Floor 2 - Reading Area 6',
+    caption: 'BT - Floor 2 - Reading Area 6',
     panorama: './images/bt/f2-reading/bt-f2-reading-6.jpg',
     thumbnail: './images/bt/f2-reading/thumbs/bt-f2-reading-6.jpg',
     defaultYaw: '0deg',
@@ -257,17 +257,17 @@ export default [
       {
         nodeId: 'bt-f2-reading-3',
         position: { yaw: '178.45deg', pitch: '0deg' },
-        name: 'Go to Level 2 - Reading Area 3',
+        name: 'Go to Floor 2 - Reading Area 3',
       },
       {
         nodeId: 'bt-f2-reading-5',
         position: { yaw: '55.80deg', pitch: '0deg' },
-        name: 'Go to Level 2 - Reading Area 5',
+        name: 'Go to Floor 2 - Reading Area 5',
       },
       {
         nodeId: 'bt-f2-reading-7',
         position: { yaw: '358.45deg', pitch: '0deg' },
-        name: 'Go to Level 2 - Reading Area 7',
+        name: 'Go to Floor 2 - Reading Area 7',
       },
     ],
     markers: [],
@@ -278,8 +278,8 @@ export default [
   },
   {
     id: 'bt-f2-reading-7',
-    name: 'Level 2 - Reading Area 7',
-    caption: 'BT - Level 2 - Reading Area 7',
+    name: 'Floor 2 - Reading Area 7',
+    caption: 'BT - Floor 2 - Reading Area 7',
     panorama: './images/bt/f2-reading/bt-f2-reading-7.jpg',
     thumbnail: './images/bt/f2-reading/thumbs/bt-f2-reading-7.jpg',
     defaultYaw: '0deg',
@@ -289,12 +289,12 @@ export default [
       {
         nodeId: 'bt-f2-reading-6',
         position: { yaw: '178.45deg', pitch: '0deg' },
-        name: 'Go to Level 2 - Reading Area 6',
+        name: 'Go to Floor 2 - Reading Area 6',
       },
       {
         nodeId: 'bt-f2-reading-8',
         position: { yaw: '358.45deg', pitch: '0deg' },
-        name: 'Go to Level 2 - Reading Area 8',
+        name: 'Go to Floor 2 - Reading Area 8',
       },
     ],
     markers: [],
@@ -305,8 +305,8 @@ export default [
   },
   {
     id: 'bt-f2-reading-8',
-    name: 'Level 2 - Reading Area 8',
-    caption: 'BT - Level 2 - Reading Area 8',
+    name: 'Floor 2 - Reading Area 8',
+    caption: 'BT - Floor 2 - Reading Area 8',
     panorama: './images/bt/f2-reading/bt-f2-reading-8.jpg',
     thumbnail: './images/bt/f2-reading/thumbs/bt-f2-reading-8.jpg',
     defaultYaw: '0deg',
@@ -316,12 +316,12 @@ export default [
       {
         nodeId: 'bt-f2-reading-7',
         position: { yaw: '178.45deg', pitch: '0deg' },
-        name: 'Go to Level 2 - Reading Area 7',
+        name: 'Go to Floor 2 - Reading Area 7',
       },
       {
         nodeId: 'bt-f2-reading-9',
         position: { yaw: '358.45deg', pitch: '0deg' },
-        name: 'Go to Level 2 - Reading Area 9',
+        name: 'Go to Floor 2 - Reading Area 9',
       },
     ],
     markers: [
@@ -507,8 +507,8 @@ export default [
   },
   {
     id: 'bt-f2-reading-9',
-    name: 'Level 2 - Reading Area 9',
-    caption: 'BT - Level 2 - Reading Area 9',
+    name: 'Floor 2 - Reading Area 9',
+    caption: 'BT - Floor 2 - Reading Area 9',
     panorama: './images/bt/f2-reading/bt-f2-reading-9.jpg',
     thumbnail: './images/bt/f2-reading/thumbs/bt-f2-reading-9.jpg',
     defaultYaw: '0deg',
@@ -518,12 +518,12 @@ export default [
       {
         nodeId: 'bt-f2-reading-8',
         position: { yaw: '178.45deg', pitch: '0deg' },
-        name: 'Go to Level 2 - Reading Area 8',
+        name: 'Go to Floor 2 - Reading Area 8',
       },
       {
         nodeId: 'bt-f2-reading-10',
         position: { yaw: '273.62deg', pitch: '0deg' },
-        name: 'Go to Level 2 - Reading Area 10',
+        name: 'Go to Floor 2 - Reading Area 10',
       },
     ],
     markers: [
@@ -641,8 +641,8 @@ export default [
   },
   {
     id: 'bt-f2-reading-10',
-    name: 'Level 2 - Reading Area 10',
-    caption: 'BT - Level 2 - Reading Area 10',
+    name: 'Floor 2 - Reading Area 10',
+    caption: 'BT - Floor 2 - Reading Area 10',
     panorama: './images/bt/f2-reading/bt-f2-reading-10.jpg',
     thumbnail: './images/bt/f2-reading/thumbs/bt-f2-reading-10.jpg',
     defaultYaw: '0deg',
@@ -652,17 +652,17 @@ export default [
       {
         nodeId: 'bt-f2-reading-9',
         position: { yaw: '98.44deg', pitch: '0deg' },
-        name: 'Go to Level 2 - Reading Area 9',
+        name: 'Go to Floor 2 - Reading Area 9',
       },
       {
         nodeId: 'bt-f2-backside-1',
         position: { yaw: '9.80deg', pitch: '0deg' },
-        name: 'Go to Level 2 - Backside 1',
+        name: 'Go to Floor 2 - Backside 1',
       },
       {
         nodeId: 'bt-f2-reading-11',
         position: { yaw: '278.65deg', pitch: '0deg' },
-        name: 'Go to Level 2 - Reading Area 11',
+        name: 'Go to Floor 2 - Reading Area 11',
       },
     ],
     markers: [],
@@ -673,8 +673,8 @@ export default [
   },
   {
     id: 'bt-f2-reading-11',
-    name: 'Level 2 - Reading Area 11',
-    caption: 'BT - Level 2 - Reading Area 11',
+    name: 'Floor 2 - Reading Area 11',
+    caption: 'BT - Floor 2 - Reading Area 11',
     panorama: './images/bt/f2-reading/bt-f2-reading-11.jpg',
     thumbnail: './images/bt/f2-reading/thumbs/bt-f2-reading-11.jpg',
     defaultYaw: '0deg',
@@ -684,12 +684,12 @@ export default [
       {
         nodeId: 'bt-f2-reading-10',
         position: { yaw: '97.85deg', pitch: '0deg' },
-        name: 'Go to Level 2 - Reading Area 10',
+        name: 'Go to Floor 2 - Reading Area 10',
       },
       {
         nodeId: 'bt-f2-reading-12',
         position: { yaw: '190.49deg', pitch: '0deg' },
-        name: 'Go to Level 2 - Reading Area 12',
+        name: 'Go to Floor 2 - Reading Area 12',
       },
     ],
     markers: [],
@@ -700,8 +700,8 @@ export default [
   },
   {
     id: 'bt-f2-reading-12',
-    name: 'Level 2 - Reading Area 12',
-    caption: 'BT - Level 2 - Reading Area 12',
+    name: 'Floor 2 - Reading Area 12',
+    caption: 'BT - Floor 2 - Reading Area 12',
     panorama: './images/bt/f2-reading/bt-f2-reading-12.jpg',
     thumbnail: './images/bt/f2-reading/thumbs/bt-f2-reading-12.jpg',
     defaultYaw: '0deg',
@@ -711,17 +711,17 @@ export default [
       {
         nodeId: 'bt-f2-reading-11',
         position: { yaw: '347.36deg', pitch: '0deg' },
-        name: 'Go to Level 2 - Reading Area 11',
+        name: 'Go to Floor 2 - Reading Area 11',
       },
       {
         nodeId: 'bt-f2-reading-13',
         position: { yaw: '221.40deg', pitch: '0deg' },
-        name: 'Go to Level 2 - Reading Area 13',
+        name: 'Go to Floor 2 - Reading Area 13',
       },
       {
         nodeId: 'bt-f2-reading-14',
         position: { yaw: '183.02deg', pitch: '0deg' },
-        name: 'Go to Level 2 - Reading Area 14',
+        name: 'Go to Floor 2 - Reading Area 14',
       },
     ],
     markers: [],
@@ -732,8 +732,8 @@ export default [
   },
   {
     id: 'bt-f2-reading-13',
-    name: 'Level 2 - Reading Area 13',
-    caption: 'BT - Level 2 - Reading Area 13',
+    name: 'Floor 2 - Reading Area 13',
+    caption: 'BT - Floor 2 - Reading Area 13',
     panorama: './images/bt/f2-reading/bt-f2-reading-13.jpg',
     thumbnail: './images/bt/f2-reading/thumbs/bt-f2-reading-13.jpg',
     defaultYaw: '0deg',
@@ -743,7 +743,7 @@ export default [
       {
         nodeId: 'bt-f2-reading-12',
         position: { yaw: '13.91deg', pitch: '0deg' },
-        name: 'Go to Level 2 - Reading Area 12',
+        name: 'Go to Floor 2 - Reading Area 12',
         targetYaw: '0.00deg',
         targetPitch: '0.00deg'
       },
@@ -751,7 +751,7 @@ export default [
       {
         nodeId: 'bt-f2-reading-14',
         position: { yaw: '134.57deg', pitch: '0deg' },
-        name: 'Go to Level 2 - Reading Area 14',
+        name: 'Go to Floor 2 - Reading Area 14',
       },
     ],
     markers: [
@@ -916,8 +916,8 @@ export default [
   },
   {
     id: 'bt-f2-reading-14',
-    name: 'Level 2 - Reading Area 14',
-    caption: 'BT - Level 2 - Reading Area 14',
+    name: 'Floor 2 - Reading Area 14',
+    caption: 'BT - Floor 2 - Reading Area 14',
     panorama: './images/bt/f2-reading/bt-f2-reading-14.jpg',
     thumbnail: './images/bt/f2-reading/thumbs/bt-f2-reading-14.jpg',
     defaultYaw: '0deg',
@@ -927,17 +927,17 @@ export default [
       {
         nodeId: 'bt-f2-reading-12',
         position: { yaw: '314.57deg', pitch: '0deg' },
-        name: 'Go to Level 2 - Reading Area 12',
+        name: 'Go to Floor 2 - Reading Area 12',
       },
       {
         nodeId: 'bt-f2-reading-13',
         position: { yaw: '9.27deg', pitch: '0deg' },
-        name: 'Go to Level 2 - Reading Area 13',
+        name: 'Go to Floor 2 - Reading Area 13',
       },
       {
         nodeId: 'bt-f2-reading-15',
         position: { yaw: '192.97deg', pitch: '0deg' },
-        name: 'Go to Level 2 - Reading Area 15',
+        name: 'Go to Floor 2 - Reading Area 15',
       },
     ],
     markers: [],
@@ -948,8 +948,8 @@ export default [
   },
   {
     id: 'bt-f2-reading-15',
-    name: 'Level 2 - Reading Area 15',
-    caption: 'BT - Level 2 - Reading Area 15',
+    name: 'Floor 2 - Reading Area 15',
+    caption: 'BT - Floor 2 - Reading Area 15',
     panorama: './images/bt/f2-reading/bt-f2-reading-15.jpg',
     thumbnail: './images/bt/f2-reading/thumbs/bt-f2-reading-15.jpg',
     defaultYaw: '0deg',
@@ -959,12 +959,12 @@ export default [
       {
         nodeId: 'bt-f2-reading-14',
         position: { yaw: '6.30deg', pitch: '0deg' },
-        name: 'Go to Level 2 - Reading Area 14',
+        name: 'Go to Floor 2 - Reading Area 14',
       },
       {
         nodeId: 'bt-f2-reading-16',
         position: { yaw: '187.83deg', pitch: '0deg' },
-        name: 'Go to Level 2 - Reading Area 16',
+        name: 'Go to Floor 2 - Reading Area 16',
       },
     ],
     markers: [],
@@ -975,8 +975,8 @@ export default [
   },
   {
     id: 'bt-f2-reading-16',
-    name: 'Level 2 - Reading Area 16',
-    caption: 'BT - Level 2 - Reading Area 16',
+    name: 'Floor 2 - Reading Area 16',
+    caption: 'BT - Floor 2 - Reading Area 16',
     panorama: './images/bt/f2-reading/bt-f2-reading-16.jpg',
     thumbnail: './images/bt/f2-reading/thumbs/bt-f2-reading-16.jpg',
     defaultYaw: '0deg',
@@ -986,22 +986,22 @@ export default [
       {
         nodeId: 'bt-f2-reading-15',
         position: { yaw: '359.06deg', pitch: '0deg' },
-        name: 'Go to Level 2 - Reading Area 15',
+        name: 'Go to Floor 2 - Reading Area 15',
       },
       {
         nodeId: 'bt-f2-reading-17',
         position: { yaw: '281.97deg', pitch: '0deg' },
-        name: 'Go to Level 2 - Reading Area 17',
+        name: 'Go to Floor 2 - Reading Area 17',
       },
       {
         nodeId: 'bt-f2-reading-18',
         position: { yaw: '178.27deg', pitch: '0deg' },
-        name: 'Go to Level 2 - Reading Area 18',
+        name: 'Go to Floor 2 - Reading Area 18',
       },
       {
         nodeId: 'bt-f2-reading-2',
         position: { yaw: '88.53deg', pitch: '0deg' },
-        name: 'Go to Level 2 - Reading Area 2',
+        name: 'Go to Floor 2 - Reading Area 2',
       },
     ],
     markers: [],
@@ -1012,8 +1012,8 @@ export default [
   },
   {
     id: 'bt-f2-reading-17',
-    name: 'Level 2 - Reading Area 17',
-    caption: 'BT - Level 2 - Reading Area 17',
+    name: 'Floor 2 - Reading Area 17',
+    caption: 'BT - Floor 2 - Reading Area 17',
     panorama: './images/bt/f2-reading/bt-f2-reading-17.jpg',
     thumbnail: './images/bt/f2-reading/thumbs/bt-f2-reading-17.jpg',
     defaultYaw: '0deg',
@@ -1023,7 +1023,7 @@ export default [
       {
         nodeId: 'bt-f2-reading-16',
         position: { yaw: '93.81deg', pitch: '0deg' },
-        name: 'Go to Level 2 - Reading Area 16',
+        name: 'Go to Floor 2 - Reading Area 16',
       },
     ],
     markers: [
@@ -1058,8 +1058,8 @@ export default [
   },
   {
     id: 'bt-f2-reading-18',
-    name: 'Level 2 - Reading Area 18',
-    caption: 'BT - Level 2 - Reading Area 18',
+    name: 'Floor 2 - Reading Area 18',
+    caption: 'BT - Floor 2 - Reading Area 18',
     panorama: './images/bt/f2-reading/bt-f2-reading-18.jpg',
     thumbnail: './images/bt/f2-reading/thumbs/bt-f2-reading-18.jpg',
     defaultYaw: '0deg',
@@ -1069,12 +1069,12 @@ export default [
       {
         nodeId: 'bt-f2-reading-25',
         position: { yaw: '196.89deg', pitch: '0deg' },
-        name: 'Go to Level 2 - Reading Area 25',
+        name: 'Go to Floor 2 - Reading Area 25',
       },
       {
         nodeId: 'bt-f2-reading-16',
         position: { yaw: '358.45deg', pitch: '0deg' },
-        name: 'Go to Level 2 - Reading Area 16',
+        name: 'Go to Floor 2 - Reading Area 16',
       },
     ],
     markers: [],
@@ -1085,8 +1085,8 @@ export default [
   },
   {
     id: 'bt-f2-reading-19',
-    name: 'Level 2 - Reading Area 19',
-    caption: 'BT - Level 2 - Reading Area 19',
+    name: 'Floor 2 - Reading Area 19',
+    caption: 'BT - Floor 2 - Reading Area 19',
     panorama: './images/bt/f2-reading/bt-f2-reading-19.jpg',
     thumbnail: './images/bt/f2-reading/thumbs/bt-f2-reading-19.jpg',
     defaultYaw: '0deg',
@@ -1096,12 +1096,12 @@ export default [
       {
         nodeId: 'bt-f2-reading-3',
         position: { yaw: '353.57deg', pitch: '0deg' },
-        name: 'Go to Level 2 - Reading Area 3',
+        name: 'Go to Floor 2 - Reading Area 3',
       },
       {
         nodeId: 'bt-f2-reading-20',
         position: { yaw: '167.48deg', pitch: '0deg' },
-        name: 'Go to Level 2 - Reading Area 20',
+        name: 'Go to Floor 2 - Reading Area 20',
       },
     ],
     markers: [],
@@ -1112,8 +1112,8 @@ export default [
   },
   {
     id: 'bt-f2-reading-20',
-    name: 'Level 2 - Reading Area 20',
-    caption: 'BT - Level 2 - Reading Area 20',
+    name: 'Floor 2 - Reading Area 20',
+    caption: 'BT - Floor 2 - Reading Area 20',
     panorama: './images/bt/f2-reading/bt-f2-reading-20.jpg',
     thumbnail: './images/bt/f2-reading/thumbs/bt-f2-reading-20.jpg',
     defaultYaw: '0deg',
@@ -1123,12 +1123,12 @@ export default [
       {
         nodeId: 'bt-f2-reading-19',
         position: { yaw: '357.66deg', pitch: '0deg' },
-        name: 'Go to Level 2 - Reading Area 19',
+        name: 'Go to Floor 2 - Reading Area 19',
       },
       {
         nodeId: 'bt-f2-reading-21',
         position: { yaw: '97.27deg', pitch: '0deg' },
-        name: 'Go to Level 2 - Reading Area 21',
+        name: 'Go to Floor 2 - Reading Area 21',
       },
     ],
     markers: [],
@@ -1139,8 +1139,8 @@ export default [
   },
   {
     id: 'bt-f2-reading-21',
-    name: 'Level 2 - Reading Area 21',
-    caption: 'BT - Level 2 - Reading Area 21',
+    name: 'Floor 2 - Reading Area 21',
+    caption: 'BT - Floor 2 - Reading Area 21',
     panorama: './images/bt/f2-reading/bt-f2-reading-21.jpg',
     thumbnail: './images/bt/f2-reading/thumbs/bt-f2-reading-21.jpg',
     defaultYaw: '0deg',
@@ -1150,7 +1150,7 @@ export default [
       {
         nodeId: 'bt-f2-reading-20',
         position: { yaw: '337.04deg', pitch: '0deg' },
-        name: 'Go to Level 2 - Reading Area 20',
+        name: 'Go to Floor 2 - Reading Area 20',
       },
       {
         nodeId: 'bt-stairs-front-1',
@@ -1166,8 +1166,8 @@ export default [
   },
   {
     id: 'bt-f2-reading-22',
-    name: 'Level 2 - Reading Area 22',
-    caption: 'BT - Level 2 - Reading Area 22',
+    name: 'Floor 2 - Reading Area 22',
+    caption: 'BT - Floor 2 - Reading Area 22',
     panorama: './images/bt/f2-reading/bt-f2-reading-22.jpg',
     thumbnail: './images/bt/f2-reading/thumbs/bt-f2-reading-22.jpg',
     defaultYaw: '0deg',
@@ -1177,12 +1177,12 @@ export default [
       {
         nodeId: 'bt-f1-lobby-1',
         position: { yaw: '278.00deg', pitch: '0deg' },
-        name: 'Go to Level 1 - Lobby 1',
+        name: 'Go to Floor 1 - Lobby 1',
       },
       {
         nodeId: 'bt-f2-reading-23',
         position: { yaw: '111.36deg', pitch: '0deg' },
-        name: 'Go to Level 2 - Reading Area 23',
+        name: 'Go to Floor 2 - Reading Area 23',
       },
     ],
     markers: [],
@@ -1193,8 +1193,8 @@ export default [
   },
   {
     id: 'bt-f2-reading-23',
-    name: 'Level 2 - Reading Area 23',
-    caption: 'BT - Level 2 - Reading Area 23',
+    name: 'Floor 2 - Reading Area 23',
+    caption: 'BT - Floor 2 - Reading Area 23',
     panorama: './images/bt/f2-reading/bt-f2-reading-23.jpg',
     thumbnail: './images/bt/f2-reading/thumbs/bt-f2-reading-23.jpg',
     defaultYaw: '0deg',
@@ -1204,12 +1204,12 @@ export default [
       {
         nodeId: 'bt-f2-reading-22',
         position: { yaw: '178.45deg', pitch: '0deg' },
-        name: 'Go to Level 2 - Reading Area 22',
+        name: 'Go to Floor 2 - Reading Area 22',
       },
       {
         nodeId: 'bt-f2-reading-24',
         position: { yaw: '358.45deg', pitch: '0deg' },
-        name: 'Go to Level 2 - Reading Area 24',
+        name: 'Go to Floor 2 - Reading Area 24',
       },
     ],
     markers: [],
@@ -1220,8 +1220,8 @@ export default [
   },
   {
     id: 'bt-f2-reading-24',
-    name: 'Level 2 - Reading Area 24',
-    caption: 'BT - Level 2 - Reading Area 24',
+    name: 'Floor 2 - Reading Area 24',
+    caption: 'BT - Floor 2 - Reading Area 24',
     panorama: './images/bt/f2-reading/bt-f2-reading-24.jpg',
     thumbnail: './images/bt/f2-reading/thumbs/bt-f2-reading-24.jpg',
     defaultYaw: '0deg',
@@ -1231,12 +1231,12 @@ export default [
       {
         nodeId: 'bt-f2-reading-23',
         position: { yaw: '178.45deg', pitch: '0deg' },
-        name: 'Go to Level 2 - Reading Area 23',
+        name: 'Go to Floor 2 - Reading Area 23',
       },
       {
         nodeId: 'bt-f2-reading-25',
         position: { yaw: '358.45deg', pitch: '0deg' },
-        name: 'Go to Level 2 - Reading Area 25',
+        name: 'Go to Floor 2 - Reading Area 25',
       },
     ],
     markers: [],
@@ -1247,8 +1247,8 @@ export default [
   },
   {
     id: 'bt-f2-reading-25',
-    name: 'Level 2 - Reading Area 25',
-    caption: 'BT - Level 2 - Reading Area 25',
+    name: 'Floor 2 - Reading Area 25',
+    caption: 'BT - Floor 2 - Reading Area 25',
     panorama: './images/bt/f2-reading/bt-f2-reading-25.jpg',
     thumbnail: './images/bt/f2-reading/thumbs/bt-f2-reading-25.jpg',
     defaultYaw: '0deg',
@@ -1258,12 +1258,12 @@ export default [
       {
         nodeId: 'bt-f2-reading-24',
         position: { yaw: '178.45deg', pitch: '0deg' },
-        name: 'Go to Level 2 - Reading Area 24',
+        name: 'Go to Floor 2 - Reading Area 24',
       },
       {
         nodeId: 'bt-f2-reading-18',
         position: { yaw: '9.95deg', pitch: '0deg' },
-        name: 'Go to Level 2 - Reading Area 18',
+        name: 'Go to Floor 2 - Reading Area 18',
       },
     ],
     markers: [],

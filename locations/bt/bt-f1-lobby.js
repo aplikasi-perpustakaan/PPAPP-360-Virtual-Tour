@@ -4,8 +4,8 @@ export default [
   {
 
     id: 'bt-f1-lobby-1',
-    name: 'Level 1 - Lobby 1',
-    caption: 'BT - Level 1 - Lobby 1',
+    name: 'Floor 1 - Lobby 1',
+    caption: 'BT - Floor 1 - Lobby 1',
     panorama: './images/bt/f1-lobby/bt-f1-lobby-1.jpg',
     thumbnail: './images/bt/f1-lobby/thumbs/bt-f1-lobby-1.jpg',
     defaultYaw: '0deg',
@@ -15,7 +15,7 @@ export default [
       {
         nodeId: 'bt-f2-reading-22',
         position: { yaw: '98.00deg', pitch: '0deg' },
-        name: 'Go to Level 2 - Reading Area 22',
+        name: 'Go to Floor 2 - Reading Area 22',
       },
       {
         nodeId: 'bt-ext-outside-5',
@@ -25,12 +25,12 @@ export default [
       {
         nodeId: 'bt-f1-lobby-3',
         position: { yaw: '95.59deg', pitch: '0deg' },
-        name: 'Go to Level 1 - Lobby 3',
+        name: 'Go to Floor 1 - Lobby 3',
       },
       {
         nodeId: 'bt-f1-lobby-2',
         position: { yaw: '7.08deg', pitch: '0deg' },
-        name: 'Go to Level 1 - Lobby 2',
+        name: 'Go to Floor 1 - Lobby 2',
       },
     ],
     markers: [
@@ -233,8 +233,8 @@ export default [
   {
 
     id: 'bt-f1-lobby-2',
-    name: 'Level 1 - Lobby 2',
-    caption: 'BT - Level 1 - Lobby 2',
+    name: 'Floor 1 - Lobby 2',
+    caption: 'BT - Floor 1 - Lobby 2',
     panorama: './images/bt/f1-lobby/bt-f1-lobby-2.jpg',
     thumbnail: './images/bt/f1-lobby/thumbs/bt-f1-lobby-2.jpg',
     defaultYaw: '0deg',
@@ -244,7 +244,7 @@ export default [
       {
         nodeId: 'bt-f1-lobby-1',
         position: { yaw: '178.45deg', pitch: '0deg' },
-        name: 'Go to Level 1 - Lobby 1',
+        name: 'Go to Floor 1 - Lobby 1',
       },
       {
         nodeId: 'bt-ramp-1',
@@ -254,12 +254,12 @@ export default [
       {
         nodeId: 'bt-f1-kids-1',
         position: { yaw: '269.76deg', pitch: '0deg' },
-        name: 'Go to Level 1 - Kids Area 1',
+        name: 'Go to Floor 1 - Kids Area 1',
       },
       {
         nodeId: 'bt-f1-tyt-1',
         position: { yaw: '88.42deg', pitch: '0deg' },
-        name: 'Go to Level 1 - Tyt 1',
+        name: 'Go to Floor 1 - Tyt 1',
       },
     ],
     markers: [],
@@ -272,8 +272,8 @@ export default [
   {
 
     id: 'bt-f1-lobby-3',
-    name: 'Level 1 - Lobby 3',
-    caption: 'BT - Level 1 - Lobby 3',
+    name: 'Floor 1 - Lobby 3',
+    caption: 'BT - Floor 1 - Lobby 3',
     panorama: './images/bt/f1-lobby/bt-f1-lobby-3.jpg',
     thumbnail: './images/bt/f1-lobby/thumbs/bt-f1-lobby-3.jpg',
     defaultYaw: '0deg',
@@ -283,7 +283,7 @@ export default [
       {
         nodeId: 'bt-f1-lobby-1',
         position: { yaw: '277.64deg', pitch: '0deg' },
-        name: 'Go to Level 1 - Lobby 1',
+        name: 'Go to Floor 1 - Lobby 1',
       },
       {
         nodeId: 'bt-stairs-front-1',
