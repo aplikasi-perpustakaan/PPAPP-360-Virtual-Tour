@@ -49,6 +49,27 @@ export default [
           caption: 'Pameran P. Ramlee'
         },
         html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/pusat/markers/FLOOR-1/PUSAT_F1_1.jpg\'>\n        <img src=\'./images/pusat/markers/FLOOR-1/PUSAT_F1_1.jpg\' alt=\'Pameran P. Ramlee\' style=\'cursor:pointer;\' />\n        <h2>Pameran P. Ramlee</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      {
+        id: 'pusat-f1-lobby-1-marker-1789700564366',
+        position: {
+          yaw: '345.74deg',
+          pitch: '-3.55deg'
+        },
+        size: {
+          width: 32,
+          height: 32
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Kaunter Perkhidmatan',
+          icon: 'pin',
+          color: 'green',
+          animated: false,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'pin\' data-color=\'green\'>\n        <h2>Kaunter Perkhidmatan</h2>\n        <p></p>\n      </custom-marker>'
       }
     ],
     data: {
@@ -117,6 +138,27 @@ export default [
           caption: 'Pameran P. Ramlee'
         },
         html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/pusat/markers/FLOOR-1/PUSAT_F1_1.jpg\'>\n        <img src=\'./images/pusat/markers/FLOOR-1/PUSAT_F1_1.jpg\' alt=\'Pameran P. Ramlee\' style=\'cursor:pointer;\' />\n        <h2>Pameran P. Ramlee</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      {
+        id: 'pusat-f1-lobby-2-marker-1789700711047',
+        position: {
+          yaw: '151.69deg',
+          pitch: '-2.16deg'
+        },
+        size: {
+          width: 32,
+          height: 32
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Bahan Baru Untuk Pinjaman',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'info\' data-color=\'blue\'>\n        <h2>Bahan Baru Untuk Pinjaman</h2>\n        <p></p>\n      </custom-marker>'
       }
     ],
     data: {
@@ -174,6 +216,48 @@ export default [
           content: ''
         },
         html: '<custom-marker type=\'info\' data-icon=\'pin\' data-color=\'green\'>\n        <h2>Kaunter Peminjaman & Pemulangan</h2>\n        <p></p>\n      </custom-marker>'
+      },
+      {
+        id: 'pusat-f1-lobby-3-marker-1789700600786',
+        position: {
+          yaw: '302.47deg',
+          pitch: '-7.68deg'
+        },
+        size: {
+          width: 32,
+          height: 32
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Cafe @ PPAPP',
+          icon: 'pin',
+          color: 'green',
+          animated: false,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'pin\' data-color=\'green\'>\n        <h2>Cafe @ PPAPP</h2>\n        <p></p>\n      </custom-marker>'
+      },
+      {
+        id: 'pusat-f1-lobby-3-marker-1789700683734',
+        position: {
+          yaw: '146.80deg',
+          pitch: '-0.15deg'
+        },
+        size: {
+          width: 32,
+          height: 32
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Bahan Baru Untuk Pinjaman',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'info\' data-color=\'blue\'>\n        <h2>Bahan Baru Untuk Pinjaman</h2>\n        <p></p>\n      </custom-marker>'
       }
     ],
     data: {
@@ -237,6 +321,48 @@ export default [
           caption: 'Waktu Perkhidmatan'
         },
         html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/pusat/markers/FLOOR-1/PUSAT_F1_7.jpg\'>\n        <img src=\'./images/pusat/markers/FLOOR-1/PUSAT_F1_7.jpg\' alt=\'Waktu Perkhidmatan\' style=\'cursor:pointer;\' />\n        <h2>Waktu Perkhidmatan</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      {
+        id: 'pusat-f1-lobby-4-marker-1789700589765',
+        position: {
+          yaw: '290.31deg',
+          pitch: '-15.68deg'
+        },
+        size: {
+          width: 32,
+          height: 32
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Cafe @ PPAPP',
+          icon: 'pin',
+          color: 'green',
+          animated: false,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'pin\' data-color=\'green\'>\n        <h2>Cafe @ PPAPP</h2>\n        <p></p>\n      </custom-marker>'
+      },
+      {
+        id: 'pusat-f1-lobby-4-marker-1789700668862',
+        position: {
+          yaw: '146.80deg',
+          pitch: '-0.15deg'
+        },
+        size: {
+          width: 32,
+          height: 32
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Bahan Baru Untuk Pinjaman',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'info\' data-color=\'blue\'>\n        <h2>Bahan Baru Untuk Pinjaman</h2>\n        <p></p>\n      </custom-marker>'
       }
     ],
     data: {
@@ -265,7 +391,50 @@ export default [
         name: 'Go to Floor 1 - Lobby 6'
       },
     ],
-    markers: [],
+    markers: [
+      {
+        id: 'pusat-f1-lobby-5-marker-1789700612499',
+        position: {
+          yaw: '241.77deg',
+          pitch: '-26.31deg'
+        },
+        size: {
+          width: 32,
+          height: 32
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Cafe @ PPAPP',
+          icon: 'pin',
+          color: 'green',
+          animated: false,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'pin\' data-color=\'green\'>\n        <h2>Cafe @ PPAPP</h2>\n        <p></p>\n      </custom-marker>'
+      },
+      {
+        id: 'pusat-f1-lobby-5-marker-1789700620609',
+        position: {
+          yaw: '100.93deg',
+          pitch: '-18.78deg'
+        },
+        size: {
+          width: 32,
+          height: 32
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Kaunter Perkhidmatan',
+          icon: 'pin',
+          color: 'green',
+          animated: false,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'pin\' data-color=\'green\'>\n        <h2>Kaunter Perkhidmatan</h2>\n        <p></p>\n      </custom-marker>'
+      }
+    ],
     data: {
       floor: 'f1',
       tags: ['lobby'],
@@ -292,7 +461,50 @@ export default [
         name: 'Go to Floor 1 - Lobby 5'
       },
     ],
-    markers: [],
+    markers: [
+      {
+        id: 'pusat-f1-lobby-6-marker-1789700636372',
+        position: {
+          yaw: '130.12deg',
+          pitch: '-16.38deg'
+        },
+        size: {
+          width: 32,
+          height: 32
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Cafe @ PPAPP',
+          icon: 'pin',
+          color: 'green',
+          animated: false,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'pin\' data-color=\'green\'>\n        <h2>Cafe @ PPAPP</h2>\n        <p></p>\n      </custom-marker>'
+      },
+      {
+        id: 'pusat-f1-lobby-6-marker-1789700646175',
+        position: {
+          yaw: '104.61deg',
+          pitch: '-4.40deg'
+        },
+        size: {
+          width: 32,
+          height: 32
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Kaunter Perkhidmatan',
+          icon: 'pin',
+          color: 'green',
+          animated: false,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'pin\' data-color=\'green\'>\n        <h2>Kaunter Perkhidmatan</h2>\n        <p></p>\n      </custom-marker>'
+      }
+    ],
     data: {
       floor: 'f1',
       tags: ['lobby'],
@@ -713,6 +925,48 @@ export default [
           content: ''
         },
         html: '<custom-marker type=\'info\' data-icon=\'info\' data-color=\'blue\'>\n        <h2>Akuarium</h2>\n        <p></p>\n      </custom-marker>'
+      },
+      {
+        id: 'pusat-f1-lobby-12-marker-1789700724525',
+        position: {
+          yaw: '206.44deg',
+          pitch: '-1.89deg'
+        },
+        size: {
+          width: 32,
+          height: 32
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Bahan Baru Untuk Pinjaman',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'info\' data-color=\'blue\'>\n        <h2>Bahan Baru Untuk Pinjaman</h2>\n        <p></p>\n      </custom-marker>'
+      },
+      {
+        id: 'pusat-f1-lobby-12-marker-1789700734784',
+        position: {
+          yaw: '273.20deg',
+          pitch: '-6.16deg'
+        },
+        size: {
+          width: 32,
+          height: 32
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Kaunter Perkhidmatan',
+          icon: 'pin',
+          color: 'green',
+          animated: false,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'pin\' data-color=\'green\'>\n        <h2>Kaunter Perkhidmatan</h2>\n        <p></p>\n      </custom-marker>'
       }
     ],
     data: {
@@ -1506,6 +1760,27 @@ export default [
           content: ''
         },
         html: '<custom-marker type=\'info\' data-icon=\'pin\' data-color=\'green\'>\n        <h2>Tandas OKU</h2>\n        <p></p>\n      </custom-marker>'
+      },
+      {
+        id: 'pusat-f1-lobby-22-marker-1789701073893',
+        position: {
+          yaw: '160.94deg',
+          pitch: '-4.23deg'
+        },
+        size: {
+          width: 44,
+          height: 44
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Pintu Kecemasan',
+          icon: 'warning',
+          color: 'gold',
+          animated: true,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'warning\' data-color=\'gold\' animated>\n        <h2>Pintu Kecemasan</h2>\n        <p></p>\n      </custom-marker>'
       }
     ],
     data: {
@@ -1649,6 +1924,70 @@ export default [
           content: ''
         },
         html: '<custom-marker type=\'info\' data-icon=\'pin\' data-color=\'green\'>\n        <h2>Surau Lelaki</h2>\n        <p></p>\n      </custom-marker>'
+      },
+      {
+        id: 'pusat-f1-lobby-25-marker-1789700977559',
+        position: {
+          yaw: '62.13deg',
+          pitch: '-9.17deg'
+        },
+        size: {
+          width: 56,
+          height: 56
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Kakitangan Sahaja',
+          icon: 'no-entry',
+          color: 'red',
+          animated: true,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'no-entry\' data-color=\'red\' animated>\n        <h2>Kakitangan Sahaja</h2>\n        <p></p>\n      </custom-marker>'
+      },
+      
+      {
+        id: 'pusat-f1-lobby-25-marker-1789701009589',
+        position: {
+          yaw: '231.53deg',
+          pitch: '-17.82deg'
+        },
+        size: {
+          width: 56,
+          height: 56
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Kakitangan Sahaja',
+          icon: 'no-entry',
+          color: 'red',
+          animated: true,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'no-entry\' data-color=\'red\' animated>\n        <h2>Kakitangan Sahaja</h2>\n        <p></p>\n      </custom-marker>'
+      },
+      {
+        id: 'pusat-f1-lobby-25-marker-1789700993108',
+        position: {
+          yaw: '107.65deg',
+          pitch: '-17.63deg'
+        },
+        size: {
+          width: 56,
+          height: 56
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Kakitangan Sahaja',
+          icon: 'no-entry',
+          color: 'red',
+          animated: true,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'no-entry\' data-color=\'red\' animated>\n        <h2>Kakitangan Sahaja</h2>\n        <p></p>\n      </custom-marker>'
       }
     ],
     data: {

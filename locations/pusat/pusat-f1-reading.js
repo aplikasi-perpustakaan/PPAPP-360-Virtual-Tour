@@ -335,6 +335,27 @@ export default [
           caption: ''
         },
         html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/pusat/markers/FLOOR-1/PUSAT_F1_29.jpg\'>\n        <img src=\'./images/pusat/markers/FLOOR-1/PUSAT_F1_29.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      {
+        id: 'pusat-f1-reading-4-marker-1789700831909',
+        position: {
+          yaw: '302.10deg',
+          pitch: '-2.85deg'
+        },
+        size: {
+          width: 32,
+          height: 32
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Fiksyen Bahasa Malaysia',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'info\' data-color=\'blue\'>\n        <h2>Fiksyen Bahasa Malaysia</h2>\n        <p></p>\n      </custom-marker>'
       }
     ],
     data: {
@@ -457,15 +478,15 @@ export default [
         anchor: 'center center',
         data: {
           type: 'image',
-          title: '',
+          title: '200 - 299',
           icon: 'info',
           color: 'blue',
           animated: false,
           imageSrc: './images/pusat/markers/FLOOR-1/PUSAT_F1_31.jpg',
           originalUrl: './images/pusat/markers/FLOOR-1/PUSAT_F1_31.jpg',
-          caption: ''
+          caption: '200 - 299'
         },
-        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/pusat/markers/FLOOR-1/PUSAT_F1_31.jpg\'>\n        <img src=\'./images/pusat/markers/FLOOR-1/PUSAT_F1_31.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/pusat/markers/FLOOR-1/PUSAT_F1_31.jpg\'>\n        <img src=\'./images/pusat/markers/FLOOR-1/PUSAT_F1_31.jpg\' alt=\'200 - 299\' style=\'cursor:pointer;\' />\n        <h2>200 - 299</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
       }
     ],
     data: {
@@ -560,35 +581,6 @@ export default [
       },
     ],
     markers: [
-      {
-        id: 'pusat-f1-reading-7-marker-1789631278649',
-        position: {
-          yaw: '348.25deg',
-          pitch: '-12.83deg'
-        },
-        size: {
-          width: 32,
-          height: 32
-        },
-        anchor: 'center center',
-        data: {
-          type: 'image',
-          title: '',
-          icon: 'info',
-          color: 'blue',
-          animated: false,
-          imageSrc: './images/pusat/markers/FLOOR-1/PUSAT_F1_32.jpg',
-          originalUrl: './images/pusat/markers/FLOOR-1/PUSAT_F1_32.jpg',
-          caption: ''
-        },
-        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/pusat/markers/FLOOR-1/PUSAT_F1_32.jpg\'>\n        <img src=\'./images/pusat/markers/FLOOR-1/PUSAT_F1_32.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
-      },
-      
-      
-      
-      
-      
-      
       {
         id: 'pusat-f1-reading-7-marker-1789631746725',
         position: {
@@ -717,15 +709,38 @@ export default [
         anchor: 'center center',
         data: {
           type: 'image',
-          title: '',
+          title: '300-399',
           icon: 'info',
           color: 'blue',
           animated: false,
           imageSrc: './images/pusat/markers/FLOOR-1/PUSAT_F1_32.jpg',
           originalUrl: './images/pusat/markers/FLOOR-1/PUSAT_F1_32.jpg',
-          caption: ''
+          caption: '300-399'
         },
-        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/pusat/markers/FLOOR-1/PUSAT_F1_32.jpg\'>\n        <img src=\'./images/pusat/markers/FLOOR-1/PUSAT_F1_32.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/pusat/markers/FLOOR-1/PUSAT_F1_32.jpg\'>\n        <img src=\'./images/pusat/markers/FLOOR-1/PUSAT_F1_32.jpg\' alt=\'300-399\' style=\'cursor:pointer;\' />\n        <h2>300-399</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      {
+        id: 'pusat-f1-reading-7-marker-1789631278649',
+        position: {
+          yaw: '348.25deg',
+          pitch: '-12.83deg'
+        },
+        size: {
+          width: 32,
+          height: 32
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: '300-399',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/pusat/markers/FLOOR-1/PUSAT_F1_32.jpg',
+          originalUrl: './images/pusat/markers/FLOOR-1/PUSAT_F1_32.jpg',
+          caption: '300-399'
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/pusat/markers/FLOOR-1/PUSAT_F1_32.jpg\'>\n        <img src=\'./images/pusat/markers/FLOOR-1/PUSAT_F1_32.jpg\' alt=\'300-399\' style=\'cursor:pointer;\' />\n        <h2>300-399</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
       }
     ],
     data: {
@@ -901,6 +916,8 @@ export default [
         },
         html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/pusat/markers/FLOOR-1/PUSAT_F1_35.jpg\'>\n        <img src=\'./images/pusat/markers/FLOOR-1/PUSAT_F1_35.jpg\' alt=\'600-699\' style=\'cursor:pointer;\' />\n        <h2>600-699</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
       },
+      
+      
       {
         id: 'pusat-f1-reading-8-marker-1789694035011',
         position: {
@@ -914,15 +931,15 @@ export default [
         anchor: 'center center',
         data: {
           type: 'image',
-          title: '',
+          title: '300-399',
           icon: 'info',
           color: 'blue',
           animated: false,
           imageSrc: './images/pusat/markers/FLOOR-1/PUSAT_F1_32.jpg',
           originalUrl: './images/pusat/markers/FLOOR-1/PUSAT_F1_32.jpg',
-          caption: ''
+          caption: '300-399'
         },
-        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/pusat/markers/FLOOR-1/PUSAT_F1_32.jpg\'>\n        <img src=\'./images/pusat/markers/FLOOR-1/PUSAT_F1_32.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/pusat/markers/FLOOR-1/PUSAT_F1_32.jpg\'>\n        <img src=\'./images/pusat/markers/FLOOR-1/PUSAT_F1_32.jpg\' alt=\'300-399\' style=\'cursor:pointer;\' />\n        <h2>300-399</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
       },
       {
         id: 'pusat-f1-reading-8-marker-1789694136669',
@@ -937,15 +954,15 @@ export default [
         anchor: 'center center',
         data: {
           type: 'image',
-          title: '',
+          title: '300-399',
           icon: 'info',
           color: 'blue',
           animated: false,
           imageSrc: './images/pusat/markers/FLOOR-1/PUSAT_F1_32.jpg',
           originalUrl: './images/pusat/markers/FLOOR-1/PUSAT_F1_32.jpg',
-          caption: ''
+          caption: '300-399'
         },
-        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/pusat/markers/FLOOR-1/PUSAT_F1_32.jpg\'>\n        <img src=\'./images/pusat/markers/FLOOR-1/PUSAT_F1_32.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/pusat/markers/FLOOR-1/PUSAT_F1_32.jpg\'>\n        <img src=\'./images/pusat/markers/FLOOR-1/PUSAT_F1_32.jpg\' alt=\'300-399\' style=\'cursor:pointer;\' />\n        <h2>300-399</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
       }
     ],
     data: {
@@ -1117,7 +1134,29 @@ export default [
         targetPitch: '-1.68deg'
       },
     ],
-    markers: [],
+    markers: [
+      {
+        id: 'pusat-f1-reading-12-marker-1789700778865',
+        position: {
+          yaw: '335.57deg',
+          pitch: '13.63deg'
+        },
+        size: {
+          width: 32,
+          height: 32
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Fiksyen Bahasa Inggeris',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'info\' data-color=\'blue\'>\n        <h2>Fiksyen Bahasa Inggeris</h2>\n        <p></p>\n      </custom-marker>'
+      }
+    ],
     data: {
       floor: 'f1',
       tags: [
