@@ -32,7 +32,50 @@ export default [
         targetPitch: '-4.64deg'
       },
     ],
-    markers: [],
+    markers: [
+      {
+        id: 'pusat-f2-intersect-room-1-marker-1789694995914',
+        position: {
+          yaw: '85.37deg',
+          pitch: '-10.71deg'
+        },
+        size: {
+          width: 32,
+          height: 32
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Bilik Auditorium',
+          icon: 'pin',
+          color: 'green',
+          animated: false,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'pin\' data-color=\'green\'>\n        <h2>Bilik Auditorium</h2>\n        <p></p>\n      </custom-marker>'
+      },
+      {
+        id: 'pusat-f2-intersect-room-1-marker-1789695033056',
+        position: {
+          yaw: '219.46deg',
+          pitch: '-5.99deg'
+        },
+        size: {
+          width: 32,
+          height: 32
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Bilik Latihan',
+          icon: 'pin',
+          color: 'green',
+          animated: false,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'pin\' data-color=\'green\'>\n        <h2>Bilik Latihan</h2>\n        <p></p>\n      </custom-marker>'
+      }
+    ],
     data: {
       floor: 'f2',
       tags: [
