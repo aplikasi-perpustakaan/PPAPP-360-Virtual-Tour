@@ -139,27 +139,7 @@ export default [
         },
         html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/pusat/markers/FLOOR-1/PUSAT_F1_1.jpg\'>\n        <img src=\'./images/pusat/markers/FLOOR-1/PUSAT_F1_1.jpg\' alt=\'Pameran P. Ramlee\' style=\'cursor:pointer;\' />\n        <h2>Pameran P. Ramlee</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
       },
-      {
-        id: 'pusat-f1-lobby-2-marker-1789700711047',
-        position: {
-          yaw: '151.69deg',
-          pitch: '-2.16deg'
-        },
-        size: {
-          width: 32,
-          height: 32
-        },
-        anchor: 'center center',
-        data: {
-          type: 'info',
-          title: 'Bahan Baru Untuk Pinjaman',
-          icon: 'info',
-          color: 'blue',
-          animated: false,
-          content: ''
-        },
-        html: '<custom-marker type=\'info\' data-icon=\'info\' data-color=\'blue\'>\n        <h2>Bahan Baru Untuk Pinjaman</h2>\n        <p></p>\n      </custom-marker>'
-      },
+      
       {
         id: 'pusat-f1-lobby-2-marker-1789704491025',
         position: {
@@ -180,6 +160,52 @@ export default [
           content: ''
         },
         html: '<custom-marker type=\'info\' data-icon=\'pin\' data-color=\'green\'>\n        <h2>Stesen Layan Diri</h2>\n        <p></p>\n      </custom-marker>'
+      },
+      {
+        id: 'pusat-f1-lobby-2-marker-1789718054407',
+        position: {
+          yaw: '116.06deg',
+          pitch: '-10.32deg'
+        },
+        size: {
+          width: 32,
+          height: 32
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: '',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/pusat/markers/FLOOR-1/PUSAT_F1_2.jpg',
+          originalUrl: './images/pusat/markers/FLOOR-1/PUSAT_F1_2.jpg',
+          caption: ''
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/pusat/markers/FLOOR-1/PUSAT_F1_2.jpg\'>\n        <img src=\'./images/pusat/markers/FLOOR-1/PUSAT_F1_2.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      {
+        id: 'pusat-f1-lobby-2-marker-1789700711047',
+        position: {
+          yaw: '152.27deg',
+          pitch: '3.01deg'
+        },
+        size: {
+          width: 32,
+          height: 32
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: 'Bahan Baru Untuk Pinjaman',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/pusat/markers/FLOOR-1/PUSAT_F1_3.jpg',
+          originalUrl: './images/pusat/markers/FLOOR-1/PUSAT_F1_3.jpg',
+          caption: 'Bahan Baru Untuk Pinjaman'
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/pusat/markers/FLOOR-1/PUSAT_F1_3.jpg\'>\n        <img src=\'./images/pusat/markers/FLOOR-1/PUSAT_F1_3.jpg\' alt=\'Bahan Baru Untuk Pinjaman\' style=\'cursor:pointer;\' />\n        <h2>Bahan Baru Untuk Pinjaman</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
       }
     ],
     data: {
@@ -259,27 +285,7 @@ export default [
         },
         html: '<custom-marker type=\'info\' data-icon=\'pin\' data-color=\'green\'>\n        <h2>Cafe @ PPAPP</h2>\n        <p></p>\n      </custom-marker>'
       },
-      {
-        id: 'pusat-f1-lobby-3-marker-1789700683734',
-        position: {
-          yaw: '146.80deg',
-          pitch: '-0.15deg'
-        },
-        size: {
-          width: 32,
-          height: 32
-        },
-        anchor: 'center center',
-        data: {
-          type: 'info',
-          title: 'Bahan Baru Untuk Pinjaman',
-          icon: 'info',
-          color: 'blue',
-          animated: false,
-          content: ''
-        },
-        html: '<custom-marker type=\'info\' data-icon=\'info\' data-color=\'blue\'>\n        <h2>Bahan Baru Untuk Pinjaman</h2>\n        <p></p>\n      </custom-marker>'
-      },
+      
       {
         id: 'pusat-f1-lobby-3-marker-1789704828468',
         position: {
@@ -303,29 +309,7 @@ export default [
         },
         html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/pusat/markers/FLOOR-1/PUSAT_F1_2.jpg\'>\n        <img src=\'./images/pusat/markers/FLOOR-1/PUSAT_F1_2.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
       },
-      {
-        id: 'pusat-f1-lobby-3-marker-1789704930668',
-        position: {
-          yaw: '148.71deg',
-          pitch: '2.26deg'
-        },
-        size: {
-          width: 32,
-          height: 32
-        },
-        anchor: 'center center',
-        data: {
-          type: 'image',
-          title: '',
-          icon: 'info',
-          color: 'blue',
-          animated: false,
-          imageSrc: './images/pusat/markers/FLOOR-1/PUSAT_F1_3.jpg',
-          originalUrl: './images/pusat/markers/FLOOR-1/PUSAT_F1_3.jpg',
-          caption: ''
-        },
-        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/pusat/markers/FLOOR-1/PUSAT_F1_3.jpg\'>\n        <img src=\'./images/pusat/markers/FLOOR-1/PUSAT_F1_3.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
-      },
+      
       {
         id: 'pusat-f1-lobby-3-marker-1789704955318',
         position: {
@@ -369,6 +353,29 @@ export default [
           caption: ''
         },
         html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'\'>\n        <img src=\'\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      {
+        id: 'pusat-f1-lobby-3-marker-1789704930668',
+        position: {
+          yaw: '149.05deg',
+          pitch: '2.31deg'
+        },
+        size: {
+          width: 32,
+          height: 32
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: '',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/pusat/markers/FLOOR-1/PUSAT_F1_3.jpg',
+          originalUrl: './images/pusat/markers/FLOOR-1/PUSAT_F1_3.jpg',
+          caption: ''
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/pusat/markers/FLOOR-1/PUSAT_F1_3.jpg\'>\n        <img src=\'./images/pusat/markers/FLOOR-1/PUSAT_F1_3.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
       }
     ],
     data: {
@@ -474,6 +481,27 @@ export default [
           content: ''
         },
         html: '<custom-marker type=\'info\' data-icon=\'info\' data-color=\'blue\'>\n        <h2>Bahan Baru Untuk Pinjaman</h2>\n        <p></p>\n      </custom-marker>'
+      },
+      {
+        id: 'pusat-f1-lobby-4-marker-1789718160681',
+        position: {
+          yaw: '50.54deg',
+          pitch: '-12.79deg'
+        },
+        size: {
+          width: 32,
+          height: 32
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Kaunter Perkhidmatan',
+          icon: 'pin',
+          color: 'green',
+          animated: false,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'pin\' data-color=\'green\'>\n        <h2>Kaunter Perkhidmatan</h2>\n        <p></p>\n      </custom-marker>'
       }
     ],
     data: {
@@ -703,6 +731,50 @@ export default [
           content: ''
         },
         html: '<custom-marker type=\'info\' data-icon=\'pin\' data-color=\'green\'>\n        <h2>Stesen Layan Diri</h2>\n        <p></p>\n      </custom-marker>'
+      },
+      {
+        id: 'pusat-f1-lobby-8-marker-1789718212557',
+        position: {
+          yaw: '323.55deg',
+          pitch: '-34.34deg'
+        },
+        size: {
+          width: 32,
+          height: 32
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Kaunter Perkhidmatan',
+          icon: 'pin',
+          color: 'green',
+          animated: false,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'pin\' data-color=\'green\'>\n        <h2>Kaunter Perkhidmatan</h2>\n        <p></p>\n      </custom-marker>'
+      },
+      {
+        id: 'pusat-f1-lobby-8-marker-1789718273153',
+        position: {
+          yaw: '47.92deg',
+          pitch: '-7.00deg'
+        },
+        size: {
+          width: 32,
+          height: 32
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: 'Kiosk peminjaman / pemulangan buku (layan diri)',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/pusat/markers/FLOOR-1/PUSAT_F1_9.jpg',
+          originalUrl: './images/pusat/markers/FLOOR-1/PUSAT_F1_9.jpg',
+          caption: 'Kiosk peminjaman / pemulangan buku (layan diri)'
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/pusat/markers/FLOOR-1/PUSAT_F1_9.jpg\'>\n        <img src=\'./images/pusat/markers/FLOOR-1/PUSAT_F1_9.jpg\' alt=\'Kiosk peminjaman / pemulangan buku (layan diri)\' style=\'cursor:pointer;\' />\n        <h2>Kiosk peminjaman / pemulangan buku (layan diri)</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
       }
     ],
     data: {
@@ -918,7 +990,119 @@ export default [
         targetPitch: '3.10deg'
       },
     ],
-    markers: [],
+    markers: [
+      {
+        id: 'pusat-f1-lobby-11-marker-1789718379620',
+        position: {
+          yaw: '152.96deg',
+          pitch: '-12.61deg'
+        },
+        size: {
+          width: 32,
+          height: 32
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: '',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/pusat/markers/FLOOR-1/PUSAT_F1_2.jpg',
+          originalUrl: './images/pusat/markers/FLOOR-1/PUSAT_F1_2.jpg',
+          caption: ''
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/pusat/markers/FLOOR-1/PUSAT_F1_2.jpg\'>\n        <img src=\'./images/pusat/markers/FLOOR-1/PUSAT_F1_2.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      {
+        id: 'pusat-f1-lobby-11-marker-1789718398414',
+        position: {
+          yaw: '191.94deg',
+          pitch: '1.77deg'
+        },
+        size: {
+          width: 32,
+          height: 32
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: '',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/pusat/markers/FLOOR-1/PUSAT_F1_3.jpg',
+          originalUrl: './images/pusat/markers/FLOOR-1/PUSAT_F1_3.jpg',
+          caption: ''
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/pusat/markers/FLOOR-1/PUSAT_F1_3.jpg\'>\n        <img src=\'./images/pusat/markers/FLOOR-1/PUSAT_F1_3.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      {
+        id: 'pusat-f1-lobby-11-marker-1789718423096',
+        position: {
+          yaw: '325.66deg',
+          pitch: '-8.18deg'
+        },
+        size: {
+          width: 32,
+          height: 32
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Stesen Layan Diri',
+          icon: 'pin',
+          color: 'green',
+          animated: false,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'pin\' data-color=\'green\'>\n        <h2>Stesen Layan Diri</h2>\n        <p></p>\n      </custom-marker>'
+      },
+      {
+        id: 'pusat-f1-lobby-11-marker-1789718455566',
+        position: {
+          yaw: '3.57deg',
+          pitch: '-7.42deg'
+        },
+        size: {
+          width: 32,
+          height: 32
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: 'Kiosk peminjaman / pemulangan buku (layan diri)',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/pusat/markers/FLOOR-1/PUSAT_F1_9.jpg',
+          originalUrl: './images/pusat/markers/FLOOR-1/PUSAT_F1_9.jpg',
+          caption: 'Kiosk peminjaman / pemulangan buku (layan diri)'
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/pusat/markers/FLOOR-1/PUSAT_F1_9.jpg\'>\n        <img src=\'./images/pusat/markers/FLOOR-1/PUSAT_F1_9.jpg\' alt=\'Kiosk peminjaman / pemulangan buku (layan diri)\' style=\'cursor:pointer;\' />\n        <h2>Kiosk peminjaman / pemulangan buku (layan diri)</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      {
+        id: 'pusat-f1-lobby-11-marker-1789718476504',
+        position: {
+          yaw: '300.96deg',
+          pitch: '-6.60deg'
+        },
+        size: {
+          width: 32,
+          height: 32
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Kaunter Perkhidmatan',
+          icon: 'pin',
+          color: 'green',
+          animated: false,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'pin\' data-color=\'green\'>\n        <h2>Kaunter Perkhidmatan</h2>\n        <p></p>\n      </custom-marker>'
+      }
+    ],
     data: {
       floor: 'f1',
       tags: ['lobby'],

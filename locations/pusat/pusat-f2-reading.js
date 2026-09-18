@@ -113,6 +113,27 @@ export default [
           caption: ''
         },
         html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/pusat/markers/FLOOR-2/PUSAT_F2_4.jpg\'>\n        <img src=\'./images/pusat/markers/FLOOR-2/PUSAT_F2_4.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      {
+        id: 'pusat-f2-reading-2-marker-1789717830800',
+        position: {
+          yaw: '236.07deg',
+          pitch: '-2.62deg'
+        },
+        size: {
+          width: 32,
+          height: 32
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Kaunter Rujukan',
+          icon: 'pin',
+          color: 'green',
+          animated: false,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'pin\' data-color=\'green\'>\n        <h2>Kaunter Rujukan</h2>\n        <p></p>\n      </custom-marker>'
       }
     ],
     data: {
@@ -466,6 +487,27 @@ export default [
           caption: ''
         },
         html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/pusat/markers/FLOOR-2/PUSAT_F2_8.jpg\'>\n        <img src=\'./images/pusat/markers/FLOOR-2/PUSAT_F2_8.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      {
+        id: 'pusat-f2-reading-5-marker-1789717893808',
+        position: {
+          yaw: '273.49deg',
+          pitch: '-2.91deg'
+        },
+        size: {
+          width: 32,
+          height: 32
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Kaunter Rujukan',
+          icon: 'pin',
+          color: 'green',
+          animated: false,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'pin\' data-color=\'green\'>\n        <h2>Kaunter Rujukan</h2>\n        <p></p>\n      </custom-marker>'
       }
     ],
     data: {
@@ -617,6 +659,27 @@ export default [
           caption: ''
         },
         html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/pusat/markers/FLOOR-2/PUSAT_F2_6.jpg\'>\n        <img src=\'./images/pusat/markers/FLOOR-2/PUSAT_F2_6.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      {
+        id: 'pusat-f2-reading-7-marker-1789717873799',
+        position: {
+          yaw: '240.34deg',
+          pitch: '-4.56deg'
+        },
+        size: {
+          width: 32,
+          height: 32
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Kaunter Rujukan',
+          icon: 'pin',
+          color: 'green',
+          animated: false,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'pin\' data-color=\'green\'>\n        <h2>Kaunter Rujukan</h2>\n        <p></p>\n      </custom-marker>'
       }
     ],
     data: {
@@ -664,7 +727,29 @@ export default [
         name: 'Go to Floor 2 - PC Area'
       },
     ],
-    markers: [],
+    markers: [
+      {
+        id: 'pusat-f2-reading-8-marker-1789717852611',
+        position: {
+          yaw: '195.65deg',
+          pitch: '-4.24deg'
+        },
+        size: {
+          width: 32,
+          height: 32
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Kaunter Rujukan',
+          icon: 'pin',
+          color: 'green',
+          animated: false,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'pin\' data-color=\'green\'>\n        <h2>Kaunter Rujukan</h2>\n        <p></p>\n      </custom-marker>'
+      }
+    ],
     data: {
       floor: 'f2',
       tags: [
@@ -882,6 +967,27 @@ export default [
           caption: 'Web OPAC'
         },
         html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/pusat/markers/FLOOR-2/PUSAT_F2_1.jpg\'>\n        <img src=\'./images/pusat/markers/FLOOR-2/PUSAT_F2_1.jpg\' alt=\'Web OPAC\' style=\'cursor:pointer;\' />\n        <h2>Web OPAC</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      {
+        id: 'pusat-f2-reading-12-marker-1789717910637',
+        position: {
+          yaw: '291.33deg',
+          pitch: '-4.77deg'
+        },
+        size: {
+          width: 32,
+          height: 32
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Kaunter Rujukan',
+          icon: 'pin',
+          color: 'green',
+          animated: false,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'pin\' data-color=\'green\'>\n        <h2>Kaunter Rujukan</h2>\n        <p></p>\n      </custom-marker>'
       }
     ],
     data: {
@@ -917,7 +1023,29 @@ export default [
         targetPitch: '-6.64deg'
       },
     ],
-    markers: [],
+    markers: [
+      {
+        id: 'pusat-f2-reading-13-marker-1789717930675',
+        position: {
+          yaw: '2.24deg',
+          pitch: '-5.30deg'
+        },
+        size: {
+          width: 32,
+          height: 32
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Kaunter Rujukan',
+          icon: 'pin',
+          color: 'green',
+          animated: false,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'pin\' data-color=\'green\'>\n        <h2>Kaunter Rujukan</h2>\n        <p></p>\n      </custom-marker>'
+      }
+    ],
     data: {
       floor: 'f2',
       tags: [
@@ -954,7 +1082,29 @@ export default [
         name: 'Go to Floor 2 - Reference Area 17'
       },
     ],
-    markers: [],
+    markers: [
+      {
+        id: 'pusat-f2-reading-14-marker-1789717957762',
+        position: {
+          yaw: '29.85deg',
+          pitch: '-4.57deg'
+        },
+        size: {
+          width: 32,
+          height: 32
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Kaunter Rujukan',
+          icon: 'pin',
+          color: 'green',
+          animated: false,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'pin\' data-color=\'green\'>\n        <h2>Kaunter Rujukan</h2>\n        <p></p>\n      </custom-marker>'
+      }
+    ],
     data: {
       floor: 'f2',
       tags: [
@@ -1082,6 +1232,27 @@ export default [
           content: ''
         },
         html: '<custom-marker type=\'info\' data-icon=\'info\' data-color=\'blue\'>\n        <h2>Bahasa Inggeris (Rujukan)</h2>\n        <p></p>\n      </custom-marker>'
+      },
+      {
+        id: 'pusat-f2-reading-17-marker-1789717978786',
+        position: {
+          yaw: '35.74deg',
+          pitch: '-2.69deg'
+        },
+        size: {
+          width: 32,
+          height: 32
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Kaunter Rujukan',
+          icon: 'pin',
+          color: 'green',
+          animated: false,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'pin\' data-color=\'green\'>\n        <h2>Kaunter Rujukan</h2>\n        <p></p>\n      </custom-marker>'
       }
     ],
     data: {
