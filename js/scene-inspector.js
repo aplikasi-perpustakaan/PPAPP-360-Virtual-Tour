@@ -10,7 +10,7 @@ export function initSceneInspector(viewer, virtualTour, allNodes, isDebug) {
   const toast = document.getElementById('debug-toast');
   const startupSceneBtn = document.getElementById('debug-startup-scene-btn');
   const saveDefaultsBtn = document.getElementById('debug-save-defaults-btn');
-  const zoneStartupBtn = document.getElementById('debug-zone-startup-btn');
+    const zoneStartupBtn = document.getElementById('debug-zone-startup-btn');
   const zoneSelect = document.getElementById('debug-zone-select');
 
   if (zoneStartupBtn && zoneSelect) {
@@ -43,15 +43,15 @@ export function initSceneInspector(viewer, virtualTour, allNodes, isDebug) {
         .then(res => res.json())
         .then(data => {
           if (data.success) {
-            showToast(✅ Zone '\' startup set to '\');
+            showToast(`✅ Zone '${selectedZone}' startup set to '${currentNodeId}'`);
           } else {
-            showToast(❌ Error: \);
+            showToast(`❌ Error: ${data.error}`);
           }
           zoneSelect.style.display = 'none';
           zoneStartupBtn.innerHTML = '🎯 Set Zone Startup';
         })
         .catch(err => {
-          showToast(❌ Network error: \);
+          showToast(`❌ Network error: ${err.message}`);
           zoneSelect.style.display = 'none';
           zoneStartupBtn.innerHTML = '🎯 Set Zone Startup';
         });
@@ -72,7 +72,7 @@ export function initSceneInspector(viewer, virtualTour, allNodes, isDebug) {
               item.subzones.forEach(sub => {
                 const subOpt = document.createElement('option');
                 subOpt.value = sub.label;
-                subOpt.textContent =   ↳ \;
+                subOpt.textContent = `  ↳ ${sub.label}`;
                 group.appendChild(subOpt);
               });
             }
