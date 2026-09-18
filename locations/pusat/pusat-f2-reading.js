@@ -937,7 +937,50 @@ export default [
         name: 'Go to Floor 2 - Reading Area 16'
       },
     ],
-    markers: [],
+    markers: [
+      {
+        id: 'pusat-f2-reading-17-marker-1789705883498',
+        position: {
+          yaw: '146.16deg',
+          pitch: '2.37deg'
+        },
+        size: {
+          width: 32,
+          height: 32
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Bahasa Inggeris (Rujukan)',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'info\' data-color=\'blue\'>\n        <h2>Bahasa Inggeris (Rujukan)</h2>\n        <p></p>\n      </custom-marker>'
+      },
+      {
+        id: 'pusat-f2-reading-17-marker-1789705888248',
+        position: {
+          yaw: '154.25deg',
+          pitch: '-0.04deg'
+        },
+        size: {
+          width: 32,
+          height: 32
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Bahasa Inggeris (Rujukan)',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'info\' data-color=\'blue\'>\n        <h2>Bahasa Inggeris (Rujukan)</h2>\n        <p></p>\n      </custom-marker>'
+      }
+    ],
     data: {
       floor: 'f2',
       tags: [
@@ -1179,7 +1222,29 @@ export default [
         name: 'Go to Floor 2 - Reading Area 24'
       },
     ],
-    markers: [],
+    markers: [
+      {
+        id: 'pusat-f2-reading-23-marker-1789705974402',
+        position: {
+          yaw: '259.00deg',
+          pitch: '-2.93deg'
+        },
+        size: {
+          width: 32,
+          height: 32
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Bilik Mesyuarat',
+          icon: 'pin',
+          color: 'green',
+          animated: false,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'pin\' data-color=\'green\'>\n        <h2>Bilik Mesyuarat</h2>\n        <p></p>\n      </custom-marker>'
+      }
+    ],
     data: {
       floor: 'f2',
       tags: [
@@ -1211,7 +1276,29 @@ export default [
         targetPitch: '1.48deg'
       },
     ],
-    markers: [],
+    markers: [
+      {
+        id: 'pusat-f2-reading-24-marker-1789705995708',
+        position: {
+          yaw: '277.66deg',
+          pitch: '-7.11deg'
+        },
+        size: {
+          width: 32,
+          height: 32
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Bilik Mesyuarat',
+          icon: 'pin',
+          color: 'green',
+          animated: false,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'pin\' data-color=\'green\'>\n        <h2>Bilik Mesyuarat</h2>\n        <p></p>\n      </custom-marker>'
+      }
+    ],
     data: {
       floor: 'f2',
       tags: [

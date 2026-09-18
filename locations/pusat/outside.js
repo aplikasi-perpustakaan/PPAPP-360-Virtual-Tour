@@ -16,7 +16,77 @@ export default [
         targetPitch: '2.54deg'
       },
     ],
-    markers: [],
+    markers: [
+      {
+        id: 'pusat-outside-1-marker-1789704292723',
+        position: {
+          yaw: '342.97deg',
+          pitch: '-3.54deg'
+        },
+        size: {
+          width: 32,
+          height: 32
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: '',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/pusat/markers/OUTSIDE/PUSAT_OUTSIDE_3.jpg',
+          originalUrl: './images/pusat/markers/OUTSIDE/PUSAT_OUTSIDE_3.jpg',
+          caption: ''
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/pusat/markers/OUTSIDE/PUSAT_OUTSIDE_3.jpg\'>\n        <img src=\'./images/pusat/markers/OUTSIDE/PUSAT_OUTSIDE_3.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      {
+        id: 'pusat-outside-1-marker-1789704311564',
+        position: {
+          yaw: '348.08deg',
+          pitch: '-3.38deg'
+        },
+        size: {
+          width: 32,
+          height: 32
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: '',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/pusat/markers/OUTSIDE/PUSAT_OUTSIDE_1.jpg',
+          originalUrl: './images/pusat/markers/OUTSIDE/PUSAT_OUTSIDE_1.jpg',
+          caption: ''
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/pusat/markers/OUTSIDE/PUSAT_OUTSIDE_1.jpg\'>\n        <img src=\'./images/pusat/markers/OUTSIDE/PUSAT_OUTSIDE_1.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      {
+        id: 'pusat-outside-1-marker-1789704046692',
+        position: {
+          yaw: '100.92deg',
+          pitch: '-2.37deg'
+        },
+        size: {
+          width: 32,
+          height: 32
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: '',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/pusat/markers/OUTSIDE/PUSAT_OUTSIDE_2.jpg',
+          originalUrl: './images/pusat/markers/OUTSIDE/PUSAT_OUTSIDE_2.jpg',
+          caption: ''
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/pusat/markers/OUTSIDE/PUSAT_OUTSIDE_2.jpg\'>\n        <img src=\'./images/pusat/markers/OUTSIDE/PUSAT_OUTSIDE_2.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      }
+    ],
     data: {
       floor: 'ext',
       tags: [

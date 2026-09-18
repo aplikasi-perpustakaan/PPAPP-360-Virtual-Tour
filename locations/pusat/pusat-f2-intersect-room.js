@@ -131,12 +131,33 @@ export default [
         data: {
           type: 'info',
           title: 'Bilik Auditorium',
-          icon: 'info',
-          color: 'blue',
+          icon: 'pin',
+          color: 'green',
           animated: false,
           content: ''
         },
-        html: '<custom-marker type=\'info\' data-icon=\'info\' data-color=\'blue\'>\n        <h2>Bilik Auditorium</h2>\n        <p></p>\n      </custom-marker>'
+        html: '<custom-marker type=\'info\' data-icon=\'pin\' data-color=\'green\'>\n        <h2>Bilik Auditorium</h2>\n        <p></p>\n      </custom-marker>'
+      },
+      {
+        id: 'pusat-f2-intersect-room-2-marker-1789705828479',
+        position: {
+          yaw: '300.62deg',
+          pitch: '-3.15deg'
+        },
+        size: {
+          width: 32,
+          height: 32
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Bilik Latihan',
+          icon: 'pin',
+          color: 'green',
+          animated: false,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'pin\' data-color=\'green\'>\n        <h2>Bilik Latihan</h2>\n        <p></p>\n      </custom-marker>'
       }
     ],
     data: {
