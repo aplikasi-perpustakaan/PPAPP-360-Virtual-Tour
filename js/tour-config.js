@@ -29,7 +29,6 @@ export const branches = [
               { label: 'Castle Area', sceneId: 'pusat-f1-castle-1' }
             ]
           },
-          { label: 'Reference Area', sceneId: 'pusat-f1-reference-1' },
           { label: 'E-Sports', sceneId: 'pusat-f1-e-sports-1' },
           { label: 'Reading Area', sceneId: 'pusat-f1-reading-1' }
         ]
@@ -169,5 +168,6 @@ export const branches = [
     map: ''
   }
 ];
+
 
 
