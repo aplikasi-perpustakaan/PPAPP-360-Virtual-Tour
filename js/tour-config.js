@@ -59,6 +59,12 @@ export const branches = [
     facilities: ['Wi-Fi Percuma', 'Pod Pembelajaran', 'Bahagian Kanak-kanak', 'Makmal Komputer'],
     zones: [
       {
+        category: 'Exterior',
+        items: [
+          { label: 'Outside', sceneId: 'bt-ext-outside-1' }
+        ]
+      },
+      {
         category: 'Main Areas',
         items: [
           { label: 'Lobi', sceneId: 'bt-f1-lobby-1' },
