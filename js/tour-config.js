@@ -36,7 +36,7 @@ export const branches = [
       {
         category: 'Floor 2',
         items: [
-          { label: 'Reading Area', sceneId: 'pusat-f2-reading-1' },
+          { label: 'Reference Area', sceneId: 'pusat-f2-reading-1' },
           { label: 'Auditorium', sceneId: 'pusat-f2-auditorium-1' },
           { label: 'Meeting Room', sceneId: 'pusat-f2-meeting-room-1' },
           { label: 'Training Room', sceneId: 'pusat-f2-training-room-1' }
@@ -168,6 +168,7 @@ export const branches = [
     map: ''
   }
 ];
+
 
 
 

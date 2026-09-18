@@ -20,7 +20,7 @@ export default [
       {
         nodeId: 'pusat-f2-reading-11',
         position: { yaw: '337.98deg', pitch: '-5.55deg' },
-        name: 'Go to Floor 2 - Reading Area 11',
+        name: 'Go to Floor 2 - Reference Area 11',
         targetYaw: '301.29deg',
         targetPitch: '-3.00deg'
       },

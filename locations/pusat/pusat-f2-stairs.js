@@ -18,21 +18,21 @@ export default [
       {
         nodeId: 'pusat-f2-reading-1',
         position: { yaw: '308.39deg', pitch: '-2.46deg' },
-        name: 'Go to Floor 2 - Reading Area 1',
+        name: 'Go to Floor 2 - Reference Area 1',
         targetYaw: '326.74deg',
         targetPitch: '1.24deg'
       },
       {
         nodeId: 'pusat-f2-reading-2',
         position: { yaw: '231.22deg', pitch: '-1.78deg' },
-        name: 'Go to Floor 2 - Reading Area 2',
+        name: 'Go to Floor 2 - Reference Area 2',
         targetYaw: '230.59deg',
         targetPitch: '-1.11deg'
       },
       {
         nodeId: 'pusat-f2-reading-3',
         position: { yaw: '170.38deg', pitch: '-6.13deg' },
-        name: 'Go to Floor 2 - Reading Area 3',
+        name: 'Go to Floor 2 - Reference Area 3',
         targetYaw: '234.02deg',
         targetPitch: '5.62deg'
       },
