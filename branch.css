@@ -329,3 +329,68 @@
   color: #fff;
   border-color: var(--color-accent-blue);
 }
+
+/* --- Footer --- */
+.branch-footer {
+  text-align: center;
+  padding: 30px 20px;
+  color: var(--color-silver);
+  font-size: 0.85rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  margin-top: var(--space-xl);
+}
+
+/* --- Credits --- */
+.branch-footer .credits-section {
+  margin-bottom: 0;
+}
+
+.branch-footer .credits-title {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--color-silver);
+  margin: 0 0 8px;
+}
+
+.branch-footer .credits-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 6px 12px;
+}
+
+.branch-footer .credit-person {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.branch-footer .credit-name {
+  font-weight: 500;
+  font-size: 0.8rem;
+  color: var(--color-offwhite);
+}
+
+.branch-footer .credit-icon-link {
+  display: inline-flex;
+  align-items: center;
+  color: var(--color-steel);
+  transition: color 0.2s ease;
+}
+
+.branch-footer .credit-icon-link svg {
+  width: 14px;
+  height: 14px;
+}
+
+.branch-footer .credit-icon-link:hover {
+  color: var(--color-offwhite);
+}
+
+.branch-footer .credit-divider {
+  color: var(--color-steel);
+  font-size: 1rem;
+  user-select: none;
+}

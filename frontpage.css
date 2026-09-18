@@ -176,6 +176,61 @@
   border-top: 1px solid var(--color-charcoal);
 }
 
+/* --- Credits --- */
+.credits-section {
+  margin-bottom: 0;
+}
+
+.credits-title {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--color-silver);
+  margin: 0 0 8px;
+}
+
+.credits-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 6px 12px;
+}
+
+.credit-person {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.credit-name {
+  font-weight: 500;
+  font-size: 0.85rem;
+  color: var(--color-steel);
+}
+
+.credit-icon-link {
+  display: inline-flex;
+  align-items: center;
+  color: var(--color-silver);
+  transition: color 0.2s ease;
+}
+
+.credit-icon-link svg {
+  width: 14px;
+  height: 14px;
+}
+
+.credit-icon-link:hover {
+  color: var(--color-steel);
+}
+
+.credit-divider {
+  color: var(--color-silver);
+  font-size: 1rem;
+  user-select: none;
+}
+
 /* Responsive */
 @media (max-width: 900px) {
   .branches-grid {
