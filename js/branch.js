@@ -89,11 +89,23 @@ async function initBranchPage() {
       html += zoneCategory.items.map(link => {
         const targetScene = scenes.find(s => s.id === link.sceneId);
         const thumb = targetScene && targetScene.thumbnail ? targetScene.thumbnail : './images/shared/placeholder.jpg';
+        let subzonesHTML = '';
+        if (link.subzones && link.subzones.length > 0) {
+          subzonesHTML = `
+            <div class="zone-subzones">
+              ${link.subzones.map(sub => `<a href="./tour.html?scene=${sub.sceneId}" class="subzone-pill">${sub.label}</a>`).join('')}
+            </div>
+          `;
+        }
+
         return `
-          <a href="./tour.html?scene=${link.sceneId}" class="zone-card">
-            <img src="${thumb}" alt="${link.label}" class="zone-img" onerror="this.src='./images/shared/placeholder.jpg'">
-            <div class="zone-label">${link.label}</div>
-          </a>
+          <div class="zone-card-container">
+            <a href="./tour.html?scene=${link.sceneId}" class="zone-card">
+              <img src="${thumb}" alt="${link.label}" class="zone-img" onerror="this.src='./images/shared/placeholder.jpg'">
+              <div class="zone-label">${link.label}</div>
+            </a>
+            ${subzonesHTML}
+          </div>
         `;
       }).join('');
       html += `</div>`;
@@ -126,6 +138,7 @@ if (document.readyState === 'loading') {
 } else {
   initBranchPage();
 }
+
 
 
 

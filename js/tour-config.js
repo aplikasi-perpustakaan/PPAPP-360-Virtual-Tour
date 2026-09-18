@@ -20,10 +20,16 @@ export const branches = [
         category: 'Level 1',
         items: [
           { label: 'Lobby', sceneId: 'pusat-f1-lobby-1' },
-          { label: 'Kids Area', sceneId: 'pusat-f1-kids-1' },
-          { label: 'Castle Area', sceneId: 'pusat-f1-castle-1' },
-          { label: 'Sensory Room', sceneId: 'pusat-f1-sensory-1' },
-          { label: 'i-Play Toys', sceneId: 'pusat-f1-i-play-toys-1' },
+          { 
+            label: 'Kids Area', 
+            sceneId: 'pusat-f1-kids-1',
+            subzones: [
+                  { label: 'Sensory Room', sceneId: 'pusat-f1-sensory-1' },
+              { label: 'i-Play Toys Room', sceneId: 'pusat-f1-i-play-toys-1' },
+              { label: 'Castle Area', sceneId: 'pusat-f1-castle-1' }
+            ]
+          },
+          { label: 'Reference Area', sceneId: 'pusat-f1-reference-1' },
           { label: 'E-Sports', sceneId: 'pusat-f1-e-sports-1' },
           { label: 'Reading Area', sceneId: 'pusat-f1-reading-1' }
         ]
@@ -163,3 +169,5 @@ export const branches = [
     map: ''
   }
 ];
+
+
