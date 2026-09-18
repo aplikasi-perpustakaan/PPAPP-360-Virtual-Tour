@@ -743,7 +743,7 @@ export default [
       {
         nodeId: 'pusat-f2-reading-13',
         position: { yaw: '218.77deg', pitch: '-0.44deg' },
-        name: 'Go to Floor 2 - Reference Area 13',
+        name: 'Go to Floor 2 - Carrel Area',
         targetYaw: '241.96deg',
         targetPitch: '-0.67deg'
       },
@@ -790,8 +790,8 @@ export default [
   },
   {
     id: 'pusat-f2-reading-13',
-    name: 'Floor 2 - Reference Area 13',
-    caption: 'PUSAT - Floor 2 - Reference Area 13',
+    name: 'Floor 2 - Carrel Area',
+    caption: 'PUSAT - Floor 2 - Carrel Area',
     panorama: './images/pusat/f2-reading/pusat-f2-reading-13.jpg',
     thumbnail: './images/pusat/f2-reading/thumbs/pusat-f2-reading-13.jpg',
     defaultYaw: '0deg',
@@ -834,7 +834,7 @@ export default [
       {
         nodeId: 'pusat-f2-reading-13',
         position: { yaw: '69.03deg', pitch: '-9.83deg' },
-        name: 'Go to Floor 2 - Reference Area 13',
+        name: 'Go to Floor 2 - Carrel Area',
         targetYaw: '67.12deg',
         targetPitch: '-3.75deg'
       },
