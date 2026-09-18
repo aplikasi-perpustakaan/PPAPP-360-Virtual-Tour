@@ -38,6 +38,7 @@ export const branches = [
         items: [
           { label: 'Reference Area', sceneId: 'pusat-f2-reading-1' },
           { label: 'Carrel Area', sceneId: 'pusat-f2-reading-13' },
+          { label: 'PC Area', sceneId: 'pusat-f2-reading-2' },
           { label: 'Auditorium', sceneId: 'pusat-f2-auditorium-1' },
           { label: 'Meeting Room', sceneId: 'pusat-f2-meeting-room-1' },
           { label: 'Training Room', sceneId: 'pusat-f2-training-room-1' }

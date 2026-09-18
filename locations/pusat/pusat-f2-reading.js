@@ -11,7 +11,7 @@ export default [
       {
         nodeId: 'pusat-f2-reading-2',
         position: { yaw: '193.02deg', pitch: '-2.84deg' },
-        name: 'Go to Floor 2 - Reference Area 2',
+        name: 'Go to Floor 2 - PC Area',
         targetYaw: '226.67deg',
         targetPitch: '-1.12deg'
       },
@@ -35,8 +35,8 @@ export default [
   },
   {
     id: 'pusat-f2-reading-2',
-    name: 'Floor 2 - Reference Area 2',
-    caption: 'PUSAT - Floor 2 - Reference Area 2',
+    name: 'Floor 2 - PC Area',
+    caption: 'PUSAT - Floor 2 - PC Area',
     panorama: './images/pusat/f2-reading/pusat-f2-reading-2.jpg',
     thumbnail: './images/pusat/f2-reading/thumbs/pusat-f2-reading-2.jpg',
     defaultYaw: '0deg',
@@ -558,7 +558,7 @@ export default [
       {
         nodeId: 'pusat-f2-reading-2',
         position: { yaw: '52.42deg', pitch: '-10deg' },
-        name: 'Go to Floor 2 - Reference Area 2'
+        name: 'Go to Floor 2 - PC Area'
       },
     ],
     markers: [],
