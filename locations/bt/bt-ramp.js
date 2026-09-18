@@ -102,7 +102,29 @@ export default [
         name: 'Go to Floor 2 - Reading Area 1',
       },
     ],
-    markers: [],
+    markers: [
+      {
+        id: 'bt-ramp-4-marker-1789717854583',
+        position: {
+          yaw: '188.27deg',
+          pitch: '-3.39deg'
+        },
+        size: {
+          width: 32,
+          height: 32
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Kaunter Perkhidmatan',
+          icon: 'pin',
+          color: 'green',
+          animated: false,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'pin\' data-color=\'green\'>\n        <h2>Kaunter Perkhidmatan</h2>\n        <p></p>\n      </custom-marker>'
+      }
+    ],
     data: {
       floor: 'ramp',
       tags: ['ramp'],

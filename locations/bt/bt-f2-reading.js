@@ -21,7 +21,29 @@ export default [
         name: 'Go to Ramp - Ramp 4',
       },
     ],
-    markers: [],
+    markers: [
+      {
+        id: 'bt-f2-reading-1-marker-1789717861714',
+        position: {
+          yaw: '194.46deg',
+          pitch: '-18.35deg'
+        },
+        size: {
+          width: 32,
+          height: 32
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Kaunter Perkhidmatan',
+          icon: 'pin',
+          color: 'green',
+          animated: false,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'pin\' data-color=\'green\'>\n        <h2>Kaunter Perkhidmatan</h2>\n        <p></p>\n      </custom-marker>'
+      }
+    ],
     data: {
       floor: 'f2',
       tags: ['reading'],
@@ -53,7 +75,29 @@ export default [
         name: 'Go to Floor 2 - Reading Area 3',
       },
     ],
-    markers: [],
+    markers: [
+      {
+        id: 'bt-f2-reading-2-marker-1789717869351',
+        position: {
+          yaw: '181.20deg',
+          pitch: '-40.62deg'
+        },
+        size: {
+          width: 32,
+          height: 32
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Kaunter Perkhidmatan',
+          icon: 'pin',
+          color: 'green',
+          animated: false,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'pin\' data-color=\'green\'>\n        <h2>Kaunter Perkhidmatan</h2>\n        <p></p>\n      </custom-marker>'
+      }
+    ],
     data: {
       floor: 'f2',
       tags: ['reading'],
@@ -136,6 +180,27 @@ export default [
           caption: ''
         },
         html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bt/markers/FLOOR-2/BT_f2_1.jpg\'>\n        <img src=\'./images/bt/markers/FLOOR-2/BT_f2_1.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      {
+        id: 'bt-f2-reading-3-marker-1789717888996',
+        position: {
+          yaw: '228.99deg',
+          pitch: '-17.44deg'
+        },
+        size: {
+          width: 32,
+          height: 32
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Kaunter Perkhidmatan',
+          icon: 'pin',
+          color: 'green',
+          animated: false,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'pin\' data-color=\'green\'>\n        <h2>Kaunter Perkhidmatan</h2>\n        <p></p>\n      </custom-marker>'
       }
     ],
     data: {
@@ -1004,7 +1069,29 @@ export default [
         name: 'Go to Floor 2 - Reading Area 2',
       },
     ],
-    markers: [],
+    markers: [
+      {
+        id: 'bt-f2-reading-16-marker-1789717877456',
+        position: {
+          yaw: '123.91deg',
+          pitch: '-12.55deg'
+        },
+        size: {
+          width: 32,
+          height: 32
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Kaunter Perkhidmatan',
+          icon: 'pin',
+          color: 'green',
+          animated: false,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'pin\' data-color=\'green\'>\n        <h2>Kaunter Perkhidmatan</h2>\n        <p></p>\n      </custom-marker>'
+      }
+    ],
     data: {
       floor: 'f2',
       tags: ['reading'],
