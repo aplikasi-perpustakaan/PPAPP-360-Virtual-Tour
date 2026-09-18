@@ -4,8 +4,8 @@ export default [
   {
 
     id: 'bt-f1-kids-1',
-    name: 'Floor 1 - Kids Area 1',
-    caption: 'BT - Floor 1 - Kids Area 1',
+    name: 'Floor 1 - E-Sports',
+    caption: 'BT - Floor 1 - E-Sports',
     panorama: './images/bt/f1-kids/bt-f1-kids-1.jpg',
     thumbnail: './images/bt/f1-kids/thumbs/bt-f1-kids-1.jpg',
     defaultYaw: '0deg',
@@ -15,7 +15,7 @@ export default [
       {
         nodeId: 'bt-f1-kids-2',
         position: { yaw: '294.59deg', pitch: '0deg' },
-        name: 'Go to Floor 1 - Kids Area 2',
+        name: 'Go to Floor 1 - Newspaper',
       },
       {
         nodeId: 'bt-f1-lobby-2',
@@ -25,7 +25,7 @@ export default [
       {
         nodeId: 'bt-f1-kids-3',
         position: { yaw: '357.87deg', pitch: '0deg' },
-        name: 'Go to Floor 1 - Kids Area 3',
+        name: 'Go to Floor 1 - PC Area',
       },
     ],
     markers: [
@@ -108,8 +108,8 @@ export default [
   {
 
     id: 'bt-f1-kids-2',
-    name: 'Floor 1 - Kids Area 2',
-    caption: 'BT - Floor 1 - Kids Area 2',
+    name: 'Floor 1 - Newspaper',
+    caption: 'BT - Floor 1 - Newspaper',
     panorama: './images/bt/f1-kids/bt-f1-kids-2.jpg',
     thumbnail: './images/bt/f1-kids/thumbs/bt-f1-kids-2.jpg',
     defaultYaw: '0deg',
@@ -119,12 +119,12 @@ export default [
       {
         nodeId: 'bt-f1-kids-1',
         position: { yaw: '114.59deg', pitch: '0deg' },
-        name: 'Go to Floor 1 - Kids Area 1',
+        name: 'Go to Floor 1 - E-Sports',
       },
       {
         nodeId: 'bt-f1-kids-3',
         position: { yaw: '358.45deg', pitch: '0deg' },
-        name: 'Go to Floor 1 - Kids Area 3',
+        name: 'Go to Floor 1 - PC Area',
       },
     ],
     markers: [
@@ -231,8 +231,8 @@ export default [
   {
 
     id: 'bt-f1-kids-3',
-    name: 'Floor 1 - Kids Area 3',
-    caption: 'BT - Floor 1 - Kids Area 3',
+    name: 'Floor 1 - PC Area',
+    caption: 'BT - Floor 1 - PC Area',
     panorama: './images/bt/f1-kids/bt-f1-kids-3.jpg',
     thumbnail: './images/bt/f1-kids/thumbs/bt-f1-kids-3.jpg',
     defaultYaw: '0deg',
@@ -242,12 +242,12 @@ export default [
       {
         nodeId: 'bt-f1-kids-2',
         position: { yaw: '216.16deg', pitch: '0deg' },
-        name: 'Go to Floor 1 - Kids Area 2',
+        name: 'Go to Floor 1 - Newspaper',
       },
       {
         nodeId: 'bt-f1-kids-1',
         position: { yaw: '185.06deg', pitch: '0deg' },
-        name: 'Go to Floor 1 - Kids Area 1',
+        name: 'Go to Floor 1 - E-Sports',
       },
       {
         nodeId: 'bt-f1-kids-4',
@@ -299,7 +299,7 @@ export default [
       {
         nodeId: 'bt-f1-kids-3',
         position: { yaw: '178.45deg', pitch: '0deg' },
-        name: 'Go to Floor 1 - Kids Area 3',
+        name: 'Go to Floor 1 - PC Area',
       },
       {
         nodeId: 'bt-f1-kids-5',

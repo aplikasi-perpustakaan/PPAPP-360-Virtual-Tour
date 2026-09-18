@@ -270,7 +270,7 @@ export default [
       {
         nodeId: 'bt-f1-kids-1',
         position: { yaw: '269.76deg', pitch: '0deg' },
-        name: 'Go to Floor 1 - Kids Area 1',
+        name: 'Go to Floor 1 - E-Sports',
       },
       {
         nodeId: 'bt-f1-tyt-1',

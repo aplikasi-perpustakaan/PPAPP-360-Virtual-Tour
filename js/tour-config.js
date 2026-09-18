@@ -70,7 +70,10 @@ export const branches = [
           { label: 'Lobby', sceneId: 'bt-f1-lobby-1' },
           { label: 'Cafe', sceneId: 'bt-f1-lobby-3' },
           { label: 'TYT', sceneId: 'bt-f1-tyt-1' },
-          { label: 'Kawasan Kanak-kanak', sceneId: 'bt-f1-kids-1' }
+          { label: 'E-Sports', sceneId: 'bt-f1-kids-1' },
+          { label: 'Newspaper', sceneId: 'bt-f1-kids-2' },
+          { label: 'PC Area', sceneId: 'bt-f1-kids-3' },
+          { label: 'Kawasan Kanak-kanak', sceneId: 'bt-f1-kids-4' }
         ]
       }
     ],
