@@ -86,17 +86,18 @@ async function initBranchPage() {
       }
       
       html += `<div class="zones-grid">`;
-      html += zoneCategory.items.map(link => {
+      // Flatten items so subzones render exactly like normal zones
+      const flatItems = [];
+      zoneCategory.items.forEach(link => {
+        flatItems.push(link);
+        if (link.subzones) {
+          link.subzones.forEach(sub => flatItems.push(sub));
+        }
+      });
+
+      html += flatItems.map(link => {
         const targetScene = scenes.find(s => s.id === link.sceneId);
         const thumb = targetScene && targetScene.thumbnail ? targetScene.thumbnail : './images/shared/placeholder.jpg';
-        let subzonesHTML = '';
-        if (link.subzones && link.subzones.length > 0) {
-          subzonesHTML = `
-            <div class="zone-subzones">
-              ${link.subzones.map(sub => `<a href="./tour.html?scene=${sub.sceneId}" class="subzone-pill">${sub.label}</a>`).join('')}
-            </div>
-          `;
-        }
 
         return `
           <div class="zone-card-container">
@@ -104,7 +105,6 @@ async function initBranchPage() {
               <img src="${thumb}" alt="${link.label}" class="zone-img" onerror="this.src='./images/shared/placeholder.jpg'">
               <div class="zone-label">${link.label}</div>
             </a>
-            ${subzonesHTML}
           </div>
         `;
       }).join('');
