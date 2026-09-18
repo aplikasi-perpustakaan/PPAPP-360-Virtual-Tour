@@ -93,6 +93,48 @@ export default [
           caption: 'PPAPP @ Daerah Timur Laut'
         },
         html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/gt/markers/GT_lobby_7.jpg\'>\n        <img src=\'./images/gt/markers/GT_lobby_7.jpg\' alt=\'PPAPP @ Daerah Timur Laut\' style=\'cursor:pointer;\' />\n        <h2>PPAPP @ Daerah Timur Laut</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      {
+        id: 'gt-f1-main-area-2-marker-1789694126147',
+        position: {
+          yaw: '315.86deg',
+          pitch: '-3.03deg'
+        },
+        size: {
+          width: 32,
+          height: 32
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Kaunter Perkhidmatan',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'info\' data-color=\'blue\'>\n        <h2>Kaunter Perkhidmatan</h2>\n        <p></p>\n      </custom-marker>'
+      },
+      {
+        id: 'gt-f1-main-area-2-marker-1789694156551',
+        position: {
+          yaw: '261.90deg',
+          pitch: '-8.12deg'
+        },
+        size: {
+          width: 32,
+          height: 32
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'E-Sport',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'info\' data-color=\'blue\'>\n        <h2>E-Sport</h2>\n        <p></p>\n      </custom-marker>'
       }
     ],
     data: {
@@ -121,7 +163,29 @@ export default [
         name: 'Go to Level 1 - Main Area 4',
       }
     ],
-    markers: [],
+    markers: [
+      {
+        id: 'gt-f1-main-area-3-marker-1789694177691',
+        position: {
+          yaw: '299.49deg',
+          pitch: '-3.99deg'
+        },
+        size: {
+          width: 32,
+          height: 32
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Kaunter Perkhidmatan',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'info\' data-color=\'blue\'>\n        <h2>Kaunter Perkhidmatan</h2>\n        <p></p>\n      </custom-marker>'
+      }
+    ],
     data: {
       floor: 'f1',
       tags: ['main'],
@@ -172,7 +236,50 @@ export default [
         name: 'Go to Stairs - 1'
       },
     ],
-    markers: [],
+    markers: [
+      {
+        id: 'gt-f1-main-area-4-marker-1789694190293',
+        position: {
+          yaw: '249.90deg',
+          pitch: '-4.23deg'
+        },
+        size: {
+          width: 32,
+          height: 32
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Cafe @ PPAPP',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'info\' data-color=\'blue\'>\n        <h2>Cafe @ PPAPP</h2>\n        <p></p>\n      </custom-marker>'
+      },
+      {
+        id: 'gt-f1-main-area-4-marker-1789694201984',
+        position: {
+          yaw: '318.96deg',
+          pitch: '-6.48deg'
+        },
+        size: {
+          width: 32,
+          height: 32
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Kaunter Perkhidmatan',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'info\' data-color=\'blue\'>\n        <h2>Kaunter Perkhidmatan</h2>\n        <p></p>\n      </custom-marker>'
+      }
+    ],
     data: {
       floor: 'f1',
       tags: ['main'],
@@ -245,29 +352,6 @@ export default [
     ],
     markers: [
       {
-        id: 'gt-f1-main-area-6-marker-1789536748660',
-        position: {
-          yaw: '350.78deg',
-          pitch: '-9.06deg'
-        },
-        size: {
-          width: 32,
-          height: 32
-        },
-        anchor: 'center center',
-        data: {
-          type: 'image',
-          title: 'Waktu Perkhidmatan',
-          icon: 'info',
-          color: 'blue',
-          animated: false,
-          imageSrc: './images/gt/markers/GT_lobby_1.jpg',
-          originalUrl: './images/gt/markers/GT_lobby_1.jpg',
-          caption: 'Waktu Perkhidmatan'
-        },
-        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/gt/markers/GT_lobby_1.jpg\'>\n        <img src=\'./images/gt/markers/GT_lobby_1.jpg\' alt=\'Waktu Perkhidmatan\' style=\'cursor:pointer;\' />\n        <h2>Waktu Perkhidmatan</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
-      },
-      {
         id: 'gt-f1-main-area-6-marker-1789540429010',
         position: {
           yaw: '189.74deg',
@@ -287,6 +371,50 @@ export default [
           content: ''
         },
         html: '<custom-marker type=\'info\' data-icon=\'no-entry\' data-color=\'red\' animated>\n        <h2>Kakitangan Sahaja</h2>\n        <p></p>\n      </custom-marker>'
+      },
+      {
+        id: 'gt-f1-main-area-6-marker-1789694212885',
+        position: {
+          yaw: '229.69deg',
+          pitch: '-10.38deg'
+        },
+        size: {
+          width: 32,
+          height: 32
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Cafe @ PPAPP',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'info\' data-color=\'blue\'>\n        <h2>Cafe @ PPAPP</h2>\n        <p></p>\n      </custom-marker>'
+      },
+      {
+        id: 'gt-f1-main-area-6-marker-1789536748660',
+        position: {
+          yaw: '0.75deg',
+          pitch: '-10.11deg'
+        },
+        size: {
+          width: 32,
+          height: 32
+        },
+        anchor: 'center center',
+        data: {
+          type: 'image',
+          title: 'Waktu Perkhidmatan',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          imageSrc: './images/gt/markers/GT_lobby_1.jpg',
+          originalUrl: './images/gt/markers/GT_lobby_1.jpg',
+          caption: 'Waktu Perkhidmatan'
+        },
+        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/gt/markers/GT_lobby_1.jpg\'>\n        <img src=\'./images/gt/markers/GT_lobby_1.jpg\' alt=\'Waktu Perkhidmatan\' style=\'cursor:pointer;\' />\n        <h2>Waktu Perkhidmatan</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
       }
     ],
     data: {
@@ -310,7 +438,50 @@ export default [
         name: 'Go to Level 1 - Main Area 6',
       }
     ],
-    markers: [],
+    markers: [
+      {
+        id: 'gt-f1-main-area-7-marker-1789694233236',
+        position: {
+          yaw: '177.03deg',
+          pitch: '-11.45deg'
+        },
+        size: {
+          width: 32,
+          height: 32
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Cafe @ PPAPP',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'info\' data-color=\'blue\'>\n        <h2>Cafe @ PPAPP</h2>\n        <p></p>\n      </custom-marker>'
+      },
+      {
+        id: 'gt-f1-main-area-7-marker-1789694242149',
+        position: {
+          yaw: '37.76deg',
+          pitch: '-7.35deg'
+        },
+        size: {
+          width: 32,
+          height: 32
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Kaunter Perkhidmatan',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'info\' data-color=\'blue\'>\n        <h2>Kaunter Perkhidmatan</h2>\n        <p></p>\n      </custom-marker>'
+      }
+    ],
     data: {
       floor: 'f1',
       tags: ['main'],
@@ -478,7 +649,71 @@ export default [
         name: 'Go to Level 1 - Main Area 14'
       },
     ],
-    markers: [],
+    markers: [
+      {
+        id: 'gt-f1-main-area-9-marker-1789694267021',
+        position: {
+          yaw: '230.90deg',
+          pitch: '-11.57deg'
+        },
+        size: {
+          width: 32,
+          height: 32
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Kaunter Perkhidmatan',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'info\' data-color=\'blue\'>\n        <h2>Kaunter Perkhidmatan</h2>\n        <p></p>\n      </custom-marker>'
+      },
+      {
+        id: 'gt-f1-main-area-9-marker-1789694286008',
+        position: {
+          yaw: '79.72deg',
+          pitch: '-8.39deg'
+        },
+        size: {
+          width: 32,
+          height: 32
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Bahan Baru Untuk Pinjaman',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'info\' data-color=\'blue\'>\n        <h2>Bahan Baru Untuk Pinjaman</h2>\n        <p></p>\n      </custom-marker>'
+      },
+      {
+        id: 'gt-f1-main-area-9-marker-1789694346437',
+        position: {
+          yaw: '325.01deg',
+          pitch: '-6.30deg'
+        },
+        size: {
+          width: 32,
+          height: 32
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Kiosk peminjaman / pemulangan buku (layan diri)',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'info\' data-color=\'blue\'>\n        <h2>Kiosk peminjaman / pemulangan buku (layan diri)</h2>\n        <p></p>\n      </custom-marker>'
+      }
+    ],
     data: {
       floor: 'f1',
       tags: ['main'],
@@ -577,6 +812,48 @@ export default [
           caption: ''
         },
         html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/gt/markers/GT_lobby_10.jpg\'>\n        <img src=\'./images/gt/markers/GT_lobby_10.jpg\' alt=\'\' style=\'cursor:pointer;\' />\n        <h2></h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      {
+        id: 'gt-f1-main-area-10-marker-1789694381241',
+        position: {
+          yaw: '44.00deg',
+          pitch: '-11.80deg'
+        },
+        size: {
+          width: 32,
+          height: 32
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Kiosk peminjaman / pemulangan buku (layan diri)',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'info\' data-color=\'blue\'>\n        <h2>Kiosk peminjaman / pemulangan buku (layan diri)</h2>\n        <p></p>\n      </custom-marker>'
+      },
+      {
+        id: 'gt-f1-main-area-10-marker-1789694390865',
+        position: {
+          yaw: '163.40deg',
+          pitch: '-8.11deg'
+        },
+        size: {
+          width: 32,
+          height: 32
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Kaunter Perkhidmatan',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'info\' data-color=\'blue\'>\n        <h2>Kaunter Perkhidmatan</h2>\n        <p></p>\n      </custom-marker>'
       }
     ],
     data: {
@@ -721,6 +998,48 @@ export default [
           caption: 'Bahan Baru Untuk Pinjaman'
         },
         html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/gt/markers/GT_lobby_6.jpg\'>\n        <img src=\'./images/gt/markers/GT_lobby_6.jpg\' alt=\'Bahan Baru Untuk Pinjaman\' style=\'cursor:pointer;\' />\n        <h2>Bahan Baru Untuk Pinjaman</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      {
+        id: 'gt-f1-main-area-12-marker-1789694356105',
+        position: {
+          yaw: '290.91deg',
+          pitch: '-4.06deg'
+        },
+        size: {
+          width: 32,
+          height: 32
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Kiosk peminjaman / pemulangan buku (layan diri)',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'info\' data-color=\'blue\'>\n        <h2>Kiosk peminjaman / pemulangan buku (layan diri)</h2>\n        <p></p>\n      </custom-marker>'
+      },
+      {
+        id: 'gt-f1-main-area-12-marker-1789694364077',
+        position: {
+          yaw: '236.73deg',
+          pitch: '-4.84deg'
+        },
+        size: {
+          width: 32,
+          height: 32
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Kaunter Perkhidmatan',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'info\' data-color=\'blue\'>\n        <h2>Kaunter Perkhidmatan</h2>\n        <p></p>\n      </custom-marker>'
       }
     ],
     data: {
@@ -764,7 +1083,50 @@ export default [
         name: 'Go to Level 1 - Main Area 11'
       },
     ],
-    markers: [],
+    markers: [
+      {
+        id: 'gt-f1-main-area-13-marker-1789694408019',
+        position: {
+          yaw: '251.03deg',
+          pitch: '-5.11deg'
+        },
+        size: {
+          width: 32,
+          height: 32
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Kiosk peminjaman / pemulangan buku (layan diri)',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'info\' data-color=\'blue\'>\n        <h2>Kiosk peminjaman / pemulangan buku (layan diri)</h2>\n        <p></p>\n      </custom-marker>'
+      },
+      {
+        id: 'gt-f1-main-area-13-marker-1789694422484',
+        position: {
+          yaw: '181.55deg',
+          pitch: '-6.60deg'
+        },
+        size: {
+          width: 32,
+          height: 32
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Bahan Baru Untuk Pinjaman',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'info\' data-color=\'blue\'>\n        <h2>Bahan Baru Untuk Pinjaman</h2>\n        <p></p>\n      </custom-marker>'
+      }
+    ],
     data: {
       floor: 'f1',
       tags: ['main'],
@@ -1757,7 +2119,29 @@ export default [
         name: 'Go to Level 1 - Main Area 29'
       },
     ],
-    markers: [],
+    markers: [
+      {
+        id: 'gt-f1-main-area-65-marker-1789694456343',
+        position: {
+          yaw: '61.60deg',
+          pitch: '-2.33deg'
+        },
+        size: {
+          width: 32,
+          height: 32
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Kaunter Pemulangan Bahan Kanak-kanak & I-Play toy',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'info\' data-color=\'blue\'>\n        <h2>Kaunter Pemulangan Bahan Kanak-kanak & I-Play toy</h2>\n        <p></p>\n      </custom-marker>'
+      }
+    ],
     data: {
       floor: 'f1',
       tags: ['main'],
@@ -1793,7 +2177,29 @@ export default [
         name: 'Go to Level 1 - Main Area 63'
       },
     ],
-    markers: [],
+    markers: [
+      {
+        id: 'gt-f1-main-area-66-marker-1789694612365',
+        position: {
+          yaw: '73.73deg',
+          pitch: '-3.09deg'
+        },
+        size: {
+          width: 32,
+          height: 32
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Kaunter Pemulangan Bahan Kanak-kanak & I-Play toy',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'info\' data-color=\'blue\'>\n        <h2>Kaunter Pemulangan Bahan Kanak-kanak & I-Play toy</h2>\n        <p></p>\n      </custom-marker>'
+      }
+    ],
     data: {
       floor: 'f1',
       tags: ['main'],
@@ -1822,14 +2228,35 @@ export default [
     ],
     markers: [
       {
-        id: 'gt-f1-main-area-67-marker-1789540496633',
+        id: 'gt-f1-main-area-67-marker-1789694627032',
         position: {
-          yaw: '355.24deg',
-          pitch: '-8.05deg'
+          yaw: '114.42deg',
+          pitch: '-6.31deg'
         },
         size: {
-          width: 44,
-          height: 44
+          width: 32,
+          height: 32
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Kaunter Pemulangan Bahan Kanak-kanak & I-Play toy',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'info\' data-color=\'blue\'>\n        <h2>Kaunter Pemulangan Bahan Kanak-kanak & I-Play toy</h2>\n        <p></p>\n      </custom-marker>'
+      },
+      {
+        id: 'gt-f1-main-area-67-marker-1789540496633',
+        position: {
+          yaw: '355.32deg',
+          pitch: '-3.90deg'
+        },
+        size: {
+          width: 56,
+          height: 56
         },
         anchor: 'center center',
         data: {
@@ -1935,6 +2362,27 @@ export default [
           content: ''
         },
         html: '<custom-marker type=\'info\' data-icon=\'info\' data-color=\'blue\'>\n        <h2>Mainan Untuk Kanak Kanak</h2>\n        <p></p>\n      </custom-marker>'
+      },
+      {
+        id: 'gt-f1-main-area-68-marker-1789694649246',
+        position: {
+          yaw: '137.65deg',
+          pitch: '-14.06deg'
+        },
+        size: {
+          width: 32,
+          height: 32
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Kaunter Pemulangan Bahan Kanak-kanak & I-Play toy',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'info\' data-color=\'blue\'>\n        <h2>Kaunter Pemulangan Bahan Kanak-kanak & I-Play toy</h2>\n        <p></p>\n      </custom-marker>'
       }
     ],
     data: {
@@ -2019,7 +2467,29 @@ export default [
         targetPitch: '-0.84deg'
       },
     ],
-    markers: [],
+    markers: [
+      {
+        id: 'gt-f1-main-area-70-marker-1789694663813',
+        position: {
+          yaw: '90.73deg',
+          pitch: '-11.09deg'
+        },
+        size: {
+          width: 32,
+          height: 32
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Kaunter Pemulangan Bahan Kanak-kanak & I-Play toy',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'info\' data-color=\'blue\'>\n        <h2>Kaunter Pemulangan Bahan Kanak-kanak & I-Play toy</h2>\n        <p></p>\n      </custom-marker>'
+      }
+    ],
     data: {
       floor: 'f1',
       tags: ['main'],
@@ -2053,7 +2523,29 @@ export default [
         name: 'Go to Level 1 - Main Area 65'
       },
     ],
-    markers: [],
+    markers: [
+      {
+        id: 'gt-f1-main-area-71-marker-1789694468561',
+        position: {
+          yaw: '31.97deg',
+          pitch: '-5.37deg'
+        },
+        size: {
+          width: 32,
+          height: 32
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Kaunter Pemulangan Bahan Kanak-kanak & I-Play toy',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'info\' data-color=\'blue\'>\n        <h2>Kaunter Pemulangan Bahan Kanak-kanak & I-Play toy</h2>\n        <p></p>\n      </custom-marker>'
+      }
+    ],
     data: {
       floor: 'f1',
       tags: ['main'],
@@ -2222,6 +2714,27 @@ export default [
           content: ''
         },
         html: '<custom-marker type=\'info\' data-icon=\'info\' data-color=\'blue\' animated>\n        <h2>I-Play Toy</h2>\n        <p></p>\n      </custom-marker>'
+      },
+      {
+        id: 'gt-f1-main-area-72-marker-1789694534812',
+        position: {
+          yaw: '352.82deg',
+          pitch: '-8.08deg'
+        },
+        size: {
+          width: 32,
+          height: 32
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Kaunter Pemulangan Bahan Kanak-kanak & I-Play toy',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'info\' data-color=\'blue\'>\n        <h2>Kaunter Pemulangan Bahan Kanak-kanak & I-Play toy</h2>\n        <p></p>\n      </custom-marker>'
       }
     ],
     data: {
@@ -2245,7 +2758,50 @@ export default [
         name: 'Go to Level 1 - Main Area 72'
       },
     ],
-    markers: [],
+    markers: [
+      {
+        id: 'gt-f1-main-area-73-marker-1789694566087',
+        position: {
+          yaw: '46.65deg',
+          pitch: '-1.42deg'
+        },
+        size: {
+          width: 32,
+          height: 32
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Tandas Perempuan',
+          icon: 'pin',
+          color: 'green',
+          animated: false,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'pin\' data-color=\'green\'>\n        <h2>Tandas Perempuan</h2>\n        <p></p>\n      </custom-marker>'
+      },
+      {
+        id: 'gt-f1-main-area-73-marker-1789694579124',
+        position: {
+          yaw: '132.35deg',
+          pitch: '-2.68deg'
+        },
+        size: {
+          width: 32,
+          height: 32
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Tandas Lelaki',
+          icon: 'pin',
+          color: 'green',
+          animated: false,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'pin\' data-color=\'green\'>\n        <h2>Tandas Lelaki</h2>\n        <p></p>\n      </custom-marker>'
+      }
+    ],
     data: {
       floor: 'f1',
       tags: ['main'],

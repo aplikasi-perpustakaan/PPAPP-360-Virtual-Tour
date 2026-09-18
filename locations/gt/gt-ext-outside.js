@@ -16,7 +16,29 @@ export default [
         name: 'Go to Exterior - Outside 2',
       }
     ],
-    markers: [],
+    markers: [
+      {
+        id: 'gt-ext-outside-1-marker-1789693952344',
+        position: {
+          yaw: '67.10deg',
+          pitch: '-1.66deg'
+        },
+        size: {
+          width: 56,
+          height: 56
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'PPAPP @ Daerah Timur Laut',
+          icon: 'pin',
+          color: 'green',
+          animated: false,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'pin\' data-color=\'green\'>\n        <h2>PPAPP @ Daerah Timur Laut</h2>\n        <p></p>\n      </custom-marker>'
+      }
+    ],
     data: {
       floor: 'ext',
       tags: ['outside'],
@@ -43,7 +65,29 @@ export default [
         name: 'Go to Exterior - Outside 3',
       }
     ],
-    markers: [],
+    markers: [
+      {
+        id: 'gt-ext-outside-2-marker-1789693983427',
+        position: {
+          yaw: '112.61deg',
+          pitch: '3.93deg'
+        },
+        size: {
+          width: 32,
+          height: 32
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Waktu Operasi',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'info\' data-color=\'blue\'>\n        <h2>Waktu Operasi</h2>\n        <p></p>\n      </custom-marker>'
+      }
+    ],
     data: {
       floor: 'ext',
       tags: ['outside'],
@@ -416,7 +460,29 @@ export default [
         name: 'Go to Exterior - Outside 14'
       },
     ],
-    markers: [],
+    markers: [
+      {
+        id: 'gt-ext-outside-9-marker-1789694087144',
+        position: {
+          yaw: '8.16deg',
+          pitch: '15.09deg'
+        },
+        size: {
+          width: 32,
+          height: 32
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Selamat Datang',
+          icon: 'info',
+          color: 'blue',
+          animated: false,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'info\' data-color=\'blue\'>\n        <h2>Selamat Datang</h2>\n        <p></p>\n      </custom-marker>'
+      }
+    ],
     data: {
       floor: 'ext',
       tags: ['outside'],
@@ -478,19 +544,19 @@ export default [
           pitch: '-2.06deg'
         },
         size: {
-          width: 44,
-          height: 44
+          width: 56,
+          height: 56
         },
         anchor: 'center center',
         data: {
           type: 'info',
-          title: 'Closed',
+          title: 'Dilarang Masuk',
           icon: 'no-entry',
           color: 'red',
           animated: true,
           content: ''
         },
-        html: '<custom-marker type=\'info\' data-icon=\'no-entry\' data-color=\'red\' animated>\n        <h2>Closed</h2>\n        <p></p>\n      </custom-marker>'
+        html: '<custom-marker type=\'info\' data-icon=\'no-entry\' data-color=\'red\' animated>\n        <h2>Dilarang Masuk</h2>\n        <p></p>\n      </custom-marker>'
       }
     ],
     data: {
@@ -519,7 +585,29 @@ export default [
         name: 'Go to Exterior - Outside 13',
       }
     ],
-    markers: [],
+    markers: [
+      {
+        id: 'gt-ext-outside-12-marker-1789694047725',
+        position: {
+          yaw: '334.16deg',
+          pitch: '-2.45deg'
+        },
+        size: {
+          width: 56,
+          height: 56
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Dilarang Masuk',
+          icon: 'no-entry',
+          color: 'red',
+          animated: true,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'no-entry\' data-color=\'red\' animated>\n        <h2>Dilarang Masuk</h2>\n        <p></p>\n      </custom-marker>'
+      }
+    ],
     data: {
       floor: 'ext',
       tags: ['outside'],
