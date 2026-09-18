@@ -5,8 +5,8 @@
 export default [
   {
     id: 'bm-gf-reading-1',
-    name: 'Ground Floor – Book Stacks & Study Table 1',
-    caption: 'BM – Ground Floor – Book Stacks & Study Table 1',
+    name: 'Ground Floor - Reading Area 1',
+    caption: 'BM - Ground Floor - Reading Area 1',
     panorama: './images/bm/gf-reading/bm-gf-reading-1.jpg',
     thumbnail: './images/bm/gf-reading/thumbs/bm-gf-reading-1.jpg',
     defaultYaw: '20deg',
@@ -16,12 +16,12 @@ export default [
       {
         nodeId: 'bm-gf-lobby-3',
         position: { yaw: '190deg', pitch: '-5deg' },
-        name: 'Go to Reading Lounge',
+        name: 'Go to Ground Floor - Lobby 3',
       },
       {
         nodeId: 'bm-gf-reading-2',
         position: { yaw: '20deg', pitch: '-5deg' },
-        name: 'Go to Study Table 2',
+        name: 'Go to Ground Floor - Reading Area 2',
       },
     ],
     markers: [
@@ -98,8 +98,8 @@ export default [
   },
   {
     id: 'bm-gf-reading-2',
-    name: 'Ground Floor – Book Stacks & Study Table 2',
-    caption: 'BM – Ground Floor – Book Stacks & Study Table 2',
+    name: 'Ground Floor - Reading Area 2',
+    caption: 'BM - Ground Floor - Reading Area 2',
     panorama: './images/bm/gf-reading/bm-gf-reading-2.jpg',
     thumbnail: './images/bm/gf-reading/thumbs/bm-gf-reading-2.jpg',
     defaultYaw: '0deg',
@@ -109,17 +109,17 @@ export default [
       {
         nodeId: 'bm-gf-reading-1',
         position: { yaw: '180deg', pitch: '-5deg' },
-        name: 'Go to Study Table 1',
+        name: 'Go to Ground Floor - Reading Area 1',
       },
       {
         nodeId: 'bm-gf-reading-3',
         position: { yaw: '276.84deg', pitch: '-32.85deg' },
-        name: 'Go to Reference Collection',
+        name: 'Go to Ground Floor - Reading Area 3',
       },
       {
         nodeId: 'bm-gf-kids-1',
         position: { yaw: '85deg', pitch: '-5deg' },
-        name: 'Enter Kids Activity Area',
+        name: 'Go to Ground Floor - Kids Area 1',
       },
     ],
     markers: [
@@ -310,8 +310,8 @@ export default [
   },
   {
     id: 'bm-gf-reading-3',
-    name: 'Ground Floor – Reference Collection & Study Area',
-    caption: 'BM – Ground Floor – Reference Collection & Study Area',
+    name: 'Ground Floor - Reading Area 3',
+    caption: 'BM - Ground Floor - Reading Area 3',
     panorama: './images/bm/gf-reading/bm-gf-reading-3.jpg',
     thumbnail: './images/bm/gf-reading/thumbs/bm-gf-reading-3.jpg',
     defaultYaw: '0deg',
@@ -321,12 +321,12 @@ export default [
       {
         nodeId: 'bm-gf-reading-2',
         position: { yaw: '98.22deg', pitch: '-25.01deg' },
-        name: 'Go to Book Stacks & Study Table 2',
+        name: 'Go to Ground Floor - Reading Area 2',
       },
       {
         nodeId: 'bm-gf-reading-4',
         position: { yaw: '188.61deg', pitch: '-17.44deg' },
-        name: 'Go to Book Stacks Junction',
+        name: 'Go to Ground Floor - Reading Area 4',
       },
     ],
     markers: [
@@ -382,8 +382,8 @@ export default [
   },
   {
     id: 'bm-gf-reading-4',
-    name: 'Ground Floor – Book Stacks Junction',
-    caption: 'BM – Ground Floor – Book Stacks Junction',
+    name: 'Ground Floor - Reading Area 4',
+    caption: 'BM - Ground Floor - Reading Area 4',
     panorama: './images/bm/gf-reading/bm-gf-reading-4.jpg',
     thumbnail: './images/bm/gf-reading/thumbs/bm-gf-reading-4.jpg',
     defaultYaw: '280deg',
@@ -393,17 +393,17 @@ export default [
       {
         nodeId: 'bm-gf-reading-3',
         position: { yaw: '8.88deg', pitch: '-14.49deg' },
-        name: 'Go to Reference Collection',
+        name: 'Go to Ground Floor - Reading Area 3',
       },
       {
         nodeId: 'bm-gf-reading-5',
         position: { yaw: '189.36deg', pitch: '-29.89deg' },
-        name: 'Go to Book Return Area',
+        name: 'Go to Ground Floor - Reading Area 5',
       },
       {
         nodeId: 'bm-gf-kids-3',
         position: { yaw: '280deg', pitch: '-5deg' },
-        name: 'Enter Children’s Reading Room',
+        name: 'Go to Ground Floor - Kids Area 3',
       },
     ],
     markers: [
@@ -459,8 +459,8 @@ export default [
   },
   {
     id: 'bm-gf-reading-5',
-    name: 'Ground Floor – Book Stacks & Book Return Area',
-    caption: 'BM – Ground Floor – Book Stacks & Book Return Area',
+    name: 'Ground Floor - Reading Area 5',
+    caption: 'BM - Ground Floor - Reading Area 5',
     panorama: './images/bm/gf-reading/bm-gf-reading-5.jpg',
     thumbnail: './images/bm/gf-reading/thumbs/bm-gf-reading-5.jpg',
     defaultYaw: '0deg',
@@ -470,12 +470,12 @@ export default [
       {
         nodeId: 'bm-gf-reading-4',
         position: { yaw: '3.59deg', pitch: '-20.86deg' },
-        name: 'Go to Book Stacks Junction',
+        name: 'Go to Ground Floor - Reading Area 4',
       },
       {
         nodeId: 'bm-gf-lobby-2',
         position: { yaw: '150.63deg', pitch: '-32.40deg' },
-        name: 'Return to Main Lobby',
+        name: 'Go to Ground Floor - Lobby 2',
       },
     ],
     markers: [

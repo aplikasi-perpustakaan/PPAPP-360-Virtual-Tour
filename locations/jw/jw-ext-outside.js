@@ -1,8 +1,8 @@
 export default [
   {
     id: 'jw-ext-outside-1',
-    name: 'Exterior – Outside 1',
-    caption: 'JW – Exterior – Outside 1',
+    name: 'Exterior - Outside 1',
+    caption: 'JW - Exterior - Outside 1',
     panorama: './images/jw/ext-outside/jw-ext-outside-1.jpg',
     thumbnail: './images/jw/ext-outside/thumbs/jw-ext-outside-1.jpg',
     defaultYaw: '0deg',
@@ -13,12 +13,12 @@ export default [
       {
         nodeId: 'jw-ext-outside-11',
         position: { yaw: '280.96deg', pitch: '0deg' },
-        name: 'Go to Outside 11',
+        name: 'Go to Exterior - Outside 11',
       },
       {
         nodeId: 'jw-ext-outside-2',
         position: { yaw: '0deg', pitch: '0deg' },
-        name: 'Go to Outside 2',
+        name: 'Go to Exterior - Outside 2',
       },
     ],
     markers: [],
@@ -29,8 +29,8 @@ export default [
   },
   {
     id: 'jw-ext-outside-2',
-    name: 'Exterior – Outside 2',
-    caption: 'JW – Exterior – Outside 2',
+    name: 'Exterior - Outside 2',
+    caption: 'JW - Exterior - Outside 2',
     panorama: './images/jw/ext-outside/jw-ext-outside-2.jpg',
     thumbnail: './images/jw/ext-outside/thumbs/jw-ext-outside-2.jpg',
     defaultYaw: '0deg',
@@ -41,12 +41,12 @@ export default [
       {
         nodeId: 'jw-ext-outside-3',
         position: { yaw: '0deg', pitch: '0deg' },
-        name: 'Go to Outside 3',
+        name: 'Go to Exterior - Outside 3',
       },
       {
         nodeId: 'jw-ext-outside-1',
         position: { yaw: '180deg', pitch: '0deg' },
-        name: 'Go back to Outside 1',
+        name: 'Go to Exterior - Outside 1',
       }
     ],
     markers: [],
@@ -57,8 +57,8 @@ export default [
   },
   {
     id: 'jw-ext-outside-3',
-    name: 'Exterior – Outside 3',
-    caption: 'JW – Exterior – Outside 3',
+    name: 'Exterior - Outside 3',
+    caption: 'JW - Exterior - Outside 3',
     panorama: './images/jw/ext-outside/jw-ext-outside-3.jpg',
     thumbnail: './images/jw/ext-outside/thumbs/jw-ext-outside-3.jpg',
     defaultYaw: '0deg',
@@ -68,12 +68,12 @@ export default [
       {
         nodeId: 'jw-ext-outside-4',
         position: { yaw: '274.70deg', pitch: '0deg' },
-        name: 'Go to Outside 4',
+        name: 'Go to Exterior - Outside 4',
       },
       {
         nodeId: 'jw-ext-outside-2',
         position: { yaw: '180deg', pitch: '0deg' },
-        name: 'Go back to Outside 2',
+        name: 'Go to Exterior - Outside 2',
       }
     ],
     markers: [],
@@ -84,8 +84,8 @@ export default [
   },
   {
     id: 'jw-ext-outside-4',
-    name: 'Exterior – Outside 4',
-    caption: 'JW – Exterior – Outside 4',
+    name: 'Exterior - Outside 4',
+    caption: 'JW - Exterior - Outside 4',
     panorama: './images/jw/ext-outside/jw-ext-outside-4.jpg',
     thumbnail: './images/jw/ext-outside/thumbs/jw-ext-outside-4.jpg',
     defaultYaw: '0deg',
@@ -95,12 +95,12 @@ export default [
       {
         nodeId: 'jw-ext-outside-5',
         position: { yaw: '271.33deg', pitch: '0deg' },
-        name: 'Go to Outside 5',
+        name: 'Go to Exterior - Outside 5',
       },
       {
         nodeId: 'jw-ext-outside-3',
         position: { yaw: '89.20deg', pitch: '0deg' },
-        name: 'Go back to Outside 3',
+        name: 'Go to Exterior - Outside 3',
       }
     ],
     markers: [],
@@ -111,8 +111,8 @@ export default [
   },
   {
     id: 'jw-ext-outside-5',
-    name: 'Exterior – Outside 5',
-    caption: 'JW – Exterior – Outside 5',
+    name: 'Exterior - Outside 5',
+    caption: 'JW - Exterior - Outside 5',
     panorama: './images/jw/ext-outside/jw-ext-outside-5.jpg',
     thumbnail: './images/jw/ext-outside/thumbs/jw-ext-outside-5.jpg',
     defaultYaw: '0deg',
@@ -122,12 +122,12 @@ export default [
       {
         nodeId: 'jw-ext-outside-6',
         position: { yaw: '272.06deg', pitch: '0deg' },
-        name: 'Go to Outside 6',
+        name: 'Go to Exterior - Outside 6',
       },
       {
         nodeId: 'jw-ext-outside-4',
         position: { yaw: '93.86deg', pitch: '0deg' },
-        name: 'Go back to Outside 4',
+        name: 'Go to Exterior - Outside 4',
       }
     ],
     markers: [],
@@ -138,8 +138,8 @@ export default [
   },
   {
     id: 'jw-ext-outside-6',
-    name: 'Exterior – Outside 6',
-    caption: 'JW – Exterior – Outside 6',
+    name: 'Exterior - Outside 6',
+    caption: 'JW - Exterior - Outside 6',
     panorama: './images/jw/ext-outside/jw-ext-outside-6.jpg',
     thumbnail: './images/jw/ext-outside/thumbs/jw-ext-outside-6.jpg',
     defaultYaw: '0deg',
@@ -149,12 +149,12 @@ export default [
       {
         nodeId: 'jw-f1-lobby-1',
         position: { yaw: '270.36deg', pitch: '0deg' },
-        name: 'Go to Lobby 1',
+        name: 'Go to Level 1 - Lobby 1',
       },
       {
         nodeId: 'jw-ext-outside-5',
         position: { yaw: '93.49deg', pitch: '0deg' },
-        name: 'Go back to Outside 5',
+        name: 'Go to Exterior - Outside 5',
       }
     ],
     markers: [],
@@ -165,8 +165,8 @@ export default [
   },
   {
     id: 'jw-ext-outside-7',
-    name: 'Exterior – Outside 7',
-    caption: 'JW – Exterior – Outside 7',
+    name: 'Exterior - Outside 7',
+    caption: 'JW - Exterior - Outside 7',
     panorama: './images/jw/ext-outside/jw-ext-outside-7.jpg',
     thumbnail: './images/jw/ext-outside/thumbs/jw-ext-outside-7.jpg',
     defaultYaw: '281.46deg',
@@ -177,12 +177,12 @@ export default [
       {
         nodeId: 'jw-f1-lobby-2',
         position: { yaw: '0deg', pitch: '0deg' },
-        name: 'Go to Lobby 2',
+        name: 'Go to Level 1 - Lobby 2',
       },
       {
         nodeId: 'jw-ext-outside-8',
         position: { yaw: '180deg', pitch: '0deg' },
-        name: 'Go back to Outside 8',
+        name: 'Go to Exterior - Outside 8',
       }
     ],
     markers: [
@@ -284,8 +284,8 @@ export default [
   },
   {
     id: 'jw-ext-outside-8',
-    name: 'Exterior – Outside 8',
-    caption: 'JW – Exterior – Outside 8',
+    name: 'Exterior - Outside 8',
+    caption: 'JW - Exterior - Outside 8',
     panorama: './images/jw/ext-outside/jw-ext-outside-8.jpg',
     thumbnail: './images/jw/ext-outside/thumbs/jw-ext-outside-8.jpg',
     defaultYaw: '142.28deg',
@@ -296,12 +296,12 @@ export default [
       {
         nodeId: 'jw-ext-outside-7',
         position: { yaw: '0deg', pitch: '0deg' },
-        name: 'Go to Outside 7',
+        name: 'Go to Exterior - Outside 7',
       },
       {
         nodeId: 'jw-ext-outside-9',
         position: { yaw: '180deg', pitch: '0deg' },
-        name: 'Go back to Outside 9',
+        name: 'Go to Exterior - Outside 9',
       }
     ],
     markers: [],
@@ -312,8 +312,8 @@ export default [
   },
   {
     id: 'jw-ext-outside-9',
-    name: 'Exterior – Outside 9',
-    caption: 'JW – Exterior – Outside 9',
+    name: 'Exterior - Outside 9',
+    caption: 'JW - Exterior - Outside 9',
     panorama: './images/jw/ext-outside/jw-ext-outside-9.jpg',
     thumbnail: './images/jw/ext-outside/thumbs/jw-ext-outside-9.jpg',
     defaultYaw: '0deg',
@@ -324,12 +324,12 @@ export default [
       {
         nodeId: 'jw-ext-outside-11',
         position: { yaw: '117.38deg', pitch: '0deg' },
-        name: 'Go to Outside 11',
+        name: 'Go to Exterior - Outside 11',
       },
       {
         nodeId: 'jw-ext-outside-10',
         position: { yaw: '180.90deg', pitch: '1.91deg' },
-        name: 'Go to Outside 10',
+        name: 'Go to Exterior - Outside 10',
         targetYaw: '167.08deg',
         targetPitch: '-5.86deg'
       },
@@ -342,7 +342,7 @@ export default [
       {
         nodeId: 'jw-ext-outside-8',
         position: { yaw: '0deg', pitch: '0deg' },
-        name: 'Go back to Outside 8',
+        name: 'Go to Exterior - Outside 8',
       }
     ],
     markers: [
@@ -423,8 +423,8 @@ export default [
   },
   {
     id: 'jw-ext-outside-10',
-    name: 'Exterior – Outside 10',
-    caption: 'JW – Exterior – Outside 10',
+    name: 'Exterior - Outside 10',
+    caption: 'JW - Exterior - Outside 10',
     panorama: './images/jw/ext-outside/jw-ext-outside-10.jpg',
     thumbnail: './images/jw/ext-outside/thumbs/jw-ext-outside-10.jpg',
     defaultYaw: '0deg',
@@ -434,12 +434,12 @@ export default [
       {
         nodeId: 'jw-ext-outside-11',
         position: { yaw: '40.13deg', pitch: '0deg' },
-        name: 'Go to Outside 11',
+        name: 'Go to Exterior - Outside 11',
       },
       {
         nodeId: 'jw-ext-outside-9',
         position: { yaw: '0deg', pitch: '0deg' },
-        name: 'Go back to Outside 9',
+        name: 'Go to Exterior - Outside 9',
       },
     ],
     markers: [
@@ -495,8 +495,8 @@ export default [
   },
   {
     id: 'jw-ext-outside-11',
-    name: 'Exterior – Outside 11',
-    caption: 'JW – Exterior – Outside 11',
+    name: 'Exterior - Outside 11',
+    caption: 'JW - Exterior - Outside 11',
     panorama: './images/jw/ext-outside/jw-ext-outside-11.jpg',
     thumbnail: './images/jw/ext-outside/thumbs/jw-ext-outside-11.jpg',
     defaultYaw: '0deg',
@@ -506,17 +506,17 @@ export default [
       {
         nodeId: 'jw-ext-outside-10',
         position: { yaw: '242.60deg', pitch: '0deg' },
-        name: 'Go back to Outside 10',
+        name: 'Go to Exterior - Outside 10',
       },
       {
         nodeId: 'jw-ext-outside-9',
         position: { yaw: '297.38deg', pitch: '0deg' },
-        name: 'Go back to Outside 9',
+        name: 'Go to Exterior - Outside 9',
       },
       {
         nodeId: 'jw-ext-outside-1',
         position: { yaw: '101.83deg', pitch: '0deg' },
-        name: 'Go back to Outside 1',
+        name: 'Go to Exterior - Outside 1',
       }
     ],
     markers: [],

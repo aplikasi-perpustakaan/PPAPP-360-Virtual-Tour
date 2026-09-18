@@ -2,8 +2,8 @@
 export default [
   {
     id: 'gt-f2-bilik-koleksi-khas-1',
-    name: 'Floor 2 – Bilik Koleksi Khas 1',
-    caption: 'GT – Floor 2 – Bilik Koleksi Khas 1',
+    name: 'Level 2 - Bilik Koleksi Khas 1',
+    caption: 'GT - Level 2 - Bilik Koleksi Khas 1',
     panorama: './images/gt/f2-bilik-koleksi-khas/gt-f2-bilik-koleksi-khas-1.jpg',
     thumbnail: './images/gt/f2-bilik-koleksi-khas/thumbs/gt-f2-bilik-koleksi-khas-1.jpg',
     defaultYaw: '0deg',
@@ -13,18 +13,18 @@ export default [
       {
         nodeId: 'gt-f2-bilik-koleksi-khas-2',
         position: { yaw: '270.19deg', pitch: '-5.99deg' },
-        name: 'Go to Bilik Koleksi Khas 2'
+        name: 'Go to Level 2 - Bilik Koleksi Khas 2'
       },
       
       {
         nodeId: 'gt-f2-bilik-koleksi-khas-3',
         position: { yaw: '2.41deg', pitch: '-7.27deg' },
-        name: 'Go to Bilik Koleksi Khas 3'
+        name: 'Go to Level 2 - Bilik Koleksi Khas 3'
       },
       {
         nodeId: 'gt-f2-main-area-16',
         position: { yaw: '184.87deg', pitch: '-10deg' },
-        name: 'Go to Main Area 16'
+        name: 'Go to Level 2 - Main Area 16'
       },
     ],
     markers: [],
@@ -35,8 +35,8 @@ export default [
   },
   {
     id: 'gt-f2-bilik-koleksi-khas-2',
-    name: 'Floor 2 – Bilik Koleksi Khas 2',
-    caption: 'GT – Floor 2 – Bilik Koleksi Khas 2',
+    name: 'Level 2 - Bilik Koleksi Khas 2',
+    caption: 'GT - Level 2 - Bilik Koleksi Khas 2',
     panorama: './images/gt/f2-bilik-koleksi-khas/gt-f2-bilik-koleksi-khas-2.jpg',
     thumbnail: './images/gt/f2-bilik-koleksi-khas/thumbs/gt-f2-bilik-koleksi-khas-2.jpg',
     defaultYaw: '0deg',
@@ -46,7 +46,7 @@ export default [
       {
         nodeId: 'gt-f2-bilik-koleksi-khas-1',
         position: { yaw: '90.19deg', pitch: '-10deg' },
-        name: 'Go to Bilik Koleksi Khas 1'
+        name: 'Go to Level 2 - Bilik Koleksi Khas 1'
       },
     ],
     markers: [],
@@ -57,8 +57,8 @@ export default [
   },
   {
     id: 'gt-f2-bilik-koleksi-khas-3',
-    name: 'Floor 2 – Bilik Koleksi Khas 3',
-    caption: 'GT – Floor 2 – Bilik Koleksi Khas 3',
+    name: 'Level 2 - Bilik Koleksi Khas 3',
+    caption: 'GT - Level 2 - Bilik Koleksi Khas 3',
     panorama: './images/gt/f2-bilik-koleksi-khas/gt-f2-bilik-koleksi-khas-3.jpg',
     thumbnail: './images/gt/f2-bilik-koleksi-khas/thumbs/gt-f2-bilik-koleksi-khas-3.jpg',
     defaultYaw: '0deg',
@@ -68,7 +68,7 @@ export default [
       {
         nodeId: 'gt-f2-bilik-koleksi-khas-1',
         position: { yaw: '182.41deg', pitch: '-10deg' },
-        name: 'Go to Bilik Koleksi Khas 1'
+        name: 'Go to Level 2 - Bilik Koleksi Khas 1'
       },
     ],
     markers: [],

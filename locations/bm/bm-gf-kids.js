@@ -7,8 +7,8 @@ import '../../js/custom-marker.js';
 export default [
   {
     id: 'bm-gf-kids-1',
-    name: 'Ground Floor – Kids Activity Area',
-    caption: 'BM – Ground Floor – Kids Activity Area',
+    name: 'Ground Floor - Kids Area 1',
+    caption: 'BM - Ground Floor - Kids Area 1',
     panorama: './images/bm/gf-kids/bm-gf-kids-1.jpg',
     thumbnail: './images/bm/gf-kids/thumbs/bm-gf-kids-1.jpg',
     defaultYaw: '10deg',
@@ -18,12 +18,12 @@ export default [
       {
         nodeId: 'bm-gf-reading-2',
         position: { yaw: '262.66deg', pitch: '-4.67deg' },
-        name: 'Exit to Main Stacks',
+        name: 'Go to Ground Floor - Reading Area 2',
       },
       {
         nodeId: 'bm-gf-kids-2',
         position: { yaw: '10deg', pitch: '-5deg' },
-        name: 'Go to Kids Play Corner',
+        name: 'Go to Ground Floor - Kids Area 2',
       },
     ],
     markers: [
@@ -100,8 +100,8 @@ export default [
   },
   {
     id: 'bm-gf-kids-2',
-    name: 'Ground Floor – Kids Play Corner',
-    caption: 'BM – Ground Floor – Kids Play Corner',
+    name: 'Ground Floor - Kids Area 2',
+    caption: 'BM - Ground Floor - Kids Area 2',
     panorama: './images/bm/gf-kids/bm-gf-kids-2.jpg',
     thumbnail: './images/bm/gf-kids/thumbs/bm-gf-kids-2.jpg',
     defaultYaw: '0deg',
@@ -111,7 +111,7 @@ export default [
       {
         nodeId: 'bm-gf-kids-1',
         position: { yaw: '180deg', pitch: '-5deg' },
-        name: 'Return to Kids Activity Area',
+        name: 'Go to Ground Floor - Kids Area 1',
       },
     ],
     markers: [
@@ -190,8 +190,8 @@ export default [
   },
   {
     id: 'bm-gf-kids-3',
-    name: 'Ground Floor – Children’s Room Entrance',
-    caption: 'BM – Ground Floor – Children’s Room Entrance',
+    name: 'Ground Floor - Kids Area 3',
+    caption: 'BM - Ground Floor - Kids Area 3',
     panorama: './images/bm/gf-kids/bm-gf-kids-3.jpg',
     thumbnail: './images/bm/gf-kids/thumbs/bm-gf-kids-3.jpg',
     defaultYaw: '320deg',
@@ -201,17 +201,17 @@ export default [
       {
         nodeId: 'bm-gf-reading-4',
         position: { yaw: '110.82deg', pitch: '-27.09deg' },
-        name: 'Exit to Main Stacks',
+        name: 'Go to Ground Floor - Reading Area 4',
       },
       {
         nodeId: 'bm-gf-kids-4',
         position: { yaw: '320deg', pitch: '-5deg' },
-        name: 'Go to Children’s Reading Area',
+        name: 'Go to Ground Floor - Kids Area 4',
       },
       {
         nodeId: 'bm-gf-kids-7',
         position: { yaw: '195.02deg', pitch: '-20.39deg' },
-        name: 'Go to Children’s Room Passage',
+        name: 'Go to Ground Floor - Kids Area 7',
       },
     ],
     markers: [
@@ -244,8 +244,8 @@ export default [
   },
   {
     id: 'bm-gf-kids-4',
-    name: 'Ground Floor – Children’s Room Central',
-    caption: 'BM – Ground Floor – Children’s Room Central',
+    name: 'Ground Floor - Kids Area 4',
+    caption: 'BM - Ground Floor - Kids Area 4',
     panorama: './images/bm/gf-kids/bm-gf-kids-4.jpg',
     thumbnail: './images/bm/gf-kids/thumbs/bm-gf-kids-4.jpg',
     defaultYaw: '350deg',
@@ -255,12 +255,12 @@ export default [
       {
         nodeId: 'bm-gf-kids-3',
         position: { yaw: '112.07deg', pitch: '-26.14deg' },
-        name: 'Go to Room Entrance',
+        name: 'Go to Ground Floor - Kids Area 3',
       },
       {
         nodeId: 'bm-gf-kids-5',
         position: { yaw: '24.19deg', pitch: '-28.48deg' },
-        name: 'Go to Window Bay Area',
+        name: 'Go to Ground Floor - Kids Area 5',
       },
     ],
     markers: [],
@@ -271,8 +271,8 @@ export default [
   },
   {
     id: 'bm-gf-kids-5',
-    name: 'Ground Floor – Children’s Room Window Bay',
-    caption: 'BM – Ground Floor – Children’s Room Window Bay',
+    name: 'Ground Floor - Kids Area 5',
+    caption: 'BM - Ground Floor - Kids Area 5',
     panorama: './images/bm/gf-kids/bm-gf-kids-5.jpg',
     thumbnail: './images/bm/gf-kids/thumbs/bm-gf-kids-5.jpg',
     defaultYaw: '85deg',
@@ -282,12 +282,12 @@ export default [
       {
         nodeId: 'bm-gf-kids-4',
         position: { yaw: '180deg', pitch: '-5deg' },
-        name: 'Go to Central Reading Area',
+        name: 'Go to Ground Floor - Kids Area 4',
       },
       {
         nodeId: 'bm-gf-kids-6',
         position: { yaw: '85deg', pitch: '-5deg' },
-        name: 'Go to Learning Area',
+        name: 'Go to Ground Floor - Kids Area 6',
       },
     ],
     markers: [],
@@ -298,8 +298,8 @@ export default [
   },
   {
     id: 'bm-gf-kids-6',
-    name: 'Ground Floor – Children’s Room Learning Area',
-    caption: 'BM – Ground Floor – Children’s Room Learning Area',
+    name: 'Ground Floor - Kids Area 6',
+    caption: 'BM - Ground Floor - Kids Area 6',
     panorama: './images/bm/gf-kids/bm-gf-kids-6.jpg',
     thumbnail: './images/bm/gf-kids/thumbs/bm-gf-kids-6.jpg',
     defaultYaw: '90deg',
@@ -309,7 +309,7 @@ export default [
       {
         nodeId: 'bm-gf-kids-5',
         position: { yaw: '270deg', pitch: '-5deg' },
-        name: 'Go to Window Bay',
+        name: 'Go to Ground Floor - Kids Area 5',
       },
     ],
     markers: [],
@@ -320,8 +320,8 @@ export default [
   },
   {
     id: 'bm-gf-kids-7',
-    name: 'Ground Floor – Children’s Room Passage',
-    caption: 'BM – Ground Floor – Children’s Room Passage',
+    name: 'Ground Floor - Kids Area 7',
+    caption: 'BM - Ground Floor - Kids Area 7',
     panorama: './images/bm/gf-kids/bm-gf-kids-7.jpg',
     thumbnail: './images/bm/gf-kids/thumbs/bm-gf-kids-7.jpg',
     defaultYaw: '10deg',
@@ -331,12 +331,12 @@ export default [
       {
         nodeId: 'bm-gf-kids-3',
         position: { yaw: '12.44deg', pitch: '-28.56deg' },
-        name: 'Go to Room Entrance',
+        name: 'Go to Ground Floor - Kids Area 3',
       },
       {
         nodeId: 'bm-gf-kids-8',
         position: { yaw: '189.10deg', pitch: '-23.66deg' },
-        name: 'Go to Room Corner',
+        name: 'Go to Ground Floor - Kids Area 8',
       },
     ],
     markers: [
@@ -369,8 +369,8 @@ export default [
   },
   {
     id: 'bm-gf-kids-8',
-    name: 'Ground Floor – Children’s Room Corner',
-    caption: 'BM – Ground Floor – Children’s Room Corner',
+    name: 'Ground Floor - Kids Area 8',
+    caption: 'BM - Ground Floor - Kids Area 8',
     panorama: './images/bm/gf-kids/bm-gf-kids-8.jpg',
     thumbnail: './images/bm/gf-kids/thumbs/bm-gf-kids-8.jpg',
     defaultYaw: '0deg',
@@ -380,7 +380,7 @@ export default [
       {
         nodeId: 'bm-gf-kids-7',
         position: { yaw: '12.21deg', pitch: '-24.09deg' },
-        name: 'Return to Passage',
+        name: 'Go to Ground Floor - Kids Area 7',
       },
     ],
     markers: [

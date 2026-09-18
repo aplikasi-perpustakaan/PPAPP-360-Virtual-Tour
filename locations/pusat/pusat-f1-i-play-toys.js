@@ -1,8 +1,8 @@
 export default [
   {
     id: 'pusat-f1-i-play-toys-1',
-    name: 'Floor 1 - I Play Toys 1',
-    caption: 'PUSAT - Floor 1 - I Play Toys 1',
+    name: 'Level 1 - i-Play Toys Room 1',
+    caption: 'PUSAT - Level 1 - i-Play Toys Room 1',
     panorama: './images/pusat/f1-i-play-toys/pusat-f1-i-play-toys-1.jpg',
     thumbnail: './images/pusat/f1-i-play-toys/thumbs/pusat-f1-i-play-toys-1.jpg',
     defaultYaw: '0deg',
@@ -13,7 +13,7 @@ export default [
       {
         nodeId: 'pusat-f1-kids-3',
         position: { yaw: '229.89deg', pitch: '-10deg' },
-        name: 'Go to Floor 1 - Kids 3'
+        name: 'Go to Level 1 - Kids Area 3'
       },
     ],
     markers: [],
@@ -24,8 +24,8 @@ export default [
   },
   {
     id: 'pusat-f1-i-play-toys-2',
-    name: 'Floor 1 - I Play Toys 2',
-    caption: 'PUSAT - Floor 1 - I Play Toys 2',
+    name: 'Level 1 - i-Play Toys Room 2',
+    caption: 'PUSAT - Level 1 - i-Play Toys Room 2',
     panorama: './images/pusat/f1-i-play-toys/pusat-f1-i-play-toys-2.jpg',
     thumbnail: './images/pusat/f1-i-play-toys/thumbs/pusat-f1-i-play-toys-2.jpg',
     defaultYaw: '0deg',
@@ -43,8 +43,8 @@ export default [
   },
   {
     id: 'pusat-f1-i-play-toys-3',
-    name: 'Floor 1 - I Play Toys 3',
-    caption: 'PUSAT - Floor 1 - I Play Toys 3',
+    name: 'Level 1 - i-Play Toys Room 3',
+    caption: 'PUSAT - Level 1 - i-Play Toys Room 3',
     panorama: './images/pusat/f1-i-play-toys/pusat-f1-i-play-toys-3.jpg',
     thumbnail: './images/pusat/f1-i-play-toys/thumbs/pusat-f1-i-play-toys-3.jpg',
     defaultYaw: '0deg',
@@ -62,8 +62,8 @@ export default [
   },
   {
     id: 'pusat-f1-i-play-toys-4',
-    name: 'Floor 1 - I Play Toys 4',
-    caption: 'PUSAT - Floor 1 - I Play Toys 4',
+    name: 'Level 1 - i-Play Toys Room 4',
+    caption: 'PUSAT - Level 1 - i-Play Toys Room 4',
     panorama: './images/pusat/f1-i-play-toys/pusat-f1-i-play-toys-4.jpg',
     thumbnail: './images/pusat/f1-i-play-toys/thumbs/pusat-f1-i-play-toys-4.jpg',
     defaultYaw: '0deg',
@@ -81,8 +81,8 @@ export default [
   },
   {
     id: 'pusat-f1-i-play-toys-5',
-    name: 'Floor 1 - I Play Toys 5',
-    caption: 'PUSAT - Floor 1 - I Play Toys 5',
+    name: 'Level 1 - i-Play Toys Room 5',
+    caption: 'PUSAT - Level 1 - i-Play Toys Room 5',
     panorama: './images/pusat/f1-i-play-toys/pusat-f1-i-play-toys-5.jpg',
     thumbnail: './images/pusat/f1-i-play-toys/thumbs/pusat-f1-i-play-toys-5.jpg',
     defaultYaw: '0deg',

@@ -5,8 +5,8 @@
 export default [
   {
     id: 'bm-ext-outside-1',
-    name: 'Exterior – Main Entrance Steps',
-    caption: 'BM – Exterior – Main Entrance Steps',
+    name: 'Exterior - Outside 1',
+    caption: 'BM - Exterior - Outside 1',
     panorama: './images/bm/ext-outside/bm-ext-outside-1.jpg',
     thumbnail: './images/bm/ext-outside/thumbs/bm-ext-outside-1.jpg',
     defaultYaw: '0deg',
@@ -16,12 +16,12 @@ export default [
       {
         nodeId: 'bm-ext-outside-2',
         position: { yaw: '100.02deg', pitch: '-11.85deg' },
-        name: 'Go to Verandah & Signboard',
+        name: 'Go to Exterior - Outside 2',
       },
       {
         nodeId: 'bm-ext-outside-3',
         position: { yaw: '0deg', pitch: '0deg' },
-        name: 'Go to Entrance Porch',
+        name: 'Go to Exterior - Outside 3',
       },
     ],
     markers: [
@@ -56,8 +56,8 @@ export default [
   },
   {
     id: 'bm-ext-outside-2',
-    name: 'Exterior – Verandah & Signboard',
-    caption: 'BM – Exterior – Verandah & Signboard',
+    name: 'Exterior - Outside 2',
+    caption: 'BM - Exterior - Outside 2',
     panorama: './images/bm/ext-outside/bm-ext-outside-2.jpg',
     thumbnail: './images/bm/ext-outside/thumbs/bm-ext-outside-2.jpg',
     defaultYaw: '0deg',
@@ -67,7 +67,7 @@ export default [
       {
         nodeId: 'bm-ext-outside-1',
         position: { yaw: '286.87deg', pitch: '-12.68deg' },
-        name: 'Go to Entrance Steps',
+        name: 'Go to Exterior - Outside 1',
       },
     ],
     markers: [
@@ -102,8 +102,8 @@ export default [
   },
   {
     id: 'bm-ext-outside-3',
-    name: 'Exterior – Entrance Porch',
-    caption: 'BM – Exterior – Entrance Porch',
+    name: 'Exterior - Outside 3',
+    caption: 'BM - Exterior - Outside 3',
     panorama: './images/bm/ext-outside/bm-ext-outside-3.jpg',
     thumbnail: './images/bm/ext-outside/thumbs/bm-ext-outside-3.jpg',
     defaultYaw: '65deg',
@@ -113,12 +113,12 @@ export default [
       {
         nodeId: 'bm-ext-outside-1',
         position: { yaw: '186.93deg', pitch: '-33.47deg' },
-        name: 'Go to Entrance Steps',
+        name: 'Go to Exterior - Outside 1',
       },
       {
         nodeId: 'bm-gf-lobby-1',
         position: { yaw: '94.01deg', pitch: '-16.18deg' },
-        name: 'Enter Library',
+        name: 'Go to Ground Floor - Lobby 1',
         targetYaw: '94.06deg',
         targetPitch: '-12.28deg'
       },
