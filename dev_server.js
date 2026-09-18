@@ -212,20 +212,17 @@ function handleSetZoneStartupScene({ branchId, zoneLabel, sceneId }) {
   
   let content = fs.readFileSync(configPath, 'utf8');
   
-  // Find the block for the branch
-  const branchStart = content.indexOf(id: '');
-  if (branchStart === -1) throw new Error(Could not find branch );
+  const branchStart = content.indexOf("id: '" + branchId + "'");
+  if (branchStart === -1) throw new Error("Could not find branch " + branchId);
   
-  // Regex to match the zone label and its sceneId
-  // label: 'Zone Name', sceneId: 'old-id' or with newlines
-  const regex = new RegExp((label:\\s*['"] + zoneLabel + ['"]\\s*,\\s*sceneId:\\s*['"])[^'"]+(['"]));
+  const regex = new RegExp("(label:\\s*['\"]" + zoneLabel + "['\"]\\s*,\\s*sceneId:\\s*['\"])[^'\"]+(['\"])");
   
   if (regex.test(content)) {
-    content = content.replace(regex, $1\);
+    content = content.replace(regex, "$1" + sceneId + "$2");
     fs.writeFileSync(configPath, content, 'utf8');
-    console.log([ZONE STARTUP] Updated startup scene for zone '\' to '\');
+    console.log("[ZONE STARTUP] Updated startup scene for zone '" + zoneLabel + "' to '" + sceneId + "'");
   } else {
-    throw new Error(Could not find label '\' in tour-config.js);
+    throw new Error("Could not find label '" + zoneLabel + "' in tour-config.js");
   }
 }
 
