@@ -5,7 +5,7 @@
 import btExtOutsideSection from './bt-ext-outside.js';
 import btF1LobbySection from './bt-f1-lobby.js';
 import btF1KidsSection from './bt-f1-kids.js';
-import btF1TytSection from './bt-f1-tyt.js';
+import btF1TYTSection from './bt-f1-tyt.js';
 import btF1SurauSection from './bt-f1-surau.js';
 import btF1BacksideSection from './bt-f1-backside.js';
 import btRampSection from './bt-ramp.js';
@@ -19,7 +19,7 @@ export default [
   ...btExtOutsideSection,
   ...btF1LobbySection,
   ...btF1KidsSection,
-  ...btF1TytSection,
+  ...btF1TYTSection,
   ...btF1SurauSection,
   ...btF2SurauSection,
   ...btF1BacksideSection,

@@ -275,7 +275,7 @@ export default [
       {
         nodeId: 'bt-f1-tyt-1',
         position: { yaw: '88.42deg', pitch: '0deg' },
-        name: 'Go to Floor 1 - Tyt 1',
+        name: 'Go to Floor 1 - TYT 1',
       },
     ],
     markers: [],

@@ -23,7 +23,7 @@ export default [
       {
         nodeId: 'bt-f1-tyt-16',
         position: { yaw: '179.57deg', pitch: '0deg' },
-        name: 'Go to Floor 1 - Tyt 16',
+        name: 'Go to Floor 1 - TYT 16',
       },
     ],
     markers: [],

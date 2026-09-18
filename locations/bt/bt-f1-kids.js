@@ -453,7 +453,7 @@ export default [
       {
         nodeId: 'bt-f1-tyt-13',
         position: { yaw: '95.70deg', pitch: '0deg' },
-        name: 'Go to Floor 1 - Tyt 13',
+        name: 'Go to Floor 1 - TYT 13',
       },
     ],
     markers: [
