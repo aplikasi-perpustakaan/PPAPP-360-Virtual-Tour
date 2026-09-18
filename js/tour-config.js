@@ -13,7 +13,7 @@ export const branches = [
       {
         category: 'Exterior',
         items: [
-          { label: 'Outside', sceneId: 'pusat-outside-2', subzones: [{ label: 'Playground', sceneId: 'pusat-outside-12' }] }
+          { label: 'Outside', sceneId: 'pusat-outside-2', subzones: [{ label: 'Playground', sceneId: 'pusat-outside-12' }, { label: 'Balcony', sceneId: 'pusat-outside-33' }] }
         ]
       },
       {

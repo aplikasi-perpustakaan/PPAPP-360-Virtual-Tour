@@ -1168,7 +1168,7 @@ export default [
       {
         nodeId: 'pusat-outside-32',
         position: { yaw: '339.65deg', pitch: '23.44deg' },
-        name: 'Go to Exterior - 32',
+        name: 'Go to Balcony 32',
         targetYaw: '341.60deg',
         targetPitch: '0.81deg'
       },
@@ -1242,8 +1242,8 @@ export default [
   },
   {
     id: 'pusat-outside-32',
-    name: 'Exterior - 32',
-    caption: 'PUSAT - Exterior - 32',
+    name: 'Balcony 32',
+    caption: 'PUSAT - Balcony 32',
     panorama: './images/pusat/outside/pusat-outside-32.jpg',
     thumbnail: './images/pusat/outside/thumbs/pusat-outside-32.jpg',
     defaultYaw: '0deg',
@@ -1259,7 +1259,7 @@ export default [
       {
         nodeId: 'pusat-outside-33',
         position: { yaw: '172.53deg', pitch: '-10deg' },
-        name: 'Go to Exterior - 33'
+        name: 'Go to Balcony 33'
       },
     ],
     markers: [],
@@ -1272,8 +1272,8 @@ export default [
   },
   {
     id: 'pusat-outside-33',
-    name: 'Exterior - 33',
-    caption: 'PUSAT - Exterior - 33',
+    name: 'Balcony 33',
+    caption: 'PUSAT - Balcony 33',
     panorama: './images/pusat/outside/pusat-outside-33.jpg',
     thumbnail: './images/pusat/outside/thumbs/pusat-outside-33.jpg',
     defaultYaw: '0deg',
@@ -1282,14 +1282,14 @@ export default [
       {
         nodeId: 'pusat-outside-34',
         position: { yaw: '168.54deg', pitch: '-6.51deg' },
-        name: 'Go to Exterior - 34',
+        name: 'Go to Balcony 34',
         targetYaw: '176.54deg',
         targetPitch: '1.86deg'
       },
       {
         nodeId: 'pusat-outside-32',
         position: { yaw: '352.53deg', pitch: '-7.26deg' },
-        name: 'Go to Exterior - 32',
+        name: 'Go to Balcony 32',
         targetYaw: '335.55deg',
         targetPitch: '-3.36deg'
       },
@@ -1304,8 +1304,8 @@ export default [
   },
   {
     id: 'pusat-outside-34',
-    name: 'Exterior - 34',
-    caption: 'PUSAT - Exterior - 34',
+    name: 'Balcony 34',
+    caption: 'PUSAT - Balcony 34',
     panorama: './images/pusat/outside/pusat-outside-34.jpg',
     thumbnail: './images/pusat/outside/thumbs/pusat-outside-34.jpg',
     defaultYaw: '0deg',
@@ -1314,7 +1314,7 @@ export default [
       {
         nodeId: 'pusat-outside-33',
         position: { yaw: '345.47deg', pitch: '0.15deg' },
-        name: 'Go to Exterior - 33',
+        name: 'Go to Balcony 33',
         targetYaw: '351.35deg',
         targetPitch: '6.90deg'
       },
