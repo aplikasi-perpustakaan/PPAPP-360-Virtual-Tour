@@ -68,6 +68,7 @@ export const branches = [
         category: 'Floor 1',
         items: [
           { label: 'Lobby', sceneId: 'bt-f1-lobby-1' },
+          { label: 'Cafe', sceneId: 'bt-f1-lobby-3' },
           { label: 'TYT', sceneId: 'bt-f1-tyt-1' },
           { label: 'Kawasan Kanak-kanak', sceneId: 'bt-f1-kids-1' }
         ]

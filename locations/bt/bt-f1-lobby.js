@@ -20,7 +20,7 @@ export default [
       {
         nodeId: 'bt-f1-lobby-3',
         position: { yaw: '95.59deg', pitch: '0deg' },
-        name: 'Go to Floor 1 - Lobby 3',
+        name: 'Go to Floor 1 - Cafe',
       },
       {
         nodeId: 'bt-f1-lobby-2',
@@ -288,8 +288,8 @@ export default [
   {
 
     id: 'bt-f1-lobby-3',
-    name: 'Floor 1 - Lobby 3',
-    caption: 'BT - Floor 1 - Lobby 3',
+    name: 'Floor 1 - Cafe',
+    caption: 'BT - Floor 1 - Cafe',
     panorama: './images/bt/f1-lobby/bt-f1-lobby-3.jpg',
     thumbnail: './images/bt/f1-lobby/thumbs/bt-f1-lobby-3.jpg',
     defaultYaw: '0deg',

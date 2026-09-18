@@ -12,7 +12,7 @@ export default [
     links: [{
       nodeId: 'bt-f1-lobby-3',
         position: { yaw: '5.24deg', pitch: '0deg' },
-        name: 'Go to Floor 1 - Lobby 3',
+        name: 'Go to Floor 1 - Cafe',
     }, {
       nodeId: 'bt-f2-reading-21',
         position: { yaw: '92.18deg', pitch: '0deg' },
