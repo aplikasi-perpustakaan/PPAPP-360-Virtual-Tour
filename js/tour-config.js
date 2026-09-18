@@ -65,9 +65,9 @@ export const branches = [
         ]
       },
       {
-        category: 'Main Areas',
+        category: 'Floor 1',
         items: [
-          { label: 'Lobi', sceneId: 'bt-f1-lobby-1' },
+          { label: 'Lobby', sceneId: 'bt-f1-lobby-1' },
           { label: 'Kawasan Kanak-kanak', sceneId: 'bt-f1-kids-1' }
         ]
       }
@@ -86,7 +86,7 @@ export const branches = [
     facilities: ['Wi-Fi Percuma', 'Ruang Membaca', 'Bilik Mesyuarat'],
     zones: [
       {
-        category: 'Main Areas',
+        category: 'Floor 1',
         items: [
           { label: 'Pintu Masuk', sceneId: 'jw-ext-outside-10' }
         ]
@@ -106,7 +106,7 @@ export const branches = [
     facilities: ['Wi-Fi Percuma', 'Dewan Serbaguna', 'Sudut IT', 'Bahagian Kanak-kanak'],
     zones: [
       {
-        category: 'Main Areas',
+        category: 'Floor 1',
         items: [
           { label: 'Luaran', sceneId: 'bm-ext-outside-1' },
           { label: 'Lobi Aras Bawah', sceneId: 'bm-gf-lobby-1' }
@@ -127,7 +127,7 @@ export const branches = [
     facilities: ['Wi-Fi Percuma', 'Kawasan Membaca', 'Koleksi Digital', 'Akses Pusat Beli-belah'],
     zones: [
       {
-        category: 'Main Areas',
+        category: 'Floor 1',
         items: [
           { label: 'Kawasan Utama', sceneId: 'ppaj-f1-01' }
         ]
@@ -147,7 +147,7 @@ export const branches = [
     facilities: ['Wi-Fi Percuma', 'Arkib Sejarah', 'Kawasan Pembelajaran'],
     zones: [
       {
-        category: 'Main Areas',
+        category: 'Floor 1',
         items: [
           { label: 'Pintu Masuk', sceneId: 'gt-ext-outside-1' }
         ]
@@ -167,7 +167,7 @@ export const branches = [
     facilities: ['Wi-Fi Percuma', 'Ruang Rehat Premium', 'Kiosk Perpustakaan Digital'],
     zones: [
       {
-        category: 'Main Areas',
+        category: 'Floor 1',
         items: [
           { label: 'Kawasan Ruang Rehat', sceneId: 'ppk-lounge-1' }
         ]
@@ -176,6 +176,7 @@ export const branches = [
     map: ''
   }
 ];
+
 
 
 
