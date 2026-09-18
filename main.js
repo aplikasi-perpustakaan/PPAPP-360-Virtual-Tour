@@ -67,9 +67,22 @@ async function bootstrap() {
     }
     
     const branchConfig = branches.find(b => b.id === defaultBranch);
-    const optionsHTML = branchConfig?.quickLinks?.map(link => 
-      `<option value="${link.sceneId}">${link.label}</option>`
-    ).join('') || '';
+    let optionsHTML = '';
+    
+    if (branchConfig && branchConfig.zones) {
+      branchConfig.zones.forEach(zoneCategory => {
+        optionsHTML += `<optgroup label="${zoneCategory.category}">`;
+        zoneCategory.items.forEach(link => {
+          optionsHTML += `<option value="${link.sceneId}">${link.label}</option>`;
+          if (link.subzones) {
+            link.subzones.forEach(sub => {
+              optionsHTML += `<option value="${sub.sceneId}">&nbsp;&nbsp;↳ ${sub.label}</option>`;
+            });
+          }
+        });
+        optionsHTML += `</optgroup>`;
+      });
+    }
     
     const locationSelectHTML = `<select id="location-select" class="navbar-select">
       <option value="" disabled selected>Select Area...</option>
