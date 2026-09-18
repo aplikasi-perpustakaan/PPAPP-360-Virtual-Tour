@@ -167,6 +167,27 @@ export default [
           caption: 'Informasi Semasa'
         },
         html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bm/markers/LOBBY/BTM_lobby_8.jpg\'>\n        <img src=\'./images/bm/markers/LOBBY/BTM_lobby_8.jpg\' alt=\'Informasi Semasa\' style=\'cursor:pointer;\' />\n        <h2>Informasi Semasa</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      {
+        id: 'bm-gf-lobby-1-marker-1789715427265',
+        position: {
+          yaw: '76.93deg',
+          pitch: '-29.76deg'
+        },
+        size: {
+          width: 32,
+          height: 32
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Kaunter Perkhidmatan',
+          icon: 'pin',
+          color: 'green',
+          animated: false,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'pin\' data-color=\'green\'>\n        <h2>Kaunter Perkhidmatan</h2>\n        <p></p>\n      </custom-marker>'
       }
     ],
     data: {
@@ -313,6 +334,27 @@ export default [
           caption: 'Informasi Semasa'
         },
         html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bm/markers/LOBBY/BTM_lobby_8.jpg\'>\n        <img src=\'./images/bm/markers/LOBBY/BTM_lobby_8.jpg\' alt=\'Informasi Semasa\' style=\'cursor:pointer;\' />\n        <h2>Informasi Semasa</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      {
+        id: 'bm-gf-lobby-2-marker-1789715443404',
+        position: {
+          yaw: '173.15deg',
+          pitch: '-41.98deg'
+        },
+        size: {
+          width: 32,
+          height: 32
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Kaunter Perkhidmatan',
+          icon: 'pin',
+          color: 'green',
+          animated: false,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'pin\' data-color=\'green\'>\n        <h2>Kaunter Perkhidmatan</h2>\n        <p></p>\n      </custom-marker>'
       }
     ],
     data: {
@@ -474,6 +516,27 @@ export default [
           content: ''
         },
         html: '<custom-marker type=\'info\' data-icon=\'no-entry\' data-color=\'red\' animated>\n        <h2>Kakitangan Sahaja</h2>\n        <p></p>\n      </custom-marker>'
+      },
+      {
+        id: 'bm-gf-lobby-3-marker-1789715456244',
+        position: {
+          yaw: '215.33deg',
+          pitch: '-17.94deg'
+        },
+        size: {
+          width: 32,
+          height: 32
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Kaunter Perkhidmatan',
+          icon: 'pin',
+          color: 'green',
+          animated: false,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'pin\' data-color=\'green\'>\n        <h2>Kaunter Perkhidmatan</h2>\n        <p></p>\n      </custom-marker>'
       }
     ],
     data: {

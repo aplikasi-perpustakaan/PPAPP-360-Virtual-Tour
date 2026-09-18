@@ -161,14 +161,14 @@ export default [
         data: {
           type: 'image',
           title: 'Sila Patuhi Etika Pemakaian Ketika Di Perpustakaan',
-          icon: 'info',
+          icon: 'warning',
           color: 'gold',
           animated: false,
           imageSrc: './images/bm/markers/OUTSIDE/BTM_outside_3.jpg',
           originalUrl: './images/bm/markers/OUTSIDE/BTM_outside_3.jpg',
           caption: 'Sila Patuhi Etika Pemakaian Ketika Di Perpustakaan'
         },
-        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'gold\' data-url=\'./images/bm/markers/OUTSIDE/BTM_outside_3.jpg\'>\n        <img src=\'./images/bm/markers/OUTSIDE/BTM_outside_3.jpg\' alt=\'Sila Patuhi Etika Pemakaian Ketika Di Perpustakaan\' style=\'cursor:pointer;\' />\n        <h2>Sila Patuhi Etika Pemakaian Ketika Di Perpustakaan</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+        html: '<custom-marker type=\'image\' data-icon=\'warning\' data-color=\'gold\' data-url=\'./images/bm/markers/OUTSIDE/BTM_outside_3.jpg\'>\n        <img src=\'./images/bm/markers/OUTSIDE/BTM_outside_3.jpg\' alt=\'Sila Patuhi Etika Pemakaian Ketika Di Perpustakaan\' style=\'cursor:pointer;\' />\n        <h2>Sila Patuhi Etika Pemakaian Ketika Di Perpustakaan</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
       }
     ],
     data: {

@@ -91,6 +91,27 @@ export default [
           content: ''
         },
         html: '<custom-marker type=\'info\' data-icon=\'warning\' data-color=\'gold\' animated>\n        <h2>Sebelum Mengambil Permainan, Sila Maklumkan Kepada Staf Yang Bertugas</h2>\n        <p></p>\n      </custom-marker>'
+      },
+      {
+        id: 'bm-gf-kids-1-marker-1789715485992',
+        position: {
+          yaw: '1.93deg',
+          pitch: '-7.88deg'
+        },
+        size: {
+          width: 32,
+          height: 32
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Kaunter Perkhidmatan',
+          icon: 'pin',
+          color: 'green',
+          animated: false,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'pin\' data-color=\'green\'>\n        <h2>Kaunter Perkhidmatan</h2>\n        <p></p>\n      </custom-marker>'
       }
     ],
     data: {
@@ -181,6 +202,27 @@ export default [
           caption: 'Digital Hub'
         },
         html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/bm/markers/MULTIMEDIA/BTM_multimedia_2.jpg\'>\n        <img src=\'./images/bm/markers/MULTIMEDIA/BTM_multimedia_2.jpg\' alt=\'Digital Hub\' style=\'cursor:pointer;\' />\n        <h2>Digital Hub</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+      },
+      {
+        id: 'bm-gf-kids-2-marker-1789715493707',
+        position: {
+          yaw: '82.52deg',
+          pitch: '-22.37deg'
+        },
+        size: {
+          width: 32,
+          height: 32
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Kaunter Perkhidmatan',
+          icon: 'pin',
+          color: 'green',
+          animated: false,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'pin\' data-color=\'green\'>\n        <h2>Kaunter Perkhidmatan</h2>\n        <p></p>\n      </custom-marker>'
       }
     ],
     data: {
