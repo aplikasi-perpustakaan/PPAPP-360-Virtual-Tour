@@ -1,4 +1,4 @@
-import { branches } from './js/tour-config.js';
+import { branches } from './tour-config.js';
 
 async function initFrontpage() {
   const branchesGrid = document.getElementById('branches-grid');
@@ -8,7 +8,7 @@ async function initFrontpage() {
   // Load all branch data
   for (const branch of branches) {
     try {
-      const module = await import(`./locations/${branch.id}/${branch.id}-index.js`);
+      const module = await import(`../locations/${branch.id}/${branch.id}-index.js`);
       const scenes = module.default;
       allScenes = allScenes.concat(scenes);
       
@@ -32,7 +32,7 @@ async function initFrontpage() {
       
       // Build card
       const card = document.createElement('a');
-      card.href = `./${branch.id}.html`;
+      card.href = `./branch.html?id=${branch.id}`;
       
       card.className = 'branch-card';
       card.innerHTML = `
@@ -121,7 +121,7 @@ async function initFrontpage() {
 
       if (matches.length > 0) {
         searchResults.innerHTML = matches.map(branch => `
-          <a href="./${branch.id}.html" class="search-result-item">
+          <a href="./branch.html?id=${branch.id}" class="search-result-item">
             <img src="${branch._thumbnail || './images/shared/placeholder.jpg'}" alt="" onerror="this.src='./images/shared/placeholder.jpg'">
             <div>
               <h4>${branch.name}</h4>
@@ -151,3 +151,7 @@ if (document.readyState === 'loading') {
 } else {
   initFrontpage();
 }
+
+
+
+

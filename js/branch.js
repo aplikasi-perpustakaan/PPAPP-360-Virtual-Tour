@@ -1,4 +1,4 @@
-import { branches } from './js/tour-config.js';
+import { branches } from './tour-config.js';
 import { Viewer } from '@photo-sphere-viewer/core';
 import { AutorotatePlugin } from '@photo-sphere-viewer/autorotate-plugin';
 async function initBranchPage() {
@@ -20,7 +20,7 @@ async function initBranchPage() {
   // Try to load the branch scenes to get thumbnails
   let scenes = [];
   try {
-    const module = await import(`./locations/${branch.id}/${branch.id}-index.js`);
+    const module = await import(`../locations/${branch.id}/${branch.id}-index.js`);
     scenes = module.default;
   } catch (e) {
     console.warn(`Could not load scenes for branch ${branch.id}`, e);
@@ -126,3 +126,7 @@ if (document.readyState === 'loading') {
 } else {
   initBranchPage();
 }
+
+
+
+
