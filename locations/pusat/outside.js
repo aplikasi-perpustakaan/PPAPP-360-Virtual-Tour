@@ -361,7 +361,7 @@ export default [
       {
         nodeId: 'pusat-outside-8',
         position: { yaw: '350.94deg', pitch: '-3.35deg' },
-        name: 'Go to Exterior - 8',
+        name: 'Go to Playground 8',
         targetYaw: '344.86deg',
         targetPitch: '-1.09deg'
       },
@@ -386,8 +386,8 @@ export default [
   },
   {
     id: 'pusat-outside-8',
-    name: 'Exterior - 8',
-    caption: 'PUSAT - Exterior - 8',
+    name: 'Playground 8',
+    caption: 'PUSAT - Playground 8',
     panorama: './images/pusat/outside/pusat-outside-8.jpg',
     thumbnail: './images/pusat/outside/thumbs/pusat-outside-8.jpg',
     defaultYaw: '0deg',
@@ -396,7 +396,7 @@ export default [
       {
         nodeId: 'pusat-outside-9',
         position: { yaw: '349.83deg', pitch: '0.10deg' },
-        name: 'Go to Exterior - 9',
+        name: 'Go to Playground 9',
         targetYaw: '350.07deg',
         targetPitch: '0.51deg'
       },
@@ -422,8 +422,8 @@ export default [
   },
   {
     id: 'pusat-outside-9',
-    name: 'Exterior - 9',
-    caption: 'PUSAT - Exterior - 9',
+    name: 'Playground 9',
+    caption: 'PUSAT - Playground 9',
     panorama: './images/pusat/outside/pusat-outside-9.jpg',
     thumbnail: './images/pusat/outside/thumbs/pusat-outside-9.jpg',
     defaultYaw: '0deg',
@@ -432,7 +432,7 @@ export default [
       {
         nodeId: 'pusat-outside-10',
         position: { yaw: '342.29deg', pitch: '-0.84deg' },
-        name: 'Go to Exterior - 10',
+        name: 'Go to Playground 10',
         targetYaw: '340.06deg',
         targetPitch: '0.12deg'
       },
@@ -449,7 +449,7 @@ export default [
       {
         nodeId: 'pusat-outside-12',
         position: { yaw: '234.03deg', pitch: '-5.78deg' },
-        name: 'Go to Exterior - 12',
+        name: 'Go to Playground 12',
         targetYaw: '239.20deg',
         targetPitch: '-1.44deg'
       },
@@ -464,8 +464,8 @@ export default [
   },
   {
     id: 'pusat-outside-10',
-    name: 'Exterior - 10',
-    caption: 'PUSAT - Exterior - 10',
+    name: 'Playground 10',
+    caption: 'PUSAT - Playground 10',
     panorama: './images/pusat/outside/pusat-outside-10.jpg',
     thumbnail: './images/pusat/outside/thumbs/pusat-outside-10.jpg',
     defaultYaw: '0deg',
@@ -474,7 +474,7 @@ export default [
       {
         nodeId: 'pusat-outside-11',
         position: { yaw: '50.37deg', pitch: '-2.45deg' },
-        name: 'Go to Exterior - 11',
+        name: 'Go to Playground 11',
         targetYaw: '49.13deg',
         targetPitch: '-0.51deg'
       },
@@ -499,8 +499,8 @@ export default [
   },
   {
     id: 'pusat-outside-11',
-    name: 'Exterior - 11',
-    caption: 'PUSAT - Exterior - 11',
+    name: 'Playground 11',
+    caption: 'PUSAT - Playground 11',
     panorama: './images/pusat/outside/pusat-outside-11.jpg',
     thumbnail: './images/pusat/outside/thumbs/pusat-outside-11.jpg',
     defaultYaw: '0deg',
@@ -525,8 +525,8 @@ export default [
   },
   {
     id: 'pusat-outside-12',
-    name: 'Exterior - 12',
-    caption: 'PUSAT - Exterior - 12',
+    name: 'Playground 12',
+    caption: 'PUSAT - Playground 12',
     panorama: './images/pusat/outside/pusat-outside-12.jpg',
     thumbnail: './images/pusat/outside/thumbs/pusat-outside-12.jpg',
     defaultYaw: '0deg',
@@ -535,7 +535,7 @@ export default [
       {
         nodeId: 'pusat-outside-13',
         position: { yaw: '349.41deg', pitch: '-1.06deg' },
-        name: 'Go to Exterior - 13',
+        name: 'Go to Playground 13',
         targetYaw: '337.33deg',
         targetPitch: '0.00deg'
       },
@@ -544,7 +544,7 @@ export default [
       {
         nodeId: 'pusat-outside-9',
         position: { yaw: '107.30deg', pitch: '-8.47deg' },
-        name: 'Go to Exterior - 9',
+        name: 'Go to Playground 9',
         targetYaw: '164.91deg',
         targetPitch: '3.63deg'
       },
@@ -559,8 +559,8 @@ export default [
   },
   {
     id: 'pusat-outside-13',
-    name: 'Exterior - 13',
-    caption: 'PUSAT - Exterior - 13',
+    name: 'Playground 13',
+    caption: 'PUSAT - Playground 13',
     panorama: './images/pusat/outside/pusat-outside-13.jpg',
     thumbnail: './images/pusat/outside/thumbs/pusat-outside-13.jpg',
     defaultYaw: '0deg',
@@ -569,7 +569,7 @@ export default [
       {
         nodeId: 'pusat-outside-14',
         position: { yaw: '117.90deg', pitch: '-2.80deg' },
-        name: 'Go to Exterior - 14',
+        name: 'Go to Playground 14',
         targetYaw: '42.25deg',
         targetPitch: '5.24deg'
       },
@@ -578,7 +578,7 @@ export default [
       {
         nodeId: 'pusat-outside-12',
         position: { yaw: '163.54deg', pitch: '-2.16deg' },
-        name: 'Go to Exterior - 12',
+        name: 'Go to Playground 12',
         targetYaw: '170.09deg',
         targetPitch: '-3.38deg'
       },
@@ -593,8 +593,8 @@ export default [
   },
   {
     id: 'pusat-outside-14',
-    name: 'Exterior - 14',
-    caption: 'PUSAT - Exterior - 14',
+    name: 'Playground 14',
+    caption: 'PUSAT - Playground 14',
     panorama: './images/pusat/outside/pusat-outside-14.jpg',
     thumbnail: './images/pusat/outside/thumbs/pusat-outside-14.jpg',
     defaultYaw: '0deg',
@@ -603,7 +603,7 @@ export default [
       {
         nodeId: 'pusat-outside-13',
         position: { yaw: '237.41deg', pitch: '-38.22deg' },
-        name: 'Go to Exterior - 13',
+        name: 'Go to Playground 13',
         targetYaw: '252.33deg',
         targetPitch: '-7.73deg'
       },

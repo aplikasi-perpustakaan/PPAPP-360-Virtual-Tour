@@ -2,7 +2,7 @@ export const branches = [
   {
     id: 'pusat',
     name: 'PUSAT - Seberang Jaya',
-    startNode: 'pusat-outside-1',
+    startNode: 'pusat-outside-2',
     description: 'Ibu pejabat utama Perbadanan Perpustakaan Awam Pulau Pinang, menawarkan koleksi komprehensif, rujukan khusus, dan kemudahan moden.',
     address: 'JKR 2362, Jalan Perpustakaan, Seberang Jaya, 13700 Perai, Pulau Pinang',
     phone: '+604-397 1153',
@@ -13,7 +13,7 @@ export const branches = [
       {
         category: 'Exterior',
         items: [
-          { label: 'Outside', sceneId: 'pusat-outside-1' }
+          { label: 'Outside', sceneId: 'pusat-outside-2', subzones: [{ label: 'Playground', sceneId: 'pusat-outside-12' }] }
         ]
       },
       {
@@ -24,8 +24,8 @@ export const branches = [
             label: 'Kids Area', 
             sceneId: 'pusat-f1-kids-1',
             subzones: [
-                  { label: 'Sensory Room', sceneId: 'pusat-f1-sensory-1' },
-              { label: 'i-Play Toys Room', sceneId: 'pusat-f1-i-play-toys-1' },
+                  { label: 'Sensory Room', sceneId: 'pusat-f1-sensory-2' },
+              { label: 'i-Play Toys Room', sceneId: 'pusat-f1-i-play-toys-3' },
               { label: 'Castle Area', sceneId: 'pusat-f1-castle-1' }
             ]
           },
@@ -40,8 +40,8 @@ export const branches = [
           { label: 'Carrel Area', sceneId: 'pusat-f2-reading-13' },
           { label: 'PC Area', sceneId: 'pusat-f2-reading-2' },
           { label: 'Auditorium', sceneId: 'pusat-f2-auditorium-5' },
-          { label: 'Meeting Room', sceneId: 'pusat-f2-meeting-room-1' },
-          { label: 'Training Room', sceneId: 'pusat-f2-training-room-1' }
+          { label: 'Meeting Room', sceneId: 'pusat-f2-meeting-room-2' },
+          { label: 'Training Room', sceneId: 'pusat-f2-training-room-2' }
         ]
       }
     ],
