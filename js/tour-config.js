@@ -73,7 +73,7 @@ export const branches = [
           { label: 'E-Sports', sceneId: 'bt-f1-kids-1' },
           { label: 'Newspaper', sceneId: 'bt-f1-kids-2' },
           { label: 'PC Area', sceneId: 'bt-f1-kids-3' },
-          { label: 'Kawasan Kanak-kanak', sceneId: 'bt-f1-kids-4' }
+          { label: 'Kids Area', sceneId: 'bt-f1-kids-4' }
         ]
       }
     ],
@@ -181,6 +181,7 @@ export const branches = [
     map: ''
   }
 ];
+
 
 
 
