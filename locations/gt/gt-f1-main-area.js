@@ -94,6 +94,8 @@ export default [
         },
         html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/gt/markers/GT_lobby_7.jpg\'>\n        <img src=\'./images/gt/markers/GT_lobby_7.jpg\' alt=\'PPAPP @ Daerah Timur Laut\' style=\'cursor:pointer;\' />\n        <h2>PPAPP @ Daerah Timur Laut</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
       },
+      
+      
       {
         id: 'gt-f1-main-area-2-marker-1789694126147',
         position: {
@@ -108,12 +110,12 @@ export default [
         data: {
           type: 'info',
           title: 'Kaunter Perkhidmatan',
-          icon: 'info',
-          color: 'blue',
+          icon: 'pin',
+          color: 'green',
           animated: false,
           content: ''
         },
-        html: '<custom-marker type=\'info\' data-icon=\'info\' data-color=\'blue\'>\n        <h2>Kaunter Perkhidmatan</h2>\n        <p></p>\n      </custom-marker>'
+        html: '<custom-marker type=\'info\' data-icon=\'pin\' data-color=\'green\'>\n        <h2>Kaunter Perkhidmatan</h2>\n        <p></p>\n      </custom-marker>'
       },
       {
         id: 'gt-f1-main-area-2-marker-1789694156551',
@@ -129,12 +131,12 @@ export default [
         data: {
           type: 'info',
           title: 'E-Sport',
-          icon: 'info',
-          color: 'blue',
+          icon: 'pin',
+          color: 'green',
           animated: false,
           content: ''
         },
-        html: '<custom-marker type=\'info\' data-icon=\'info\' data-color=\'blue\'>\n        <h2>E-Sport</h2>\n        <p></p>\n      </custom-marker>'
+        html: '<custom-marker type=\'info\' data-icon=\'pin\' data-color=\'green\'>\n        <h2>E-Sport</h2>\n        <p></p>\n      </custom-marker>'
       }
     ],
     data: {
@@ -167,8 +169,8 @@ export default [
       {
         id: 'gt-f1-main-area-3-marker-1789694177691',
         position: {
-          yaw: '299.49deg',
-          pitch: '-3.99deg'
+          yaw: '305.36deg',
+          pitch: '-4.90deg'
         },
         size: {
           width: 32,
@@ -178,12 +180,33 @@ export default [
         data: {
           type: 'info',
           title: 'Kaunter Perkhidmatan',
-          icon: 'info',
-          color: 'blue',
+          icon: 'pin',
+          color: 'green',
           animated: false,
           content: ''
         },
-        html: '<custom-marker type=\'info\' data-icon=\'info\' data-color=\'blue\'>\n        <h2>Kaunter Perkhidmatan</h2>\n        <p></p>\n      </custom-marker>'
+        html: '<custom-marker type=\'info\' data-icon=\'pin\' data-color=\'green\'>\n        <h2>Kaunter Perkhidmatan</h2>\n        <p></p>\n      </custom-marker>'
+      },
+      {
+        id: 'gt-f1-main-area-3-marker-1789694980617',
+        position: {
+          yaw: '227.51deg',
+          pitch: '-3.73deg'
+        },
+        size: {
+          width: 32,
+          height: 32
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'E-Sport',
+          icon: 'pin',
+          color: 'green',
+          animated: false,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'pin\' data-color=\'green\'>\n        <h2>E-Sport</h2>\n        <p></p>\n      </custom-marker>'
       }
     ],
     data: {
@@ -238,6 +261,48 @@ export default [
     ],
     markers: [
       {
+        id: 'gt-f1-main-area-4-marker-1789694993043',
+        position: {
+          yaw: '183.39deg',
+          pitch: '-4.53deg'
+        },
+        size: {
+          width: 32,
+          height: 32
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'E-Sport',
+          icon: 'pin',
+          color: 'green',
+          animated: false,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'pin\' data-color=\'green\'>\n        <h2>E-Sport</h2>\n        <p></p>\n      </custom-marker>'
+      },
+      {
+        id: 'gt-f1-main-area-4-marker-1789694201984',
+        position: {
+          yaw: '328.29deg',
+          pitch: '-8.39deg'
+        },
+        size: {
+          width: 32,
+          height: 32
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Kaunter Perkhidmatan',
+          icon: 'pin',
+          color: 'green',
+          animated: false,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'pin\' data-color=\'green\'>\n        <h2>Kaunter Perkhidmatan</h2>\n        <p></p>\n      </custom-marker>'
+      },
+      {
         id: 'gt-f1-main-area-4-marker-1789694190293',
         position: {
           yaw: '249.90deg',
@@ -251,33 +316,12 @@ export default [
         data: {
           type: 'info',
           title: 'Cafe @ PPAPP',
-          icon: 'info',
-          color: 'blue',
+          icon: 'pin',
+          color: 'green',
           animated: false,
           content: ''
         },
-        html: '<custom-marker type=\'info\' data-icon=\'info\' data-color=\'blue\'>\n        <h2>Cafe @ PPAPP</h2>\n        <p></p>\n      </custom-marker>'
-      },
-      {
-        id: 'gt-f1-main-area-4-marker-1789694201984',
-        position: {
-          yaw: '318.96deg',
-          pitch: '-6.48deg'
-        },
-        size: {
-          width: 32,
-          height: 32
-        },
-        anchor: 'center center',
-        data: {
-          type: 'info',
-          title: 'Kaunter Perkhidmatan',
-          icon: 'info',
-          color: 'blue',
-          animated: false,
-          content: ''
-        },
-        html: '<custom-marker type=\'info\' data-icon=\'info\' data-color=\'blue\'>\n        <h2>Kaunter Perkhidmatan</h2>\n        <p></p>\n      </custom-marker>'
+        html: '<custom-marker type=\'info\' data-icon=\'pin\' data-color=\'green\'>\n        <h2>Cafe @ PPAPP</h2>\n        <p></p>\n      </custom-marker>'
       }
     ],
     data: {
@@ -352,14 +396,35 @@ export default [
     ],
     markers: [
       {
+        id: 'gt-f1-main-area-6-marker-1789695025841',
+        position: {
+          yaw: '152.84deg',
+          pitch: '-4.64deg'
+        },
+        size: {
+          width: 32,
+          height: 32
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: '',
+          icon: 'pin',
+          color: 'green',
+          animated: false,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'pin\' data-color=\'green\'>\n        <h2></h2>\n        <p></p>\n      </custom-marker>'
+      },
+      {
         id: 'gt-f1-main-area-6-marker-1789540429010',
         position: {
           yaw: '189.74deg',
           pitch: '-8.50deg'
         },
         size: {
-          width: 44,
-          height: 44
+          width: 56,
+          height: 56
         },
         anchor: 'center center',
         data: {
@@ -386,12 +451,12 @@ export default [
         data: {
           type: 'info',
           title: 'Cafe @ PPAPP',
-          icon: 'info',
-          color: 'blue',
+          icon: 'pin',
+          color: 'green',
           animated: false,
           content: ''
         },
-        html: '<custom-marker type=\'info\' data-icon=\'info\' data-color=\'blue\'>\n        <h2>Cafe @ PPAPP</h2>\n        <p></p>\n      </custom-marker>'
+        html: '<custom-marker type=\'info\' data-icon=\'pin\' data-color=\'green\'>\n        <h2>Cafe @ PPAPP</h2>\n        <p></p>\n      </custom-marker>'
       },
       {
         id: 'gt-f1-main-area-6-marker-1789536748660',
@@ -407,14 +472,14 @@ export default [
         data: {
           type: 'image',
           title: 'Waktu Perkhidmatan',
-          icon: 'info',
-          color: 'blue',
+          icon: 'pin',
+          color: 'green',
           animated: false,
           imageSrc: './images/gt/markers/GT_lobby_1.jpg',
           originalUrl: './images/gt/markers/GT_lobby_1.jpg',
           caption: 'Waktu Perkhidmatan'
         },
-        html: '<custom-marker type=\'image\' data-icon=\'info\' data-color=\'blue\' data-url=\'./images/gt/markers/GT_lobby_1.jpg\'>\n        <img src=\'./images/gt/markers/GT_lobby_1.jpg\' alt=\'Waktu Perkhidmatan\' style=\'cursor:pointer;\' />\n        <h2>Waktu Perkhidmatan</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
+        html: '<custom-marker type=\'image\' data-icon=\'pin\' data-color=\'green\' data-url=\'./images/gt/markers/GT_lobby_1.jpg\'>\n        <img src=\'./images/gt/markers/GT_lobby_1.jpg\' alt=\'Waktu Perkhidmatan\' style=\'cursor:pointer;\' />\n        <h2>Waktu Perkhidmatan</h2>\n        <p style=\'font-size: 11px; opacity:0.7;\'>🔍 Click to enlarge</p>\n      </custom-marker>'
       }
     ],
     data: {
@@ -440,27 +505,6 @@ export default [
     ],
     markers: [
       {
-        id: 'gt-f1-main-area-7-marker-1789694233236',
-        position: {
-          yaw: '177.03deg',
-          pitch: '-11.45deg'
-        },
-        size: {
-          width: 32,
-          height: 32
-        },
-        anchor: 'center center',
-        data: {
-          type: 'info',
-          title: 'Cafe @ PPAPP',
-          icon: 'info',
-          color: 'blue',
-          animated: false,
-          content: ''
-        },
-        html: '<custom-marker type=\'info\' data-icon=\'info\' data-color=\'blue\'>\n        <h2>Cafe @ PPAPP</h2>\n        <p></p>\n      </custom-marker>'
-      },
-      {
         id: 'gt-f1-main-area-7-marker-1789694242149',
         position: {
           yaw: '37.76deg',
@@ -474,12 +518,33 @@ export default [
         data: {
           type: 'info',
           title: 'Kaunter Perkhidmatan',
-          icon: 'info',
-          color: 'blue',
+          icon: 'pin',
+          color: 'green',
           animated: false,
           content: ''
         },
-        html: '<custom-marker type=\'info\' data-icon=\'info\' data-color=\'blue\'>\n        <h2>Kaunter Perkhidmatan</h2>\n        <p></p>\n      </custom-marker>'
+        html: '<custom-marker type=\'info\' data-icon=\'pin\' data-color=\'green\'>\n        <h2>Kaunter Perkhidmatan</h2>\n        <p></p>\n      </custom-marker>'
+      },
+      {
+        id: 'gt-f1-main-area-7-marker-1789694233236',
+        position: {
+          yaw: '177.03deg',
+          pitch: '-11.45deg'
+        },
+        size: {
+          width: 32,
+          height: 32
+        },
+        anchor: 'center center',
+        data: {
+          type: 'info',
+          title: 'Cafe @ PPAPP',
+          icon: 'pin',
+          color: 'green',
+          animated: false,
+          content: ''
+        },
+        html: '<custom-marker type=\'info\' data-icon=\'pin\' data-color=\'green\'>\n        <h2>Cafe @ PPAPP</h2>\n        <p></p>\n      </custom-marker>'
       }
     ],
     data: {
