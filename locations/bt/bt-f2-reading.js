@@ -1175,11 +1175,6 @@ export default [
     defaultZoomLvl: 0,
     links: [
       {
-        nodeId: 'bt-f1-lobby-1',
-        position: { yaw: '278.00deg', pitch: '0deg' },
-        name: 'Go to Floor 1 - Lobby 1',
-      },
-      {
         nodeId: 'bt-f2-reading-23',
         position: { yaw: '111.36deg', pitch: '0deg' },
         name: 'Go to Floor 2 - Reading Area 23',
