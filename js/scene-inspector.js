@@ -10,6 +10,81 @@ export function initSceneInspector(viewer, virtualTour, allNodes, isDebug) {
   const toast = document.getElementById('debug-toast');
   const startupSceneBtn = document.getElementById('debug-startup-scene-btn');
   const saveDefaultsBtn = document.getElementById('debug-save-defaults-btn');
+  const zoneStartupBtn = document.getElementById('debug-zone-startup-btn');
+  const zoneSelect = document.getElementById('debug-zone-select');
+
+  if (zoneStartupBtn && zoneSelect) {
+    zoneStartupBtn.addEventListener('click', () => {
+      const currentNodeId = virtualTour.getCurrentNode()?.id;
+      if (!currentNodeId) return;
+      const currentBranchId = currentNodeId.split('-')[0];
+      const branchConfig = branches.find(b => b.id === currentBranchId);
+      
+      if (!branchConfig || !branchConfig.zones) {
+        showToast('❌ No zones defined for this branch');
+        return;
+      }
+
+      // If select is already visible, we are confirming the selection
+      if (zoneSelect.style.display !== 'none') {
+        const selectedZone = zoneSelect.value;
+        if (!selectedZone) {
+          zoneSelect.style.display = 'none';
+          zoneStartupBtn.innerHTML = '🎯 Set Zone Startup';
+          return;
+        }
+
+        // Send API request
+        fetch('/api/set-zone-startup-scene', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ branchId: currentBranchId, zoneLabel: selectedZone, sceneId: currentNodeId })
+        })
+        .then(res => res.json())
+        .then(data => {
+          if (data.success) {
+            showToast(✅ Zone '\' startup set to '\');
+          } else {
+            showToast(❌ Error: \);
+          }
+          zoneSelect.style.display = 'none';
+          zoneStartupBtn.innerHTML = '🎯 Set Zone Startup';
+        })
+        .catch(err => {
+          showToast(❌ Network error: \);
+          zoneSelect.style.display = 'none';
+          zoneStartupBtn.innerHTML = '🎯 Set Zone Startup';
+        });
+
+      } else {
+        // Populate and show the select
+        zoneSelect.innerHTML = '<option value="">-- Select Zone --</option>';
+        branchConfig.zones.forEach(zc => {
+          const group = document.createElement('optgroup');
+          group.label = zc.category;
+          zc.items.forEach(item => {
+            const opt = document.createElement('option');
+            opt.value = item.label;
+            opt.textContent = item.label;
+            group.appendChild(opt);
+            
+            if (item.subzones) {
+              item.subzones.forEach(sub => {
+                const subOpt = document.createElement('option');
+                subOpt.value = sub.label;
+                subOpt.textContent =   ↳ \;
+                group.appendChild(subOpt);
+              });
+            }
+          });
+          zoneSelect.appendChild(group);
+        });
+        
+        zoneSelect.style.display = 'inline-block';
+        zoneStartupBtn.innerHTML = '💾 Confirm Zone';
+      }
+    });
+  }
 
   if (!panel || !contentDiv) return;
 
@@ -213,3 +288,4 @@ export function initSceneInspector(viewer, virtualTour, allNodes, isDebug) {
     setTimeout(() => toast.classList.remove('is-visible'), 3000);
   }
 }
+

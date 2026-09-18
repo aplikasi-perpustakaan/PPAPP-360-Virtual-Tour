@@ -205,6 +205,30 @@ function handleSaveDefaults({ sourceId, defaultYaw, defaultPitch, defaultZoomLvl
   console.log(`[SAVE DEFAULTS] ${sourceId} saved to ${filePath}`);
 }
 
+function handleSetZoneStartupScene({ branchId, zoneLabel, sceneId }) {
+  if (!branchId || !zoneLabel || !sceneId) throw new Error('Missing branchId, zoneLabel, or sceneId');
+  const configPath = path.join(__dirname, 'js', 'tour-config.js');
+  if (!fs.existsSync(configPath)) throw new Error('tour-config.js not found');
+  
+  let content = fs.readFileSync(configPath, 'utf8');
+  
+  // Find the block for the branch
+  const branchStart = content.indexOf(id: '');
+  if (branchStart === -1) throw new Error(Could not find branch );
+  
+  // Regex to match the zone label and its sceneId
+  // label: 'Zone Name', sceneId: 'old-id' or with newlines
+  const regex = new RegExp((label:\\s*['"] + zoneLabel + ['"]\\s*,\\s*sceneId:\\s*['"])[^'"]+(['"]));
+  
+  if (regex.test(content)) {
+    content = content.replace(regex, $1\);
+    fs.writeFileSync(configPath, content, 'utf8');
+    console.log([ZONE STARTUP] Updated startup scene for zone '\' to '\');
+  } else {
+    throw new Error(Could not find label '\' in tour-config.js);
+  }
+}
+
 function handleSetStartupScene({ branchId, sceneId }) {
   if (!branchId || !sceneId) throw new Error('Missing branchId or sceneId');
   const configPath = path.join(__dirname, 'js', 'tour-config.js');
@@ -275,6 +299,24 @@ const server = http.createServer((req, res) => {
         res.end(JSON.stringify({ success: true }));
       } catch (err) {
         console.error('Error saving defaults:', err.message);
+        res.writeHead(500, { 'Content-Type': 'application/json' });
+        res.end(JSON.stringify({ error: err.message }));
+      }
+    });
+    return;
+  }
+
+  if (req.method === 'POST' && req.url === '/api/set-zone-startup-scene') {
+    let body = '';
+    req.on('data', chunk => { body += chunk.toString(); });
+    req.on('end', () => {
+      try {
+        const payload = JSON.parse(body);
+        handleSetZoneStartupScene(payload);
+        res.writeHead(200, { 'Content-Type': 'application/json' });
+        res.end(JSON.stringify({ success: true }));
+      } catch (err) {
+        console.error('Error setting zone startup scene:', err.message);
         res.writeHead(500, { 'Content-Type': 'application/json' });
         res.end(JSON.stringify({ error: err.message }));
       }
@@ -554,4 +596,5 @@ server.listen(PORT, () => {
   console.log(` Auto-saving for debug links and markers is ENABLED.\n`);
   console.log(` Press Ctrl+C to stop.`);
 });
+
 
